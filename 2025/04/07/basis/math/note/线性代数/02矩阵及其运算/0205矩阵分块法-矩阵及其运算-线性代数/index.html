@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0205矩阵分块法-矩阵及其运算-线性代数 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1 分块矩阵的定义 将矩阵A用若干条纵线和横线分成许多个小矩阵，每一个小矩阵称为A的子快，以子块为元素的形式上的矩阵称为分块矩阵。  2 分块矩阵的运算（性质） 设矩阵A与B的行数相同，列数相同，采用相同的分块法，有$$A&#x3D;\begin{pmatrix}A_{11}&amp;\cdots&amp;A_{1r}\\vdots&amp;&amp;\vdots\A_{s1}&amp;amp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0205矩阵分块法-矩阵及其运算-线性代数">
+<meta property="og:url" content="http://example.com/2025/04/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0205%E7%9F%A9%E9%98%B5%E5%88%86%E5%9D%97%E6%B3%95-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1 分块矩阵的定义 将矩阵A用若干条纵线和横线分成许多个小矩阵，每一个小矩阵称为A的子快，以子块为元素的形式上的矩阵称为分块矩阵。  2 分块矩阵的运算（性质） 设矩阵A与B的行数相同，列数相同，采用相同的分块法，有$$A&#x3D;\begin{pmatrix}A_{11}&amp;\cdots&amp;A_{1r}\\vdots&amp;&amp;\vdots\A_{s1}&amp;amp">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-04-07T17:42:35.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.192Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/线性代数/02矩阵及其运算/0205矩阵分块法-矩阵及其运算-线性代数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/04/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0205%E7%9F%A9%E9%98%B5%E5%88%86%E5%9D%97%E6%B3%95-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2025-04-07T17:42:35.000Z" itemprop="datePublished">2025-04-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0205矩阵分块法-矩阵及其运算-线性代数
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h3 id="1-分块矩阵的定义"><a href="#1-分块矩阵的定义" class="headerlink" title="1 分块矩阵的定义"></a>1 分块矩阵的定义</h3><blockquote>
+<p>将矩阵A用若干条纵线和横线分成许多个小矩阵，每一个小矩阵称为A的子快，以子块为元素的形式上的矩阵称为分块矩阵。</p>
+</blockquote>
+<h3 id="2-分块矩阵的运算（性质）"><a href="#2-分块矩阵的运算（性质）" class="headerlink" title="2 分块矩阵的运算（性质）"></a>2 分块矩阵的运算（性质）</h3><ol>
+<li><p>设矩阵A与B的行数相同，列数相同，采用相同的分块法，有<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{sr}<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>B_{11}&amp;\cdots&amp;B_{1r}\<br>\vdots&amp;&amp;\vdots\<br>B_{s1}&amp;\cdots&amp;B_{sr}<br>\end{pmatrix}\<br>$$<br>其中$A_{ij}与B_{ij}$行数相同，列数相同，那么<br>$$<br>A+B&#x3D;\begin{pmatrix}<br>A_{11}+B_{11}&amp;\cdots&amp;A_{1r}+B_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}+B_{s1}&amp;\cdots&amp;A_{sr}+B_{sr}<br>\end{pmatrix}<br>$$</p>
+</li>
+<li><p>设<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{sr}<br>\end{pmatrix}<br>,\lambda为数，那么<br>$$</p>
+<p>$$<br>\lambda A&#x3D;\begin{pmatrix}<br>\lambda A_{11}&amp;\cdots&amp;\lambda A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>\lambda A_{s1}&amp;\cdots&amp;\lambda A_{sr}<br>\end{pmatrix}<br>$$</p>
+</li>
+<li><p>设A位$m\times l$矩阵，B位$l\times n$矩阵，分块成<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1t}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{st}<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{t1}&amp;\cdots&amp;A_{tr}<br>\end{pmatrix}<br>$$<br>其中$A_{i1},A_{i2},\cdots,A_{it}$的列数分别等于$B_{1j},B_{2j},\cdots,B_{tj}$的行数，那么<br>$$<br>AB&#x3D;\begin{pmatrix}<br>C_{11}&amp;\cdots&amp;C_{1r}\<br>\vdots&amp;&amp;\vdots\<br>C_{s1}&amp;\cdots&amp;C_{sr}<br>\end{pmatrix}<br>$$<br>其中<br>$$<br>C_{ij}&#x3D;\sum_{k&#x3D;1}^tA_{ik}B_{kj}(i&#x3D;1,\cdots,s;j&#x3D;1,\cdots,r)<br>$$</p>
+</li>
+<li><p>设<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{sr}<br>\end{pmatrix}<br>，则A^T&#x3D;\begin{pmatrix}<br>A_{11}^T&amp;\cdots&amp;A_{s1}^T\<br>\vdots&amp;&amp;\vdots\<br>A_{1r}^T&amp;\cdots&amp;A_{sr}^T<br>\end{pmatrix}<br>$$</p>
+</li>
+<li><p>设A为n阶方阵，若A的分块矩阵只有在对角线上有非零子块，其余子块都为零矩阵，且在对角线上的子块都是方阵，即<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{1}&amp;&amp;&amp;O\<br>&amp;A_2&amp;&amp;\<br>&amp;&amp;\ddots&amp;\<br>O&amp;&amp;&amp;A_s<br>\end{pmatrix}<br>$$<br>其中$A_i(i&#x3D;1,2,\cdots,s)$都方阵，那么称A为分块对角矩阵。</p>
+<p>分块对角矩阵的行列式有以下性质<br>$$<br>|A|&#x3D;|A_1||A_2|\cdots |A_s|<br>$$<br>由此性质可知，若$|A_i|\not&#x3D;0（i&#x3D;i,2,\cdots,s)$，则$|A|\not&#x3D;0$，并有<br>$$<br>A^{-1}&#x3D;\begin{pmatrix}<br>A_{1}^{-1}&amp;&amp;&amp;O\<br>&amp;A_2^{-1}&amp;&amp;\<br>&amp;&amp;\ddots&amp;\<br>O&amp;&amp;&amp;A_s^{-1}<br>\end{pmatrix}<br>$$<br>例18 设<br>$$<br>A&#x3D;\begin{pmatrix}<br>5&amp;0&amp;0\<br>0&amp;3&amp;1\<br>0&amp;2&amp;1<br>\end{pmatrix}<br>，求A^{-1}<br>$$</p>
+<p>$$<br>因 A&#x3D;\begin{pmatrix}<br>5&amp;\vline0&amp;0\<br>\hdashline<br>0&amp;\vline3&amp;1\<br>0&amp;\vline2&amp;1<br>\end{pmatrix}<br>&#x3D;\begin{pmatrix}<br>A_1&amp;O\<br>O&amp;A_2<br>\end{pmatrix}\<br>A_1&#x3D;(5),A_1^{-1}&#x3D;(\frac{1}{5})\<br>A_2&#x3D;\begin{pmatrix}<br>3&amp;1\<br>2&amp;1<br>\end{pmatrix}<br>,A_2^{-1}&#x3D;\begin{pmatrix}<br>1&amp;-2\<br>-1&amp;3\<br>\end{pmatrix}\<br>所以A^{-1}&#x3D;\begin{pmatrix}<br>\frac{1}{5}&amp;0&amp;0\<br>0&amp;1&amp;-2\<br>0&amp;-1&amp;3<br>\end{pmatrix}<br>$$</p>
+</li>
+</ol>
+<h3 id="3-按列分块与按行分块"><a href="#3-按列分块与按行分块" class="headerlink" title="3 按列分块与按行分块"></a>3 按列分块与按行分块</h3><p>$m\times n$矩阵A有n列，称为矩阵A的n个列向量，若第j列记作<br>$$<br>a_j&#x3D;\begin{pmatrix}<br>a_{1j}\<br>a_{2j}\<br>\vdots\<br>a_{mj}<br>\end{pmatrix}<br>$$<br>则A可按列分块位<br>$$<br>A&#x3D;(a_1,a_2,\cdots,a_n)<br>$$<br>$m\times n$矩阵A有m行，称为矩阵A的m个行向量，若第$i$行记作<br>$$<br>\alpha_i^T&#x3D;(a_{i1},a_{i2},\cdots,a_{in})<br>$$<br>则A可按行分开为<br>$$<br>A&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>$$<br>对于矩阵$A&#x3D;(a_{ij})<em>{m\times s}$与矩阵$B&#x3D;(b</em>{ij})<em>{s\times n}$的乘积矩阵$AB&#x3D;C&#x3D;(c</em>{ij})<em>{m\times n}$，若把A按行分成m快，把B案列分成n快，便有<br>$$<br>AB&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>\begin{pmatrix}<br>b_1,b_2,\cdots,b_n\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>\alpha_1^Tb_1&amp;\alpha_1^Tb_2&amp;\cdots&amp;\alpha_1^Tb_n\<br>\alpha_2^Tb_1&amp;\alpha_2^Tb_2&amp;\cdots&amp;\alpha_2^Tb_n\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>\alpha_m^Tb_1&amp;\alpha_m^Tb_2&amp;\cdots&amp;\alpha_m^Tb_n\<br>\end{pmatrix}<br>$$<br>其中<br>$$<br>c</em>{ij}&#x3D;\alpha_i^Tb_j&#x3D;(a_{i1},a_{i2},\cdots,a_{is})<br>\begin{pmatrix}<br>b_{1j}\<br>b_{2j}\<br>\vdots\<br>b_{sj}<br>\end{pmatrix}<br>&#x3D;\sum_{k&#x3D;1}^sa_{ik}b_{kj}<br>$$</p>
+<p>例19 证明矩阵$A&#x3D;O$的充分必要条件是方阵$A^TA&#x3D;O$<br>$$<br>证明：条件的必要性是显然的\<br>充分性\<br>设A&#x3D;(a_{ij})<em>{m\times n}，把A按列分块位A&#x3D;(a_1,a_2,\cdots,a_n)，则\<br>A^TA&#x3D;\begin{pmatrix}<br>a_1^T\<br>a_2^T\<br>\vdots\<br>a_n^T<br>\end{pmatrix}<br>(a_1,a_2,\cdots,a_n)\<br>&#x3D;\begin{pmatrix}<br>a_1^Ta_1&amp;a_1^Ta_2&amp;\cdots&amp;a_1^Ta_n\<br>a_2^Ta_1&amp;a_2^Ta_2&amp;\cdots&amp;a_2^Ta_n\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_n^Ta_1&amp;a_n^Ta_2&amp;\cdots&amp;a_n^Ta_n\<br>\end{pmatrix}\<br>即A^TA的(i,j)元为a_i^Ta_j 因A^TA&#x3D;O，故\<br>a_i^Ta_j&#x3D;0(i,j&#x3D;1,2,\cdots,n)<br>特殊的，有\<br>a_j^Ta_j&#x3D;0(j&#x3D;1,2,\cdots,n)\<br>而<br>a_j^Ta_j&#x3D;(a</em>{1j},a_{2j},\cdots,a_{mj})<br>\begin{pmatrix}<br>a_{1j}\<br>a_{2j}\<br>\vdots\<br>a_{mj}<br>\end{pmatrix}<br>&#x3D;a_{1j}^2+a_{2j}^2+\cdots+a_{mj}^2&#x3D;0,得\<br>a_{1j}&#x3D;a_{2j}&#x3D;\cdots&#x3D;a_{mj}&#x3D;0\<br>即 A&#x3D;O<br>$$<br>线性方程组<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&#x3D;b_1,\<br>a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&#x3D;b_2,\<br>\cdots\cdots\cdots\cdots\<br>a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&#x3D;b_m,\<br>\end{cases}<br>$$<br>它的矩阵乘积形式为<br>$$<br>A_{m\times n}x_{n\times 1}&#x3D;b_{m\times 1}<br>$$<br>上式中，把A案列分块，把x按行分块，有分块矩阵的乘法有<br>$$<br>(a_1,a_2,\cdots,a_n)<br>\begin{pmatrix}<br>x_1,\<br>x_2,\<br>\vdots\<br>x_n<br>\end{pmatrix}<br>&#x3D;b,即\<br>x_1a_1+x_2a_2+\cdots+x_na_n&#x3D;b<br>$$<br>其实方程组表成<br>$$<br>\begin{pmatrix}<br>a_{11}\<br>a_{21}\<br>\vdots\<br>a_{m1}<br>\end{pmatrix}x_1<br>+\begin{pmatrix}<br>a_{12}\<br>a_{22}\<br>\vdots\<br>a_{m2}<br>\end{pmatrix}x_2<br>+\cdots<br>\begin{pmatrix}<br>a_{1n}\<br>a_{2n}\<br>\vdots\<br>a_{mn}<br>\end{pmatrix}x_n<br>&#x3D;\begin{pmatrix}<br>b_1\<br>b_2\<br>\vdots\<br>b_m<br>\end{pmatrix}<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.工程数学.线性代数 第6版 [M].北京:高等教育出版社,2014.6.p46-52.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济六版《线性代数》全程教学视频</a>[CP&#x2F;OL].2020-02-07.p12.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/04/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0205%E7%9F%A9%E9%98%B5%E5%88%86%E5%9D%97%E6%B3%95-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdb9qsy000avl1ohwm05lix" data-title="0205矩阵分块法-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/04/09/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/1300610-%E4%B9%A0%E9%A2%981_6_10-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          1300610-习题1_6_10-课后习题-高等数学
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/03/30/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/1300104-%E4%B9%A0%E9%A2%981_4-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">1300104-习题1_4-课后习题-高等数学</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

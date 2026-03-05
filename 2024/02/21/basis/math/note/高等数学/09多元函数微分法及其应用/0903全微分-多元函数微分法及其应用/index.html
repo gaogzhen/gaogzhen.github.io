@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0903全微分-多元函数微分法及其应用 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 一、全微分的定义根据一元函数微分学中增量的与微分的关系，可得$$f(x+\Delta x,y)-f(x,y)\approx f_x(x,y)\Delta x \f(x,y+\Delta y)-f(x,y)\approx f_y(x,y)\Delta y$$上述两式的左端分别叫做二元函数的对x和y的偏增量，而右端分别叫做二元函数对x和y的偏微分。 设函数$z&#x3D;f(x,y)在点P">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0903全微分-多元函数微分法及其应用">
+<meta property="og:url" content="http://example.com/2024/02/21/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0903%E5%85%A8%E5%BE%AE%E5%88%86-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 一、全微分的定义根据一元函数微分学中增量的与微分的关系，可得$$f(x+\Delta x,y)-f(x,y)\approx f_x(x,y)\Delta x \f(x,y+\Delta y)-f(x,y)\approx f_y(x,y)\Delta y$$上述两式的左端分别叫做二元函数的对x和y的偏增量，而右端分别叫做二元函数对x和y的偏微分。 设函数$z&#x3D;f(x,y)在点P">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-21T22:12:44.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.233Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/09多元函数微分法及其应用/0903全微分-多元函数微分法及其应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/02/21/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0903%E5%85%A8%E5%BE%AE%E5%88%86-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2024-02-21T22:12:44.000Z" itemprop="datePublished">2024-02-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0903全微分-多元函数微分法及其应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="一、全微分的定义"><a href="#一、全微分的定义" class="headerlink" title="一、全微分的定义"></a>一、全微分的定义</h2><p>根据一元函数微分学中增量的与微分的关系，可得<br>$$<br>f(x+\Delta x,y)-f(x,y)\approx f_x(x,y)\Delta x \<br>f(x,y+\Delta y)-f(x,y)\approx f_y(x,y)\Delta y<br>$$<br>上述两式的左端分别叫做二元函数的对x和y的偏增量，而右端分别叫做二元函数对x和y的偏微分。</p>
+<p>设函数$z&#x3D;f(x,y)在点P(x,y)$的某邻域内有定义，$P^{‘}(x+\Delta x,y+\Delta y)$为这邻域内的任意一点，则称这两点间的数值之差$f(x+\Delta x,y+\Delta y)-f(x,y)$为函数在点P对应于自变量增量$\Delta x和\Delta y$的全增量，记作$\Delta z$,即<br>$$<br>\Delta z &#x3D; f(x+\Delta x,y+\Delta y) - f(x,y)<br>$$</p>
+<blockquote>
+<p>设函数$z&#x3D;f(x,y)在点(x,y)$的某邻域内有定义，如果函数在点$(x,y)的全增量\Delta z&#x3D;f(x+\Delta x,y+\Delta y)-f(x,y)$可表示为<br>$$<br>\Delta z &#x3D;A\Delta x+B\Delta y + o(\rho)<br>$$<br>其中A和B不依赖于$\Delta x和\Delta y而仅和x和y$有关，$\rho&#x3D;\sqrt{(\Delta x)^2+(\Delta y)^2}$,那么称函数$z&#x3D;f(x,y)在点(x,y)$可微分，而$A\Delta x+B\Delta y称为函数z&#x3D;f(x,y)在点(x,y)$的全微分，记作$dz$，即<br>$$<br>dz&#x3D;A\Delta x+B\Delta y<br>$$</p>
+</blockquote>
+<p>如果函数在区域D内各点都可微分，那么称函数在D内可微分。</p>
+<p>注：</p>
+<ol>
+<li>如果函数$z&#x3D;f(x,y)在点(x,y)$可微分，那么该函数在该点连续</li>
+</ol>
+<p>$$<br>证明：\<br>函数z&#x3D;f(x,y)在(x,y)处可微分\<br>\therefore \lim\limits_{\rho \to0}{\Delta z}&#x3D;0\</p>
+<p>\lim\limits_{(\Delta x,\Delta y)\to(0,0)}{f(x+\Delta x,y+\Delta y)}&#x3D;\lim\limits_{\rho\to0}{[f(x,y)+\Delta z]}&#x3D;f(x,y) \<br>\therefore 函数z&#x3D;f(x,y)在点(x,y)处连续<br>$$</p>
+<blockquote>
+<p>定理1（必要条件）如果函数$z&#x3D;f(x,y)在点(x,y)$可微分，那么该函数在点$(x,y)$的偏导数$\frac{\partial z}{\partial x}和\frac{\partial z}{\partial y}$必定存在，且函数$z&#x3D;f(x,y)在点(x,y)$的全微分为<br>$$<br>dz&#x3D;\frac{\partial z}{\partial x}\Delta x+\frac{\partial z}{\partial y}\Delta y<br>$$</p>
+</blockquote>
+<p>$$<br>证明；\<br>设函数z&#x3D;f(x,y)在点P(x,y)处可微分，对于点P的某个邻域内的任意一点P^{‘}(x+\Delta x,y+\Delta y),有\<br>\Delta z&#x3D;A\Delta x + B\Delta y +o(\rho) \<br>取\Delta y &#x3D;0,则\rho&#x3D;|\Delta x|,得\<br>f(x+\Delta x,y)-f(x,y)&#x3D;A\Delta x+o(|\Delta x)\<br>上式两边各除以\Delta x,在令\Delta x\to0，取极限，有\<br>\lim\limits_{\Delta x\to0}{\frac{f(x+\Delta x,y)-f(x,y)}{\Delta x}}&#x3D;A\<br>即\frac{\partial z}{\partial x}&#x3D;A\<br>同理可证\frac{\partial z}{\partial y}&#x3D;B\<br>\therefore dz&#x3D;\frac{\partial z}{\partial x}\Delta x+\frac{\partial z}{\partial y}\Delta y<br>$$</p>
+<p>注：</p>
+<p>1.函数全微分存在$\Rightarrow$函数各偏导数存在</p>
+<p>示例：<br>$$<br>f(x,y)&#x3D;<br>\begin{cases}<br>\frac{xy}{\sqrt{x^2+y^2}},x^2+y^2&#x3D;0,\<br>0,x^2+y^2&#x3D;0<br>\end{cases}\<br>在(0,0)处f_x(0,0)&#x3D;0,f_y(0,0)&#x3D;0\<br>\therefore \Delta z-[f_x(0,0)\Delta x+f_y(0,0)\Delta y]&#x3D;\frac{\Delta x\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}\<br>当点P^{‘}(\Delta x,\Delta y)沿着直线y&#x3D;x趋向于(0,0)时，<br>\frac{\frac{\Delta x\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}}{\rho}&#x3D;\frac{(\Delta x)^2}{2(\Delta x)^2}&#x3D;\frac{1}{2}\<br>表示当\rho\to0时，z-[f_x(0,0)\Delta x+f_y(0,0)\Delta y]并不是关于\rho的高阶无穷小，\<br>因此函数在点（0,0）处的全微分不存在。<br>$$</p>
+<blockquote>
+<p>定理2（充分条件） 如果函数$z&#x3D;f(x,y)的偏导数\frac{\partial z}{\partial x}、\frac{\partial z}{\partial y}在点(x,y)$连续，那么函数在该点可微分。</p>
+</blockquote>
+<p>注：</p>
+<ol>
+<li>偏导连续$\Rightarrow$可微分</li>
+<li>偏导连续：$\lim\limits_{(x,y)\to(x_0,y_0)}{f^{‘}<em>x(x,y)}&#x3D;f^{‘}(x_0,y_0),\lim\limits</em>{(x,y)\to(x_0,y_0)}{f^{‘}_y(x,y)}&#x3D;f^{‘}(x_0,y_0)$</li>
+</ol>
+<h2 id="二、全微分公式"><a href="#二、全微分公式" class="headerlink" title="二、全微分公式"></a>二、全微分公式</h2><h3 id="1-全微分公式"><a href="#1-全微分公式" class="headerlink" title="1 全微分公式"></a>1 全微分公式</h3><p>当$\rho$很小时，$\Delta z\approx dz$</p>
+<p>对于二元函数$z&#x3D;f(x,y)$的全微分，有<br>$$<br>dz&#x3D;f_x(x,y)\Delta x+f_y(x,y)\Delta y<br>$$<br>一般地，记$\Delta x&#x3D;dx,\Delta y &#x3D; dy$,则<br>$$<br>dz&#x3D;f_x(x,y)dx+f_y(x,y)dy<br>$$</p>
+<h3 id="2-推广"><a href="#2-推广" class="headerlink" title="2 推广"></a>2 推广</h3><p>$u &#x3D; f(x,y,z)在(x,y,z)处可微$，则<br>$$<br>du &#x3D; \frac{\partial u}{\partial x}dx+\frac{\partial u}{\partial y}dy+\frac{\partial u}{\partial z}dz<br>$$</p>
+<h3 id="3-例题"><a href="#3-例题" class="headerlink" title="3 例题"></a>3 例题</h3><p>例2 求$z&#x3D;x^2y+y^2的全微分$<br>$$<br>解：\<br>\frac{\partial z}{\partial x} &#x3D; 2xy,\frac{\partial z}{\partial y}&#x3D;x^2+2y\<br>dz&#x3D;\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy&#x3D;2xydx+(x^2+2y)dy<br>$$</p>
+<p>例3 求$z&#x3D;e^{xy}在(2,1)$处的全微分<br>$$<br>解：\<br>\frac{\partial z}{\partial x}&#x3D;ye^{xy},\frac{\partial z}{\partial y}&#x3D;xe^{xy}\<br>dz&#x3D;ye^{xy}dx+xe^{xy}dy\<br>dz|_{(2,1)}&#x3D;e^2dx+2e^2dy<br>$$</p>
+<p>例4  求$u&#x3D;x+\sin\frac{y}{2}+e^{yz}$的全微分<br>$$<br>解：\<br>\frac{\partial u}{\partial x}&#x3D;1,\frac{\partial u}{\partial y}&#x3D;\frac{1}{2}\cos\frac{y}{2}+ze^{yz},\frac{\partial u}{\partial z}&#x3D;ye^{yz}\<br>\therefore du&#x3D;dx+\frac{1}{2}\cos\frac{y}{2}dy+ye^{yz}dz<br>$$<br>例5 设$z&#x3D;f(x,y)&#x3D;\int^{xy}_0(e^{-t^2})dt$，求$dz$<br>$$<br>解：\<br>\frac{\partial z}{\partial x}&#x3D;e^{-(xy)^2}\cdot y,\frac{\partial z}{\partial y}&#x3D;e^{-(xy)^2}\cdot x\<br>dz&#x3D;e^{-(xy)^2}(ydx+xdy)<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p72-77.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p66.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/02/21/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0903%E5%85%A8%E5%BE%AE%E5%88%86-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmdb9qtn001tvl1o8i9b551n" data-title="0903全微分-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/02/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0901%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8_%E5%86%B2%E7%AA%81%E6%96%87%E4%BB%B6_root_20240225164156/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0901多元函数的基本概念-多元函数微分法及其应用_冲突文件_root_20240225164156
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0902%E5%81%8F%E5%AF%BC%E6%95%B0-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0902偏导数-多元函数微分法及其应用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

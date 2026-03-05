@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0305函数的极值与最大值最小值-微分中值定理与导数的应用 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1 极值1.1 定义 设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有 $f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$, 那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）  注：  极值是局部的最值 最值不一定是极值，极值也不一定是最值  1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0305函数的极值与最大值最小值-微分中值定理与导数的应用">
+<meta property="og:url" content="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1 极值1.1 定义 设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有 $f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$, 那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）  注：  极值是局部的最值 最值不一定是极值，极值也不一定是最值  1">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-18T16:34:29.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.198Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/03微分中值定理与导数的应用/0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2023-02-18T16:34:29.000Z" itemprop="datePublished">2023-02-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0305函数的极值与最大值最小值-微分中值定理与导数的应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-极值"><a href="#1-极值" class="headerlink" title="1 极值"></a>1 极值</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><blockquote>
+<p>设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有</p>
+<p>$f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$,</p>
+<p>那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）</p>
+</blockquote>
+<p>注：</p>
+<ol>
+<li>极值是局部的最值</li>
+<li>最值不一定是极值，极值也不一定是最值</li>
+</ol>
+<h3 id="1-2-求极值的一般方法"><a href="#1-2-求极值的一般方法" class="headerlink" title="1.2 求极值的一般方法"></a>1.2 求极值的一般方法</h3><blockquote>
+<p>定理1（必要条件）设函数$f(x)在点x_0$处可导，且在$x_0$处取得极值，则$f^{‘}(x_0)&#x3D;0$</p>
+</blockquote>
+<p>注：</p>
+<ol>
+<li>定理1必要条件，反正不一定成立</li>
+</ol>
+<blockquote>
+<p>定理2（第一充分条件）设函数$f(x)在x_0$处连续，且在$x_0$的某去心邻域$\overset{\circ}{U}(x_0,\delta)$内可导。</p>
+<p>（1）若$x\in(x_0-\delta,x_0)时，f^{‘}(x)\gt0,而x\in(x_0,x_0+\delta)时，f^{‘}(x)\lt0$,则$f(x)在x_0$处取得极大值；</p>
+<p>（2）若$x\in(x_0-\delta,x_0)时，f^{‘}(x)\lt0,而x\in(x_0,x_0+\delta)时，f^{‘}(x)\gt0$,则$f(x)在x_0$处取得极小值；</p>
+<p>（3）若$x\in\overset{\circ}{U}(x_0,\delta)时，f^{‘}(x)$的符号保持不变，则$f(x)在点x_0$处没有极值。</p>
+</blockquote>
+<p>$$<br>证明：以(1)为例 \<br>x\in(x_0-\delta,x_0)时，f^{‘}(x)\gt0,则f(x)在此区间函数单调递增，即 \<br>f(x_0)\gt f(x)(x_0-\delta\lt x\lt x_0) \<br>x\in(x_0,x_0+\delta)时，f^{‘}(x)\lt0,则f(x)在此区间函数单调递减，即\<br>f(x_0)\gt f(x)(x_0\lt x\lt x_0+\delta) \<br>所以f(x_0)为f(x)在x_0 U(x_0,\delta)邻域的一个极大值 \<br>同理可证（2）（3）<br>$$</p>
+<p>求极值的一般步骤：</p>
+<p>$f(x)在区间I$上连续，除有限个点外均可导。</p>
+<p>（1）求出导数$f^{‘}(x)$</p>
+<p>（2）令$f^{‘}(x)&#x3D;0,求出f(x)$的全部驻点和不可导点。</p>
+<p>（3）考察$f^{‘}(x)$在（2）所得点两侧的符号，确定该点是不是极值点；进一步确定是极大值还是极小值</p>
+<p>（4）求出极值点的函数值。</p>
+<p>例1 求函数$f(x)&#x3D;(x-4)\sqrt[3]{(x+1)^2}$的极值<br>$$<br>解:函数的定义域(-\infty,+\infty) \<br>f^{‘}(x)&#x3D;[(x-4)\sqrt[3]{(x+1)^2}]^{‘}&#x3D;(x+1)^{\frac{2}{3}}+\frac{2(x-4)}{3\sqrt[3]{(x+1)}} \<br>&#x3D;\frac{5(x-1)}{3\sqrt[3]{x+1}}\<br>x&#x3D;-1为不可导点，x&#x3D;1为驻点 ;\<br>x\in(-\infty,-1)时，f^{‘}(x)\gt0;x\in(-1,1)时，f^{‘}(x)\lt0;x\in(1,+\infty)时，f^{‘}(x)\gt0 \<br>所以x&#x3D;-1为f(x)的极大值点，x&#x3D;1为极值点；极值为0，-3\sqrt[3]{4}<br>$$</p>
+<blockquote>
+<p>定理3（第二充分条件）设函数$f(x)在x_0$处具有二阶导数且$f^{‘}(x_0)&#x3D;0,f^{‘’}(x_0)\not&#x3D;0$,则</p>
+<p>（1）当$f^{‘’}(x)\lt0$时，函数$f(x)在点x_0$处取得极大值；</p>
+<p>（2）当$f^{‘’}(x)\gt0$时，函数$f(x)在点x_0$处取得极小值。</p>
+</blockquote>
+<p>$$<br>证明：情形（1），f^{‘’}(x)\lt0,按二阶导数的定义有 \<br>f^{‘’}(x)&#x3D;\lim\limits_{x\to x_0}{\frac{f^{‘}(x)-f^{‘}(x_0)}{x-x_0}}\lt0 \<br>根据函数的局部保号性，当x在x_0的足够小的邻域内时，\<br>\frac{f^{‘}(x)-f^{‘}(x_0)}{x-x_0}\lt0,因为f^{‘}(x)&#x3D;0,有上式得\<br>\frac{f^{‘}(x)}{x-x_0}\lt0\<br>对于该去心邻域内的x来说，f^{‘}(x)与x-x_0符号相反 \<br>当x-x_0\lt0即x\lt x_0时，f^{‘}(x)\gt0;当x-x_0\gt0即x\gt x_0时，f^{‘}(x)\lt0 \<br>根据定理2知，f(x)在点x_0处取得极大值。\<br>类似可以证明情形（2）<br>$$</p>
+<blockquote>
+<p>定理$3^{‘}$ 若函数$f(x)在x_0$点处存在n阶导数，且$f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,f^{(n)}(x_0)\not&#x3D;0$</p>
+<p>(1)n为奇数时，$x&#x3D;x_0不是f(x)$的极值点；</p>
+<p>（2）n为偶数时，$x&#x3D;x_0是f(x)$的极值点。$f^{(n)}(x_0)\gt0时，x&#x3D;x_0$为极小值点；$f^{(n)}(x_0)\lt0时，x&#x3D;x_0$为极大值点。</p>
+</blockquote>
+<p>$$<br>证明：\<br>f(x)在点x_0处具有n阶导,\forall x\in U(x_0），根据泰勒公式有\<br>f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>因为f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n)}(x_0)&#x3D;0\<br>f(x)&#x3D;f(x_0)+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)即 \<br>f(x)-f(x_0)&#x3D;\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>当x\in U(x_0,\delta)时，f(x)-f(x_0)的符号由f^{(n)}(x_0)(x-x_0)^n决定\<br>f^{(n)}\not&#x3D;0,假设f^{(n)}\gt0,n为奇数，\<br>则当x\in(x_0-\delta,x_0)时，f(x)\lt f(x_0);当x\in(x_0,x_0+\delta)时，f(x)\gt f(x_0)。\同理当f^{(n)}(x_0)\lt0时，f(x)-f(x_0)在x_0两侧符号不同。所以x&#x3D;x_0不是f(x)的极值点。 \<br>n为偶数，f(x)-f(x_0)符号由f^{(n)}决定。\<br>f^{(n)}(x_0)\gt0时，x&#x3D;x_0为极小值点；f^{(n)}(x_0)\lt0时，x&#x3D;x_0为极大值点。<br>$$</p>
+<p>注：若函数$f(x)在x_0$点处存在n阶导数，且$f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,f^{(n)}(x_0)\not&#x3D;0$,则$你为奇数是，(x_0,f(x_0))$是函数$f(x)$的拐点；$n为偶数时，(x_0,f(x_0))不是函数f(x)$的拐点。<br>$$<br>证明：\<br>把f^{‘’}(x)按泰勒公式展开，有\<br>f^{‘’}(x)&#x3D;f^{‘’}(x_0)+f^{‘’’}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2}) \<br>因为f^{‘’}(x_0)&#x3D;f^{‘’’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,所以\<br>f^{‘’}(x)&#x3D;\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2})\<br>n为奇数，n-2也为奇数,同上，f^{‘’}(x)在点x_0两侧符号相反，(x_0,f(x_0))是函数f(x)的拐点；\<br>n为偶数,n-2也是偶数,f^{‘’}(x)在点x_0两侧符号相同,(x_0,f(x_0))不是函数f(x)的拐点。<br>$$</p>
+<p>例1 设函数$f(x)对任意x\in R$,满足$(x-1)f^{‘’}(x)+2(x-1)f^{‘}(x)&#x3D;1-e^{1-x}$ 证明：$f(x)在x&#x3D;a(a\not&#x3D;1)$处取极值时，比为极小值。<br>$$<br>证明：有题知.f(x)在R上二阶可导，且x&#x3D;a处取得极值,则\<br>f^{‘}(a)&#x3D;0,x&#x3D;a带入可得\<br>(a-1)f^{‘’}(a)+2(a-1)f^{‘}(a)&#x3D;1-e^{1-a} \Rightarrow \<br>f^{‘’}(a)&#x3D;\frac{e^{a-1}-1}{(a-1)e^{a-1}} \<br>a-1\gt0时，f^{‘’}(a)\gt0;a-1\lt0时，f^{‘’}(a)\gt0 \<br>所以f(x)在x&#x3D;a(a\not&#x3D;1)处取极值时，一定是极小值。<br>$$</p>
+<h2 id="2-最大值最小值问题"><a href="#2-最大值最小值问题" class="headerlink" title="2 最大值最小值问题"></a>2 最大值最小值问题</h2><h3 id="2-1-求最值的一般步骤"><a href="#2-1-求最值的一般步骤" class="headerlink" title="2.1 求最值的一般步骤"></a>2.1 求最值的一般步骤</h3><p>闭区间上连续函数的最值</p>
+<p>设函数$f(x)$满足：</p>
+<p>(1)$f(x)在[a,b]$上连续</p>
+<p>(2)$(a,b)内$有限个驻点和不可导点</p>
+<p>求最值的步骤</p>
+<p>(1)求出$f(x)在(a,b)$内的驻点和不可导点</p>
+<p>(2)计算$f(x)$在上述驻点和不可导点处的函数值及$f(a),f(b)$</p>
+<p>(3)比较(2)中诸值的大小，其中最大的便是$f(x)在[a,b]$上的最大值，最小的便是$f(x)在[a,b]$上的最小值</p>
+<p>例1 求$f(x)&#x3D;|x^2-3x+2|在[-3,4]$上的最值<br>$$<br>解：\<br>f(x)&#x3D;<br>\begin{cases}<br>x^2-3x+2,\quad x\in[-3,1]\cup[2,4] \<br>-x^2+3x-2,\quad x\in(1,2) \<br>\end{cases} \<br>f^{‘}(x)&#x3D;<br>\begin{cases}<br>2x-3,\quad x\in[-3,1]\cup[2,4] \<br>-2x+3,\quad x\in(1,2) \<br>\end{cases} \<br>其中x&#x3D;1,x&#x3D;2是f(x)的不可导点，令f^{‘}(x)&#x3D;0，得x&#x3D;\frac{3}{2} \<br>f(1)&#x3D;f(2)&#x3D;0,f(-3)&#x3D;20,f(\frac{3}{2})&#x3D;\frac{1}{4},f(4)&#x3D;6 \<br>所以函数f(x)在[-3,4]区间上在x&#x3D;1和x&#x3D;2处取得最小值，最小值为0;在x&#x3D;-3处取得最大值，最大值为20<br>$$</p>
+<h3 id="2-2-某个区间有一个驻点且该处是函数的极值点"><a href="#2-2-某个区间有一个驻点且该处是函数的极值点" class="headerlink" title="2.2 某个区间有一个驻点且该处是函数的极值点"></a>2.2 某个区间有一个驻点且该处是函数的极值点</h3><blockquote>
+<p>函数$f(x)$在一个区间（有限或无限，开或闭）内可导且只有一个驻点$x&#x3D;x_0，若x&#x3D;x_0$是函数的极值点</p>
+<p>(1)$f(x_0)$为极大值时，$f(x_0)$即为该区间上的最大值；</p>
+<p>(2)$f(x_0)$为极小值时，$f(x_0)$即为该区间上的最小值。</p>
+</blockquote>
+<p>例2 求函数$y&#x3D;x^2-\frac{54}{x}(x\lt0)$在何处取得最小值。<br>$$<br>解：\<br>f^{‘}(x)&#x3D;2x+\frac{54}{x^2},f^{‘’}(x)&#x3D;2-\frac{108}{x^3} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;-3,f^{‘’}(-3)\gt0 \<br>当x\lt0时，x&#x3D;-3为唯一驻点，且x&#x3D;-3为极小值点\<br>所以f(x)当x\lt0时，在x&#x3D;-3处取得最小值<br>$$</p>
+<h3 id="2-3-实际问题"><a href="#2-3-实际问题" class="headerlink" title="2.3 实际问题"></a>2.3 实际问题</h3><blockquote>
+<p>对于实际问题，函数可导且有最值，且一定在内部取得。此时内部唯一驻点即为最值点。</p>
+</blockquote>
+<p>例3 将长度为a的铁丝分为两段，分别围成方形和圆形。如何分解，能使圆与正方形面积之和最小？<br>$$<br>解:设围成圆的长度为x,则围成正方形的长度为a-x,x\in[0,a] \<br>圆与正方形面积之和:s(x)&#x3D;\pi\cdot(\frac{x}{2\pi})^2+(\frac{a-x}{4})^2 \<br>s^{‘}(x)&#x3D;\frac{x}{2\pi}+\frac{x-a}{8}，s^{‘’}(x)&#x3D;\frac{\pi+4}{8\pi}\gt0\<br>令s^{‘}(x)&#x3D;0,得x&#x3D;\frac{a\pi}{\pi+4} \<br>x&#x3D;\frac{a\pi}{\pi+4}为s(x)在区间[0,a]内唯一驻点且为极小值点\<br>所以s(x)在x&#x3D;\frac{a\pi}{\pi+4}处取得最小值。<br>$$</p>
+<h3 id="2-4-证明不等式"><a href="#2-4-证明不等式" class="headerlink" title="2.4 证明不等式"></a>2.4 证明不等式</h3><p>例4 设$p,q\gt1,\frac{1}{p}+\frac{1}{q}&#x3D;1$，证明：$\forall x\gt0,\frac{1}{p}x^p+\frac{1}{q}\ge x$<br>$$<br>证明：\<br>令f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0) \<br>f^{‘}(x)&#x3D;x^{p-1}-1,f^{‘’}(x)&#x3D;(p-1)x^{p-2} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;1\<br>f^{‘’}(1)&#x3D;p-1\gt0,所以f(x)在x&#x3D;1处取得极小值\<br>因为x&#x3D;1是f(x)在(0,+\infty)内唯一驻点，所以f(x)在该点取得最小值\<br>所以f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0)\ge f(1)&#x3D;0,即 \<br>\frac{1}{p}x^p+\frac{1}{q}\ge x<br>$$</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P152~p161.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p23.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmdb9qta000zvl1o3ajw8y6i" data-title="0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/02/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0403%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0403分部积分法-不定积分
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/01/13/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0303%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0303泰勒公式-微分中值定理与导数的应用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

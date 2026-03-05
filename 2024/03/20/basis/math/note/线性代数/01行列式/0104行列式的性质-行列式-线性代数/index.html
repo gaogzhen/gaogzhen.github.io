@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0104行列式的性质-行列式-线性代数 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 记 $D&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}$,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0104行列式的性质-行列式-线性代数">
+<meta property="og:url" content="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 记 $D&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}$,">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-20T20:40:45.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.191Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/线性代数/01行列式/0104行列式的性质-行列式-线性代数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2024-03-20T20:40:45.000Z" itemprop="datePublished">2024-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0104行列式的性质-行列式-线性代数
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<p>记</p>
+<p>$D&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}$,</p>
+<p>$D^T&#x3D;\begin{vmatrix}a_{11}&amp;a_{21}&amp;\cdots &amp;a_{n1}\a_{12}&amp;a_{22}&amp;\cdots&amp;a_{n2}\\cdots&amp;\cdots&amp;&amp;\cdots\a_{1n}&amp;a_{2n}&amp;\cdots&amp;a_{nn}\end{vmatrix}$</p>
+<p>行列式$D^T称为行列式D$的转置行列式。</p>
+<blockquote>
+<p>性质1 行列式与它的转置行列式相等。</p>
+</blockquote>
+<p>$$<br>证：\<br>D&#x3D;det(a_{ij})的转置行列式为D^T&#x3D;det(b_{ij})\<br>即D^T的(i,j)元为b_{ij},则b_{ij}&#x3D;a_{ji}(i,j&#x3D;1,2,\cdots,n),按定义\<br>D^T&#x3D;\sum(-1)^t b_{1p_1}b_{2p_2}\cdots b_{np_n}&#x3D;\sum(-1)^t a_{p_11}a_{p_22}\cdots a_{p_nn}\<br>下证D&#x3D;D^T\<br>对于行列式D的任一项\<br>(-1)^t a_{1p_1}a_{ip_i}\cdots a_{jp_j}\cdots a_{np_n}\<br>其中1\cdots i\cdots j\cdots n为标准排列，t为排列p_1\cdots p_i\cdots p_j\cdots p_n的逆序数，对换元素a_{ip_i}与a_{jp_j}为\<br>(-1)^t a_{1p_1}a_{jp_j}\cdots a_{ip_i}\cdots a_{np_n}\<br>这时，这一项的值不变，而行标排列与列标排列同时做了一次相应的对换。设新的行标排列1\cdots j\cdots i\cdots n的逆序数为r，则r为奇数；\<br>设新的列标排列p_1\cdots p_j\cdots p_i\cdots p_n的逆序数为t_1,则\<br>(-1)^t&#x3D;-(-1)^{t_1}&#x3D;(-1)^r(-1)^{t_1}&#x3D;(-1)^{r+t1}\<br>即对换乘积中两元素的次序，从而行标排列与列标排列同时做了相应的对换，则行标排列与列标排列逆序数之后并不改变奇偶性。\<br>经过一次对换如此，经过多次多换依然如此。于是经过若干次对换，使\<br>列标排列p_1p_2\cdots p_n（逆序数t）变为标准排列（逆序数为0）；行标排列由标准排列变为某个新的排列，设此新的排列为q_1q_2\cdots q_n,其逆序数为s，则\<br>(-1)^t a_{1p_1}a_{2p_2}\cdots a_{np_n}&#x3D;(-1)^s a_{q_11}a_{q_22}\cdots a_{q_nn}\<br>又上式左边乘积的第i个元素a_{ip_i}为a_{ij}那么它必定是乘积的右边第j个元素，即a_{ip_i}&#x3D;a_{ij}&#x3D;a_{q_jj}.\<br>可见排列q_1q_2\cdots q_n由排列p_1p_2\cdots p_n所唯一确定\<br>综上：对于D中任一项(-1)^ta_{1p_1}a_{2p_2}\cdots a_{np_n}，总有且仅有D^T中的某一项(-1)^s a_{q_11}a_{q_22}\cdots a_{q_nn}与之对应且相等；反之亦然\<br>从而D&#x3D;D^T<br>$$</p>
+<p>由此性质可知，行列式中的行与列具有同等的地位，行列式的性质反是对行成立的对列同样也成立，反之亦然。</p>
+<blockquote>
+<p>性质2 对换行列式的两行（列），行列式变号。</p>
+</blockquote>
+<p>$$<br>设行列式D_1&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}\<br>是由行列式D&#x3D;det(a_{ij})对换i,j两行得到的，即当k\not&#x3D;i,j时，b_{kp}&#x3D;a_{kp};当k&#x3D;i,j时，b_{ip}&#x3D;a_{jp},b_{jp}&#x3D;a_{ip}\<br>于是D_1&#x3D;\sum(-1)^t b_{1p_1}\cdots b_{ip_i}\cdots b_{jp_j}\cdots b_{np_n}&#x3D;\<br>\sum(-1)^t a_{1p_1}\cdots a_{jp_i}\cdots a_{ip_j}\cdots a_{np_n}\<br>其中1\cdots i\cdots j\cdots n为标准排列，t为排列p_1\cdots p_i\cdots p_j\cdots p_n的逆序数。\<br>设排列p_1\cdots p_j\cdots p_i\cdots p_n的逆序数为t_1,则\<br>(-1)^{t1}&#x3D;-(-1)^t\<br>\therefore D_1&#x3D;-D<br>$$</p>
+<p>以$r_i$表示行列式的第$i$行，，以$c_i$表示行列式的第$i$列。对换$i,j$两行记作$r_i\leftrightarrow r_j$,对换$i,j$l两列记作$c_i \leftrightarrow c_j$。</p>
+<blockquote>
+<p>推论 如果行列式有两行（列）完全相同，则此行列式等于零。</p>
+</blockquote>
+<p>$$<br>证:\<br>把行列式这两行对换，则D&#x3D;-D\<br>\therefore D&#x3D;0<br>$$</p>
+<blockquote>
+<p>性质3 行列式中某一行（列）中所有的元素都乘同一数k，等于用数k乘此行列式。</p>
+</blockquote>
+<blockquote>
+<p>推论 行列式中某一行（列）的所有元素的公因子可以提到行列式记号的外面。</p>
+</blockquote>
+<blockquote>
+<p>性质4 行列式中如果有两行（列）元素成比例，则此行列式等于零。</p>
+</blockquote>
+<blockquote>
+<p>若行列式的某一行（列）的元素都是两数之和，例如第$i$行的元素都是两数之和：</p>
+<p>$D&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\\vdots&amp;\vdots&amp;&amp;\vdots\a_{i1}+a^{‘}<em>{i1}&amp;a</em>{i2}+a^{‘}<em>{i2}&amp;\cdots&amp;a</em>{in}+a^{‘}<em>{in}\\vdots&amp;\vdots&amp;&amp;\vdots\a</em>{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}\$</p>
+<p>则$D$等于下列两个行列式之和</p>
+<p>$D&#x3D;\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\\vdots&amp;\vdots&amp;&amp;\vdots\a_{i1}&amp;a_{i2}&amp;\cdots&amp;a_{in}\\vdots&amp;\vdots&amp;&amp;\vdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}+\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\\vdots&amp;\vdots&amp;&amp;\vdots\a^{‘}<em>{i1}&amp;a^{‘}</em>{i2}&amp;\cdots&amp;a^{‘}<em>{in}\\vdots&amp;\vdots&amp;&amp;\vdots\a</em>{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}\$</p>
+</blockquote>
+<blockquote>
+<p>性质6 把行列式的某一行（列）的各元素乘同一数然后加到另一行（列）对应的元素上去，行列式不变。</p>
+</blockquote>
+<p>例 $D&#x3D;\begin{vmatrix}3&amp;1&amp;-1&amp;2\-5&amp;1&amp;3&amp;-4\2&amp;0&amp;1&amp;-1\1&amp;-5&amp;3&amp;-3\end{vmatrix}\$<br>$$<br>解：\<br>D\overset{c_1\leftrightarrow c_2}{&#x3D;}-\begin{vmatrix}1&amp;3&amp;-1&amp;2\1&amp;-5&amp;3&amp;-4\0&amp;2&amp;1&amp;-1\-5&amp;1&amp;3&amp;-3\end{vmatrix}\<br>\overset{r_2-r_1,r_4+5r_1}{&#x3D;}-\begin{vmatrix}1&amp;3&amp;-1&amp;2\0&amp;-8&amp;4&amp;-6\0&amp;2&amp;1&amp;-1\0&amp;16&amp;-2&amp;7\end{vmatrix}\<br>\overset{\frac{1}{2}r_2,2r_3}{&#x3D;}-\begin{vmatrix}1&amp;3&amp;-1&amp;2\0&amp;-4&amp;2&amp;-3\0&amp;4&amp;2&amp;-2\0&amp;16&amp;-2&amp;7\end{vmatrix}\<br>\overset{r_3+r_2,r_4+4r_2}{&#x3D;}-\begin{vmatrix}1&amp;3&amp;-1&amp;2\0&amp;-4&amp;2&amp;-3\0&amp;0&amp;4&amp;-5\0&amp;0&amp;6&amp;-5\end{vmatrix}\<br>\overset{c_3\leftrightarrow c_4,r_4-r_3}{&#x3D;}\begin{vmatrix}1&amp;3&amp;2&amp;-1\0&amp;-4&amp;-3&amp;2\0&amp;0&amp;-5&amp;4\0&amp;0&amp;0&amp;2\end{vmatrix}\<br>&#x3D;40<br>$$</p>
+<p>例 计算$\begin{vmatrix}3&amp;1&amp;1&amp;1\1&amp;3&amp;1&amp;1\1&amp;1&amp;3&amp;1\1&amp;1&amp;1&amp;3\end{vmatrix}\$<br>$$<br>解：\<br>D\overset{r_1+r_2+r_3+r_4}{&#x3D;}\begin{vmatrix}6&amp;6&amp;6&amp;6\1&amp;3&amp;1&amp;1\1&amp;1&amp;3&amp;1\1&amp;1&amp;1&amp;3\end{vmatrix}\<br>D\overset{r_1&#x2F;6}{&#x3D;}6\begin{vmatrix}1&amp;1&amp;1&amp;1\1&amp;3&amp;1&amp;1\1&amp;1&amp;3&amp;1\1&amp;1&amp;1&amp;3\end{vmatrix}\<br>D\overset{r_2-r_1,r_3-r_1,r_4-r_1}{&#x3D;}6\begin{vmatrix}1&amp;1&amp;1&amp;1\0&amp;2&amp;0&amp;0\0&amp;0&amp;2&amp;0\0&amp;0&amp;0&amp;2\end{vmatrix}\<br>&#x3D;48<br>$$<br>例9 计算 $D&#x3D;\begin{vmatrix}a&amp;b&amp;c&amp;d\a&amp;a+b&amp;a+b+c&amp;a+b+c+d\a&amp;2a+b&amp;3a+2b+c&amp;4a+3b+2c+d\a&amp;3a+b&amp;6a+3b+c&amp;10a+6b+3c+d\end{vmatrix}\$<br>$$<br>解：\<br>D\overset{r_4-r_3,r_3-r_2,r_2-r_1}{&#x3D;}\begin{vmatrix}a&amp;b&amp;c&amp;d\0&amp;a&amp;a+b&amp;a+b+c\0&amp;a&amp;2a+b&amp;3a+2b+c\0&amp;a&amp;3a+b&amp;6a+3b+c\end{vmatrix}\<br>\overset{r_4-r_3,r_3-r_2}{&#x3D;}\begin{vmatrix}a&amp;b&amp;c&amp;d\0&amp;a&amp;a+b&amp;a+b+c\0&amp;0&amp;a&amp;2a+b\0&amp;0&amp;a&amp;3a+b\end{vmatrix}\<br>\overset{r_4-r_3}{&#x3D;}\begin{vmatrix}a&amp;b&amp;c&amp;d\0&amp;a&amp;a+b&amp;a+b+c\0&amp;0&amp;a&amp;2a+b\0&amp;0&amp;0&amp;a\end{vmatrix}\<br>&#x3D;a^4<br>$$</p>
+<p><strong>注：</strong></p>
+<ol>
+<li>$r_i+r_j与r_j+r_i$的区别。</li>
+<li>$r_i+kr_j$是约定的行列式运算记号，不能写作$kr_j+r_i$</li>
+</ol>
+<blockquote>
+<p>任何n阶行列式总能利用运算$r_i+kr_j$化为上三角行列式或化为下三行列式；同样地，利用运算$c_i+kc_j$也能把行列式化为上三角行列式或下三角行列式。</p>
+</blockquote>
+<p>例10 设</p>
+<p>$D&#x3D;\begin{vmatrix}a_{11}&amp;\cdots&amp;a_{1k}&amp;&amp;&amp;&amp;\\vdots&amp;&amp;\vdots&amp;&amp;0&amp;&amp;\a_{k1}&amp;\cdots&amp;a_{kk}&amp;&amp;&amp;&amp;\c_{11}&amp;\cdots&amp;c_{1k}&amp;b_{11}&amp;\cdots&amp;b_{1n}\\vdots&amp;&amp;\vdots&amp;\vdots&amp;&amp;\vdots\c_{n1}&amp;\cdots&amp;c_{nk}&amp;b_{n1}&amp;\cdots&amp;b_{nn}\end{vmatrix}\$</p>
+<p>$D_1&#x3D;\begin{vmatrix}a_{11}&amp;\cdots&amp;a_{1k}\\vdots&amp;&amp;\vdots\a_{k1}&amp;\cdots&amp;a_{kk}\end{vmatrix}\$</p>
+<p>$D_2&#x3D;\begin{vmatrix}b_{11}&amp;\cdots&amp;b_{1n}\\vdots&amp;&amp;\vdots\b_{n1}&amp;\cdots&amp;b_{nn}\end{vmatrix}\$</p>
+<p>证明：$D&#x3D;D_1D_2$<br>$$<br>证：\<br>对D_1做运算r_i+kr_j,把D_1化为下三角行列式，设为：\<br>D_1&#x3D;\begin{vmatrix}p_{11}&amp;&amp;0\\vdots&amp;\ddots&amp;\p_{k1}&amp;\cdots&amp;p_{kk}\end{vmatrix}&#x3D;p_{11}\cdots p_{kk}\<br>对D_2做运算c_i+kc_j,把D_2化为下三角行列式，设为：\<br>D_2&#x3D;\begin{vmatrix}q_{11}&amp;&amp;0\\vdots&amp;\ddots&amp;\q_{n1}&amp;\cdots&amp;q_{nn}\end{vmatrix}&#x3D;q_{11}\cdots q_{nn}\<br>于是对D的前k行做r_i+kr_j,在对后n列做运算c_i+kc_j,把D化为下三角行列式\<br>D&#x3D;\begin{vmatrix}p_{11}&amp;&amp;&amp;&amp;&amp;&amp;\\vdots&amp;\ddots&amp;&amp;&amp;0&amp;&amp;\p_{k1}&amp;\cdots&amp;p_{kk}&amp;&amp;&amp;&amp;\c_{11}&amp;\cdots&amp;c_{1k}&amp;q_{11}&amp;&amp;\\vdots&amp;&amp;\vdots&amp;\vdots&amp;\ddots&amp;\c_{n1}&amp;\cdots&amp;c_{nk}&amp;q_{n1}&amp;\cdots&amp;q_{nn}\end{vmatrix}\<br>\therefore D&#x3D;p_{11}\cdots p_{kk}q_{11}\cdots q_{nn}&#x3D;D_1D_2<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.工程数学.线性代数 第6版 [M].北京:高等教育出版社,2014.6.p8-14.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济六版《线性代数》全程教学视频</a>[CP&#x2F;OL].2020-02-07.p4.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdb9qsu0004vl1obig9b142" data-title="0104行列式的性质-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0201线性方程组和矩阵-矩阵及其运算-线性代数
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/03/18/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0105%E8%A1%8C%E5%88%97%E5%BC%8F%E6%8C%89%E8%A1%8C(%E5%88%97)%E5%B1%95%E5%BC%80-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0105行列式按行(列)展开-行列式-线性代数</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

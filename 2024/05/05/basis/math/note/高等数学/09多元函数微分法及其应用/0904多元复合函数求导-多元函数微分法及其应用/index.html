@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0904多元复合函数求导-多元函数微分法及其应用 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1 复习一元函数复合函数求导$$y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)$$ 注：  复合关系图：$\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0904多元复合函数求导-多元函数微分法及其应用">
+<meta property="og:url" content="http://example.com/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1 复习一元函数复合函数求导$$y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)$$ 注：  复合关系图：$\">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Users/gaogzhen/baiduSyncdisk/study/math/note/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/images/202403021539_unary-composite-func.drawio.png">
+<meta property="og:image" content="http://example.com/Users/gaogzhen/baiduSyncdisk/study/math/note/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/images/202403021607-binary_func.drawio.png">
+<meta property="og:image" content="http://example.com/Users/gaogzhen/baiduSyncdisk/study/math/note/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/images/202403021623-binary_fun_special.drawio.png">
+<meta property="article:published_time" content="2024-05-05T15:31:51.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.233Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Users/gaogzhen/baiduSyncdisk/study/math/note/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/images/202403021539_unary-composite-func.drawio.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/09多元函数微分法及其应用/0904多元复合函数求导-多元函数微分法及其应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2024-05-05T15:31:51.000Z" itemprop="datePublished">2024-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0904多元复合函数求导-多元函数微分法及其应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-复习一元函数复合函数求导"><a href="#1-复习一元函数复合函数求导" class="headerlink" title="1 复习一元函数复合函数求导"></a>1 复习一元函数复合函数求导</h2><p>$$<br>y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\<br>\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)<br>$$</p>
+<p><strong>注：</strong></p>
+<ol>
+<li>复合关系图：$\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;\frac{dy}{dx}\hskip1em x\rightarrow u\rightarrow y$</li>
+</ol>
+<h2 id="2-一元函数与多元函数复合的情形"><a href="#2-一元函数与多元函数复合的情形" class="headerlink" title="2 一元函数与多元函数复合的情形"></a>2 一元函数与多元函数复合的情形</h2><blockquote>
+<p>定理1 如果函数$u&#x3D;\phi(t)及v&#x3D;\psi(t)$都在点t处可导，函数$z&#x3D;f(u,v)$在对应点$(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(t),\psi(t)]在点t$可导，且有</p>
+<p>$\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}$</p>
+</blockquote>
+<p>$$<br>设t获得增量\Delta t,此时u&#x3D;\phi(t),v&#x3D;\psi(t)获得增量\Delta u,\Delta v\<br>由此z&#x3D;f(u,v)相应获得增量\Delta z\<br>函数z&#x3D;f(u,v)在点(u,v)具有连续偏导，\<br>\Delta z&#x3D;\frac{\partial z}{\partial u}\Delta u+\frac{\partial v}{\partial v}\Delta v +\epsilon_1\Delta u+\epsilon_2\Delta v\<br>当\Delta u\to 0,\Delta v\to 0时，\epsilon_1\to0,\epsilon_2\to0\<br>上式两边各除以\Delta t，得\<br>\frac{\Delta z}{\Delta t}&#x3D;\frac{\partial z}{\partial u}\frac{\Delta u}{\Delta t}+\frac{\partial z}{\partial v}\frac{\Delta v}{\Delta t}+\epsilon_1\frac{\Delta u}{\Delta t}+\epsilon_2\frac{\Delta v}{\Delta t}\<br>\because 当\Delta \to0,\Delta u\to0,\Delta v\to0,\frac{\Delta u}{\Delta t}\to\frac{du}{dt},\frac{\Delta v}{\Delta t}&#x3D;\frac{dv}{dt}\<br>\therefore \lim\limits_{\Delta t\to0}{\frac{\Delta z}{\Delta t}}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}<br>$$</p>
+<p><strong>注：</strong></p>
+<ol>
+<li>$\frac{dz}{dt}称为全导数$</li>
+<li>复合关系图<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021539_unary-composite-func.drawio-800w.webp 800w, opt-images/202403021539_unary-composite-func.drawio-1280w.webp 1280w, opt-images/202403021539_unary-composite-func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021539_unary-composite-func.drawio-optimized.png" alt="202403021539_unary-composite-func.drawio" width="400" height="361" loading="lazy"></picture></li>
+</ol>
+<p>例1 $z&#x3D;u^2e^v,u&#x3D;\sin t,v&#x3D;e^t，求\frac{dz}{dt}$<br>$$<br>解：\<br>\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}\<br>&#x3D;2\sin t\cdot e^{e^t}\cos t+(\sin t)^2\cdot e^{e^t}\cdot e^t\<br>&#x3D;\sin t e^{e^t}(2\cos t+\sin t e^{t})<br>$$</p>
+<h2 id="3-多元函数与多元函数复合的情形"><a href="#3-多元函数与多元函数复合的情形" class="headerlink" title="3 多元函数与多元函数复合的情形"></a>3 多元函数与多元函数复合的情形</h2><blockquote>
+<p>定理2 如果函数$u&#x3D;\phi(x,y)及v&#x3D;\psi(x,y)都在点(x,y)$具有对x及对y的偏导数，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]在点(x,y)$的连个偏导数都存在，且有<br>$$<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y} \<br>$$</p>
+</blockquote>
+<p><strong>注：</strong></p>
+<ol>
+<li>复合关系图：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021607-binary_func.drawio-800w.webp 800w, opt-images/202403021607-binary_func.drawio-1280w.webp 1280w, opt-images/202403021607-binary_func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021607-binary_func.drawio-optimized.png" alt="202403021607-binary_func.drawio" width="480" height="421" loading="lazy"></picture></li>
+</ol>
+<p>例3  $z&#x3D;e^u\sin v,u&#x3D;xy,v&#x3D;x+y,求\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}$<br>$$<br>解：\<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;e^{xy}\sin(x+y)y+e^{xy}\cos(x+y)(1+y)\<br>$$</p>
+<h2 id="4-其他情形"><a href="#4-其他情形" class="headerlink" title="4 其他情形"></a>4 其他情形</h2><blockquote>
+<p>定理3 如果函数$u&#x3D;\phi(x,y)在点(x,y)$具有对x及对y的偏导数，函数$v&#x3D;\psi(y)在点y$具有对点y可导，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(y)]在点(x,y)$的两个偏导数存在，且有</p>
+<p>$\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{d v}{d y} \$</p>
+</blockquote>
+<p><strong>注：</strong></p>
+<ol>
+<li><p>复合关系图：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021623-binary_fun_special.drawio-800w.webp 800w, opt-images/202403021623-binary_fun_special.drawio-1280w.webp 1280w, opt-images/202403021623-binary_fun_special.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021623-binary_fun_special.drawio-optimized.png" alt="202403021623-binary_fun_special.drawio" width="450" height="421" loading="lazy"></picture></p>
+</li>
+<li><p>推广：复合函数的某些中间变量又是复合函数的自变量，比如$z&#x3D;f(u,x,y)，u&#x3D;\phi(x,y)$<br>$$<br>令v&#x3D;x,w&#x3D;y，则\<br>\frac{\partial v}{\partial x}&#x3D;1，\frac{\partial v}{\partial y}&#x3D;0\<br>\frac{\partial w}{\partial x}&#x3D;0,\frac{\partial w}{\partial y}&#x3D;1 \<br>则 \frac{\partial z}{\partial x}&#x3D;\frac{\partial f}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial f}{\partial x}\<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial f}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial f}{\partial y}<br>$$</p>
+</li>
+</ol>
+<p>例5 $u&#x3D;f(x,y,z)&#x3D;e^{x^2+y^2+z^2},z&#x3D;x^2\sin y$<br>$$<br>\frac{\partial u}{\partial x}&#x3D;\frac{\partial f}{\partial x}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial x}\<br>&#x3D;e^{x^2+y^2+(x^2\sin y)^2}2x+e^{x^2+y^2+(x^2\sin y)^2}2x^2\sin y2x\sin y\<br>&#x3D;2xe^{x^2+y^2+x^4\sin^2y}(1+2x^2\sin^2y)\<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial f}{\partial y}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial y}\<br>&#x3D;2(y+x^4\sin y\cos y)e^{x^2+y^2+x^4\sin^2 y}<br>$$</p>
+<h2 id="5-抽象复合函数求导"><a href="#5-抽象复合函数求导" class="headerlink" title="5 抽象复合函数求导"></a>5 抽象复合函数求导</h2><p>为了写法和计算的f方便，引入记号<br>$$<br>f(u,v):\<br>\begin{cases}<br>f{‘}_u\rightarrow f^{‘}_1,f^{‘}_v\rightarrow f^{‘}_2\<br>f{‘}_u{‘}_u\rightarrow f^{‘}<em>1{‘}<em>1,f^{‘}<em>u{‘}<em>v\rightarrow f^{‘}<em>1{‘}<em>2\<br>\end{cases}<br>$$<br>例7 $w&#x3D;f(x+y+z,xyz),f具有二阶连续偏导数，求\frac{\partial w}{\partial x},\frac{\partial^2 w}{\partial x\partial z}$<br>$$<br>解：\<br>令u&#x3D;x+y+z,v&#x3D;xyz\<br>\frac{\partial w}{\partial x}&#x3D;\frac{\partial w}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial w}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;f^{‘}<em>1+yzf{‘}<em>2\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;\frac{\partial f^{‘}<em>1}{\partial z}+yf^{‘}<em>2+yz\frac{\partial f^{‘}<em>2}{\partial z}\<br>\frac{\partial f_u}{\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}\<br>\frac{\partial f_v}{\partial z}&#x3D;f</em>{vu}+xyf</em>{vv}\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}+yf_v+yz(f</em>{vu}+xyf</em>{vv})\<br>&#x3D;f</em>{uu}+y(x+z)f</em>{uv}+xy^2zf</em>{vv}+yf_v<br>$$</p>
+<h2 id="6-全微分不变性"><a href="#6-全微分不变性" class="headerlink" title="6 全微分不变性"></a>6 全微分不变性</h2><blockquote>
+<p>设函数$z&#x3D;f(u,v)具有连续偏导数$，则有全微分</p>
+<p>$dz&#x3D;\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv$</p>
+<p>如果$u&#x3D;\phi(x,y),v&#x3D;\psi(x,y)$,且两个函数具有连续偏导数 ，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]$的全微分</p>
+<p>$dz&#x3D;\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy$</p>
+</blockquote>
+<p>$$<br>dz&#x3D;(\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x})dx+(\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y})dy\<br>&#x3D;\frac{\partial z}{\partial u}(\frac{\partial u}{\partial x}dx+\frac{\partial u}{\partial y}dy)+\frac{\partial z}{\partial v}(\frac{\partial u}{\partial x}dx+\frac{\partial v}{\partial y}dy)<br>&#x3D;\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv<br>$$</p>
+<blockquote>
+<p>由此可见无论u和v是自变量还中间变量，函数$z&#x3D;f(u,v)$的全微分形式都是一样的。这个性质叫做全微分形式不变性。</p>
+</blockquote>
+<p>例8 $z&#x3D;f(x^2-y^2,e^{xy}),求dz$<br>$$<br>解：\<br>令u&#x3D;x^2-y^2,v&#x3D;e^{xy}<br>dz&#x3D;df(u,v)&#x3D;f_udu+f_vdv\<br>&#x3D;f_ud(x^2-y^2)+f_v(e^{xy})\<br>&#x3D;f_u(2xdx-2ydy)+f_v(ye^{xy}dx+xe^{xy}dy)\<br>&#x3D;(2xf_u+ye^{xy}f_v)dx+(xe^{xy}v_v-2yf_u)dy<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p78-84.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p67.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmdb9qto001uvl1o0n7z87ve" data-title="0904多元复合函数求导-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/05/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/130101-%E4%B9%A0%E9%A2%981_1-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          130101-习题1_1-课后习题-高等数学
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

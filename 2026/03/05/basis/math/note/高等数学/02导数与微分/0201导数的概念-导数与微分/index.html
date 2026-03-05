@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0201导数的概念-导数与微分 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1 导数的定义 设函数$y&#x3D;f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0201导数的概念-导数与微分">
+<meta property="og:url" content="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1 导数的定义 设函数$y&#x3D;f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\t">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89.bmp">
+<meta property="article:published_time" content="2026-03-05T17:01:19.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.196Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89.bmp">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/02导数与微分/0201导数的概念-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0201导数的概念-导数与微分
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-导数的定义"><a href="#1-导数的定义" class="headerlink" title="1 导数的定义"></a>1 导数的定义</h2><blockquote>
+<p>设函数$y&#x3D;f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\to0$时的极限存在，那么称函数$y&#x3D;f(x)在点x_0$处可导，并称这个极限为函数$y&#x3D;f(x)在点x_0$处的导数，记做$f^{‘}(x_0)$,即</p>
+<p>$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$</p>
+<p>也可记做$y^{‘}|<em>{x&#x3D;x_0},\frac{dy}{dx}|</em>{x&#x3D;x_0},\frac{df(x)}{dx}|_{x&#x3D;x_0}$</p>
+</blockquote>
+<ul>
+<li>注<ol>
+<li>导数定义是严格的形式：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}},x_0一致，\triangle x一致$,<ul>
+<li>示例：$f^{‘}(1)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(1+\triangle x)-f(1)}{\triangle x}}$</li>
+<li>示例：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+2\triangle x)-f(x_0)}{2\triangle x}},增量2\triangle$</li>
+</ul>
+</li>
+<li>等价变形$f^{‘}(x_0)&#x3D;\lim\limits_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}}$</li>
+<li>实例：<ol>
+<li>物体的位移函数$s&#x3D;f(t)$在$t_0$时刻的瞬时速度：$v(t_0)&#x3D;f^{‘}(t_0)$</li>
+<li>曲线$y&#x3D;f(x)在点(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</li>
+</ol>
+</li>
+<li>$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$极限不存在,函数在点$x_0$处不可导<ol>
+<li>特殊$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}&#x3D;\infty$函数极限仍然是不存在的</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>如果函数$f(x)在开区间I$内处处可导，那么称函数$y&#x3D;f(x)在开区间I内$可导，对于$\forall\in I$,都对应这$f(x)$的一个确定的导数值，这样构成的函数叫做原函数$y&#x3D;f(x)$的导函数,记做$y^{‘},\frac{dy}{dx},\frac{df(x)}{dx}$</p>
+</blockquote>
+<ul>
+<li>注<ul>
+<li>求某一点的导数值可先求原函数的导函数，带入求某一点的导数值即函数在某点的导数值等于其导函数在该点的函数值。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-常见函数的导数-导函数"><a href="#2-常见函数的导数-导函数" class="headerlink" title="2 常见函数的导数(导函数)"></a>2 常见函数的导数(导函数)</h2><p>例1 求函数$f(x)&#x3D;C(C为常数)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{(C-C)}{h}}&#x3D;0<br>$$</p>
+<blockquote>
+<p>常数的导数等于零。</p>
+</blockquote>
+<p>例2：求幂函数$f(x)&#x3D;x^\mu(\mu\in R)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{(x+h)^\mu-x^\mu}{h}}\<br>&#x3D;x^{\mu-1}\lim\limits_{h\to0}{\frac{(1+\frac{h}{x})^\mu-1}{\frac{h}{x}}}&#x3D;\mu x^{\mu-1}<br>$$</p>
+<p>例3：求函数$f(x)&#x3D;\sin x$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\sin(x+h)-sin(x)}{h}}&#x3D; \<br>\lim\limits_{h\to0}{\frac{2\sin(\frac{h}{2})\cos(\frac{2x+h}{2})}{h}}&#x3D;\cos x<br>$$</p>
+<blockquote>
+<p>$(\cos x)^{‘}&#x3D;-\sin x$</p>
+</blockquote>
+<p>例4：求函数$f(x)&#x3D;a^x(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{a^{x+h}-a^x}{h}}&#x3D; \<br>a^x\lim\limits_{h\to0}{\frac{a^h-1}{h}}&#x3D;a^x\ln a<br>$$<br>例5：求函数$f(x)&#x3D;\log_ax(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\log_a(x+h)-\log_a(x)}{h}} \<br>&#x3D;\frac{1}{x}\lim\limits_{h\to0}{\frac{\log_a(1+\frac{h}{x})}{\frac{h}{x}}}&#x3D;\frac{1}{x\ln a}<br>$$<br>例6：已知$f^{‘}(x_0)$存在，则$\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}}&#x3D;？$<br>$$<br>解：\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}} \<br>&#x3D;3\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0)}{3\triangle x}} + \lim\limits_{\triangle x\to0}{\frac{f(x_0-\triangle x)-f(x_0)}{-\triangle x}}\<br>&#x3D;3f^{‘}(x_0)+f^{‘}(x_0)&#x3D;4f^{‘}(x_0)<br>$$</p>
+<h2 id="3-单侧导数"><a href="#3-单侧导数" class="headerlink" title="3 单侧导数"></a>3 单侧导数</h2><blockquote>
+<p>若$\lim\limits_{h\to0^-}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的左导数，记做$f_-^{‘}(x_0)$；若$\lim\limits_{h\to0^+}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的右导数导数,记做$f_+^{‘}(x_0)$。</p>
+<p>函数$f(x)在点x_0$可导的充分必要条件是左导数$f_-^{‘}(x_0)$和右导数$f_+^{‘}(x_0)$存在且相等。</p>
+<p>左导数和右导数统称为单侧导数。</p>
+<p>如果函数$(x)$在开区间$(a,b)$内可导，且$f_+^{‘}(a)$及$f_-^{‘}(b)$都存在，那么说函数$f(x)$在闭区间$[a,b]$内可导。</p>
+</blockquote>
+<p>例7:<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>\frac{2}{3}x^3,x\le1 \<br>x^2,\quad x\gt1<br>\end{cases}<br>，f(x)在x&#x3D;1处是否可导？<br>$$</p>
+<p>$$<br>解：分段函数在某点是否可导，分别求左右导数。\<br>f_-^{‘}(1)&#x3D; 3x^2|<em>{x&#x3D;1}&#x3D;2,f</em>+^{‘}(1)&#x3D; 2x|<em>{x&#x3D;1}&#x3D;2 , \<br>f</em>-^{‘}(1)&#x3D;f_+^{‘}(1) 所以f(x)在点x&#x3D;1处可导？ \<br>那我们按左导数和右导数定义计算 \<br>f_-^{‘}(1)&#x3D;\lim\limits_{x\to1^-}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{\frac{2}{3}x^3-\frac{2}{3}}{x-1}}&#x3D;2 \<br>f_+^{‘}(1)&#x3D;\lim\limits_{x\to1^+}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{x^2-\frac{2}{3}}{x-1}}&#x3D;\infty \<br>所以f(x)在x&#x3D;1处导数不存在。<br>$$</p>
+<ul>
+<li>注：<strong>判断分段函数在分界点出是否可导要根据定义分别计算左导数和右导数</strong></li>
+</ul>
+<h2 id="4-导数的几何意义"><a href="#4-导数的几何意义" class="headerlink" title="4 导数的几何意义"></a>4 导数的几何意义</h2><blockquote>
+<p>曲线$y&#x3D;f(x)在(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</p>
+<p>切线方程：$y-f(x_0)&#x3D;f^{‘}(x_0)(x-x_0)$</p>
+<p>过切点M$(x_0,y_0)$且与切线垂直的直线叫做曲线$y&#x3D;f(x)$在点M出的法线。</p>
+<p>法线方程：$y-f(x_0)&#x3D;\frac{1}{f^{‘}(x_0)}(x-x_0)$</p>
+</blockquote>
+<p>切线和法线示意图如下4-1所示：<img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89.bmp" alt="0201导数的概念-导数与微分-导数的几何意义"></p>
+<h2 id="5-可导和连续的关系"><a href="#5-可导和连续的关系" class="headerlink" title="5 可导和连续的关系"></a>5 可导和连续的关系</h2><blockquote>
+<p>可导必连续，但是连续不一定可导。</p>
+</blockquote>
+<p>$$<br>证明：可导必连续 \<br>\lim\limits_{\triangle x\to 0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>\frac{\triangle y}{\triangle x}&#x3D;f^{‘}(x_0)+\alpha ,其中\lim\limits_{\triangle x\to 0}{\alpha}&#x3D;0 \<br>则\triangle y&#x3D;f^{‘}(x_0)\triangle x + \alpha\triangle x,那么当\triangle x\to时，\triangle y \to0<br>\所以函数y&#x3D;f(x)连续<br>$$</p>
+<h2 id="6-后记"><a href="#6-后记" class="headerlink" title="6 后记"></a>6 后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P73~p82.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p13.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmdb9qt0000cvl1odot8gn7j" data-title="0201导数的概念-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0202矩阵的运算-矩阵及其运算-线性代数 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 一、矩阵的加法 定义2	设有两个$m\times n$橘子$A&#x3D;(a_{ij})和B&#x3D;(b_{ij})$,那么矩阵A与B的和记为A+B,规定为$$A+B&#x3D;\begin{pmatrix}a_{11}+b_{11}&amp;a_{12}+b_{12}&amp;\cdots&amp;a_{1n}+b_{1n}\a_{21}+b_{21}&amp;a_{22}+b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0202矩阵的运算-矩阵及其运算-线性代数">
+<meta property="og:url" content="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 一、矩阵的加法 定义2	设有两个$m\times n$橘子$A&#x3D;(a_{ij})和B&#x3D;(b_{ij})$,那么矩阵A与B的和记为A+B,规定为$$A+B&#x3D;\begin{pmatrix}a_{11}+b_{11}&amp;a_{12}+b_{12}&amp;\cdots&amp;a_{1n}+b_{1n}\a_{21}+b_{21}&amp;a_{22}+b">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-26T18:08:17.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.192Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/线性代数/02矩阵及其运算/0202矩阵的运算-矩阵及其运算-线性代数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2024-03-26T18:08:17.000Z" itemprop="datePublished">2024-03-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0202矩阵的运算-矩阵及其运算-线性代数
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="一、矩阵的加法"><a href="#一、矩阵的加法" class="headerlink" title="一、矩阵的加法"></a>一、矩阵的加法</h2><blockquote>
+<p>定义2	设有两个$m\times n$橘子$A&#x3D;(a_{ij})和B&#x3D;(b_{ij})$,那么矩阵A与B的和记为A+B,规定为<br>$$<br>A+B&#x3D;\begin{pmatrix}<br>a_{11}+b_{11}&amp;a_{12}+b_{12}&amp;\cdots&amp;a_{1n}+b_{1n}\<br>a_{21}+b_{21}&amp;a_{22}+b_{22}&amp;\cdots&amp;a_{2n}+b_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_{m1}+b_{m1}&amp;a_{m2}+b_{m2}&amp;\cdots&amp;a_{mn}+b_{mn}\<br>\end{pmatrix}<br>$$</p>
+</blockquote>
+<p>**tips:**只有当两个矩阵是同型矩阵时，这两个矩阵才能进行加法运算。</p>
+<p>矩阵加法满足下列运算规律（设A，B，C都是$m\times n$矩阵）：</p>
+<ul>
+<li>$A+B&#x3D;B+A$</li>
+<li>$(A+B)+C&#x3D;A+(B+C)$</li>
+</ul>
+<p>设矩阵$A&#x3D;(a_{ij})$，记</p>
+<p>$-A&#x3D;(-a_{ij})$</p>
+<p>-A称为矩阵A的负矩阵，显示有</p>
+<p>$A+(-A)&#x3D;O$</p>
+<blockquote>
+<p>矩阵的减法为</p>
+<p>$A-B&#x3D;A+(-B)$</p>
+</blockquote>
+<h2 id="二、数与矩阵相乘"><a href="#二、数与矩阵相乘" class="headerlink" title="二、数与矩阵相乘"></a>二、数与矩阵相乘</h2><blockquote>
+<p>定义3	数$\lambda$与矩阵A的乘积记作$\lambda A或A\lambda$,规定为<br>$$<br>\lambda A&#x3D;A\lambda&#x3D;\begin{pmatrix}<br>\lambda a_{11}&amp;\lambda a_{12}&amp;\cdots&amp;\lambda a_{1n}\<br>\lambda a_{21}&amp;\lambda a_{22}&amp;\cdots&amp;\lambda a_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>\lambda a_{m1}&amp;\lambda a_{m2}&amp;\cdots&amp;\lambda a_{mn}\<br>\end{pmatrix}<br>$$</p>
+</blockquote>
+<p>数乘矩阵满足下列运算规律（设A、B为$m\times n$矩阵，$\lambda、\mu$为数）：</p>
+<ul>
+<li>$(\lambda\mu)A&#x3D;\lambda(\mu A)$</li>
+<li>$(\lambda+\mu)A&#x3D;\lambda A+\mu A$</li>
+<li>$\lambda(A+B)&#x3D;\lambda A+\lambda B$</li>
+</ul>
+<p>矩阵加法和数乘矩阵统称为矩阵的线性运算。</p>
+<h2 id="三、矩阵与矩阵相乘"><a href="#三、矩阵与矩阵相乘" class="headerlink" title="三、矩阵与矩阵相乘"></a>三、矩阵与矩阵相乘</h2><blockquote>
+<p>定义4	设$A&#x3D;(a_{ij})是一个m\times s$的矩阵,$B&#x3D;(b_{ij})是一个s\times n$的矩阵，那么规定矩阵A与矩阵B的乘积是一个$m\times n$矩阵$C&#x3D;(c_{ij})$，其中</p>
+<p>$c_{ij}&#x3D;a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{is}b_{sj}&#x3D;\sum_{k&#x3D;1}^na_{ik}b_{jk},(i&#x3D;1,2,\cdots,m;j&#x3D;1,2,\cdots,n)$</p>
+<p>并把此乘积记作</p>
+<p>$C&#x3D;AB$</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li>乘积矩阵$AB&#x3D;C的(i,j)元c_{ij}$就是A的第$i$行和B的第$j$列的乘积。</li>
+<li>只有当第一个矩阵的（左矩阵）的列数等于第二个矩阵的（右矩阵）的行数时，两个矩阵才能相乘。</li>
+</ul>
+<p>例5 求矩阵<br>$$<br>A&#x3D;\begin{pmatrix}<br>4&amp;-1&amp;2&amp;1\<br>1&amp;1&amp;0&amp;3\<br>0&amp;3&amp;1&amp;4\<br>\end{pmatrix}<br>与B&#x3D;\begin{pmatrix}<br>1&amp;2\<br>0&amp;1\<br>3&amp;0\<br>-1&amp;2\<br>\end{pmatrix}<br>$$<br>的乘积<br>$$<br>C&#x3D;AB&#x3D;\begin{pmatrix}<br>4+0+6-1&amp;8-1+0+2\<br>1+0+0-3&amp;2+1+0+6\<br>0+0+3-4&amp;0+3+0+8\<br>\end{pmatrix}\<br>&#x3D;C&#x3D;AB&#x3D;\begin{pmatrix}<br>9&amp;9\<br>-2&amp;9\<br>-1&amp;11\<br>\end{pmatrix}<br>$$<br>例6 求矩阵<br>$$<br>A&#x3D;\begin{pmatrix}<br>-2&amp;4\<br>1&amp;-2<br>\end{pmatrix}<br>与B&#x3D;\begin{pmatrix}<br>2&amp;4\<br>-3&amp;-6<br>\end{pmatrix}<br>$$<br>的乘积AB级BA<br>$$<br>AB&#x3D;\begin{pmatrix}<br>-16&amp;-32\<br>8&amp;16\<br>\end{pmatrix}\<br>BA&#x3D;\begin{pmatrix}<br>0&amp;0\<br>0&amp;0\<br>\end{pmatrix}\<br>$$<br><strong>tips:</strong></p>
+<ul>
+<li>$AB$有意思，但是$BA$不一定有意义；若$BA$有意义，但AB与BA不一定相等。</li>
+<li>对于n阶方阵A、B，若AB&#x3D;BA,则称方阵A与B可交换。</li>
+<li>若两个矩阵A、B满足$AB&#x3D;O$，不能得出$A&#x3D;O或B&#x3D;O$；若$A\not&#x3D;O$而$A(X-Y)&#x3D;O$,不能得出$X&#x3D;Y$的结论。</li>
+</ul>
+<p>矩阵的乘法虽不满足交换律，但仍满足下列结合律和分配律（假设运算都是可行的）：</p>
+<ul>
+<li>$(AB)C&#x3D;A(BC)$</li>
+<li>$\lambda(AB)&#x3D;(\lambda A)B&#x3D;A(\lambda B)$</li>
+<li>$A(B+C)&#x3D;AB+AC,(B+C)A&#x3D;BA+CA$</li>
+</ul>
+<p>对于单位矩阵E，容易验证</p>
+<p>$E_MA_{m\times n}&#x3D;A_{m\times n},A_{m\times n}E_n&#x3D;A_{m\times n}$</p>
+<p>或简写EA&#x3D;AE&#x3D;A</p>
+<p>矩阵<br>$$<br>\begin{pmatrix}<br>\lambda&amp;&amp;&amp;\<br>&amp;\lambda&amp;&amp;\<br>&amp;&amp;\ddots&amp;\<br>&amp;&amp;&amp;\lambda\<br>\end{pmatrix}<br>$$<br>称为纯量阵。由$(\lambda E)A&#x3D;\lambda A,A(\lambda E)&#x3D;\lambda A$，可知纯量阵$\lambda E与矩阵A$的乘积等于数$\lambda$与A的乘积，当A位n阶方阵时，有</p>
+<p>$(\lambda E)A_n&#x3D;\lambda A_n&#x3D;A_n(\lambda E)$</p>
+<p>表名纯量阵$\lambda E$与任何同阶方阵都是可交换的。</p>
+<blockquote>
+<p>矩阵的幂：设A是n阶方阵，定义$A^1&#x3D;A,A^2&#x3D;A^1A^1,\cdots,A^{k+1}&#x3D;A^kA^1$</p>
+<p>其中$k$为正整数。</p>
+</blockquote>
+<p>矩阵的幂满足以下运算规律</p>
+<ul>
+<li>$A^KA^l&#x3D;A^{k+l},(A^k)^l&#x3D;A^{kl}$</li>
+</ul>
+<p>当<strong>矩阵A与B可交换</strong>时，满足下列运算规律</p>
+<ul>
+<li>$(AB)^k&#x3D;A^kB^k$</li>
+<li>$(A+B)^2&#x3D;A^2+2AB+B^2$</li>
+<li>$(A+B)(A-B)&#x3D;A^2-B^2$</li>
+</ul>
+<p>例7 上阶例1中n元线性方程组(1)<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&#x3D;b_1,\<br>a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&#x3D;b_1,\<br>\cdots\cdots\cdots\<br>a_{m}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&#x3D;b_1,\<br>\end{cases}<br>$$<br>利用矩阵乘法可写成矩阵形式</p>
+<p>$A_{m\times n}x_{n\times 1}&#x3D;b_{m\times 1}$</p>
+<p>其中$A&#x3D;(a_{ij})$为系数矩阵，$x&#x3D;\begin{pmatrix}x_1\x_2\\vdots\x_n\end{pmatrix}$为未知数矩阵，$b&#x3D;\begin{pmatrix}b_1\b_2\\vdots\b_m\end{pmatrix}$为常数项矩阵。特别当b&#x3D;O时，得到吗哥方程的n元齐次线性方程组的矩阵形式</p>
+<p>$A_{m\times n}x_{n\times 1}&#x3D;0_{m\times 1}$</p>
+<h2 id="四、矩阵的转置"><a href="#四、矩阵的转置" class="headerlink" title="四、矩阵的转置"></a>四、矩阵的转置</h2><blockquote>
+<p>定义5	把矩阵A的行换成同序列的列得到一个新的矩阵，叫做A的转置矩阵，记作$A^T$.</p>
+</blockquote>
+<p>矩阵的转置也是一种运算，满足下列运算过滤（假设运算都是可行的）：</p>
+<ul>
+<li>$(A^T)^T&#x3D;A$</li>
+<li>$(A+B)^T&#x3D;A^T+B^T$</li>
+<li>$(\lambda A)^T&#x3D;\lambda A^T$</li>
+<li>$(AB)^T&#x3D;B^TA^T$</li>
+</ul>
+<p>例8 已知<br>$$<br>A&#x3D;\begin{pmatrix}<br>2&amp;0&amp;-1\<br>1&amp;3&amp;2\<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>1&amp;7&amp;-1\<br>4&amp;2&amp;3\<br>2&amp;0&amp;1\<br>\end{pmatrix}\<br>$$<br>求$(AB)^T$<br>$$<br>AB&#x3D;A&#x3D;\begin{pmatrix}<br>0&amp;14&amp;-3\<br>17&amp;13&amp;10\<br>\end{pmatrix}\<br>(AB)^T&#x3D;\begin{pmatrix}<br>0&amp;17\<br>14&amp;13\<br>-3&amp;10\<br>\end{pmatrix}<br>$$</p>
+<h2 id="五、方阵的行列式"><a href="#五、方阵的行列式" class="headerlink" title="五、方阵的行列式"></a>五、方阵的行列式</h2><blockquote>
+<p>定义6	有n阶方阵A的元素所构成的行列式（各元素的位置不变），称为方程A的行列式，记作$det A或者\vert A\vert$</p>
+</blockquote>
+<p>有A确定$\vert A\vert$的这个运算满足下述运算规律（设A、B位n阶方阵，$\lambda $为数:</p>
+<ol>
+<li>$\vert A^T\vert &#x3D; \vert A\vert$</li>
+<li>$|\lambda A\vert &#x3D; \lambda^n \vert A\vert$</li>
+<li>$\vert AB\vert &#x3D; \vert A\vert \vert B\vert $</li>
+</ol>
+<p><strong>伴随矩阵：</strong></p>
+<p>行列式$\vert A\vert$的各个元素的代数余子式$A_{ij}$所构成的如下的矩阵<br>$$<br>A^*&#x3D;\begin{pmatrix}<br>A_{11}&amp;A_{21}&amp;\cdots&amp;A_{n1}\<br>A_{12}&amp;A_{22}&amp;\cdots&amp;A_{n2}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>A_{1n}&amp;A_{2n}&amp;\cdots&amp;A_{nn}\<br>\end{pmatrix}<br>$$<br>称为矩阵A的伴随矩阵，简称伴随阵。</p>
+<p>$AA^*&#x3D;A^*A&#x3D;\vert A\vert E$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.工程数学.线性代数 第6版 [M].北京:高等教育出版社,2014.6.p29-39.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济六版《线性代数》全程教学视频</a>[CP&#x2F;OL].2020-02-07.p9.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdb9qsw0007vl1o02tx60ec" data-title="0202矩阵的运算-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0203逆矩阵-矩阵及其运算-线性代数
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0201线性方程组和矩阵-矩阵及其运算-线性代数</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

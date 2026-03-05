@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0102映射-映射与函数-函数与极限 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1、映射的概念     设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。   记做$$f:X\rightarrow Y$$      元素x称为元素y（在映射f下）的一个原像,集合X称为映射f的定义域；X中所有元素的像所组成的集合称为映射f的值域。   定义域，记做$D_f$即$D_f$&amp;#x3D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0102映射-映射与函数-函数与极限">
+<meta property="og:url" content="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1、映射的概念     设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。   记做$$f:X\rightarrow Y$$      元素x称为元素y（在映射f下）的一个原像,集合X称为映射f的定义域；X中所有元素的像所组成的集合称为映射f的值域。   定义域，记做$D_f$即$D_f$&amp;#x3D">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-07T10:08:34.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.193Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/01函数与极限/0102映射-映射与函数-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2021-08-07T10:08:34.000Z" itemprop="datePublished">2021-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0102映射-映射与函数-函数与极限
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="1、映射的概念"><a href="#1、映射的概念" class="headerlink" title="1、映射的概念"></a>1、映射的概念</h1><blockquote>
+    设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。
+</blockquote>
+
+<p>记做<br>$$<br>f:X\rightarrow Y<br>$$</p>
+<blockquote>
+    元素x称为元素y（在映射f下）的一个原像,集合X称为映射f的定义域；X中所有元素的像所组成的集合称为映射f的值域。
+</blockquote>
+
+<p>定义域，记做$D_f$即$D_f$&#x3D;X;值域，记做$R_f$或者$f(x)$,即<br>$$<br>R_f&#x3D;f(x)&#x3D;{f(x)|x\in X}<br>$$</p>
+<p>注意事项：</p>
+<ol>
+<li>构成映射的三要素：集合X，即定义域$D_f$&#x3D;X;集合Y，即值域的范围，$R_f\subset Y$;对应法则f,使得每个$x\in X$，有唯一确定的$y&#x3D;f(x)$与之对应；</li>
+<li>对每个$x\in X$，元素x的像y的唯一的；而对于每个$y\in R_f$，元素y的原像不一定是唯一的；映射f的值域$R_f$是集合Y的一个子集，即$R_f\subset Y$,$R_f$与Y不一定相等。</li>
+</ol>
+<blockquote>
+    设f是从集合X到集合Y的映射，若值域R = Y，即Y中任意一元素y都是X中某个元素的像，则称f为X到Y上的满射;若对X中任意两个不同的元素x1不等于x2,他们的像f(x1)也不等于f(x2),则称映射f为从X到Y的单射；若映射f既是单射又是满射，则称映射f为一一映射。
+</blockquote>
+
+
+
+<h1 id="2、逆映射"><a href="#2、逆映射" class="headerlink" title="2、逆映射"></a>2、逆映射</h1><p>设f是X到Y的单射，有定义知，对每个$y\in R_f$,有唯一确定的$x\in X$，满足$f(x) &#x3D; y$。于是，我们可定义一个从$R_f$到X的新映射g，即<br>$$<br>g:R_f\rightarrow X<br>$$<br>对每个$y\in R_f$，规定$g(y)&#x3D;x$ ，其中x满足$f(x)&#x3D;y$ 。这个映射g称为f的逆映射，记作$f^{-1}$ ，其中定义域$D_{f^{-1}} &#x3D; R_f$，值域$R_{f^{-1}}&#x3D;X$</p>
+<p>注意事项：</p>
+<ol>
+<li>只有单射才有逆映射</li>
+</ol>
+<h1 id="3、复合映射"><a href="#3、复合映射" class="headerlink" title="3、复合映射"></a>3、复合映射</h1><p>设有两个映射<br>$$<br>g:X\rightarrow Y1 ， f:Y2\rightarrow Z<br>$$<br>其中$Y1\subset Y2$ ，则由映射g和f可以定义一个从X到Z的对应法则，它将每个$x\in X$，映射为$f[g(x)]\in Z$。这个对应法则，确定了一个从集合X到集合Z的映射，这个映射称为映射g和映射f的符合映射，记做$f\circ g$，即<br>$$<br>f\circ g:X\rightarrow Z ，(f\circ g)(x)&#x3D;f[g(x)],x\in X<br>$$<br>结论：</p>
+<ol>
+<li>映射f和g构成复合映射的前提：映射g的值域$R_g$必须包含在映射f的定义域$D_f$之内，即$R_g\subset D_f$。</li>
+<li>映射g和f的复合是有顺序的，$f\circ g$有意义并不表示$g\circ f$也有意思。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdb9qt2000jvl1o2qeodj6r" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0104无穷小和无穷大-函数与极限
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0101集合-映射与函数-函数与极限</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

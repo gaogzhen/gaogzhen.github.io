@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0503定积分的换元法和分部积分法-定积分 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] 1 定积分的换元法 定理 假设函数$f(x)$在区间$[a,b]$上连续，函数$x&#x3D;\phi(t)$满足条件： （1）$\phi(\alpha)&#x3D;a,\phi(\beta)&#x3D;b$; （2）$\phi(x)在[\alpha, \beta]（或[\beta,\alpha]）$上具有连续导数，且其值域$R_\phi&#x3D;[a,b]$,则有 ​	$\int_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0503定积分的换元法和分部积分法-定积分">
+<meta property="og:url" content="http://example.com/2023/03/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0503%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95%E5%92%8C%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1 定积分的换元法 定理 假设函数$f(x)$在区间$[a,b]$上连续，函数$x&#x3D;\phi(t)$满足条件： （1）$\phi(\alpha)&#x3D;a,\phi(\beta)&#x3D;b$; （2）$\phi(x)在[\alpha, \beta]（或[\beta,\alpha]）$上具有连续导数，且其值域$R_\phi&#x3D;[a,b]$,则有 ​	$\int_">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-24T16:33:50.000Z">
+<meta property="article:modified_time" content="2026-03-05T10:16:42.208Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/05定积分/0503定积分的换元法和分部积分法-定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0503%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95%E5%92%8C%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2023-03-24T16:33:50.000Z" itemprop="datePublished">2023-03-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0503定积分的换元法和分部积分法-定积分
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-定积分的换元法"><a href="#1-定积分的换元法" class="headerlink" title="1 定积分的换元法"></a>1 定积分的换元法</h2><blockquote>
+<p>定理 假设函数$f(x)$在区间$[a,b]$上连续，函数$x&#x3D;\phi(t)$满足条件：</p>
+<p>（1）$\phi(\alpha)&#x3D;a,\phi(\beta)&#x3D;b$;</p>
+<p>（2）$\phi(x)在[\alpha, \beta]（或[\beta,\alpha]）$上具有连续导数，且其值域$R_\phi&#x3D;[a,b]$,则有</p>
+<p>​	$\int_a^bf(x)dx&#x3D;\int_\alpha^\beta f[\phi(t)]\phi{‘}(t)dt$											(3-1)</p>
+<p>公式(3-1)称为定积分的换元公式。</p>
+</blockquote>
+<p>$$<br>证明：公式两边被积函数都是连续的，则两边都可积，且存在原函数\<br>应用微积分基本公式，假设F(x)是f(x)的一个原函数，则\</p>
+<p>\int_a^bf(x)dx&#x3D;F(b)-F(a)\<br>令\Phi(t)&#x3D;F[\phi(t)],则\Phi^{‘}(t)&#x3D;f[\phi(t)]\phi^{‘}(t)\<br>那么\Phi(t)是f[\phi(t)]\phi^{‘}(t)的一个原函数,\<br>∴\int_\alpha^\beta f[\phi(t)]\phi^{‘}(t)dt&#x3D;\Phi(\beta)-\Phi(\alpha)\<br>∵x&#x3D;\phi(t),\phi(\alpha)&#x3D;a,\phi(\beta)&#x3D;b\<br>∴\int_a^b f(x)dx&#x3D;F(b)-F(a)&#x3D;\Phi(\beta)-\Phi(\alpha)\<br>&#x3D;\int_\alpha^\beta f[\phi(t)]\phi^{‘}(t)dt<br>$$</p>
+<p>注：</p>
+<ul>
+<li><p>当$\alpha\lt\beta$时，公式仍然成立；</p>
+</li>
+<li><p>更新积分变量，相应的积分限也要做变换；</p>
+</li>
+<li><p>换元公式可以反过来使用即<br>  $$<br>  \int_\alpha^\beta f[\phi(t)]\phi^{‘}(t)dt\overset{x&#x3D;\phi(t)}&#x3D;\int_a^bf(x)dt<br>  $$</p>
+</li>
+</ul>
+<p>例1 求$\int_0^\sqrt{2}\sqrt{2-x^2}dx$<br>$$<br>解：令x&#x3D;\sqrt{2}t,则dx&#x3D;\sqrt{2}dt,t\in[0,1]\<br>\int_0^\sqrt{2}\sqrt{2-x^2}dx&#x3D;\int_0^1\sqrt{2-2t^2}\cdot\sqrt{2}dt\<br>&#x3D;2\int_0^1\sqrt{1-t^2}dt&#x3D;(t\sqrt{1-t^2}+\arcsin t)|_0^1&#x3D;\frac{\pi}{2}<br>$$<br>例2 求 $\int_0^{\frac{\pi}{2}}\cos^5x\sin xdx$<br>$$<br>解：\int_0^{\frac{\pi}{2}}\cos^5x\sin xdx&#x3D;-\int_0^{\frac{\pi}{2}}\cos^5xd\cos x\<br>&#x3D;-\frac{1}{6}\cos^6x|_0^{\frac{\pi}{2}}&#x3D;\frac{1}{6}<br>$$<br>注：凑微分形式，积分变量不变，积分限也不变</p>
+<p>例3 求 $\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sqrt{\cos x-\cos^3x}dx$<br>$$<br>解：\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sqrt{\cos x-\cos^3x}dx\<br>&#x3D;\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}|\sin x|\sqrt{\cos x}dx\<br>&#x3D;-\int_{-\frac{\pi}{2}}^0\sin x\sqrt{\cos x}dx+\int_0^{\frac{\pi}{2}}\sin x\sqrt{\cos x}dx\<br>&#x3D;\frac{2}{3}\cos^{\frac{3}{2}}x|_{-\frac{\pi}{2}}^0-\frac{2}{3}\cos^{\frac{3}{2}}x|_0^{\frac{\pi}{2}}\<br>&#x3D;\frac{4}{3}<br>$$<br>例4 求 $\int_0^4\frac{x+2}{\sqrt{2x+1}}dx$​<br>$$<br>解：令\sqrt{2x+1}&#x3D;t,x&#x3D;\frac{1}{2}(t^2-1),dx&#x3D;tdt,t\in[1,3]\<br>\int_0^4\frac{x+2}{\sqrt{2x+1}}dx&#x3D;\int_1^3\frac{\frac{1}{2}(t^2-1)+2}{t}\cdot tdt\<br>&#x3D;\frac{1}{6}t^3|_1^3+\frac{3}{2}t|_1^3&#x3D;\frac{22}{3}<br>$$</p>
+<p>例5 求$\int_{\sqrt{e}}^{e^{\frac{3}{4}}}\frac{dx}{x\sqrt{\ln x(1-\ln x)}}$<br>$$<br>解：\int_{\sqrt{e}}^{e^{\frac{3}{4}}}\frac{dx}{x\sqrt{\ln x(1-\ln x)}}&#x3D;\int_{\sqrt{e}}^{e^{\frac{3}{4}}}\frac{d\ln x}{\sqrt{\ln x(1-\ln x)}}\<br>&#x3D;2\int_{\sqrt{e}}^{e^{\frac{3}{4}}}\frac{d(\sqrt{\ln x})}{\sqrt{(1-(\sqrt{\ln x})^2)}}\<br>&#x3D;2[\arcsin(\sqrt{\ln x})]|_{\sqrt{e}}^{e^\frac{3}{4}}&#x3D;\frac{\pi}{6}<br>$$<br>例6 证明</p>
+<p>（1）若$f(x)在[-a,a]$上连续且为偶函数，则$\int_{-a}^af(x)dx&#x3D;2\int_0^af(x)dx$</p>
+<p>（2）若$f(x)在[-a,a]$上连续且为奇函数，则$\int_{-a}^af(x)dx&#x3D;0$<br>$$<br>证明：\int_{-a}^af(x)dx&#x3D;\int_{-a}^0f(x)dx+\int_0^af(x)dx\<br>令x&#x3D;-t,则dx&#x3D;-dt,x\in[-a,0],t\in[0,a]\<br>&#x3D;-\int_a^0f(-t)dt+\int_0^af(t)dt&#x3D;\int_0^af(-t)dt+\int_0^af(t)dt\qquad(1-1)\<br>(1)当f(x)为偶函数时，\<br>(1-1)式&#x3D;\int_0^a(t)dt+\int_0^af(t)dt&#x3D;2\int_0^af(t)dt,即\<br>\int_{-a}^af(x)dx&#x3D;2\int_0^af(x)dx<br>(2)当f(x)为奇函数时，\<br>(1-1)式&#x3D;-\int_0^af(t)dt+\int_0^af(t)dt&#x3D;0,即\<br>\int_{-a}^af(x)dx&#x3D;0<br>$$<br>例7 求$\int_{-1}^1\frac{2x^2+x\cos x}{1+\sqrt{1-x^2}}dx$​​<br>$$<br>解：\int_{-1}^1\frac{2x^2+x\cos x}{1+\sqrt{1-x^2}}dx&#x3D;\int_{-1}^1\frac{2x^2}{1+\sqrt{1-x^2}}dx+\int_{-1}^1\frac{x\cos x}{1+\sqrt{1-x^2}}dx\<br>因为\frac{2x^2}{1+\sqrt{1-x^2}}在作用域(-\infty,+\infty)内为偶函数，\frac{x\cos x}{1+\sqrt{1-x^2}}在作用域(-\infty,+\infty)内为奇函数，所以\<br>上式&#x3D;2\int_0^1\frac{2x^2}{1+\sqrt{1-x^2}}+0&#x3D;2\int_0^1\frac{2x^2(1-\sqrt{1-x^2})}{(1+\sqrt{1-x^2})(1-\sqrt{1-x^2})}dx\<br>&#x3D;4\int_0^1(1-\sqrt{1-x^2})dx&#x3D;4-\pi<br>$$</p>
+<p>$$</p>
+<p>$$</p>
+<ul>
+<li>形如$\int_0^a\sqrt{a^2-x^2}dx$的定积分，可以利用定积分的几何意义，等价于求$x^2+y^2&#x3D;a^2圆的\frac{1}{4}面积，为\frac{1}{4}\pi a^2$</li>
+</ul>
+<p>例8 若$f(x)\in[0,1]$,证明</p>
+<p>（1）$\int_0^\frac{\pi}{2}f(\sin x)dx&#x3D;\int_0^\frac{\pi}{2}f(\cos x)dx$</p>
+<p>（2）$\int_0^\pi xf(\sin x)dx&#x3D;\frac{\pi}{2}\int_0^\pi f(\sin x)dx$</p>
+<p>由此计算$\int_0^\pi\frac{x\sin x}{1+\cos^2x}$<br>$$<br>证明：（1）令x&#x3D;\frac{\pi}{2}-t,dx&#x3D;-dt,则\<br>\int_0^\frac{\pi}{2}f(\sin x)dx&#x3D;-\int_\frac{\pi}{2}^0f[\sin(\frac{\pi}{2}-t)]dt\<br>&#x3D;\int_0^\frac{\pi}{2}f(\cos x)dx\<br>(2)令x&#x3D;\pi-t,dx&#x3D;-dt,t\in[0,\pi]\<br>\int_0^\pi xf(\sin x)dx&#x3D;-\int_\pi^0(\pi-t)f[\sin(\pi-t)]dt\<br>&#x3D;\int_0^\pi(\pi-t)f(\sin t)dt&#x3D;\pi\int_0^\pi f(\sin t)dt-t\int_0^\pi f(\sin t)dt\<br>则\int_0^\pi xf(\sin x)dx&#x3D;\frac{\pi}{2}\int_0^\pi f(\sin x)dx\</p>
+<p>计算\int_0^\pi\frac{x\sin x}{1+\cos^2x}dx&#x3D;\frac{\pi}{2}\int_0^\pi\frac{\sin x}{1+\cos^2x}dx\<br>&#x3D;-\frac{\pi}{2}\int_0^\pi\frac{1}{1+\cos^2x}d(\cos x)&#x3D;-\frac{\pi}{2}(\arctan\cos x|_0^\pi)&#x3D;\frac{\pi^2}{4}<br>$$</p>
+<p>例9 若$f(x)$为连续函数，求$\frac{d}{dx}\int_0^xtf(x^2-t^2)dt$<br>$$<br>解：令x^2-t^2&#x3D;u,\<br>x为积分上限，t是积分变量，x选定就是常数.对上式两边求导得\<br>-2tdt&#x3D;du,sdt&#x3D;-\frac{1}{2}du,u\in[0,x^2]\<br>则\int_0^xtf(x^2-t^2)dt&#x3D;-\frac{1}{2}\int_{x^2}^0f(u)du&#x3D;\frac{1}{2}\int_0^{x^2}f(u)du\<br>\frac{d}{dx}\int_0^xtf(x^2-t^2)dt&#x3D;xf(x^2)<br>$$<br>注：</p>
+<ul>
+<li>做变上限函数求导，f(u)，u必须是关于积分变量的整体变化式。</li>
+</ul>
+<p>例10 设<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>2x,\quad x\ge0\<br>\frac{1+x}{1-x},\quad x\lt 0\<br>\end{cases}<br>$$<br>求$\int_0^2f(x-1)dx$<br>$$<br>解：\int_0^2f(x-1)dx&#x3D;\int_{-1}^1f(x)dx&#x3D;\int_{-1}^0f(x)dx+\int_0^1f(x)dx\<br>&#x3D;\int_{-1}^0\frac{1+x}{1-x}dx+\int_0^1(2x)dx&#x3D;2\ln2-1+1&#x3D;2\ln2<br>$$<br>例11 设$f(x)在(-\infty,+\infty)$上连续，且满足：$\int_0^xtf(x-t)dt&#x3D;e^x-x-1求f(x)$,</p>
+<p>分析：</p>
+<ul>
+<li>等式左边是关于x积分上限函数，右侧是一个表达式，需要对积分上限函数求导</li>
+</ul>
+<p>$$<br>解：等式两边对x求导\<br>等式左侧求导，\frac{d}{dx}\int_0^xtf(x-t)dt,令x-t&#x3D;u,dt&#x3D;-du\<br>\frac{d}{dx}\int_x^0-(x-u)f(u)du&#x3D;\frac{d}{dx}\int_0^x[xf(u)-uf(u)]du\<br>&#x3D;\int_0^xf(u)du \quad (1-1)\<br>等式右侧求导，(e^x-x-1)^{‘}&#x3D;e^x-1，即\<br>\int_0^xf(u)du&#x3D;e^x-1,等式两边继续对x求导，得\<br>\frac{d}{dx}\int_0^xf(u)du&#x3D;(e^x-1)^{‘}\<br>f(x)&#x3D;e^x,\quad x\in(-\infty,+\infty)<br>$$</p>
+<h2 id="2-定积分的分部积分法"><a href="#2-定积分的分部积分法" class="headerlink" title="2 定积分的分部积分法"></a>2 定积分的分部积分法</h2><blockquote>
+<p>定理 设$f(x)在[a,b]$上连续，则</p>
+<p>​	$\int_a^budv&#x3D;[uv]|_a^b+\int_a^bvdu$</p>
+<p>上式称为定积分的分部积分公式。</p>
+</blockquote>
+<p>例12 求 $\int_0^1xe^xdx$<br>$$<br>解：\int_0^1xe^xdx&#x3D;\int_0^1xde^x&#x3D;(xe^x)|_0^1-\int_0^1e^xdx\<br>&#x3D;e-(e-1)&#x3D;1<br>$$<br>例13 求 $\int_1^5\ln xdx$<br>$$<br>解：\int_1^5\ln xdx&#x3D;(x\ln x)|_1^5-\int_1^5xd(\ln x)\<br>&#x3D;5\ln5-4<br>$$<br>例14 求 $\int_1^e\frac{\ln x}{x^3}dx$​<br>$$<br>解：\int_1^e\frac{\ln x}{x^3}dx&#x3D;-\frac{1}{2}\int_1^e\ln xd(x^{-2})\<br>&#x3D;-\frac{1}{2}(x^{-2}\ln x)|_1^e+\frac{1}{2}\int_1^ex^{-2}d(\ln x)\<br>&#x3D;-\frac{3}{4e^2}+\frac{1}{4}<br>$$<br>例15 求 $\int_0^1e^\sqrt{x}dx$<br>$$<br>解：\int_0^1e^\sqrt{x}dx\overset{\sqrt{x}&#x3D;t}&#x3D;2\int_0^1te^tdt\<br>&#x3D;2<br>$$<br>例16 求$\int_0^3\arcsin\sqrt\frac{x}{1+x}dx$<br>$$<br>解：令t&#x3D;\arcsin\sqrt\frac{x}{1+x},x&#x3D;\tan^2x\<br>\int_0^3\arcsin\sqrt\frac{x}{1+x}dx&#x3D;\int_0^\frac{\pi}{3}td(\tan^2t)\<br>&#x3D;t\tan^2t|_0^\frac{\pi}{3}-\int_0^\frac{\pi}{3}(sec^2t-1)dt\<br>&#x3D;\pi-\sqrt{3}+\frac{\pi}{3}&#x3D;\frac{4}{3}\pi-\sqrt{3}<br>$$</p>
+<p>例17 求 $\int_1^e\sin(\ln x)dx$<br>$$<br>解：令\ln x&#x3D;t,x&#x3D;e^t\<br>\int_1^e\sin(\ln x)dx&#x3D;\int_0^1\sin td(e^t)&#x3D;\sin te^t|<em>0^1+\int_0^1\cos te^tdt\<br>&#x3D;e\sin1-e\cos1+1-\int_0^1\sin te^tdt\<br>原式&#x3D;\frac{1}{2}e\sin1-\frac{1}{2}e\cos1+\frac{1}{2}<br>$$<br>例18 计算$I&#x3D;\int_0^1\frac{f(x)}{\sqrt{x}}dx,其中f(x)&#x3D;\int_1^\sqrt{x}e^{-t^2}dt$<br>$$<br>解：\int_0^1\frac{f(x)}{\sqrt{x}}dx&#x3D;2\int_0^1f(x)d(\sqrt{x})\<br>&#x3D;2(\sqrt{x}f(x)|<em>0^1)-2\int_0^1\sqrt{x}f^{‘}(x)dx&#x3D;-2\int_0^1\sqrt{x}f^{‘}(x)dx\<br>f^{‘}(x)&#x3D;\frac{d}{dx}\int_1^\sqrt{x}e^{-t^2}dt&#x3D;\frac{1}{2\sqrt{x}e^x}\<br>I&#x3D;-2\int_0^1\sqrt{x}\cdot\frac{1}{2\sqrt{x}e^x}dx&#x3D;\frac{1}{e^x}|<em>0^1&#x3D;\frac{1}{e}-1<br>$$<br>例19 计算$I_n&#x3D;\int_0^\frac{\pi}{2}\sin^nxdx \quad(n\in N)$<br>$$<br>解：I_n&#x3D;\int_0^\frac{\pi}{2}\sin^nxdx&#x3D;-\int_0^\frac{\pi}{2}\sin^{n-1}xd(\cos x)\<br>&#x3D;(n-1)\int_0^\frac{\pi}{2}(1-\sin^2x)\sin^{n-2}xdx\<br>I_n&#x3D;\frac{n-1}{n}I</em>{n-2}\<br>I_0&#x3D;\frac{\pi}{2},I_1&#x3D;1\<br>因此I</em>{2m}&#x3D;\frac{2m-1}{2m}\cdot\frac{2m-3}{2m-2}\cdots\frac{1}{2}\cdot\frac{\pi}{2}&#x3D;\frac{(2m-1)!!}{(2m)!!}\<br>I</em>{2m+1}&#x3D;\frac{2m}{2m+1}\cdot\frac{2m}{2m-1}\cdots\frac{2}{3}&#x3D;\frac{(2m)!!}{(2m+1)!!}\quad(m&#x3D;1,2,\cdots)<br>$$<br>$\int_0^\frac{\pi}{2}\sin^6xdx&#x3D;\frac{5}{6}\cdot\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}&#x3D;\frac{5}{32}$</p>
+<p>$\int_0^\frac{\pi}{2}\cos^5xdx&#x3D;\frac{4!!}{5!!}&#x3D;\frac{8}{15}$</p>
+<p>例20 求 $\int_0^\pi\cos^5\frac{x}{2}dx$<br>$$<br>解：令t&#x3D;\frac{x}{2}\<br>\int_0^\pi\cos^5\frac{x}{2}dx&#x3D;2\int_0^\frac{\pi}{2}cos^5tdt&#x3D;\frac{16}{15}<br>$$</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p246-254.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p34.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/03/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0503%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95%E5%92%8C%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmdb9qte0017vl1ofx8xcacu" data-title="0503定积分的换元法和分部积分法-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/03/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0504%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86-%E5%AE%9A%E7%A7%AF%E5%88%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0504反常积分-定积分
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0502微积分基本公式-定积分</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
