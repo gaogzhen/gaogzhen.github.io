@@ -71,6 +71,100 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-basis/math/note/高等数学/09多元函数微分法及其应用/0904多元复合函数求导-多元函数微分法及其应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2024-05-05T15:31:51.000Z" itemprop="datePublished">2024-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/">0904多元复合函数求导-多元函数微分法及其应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-复习一元函数复合函数求导"><a href="#1-复习一元函数复合函数求导" class="headerlink" title="1 复习一元函数复合函数求导"></a>1 复习一元函数复合函数求导</h2><p>$$<br>y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\<br>\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)<br>$$</p>
+<p><strong>注：</strong></p>
+<ol>
+<li>复合关系图：$\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;\frac{dy}{dx}\hskip1em x\rightarrow u\rightarrow y$</li>
+</ol>
+<h2 id="2-一元函数与多元函数复合的情形"><a href="#2-一元函数与多元函数复合的情形" class="headerlink" title="2 一元函数与多元函数复合的情形"></a>2 一元函数与多元函数复合的情形</h2><blockquote>
+<p>定理1 如果函数$u&#x3D;\phi(t)及v&#x3D;\psi(t)$都在点t处可导，函数$z&#x3D;f(u,v)$在对应点$(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(t),\psi(t)]在点t$可导，且有</p>
+<p>$\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}$</p>
+</blockquote>
+<p>$$<br>设t获得增量\Delta t,此时u&#x3D;\phi(t),v&#x3D;\psi(t)获得增量\Delta u,\Delta v\<br>由此z&#x3D;f(u,v)相应获得增量\Delta z\<br>函数z&#x3D;f(u,v)在点(u,v)具有连续偏导，\<br>\Delta z&#x3D;\frac{\partial z}{\partial u}\Delta u+\frac{\partial v}{\partial v}\Delta v +\epsilon_1\Delta u+\epsilon_2\Delta v\<br>当\Delta u\to 0,\Delta v\to 0时，\epsilon_1\to0,\epsilon_2\to0\<br>上式两边各除以\Delta t，得\<br>\frac{\Delta z}{\Delta t}&#x3D;\frac{\partial z}{\partial u}\frac{\Delta u}{\Delta t}+\frac{\partial z}{\partial v}\frac{\Delta v}{\Delta t}+\epsilon_1\frac{\Delta u}{\Delta t}+\epsilon_2\frac{\Delta v}{\Delta t}\<br>\because 当\Delta \to0,\Delta u\to0,\Delta v\to0,\frac{\Delta u}{\Delta t}\to\frac{du}{dt},\frac{\Delta v}{\Delta t}&#x3D;\frac{dv}{dt}\<br>\therefore \lim\limits_{\Delta t\to0}{\frac{\Delta z}{\Delta t}}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}<br>$$</p>
+<p><strong>注：</strong></p>
+<ol>
+<li>$\frac{dz}{dt}称为全导数$</li>
+<li>复合关系图<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021539_unary-composite-func.drawio-800w.webp 800w, opt-images/202403021539_unary-composite-func.drawio-1280w.webp 1280w, opt-images/202403021539_unary-composite-func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021539_unary-composite-func.drawio-optimized.png" alt="202403021539_unary-composite-func.drawio" width="400" height="361" loading="lazy"></picture></li>
+</ol>
+<p>例1 $z&#x3D;u^2e^v,u&#x3D;\sin t,v&#x3D;e^t，求\frac{dz}{dt}$<br>$$<br>解：\<br>\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}\<br>&#x3D;2\sin t\cdot e^{e^t}\cos t+(\sin t)^2\cdot e^{e^t}\cdot e^t\<br>&#x3D;\sin t e^{e^t}(2\cos t+\sin t e^{t})<br>$$</p>
+<h2 id="3-多元函数与多元函数复合的情形"><a href="#3-多元函数与多元函数复合的情形" class="headerlink" title="3 多元函数与多元函数复合的情形"></a>3 多元函数与多元函数复合的情形</h2><blockquote>
+<p>定理2 如果函数$u&#x3D;\phi(x,y)及v&#x3D;\psi(x,y)都在点(x,y)$具有对x及对y的偏导数，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]在点(x,y)$的连个偏导数都存在，且有<br>$$<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y} \<br>$$</p>
+</blockquote>
+<p><strong>注：</strong></p>
+<ol>
+<li>复合关系图：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021607-binary_func.drawio-800w.webp 800w, opt-images/202403021607-binary_func.drawio-1280w.webp 1280w, opt-images/202403021607-binary_func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021607-binary_func.drawio-optimized.png" alt="202403021607-binary_func.drawio" width="480" height="421" loading="lazy"></picture></li>
+</ol>
+<p>例3  $z&#x3D;e^u\sin v,u&#x3D;xy,v&#x3D;x+y,求\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}$<br>$$<br>解：\<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;e^{xy}\sin(x+y)y+e^{xy}\cos(x+y)(1+y)\<br>$$</p>
+<h2 id="4-其他情形"><a href="#4-其他情形" class="headerlink" title="4 其他情形"></a>4 其他情形</h2><blockquote>
+<p>定理3 如果函数$u&#x3D;\phi(x,y)在点(x,y)$具有对x及对y的偏导数，函数$v&#x3D;\psi(y)在点y$具有对点y可导，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(y)]在点(x,y)$的两个偏导数存在，且有</p>
+<p>$\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{d v}{d y} \$</p>
+</blockquote>
+<p><strong>注：</strong></p>
+<ol>
+<li><p>复合关系图：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021623-binary_fun_special.drawio-800w.webp 800w, opt-images/202403021623-binary_fun_special.drawio-1280w.webp 1280w, opt-images/202403021623-binary_fun_special.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021623-binary_fun_special.drawio-optimized.png" alt="202403021623-binary_fun_special.drawio" width="450" height="421" loading="lazy"></picture></p>
+</li>
+<li><p>推广：复合函数的某些中间变量又是复合函数的自变量，比如$z&#x3D;f(u,x,y)，u&#x3D;\phi(x,y)$<br>$$<br>令v&#x3D;x,w&#x3D;y，则\<br>\frac{\partial v}{\partial x}&#x3D;1，\frac{\partial v}{\partial y}&#x3D;0\<br>\frac{\partial w}{\partial x}&#x3D;0,\frac{\partial w}{\partial y}&#x3D;1 \<br>则 \frac{\partial z}{\partial x}&#x3D;\frac{\partial f}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial f}{\partial x}\<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial f}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial f}{\partial y}<br>$$</p>
+</li>
+</ol>
+<p>例5 $u&#x3D;f(x,y,z)&#x3D;e^{x^2+y^2+z^2},z&#x3D;x^2\sin y$<br>$$<br>\frac{\partial u}{\partial x}&#x3D;\frac{\partial f}{\partial x}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial x}\<br>&#x3D;e^{x^2+y^2+(x^2\sin y)^2}2x+e^{x^2+y^2+(x^2\sin y)^2}2x^2\sin y2x\sin y\<br>&#x3D;2xe^{x^2+y^2+x^4\sin^2y}(1+2x^2\sin^2y)\<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial f}{\partial y}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial y}\<br>&#x3D;2(y+x^4\sin y\cos y)e^{x^2+y^2+x^4\sin^2 y}<br>$$</p>
+<h2 id="5-抽象复合函数求导"><a href="#5-抽象复合函数求导" class="headerlink" title="5 抽象复合函数求导"></a>5 抽象复合函数求导</h2><p>为了写法和计算的f方便，引入记号<br>$$<br>f(u,v):\<br>\begin{cases}<br>f{‘}_u\rightarrow f^{‘}_1,f^{‘}_v\rightarrow f^{‘}_2\<br>f{‘}_u{‘}_u\rightarrow f^{‘}<em>1{‘}<em>1,f^{‘}<em>u{‘}<em>v\rightarrow f^{‘}<em>1{‘}<em>2\<br>\end{cases}<br>$$<br>例7 $w&#x3D;f(x+y+z,xyz),f具有二阶连续偏导数，求\frac{\partial w}{\partial x},\frac{\partial^2 w}{\partial x\partial z}$<br>$$<br>解：\<br>令u&#x3D;x+y+z,v&#x3D;xyz\<br>\frac{\partial w}{\partial x}&#x3D;\frac{\partial w}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial w}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;f^{‘}<em>1+yzf{‘}<em>2\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;\frac{\partial f^{‘}<em>1}{\partial z}+yf^{‘}<em>2+yz\frac{\partial f^{‘}<em>2}{\partial z}\<br>\frac{\partial f_u}{\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}\<br>\frac{\partial f_v}{\partial z}&#x3D;f</em>{vu}+xyf</em>{vv}\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}+yf_v+yz(f</em>{vu}+xyf</em>{vv})\<br>&#x3D;f</em>{uu}+y(x+z)f</em>{uv}+xy^2zf</em>{vv}+yf_v<br>$$</p>
+<h2 id="6-全微分不变性"><a href="#6-全微分不变性" class="headerlink" title="6 全微分不变性"></a>6 全微分不变性</h2><blockquote>
+<p>设函数$z&#x3D;f(u,v)具有连续偏导数$，则有全微分</p>
+<p>$dz&#x3D;\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv$</p>
+<p>如果$u&#x3D;\phi(x,y),v&#x3D;\psi(x,y)$,且两个函数具有连续偏导数 ，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]$的全微分</p>
+<p>$dz&#x3D;\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy$</p>
+</blockquote>
+<p>$$<br>dz&#x3D;(\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x})dx+(\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y})dy\<br>&#x3D;\frac{\partial z}{\partial u}(\frac{\partial u}{\partial x}dx+\frac{\partial u}{\partial y}dy)+\frac{\partial z}{\partial v}(\frac{\partial u}{\partial x}dx+\frac{\partial v}{\partial y}dy)<br>&#x3D;\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv<br>$$</p>
+<blockquote>
+<p>由此可见无论u和v是自变量还中间变量，函数$z&#x3D;f(u,v)$的全微分形式都是一样的。这个性质叫做全微分形式不变性。</p>
+</blockquote>
+<p>例8 $z&#x3D;f(x^2-y^2,e^{xy}),求dz$<br>$$<br>解：\<br>令u&#x3D;x^2-y^2,v&#x3D;e^{xy}<br>dz&#x3D;df(u,v)&#x3D;f_udu+f_vdv\<br>&#x3D;f_ud(x^2-y^2)+f_v(e^{xy})\<br>&#x3D;f_u(2xdx-2ydy)+f_v(ye^{xy}dx+xe^{xy}dy)\<br>&#x3D;(2xf_u+ye^{xy}f_v)dx+(xe^{xy}v_v-2yf_u)dy<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p78-84.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p67.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmq5p0vc001pu01o7y094mim" data-title="0904多元复合函数求导-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-basis/math/note/线性代数/03矩阵的初等变换和线性方程组/0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="article-date">
@@ -154,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5s000cuc1o4xft1fen" data-title="0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vo002fu01oh2ti7c2i" data-title="0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -209,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/06/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0204%E5%85%8B%E6%8B%89%E9%BB%98%E6%B3%95%E5%88%99-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5q0009uc1o2pcq38tg" data-title="0204克拉默法则-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/06/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0204%E5%85%8B%E6%8B%89%E9%BB%98%E6%B3%95%E5%88%99-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vn002cu01o5dbs9dae" data-title="0204克拉默法则-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -303,7 +397,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5p0008uc1o5ljj6reh" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vm002bu01oh9870qsb" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -446,7 +540,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5o0007uc1ofhsu1t7l" data-title="0202矩阵的运算-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vm002au01o9gsi441m" data-title="0202矩阵的运算-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -540,7 +634,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5n0006uc1ogco5ecr1" data-title="0201线性方程组和矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vl0029u01o6mcd0tur" data-title="0201线性方程组和矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -637,7 +731,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5m0004uc1ocwfy1ild" data-title="0104行列式的性质-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vk0027u01o5fibhm60" data-title="0104行列式的性质-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -715,7 +809,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/18/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0105%E8%A1%8C%E5%88%97%E5%BC%8F%E6%8C%89%E8%A1%8C(%E5%88%97)%E5%B1%95%E5%BC%80-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5m0005uc1o83mchmkk" data-title="0105行列式按行(列)展开-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/18/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0105%E8%A1%8C%E5%88%97%E5%BC%8F%E6%8C%89%E8%A1%8C(%E5%88%97)%E5%B1%95%E5%BC%80-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vl0028u01ofjw9hgqx" data-title="0105行列式按行(列)展开-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -785,7 +879,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/10/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0103n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5l0003uc1o181s1122" data-title="0103n阶行列式-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/10/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0103n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vj0025u01oayln9lok" data-title="0103n阶行列式-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -846,68 +940,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0102%E5%85%A8%E6%8E%92%E5%88%97%E5%92%8C%E5%AF%B9%E6%8D%A2-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5k0002uc1o7oo80orj" data-title="0102全排列和对换-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-basis/math/note/线性代数/01行列式/0101二阶与三阶行列式-行列式-线性代数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/03/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0101%E4%BA%8C%E9%98%B6%E4%B8%8E%E4%B8%89%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="article-date">
-  <time class="dt-published" datetime="2024-03-04T19:49:53.000Z" itemprop="datePublished">2024-03-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0101%E4%BA%8C%E9%98%B6%E4%B8%8E%E4%B8%89%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">0101二阶与三阶行列式-行列式-线性代数</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="一-引例"><a href="#一-引例" class="headerlink" title="一 引例"></a>一 引例</h2><p>求解二元一次方程组<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2&#x3D;b_1\<br>a_{21}x_1+a_{22}x_2&#x3D;b_2\<br>\end{cases}<br>$$</p>
-<p>$$<br>解：\<br>1\times a_{21}-2\times a_{11}\Rightarrow\<br>x_2&#x3D;\frac{a_{11}b_2-a_{21}b_1}{a_{11}a_{22}-a_{12}a_{21}}\<br>x_1&#x3D;\frac{a_{22}b_1-a_{12}b_2}{a_{11}a_{22}-a_{12}a_{21}}\<br>$$</p>
-<p>$\begin{matrix}a_{11}&amp;a_{12}\a_{21}&amp;a_{22}\end{matrix}$ 两行两列数表。</p>
-<blockquote>
-<p>定义：表达式$a_{11}a_{22}-a_{12}a_{21} \overset{\Delta}{&#x3D;} \begin{vmatrix}a_{11}&amp;a_{12}\a_{21}&amp;a_{22}\\end{vmatrix}$为数表所确定的二阶行列式。</p>
-</blockquote>
-<p><strong>注：</strong></p>
-<ol>
-<li>$\begin{vmatrix}a_{11}&amp;a_{12}\a_{21}&amp;a_{22}\\end{vmatrix}$,$a_{ij},i&#x3D;1,2,j&#x3D;1,2$为行列式的元素。i为元素所在的行，j位元素所在的列。</li>
-</ol>
-<h2 id="二-计算"><a href="#二-计算" class="headerlink" title="二 计算"></a>二 计算</h2><p>$$<br>a_{11}a_{22}-a_{12}a_{21}&#x3D;<br>\begin{vmatrix}<br>a_{11}&amp;a_{12}\<br>a_{21}&amp;a_{22}\<br>\end{vmatrix}<br>&#x3D;D<br>$$</p>
-<p>$$<br>b_1a_{22}-b_2a_{12}&#x3D;<br>\begin{vmatrix}<br>b_1&amp;a_{12}\<br>b_2&amp;a_{22}\<br>\end{vmatrix}<br>&#x3D;D_1<br>$$</p>
-<p>$$<br>a_{21}b_1-a_{11}b_2&#x3D;<br>\begin{vmatrix}<br>a_{21}&amp;a_{11}\<br>b_2&amp;b_1\<br>\end{vmatrix}<br>&#x3D;D_2<br>$$</p>
-<p>一种二元一次方程组的解为$x_1&#x3D;\frac{D_1}{D},x_2&#x3D;\frac{D_2}{D}$</p>
-<p>例 $\begin{cases}3x_1-2x_2&#x3D;12\2x_1+x_2&#x3D;1\end{cases}$解$x_1,x_2$<br>$$<br>x_1&#x3D;\frac{12-(-2)}{3-(-4)}&#x3D;2\<br>x_2&#x3D;\frac{3-24}{7}&#x3D;-3<br>$$</p>
-<h2 id="三-二阶行列式的几何意义"><a href="#三-二阶行列式的几何意义" class="headerlink" title="三 二阶行列式的几何意义"></a>三 二阶行列式的几何意义</h2><p><picture data-optimized="true"><source type="image/webp" srcset="opt-images/20240304-geometric_meaning.drawio-800w.webp 800w, opt-images/20240304-geometric_meaning.drawio-1280w.webp 1280w, opt-images/20240304-geometric_meaning.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/20240304-geometric_meaning.drawio-optimized.png" alt="20240304-geometric_meaning.drawio" width="270" height="235" loading="lazy"></picture><br>$$<br>a_{11}a_{22}-a_{12}a_{21}&#x3D;<br>\begin{vmatrix}<br>a_{11}&amp;a_{12}\<br>a_{21}&amp;a_{22}\<br>\end{vmatrix}\<br>令\vert\vec a\vert&#x3D;l,\vert\vec b\vert&#x3D;m,则<br>平行四边形的面积：\<br>S&#x3D;\vec a\times\vec b&#x3D;l\cdot m\cdot\sin(\beta-\alpha)\<br>&#x3D;l\cdot m(\sin\beta\cos\alpha-\cos\beta\sin\alpha)\<br>&#x3D;l\cos\alpha\cdot m\sin\beta-l\sin\alpha\cdot m\cos\beta\<br>&#x3D;a_{11}a_{22}-a_{12}a_{21}<br>$$<br>上述二阶行列式几何意义：以行向量(第一行为向量和以第二行为向量)为邻边所构成平行四边形的面积。</p>
-<p>三阶行列式放在后面N阶行列式讲解。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
-<p>:question:QQ:806797785</p>
-<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
-</blockquote>
-<p>参考：</p>
-<p>[1]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济六版《线性代数》全程教学视频</a>[CP&#x2F;OL].2020-02-07.p2.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0101%E4%BA%8C%E9%98%B6%E4%B8%8E%E4%B8%89%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmdbvu5h0001uc1o46b604l3" data-title="0101二阶与三阶行列式-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0102%E5%85%A8%E6%8E%92%E5%88%97%E5%92%8C%E5%AF%B9%E6%8D%A2-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vj0022u01o68zz4pel" data-title="0102全排列和对换-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -934,7 +967,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -944,7 +977,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
     </div>
   </div>
 
@@ -954,7 +987,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
     </div>
   </div>
 
@@ -976,15 +1009,7 @@
       <ul>
         
           <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
           </li>
         
           <li>
@@ -993,6 +1018,14 @@
         
           <li>
             <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
           </li>
         
       </ul>

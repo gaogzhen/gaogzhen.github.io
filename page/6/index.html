@@ -71,6 +71,134 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-basis/math/note/高等数学/08向量代数与空间解析几何/0802数量积向量积混合积-向量代数与空间解析几何" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/02/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0802%E6%95%B0%E9%87%8F%E7%A7%AF%E5%90%91%E9%87%8F%E7%A7%AF%E6%B7%B7%E5%90%88%E7%A7%AF-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2023-06-02T16:11:22.000Z" itemprop="datePublished">2023-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/02/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0802%E6%95%B0%E9%87%8F%E7%A7%AF%E5%90%91%E9%87%8F%E7%A7%AF%E6%B7%B7%E5%90%88%E7%A7%AF-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/">0802数量积向量积混合积-向量代数与空间解析几何</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-两向量的数量积"><a href="#1-两向量的数量积" class="headerlink" title="1 两向量的数量积"></a>1 两向量的数量积</h2><h3 id="1-1-引例"><a href="#1-1-引例" class="headerlink" title="1.1 引例"></a>1.1 引例</h3><p><img src="/Users/gaogzhen/baiduSyncdisk/study/math/note/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/images/20230601-%E5%8A%9B%E7%9B%B4%E7%BA%BF%E5%81%9A%E5%8A%9F-%E6%95%B0%E9%87%8F%E7%A7%AF.png" alt="20230601-力直线做功-数量积"></p>
+<ul>
+<li>引例如上图所示恒力F沿直线做功<br>$$<br>W &#x3D; |\vec F||vec s|\cos \theta<br>$$</li>
+</ul>
+<h3 id="1-2-定义"><a href="#1-2-定义" class="headerlink" title="1.2 定义"></a>1.2 定义</h3><blockquote>
+<p>设有两个向量$\vec a,\vec b,两向量夹角为\theta$,称数</p>
+<p>$|\vec a||\vec b|\cos \theta$</p>
+<p>叫做向量$\vec a,\vec b$的数量积，记作$\vec a\cdot\vec b$,即</p>
+<p>$\vec a\cdot\vec b&#x3D;|\vec a||\vec b|\cos\theta$</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li><p>$\vec F沿直线位移\vec s$所做的功为：$W &#x3D; \vec F\cdot\vec s$</p>
+</li>
+<li><p>$\vec a \cdot \vec0&#x3D;0$</p>
+</li>
+<li><p>投影的数量积表示<br>$$<br>\vec a \cdot\vec b&#x3D;|\vec a|\cdot|\vec b|\cdot\cos\theta\<br>&#x3D;|\vec a|\cdot Pij_{\vec a}\vec b \<br>\therefore Pij_{\vec a}\vec b &#x3D; \frac{\vec a\cdot\vec b}{|\vec a|}&#x3D;\vec e_{\vec a}\vec\cdot b<br>$$</p>
+</li>
+</ul>
+<h3 id="1-3-推论"><a href="#1-3-推论" class="headerlink" title="1.3 推论"></a>1.3 推论</h3><p>两个重要的推论：</p>
+<ol>
+<li>$\vec a\cdot\vec a &#x3D;|\vec a|^2$</li>
+<li>两个非零向量$\vec a,\vec b| $,则 $\vec a\perp\vec b\Leftrightarrow \vec a\cdot\vec b&#x3D;0$</li>
+</ol>
+<h3 id="1-4-运算规律"><a href="#1-4-运算规律" class="headerlink" title="1.4 运算规律"></a>1.4 运算规律</h3><ul>
+<li>交换律：$\vec a\cdot\vec b&#x3D;\vec b\cdot \vec a$</li>
+<li>分配律：$(\vec a + \vec b)\cdot\vec c&#x3D;\vec a\cdot\vec c+\vec b\cdot\vec c$</li>
+<li>结合律：$(\lambda\vec a)\cdot\vec b&#x3D;\lambda(\vec a\cdot\vec b)$</li>
+</ul>
+<p>注：</p>
+<ol>
+<li>$(\vec a+\vec b)^2&#x3D;\vec a^2+2\vec a\cdot\vec b+ \vec b^2$,即$|\vec a+\vec b|^2&#x3D;|\vec a|^2+2|\vec a||\vec b|\cos\theta+|\vec b|^2$为余弦定理。</li>
+</ol>
+<h3 id="1-4-数量积的坐标表示"><a href="#1-4-数量积的坐标表示" class="headerlink" title="1.4 数量积的坐标表示"></a>1.4 数量积的坐标表示</h3><p>设$\vec a&#x3D;(x_1,y_1,z_1),\vec b&#x3D;(x_2,y_2,z_2)$,则</p>
+<ul>
+<li>$\vec a\cdot\vec b&#x3D;(x_1x_2,y_1y_2,z_1z_2)$</li>
+<li>$\cos\theta &#x3D; \frac{\vec a\cdot\vec b}{|\vec a||\vec b|}&#x3D;\frac{x_1x_2+y_1y_2+z_1z_2}{\sqrt{x1^2+y_1^2+z_1I^2}\sqrt{x_2^2+y_2^2+z_2^I2}}$</li>
+</ul>
+<p>例1 已知三点$M(1,1,1),A(2,2,1),B(2,1,2)，求\angle{AMB}$<br>$$<br>解：\vec{MA}&#x3D;(1,1,0),\vec{MB}&#x3D;(1,0,1)\<br>\angle{AMB}&#x3D;\frac{\vec{MA}\cdot\vec{MB}}{|\vec{MA}||\vec{MB}|}\<br>&#x3D;\frac{1}{\sqrt2\cdot\sqrt2}&#x3D;\frac{1}{2}\<br>\therefore \angle{AMB}&#x3D;\frac{\pi}{3}<br>$$</p>
+<p>例2 已知$\vec a&#x3D;(2,2,1),\vec b&#x3D;(3,4,-2)，求Pij_{\vec a}\vec b$<br>$$<br>解：|\vec a|&#x3D;3,\vec e_{\vec a}&#x3D;(\frac{2}{3},\frac{2}{3},\frac{1}{3})\<br>\therefore Pij_{\vec a}\vec b&#x3D;\vec e_{\vec a}\cdot \vec b&#x3D;2+\frac{8}{3}-\frac{2}{3}&#x3D;4<br>$$</p>
+<h2 id="2-两向量的向量积"><a href="#2-两向量的向量积" class="headerlink" title="2 两向量的向量积"></a>2 两向量的向量积</h2><h3 id="2-1-定义"><a href="#2-1-定义" class="headerlink" title="2.1 定义"></a>2.1 定义</h3><p>设向量$\vec c$有两个向量$\vec a,\vec b，夹角为\theta$按下列方式定出：</p>
+<blockquote>
+<p>$|\vec c| &#x3D; |\vec a||\vec b|\sin\theta$；$\vec c$的方向垂直于$\vec a于\vec b$所决定的平面，方向按右手规则从$\vec a$转向$\vec b$确定。向量$\vec c$叫做向量$\vec a与\vec b$的向量积，记作$\vec a\times \vec b$.</p>
+</blockquote>
+<p>注：右手规则，如下图2.1-1所示：</p>
+<p>![截屏2023-06-01 15.37.33-向量积-数量积](&#x2F;Users&#x2F;gaogzhen&#x2F;baiduSyncdisk&#x2F;study&#x2F;math&#x2F;note&#x2F;08向量代数与空间解析几何&#x2F;images&#x2F;截屏2023-06-01 15.37.33-向量积-数量积.png)</p>
+<p>四指握的方向为$\vec a到\vec b$的转向，大拇指指的方向即为向量积的方向。</p>
+<p>注：</p>
+<ol>
+<li>$\vec c \perp \vec a,\vec c\perp \vec b$</li>
+</ol>
+<h3 id="2-2-重要结论"><a href="#2-2-重要结论" class="headerlink" title="2.2 重要结论"></a>2.2 重要结论</h3><ol>
+<li><p>$\vec a\times \vec a&#x3D;\vec0$</p>
+</li>
+<li><p>两非零向量$\vec a,\vec b$,则$\vec a\parallel \vec b\Leftrightarrow \vec a\times\vec b&#x3D;\vec0$</p>
+</li>
+</ol>
+<h3 id="2-3-几何意义（向量积模）"><a href="#2-3-几何意义（向量积模）" class="headerlink" title="2.3 几何意义（向量积模）"></a>2.3 几何意义（向量积模）</h3><p>如下图2.3-1所示：</p>
+<p><img src="/Users/gaogzhen/baiduSyncdisk/study/math/note/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/images/20230601-%E5%90%91%E9%87%8F%E7%A7%AF%E6%A8%A1%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89-%E6%95%B0%E9%87%8F%E7%A7%AF.png" alt="20230601-向量积模几何意义-数量积"></p>
+<p>以$\vec a,\vec b$为邻边做平行四边形，则$|\vec a\times\vec b|&#x3D;|\vec a|\cdot|\vec b|\sin\theta&#x3D;S_{平行四边形}$，即$|\vec a\times\vec b|$表示以$\vec a,\vec b$为邻边的平行四边形的面积。</p>
+<h3 id="2-4-向量积的运算规律"><a href="#2-4-向量积的运算规律" class="headerlink" title="2.4 向量积的运算规律"></a>2.4 向量积的运算规律</h3><ol>
+<li>$\vec a\times\vec b&#x3D;-\vec b\times\vec a$</li>
+<li>分配律：$(\vec a+\vec b)\times\vec c&#x3D;\vec a\times \vec c+\vec b\times\vec c$</li>
+<li>结合律：$(\lambda\vec a)\times\vec b&#x3D;\lambda(\vec a\times\vec b)$</li>
+</ol>
+<h3 id="2-5-向量积的坐标表示"><a href="#2-5-向量积的坐标表示" class="headerlink" title="2.5 向量积的坐标表示"></a>2.5 向量积的坐标表示</h3><p>设$\vec a&#x3D;(x_1,y_1,z_1),\vec b&#x3D;(x_2,y_2,z_2)$,则<br>$$<br>\vec a\times\vec b&#x3D;(x_1\vec i+y_1\vec j+z_1\vec k)\times(x_2\vec i+y_2\vec j+z_2\vec k)\<br>&#x3D;(y_1z_2-z_1y_2)\vec i+(x_1z_2-z_1x_2)\vec j+(x_1y_2-y_1x_2)\vec k<br>$$<br>用三阶行列式表示为：</p>
+<p>$$<br>\vec a\times\vec b&#x3D;<br>\begin{vmatrix}<br>\vec i&amp;\vec j&amp;\vec k\<br>x_1&amp;y_1&amp;z_1\<br>x_2&amp;y_2&amp;z_2<br>\end{vmatrix}\<br>&#x3D;\vec i\cdot<br>\begin{vmatrix}<br>y_1&amp;z_1\<br>y_2&amp;z_2\<br>\end{vmatrix} - \vec j<br>\begin{vmatrix}<br>x_1&amp;z_1\<br>x_2&amp;z_2<br>\end{vmatrix}+\vec k\cdot<br>\begin{vmatrix}<br>x_1&amp;y_1\<br>x_2&amp;y_2<br>\end{vmatrix}\<br>&#x3D;(y_1z_2-z_1y_2)\cdot\vec i-(x_1z_2-z_1x_2)\cdot\vec j+(x_1y_2-y_1x_2)\cdot k<br>$$</p>
+<p>例4 已知$\vec c \perp \vec a,且\vec c \perp \vec b. |\vec c|&#x3D;3，求\vec c$.其中，$\vec a&#x3D;(2,1,-1),\vec b&#x3D;(1,-1,2)$<br>$$<br>解：\vec a\times\vec b&#x3D;<br> \begin{vmatrix}<br> \vec i&amp;\vec j&amp;\vec k\<br> 2&amp;1&amp;-1\<br> 1&amp;-1&amp;2\<br> \end{vmatrix}\<br> &#x3D;\vec i-5\vec j+(-3)\vec k\<br> e_{\vec a\times\vec b}&#x3D;(\frac{1}{\sqrt{35}},\frac{-5}{\sqrt{35}},\frac{-3}{\sqrt{35}})\<br> \therefore \vec c&#x3D;\pm3e_{\vec a\times \vec b}&#x3D;(\pm\frac{3}{\sqrt{35}},\pm\frac{15}{\sqrt{35}},\pm\frac{9}{\sqrt{35}})<br>$$<br>例5 已知$A(1,2,3),B(3,4,5),C(2,4,7),求S_{\triangle{ABC}}$<br>$$<br>S_{\triangle{ABC}}&#x3D;\frac{1}{2}|\vec{AB}\times\vec{AC}|\<br>&#x3D;\frac{1}{2}<br>\begin{Vmatrix}<br>\vec i&amp;\vec j&amp;\vec k\<br>2&amp;2&amp;2\<br>1&amp;2&amp;4\<br>\end{Vmatrix}\<br>&#x3D;\frac{1}{2}\sqrt{4^2+(-6)^2+2^2}&#x3D;\sqrt{14}<br>$$</p>
+<h2 id="3-向量的混合积"><a href="#3-向量的混合积" class="headerlink" title="3 向量的混合积"></a>3 向量的混合积</h2><h3 id="3-1-混合积的定义"><a href="#3-1-混合积的定义" class="headerlink" title="3.1 混合积的定义"></a>3.1 混合积的定义</h3><blockquote>
+<p>设已知三个向量$\vec a,\vec b,\vec c$,先做向量$\vec a和\vec b的向量积\vec a\times\vec b$,把得到的向量与$\vec c做数量积(\vec a\times\vec b)\cdot\vec c$,这样得到的数量叫做三向量的混合积，记作$[\vec a\vec b\vec c]$</p>
+</blockquote>
+<h3 id="3-2-混合积的坐标表示"><a href="#3-2-混合积的坐标表示" class="headerlink" title="3.2 混合积的坐标表示"></a>3.2 混合积的坐标表示</h3><p>设$\vec a&#x3D;(x_1,y_1,z_1),\vec b&#x3D;(x_2,y_2,z_2),\vec c&#x3D;(x_3,y_3,z_3)$，则</p>
+<p>​		<br>$$<br>[\vec a\vec b\vec c]&#x3D;(\vec a\times\vec b)\cdot\vec c&#x3D;\<br>\begin{vmatrix}<br>x_1&amp;y_1&amp;z_1\<br>x_2&amp;y_2&amp;z_2\<br>x_3&amp;y_3&amp;z_3\<br>\end{vmatrix}<br>$$</p>
+<h3 id="3-3-混合积的几何意义"><a href="#3-3-混合积的几何意义" class="headerlink" title="3.3 混合积的几何意义"></a>3.3 混合积的几何意义</h3><p><img src="/Users/gaogzhen/baiduSyncdisk/study/math/note/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/images/202300602-%E6%B7%B7%E5%90%88%E7%A7%AF%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89-%E6%95%B0%E9%87%8F%E7%A7%AF.jpeg" alt="202300602-混合积几何意义-数量积"></p>
+<p>如上图所示向量积的混合积绝对值表示以$\vec a,\vec b,\vec c$为棱的平行六面体的体积。</p>
+<h3 id="3-4-运算规则"><a href="#3-4-运算规则" class="headerlink" title="3.4 运算规则"></a>3.4 运算规则</h3><ul>
+<li>$[\vec a\vec b\vec c]&#x3D;[\vec b\vec c\vec a]&#x3D;[\vec c\vec a\vec b]&#x3D;-[\vec a\vec c\vec b]&#x3D;-[\vec c\vec b\vec a]&#x3D;-[\vec b\vec a\vec c]$</li>
+</ul>
+<h3 id="3-5-三向量共面"><a href="#3-5-三向量共面" class="headerlink" title="3.5 三向量共面"></a>3.5 三向量共面</h3><blockquote>
+<p>$\vec a,\vec b，\vec c共面\Leftrightarrow [\vec a\vec b\vec c]&#x3D;0$</p>
+</blockquote>
+<p>例i6 已知$(\vec a\times\vec b)\cdot\vec c&#x3D;2,则[(\vec a+\vec b)\times(\vec b+\vec c)]\cdot(\vec c+\vec a)&#x3D;?$<br>$$<br>解：\<br>[(\vec a+\vec b)\times(\vec b+\vec c)]\cdot(\vec c+\vec a)&#x3D;\<br>(\vec a\times\vec b+\vec a\times\vec c+\vec b\times\vec b+\vec b\times\vec c)\cdot(\vec c+\vec a)\<br>&#x3D;[\vec a\vec b\vec c]+[\vec a\vec b\vec a]+[\vec a\vec c\vec c]+[\vec a\vec c\vec a]+[\vec b\vec c\vec c]+[\vec b\vec c\vec a]&#x3D;2[\vec a\vec b\vec c]&#x3D;4<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p14-22.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p52.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/02/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0802%E6%95%B0%E9%87%8F%E7%A7%AF%E5%90%91%E9%87%8F%E7%A7%AF%E6%B7%B7%E5%90%88%E7%A7%AF-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" data-id="cmmq5p0v9001gu01o3zm3294s" data-title="0802数量积向量积混合积-向量代数与空间解析几何" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-basis/math/note/高等数学/08向量代数与空间解析几何/0801向量及其线性运算-向量代数与空间解析几何" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/06/01/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0801%E5%90%91%E9%87%8F%E5%8F%8A%E5%85%B6%E7%BA%BF%E6%80%A7%E8%BF%90%E7%AE%97-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="article-date">
@@ -301,7 +429,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/01/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0801%E5%90%91%E9%87%8F%E5%8F%8A%E5%85%B6%E7%BA%BF%E6%80%A7%E8%BF%90%E7%AE%97-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" data-id="cmmdbvu6i001quc1o8ml9b0dd" data-title="0801向量及其线性运算-向量代数与空间解析几何" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/06/01/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0801%E5%90%91%E9%87%8F%E5%8F%8A%E5%85%B6%E7%BA%BF%E6%80%A7%E8%BF%90%E7%AE%97-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" data-id="cmmq5p0v8001fu01ohpty8x4v" data-title="0801向量及其线性运算-向量代数与空间解析几何" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -347,7 +475,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0705%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmdbvu6i001puc1o6u94aahq" data-title="0705可降阶的高阶微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0705%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq5p0v8001eu01o98d675j7" data-title="0705可降阶的高阶微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -439,7 +567,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0704%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmdbvu6h001nuc1oddst2hv1" data-title="0704一阶线性微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0704%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq5p0v7001cu01o8rr66jto" data-title="0704一阶线性微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -485,7 +613,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0704%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B_%E5%86%B2%E7%AA%81%E6%96%87%E4%BB%B6_Administrator_20230726215958/" data-id="cmmdbvu6h001ouc1o2s1seopi" data-title="0704一阶线性微分方程-微分方程_冲突文件_Administrator_20230726215958" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0704%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B_%E5%86%B2%E7%AA%81%E6%96%87%E4%BB%B6_Administrator_20230726215958/" data-id="cmmq5p0v8001du01oc7yi7axe" data-title="0704一阶线性微分方程-微分方程_冲突文件_Administrator_20230726215958" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -556,7 +684,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0702%E5%8F%AF%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmdbvu6g001luc1oh3ujbwed" data-title="0702可分类变量的微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0702%E5%8F%AF%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq5p0v7001au01o15il7dy9" data-title="0702可分类变量的微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -602,7 +730,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/0603-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E7%89%A9%E7%90%86%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmdbvu6f001iuc1o5s66br48" data-title="0603-定积分在物理学上的应用-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/0603-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E7%89%A9%E7%90%86%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0v60018u01o0enc53a6" data-title="0603-定积分在物理学上的应用-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -660,7 +788,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/0601%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%85%83%E7%B4%A0%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmdbvu6f001guc1ob37l1szm" data-title="0601定积分的元素法-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/0601%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%85%83%E7%B4%A0%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0v50015u01odcnb7zy0" data-title="0601定积分的元素法-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -762,7 +890,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0504%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmdbvu6e001euc1o0d1lgx1y" data-title="0504反常积分-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/03/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0504%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v40013u01ogul7fi6j" data-title="0504反常积分-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -860,101 +988,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0503%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95%E5%92%8C%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmdbvu6e001duc1oarlj6zv9" data-title="0503定积分的换元法和分部积分法-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-basis/math/note/高等数学/05定积分/0502微积分基本公式-定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
-  <time class="dt-published" datetime="2023-03-18T17:14:18.000Z" itemprop="datePublished">2023-03-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/">0502微积分基本公式-定积分</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<h2 id="1-积分上限函数及其导数"><a href="#1-积分上限函数及其导数" class="headerlink" title="1 积分上限函数及其导数"></a>1 积分上限函数及其导数</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><p>设函数$f(x)$在区间$[a,b]$上连续，并且设$x为[a,b]$上的一点，则$f(x)$在部分区间$[a,x]$上的定积分</p>
-<p>​	$\int_a^xf(x)dx$</p>
-<p>$f(x)在区间[a,x]$依然连续，所以该定积分存在。</p>
-<p>这里x即是积分上限，也是积分变量。因为定积分和积分变量的记法无关，为了明确期间，用积分变量t，则上述定积分为</p>
-<p>​	$\int_a^xf(t)dt$</p>
-<p>如果上限$x在区间[a,b]$上任意变动，那么对于任意一个确定的x，定积分有一个对应值，所以它在$[a,b]$上定义了一个函数，记做</p>
-<p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt\quad(a\le x\le b)$</p>
-<p>我们称函数$\Phi(x)$为$f(x)在区间[a,b]$上的积分上限函数。</p>
-<blockquote>
-<p>设函数$f(x)$在区间$[a,b]$上连续，任取$x\in[a,b]$,有</p>
-<p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt$</p>
-<p>则函数$\Phi(x)$为$f(x)在区间[a,b]$上的积分上限函数。</p>
-</blockquote>
-<h3 id="1-2-定理"><a href="#1-2-定理" class="headerlink" title="1.2 定理"></a>1.2 定理</h3><blockquote>
-<p>定理1 如果函数$f(x)在区间[a,b]$上连续，那么积分上限函数</p>
-<p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt$</p>
-<p>在$[a,b]$上可导，并且它的导数</p>
-<p>​	$\Phi^{‘}(x)&#x3D;\frac{d}{dx}\int_a^xf(t)dt&#x3D;f(x)\quad(a\le x\le b)$</p>
-</blockquote>
-<p>$$<br>设\exist x\in(a,b),设x+\Delta x\in(a,b)则\<br>\Phi(x+\Delta x)&#x3D;\int_a^{x+\Delta x}f(t)dt,函数的增量为\<br>\Delta\Phi&#x3D;\Phi(x+\Delta x)-\Phi(x)&#x3D;\int_a^{x+\Delta x}f(t)dt-\int_a^xf(t)dt\<br>&#x3D;\int_x^{x+\Delta x}f(t)dt,应用积分中值定理有\<br>\Delta\Phi&#x3D;\int_x^{x+\Delta x}f(t)dt&#x3D;f(\xi)\Delta x\quad(x\le\xi\le x+\Delta x)\<br>上式两端除以\Delta x限得\<br>\frac{\Delta\Phi}{\Delta x}&#x3D;f(\xi)\<br>当\Delta x\to0时，\xi\to x,上式端取极限，得<br>\lim\limits_{\Delta x\to0}\frac{\Delta\Phi}{\Delta x}&#x3D;f(x)\<br>当x&#x3D;a,取\Delta x\gt 0，则同理可证\Phi_+^{‘}(a)&#x3D;f(a);若x&#x3D;b,取\Delta x\lt0,同理可证\Phi_-^{‘}(b)&#x3D;f(b)<br>$$</p>
-<blockquote>
-<p>定理2(原函数存在定理)  如果函数$f(x)在区间[a,b]$上连续，那么函数</p>
-<p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt$</p>
-<p>就是$f(x)在[a,b]$上的一个原函数。</p>
-</blockquote>
-<p>注：积分上限、下限可以是关于x的函数</p>
-<ul>
-<li>$\int_a^{\phi(x)}f(t)dt&#x3D;f[\phi(x)]\phi^{‘}(x)$</li>
-<li>$\int_{\xi(x)}^{\phi(x)}f(t)dt&#x3D;f[\phi(x)]\phi^{‘}(x)-f[\xi(x)]\xi^{‘}(x)$</li>
-<li>$(\int_a^xf(t)g(x)dt)^{‘}&#x3D;(g(x)\int_a^xf(t)dt)^{‘}&#x3D;g^{‘}(x)\int_a^xf(t)dt+g(x)f(x)$</li>
-</ul>
-<p>例1 求$\frac{d}{dx}\int_0^xe^{t^2}dt$<br>$$<br>\frac{d}{dx}\int_0^xe^{t^2}dt&#x3D;e^{x^2}<br>$$<br>求$\frac{d}{dx}\int_0^{x^2}\sqrt{1+t^4}dt$<br>$$<br>\frac{d}{dx}\int_0^{x^2}\sqrt{1+t^4}dt&#x3D;\sqrt{1+(x^2)^4}(x^2)^{‘}\<br>&#x3D;2x\sqrt{1+t^8}<br>$$<br>求$\frac{d}{dx}\int_{x^2}^{x^3}\sqrt{1+t^4}dt$​<br>$$<br>\frac{d}{dx}\int_{x^2}^{x^3}\sqrt{1+t^4}dt&#x3D;3x^2\sqrt{1+x^{12}}-2x\sqrt{1+x^8}<br>$$<br>例2 求$\lim\limits_{x\to0}\frac{\int_{\cos x}^1e^{-t^2}dt}{x^2}$<br>$$<br>该极限为\frac{0}{0}型未定式，应用洛必达法则\<br>\lim\limits_{x\to0}\frac{\int_{\cos x}^1e^{-t^2}dt}{x^2}&#x3D;\lim\limits_{x\to0}\frac{e^{-\cos^2x}\sin x}{2x}\<br>&#x3D;\frac{1}{2e}<br>$$<br>例3 设$y&#x3D;y(x)$由参数方程<br>$$<br>\begin{cases}<br>x&#x3D;1+2t^2\<br>y&#x3D;\int_1^{1+2\ln t}\frac{e^u}{u}du\quad (t\gt0)<br>\end{cases}<br>$$<br>所确定，求$\frac{dy}{dx}$<br>$$<br>解：\frac{dy}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{dt}{dx}\<br>&#x3D;(\int_1^{1+2\ln t}\frac{e^u}{u}du)^{‘}\cdot\frac{1}{4t}&#x3D;\frac{2et}{1+2\ln t}\cdot\frac{1}{4t}\<br>&#x3D;\frac{e}{2(1+2\ln t)}<br>$$</p>
-<p>例4 设$f(x)在[0,+\infty)$内连续，且$f(x)\gt0$,证明</p>
-<p>​	$F(x)&#x3D;\frac{\int_0^xtf(t)dt}{\int_0^xf(t)dt}$在$(0,\infty)$内单增。<br>$$<br>证明：F^{‘}(x)&#x3D;\frac{(\int_0^xtf(t)dt)^{‘}\cdot\int_0^xf(t)dt-\int_0^xtf(t)dt\cdot(\int_0^xf(t)dt)^{‘}}{(\int_0^xf(t)dt)^2}\<br>&#x3D;\frac{xf(x)\int_0^xf(t)dt-f(x)\int_0^xtf(t)dt}{(\int_0^xf(t)dt)^2}\<br>&#x3D;\frac{\int_0^xf(x)f(t)(x-t)dt}{(\int_0^xf(t)dt)^2}\<br>因为,x\in(0,\infty),0\le t\le x, f(x)\gt 0\<br>所以f(t)\gt0,(x-t)\ge0且x\not\equiv t\<br>从而f(x)f(t)(x-t)\ge0且不恒等于0，所以\int_0^xf(x)f(t)(x-t)dt\gt0\<br>所以当x\in(0,\infty)时，F^{‘}(x)\gt 0,即F(x)在(0,infty)内单增。<br>$$</p>
-<h2 id="2-微积分基本公式"><a href="#2-微积分基本公式" class="headerlink" title="2 微积分基本公式"></a>2 微积分基本公式</h2><blockquote>
-<p>定理3（微积分基本定理）如果函数$F(x)$是连续函数$f(x)在区间[a,b]$上的一个原函数，那么</p>
-<p>​	$\int_a^bf(x)dx&#x3D;F(b)-F(a)\quad(2-4)$</p>
-</blockquote>
-<p>$$<br>证明：已知F(x)是连续函数f(x)的一个原函数，根据定理2知，积分上限函数\<br>\quad\Phi(x)&#x3D;\int_a^xf(t)dt<br>也是f(x)的一个原函数，则\<br>\quad F(x)-\Phi(x)&#x3D;C\quad(a\le x\le b,C为常数)\quad(2-5)\<br>去x&#x3D;a,F(a)-\Phi(a)&#x3D;C，\Phi(a)&#x3D;0,F(a)&#x3D;C,导入2-5式得\<br>\Phi(x)&#x3D;\int_a^xf(t)dt&#x3D;F(x)-F(a)\<br>令x&#x3D;b,\int_a^bf(x)dx&#x3D;F(b)-F(a)<br>$$</p>
-<p>注：</p>
-<ul>
-<li>该公式也称为牛顿莱布尼茨公式（Newton-Leibniz），也叫微积分基本公式</li>
-<li>运用微积分基本公式的前提是函数$f(x)$是连续的</li>
-</ul>
-<p>例1 求$\int_{-2}^{2\sqrt{3}}\frac{1}{4+x^2}dx$<br>$$<br>解：\int_{-2}^{2\sqrt{3}}\frac{1}{4+x^2}dx&#x3D;\frac{1}{2}\arctan\frac{x}{2}|_{-2}^{2\sqrt{3}}\<br>&#x3D;\frac{1}{2}(\arctan\sqrt{3}-\arctan(-1))&#x3D;\frac{7}{24}\pi<br>$$<br>求$\int_0^1\frac{x}{\sqrt{1+x^2}}dx$<br>$$<br>解：\int_0^1\frac{x}{\sqrt{1+x^2}}dx&#x3D;\sqrt{x^2+1}|<em>0^1&#x3D;\sqrt{2}-1<br>$$<br>例2 求$\int</em>{-1}^1f(x)dx$,其中<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>x^2+1,\quad(0\le x\le1)\<br>x+1,\quad(-1\le x\lt0)<br>\end{cases}<br>$$</p>
-<p>$$<br>解:\int_{-1}^1f(x)dx&#x3D;\int_{-1}^0f(x)dx+\int_0^1f(x)dx\<br>&#x3D;\int_{-1}^0(x+1)dx+\int_0^1(x^2+1)dx&#x3D;(\frac{1}{2}x^2+x)|_{-1}^0+(\frac{1}{3}x^3+x)|_0^1\<br>&#x3D;\frac{1}{2}-1+\frac{1}{3}+1&#x3D;\frac{5}{6}<br>$$</p>
-<p>例3 求$\int_0^3|2-x|dx$<br>$$<br>解：\int_0^3|2-x|dx&#x3D;\int_0^2|2-x|dx+\int_2^3|2-x|dx\<br>&#x3D;\int_0^2(2-x)dx+\int_2^3(x-2)dx&#x3D;(2x-\frac{1}{2}x^2)|_0^2+(\frac{1}{2}x^2-2x)|_2^3\<br>&#x3D;4-2+\frac{9}{2}-6-(2-4)&#x3D;\frac{5}{2}<br>$$<br>例4<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>x^2,\quad x\int[0,1),\<br>x,\quad x\int[1,2]<br>\end{cases}<br>$$<br>求$\Phi(x)&#x3D;\int_0^xf(t)dt在[0,2]$上的表达式<br>$$<br>解：当x\in[0,1)时，\Phi(x)&#x3D;\int_0^xf(t)dt&#x3D;\int_0^xt^2dt&#x3D;\frac{1}{3}x^3\<br>当x\in[1,2]时,\Phi(x)&#x3D;\int_0^xf(t)dt&#x3D;\int_0^1f(t)dt+\int_1^xf(t)dt\<br>&#x3D;\int_0^1x^2dx+\int_1^xtdt&#x3D;\frac{1}{3}+\frac{1}{2}x^2-\frac{1}{2}\<br>&#x3D;\frac{1}{2}x^2-\frac{1}{6}\<br>\Phi(x)&#x3D;<br>\begin{cases}<br>\frac{1}{3}x^3,\quad x\in[0,1)\<br>\frac{1}{2}x^2-\frac{1}{6},\quad x\in[1,2]\<br>\end{cases}<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
-<p>:question:QQ:806797785</p>
-<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
-</blockquote>
-<p>参考：</p>
-<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p237-244.</p>
-<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p33.</p>
-<p>$\log_ab&#x3D;\frac{\log_cb}{\log_ca}$</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmdbvu6d001cuc1oai23afs4" data-title="0502微积分基本公式-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/03/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0503%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95%E5%92%8C%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v40012u01oev8m27me" data-title="0503定积分的换元法和分部积分法-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -981,7 +1015,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -991,7 +1025,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
     </div>
   </div>
 
@@ -1001,7 +1035,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
     </div>
   </div>
 
@@ -1023,15 +1057,7 @@
       <ul>
         
           <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
           </li>
         
           <li>
@@ -1040,6 +1066,14 @@
         
           <li>
             <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
           </li>
         
       </ul>

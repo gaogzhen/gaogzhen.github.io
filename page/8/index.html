@@ -71,6 +71,102 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-basis/math/note/高等数学/01函数与极限/0109连续函数的运算和初等函数的连续性-函数与极限-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2022-11-07T17:48:18.000Z" itemprop="datePublished">2022-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0109连续函数的运算和初等函数的连续性-函数与极限-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-连续函数的和、差、积、商的连续性"><a href="#1-连续函数的和、差、积、商的连续性" class="headerlink" title="1 连续函数的和、差、积、商的连续性"></a>1 连续函数的和、差、积、商的连续性</h2><p>由函数在某点连续的定义和极限的四则运算法则，立即可得出一下定理：</p>
+<blockquote>
+<p>定理1：函数$f(x)$和函数$g(x)$在点$x_0$处连续，则它们的和(差)$f\pm g$、积$f\cdot g$及商$\frac{f}{g}(当g(x_0)\not &#x3D;0时)$都在点$x_0$处连续。</p>
+</blockquote>
+<h2 id="2-反函数和复合函数的连续性"><a href="#2-反函数和复合函数的连续性" class="headerlink" title="2 反函数和复合函数的连续性"></a>2 反函数和复合函数的连续性</h2><blockquote>
+<p>定理2：如果函数$f(x)$在区间$I_x$上单调增加（或单调减少）且连续，那么它的反函数$x&#x3D;f^{-1}(y)$也在对应的区间$I_y&#x3D;{y|y&#x3D;f(x),x\in I_x}$上单调增加（或单调减少）且连续。</p>
+<p>定理3：设函数$y&#x3D;f[g(x)]$由函数$u&#x3D;g(x)$与函数$y&#x3D;f(u)$复合而成，$\overset{\circ}{U}(x_0)\subset D_{f\circ g}$.若$\lim\limits_{x\to x_0}{g(x)&#x3D;u_0}$,而函数$y&#x3D;f(u)$在$u&#x3D;u_0$连续，则</p>
+<p>$\lim\limits_{x\to x_0}{f[g(x)]}&#x3D;\lim\limits_{u\to u_0}{f(u)}&#x3D;f(u_0)$</p>
+</blockquote>
+<p>定理3证明：<br>$$</p>
+<p>$$</p>
+<p>$$<br>因为y&#x3D;f(u)在u&#x3D;u_0处连续，即\lim\limits_{u\to u_0}{f(u)}&#x3D;f(u_0) ，即 \<br>\forall\epsilon\gt 0,\exists\eta\gt0,当0\lt|u-u_0|\lt\eta时，有|f(u)-u_0|\lt\epsilon \<br>又因为\lim\limits_{x\to x_0}{g(x)&#x3D;u_0},\<br>对于上述\epsilon,\eta，\exists\delta\gt0,当0&lt;|x-x_0|\lt\delta时，有|g(x)-u_0|\lt\eta, 即\<br>当0&lt;|x-x_0|\lt\delta时，有|u-u_0|\lt\eta ，|f[g(x)]-u_0|\lt\epsilon  即\<br>\lim\limits_{x\to x_0}{f[g(x)]}&#x3D;\lim\limits_{u\to u_0}{f(u)}&#x3D;f(u_0)\qquad (9-1)<br>$$</p>
+<ul>
+<li>注<ul>
+<li>9-1式可以写成:$\lim\limits_{x\to x_0}{f[g(x)]}&#x3D;f(u_0)&#x3D;f[\lim\limits_{x\to x_0}{g(x)}]$。表示求复合函数极限时，函数符号$f$与极限符号$\lim\limits_{x\to x_0}$可以交换次序</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>定理4：设函数$y&#x3D;f[g(x)]$由函数$u&#x3D;g(x)$与函数$y&#x3D;f(u)$复合而成，$\overset{\circ}{U}(x_0)\subset D_{f\circ g}$.若函数$u&#x3D;g(x)$在$x&#x3D;x_0$处连续且$g(x_0)&#x3D;u_0$，而函数$y&#x3D;f(u)$在$u&#x3D;u_0$连续，则复合函数$y&#x3D;f[g(x)]$在$x&#x3D;x_0$连续</p>
+<p>证明：由定理3得 $\lim\limits_{x\to x_0}{f[g(x)]}&#x3D;f(u_0)&#x3D;f[g(x_0)]$ 证毕。</p>
+</blockquote>
+<p>例4：讨论$y&#x3D;\cos\frac{1}{x}$的连续性</p>
+<p>$$<br>函数y&#x3D;\cos\frac{1}{x}可以看成由函数y&#x3D;\cos u,u&#x3D;\frac{1}{x}复合而成。 \<br>因为函数\cos u在R上是连续的，函数\frac{1}{x}在区间(-\infty,0),(0,+\infty)上是连续的。 \<br>所以函数y&#x3D;\cos\frac{1}{x}在区间(-\infty,0),(0,+\infty)是连续的，在x&#x3D;0不连续<br>$$</p>
+<h2 id="3-初等函数的连续性"><a href="#3-初等函数的连续性" class="headerlink" title="3 初等函数的连续性"></a>3 初等函数的连续性</h2><ul>
+<li>基本初等函数：幂函数、指数函数、对数函数、三角函数和反三角函数。</li>
+</ul>
+<p>复习下初等函数定义：</p>
+<blockquote>
+<p>由常数和基本初等函数经过有限次的四则运算和有限次的函数复合步骤所构成并可用一个式子表示的函数，称为初等函数。</p>
+</blockquote>
+<ul>
+<li>注<ol>
+<li>基本初等函数在其定义域内都是连续的。</li>
+<li>一切初等函数在其定义区间(定义域内的空间)都是连续的。</li>
+</ol>
+</li>
+</ul>
+<p>例5：求$\lim\limits_{x\to 0}{\frac{\log_a(1+x)}{x}}$<br>$$<br>当x\to 0时，分子分母都趋向于0，属于\frac{0}{0}型未定式 \<br>\lim\limits_{x\to 0}{\frac{\log_a(1+x)}{x}}&#x3D;\lim\limits_{x\to 0}{\log_a(1+x)^{\frac{1}{x}}}&#x3D;\log_ae&#x3D;\frac{1}{\ln a}<br>$$<br>例6：求$\lim\limits_{x\to 0}{\frac{a^x-1}{x}}$<br>$$<br>\lim\limits_{x\to 0}{\frac{a^x-1}{x}}也属于\frac{0}{0}未定式 \<br>令t&#x3D;a^x-1,当x\to 0时，t\to 0 ,\quad x&#x3D;\log_a(t+1) ,则 \<br>\lim\limits_{x\to 0}{\frac{a^x-1}{x}}&#x3D;\lim\limits_{t\to 0}{\frac{t}{\log_a(t+1)}}&#x3D;\ln a<br>$$<br>例7：求$\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}(\alpha\in R)$<br>$$<br>\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}也属于\frac{0}{0}未定式 \<br>令t&#x3D;(1+x)^\alpha-1，当x\to 0时，t\to 0 ,于是\<br>\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}&#x3D;\lim\limits_{x\to 0}{[\frac{(1+x)^\alpha-1}{ln(1+x)^\alpha}\cdot\frac{\alpha\ln(1+x)}{x}]}&#x3D; \<br>&#x3D;\lim\limits_{t\to 0}{\frac{t}{\ln(1+t)}}\cdot\lim\limits_{x\to 0}{\frac{\alpha\ln(1+x)}{x}}&#x3D;\alpha<br>$$<br>有例5、例6、例7可得以下三个常用的等价无穷小</p>
+<blockquote>
+<p>当x\to 0时 ,$\ln(1+x)\sim x\qquad e^x-1\sim x\qquad (1+x)^\alpha\sim\alpha x$</p>
+<p>其中x可以是自变量任意同等变化下的无穷小，比如$\lim f(x)&#x3D;0$,上述等价无穷小可以变化为</p>
+<p>$ln[1+f(x)]\sim f(x)\qquad e^{f(x)-1}\sim f(x)\qquad [1+f(x)]^\alpha\sim\alpha f(x)$</p>
+</blockquote>
+<blockquote>
+<p>一般地，对于形如$u(x)^{v(x)}(u(x)\gt 0,u(x)\not&#x3D;1)$的函数通常称为幂指函数，如果</p>
+<p>$\lim u(x)&#x3D;a\gt 0,\lim v(x)&#x3D;b$,</p>
+<p>那么$\lim u(x)^{v(x)}&#x3D;a^b$</p>
+</blockquote>
+<h2 id="4-练习"><a href="#4-练习" class="headerlink" title="4 练习"></a>4 练习</h2><p>例8：$\lim\limits_{x\to 4}{\frac{\sqrt{1+2x}-3}{x-4}}$<br>$$<br>\frac{0}{0}型未定式 \<br>根号后-3不能直接利用等价无穷小，这里我们进行分子有理化 于是\<br>\lim\limits_{x\to 4}{\frac{\sqrt{1+2x}-3}{x-4}}&#x3D;\lim\limits_{x\to 4}{\frac{(\sqrt{1+2x}-3)(\sqrt{1+2x}+3)}{(x-4)(\sqrt{1+2x}+3)}} \&#x3D;\lim\limits_{x\to 4}{\frac{2(x-4)}{(x-4)(\sqrt{1+2x}+3)}}&#x3D;\frac{1}{3}<br>$$<br>例9：$\lim\limits_{x\to0}{(1+2x)^{\frac{3}{\sin x}}}$<br>$$<br>x\to 0时，(1+2x)\to 1那极限不就是1吗？ × 要明白底数在变，指数也在变,就是典型的幂指函数 \<br>可以给幂指函数底数和指数部分分别凑重要极限或者利用公式 a &#x3D; e^{lna} 这里用前面的方法 \<br>\lim\limits_{x\to0}{(1+2x)^{\frac{3}{\sin x}}}&#x3D;\lim\limits_{x\to0}{(1+2x)^{\frac{1}{2x}\frac{6x}{\sin x}}}&#x3D;e^6<br>$$<br>例10：$\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}$<br>$$<br>解：\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}&#x3D;e^{\lim\limits_{x\to0}{\ln(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}}  于是 \<br>\lim\limits_{x\to0}{\ln(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}&#x3D;\lim\limits_{x\to0}{\frac{x^2+1}{x}\ln(2e^{\frac{x}{1+x}}-1)} \<br>&#x3D;\lim\limits_{x\to0}{\frac{x^2+1}{x}\ln(2e^{\frac{x}{1+x}}-2+1)}&#x3D;\lim\limits_{x\to0}{\frac{x^2+1}{x}2(e^{\frac{x}{1+x}}-1)}\<br>&#x3D;\lim\limits_{x\to0}{\frac{x^2+1}{x}2(\frac{x}{1+x})}&#x3D;2,所以 \<br>\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}&#x3D;e^2<br>$$</p>
+<h2 id="4-后记"><a href="#4-后记" class="headerlink" title="4 后记"></a>4 后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P62~p65.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p11.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5p0uu000gu01o8fxkgqlg" data-title="0109连续函数的运算和初等函数的连续性-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-basis/math/note/高等数学/01函数与极限/0107无穷小的比较-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
@@ -170,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu64000tuc1o8jrjh7g1" data-title="0107无穷小的比较-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0us000cu01o4tnjh7v8" data-title="0107无穷小的比较-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -261,7 +357,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu62000quc1o2zg77i7c" data-title="0105极限的运算法则-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0ur0009u01o2j7j9tg3" data-title="0105极限的运算法则-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -347,7 +443,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu62000ouc1ofirgfuj4" data-title="0104无穷小和无穷大-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0uq0007u01o2f3vaed9" data-title="0104无穷小和无穷大-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -417,7 +513,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu5v000juc1oaxy5hlxb" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0um0002u01o80cf2as8" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -602,7 +698,7 @@ $$
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu5v000iuc1odalg636x" data-title="0101集合-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0uj0001u01oeqnp8ljn" data-title="0101集合-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -631,7 +727,7 @@ $$
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -641,7 +737,7 @@ $$
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
     </div>
   </div>
 
@@ -651,7 +747,7 @@ $$
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
     </div>
   </div>
 
@@ -673,15 +769,7 @@ $$
       <ul>
         
           <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
           </li>
         
           <li>
@@ -690,6 +778,14 @@ $$
         
           <li>
             <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
           </li>
         
       </ul>

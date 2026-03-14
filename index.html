@@ -71,12 +71,16 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-basis/math/note/高等数学/02导数与微分/0201导数的概念-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-basis/math/note/高等数学/12无穷级数/1202常数项级数的审敛法-无穷级数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
-  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+    <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2026-03-06T15:25:00.000Z" itemprop="datePublished">2026-03-06</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a>►<a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -85,7 +89,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+      <a class="p-name article-title" href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
     </h1>
   
 
@@ -94,307 +98,117 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-导数的定义"><a href="#1-导数的定义" class="headerlink" title="1 导数的定义"></a>1 导数的定义</h2><blockquote>
-<p>设函数$y&#x3D;f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\to0$时的极限存在，那么称函数$y&#x3D;f(x)在点x_0$处可导，并称这个极限为函数$y&#x3D;f(x)在点x_0$处的导数，记做$f^{‘}(x_0)$,即</p>
-<p>$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$</p>
-<p>也可记做$y^{‘}|<em>{x&#x3D;x_0},\frac{dy}{dx}|</em>{x&#x3D;x_0},\frac{df(x)}{dx}|_{x&#x3D;x_0}$</p>
-</blockquote>
-<ul>
-<li>注<ol>
-<li>导数定义是严格的形式：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}},x_0一致，\triangle x一致$,<ul>
-<li>示例：$f^{‘}(1)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(1+\triangle x)-f(1)}{\triangle x}}$</li>
-<li>示例：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+2\triangle x)-f(x_0)}{2\triangle x}},增量2\triangle$</li>
-</ul>
-</li>
-<li>等价变形$f^{‘}(x_0)&#x3D;\lim\limits_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}}$</li>
-<li>实例：<ol>
-<li>物体的位移函数$s&#x3D;f(t)$在$t_0$时刻的瞬时速度：$v(t_0)&#x3D;f^{‘}(t_0)$</li>
-<li>曲线$y&#x3D;f(x)在点(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</li>
-</ol>
-</li>
-<li>$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$极限不存在,函数在点$x_0$处不可导<ol>
-<li>特殊$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}&#x3D;\infty$函数极限仍然是不存在的</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
-<blockquote>
-<p>如果函数$f(x)在开区间I$内处处可导，那么称函数$y&#x3D;f(x)在开区间I内$可导，对于$\forall\in I$,都对应这$f(x)$的一个确定的导数值，这样构成的函数叫做原函数$y&#x3D;f(x)$的导函数,记做$y^{‘},\frac{dy}{dx},\frac{df(x)}{dx}$</p>
-</blockquote>
-<ul>
-<li>注<ul>
-<li>求某一点的导数值可先求原函数的导函数，带入求某一点的导数值即函数在某点的导数值等于其导函数在该点的函数值。</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-常见函数的导数-导函数"><a href="#2-常见函数的导数-导函数" class="headerlink" title="2 常见函数的导数(导函数)"></a>2 常见函数的导数(导函数)</h2><p>例1 求函数$f(x)&#x3D;C(C为常数)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{(C-C)}{h}}&#x3D;0<br>$$</p>
-<blockquote>
-<p>常数的导数等于零。</p>
-</blockquote>
-<p>例2：求幂函数$f(x)&#x3D;x^\mu(\mu\in R)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{(x+h)^\mu-x^\mu}{h}}\<br>&#x3D;x^{\mu-1}\lim\limits_{h\to0}{\frac{(1+\frac{h}{x})^\mu-1}{\frac{h}{x}}}&#x3D;\mu x^{\mu-1}<br>$$</p>
-<p>例3：求函数$f(x)&#x3D;\sin x$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\sin(x+h)-sin(x)}{h}}&#x3D; \<br>\lim\limits_{h\to0}{\frac{2\sin(\frac{h}{2})\cos(\frac{2x+h}{2})}{h}}&#x3D;\cos x<br>$$</p>
-<blockquote>
-<p>$(\cos x)^{‘}&#x3D;-\sin x$</p>
-</blockquote>
-<p>例4：求函数$f(x)&#x3D;a^x(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{a^{x+h}-a^x}{h}}&#x3D; \<br>a^x\lim\limits_{h\to0}{\frac{a^h-1}{h}}&#x3D;a^x\ln a<br>$$<br>例5：求函数$f(x)&#x3D;\log_ax(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\log_a(x+h)-\log_a(x)}{h}} \<br>&#x3D;\frac{1}{x}\lim\limits_{h\to0}{\frac{\log_a(1+\frac{h}{x})}{\frac{h}{x}}}&#x3D;\frac{1}{x\ln a}<br>$$<br>例6：已知$f^{‘}(x_0)$存在，则$\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}}&#x3D;？$<br>$$<br>解：\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}} \<br>&#x3D;3\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0)}{3\triangle x}} + \lim\limits_{\triangle x\to0}{\frac{f(x_0-\triangle x)-f(x_0)}{-\triangle x}}\<br>&#x3D;3f^{‘}(x_0)+f^{‘}(x_0)&#x3D;4f^{‘}(x_0)<br>$$</p>
-<h2 id="3-单侧导数"><a href="#3-单侧导数" class="headerlink" title="3 单侧导数"></a>3 单侧导数</h2><blockquote>
-<p>若$\lim\limits_{h\to0^-}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的左导数，记做$f_-^{‘}(x_0)$；若$\lim\limits_{h\to0^+}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的右导数导数,记做$f_+^{‘}(x_0)$。</p>
-<p>函数$f(x)在点x_0$可导的充分必要条件是左导数$f_-^{‘}(x_0)$和右导数$f_+^{‘}(x_0)$存在且相等。</p>
-<p>左导数和右导数统称为单侧导数。</p>
-<p>如果函数$(x)$在开区间$(a,b)$内可导，且$f_+^{‘}(a)$及$f_-^{‘}(b)$都存在，那么说函数$f(x)$在闭区间$[a,b]$内可导。</p>
-</blockquote>
-<p>例7:<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>\frac{2}{3}x^3,x\le1 \<br>x^2,\quad x\gt1<br>\end{cases}<br>，f(x)在x&#x3D;1处是否可导？<br>$$</p>
-<p>$$<br>解：分段函数在某点是否可导，分别求左右导数。\<br>f_-^{‘}(1)&#x3D; 3x^2|<em>{x&#x3D;1}&#x3D;2,f</em>+^{‘}(1)&#x3D; 2x|<em>{x&#x3D;1}&#x3D;2 , \<br>f</em>-^{‘}(1)&#x3D;f_+^{‘}(1) 所以f(x)在点x&#x3D;1处可导？ \<br>那我们按左导数和右导数定义计算 \<br>f_-^{‘}(1)&#x3D;\lim\limits_{x\to1^-}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{\frac{2}{3}x^3-\frac{2}{3}}{x-1}}&#x3D;2 \<br>f_+^{‘}(1)&#x3D;\lim\limits_{x\to1^+}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{x^2-\frac{2}{3}}{x-1}}&#x3D;\infty \<br>所以f(x)在x&#x3D;1处导数不存在。<br>$$</p>
-<ul>
-<li>注：<strong>判断分段函数在分界点出是否可导要根据定义分别计算左导数和右导数</strong></li>
-</ul>
-<h2 id="4-导数的几何意义"><a href="#4-导数的几何意义" class="headerlink" title="4 导数的几何意义"></a>4 导数的几何意义</h2><blockquote>
-<p>曲线$y&#x3D;f(x)在(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</p>
-<p>切线方程：$y-f(x_0)&#x3D;f^{‘}(x_0)(x-x_0)$</p>
-<p>过切点M$(x_0,y_0)$且与切线垂直的直线叫做曲线$y&#x3D;f(x)$在点M出的法线。</p>
-<p>法线方程：$y-f(x_0)&#x3D;\frac{1}{f^{‘}(x_0)}(x-x_0)$</p>
-</blockquote>
-<p>切线和法线示意图如下4-1所示：<img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89.bmp" alt="0201导数的概念-导数与微分-导数的几何意义"></p>
-<h2 id="5-可导和连续的关系"><a href="#5-可导和连续的关系" class="headerlink" title="5 可导和连续的关系"></a>5 可导和连续的关系</h2><blockquote>
-<p>可导必连续，但是连续不一定可导。</p>
-</blockquote>
-<p>$$<br>证明：可导必连续 \<br>\lim\limits_{\triangle x\to 0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>\frac{\triangle y}{\triangle x}&#x3D;f^{‘}(x_0)+\alpha ,其中\lim\limits_{\triangle x\to 0}{\alpha}&#x3D;0 \<br>则\triangle y&#x3D;f^{‘}(x_0)\triangle x + \alpha\triangle x,那么当\triangle x\to时，\triangle y \to0<br>\所以函数y&#x3D;f(x)连续<br>$$</p>
-<h2 id="6-后记"><a href="#6-后记" class="headerlink" title="6 后记"></a>6 后记</h2><blockquote>
-<p>:question:QQ:806797785</p>
-<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
-</blockquote>
-<p>参考：</p>
-<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P73~p82.</p>
-<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p13.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmdbvu5r000buc1o8vcz5r7j" data-title="0201导数的概念-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-basis/math/note/高等数学/02导数与微分/0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
-  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-隐函数"><a href="#1-隐函数" class="headerlink" title="1 隐函数"></a>1 隐函数</h2><blockquote>
-<p>定义：设有两个非空数集$A,B$.对于$\forall x\in A$，由二元方程$F(x,y)&#x3D;0$对应唯一的$y\in B$,称此对应关系是二元方程$F(X,y)&#x3D;0$确定的隐函数。</p>
-<p>相应的由$y&#x3D;f(x)$确定的对应关系称为显函数。</p>
-<p>把一个隐函数化成显函数，叫做隐函数的显化。</p>
-</blockquote>
-<p>例1 ：$x+y^3-1&#x3D;0\quad隐函数的显化\rightarrow y&#x3D;\sqrt[3]{1-x}$</p>
-<h2 id="2-隐函数求导"><a href="#2-隐函数求导" class="headerlink" title="2 隐函数求导"></a>2 隐函数求导</h2><blockquote>
-<p>利用复合函数求导法则，对方程两边求导。</p>
-</blockquote>
-<p>例2：求$e^y+xy-e&#x3D;0$所确定的隐函数的导数$\frac{dy}{dx}$<br>$$<br>解：等式两边求导,\<br>(e^y)^{‘}+(xy)^{‘}-(e)^{‘}&#x3D;0 \<br>e^yy^{‘}+y+xy^{‘}&#x3D;0 \<br>y^{‘}&#x3D;-\frac{y}{e^y+x},\quad e^y+x\not&#x3D;0<br>$$<br>例3：求由方程$y^5+2y-x-3x^7&#x3D;0$所确定的隐函数在$x&#x3D;0处的导数\frac{dy}{dx}|<em>{x&#x3D;0}$<br>$$<br>解：等式两端对x求导\<br>5y^4y^{‘}+2y^{‘}-1-21x^6&#x3D;0 \<br>y^{‘}&#x3D;\frac{1+21x^6}{2+5y^4} \<br>x&#x3D;0时，y&#x3D;0带入得\<br>\frac{dy}{dx}|</em>{x&#x3D;0}&#x3D;\frac{1}{2}<br>$$<br>注：求隐函数在某点的导数值时，如果没要求求$y^{‘}$,则可以先带入该点在求导<br>$$<br>对于例3，5y^4y^{‘}+2y^{‘}-1-21x^6&#x3D;0 ，带入x&#x3D;0,y&#x3D;0 得 \<br>y^{‘}(0)&#x3D;\frac{1}{2}<br>$$<br>例4：已知椭圆$\frac{x^2}{16}+\frac{y^2}{9}&#x3D;1$.求该椭圆在点$(2,\frac{3}{2}\sqrt{3})$处的切线方程。<br>$$<br>解：切线斜率k&#x3D;y^{‘}(x) ,方程两边对x求导 \<br>\frac{x}{8}+\frac{2}{9}yy^{‘}&#x3D;0,y^{‘}&#x3D;-\frac{9x}{16y} \<br>k&#x3D;y^{‘}(2)&#x3D;-\frac{\sqrt{3}}{4} \<br>切线方程为y-\frac{3}{2}\sqrt{3}&#x3D;-\frac{\sqrt{3}}{4}(x-2) \<br>即\sqrt{3}x+4y-8\sqrt{3}&#x3D;0<br>$$</p>
-<p>例5：由方程$x-y+\frac{1}{2}\sin y &#x3D;0$所确定的隐函数，求$\frac{dy^2}{dx^2}$<br>$$<br>解：方程两边对x求导 \<br>1-y^{‘}+\frac{1}{2}\cos yy^{‘}&#x3D;0 ，y^{‘}&#x3D;\frac{2}{2-\cos y} \<br>y^{‘’}&#x3D;\frac{0-2(\sin yy^{‘})}{(2-\cos y)^2}&#x3D;\frac{-4\sin y}{(2-\cos y)^3} \<br>$$</p>
-<blockquote>
-<p>某些场合，利用对数求导法比通用的方法简便些。</p>
-</blockquote>
-<p>例6：求$y&#x3D;x^{\sin x}(x\gt0)$的导数。<br>$$<br>两边取对数， 得 \<br>\ln y&#x3D;\sin x \ln x, 两边对x求导 \<br>\frac{y^{‘}}{y}&#x3D;\cos x\ln x+\frac{\sin x}{x} \<br>y^{‘}&#x3D;x^{\sin x}(\cos x\ln x+\frac{\sin x}{x})<br>$$<br>例7：求$y&#x3D;\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}$的导数。<br>$$<br>(\ln|x|)^{‘}&#x3D;\frac{1}{x} \<br>两边取对数,得 \<br>\ln|y|&#x3D;\ln\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}&#x3D;\frac{1}{2}(\ln(x-1)+\ln(x-2)-\ln(x-3)-\ln(x-4)) \<br>两边对x求导 \<br>\frac{y^{‘}}{y}&#x3D;\frac{1}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) \<br>y^{‘}&#x3D;\frac{1}{2}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4})<br>$$</p>
-<blockquote>
-<p>当求$f(x)$为幂指函数或多项乘、除时，可以两边取对数转化为隐函数求导。</p>
-</blockquote>
-<h2 id="3-由参数方程确定的函数"><a href="#3-由参数方程确定的函数" class="headerlink" title="3 由参数方程确定的函数"></a>3 由参数方程确定的函数</h2><blockquote>
-<p>一般地，若参数方程<br>$$<br>\begin{cases}<br>x&#x3D;\phi(t) \<br>y&#x3D;\psi(t) \qquad(4-3)<br>\end{cases}<br>$$<br>确定y与x直接的函数关系，则称此函数关系所表达的函数为由参数方程(4-3)所确定的函数。</p>
+<h2 id="一-正项级数及其审敛法"><a href="#一-正项级数及其审敛法" class="headerlink" title="一. 正项级数及其审敛法"></a>一. 正项级数及其审敛法</h2><blockquote>
+<p>正项级数：若 $u_n\ge 0$ ，则称 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 为正项级数。</p>
 </blockquote>
 <blockquote>
-<p>若$x&#x3D;\phi(t),y&#x3D;\psi(t)$都可导，且$\phi(t)^{‘}\not&#x3D;0$又$x&#x3D;\phi(t)存在反函数t&#x3D;\phi^{-1}(x)$，则</p>
-<p>$\frac{dy}{dx}&#x3D;\frac{\psi^{‘}(t)}{\phi^{‘}(t)}或\frac{dy}{dx}&#x3D;\frac{\frac{dy}{dt}}{\frac{dx}{dt}}$</p>
-<p>如果此时$x&#x3D;\phi(t),y&#x3D;\psi(t)$二阶可导，那么由参数方程确定的函数的二阶导数为：</p>
-<p>$\frac{d^2y}{dx^2}&#x3D;\frac{d}{dt}(\frac{dy}{dx})\cdot\frac{1}{\frac{dx}{dt}}$</p>
+<p>定理1. 正项级数 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛 $\Leftrightarrow$ 其部分和数列 $s_n$ 有界。</p>
 </blockquote>
-<p>$$<br>证明：t&#x3D;\phi^{-1}(x),则y&#x3D;\psi(t)&#x3D;\psi[\phi^{-1}(x)] \<br>根据复合函数求导法则,有 \<br>\frac{dy}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{dt}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{1}{\frac{dx}{dt}}&#x3D;\frac{\psi^{‘}(t)}{\phi^{‘}(t)}<br>$$</p>
-<p>例8 已知椭圆的参数方程为<br>$$<br>\begin{cases}<br>x&#x3D;a\cos(t) \<br>y&#x3D;b\sin(t)<br>\end{cases}<br>$$<br>求椭圆在$t&#x3D;\frac{\pi}{4}$相应点处的切线方程。<br>$$<br>椭圆在t&#x3D;\frac{\pi}{4}处坐标为(\frac{\sqrt{2}a}{2},\frac{\sqrt{2}b}{2}),切线斜率为\<br>\frac{dy}{dx}|_{\frac{\pi}{4}}&#x3D;\frac{(b\sin t)^{‘}}{(a\cos t)^{‘}}&#x3D;-\frac{b}{a}\<br>切线方程为y-\frac{\sqrt{2}b}{2}&#x3D;-\frac{b}{a}(x-\frac{\sqrt{2}a}{2}) 化简得\<br>bx+ay-\sqrt{2}ab&#x3D;0<br>$$</p>
-<h2 id="4-相关变化率"><a href="#4-相关变化率" class="headerlink" title="4 相关变化率"></a>4 相关变化率</h2><blockquote>
-<p>设$x&#x3D;x(t)及y&#x3D;y(t)$都可导函数，而变量$x与y$间存在某种关系，从而变化率$\frac{dx}{dt}与\frac{dy}{dt}$间也存在一定的关系。这两个相互依赖的变化率称为相关变化率。</p>
+<p>$$<br>证明：\<br>\Rightarrow\<br>设\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 的部分和数列 {s_n} \<br>\because \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}收敛\<br>\therefore \lim\limits_{n\to\infty}s_n&#x3D;s ,那么数列{s_n}有界\<br>\Leftarrow \<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 为正项级数 ，则{s_n}为单调增加数列\<br>又\because 数列 {s_n}有界，即存在M\gt 0,使得 s_n\le M\<br>由单调有界数列必有极限得 \lim\limits_{n\to\infty}{s_n}&#x3D;s\<br>\therefore 正项级数 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 收敛<br>$$</p>
+<blockquote>
+<p>定理2. （比较审敛法）</p>
+<p>设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 都是正项级数，且 $u_n\le v_n(n&#x3D;1,2,\cdots)$. 若 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 收敛，则 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 也收敛；反之，若 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 发散，则 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 也发散。</p>
 </blockquote>
-<p>例9 一气球从距离观察员500m处离地面铅直上升，当气球高度为500m时，其速率为140m&#x2F;min.求此时观察员视线的仰角增加的速率是多少？</p>
-<p>如图所示：<img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0204-watch-ballon-rise.bmp" alt="0204-watch-ballon-rise"><br>$$<br>观察员仰角\alpha随时间t变化关系\alpha(t)，气球高度h随时间t变化关系h(t) 则\<br>\tan\alpha(t)&#x3D;\frac{h(t)}{500} \<br>两边对t求导，得\<br>\sec^2\alpha(t)\frac{d\alpha(t)}{dt}&#x3D;\frac{1}{500}\frac{dh(t)}{dt} \<br>\frac{d\alpha(t)}{dt}&#x3D;\frac{1}{\sec^2\alpha(t)}\frac{1}{500}\frac{dh(t)}{dt} \<br>h(t)&#x3D;500时，\sec^2\alpha&#x3D;1+\tan^2\alpha&#x3D;2,\frac{dh(t)}{dt}&#x3D;140m&#x2F;min 带入上述公式\<br>\frac{d\alpha(t)}{dt}&#x3D;0.14rad&#x2F;min<br>$$<br>例10: 落在平静的水面上石头产生同心波纹，若最外圈波纹半径的增大速率为6m&#x2F;s,问在2s末扰动水面面积增大的速率为多少<br>$$<br>设t时刻最外圈波纹的半径为人，面积为A ，则\<br>\frac{dr}{dt}&#x3D;6 ,A &#x3D;\pi r^2 ,所以\<br>\frac{dA}{dt}&#x3D;\frac{dA}{dr}\cdot\frac{dr}{dt}&#x3D;2\pi r\cdot6&#x3D;12\pi r \<br>t&#x3D;2时，r&#x3D;12m ,\frac{dA}{dt}&#x3D;12\pi\cdot12&#x3D;144\pi\quad m^2&#x2F;s<br>$$<br>例11 已知一长方形的长l以2cm&#x2F;s的速率增加，宽w以3cm&#x2F;s的速率增加，则当t&#x3D;12cm，w&#x3D;5cm时，该长方形的对角线增加的速率是多少？<br>$$<br>设对角线y(t) \<br>则y^2(t)&#x3D;l^2(t)+w^2(t) \<br>两边对t求导，得 \<br>2y(t)\frac{dy(t)}{dt}&#x3D;2l(t)\frac{dl(t)}{dt}+2w(t)\frac{dw(t)}{dt}\<br>\frac{dy(t)}{dt}&#x3D;\frac{1}{\sqrt{l^2+w^2}}(l\frac{dl}{dt}+w\frac{dw}{dt}) \<br>t&#x3D;12,w&#x3D;5带入得 \<br>\frac{dy(t)}{dt}&#x3D;\frac{1}{13}(12\cdot2+5\cdot3)&#x3D;3cm&#x2F;s<br>$$</p>
-<h2 id="5-后记"><a href="#5-后记" class="headerlink" title="5 后记"></a>5 后记</h2><blockquote>
-<p>:question:QQ:806797785</p>
-<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+<p>$$<br>证明：\<br>(1) 设 \displaystyle\sum_{n&#x3D;1}^{\infty}{v_n} 收敛于\sigma ,则 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 的部分和\<br>s_n&#x3D;u_1+u_1+\cdots+u_n \le v_1+v_2+\cdots+v_n\le \sigma\<br>\therefore {s_n} 有界，有定理1得 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 收敛\<br>(2)利用反证法，假设\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n} 收敛\<br>\because u_n \le v_n \<br>则\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 收敛 与 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 发散矛盾\<br>$$</p>
+<blockquote>
+<p>推论： 设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 都是正项级数，若 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 收敛，且存在正整数 $N$ ,使当$n\ge N$ 时，有 $u_n\le kv_n(k\gt 0)$ 成立，则 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛；若 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 发散，且存在正整数 $N$ ，使得当 $n\ge N$ 时，有 $u_n\ge kv_n(k\gt 0)$ 成立，则 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 发散。</p>
 </blockquote>
-<p>参考：</p>
-<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P101~p108.</p>
-<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p16.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmdbvu5t000fuc1o47vubofn" data-title="0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-basis/math/note/高等数学/02导数与微分/0205函数的微分-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
-  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<h2 id="1-微分的定义"><a href="#1-微分的定义" class="headerlink" title="1 微分的定义"></a>1 微分的定义</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><blockquote>
-<p>定义 设函数$y&#x3D;f(x)$的某区间内有定义，$x_0及x_0+\triangle x$在该区间内，如果函数的增量</p>
-<p>$\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$</p>
-<p>可表示为：</p>
-<p>$\triangle y&#x3D;A\triangle x+o(\triangle x)$</p>
-<p>其中A是不依赖于$\triangle x$的常数，那么称函数$y&#x3D;f(x)在点x_0$处是可微的，而$A\triangle x$叫做$y&#x3D;f(x)在点x_0$相应于自变量增量$\triangle x$的微分，记做dy,即</p>
-<p>$dy&#x3D;A\triangle x$</p>
+<p>例1. 讨论 $p$ 级数</p>
+<p>$\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n^p}}&#x3D;1+\frac{1}{2^p}+\frac{1}{3^p}+\cdots+\frac{1}{n^p}+\cdots$</p>
+<p>的收敛性，其中常数 $p\gt 0$ .<br>$$<br>证明：\<br>设p技术部分和为s_n，则s_n\ge 0 \<br>(1) 当 p \le 1时， \frac{1}{n^p} \ge \frac{1}{n}\<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n}} 是发散的 \<br>由定理2知 \displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n^p}} 发散\<br>(2) 当 p &gt; 1时，令k-1\le x\le k 则\<br>\frac{1}{k^p} \le \frac{1}{x^p} ,两边对x做定积分有\<br>\int_{k-1}^{k}{\frac{1}{k^P}} \le \int_{k-1}^{k}{\frac{1}{x^p}},的\<br>\frac{1}{k^P} \le \int_{k-1}^{k}{\frac{1}{x^p}}\<br>取k&#x3D;2,3,\cdots,n,不等式两边相加为\<br>s_n&#x3D;1+\frac{1}{2}+\cdots+\frac{1}{n^p}\<br>\le \int_{1}^{2}{\frac{1}{x^p}}+\int_{2}^{3}{\frac{1}{x^p}}+\cdots+\int_{n-1}^{n}{\frac{1}{x^p}}\<br>&#x3D;\int_{1}^{n}{\frac{1}{x^p}}&#x3D;\frac{1}{p-1}(1-\frac{1}{n^{p-1}})\<br>当n\to\infty时 \frac{1}{p-1}(1-\frac{1}{n^{p-1}})&#x3D;\frac{1}{p-1}\<br>\therefore {s_n}有界,\because s_n\ge 0 \<br>\therefore {s_n}收敛，即\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n^p}}收敛<br>$$</p>
+<p>例2 证明 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}}$ 是发散的<br>$$<br>证明：\<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}} \ge \displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{\sqrt{(n+1)^2}}}&#x3D;\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n+1}}\<br>&#x3D;\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n}} -1\</p>
+<p>有p级数知，p&#x3D;1时,\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n}}发散\<br>因此，由比较审敛法知 \displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}}也是发散的<br>$$</p>
+<blockquote>
+<p>定理3. (比较审敛法的极限形式)</p>
+<p>设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 都是正项级数</p>
+<p>（1）如果 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{u_n}{v_n}}&#x3D;l(0\le l\lt +\infty)$  ,且 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 收敛 $\Rightarrow$ $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛；</p>
+<p>（2）如果 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{u_n}{v_n}}&#x3D;l\gt 0$ 或 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{u_n}{v_n}}&#x3D;+\infty$ ,且 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 发散。</p>
 </blockquote>
-<p>注：</p>
+<p>$$<br>证明：\<br>(1)\because \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}&#x3D;l,对\epsilon &#x3D;1\<br>\exists 正常数N，当n\gt N时，有\<br>|\frac{u_n}{v_n}-l|\lt \epsilon&#x3D;1,得\<br>\frac{u_n}{v_n}\lt l+1,u_n\lt (l+1)v_n\<br>根据比较审敛法推论，且\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n} 收敛\<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}也收敛\<br>(2) 若 \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}&#x3D;l时，利用反证法\<br>假设\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}收敛，而由\lim\limits_{n\to\infty}{\frac{v_n}{u_n}}&#x3D;\frac{1}{l}\gt \<br>由（1）知\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n} 收敛，与已知\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}发散矛盾\<br>\therefore \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}是发散的\<br>同理可证 \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}&#x3D;+\infty时的情形。<br>$$</p>
+<p>**利用定理3判定 $ \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 的收敛性的步骤 **</p>
 <ol>
-<li>$|\triangle x|$很小时，$\triangle y\approx dy&#x3D;A\triangle x,dy是\triangle y的线性主部$</li>
-<li>只有当误差$\triangle y-dy&#x3D;o(\triangle x)且A与\triangle x$无关时，称可微</li>
+<li>$ \lim\limits_{n\to\infty}{u_n}是否等于0$<ol>
+<li>$\lim\limits_{n\to\infty}{u_n}\not&#x3D;0, \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 发散</li>
 </ol>
-<h3 id="1-2-函数可微的充要条件"><a href="#1-2-函数可微的充要条件" class="headerlink" title="1.2 函数可微的充要条件"></a>1.2 函数可微的充要条件</h3><blockquote>
-<p>定理： $f(x)的点x_0$可微$\Leftrightarrow$$f(x)在点x_0$可导，且$f(x)在点x_0$可微时，$dy&#x3D;f^{‘}(x_0)\triangle x$</p>
+</li>
+<li>由 $u_n$ 的同阶或者等价无穷小，找到较简单的 $v_n$ ,“基准级数” $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ ($p$ 级数或者等比级数)</li>
+<li>由 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{u_n}{v_n}}$ 及 $\displaystyle\sum_{n&#x3D;1}^{\infty}{v_n}$ 的收敛性根据定理3进行判定</li>
+</ol>
+<p> 例3. 判定$ \displaystyle\sum_{n&#x3D;1}^{\infty}{\sin\frac{1}{n}}$  的收敛性<br>$$<br>解：\<br>\lim\limits_{n\to\infty}{\frac{\sin\frac{1}{n}}{\frac{1}{n}}} &#x3D; 1\<br>\because \displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n}} 发散\<br>由定理3得 \displaystyle\sum_{n&#x3D;1}^{\infty}{\sin\frac{1}{n}} 发散\<br>$$</p>
+<blockquote>
+<p>定理4. (比值审敛法，达朗贝尔判别法)</p>
+<p>设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 为正向级数，如果 $ \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}&#x3D;\rho$,则</p>
+<p>当 $\rho \lt 1$ 时，级数收敛；</p>
+<p>当 $\rho \gt 1$ 时，级数发散；</p>
+<p>当 $\rho &#x3D; 1$ 时可能发散也可能收敛。</p>
 </blockquote>
-<p>$$<br>证明：\Rightarrow \<br>f(x)在点x_0可微，则\triangle y&#x3D;A\triangle x+o(\triangle x) ，两边同除以\triangle x,得 \<br>\frac{\triangle y}{\triangle x}&#x3D;A + \frac{o(\triangle x)}{\triangle x} \<br>当\triangle x\to0时，取极限 得 \<br>A &#x3D; \lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>充分性\Leftarrow \<br>f(x)在点x_0可导，则\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>根据极限和无穷小的关系有，{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0)+\alpha(\triangle x),其中\alpha是关于\triangle x的高阶无穷小，即\<br>\lim\limits_{\triangle x\to0}{\alpha}&#x3D;0 \<br>两边同乘以\triangle x,得 \triangle y&#x3D;f^{‘}(x_0)\triangle x+\alpha(\triangle x)\triangle x \<br>其中 \lim\limits_{\triangle x\to0}{\frac{\alpha(\triangle x)\triangle x}{\triangle x}}&#x3D;0,即它是关于\triangle x的无穷小 \<br>所有f(x)在点x_0可微,且微分dy&#x3D;f^{‘}(x_0)与\triangle  x无关。<br>$$</p>
-<p>注：</p>
+<p>$$<br>证明：<br>(1) \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}&#x3D;\rho \lt 1\<br>有极限定义，取适当小的\epsilon \gt 0, \exists m\gt 0,当n\ge m时，有\<br>|\frac{u_{n_{n+1}}}{u_n} -\rho| \lt \epsilon \Rightarrow \frac{u_{n+1}}{u_n}\le \rho+\epsilon&#x3D;r\lt 1\<br>\therefore u_{m+1}\lt  ru_m, u_{m+2}\lt u_{m+1}\lt r^2u_m,\cdots,u_{m+k}\lt r^ku_m\<br>\because u_m是常数，r\lt1,r^k是等比数列 \Rightarrow \displaystyle\sum_{k&#x3D;1}^{\infty}{r^Ku_m} 收敛 \<br>\therefore \displaystyle\sum_{k&#x3D;1}^{\infty}{u_{m+k}}收敛，<br>加上前m项级数：u_1+u_2+\cdots+u_m+u_{m+1}+\cdots+u_{m+k}+\cdots\<br>即\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}也收敛\<br>(2)\lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}&#x3D;\rho \gt  1\<br>根据极限定义，取 适当小的\epsilon \gt 0,\exists m\gt 0,当n\ge m时,有\<br>|\frac{u_{n+1}}{u_n}-\rho|\lt \epsilon \Rightarrow \frac{u_{n+1}}{u_n} \gt \rho -\epsilon &#x3D; r\gt 1\<br>\therefore u_{n+1}\gt u_n \gt 0 \<br>\therefore 数量部分和 s_n 极限 \lim\limits_{n\to\infty}s_n &#x3D; \infty\<br>因此 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 发散 \<br>(3) 举例 \<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n^2}} \rho&#x3D;1,\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}收敛\<br>\displaystyle\sum_{n&#x3D;1}^{\infty}{n} \rho&#x3D;1,\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}发散\<br>$$</p>
+<p>例4 证明 $1+\frac{1}{1}+\frac{1}{1.2}+\frac{1}{1.2.3}+\cdots+\frac{1}{(n-1)!}+\cdots$ 是收敛的，并估计以部分和 $s_n$ 近似代替和 $s$ 所产生的误差<br>$$<br>证明：\<br>令u_n&#x3D;\frac{1}{(n-1)!},则\<br>\lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}} &#x3D; \lim\limits_{n\to\infty}{\frac{1}{n}}&#x3D;0\lt 1\<br>根据定理4 有 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 收敛\<br>|s-s_n|&#x3D;\frac{1}{n!}+\frac{1}{(n+1)!}+\cdots\<br>&#x3D;\frac{1}{n!}(1+\frac{1}{n+1}+\frac{1}{(n+1)(n+2)}+\cdots)\<br>\lt \frac{1}{n!}(1+\frac{1}{n}+\frac{1}{n^2}+\cdots)&#x3D;\frac{1}{(n-1)(n-1)!}<br>$$</p>
+<p>例5. 判定级数</p>
+<p>$\frac{1}{10}+\frac{1.2}{10^2}+\frac{1.2.3}{10^3}+\cdots+\frac{n!}{10^n}+\cdots$</p>
+<p>的收敛性<br>$$<br>解：\<br>令u_n&#x3D;\frac{n!}{10^n}\<br>\frac{u_{n+1}}{u_n} &#x3D;\frac{(n+1)!}{10^{n+1}} .\frac{10^n}{n!}&#x3D;\frac{n+1}{10}\<br>\therefore \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}} &#x3D; \infty\<br>\therefore 级数发散<br>$$</p>
+<p><strong>注：</strong> 当一般项 $u_n$ 中出现 $n!$ 或者以 $n$ 为指数幂时，可以考虑此方法。</p>
+<blockquote>
+<p>定理5. （根值审敛法，柯西判别法）</p>
+<p>设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$  为正项级数，如果  $\lim\limits_{n\to\infty}{\sqrt[n]{u_n}}&#x3D;\rho$ ，则</p>
+<p>（1）当 $\rho\lt 1$ 时，$\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛；、</p>
+<p>（2）当 $\rho \gt 1$ （或$ \lim\limits_{n\to\infty}{\sqrt[n]{u_n}}&#x3D;\infty$) 时，$\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 发散；</p>
+<p>（3）当 $\rho &#x3D; 1$ 时，$\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 可能发散也可能收敛。</p>
+</blockquote>
+<p>例6. 判断级数  $\displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{2+(-1)^n}{2^n}}$ 的收敛性<br>$$<br>解：\<br>\lim\limits_{n\to\infty}{\sqrt[n]{\frac{2+(-1)^n}{2^n}}}&#x3D;\frac{1}{2}\lim\limits_{n\to\infty}{[2+(-1)^n]^{\frac{1}{n}}}\<br>\frac{1}{2}e^{\lim\limits_{n\to\infty}{\frac{1}{n}\ln[2+(-1)^]}} &#x3D;\frac{1}{2}\lt 1\<br>根据定理5 的 级数收敛<br>$$</p>
+<p><strong>注：</strong> 当一般项 $u_n$ 中出现以 $n$ 为指数幂（如 $n^n,a^n$）的形式时，可以考虑用此方法。</p>
+<blockquote>
+<p>定理6. （极限审敛法）</p>
+<p>设 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 为正项级数</p>
+<p>（1）若 $\lim\limits_{n\to\infty}{nu_n} &#x3D; l\gt 0$ （或 $ \lim\limits_{n\to\infty}{nu_n}&#x3D;\infty$） $\Rightarrow $ $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 发散；</p>
+<p>（2）若 $p\gt 1$ ,且 $\lim\limits_{n\to\infty}{n^pu_n}&#x3D;l (0\le l\lt +\infty) \Rightarrow$  $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛。</p>
+</blockquote>
+<p>例7. 判定 $\displaystyle\sum_{n&#x3D;1}^{\infty}{\ln(1+\frac{1}{n^2})}$ 的收敛性<br>$$<br>解：\<br>n\to\infty 时，\ln(1+\frac{1}{n^2})\sim \frac{1}{n^2} \<br>\lim\limits_{n\to\infty}{\frac{\ln(1+\frac{1}{n^2})}{\frac{1}{n^2}}} &#x3D; 1\<br>\because \displaystyle\sum_{n&#x3D;1}^{\infty}{\frac{1}{n^2}} 收敛 \<br>根据定理3 得\displaystyle\sum_{n&#x3D;1}^{\infty}{\ln(1+\frac{1}{n^2})} 收敛<br>$$</p>
+<p>$$</p>
+<p>$$</p>
+<p>例8. 判定 $\sum\limits_{n&#x3D;1}^{\infty}{\sqrt{n+1}(1-\cos\frac{\pi}{n})}$ 的收敛性<br>$$<br>解：\<br>\lim\limits_{n\to\infty}{\frac{\sqrt{n+1}(1-\cos\frac{\pi}{n})}{\frac{1}{n^{\frac{3}{2}}}}}\<br>&#x3D;\lim\limits_{n\to\infty}{\frac{\sqrt{n+1}}{\sqrt{n}}}\cdot \lim\limits_{n\to\infty}{\frac{1-\cos\frac{\pi}{n}}{\frac{1}{n^2}}} &#x3D; \frac{(\pi)^2}{2}\<br>\because \sum\limits_{n&#x3D;1}^{\infty}\frac{1}{n^{\frac{3}{2}}} 收敛\<br>\therefore 所给数列收敛<br>$$</p>
+<h2 id="二、交错级数及其审敛法"><a href="#二、交错级数及其审敛法" class="headerlink" title="二、交错级数及其审敛法"></a>二、交错级数及其审敛法</h2><blockquote>
+<p>交错级数：若 $u_1,u_2,\cdots$ 都是正数，形如 $u_1-u_2+u_3-u_4+\cdots$  ，或 $-u_1+u_2-u_2+u_4-\cdots$</p>
+</blockquote>
+<blockquote>
+<p>定理7. （莱布尼茨定理）</p>
+<p>若交错级数 $\sum\limits_{n&#x3D;1}^{\infty}{(-1)^{n-1}u_n}$ 满足条件：</p>
+<p>（1）$u_n\ge u_{n+1}$ ；</p>
+<p>（2）$\lim\limits_{n\to\infty}{u_n}&#x3D;0$ 。</p>
+<p>则级数收敛，且其和 $s\le u_1$,其余项 $r_n$ 的绝对值  $|r_n|\le u_{n+1}$</p>
+</blockquote>
+<h2 id="三、绝对收敛与条件收敛"><a href="#三、绝对收敛与条件收敛" class="headerlink" title="三、绝对收敛与条件收敛"></a>三、绝对收敛与条件收敛</h2><blockquote>
+<p>对一般级数 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ ,其构成的正项级数为 $ \sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$</p>
+<p>（1） 若 $\sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$ 收敛，则称 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 绝对收敛；</p>
+<p>（2）若 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 收敛，而 $\sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$ 发散，则称 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 条件收敛。</p>
+</blockquote>
+<blockquote>
+<p>定理8. 若 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 绝对收敛，则 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 必定收敛</p>
+</blockquote>
+<p>$$<br>证明：\<br>令v_n&#x3D;\frac{1}{2}(u_n+|u_n|),则\<br>0\le v_n\le |u_n|\<br>\because \sum\limits_{n&#x3D;1}^{\infty}{u_n} 绝对收敛\<br>\therefore \sum\limits_{n&#x3D;1}^{\infty}{v_n} 收敛\<br>\because u_n&#x3D;2v_n-|u_n|\<br>\therefore \sum\limits_{n&#x3D;1}^{\infty}{u_n} 也收敛<br>$$</p>
+<p><strong>注：</strong></p>
 <ol>
-<li>考虑$y&#x3D;f(x)&#x3D;x,则y^{‘}&#x3D;1,故dx&#x3D;\triangle x$。我们通常自变量的增量$\triangle x$称为自变量的微分，记做dx，即$dx&#x3D;\triangle x$,于是函数微分$dy&#x3D;f^{‘}(x_0)dx$</li>
+<li>讨论一般级数 $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 的收敛性，可以先从 $\sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$ 开始</li>
+<li>若 $\sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$ 发散 $\not\Rightarrow$  $\sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 发散。但若通过比值审敛法或根值审敛法判定 $\sum\limits_{n&#x3D;1}^{\infty}{|u_n|}$ 发散 $\Rightarrow \sum\limits_{n&#x3D;1}^{\infty}{u_n}$ 发散。</li>
 </ol>
-<p>例1 求函数$y&#x3D;x^3当x_0&#x3D;2,\triangle x&#x3D;0.02$时的微分<br>$$<br>dy&#x3D;(x^3)^{‘}dx&#x3D;3x^2dx,dy|_{x&#x3D;2}&#x3D;3\cdot2^2\cdot0.02&#x3D;0.24<br>$$</p>
-<h2 id="2-微分的几何意义"><a href="#2-微分的几何意义" class="headerlink" title="2 微分的几何意义"></a>2 微分的几何意义</h2><p><img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0205-geometric-mean.bmp" alt="0205-geometric-mean"></p>
-<p>如上图所示，$\triangle y$是曲线函数$y&#x3D;f(x)$上纵坐标的增量，dy就是曲线切线上点的纵坐标增量。当$\triangle x$很小时，$|\triangle y-dy|$比$\triangle x$小的多。因此在点M的邻近，我们可以切线段来近似代替曲线段。</p>
-<blockquote>
-<p>在局部范围内用线性函数近似代替非线性函数，在几何上就是用切线段近似代替曲线段，这在数学上称为非线性函数的局部线性化，这是微分学的基本思想方法之一。</p>
-</blockquote>
-<ul>
-<li>在$x_0$充分小的邻域内，可用$x_0$处切线段近似代替$x_0$处的曲线段。</li>
-</ul>
-<h2 id="3-基本初等函数的微分公式与微分运算法则"><a href="#3-基本初等函数的微分公式与微分运算法则" class="headerlink" title="3 基本初等函数的微分公式与微分运算法则"></a>3 基本初等函数的微分公式与微分运算法则</h2><blockquote>
-<p>微分公式：$dy&#x3D;f^{‘}(x)dx$</p>
-</blockquote>
-<p>计算函数的微分，只要计算函数的导数，在乘以自变量的微分即可。</p>
-<h3 id="3-1-基本初等函数的微分公式"><a href="#3-1-基本初等函数的微分公式" class="headerlink" title="3.1 基本初等函数的微分公式"></a>3.1 基本初等函数的微分公式</h3><p>由基本初等函数的导数公式，可以直接写出基本初等函数的微分公式，可以复习下前面的导数公式。</p>
-<h3 id="3-2-函数和、差、积、商的微分法则"><a href="#3-2-函数和、差、积、商的微分法则" class="headerlink" title="3.2 函数和、差、积、商的微分法则"></a>3.2 函数和、差、积、商的微分法则</h3><p>由函数和、差、积、商的求导法则，可推得相应的微分法则</p>
-<table>
-<thead>
-<tr>
-<th>求导法则</th>
-<th>微分法则</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$(u\pm v)^{‘}&#x3D;u^{‘}\pm v^{‘}$</td>
-<td>$d(u\pm v)&#x3D;du\pm dv$</td>
-</tr>
-<tr>
-<td>$(Cu)^{‘}&#x3D;Cu^{‘}$</td>
-<td>$d(Cu)&#x3D;Cdu$</td>
-</tr>
-<tr>
-<td>$(uv)^{‘}&#x3D;u^{‘}v+uv^{‘}$</td>
-<td>$d(uv)&#x3D;vdu+udv$</td>
-</tr>
-<tr>
-<td>$(\frac{u}{v})^{‘}&#x3D;\frac{u^{‘}v-uv^{‘}}{v^2}(v\not&#x3D;0)$</td>
-<td>$d(\frac{u}{v})&#x3D;\frac{vdu-udv}{v^2}(v\not&#x3D;0)$</td>
-</tr>
-</tbody></table>
-<h3 id="3-3-复合函数的微分法则"><a href="#3-3-复合函数的微分法则" class="headerlink" title="3.3 复合函数的微分法则"></a>3.3 复合函数的微分法则</h3><p>与符合函数的求导法则相应的符合函数的微分法则可推导如下：</p>
-<p>$dy&#x3D;y^{‘}_xdx&#x3D;f^{‘}(u)g^{‘}(x)dx或者dy&#x3D;f^{‘}(u)du$</p>
-<blockquote>
-<p>无论$u$是自变量还是中间变量，微分形式$dy&#x3D;f^{‘}(u)du$保持不变。这一性质称为微分形式不变性。</p>
-</blockquote>
-<p>例2 $y&#x3D;\sin(2x+1),求dy$<br>$$<br>解：dy&#x3D;2\cos(2x+1)dx<br>$$<br>例3 $y&#x3D;\ln(1+e^{x^2}),求dy$<br>$$<br>解：dy&#x3D;\frac{1}{1+e^{x^2}}\cdot e^{x^2}\cdot2xdx&#x3D;\frac{2xe^{x^2}}{1+e^{x^2}}<br>$$<br>例4：$y&#x3D;e^{1-3x}\cos x,求dy$<br>$$<br>解：dy&#x3D;\cos xd(e^{1-3x})+e^{1-3x}d(\cos x)&#x3D;\cos xe^{1-3x}\cdot(-3dx)-e^{1-3x}\sin x \<br>&#x3D;-e^{1-3x}(3\cos x+\sin x)dx<br>$$</p>
-<h2 id="4-微分在近似计算中的应用"><a href="#4-微分在近似计算中的应用" class="headerlink" title="4 微分在近似计算中的应用"></a>4 微分在近似计算中的应用</h2><h3 id="4-1-函数的近似计算"><a href="#4-1-函数的近似计算" class="headerlink" title="4.1 函数的近似计算"></a>4.1 函数的近似计算</h3><h4 id="4-1-1-近似公式推导"><a href="#4-1-1-近似公式推导" class="headerlink" title="4.1.1 近似公式推导"></a>4.1.1 近似公式推导</h4><p>若$f(x)在x_0$处可导（可微），且$f^{‘}(x_0)\not&#x3D;0$，则由微分定义</p>
-<p>$\triangle y&#x3D;f^{‘}(x_0)\triangle x+o(\triangle x)$</p>
-<p>当$|\triangle x|$很小时，$\triangle y\approx f^{‘}(x_0)\triangle x$即</p>
-<p>$f(x_0+\triangle x)-f(x_0)\approx f^{‘}(x_0)\triangle x或者f(x_0+\triangle x)\approx f(x_0)+f^{‘}(x_0)\triangle x$</p>
-<p>令$x&#x3D;x_0+\triangle x,带入上式，得$</p>
-<p>$f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
-<p>例7. 有一批半径为1cm的球，为了提高球面的光洁度，要镀上一层铜，厚度定位0.01cm，估计每只球用铜多少克?(注：同的密度是$8.9g&#x2F;cm^3$)<br>$$<br>解：先求镀层的体积，乘以密度得到用铜的质量。 \<br>镀层的体积为两个球体体积之差， \<br>它就是球体体积V&#x3D;\frac{4}{3}\pi R^3当R有R_0取得增量\triangle R时的增量 \<br>\triangle V\approx f^{‘}(R)\triangle R&#x3D;4\pi R^2\triangle R \<br>R&#x3D;1cm,\triangle R&#x3D;0.01cm,则 \<br>\triangle V\approx 0.04\pi cm^3\approx0.13cm^3 \<br>用铜约为 0.13\times8.9\approx1.16(g)<br>$$</p>
-<h4 id="4-1-2-常用近似公式"><a href="#4-1-2-常用近似公式" class="headerlink" title="4.1.2 常用近似公式"></a>4.1.2 常用近似公式</h4><p>$f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
-<p>取$x_0&#x3D;0$,得$f(x)\approx f(0)+f^{‘}(0)x，|x|很小$</p>
-<p>(1)$(1+x)^\alpha\approx1+\alpha x$</p>
-<p>(2)$\sin x\approx x$</p>
-<p>(3)$\tan x\approx x$</p>
-<p>(4)$e^x\approx 1+x$</p>
-<p>(5)$\ln(1+x)\approx x$</p>
-<p>例8. 计算$\sqrt{1.05}$的近似值<br>$$<br>解：\sqrt{1.05}\approx 1+\frac{1}{2}\times0.05&#x3D;1.025<br>$$</p>
-<h3 id="4-2-误差估计"><a href="#4-2-误差估计" class="headerlink" title="4.2 误差估计"></a>4.2 误差估计</h3><blockquote>
-<p>(1)间接测试误差：根据有误差的测试数据带入公式计算而得误差</p>
-<p>(2)绝对误差：精确值为A，测试值为a,称|A-a|为绝对误差</p>
-<p>(3)相对误差：$\frac{|A-a|}{|a|}$</p>
-<p>(4)绝对误差限：若$|A-a|\le \delta_A$,称$\delta_A$为A的绝对误差限</p>
-<p>(5)相对误差限：$\frac{\delta_A}{|a|}$</p>
-</blockquote>
-<blockquote>
-<p>根据直接测量的x值，按公式$y&#x3D;f(x)$计算y时，若已知测试x的绝对误差限$\delta_x$,即$|\triangle x|\le \delta_x$,</p>
-<p>则y的绝对误差限$\delta_y&#x3D;?$</p>
-<p>y的相对误差限$\frac{\delta_y}{|y|}&#x3D;?$</p>
-</blockquote>
-<p>$$<br>解：利用微分近似计算公式:\triangle y \approx dy&#x3D;y^{‘}\triangle x \<br>\delta_y&#x3D;|\triangle y|\approx |y^{‘}\triangle x|&#x3D;|y^{‘}|\delta_x \<br>\frac{\delta_y}{|y|}&#x3D;|\frac{y^{‘}}{y}|\delta_x<br>$$</p>
-<p>例9 测得圆钢的直径D&#x3D;60.03mm,测量D的绝对误差限$\delta_D&#x3D;0.05mm$，利用公式$A&#x3D;\frac{\pi}{4}D^2$计算圆钢的截面积时，试估计面积的误差。<br>$$<br>面积绝对误差限\delta_A&#x3D;y^{‘}\delta_D&#x3D;\frac{\pi}{2}D\cdot\delta_D \<br>&#x3D;\frac{\pi}{2}\times60.03\times0.05\approx4.712(mm^2) \<br>面积的相对误差限\frac{\delta_A}{|A|}&#x3D;|\frac{y^{‘}}{y}|\delta_D&#x3D;2\frac{\delta_D}{D} \<br>&#x3D;2\times\frac{0.05}{60.03}\approx0.17%<br>$$</p>
-<h2 id="5后记"><a href="#5后记" class="headerlink" title="5后记"></a>5后记</h2><blockquote>
+<p>例9. 判定 $\sum\limits_{n&#x3D;1}^{\infty}{\frac{\sin na}{n^2}}$ 的收敛性<br>$$<br>解:\<br>|\frac{\sin na}{n^2}|\le \frac{1}{n^2}\<br>\because \sum\limits_{n&#x3D;1}^{\infty}{\frac{1}{n^2}} 收敛\<br>\therefore \sum\limits_{n&#x3D;1}^{\infty}{|\frac{\sin na}{n^2}|} 收敛 \<br>则 \sum\limits_{n&#x3D;1}^{\infty}{\frac{\sin na}{n^2}} 也收敛<br>$$</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
 <p>参考：</p>
-<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P110~p120.</p>
-<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p17.</p>
+<p>[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p251-258.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP&#x2F;OL].2020-04-16.p96. </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmdbvu5u000guc1o2hzg7w8e" data-title="0205函数的微分-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" data-id="cmmq5p0ve001ru01o9g2w72ar" data-title="1202常数项级数的审敛法-无穷级数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li></ul>
+
     </footer>
   </div>
   
@@ -526,7 +340,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu60000muc1ofefe63s5" data-title="0103函数-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0uo0005u01obz1wd2sz" data-title="0103函数-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -640,7 +454,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmdbvu63000ruc1o1spzafar" data-title="0106极限存在准则两个重要的极限-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0ur000au01o6m0af0l3" data-title="0106极限存在准则两个重要的极限-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -774,7 +588,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmdbvu65000vuc1obtppdcei" data-title="0108函数的连续性与间断点-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5p0ut000eu01o2mve7m7s" data-title="0108函数的连续性与间断点-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -884,7 +698,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmdbvu66000yuc1o8rz3cqjf" data-title="0110闭区间上连续函数的性质-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5p0uv000hu01o6ofugt5y" data-title="0110闭区间上连续函数的性质-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1098,7 +912,339 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0111%E6%80%BB%E7%BB%93-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmdbvu67000zuc1ohsyw8fld" data-title="0111总结-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0111%E6%80%BB%E7%BB%93-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5p0uw000iu01o5k2j222w" data-title="0111总结-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0201导数的概念-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-导数的定义"><a href="#1-导数的定义" class="headerlink" title="1 导数的定义"></a>1 导数的定义</h2><blockquote>
+<p>设函数$y&#x3D;f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\to0$时的极限存在，那么称函数$y&#x3D;f(x)在点x_0$处可导，并称这个极限为函数$y&#x3D;f(x)在点x_0$处的导数，记做$f^{‘}(x_0)$,即</p>
+<p>$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$</p>
+<p>也可记做$y^{‘}|<em>{x&#x3D;x_0},\frac{dy}{dx}|</em>{x&#x3D;x_0},\frac{df(x)}{dx}|_{x&#x3D;x_0}$</p>
+</blockquote>
+<ul>
+<li>注<ol>
+<li>导数定义是严格的形式：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}},x_0一致，\triangle x一致$,<ul>
+<li>示例：$f^{‘}(1)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(1+\triangle x)-f(1)}{\triangle x}}$</li>
+<li>示例：$f^{‘}(x_0)&#x3D;\lim\limits_{\triangle x\to0}{\frac{f(x_0+2\triangle x)-f(x_0)}{2\triangle x}},增量2\triangle$</li>
+</ul>
+</li>
+<li>等价变形$f^{‘}(x_0)&#x3D;\lim\limits_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}}$</li>
+<li>实例：<ol>
+<li>物体的位移函数$s&#x3D;f(t)$在$t_0$时刻的瞬时速度：$v(t_0)&#x3D;f^{‘}(t_0)$</li>
+<li>曲线$y&#x3D;f(x)在点(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</li>
+</ol>
+</li>
+<li>$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$极限不存在,函数在点$x_0$处不可导<ol>
+<li>特殊$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}&#x3D;\infty$函数极限仍然是不存在的</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>如果函数$f(x)在开区间I$内处处可导，那么称函数$y&#x3D;f(x)在开区间I内$可导，对于$\forall\in I$,都对应这$f(x)$的一个确定的导数值，这样构成的函数叫做原函数$y&#x3D;f(x)$的导函数,记做$y^{‘},\frac{dy}{dx},\frac{df(x)}{dx}$</p>
+</blockquote>
+<ul>
+<li>注<ul>
+<li>求某一点的导数值可先求原函数的导函数，带入求某一点的导数值即函数在某点的导数值等于其导函数在该点的函数值。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-常见函数的导数-导函数"><a href="#2-常见函数的导数-导函数" class="headerlink" title="2 常见函数的导数(导函数)"></a>2 常见函数的导数(导函数)</h2><p>例1 求函数$f(x)&#x3D;C(C为常数)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{(C-C)}{h}}&#x3D;0<br>$$</p>
+<blockquote>
+<p>常数的导数等于零。</p>
+</blockquote>
+<p>例2：求幂函数$f(x)&#x3D;x^\mu(\mu\in R)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{(x+h)^\mu-x^\mu}{h}}\<br>&#x3D;x^{\mu-1}\lim\limits_{h\to0}{\frac{(1+\frac{h}{x})^\mu-1}{\frac{h}{x}}}&#x3D;\mu x^{\mu-1}<br>$$</p>
+<p>例3：求函数$f(x)&#x3D;\sin x$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\sin(x+h)-sin(x)}{h}}&#x3D; \<br>\lim\limits_{h\to0}{\frac{2\sin(\frac{h}{2})\cos(\frac{2x+h}{2})}{h}}&#x3D;\cos x<br>$$</p>
+<blockquote>
+<p>$(\cos x)^{‘}&#x3D;-\sin x$</p>
+</blockquote>
+<p>例4：求函数$f(x)&#x3D;a^x(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{a^{x+h}-a^x}{h}}&#x3D; \<br>a^x\lim\limits_{h\to0}{\frac{a^h-1}{h}}&#x3D;a^x\ln a<br>$$<br>例5：求函数$f(x)&#x3D;\log_ax(a\gt0,a\not&#x3D;1)$的导数<br>$$<br>解：f^{‘}(x)&#x3D;\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{\log_a(x+h)-\log_a(x)}{h}} \<br>&#x3D;\frac{1}{x}\lim\limits_{h\to0}{\frac{\log_a(1+\frac{h}{x})}{\frac{h}{x}}}&#x3D;\frac{1}{x\ln a}<br>$$<br>例6：已知$f^{‘}(x_0)$存在，则$\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}}&#x3D;？$<br>$$<br>解：\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}} \<br>&#x3D;3\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0)}{3\triangle x}} + \lim\limits_{\triangle x\to0}{\frac{f(x_0-\triangle x)-f(x_0)}{-\triangle x}}\<br>&#x3D;3f^{‘}(x_0)+f^{‘}(x_0)&#x3D;4f^{‘}(x_0)<br>$$</p>
+<h2 id="3-单侧导数"><a href="#3-单侧导数" class="headerlink" title="3 单侧导数"></a>3 单侧导数</h2><blockquote>
+<p>若$\lim\limits_{h\to0^-}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的左导数，记做$f_-^{‘}(x_0)$；若$\lim\limits_{h\to0^+}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的右导数导数,记做$f_+^{‘}(x_0)$。</p>
+<p>函数$f(x)在点x_0$可导的充分必要条件是左导数$f_-^{‘}(x_0)$和右导数$f_+^{‘}(x_0)$存在且相等。</p>
+<p>左导数和右导数统称为单侧导数。</p>
+<p>如果函数$(x)$在开区间$(a,b)$内可导，且$f_+^{‘}(a)$及$f_-^{‘}(b)$都存在，那么说函数$f(x)$在闭区间$[a,b]$内可导。</p>
+</blockquote>
+<p>例7:<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>\frac{2}{3}x^3,x\le1 \<br>x^2,\quad x\gt1<br>\end{cases}<br>，f(x)在x&#x3D;1处是否可导？<br>$$</p>
+<p>$$<br>解：分段函数在某点是否可导，分别求左右导数。\<br>f_-^{‘}(1)&#x3D; 3x^2|<em>{x&#x3D;1}&#x3D;2,f</em>+^{‘}(1)&#x3D; 2x|<em>{x&#x3D;1}&#x3D;2 , \<br>f</em>-^{‘}(1)&#x3D;f_+^{‘}(1) 所以f(x)在点x&#x3D;1处可导？ \<br>那我们按左导数和右导数定义计算 \<br>f_-^{‘}(1)&#x3D;\lim\limits_{x\to1^-}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{\frac{2}{3}x^3-\frac{2}{3}}{x-1}}&#x3D;2 \<br>f_+^{‘}(1)&#x3D;\lim\limits_{x\to1^+}{\frac{f(x)-f(1)}{x-1}}&#x3D;\lim\limits_{x\to1^-}{\frac{x^2-\frac{2}{3}}{x-1}}&#x3D;\infty \<br>所以f(x)在x&#x3D;1处导数不存在。<br>$$</p>
+<ul>
+<li>注：<strong>判断分段函数在分界点出是否可导要根据定义分别计算左导数和右导数</strong></li>
+</ul>
+<h2 id="4-导数的几何意义"><a href="#4-导数的几何意义" class="headerlink" title="4 导数的几何意义"></a>4 导数的几何意义</h2><blockquote>
+<p>曲线$y&#x3D;f(x)在(x_0,f(x_0))$处的切线斜率：$k&#x3D;f^{‘}(x_0)$</p>
+<p>切线方程：$y-f(x_0)&#x3D;f^{‘}(x_0)(x-x_0)$</p>
+<p>过切点M$(x_0,y_0)$且与切线垂直的直线叫做曲线$y&#x3D;f(x)$在点M出的法线。</p>
+<p>法线方程：$y-f(x_0)&#x3D;\frac{1}{f^{‘}(x_0)}(x-x_0)$</p>
+</blockquote>
+<p>切线和法线示意图如下4-1所示：<img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89.bmp" alt="0201导数的概念-导数与微分-导数的几何意义"></p>
+<h2 id="5-可导和连续的关系"><a href="#5-可导和连续的关系" class="headerlink" title="5 可导和连续的关系"></a>5 可导和连续的关系</h2><blockquote>
+<p>可导必连续，但是连续不一定可导。</p>
+</blockquote>
+<p>$$<br>证明：可导必连续 \<br>\lim\limits_{\triangle x\to 0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>\frac{\triangle y}{\triangle x}&#x3D;f^{‘}(x_0)+\alpha ,其中\lim\limits_{\triangle x\to 0}{\alpha}&#x3D;0 \<br>则\triangle y&#x3D;f^{‘}(x_0)\triangle x + \alpha\triangle x,那么当\triangle x\to时，\triangle y \to0<br>\所以函数y&#x3D;f(x)连续<br>$$</p>
+<h2 id="6-后记"><a href="#6-后记" class="headerlink" title="6 后记"></a>6 后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P73~p82.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p13.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0uw000ku01oenw6g3ri" data-title="0201导数的概念-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-隐函数"><a href="#1-隐函数" class="headerlink" title="1 隐函数"></a>1 隐函数</h2><blockquote>
+<p>定义：设有两个非空数集$A,B$.对于$\forall x\in A$，由二元方程$F(x,y)&#x3D;0$对应唯一的$y\in B$,称此对应关系是二元方程$F(X,y)&#x3D;0$确定的隐函数。</p>
+<p>相应的由$y&#x3D;f(x)$确定的对应关系称为显函数。</p>
+<p>把一个隐函数化成显函数，叫做隐函数的显化。</p>
+</blockquote>
+<p>例1 ：$x+y^3-1&#x3D;0\quad隐函数的显化\rightarrow y&#x3D;\sqrt[3]{1-x}$</p>
+<h2 id="2-隐函数求导"><a href="#2-隐函数求导" class="headerlink" title="2 隐函数求导"></a>2 隐函数求导</h2><blockquote>
+<p>利用复合函数求导法则，对方程两边求导。</p>
+</blockquote>
+<p>例2：求$e^y+xy-e&#x3D;0$所确定的隐函数的导数$\frac{dy}{dx}$<br>$$<br>解：等式两边求导,\<br>(e^y)^{‘}+(xy)^{‘}-(e)^{‘}&#x3D;0 \<br>e^yy^{‘}+y+xy^{‘}&#x3D;0 \<br>y^{‘}&#x3D;-\frac{y}{e^y+x},\quad e^y+x\not&#x3D;0<br>$$<br>例3：求由方程$y^5+2y-x-3x^7&#x3D;0$所确定的隐函数在$x&#x3D;0处的导数\frac{dy}{dx}|<em>{x&#x3D;0}$<br>$$<br>解：等式两端对x求导\<br>5y^4y^{‘}+2y^{‘}-1-21x^6&#x3D;0 \<br>y^{‘}&#x3D;\frac{1+21x^6}{2+5y^4} \<br>x&#x3D;0时，y&#x3D;0带入得\<br>\frac{dy}{dx}|</em>{x&#x3D;0}&#x3D;\frac{1}{2}<br>$$<br>注：求隐函数在某点的导数值时，如果没要求求$y^{‘}$,则可以先带入该点在求导<br>$$<br>对于例3，5y^4y^{‘}+2y^{‘}-1-21x^6&#x3D;0 ，带入x&#x3D;0,y&#x3D;0 得 \<br>y^{‘}(0)&#x3D;\frac{1}{2}<br>$$<br>例4：已知椭圆$\frac{x^2}{16}+\frac{y^2}{9}&#x3D;1$.求该椭圆在点$(2,\frac{3}{2}\sqrt{3})$处的切线方程。<br>$$<br>解：切线斜率k&#x3D;y^{‘}(x) ,方程两边对x求导 \<br>\frac{x}{8}+\frac{2}{9}yy^{‘}&#x3D;0,y^{‘}&#x3D;-\frac{9x}{16y} \<br>k&#x3D;y^{‘}(2)&#x3D;-\frac{\sqrt{3}}{4} \<br>切线方程为y-\frac{3}{2}\sqrt{3}&#x3D;-\frac{\sqrt{3}}{4}(x-2) \<br>即\sqrt{3}x+4y-8\sqrt{3}&#x3D;0<br>$$</p>
+<p>例5：由方程$x-y+\frac{1}{2}\sin y &#x3D;0$所确定的隐函数，求$\frac{dy^2}{dx^2}$<br>$$<br>解：方程两边对x求导 \<br>1-y^{‘}+\frac{1}{2}\cos yy^{‘}&#x3D;0 ，y^{‘}&#x3D;\frac{2}{2-\cos y} \<br>y^{‘’}&#x3D;\frac{0-2(\sin yy^{‘})}{(2-\cos y)^2}&#x3D;\frac{-4\sin y}{(2-\cos y)^3} \<br>$$</p>
+<blockquote>
+<p>某些场合，利用对数求导法比通用的方法简便些。</p>
+</blockquote>
+<p>例6：求$y&#x3D;x^{\sin x}(x\gt0)$的导数。<br>$$<br>两边取对数， 得 \<br>\ln y&#x3D;\sin x \ln x, 两边对x求导 \<br>\frac{y^{‘}}{y}&#x3D;\cos x\ln x+\frac{\sin x}{x} \<br>y^{‘}&#x3D;x^{\sin x}(\cos x\ln x+\frac{\sin x}{x})<br>$$<br>例7：求$y&#x3D;\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}$的导数。<br>$$<br>(\ln|x|)^{‘}&#x3D;\frac{1}{x} \<br>两边取对数,得 \<br>\ln|y|&#x3D;\ln\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}&#x3D;\frac{1}{2}(\ln(x-1)+\ln(x-2)-\ln(x-3)-\ln(x-4)) \<br>两边对x求导 \<br>\frac{y^{‘}}{y}&#x3D;\frac{1}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) \<br>y^{‘}&#x3D;\frac{1}{2}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4})<br>$$</p>
+<blockquote>
+<p>当求$f(x)$为幂指函数或多项乘、除时，可以两边取对数转化为隐函数求导。</p>
+</blockquote>
+<h2 id="3-由参数方程确定的函数"><a href="#3-由参数方程确定的函数" class="headerlink" title="3 由参数方程确定的函数"></a>3 由参数方程确定的函数</h2><blockquote>
+<p>一般地，若参数方程<br>$$<br>\begin{cases}<br>x&#x3D;\phi(t) \<br>y&#x3D;\psi(t) \qquad(4-3)<br>\end{cases}<br>$$<br>确定y与x直接的函数关系，则称此函数关系所表达的函数为由参数方程(4-3)所确定的函数。</p>
+</blockquote>
+<blockquote>
+<p>若$x&#x3D;\phi(t),y&#x3D;\psi(t)$都可导，且$\phi(t)^{‘}\not&#x3D;0$又$x&#x3D;\phi(t)存在反函数t&#x3D;\phi^{-1}(x)$，则</p>
+<p>$\frac{dy}{dx}&#x3D;\frac{\psi^{‘}(t)}{\phi^{‘}(t)}或\frac{dy}{dx}&#x3D;\frac{\frac{dy}{dt}}{\frac{dx}{dt}}$</p>
+<p>如果此时$x&#x3D;\phi(t),y&#x3D;\psi(t)$二阶可导，那么由参数方程确定的函数的二阶导数为：</p>
+<p>$\frac{d^2y}{dx^2}&#x3D;\frac{d}{dt}(\frac{dy}{dx})\cdot\frac{1}{\frac{dx}{dt}}$</p>
+</blockquote>
+<p>$$<br>证明：t&#x3D;\phi^{-1}(x),则y&#x3D;\psi(t)&#x3D;\psi[\phi^{-1}(x)] \<br>根据复合函数求导法则,有 \<br>\frac{dy}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{dt}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{1}{\frac{dx}{dt}}&#x3D;\frac{\psi^{‘}(t)}{\phi^{‘}(t)}<br>$$</p>
+<p>例8 已知椭圆的参数方程为<br>$$<br>\begin{cases}<br>x&#x3D;a\cos(t) \<br>y&#x3D;b\sin(t)<br>\end{cases}<br>$$<br>求椭圆在$t&#x3D;\frac{\pi}{4}$相应点处的切线方程。<br>$$<br>椭圆在t&#x3D;\frac{\pi}{4}处坐标为(\frac{\sqrt{2}a}{2},\frac{\sqrt{2}b}{2}),切线斜率为\<br>\frac{dy}{dx}|_{\frac{\pi}{4}}&#x3D;\frac{(b\sin t)^{‘}}{(a\cos t)^{‘}}&#x3D;-\frac{b}{a}\<br>切线方程为y-\frac{\sqrt{2}b}{2}&#x3D;-\frac{b}{a}(x-\frac{\sqrt{2}a}{2}) 化简得\<br>bx+ay-\sqrt{2}ab&#x3D;0<br>$$</p>
+<h2 id="4-相关变化率"><a href="#4-相关变化率" class="headerlink" title="4 相关变化率"></a>4 相关变化率</h2><blockquote>
+<p>设$x&#x3D;x(t)及y&#x3D;y(t)$都可导函数，而变量$x与y$间存在某种关系，从而变化率$\frac{dx}{dt}与\frac{dy}{dt}$间也存在一定的关系。这两个相互依赖的变化率称为相关变化率。</p>
+</blockquote>
+<p>例9 一气球从距离观察员500m处离地面铅直上升，当气球高度为500m时，其速率为140m&#x2F;min.求此时观察员视线的仰角增加的速率是多少？</p>
+<p>如图所示：<img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0204-watch-ballon-rise.bmp" alt="0204-watch-ballon-rise"><br>$$<br>观察员仰角\alpha随时间t变化关系\alpha(t)，气球高度h随时间t变化关系h(t) 则\<br>\tan\alpha(t)&#x3D;\frac{h(t)}{500} \<br>两边对t求导，得\<br>\sec^2\alpha(t)\frac{d\alpha(t)}{dt}&#x3D;\frac{1}{500}\frac{dh(t)}{dt} \<br>\frac{d\alpha(t)}{dt}&#x3D;\frac{1}{\sec^2\alpha(t)}\frac{1}{500}\frac{dh(t)}{dt} \<br>h(t)&#x3D;500时，\sec^2\alpha&#x3D;1+\tan^2\alpha&#x3D;2,\frac{dh(t)}{dt}&#x3D;140m&#x2F;min 带入上述公式\<br>\frac{d\alpha(t)}{dt}&#x3D;0.14rad&#x2F;min<br>$$<br>例10: 落在平静的水面上石头产生同心波纹，若最外圈波纹半径的增大速率为6m&#x2F;s,问在2s末扰动水面面积增大的速率为多少<br>$$<br>设t时刻最外圈波纹的半径为人，面积为A ，则\<br>\frac{dr}{dt}&#x3D;6 ,A &#x3D;\pi r^2 ,所以\<br>\frac{dA}{dt}&#x3D;\frac{dA}{dr}\cdot\frac{dr}{dt}&#x3D;2\pi r\cdot6&#x3D;12\pi r \<br>t&#x3D;2时，r&#x3D;12m ,\frac{dA}{dt}&#x3D;12\pi\cdot12&#x3D;144\pi\quad m^2&#x2F;s<br>$$<br>例11 已知一长方形的长l以2cm&#x2F;s的速率增加，宽w以3cm&#x2F;s的速率增加，则当t&#x3D;12cm，w&#x3D;5cm时，该长方形的对角线增加的速率是多少？<br>$$<br>设对角线y(t) \<br>则y^2(t)&#x3D;l^2(t)+w^2(t) \<br>两边对t求导，得 \<br>2y(t)\frac{dy(t)}{dt}&#x3D;2l(t)\frac{dl(t)}{dt}+2w(t)\frac{dw(t)}{dt}\<br>\frac{dy(t)}{dt}&#x3D;\frac{1}{\sqrt{l^2+w^2}}(l\frac{dl}{dt}+w\frac{dw}{dt}) \<br>t&#x3D;12,w&#x3D;5带入得 \<br>\frac{dy(t)}{dt}&#x3D;\frac{1}{13}(12\cdot2+5\cdot3)&#x3D;3cm&#x2F;s<br>$$</p>
+<h2 id="5-后记"><a href="#5-后记" class="headerlink" title="5 后记"></a>5 后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P101~p108.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p16.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0ux000nu01o5bx10ggi" data-title="0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0205函数的微分-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-微分的定义"><a href="#1-微分的定义" class="headerlink" title="1 微分的定义"></a>1 微分的定义</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><blockquote>
+<p>定义 设函数$y&#x3D;f(x)$的某区间内有定义，$x_0及x_0+\triangle x$在该区间内，如果函数的增量</p>
+<p>$\triangle y&#x3D;f(x_0+\triangle x)-f(x_0)$</p>
+<p>可表示为：</p>
+<p>$\triangle y&#x3D;A\triangle x+o(\triangle x)$</p>
+<p>其中A是不依赖于$\triangle x$的常数，那么称函数$y&#x3D;f(x)在点x_0$处是可微的，而$A\triangle x$叫做$y&#x3D;f(x)在点x_0$相应于自变量增量$\triangle x$的微分，记做dy,即</p>
+<p>$dy&#x3D;A\triangle x$</p>
+</blockquote>
+<p>注：</p>
+<ol>
+<li>$|\triangle x|$很小时，$\triangle y\approx dy&#x3D;A\triangle x,dy是\triangle y的线性主部$</li>
+<li>只有当误差$\triangle y-dy&#x3D;o(\triangle x)且A与\triangle x$无关时，称可微</li>
+</ol>
+<h3 id="1-2-函数可微的充要条件"><a href="#1-2-函数可微的充要条件" class="headerlink" title="1.2 函数可微的充要条件"></a>1.2 函数可微的充要条件</h3><blockquote>
+<p>定理： $f(x)的点x_0$可微$\Leftrightarrow$$f(x)在点x_0$可导，且$f(x)在点x_0$可微时，$dy&#x3D;f^{‘}(x_0)\triangle x$</p>
+</blockquote>
+<p>$$<br>证明：\Rightarrow \<br>f(x)在点x_0可微，则\triangle y&#x3D;A\triangle x+o(\triangle x) ，两边同除以\triangle x,得 \<br>\frac{\triangle y}{\triangle x}&#x3D;A + \frac{o(\triangle x)}{\triangle x} \<br>当\triangle x\to0时，取极限 得 \<br>A &#x3D; \lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>充分性\Leftarrow \<br>f(x)在点x_0可导，则\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0) \<br>根据极限和无穷小的关系有，{\frac{\triangle y}{\triangle x}}&#x3D;f^{‘}(x_0)+\alpha(\triangle x),其中\alpha是关于\triangle x的高阶无穷小，即\<br>\lim\limits_{\triangle x\to0}{\alpha}&#x3D;0 \<br>两边同乘以\triangle x,得 \triangle y&#x3D;f^{‘}(x_0)\triangle x+\alpha(\triangle x)\triangle x \<br>其中 \lim\limits_{\triangle x\to0}{\frac{\alpha(\triangle x)\triangle x}{\triangle x}}&#x3D;0,即它是关于\triangle x的无穷小 \<br>所有f(x)在点x_0可微,且微分dy&#x3D;f^{‘}(x_0)与\triangle  x无关。<br>$$</p>
+<p>注：</p>
+<ol>
+<li>考虑$y&#x3D;f(x)&#x3D;x,则y^{‘}&#x3D;1,故dx&#x3D;\triangle x$。我们通常自变量的增量$\triangle x$称为自变量的微分，记做dx，即$dx&#x3D;\triangle x$,于是函数微分$dy&#x3D;f^{‘}(x_0)dx$</li>
+</ol>
+<p>例1 求函数$y&#x3D;x^3当x_0&#x3D;2,\triangle x&#x3D;0.02$时的微分<br>$$<br>dy&#x3D;(x^3)^{‘}dx&#x3D;3x^2dx,dy|_{x&#x3D;2}&#x3D;3\cdot2^2\cdot0.02&#x3D;0.24<br>$$</p>
+<h2 id="2-微分的几何意义"><a href="#2-微分的几何意义" class="headerlink" title="2 微分的几何意义"></a>2 微分的几何意义</h2><p><img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/L:/study/math/note/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/images/0205-geometric-mean.bmp" alt="0205-geometric-mean"></p>
+<p>如上图所示，$\triangle y$是曲线函数$y&#x3D;f(x)$上纵坐标的增量，dy就是曲线切线上点的纵坐标增量。当$\triangle x$很小时，$|\triangle y-dy|$比$\triangle x$小的多。因此在点M的邻近，我们可以切线段来近似代替曲线段。</p>
+<blockquote>
+<p>在局部范围内用线性函数近似代替非线性函数，在几何上就是用切线段近似代替曲线段，这在数学上称为非线性函数的局部线性化，这是微分学的基本思想方法之一。</p>
+</blockquote>
+<ul>
+<li>在$x_0$充分小的邻域内，可用$x_0$处切线段近似代替$x_0$处的曲线段。</li>
+</ul>
+<h2 id="3-基本初等函数的微分公式与微分运算法则"><a href="#3-基本初等函数的微分公式与微分运算法则" class="headerlink" title="3 基本初等函数的微分公式与微分运算法则"></a>3 基本初等函数的微分公式与微分运算法则</h2><blockquote>
+<p>微分公式：$dy&#x3D;f^{‘}(x)dx$</p>
+</blockquote>
+<p>计算函数的微分，只要计算函数的导数，在乘以自变量的微分即可。</p>
+<h3 id="3-1-基本初等函数的微分公式"><a href="#3-1-基本初等函数的微分公式" class="headerlink" title="3.1 基本初等函数的微分公式"></a>3.1 基本初等函数的微分公式</h3><p>由基本初等函数的导数公式，可以直接写出基本初等函数的微分公式，可以复习下前面的导数公式。</p>
+<h3 id="3-2-函数和、差、积、商的微分法则"><a href="#3-2-函数和、差、积、商的微分法则" class="headerlink" title="3.2 函数和、差、积、商的微分法则"></a>3.2 函数和、差、积、商的微分法则</h3><p>由函数和、差、积、商的求导法则，可推得相应的微分法则</p>
+<table>
+<thead>
+<tr>
+<th>求导法则</th>
+<th>微分法则</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$(u\pm v)^{‘}&#x3D;u^{‘}\pm v^{‘}$</td>
+<td>$d(u\pm v)&#x3D;du\pm dv$</td>
+</tr>
+<tr>
+<td>$(Cu)^{‘}&#x3D;Cu^{‘}$</td>
+<td>$d(Cu)&#x3D;Cdu$</td>
+</tr>
+<tr>
+<td>$(uv)^{‘}&#x3D;u^{‘}v+uv^{‘}$</td>
+<td>$d(uv)&#x3D;vdu+udv$</td>
+</tr>
+<tr>
+<td>$(\frac{u}{v})^{‘}&#x3D;\frac{u^{‘}v-uv^{‘}}{v^2}(v\not&#x3D;0)$</td>
+<td>$d(\frac{u}{v})&#x3D;\frac{vdu-udv}{v^2}(v\not&#x3D;0)$</td>
+</tr>
+</tbody></table>
+<h3 id="3-3-复合函数的微分法则"><a href="#3-3-复合函数的微分法则" class="headerlink" title="3.3 复合函数的微分法则"></a>3.3 复合函数的微分法则</h3><p>与符合函数的求导法则相应的符合函数的微分法则可推导如下：</p>
+<p>$dy&#x3D;y^{‘}_xdx&#x3D;f^{‘}(u)g^{‘}(x)dx或者dy&#x3D;f^{‘}(u)du$</p>
+<blockquote>
+<p>无论$u$是自变量还是中间变量，微分形式$dy&#x3D;f^{‘}(u)du$保持不变。这一性质称为微分形式不变性。</p>
+</blockquote>
+<p>例2 $y&#x3D;\sin(2x+1),求dy$<br>$$<br>解：dy&#x3D;2\cos(2x+1)dx<br>$$<br>例3 $y&#x3D;\ln(1+e^{x^2}),求dy$<br>$$<br>解：dy&#x3D;\frac{1}{1+e^{x^2}}\cdot e^{x^2}\cdot2xdx&#x3D;\frac{2xe^{x^2}}{1+e^{x^2}}<br>$$<br>例4：$y&#x3D;e^{1-3x}\cos x,求dy$<br>$$<br>解：dy&#x3D;\cos xd(e^{1-3x})+e^{1-3x}d(\cos x)&#x3D;\cos xe^{1-3x}\cdot(-3dx)-e^{1-3x}\sin x \<br>&#x3D;-e^{1-3x}(3\cos x+\sin x)dx<br>$$</p>
+<h2 id="4-微分在近似计算中的应用"><a href="#4-微分在近似计算中的应用" class="headerlink" title="4 微分在近似计算中的应用"></a>4 微分在近似计算中的应用</h2><h3 id="4-1-函数的近似计算"><a href="#4-1-函数的近似计算" class="headerlink" title="4.1 函数的近似计算"></a>4.1 函数的近似计算</h3><h4 id="4-1-1-近似公式推导"><a href="#4-1-1-近似公式推导" class="headerlink" title="4.1.1 近似公式推导"></a>4.1.1 近似公式推导</h4><p>若$f(x)在x_0$处可导（可微），且$f^{‘}(x_0)\not&#x3D;0$，则由微分定义</p>
+<p>$\triangle y&#x3D;f^{‘}(x_0)\triangle x+o(\triangle x)$</p>
+<p>当$|\triangle x|$很小时，$\triangle y\approx f^{‘}(x_0)\triangle x$即</p>
+<p>$f(x_0+\triangle x)-f(x_0)\approx f^{‘}(x_0)\triangle x或者f(x_0+\triangle x)\approx f(x_0)+f^{‘}(x_0)\triangle x$</p>
+<p>令$x&#x3D;x_0+\triangle x,带入上式，得$</p>
+<p>$f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
+<p>例7. 有一批半径为1cm的球，为了提高球面的光洁度，要镀上一层铜，厚度定位0.01cm，估计每只球用铜多少克?(注：同的密度是$8.9g&#x2F;cm^3$)<br>$$<br>解：先求镀层的体积，乘以密度得到用铜的质量。 \<br>镀层的体积为两个球体体积之差， \<br>它就是球体体积V&#x3D;\frac{4}{3}\pi R^3当R有R_0取得增量\triangle R时的增量 \<br>\triangle V\approx f^{‘}(R)\triangle R&#x3D;4\pi R^2\triangle R \<br>R&#x3D;1cm,\triangle R&#x3D;0.01cm,则 \<br>\triangle V\approx 0.04\pi cm^3\approx0.13cm^3 \<br>用铜约为 0.13\times8.9\approx1.16(g)<br>$$</p>
+<h4 id="4-1-2-常用近似公式"><a href="#4-1-2-常用近似公式" class="headerlink" title="4.1.2 常用近似公式"></a>4.1.2 常用近似公式</h4><p>$f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
+<p>取$x_0&#x3D;0$,得$f(x)\approx f(0)+f^{‘}(0)x，|x|很小$</p>
+<p>(1)$(1+x)^\alpha\approx1+\alpha x$</p>
+<p>(2)$\sin x\approx x$</p>
+<p>(3)$\tan x\approx x$</p>
+<p>(4)$e^x\approx 1+x$</p>
+<p>(5)$\ln(1+x)\approx x$</p>
+<p>例8. 计算$\sqrt{1.05}$的近似值<br>$$<br>解：\sqrt{1.05}\approx 1+\frac{1}{2}\times0.05&#x3D;1.025<br>$$</p>
+<h3 id="4-2-误差估计"><a href="#4-2-误差估计" class="headerlink" title="4.2 误差估计"></a>4.2 误差估计</h3><blockquote>
+<p>(1)间接测试误差：根据有误差的测试数据带入公式计算而得误差</p>
+<p>(2)绝对误差：精确值为A，测试值为a,称|A-a|为绝对误差</p>
+<p>(3)相对误差：$\frac{|A-a|}{|a|}$</p>
+<p>(4)绝对误差限：若$|A-a|\le \delta_A$,称$\delta_A$为A的绝对误差限</p>
+<p>(5)相对误差限：$\frac{\delta_A}{|a|}$</p>
+</blockquote>
+<blockquote>
+<p>根据直接测量的x值，按公式$y&#x3D;f(x)$计算y时，若已知测试x的绝对误差限$\delta_x$,即$|\triangle x|\le \delta_x$,</p>
+<p>则y的绝对误差限$\delta_y&#x3D;?$</p>
+<p>y的相对误差限$\frac{\delta_y}{|y|}&#x3D;?$</p>
+</blockquote>
+<p>$$<br>解：利用微分近似计算公式:\triangle y \approx dy&#x3D;y^{‘}\triangle x \<br>\delta_y&#x3D;|\triangle y|\approx |y^{‘}\triangle x|&#x3D;|y^{‘}|\delta_x \<br>\frac{\delta_y}{|y|}&#x3D;|\frac{y^{‘}}{y}|\delta_x<br>$$</p>
+<p>例9 测得圆钢的直径D&#x3D;60.03mm,测量D的绝对误差限$\delta_D&#x3D;0.05mm$，利用公式$A&#x3D;\frac{\pi}{4}D^2$计算圆钢的截面积时，试估计面积的误差。<br>$$<br>面积绝对误差限\delta_A&#x3D;y^{‘}\delta_D&#x3D;\frac{\pi}{2}D\cdot\delta_D \<br>&#x3D;\frac{\pi}{2}\times60.03\times0.05\approx4.712(mm^2) \<br>面积的相对误差限\frac{\delta_A}{|A|}&#x3D;|\frac{y^{‘}}{y}|\delta_D&#x3D;2\frac{\delta_D}{D} \<br>&#x3D;2\times\frac{0.05}{60.03}\approx0.17%<br>$$</p>
+<h2 id="5后记"><a href="#5后记" class="headerlink" title="5后记"></a>5后记</h2><blockquote>
+<p>:question:QQ:806797785</p>
+<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
+</blockquote>
+<p>参考：</p>
+<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P110~p120.</p>
+<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p17.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0uy000ou01o69yoe9cp" data-title="0205函数的微分-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1188,165 +1334,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmdbvu6a0011uc1octzsgdmk" data-title="0301微分中值定理-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-basis/math/note/高等数学/03微分中值定理与导数的应用/0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
-  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/">0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<h2 id="1-函数单调性的判定"><a href="#1-函数单调性的判定" class="headerlink" title="1 函数单调性的判定"></a>1 函数单调性的判定</h2><h3 id="1-1-判定定理"><a href="#1-1-判定定理" class="headerlink" title="1.1 判定定理"></a>1.1 判定定理</h3><blockquote>
-<p>定理1 设函数$f(x)在[a,b]上连续，在(a,b)内可导$</p>
-<p>（1）如果在$(a,b)内f^{‘}(x)\ge0$,且等号仅在有限多个点成立，那么函数$f(x)在[a,b]上$单调增加；</p>
-<p>（2）如果在$(a,b)内f^{‘}(x)\le0$,且等号仅在有限多个点成立，那么函数$f(x)在[a,b]上$单调减少；</p>
-</blockquote>
-<p>证明（1）：<br>$$<br>因为函数f(x)在[a,b]上连续，在(a,b)内可导 \<br>\forall x_1,x_2\in[a,b],且x_1\lt x_2 ，根据拉格朗日中值定理，有 \<br>f(x_2)-f(x_1)&#x3D;f^{‘}(\xi)(x_2-x_1)(x_1\lt\xi\lt x_2) \<br>当f^{‘}(x)\ge0时，有 f(x_2)-f(x_1)&#x3D;f^{‘}(\xi)(x_2-x_1)\ge0, 即f(x_2)\ge f(x_1) \<br>因为等号仅在有限多个点成立，所示f(x)在[a,b]上单调递增 \<br>$$</p>
-<p>注</p>
-<ol>
-<li>若函数$f(x)$在端点处不连续，则函数在[a,b]上不一定单调增加（ 减少）。</li>
-<li>其他区间有类似结论，如$[a,b),(-\infty,\infty),[a,\infty)$等。</li>
-</ol>
-<h3 id="1-2-例题"><a href="#1-2-例题" class="headerlink" title="1.2 例题"></a>1.2 例题</h3><h4 id="1-2-1-讨论单调性"><a href="#1-2-1-讨论单调性" class="headerlink" title="1.2.1 讨论单调性"></a>1.2.1 讨论单调性</h4><p>例1 讨论$f(x)&#x3D;e^x-x-1$的单调性<br>$$<br>函数f(x)定义域为(-\infty,+\infty),在定义域上连续，可导 \<br>f^{‘}(x)&#x3D;e^x-1  \<br>令f^{‘}(x)&#x3D;0，得 x&#x3D;0\<br>当x\in(-\infty,0)时，f^{‘}(x)\lt0;当x\in(0,+\infty)时，f^{‘}(x)\gt0;<br>所以f(x)在(-\infty,0]上，f(x)单调递减；f(x)在[0,+\infty)上单调递增。<br>$$<br><strong>注意</strong>：$f^{‘}(x)&#x3D;0的点$（驻点）,f(x)在驻点两侧单调性可能发生改变；也可能不改变，如$f(x)&#x3D;x^3,在x&#x3D;0处$</p>
-<p>例2 讨论$f(x)&#x3D;\sqrt[3]{x^2}$的单调性<br>$$<br>f(x)的定义域(-\infty,+\infty)，在定义域上连续、可导 \<br>f^{‘}(x)&#x3D;\frac{2}{3\sqrt[3]{x}} ,f(x)在点x&#x3D;0处不可导\<br>当x\in(-\infty,0)时，f^{‘}(x)\lt0;当x\in(0,+\infty)时，f^{‘}(x)\gt0 \<br>所以f(x)在区间(-\infty,0]上单调递减；在区间[0,+\infty)上单调递增<br>$$<br><strong>注意</strong>：函数f(x)在不可导点两侧单调性可能发生改变；也不可能不发生改变。</p>
-<p>例3 确定函数$f(x)&#x3D;\frac{4x^{\frac{2}{3}}}{x-1}$的单调区间<br>$$<br>解：<br>函数的定义域{x\in R且x\not&#x3D;1}，在定义域区间上连续，可导 \<br>f^{‘}(x)&#x3D;(\frac{4x^{\frac{2}{3}}}{x-1})^{‘}&#x3D;-\frac{4}{3}\cdot\frac{(x+2)}{\sqrt[3]{x}(x-1)^2} \<br>x&#x3D;-2为驻点，x&#x3D;0和x&#x3D;1为不可到点，一点点-2,0,1位分割点切分区间，如下表所示 \<br>$$</p>
-<table>
-<thead>
-<tr>
-<th>x</th>
-<th align="center">$(-\infty,-2)$</th>
-<th align="center">-2</th>
-<th align="center">(-2,0)</th>
-<th align="center">0</th>
-<th align="center">(0,1)</th>
-<th align="center">$(1,+\infty)$</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$f^{‘}(x)$</td>
-<td align="center">-</td>
-<td align="center">0</td>
-<td align="center">+</td>
-<td align="center"></td>
-<td align="center">-</td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td>f(x)</td>
-<td align="center">单减</td>
-<td align="center"></td>
-<td align="center">单增</td>
-<td align="center"></td>
-<td align="center">单减</td>
-<td align="center">单减</td>
-</tr>
-</tbody></table>
-<p>所以函数$f(x)$的单调递增区间为:$[-2,0]$;单调递减区间为：$(-\infty,-2],[0,1),(1,+\infty)$</p>
-<h4 id="1-2-2-证明不等式"><a href="#1-2-2-证明不等式" class="headerlink" title="1.2.2 证明不等式"></a>1.2.2 证明不等式</h4><p>例4 证明 $\sin x+\tan x\gt 2x,0\lt x\lt\frac{\pi}{2}$<br>$$<br>令f(x)&#x3D;\sin x+\tan x-2x,0\lt x\lt\frac{\pi}{2} \<br>f^{‘}(x)&#x3D;\cos x+sec^2x-2 \<br>f^{‘’}(x)&#x3D;-\sin x + 2sec\cdot\sec\cdot\tan x&#x3D;\sin x\cdot(\frac{2}{\cos^3x}-1) \<br>当0\lt x\lt\frac{\pi}{2}时，f^{‘’}(x)\gt0,即f^{‘}(x)在此区间上单增 \<br>f^{‘}(x)\gt f^{‘}(0)&#x3D;0 \<br>所以f(x)在(0,\frac{\pi}{2})上单增,f(x)\gt f(0)&#x3D;0 即 \<br>\sin x+\tan x-2x\gt0\Rightarrow\sin x+\tan x\gt 2x<br>$$</p>
-<h3 id="1-3-求单调区间的一般方法"><a href="#1-3-求单调区间的一般方法" class="headerlink" title="1.3 求单调区间的一般方法"></a>1.3 求单调区间的一般方法</h3><p>综上得出以下求函数单调区间的一般方法：</p>
-<blockquote>
-<p>函数f(x)在定义域上连续可导，且仅在有限个点函数导数等于0</p>
-<p>(1)若函数有间断的，则根据间断点划分区间</p>
-<p>(2)求$f^{‘}(x)$</p>
-<p>(3)求驻点和不可导点，用这些点划分区间</p>
-<p>(4)在每个分区间，根据判定定理1判断函数的单调性</p>
-</blockquote>
-<h2 id="2-函数的凹凸性与拐点"><a href="#2-函数的凹凸性与拐点" class="headerlink" title="2 函数的凹凸性与拐点"></a>2 函数的凹凸性与拐点</h2><h3 id="2-1-凹凸性定义"><a href="#2-1-凹凸性定义" class="headerlink" title="2.1 凹凸性定义"></a>2.1 凹凸性定义</h3><blockquote>
-<p>定义 设$f(x)$在区间I上连续，如果对I上任意两点$x_1,x_2$,恒有</p>
-<p>$f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}$</p>
-<p>那么称$f(x)在I$上的图形是（向上）凹的（或凹弧）；如果恒有</p>
-<p>$f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}$</p>
-<p>那么称$f(x)在I$上的图形是（向下）凸的（或凸弧）。</p>
-</blockquote>
-<h3 id="2-2-凹凸性的判断定理"><a href="#2-2-凹凸性的判断定理" class="headerlink" title="2.2 凹凸性的判断定理"></a>2.2 凹凸性的判断定理</h3><blockquote>
-<p>定理 设$f(x)在[a,b]$上连续，在$(a,b)$内具有一阶导数和二阶导数，那么</p>
-<p>（1）若在$(a,b)内f^{‘’}(x)\gt0$,则$f(x)在[a,b]$上的图形是凹的；</p>
-<p>（2）若在$(a,b)内f^{‘’}(x)\lt0$,则$f(x)在[a,b]$上的图形是凸的；</p>
-</blockquote>
-<p>$$<br>证明： \<br>如下图所示:任取x_1,x_2\in(a,b),且x_1\lt x_2,令x_0&#x3D;\frac{x_1+x_2}{2} \<br>因为f(x)在[a,b]上连续，在(a,b)内具有一阶导数和二级导数, \<br>在区间(x1,x_0),(x_0,x_2),根据拉格朗日中值定理有\<br>f(x_0)-f(x_1)&#x3D;f^{‘}(\xi_1)(x_0-x_1)(x_1\lt\xi_1\lt x_0)\quad(1)式\<br>f(x_2)-f(x_0)&#x3D;f^{‘}(\xi_2)(x_2-x_0)(x_0\lt\xi_2\lt x_2)\quad(2)式\<br>(2)式-(1)式得  f(x_1)+f(x_2)-2f(x_0)&#x3D;\frac{x_2-x_1}{2}[f^{‘}(\xi_2)-f^{‘}(\xi_1)] (3)式\<br>(3)式等会右侧再次应用拉格朗日中值定理得 \<br>(3)式&#x3D;\frac{x_2-x_1}{2}(\xi_2-\xi_1)f^{‘’}(\xi)(\xi_1\lt\xi\lt\xi_2) \<br>x_2-x_1\gt0,\xi_2-\xi_1\gt0,因为f^{‘’}(x)\gt0，所以 \<br>f(x_1)+f(x_2)-2f(x_0)\gt0,即f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}\<br>所以f(x)在[a,b]上是凹的;同理可证(2)<br>$$</p>
-<p><img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/L:/study/math/note/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/images/20230210-001-0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8.png" alt="20230210-001-0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用"></p>
-<h3 id="2-3-拐点"><a href="#2-3-拐点" class="headerlink" title="2.3 拐点"></a>2.3 拐点</h3><blockquote>
-<p>一般地，设$f(x)在区间I$上连续，$x_0是I$内的点。如果曲线$f(x)在经过点(x_0,f(x_0))$时，曲线的凹凸性改变了，那么就称点$(x_0,f(x_0))$为这曲线的拐点。</p>
-</blockquote>
-<h3 id="2-3-求凹凸性区间及拐点的一般方法"><a href="#2-3-求凹凸性区间及拐点的一般方法" class="headerlink" title="2.3 求凹凸性区间及拐点的一般方法"></a>2.3 求凹凸性区间及拐点的一般方法</h3><blockquote>
-<p>设$f(x)$在其定义区间上连续，具有一阶导数和二阶导数，且仅有有限个$f^{‘’}(x)&#x3D;0和f^{‘’}(x)$不存在点</p>
-<p>（1）求$f^{‘’}(x)$;</p>
-<p>（2）令$f^{‘’}(x)&#x3D;0$,求其全部解并求$f^{‘’}(x)$不存在的点；用这些点切分定义区间为若干分区间；</p>
-<p>（3）拐点判断：对于（2）中求出的驻点或者二阶导不存在的点$x_0$，检查$f^{‘’}(x)在x_0$左右两侧临近的符号，当两侧符号不相同时，点$(x_0,f(x_0))$为拐点；相同时不是拐点。</p>
-<p>（4）凹凸区间判断：对于（2）中划分的分区间，根据判定定理判断凹凸性。</p>
-</blockquote>
-<h3 id="2-4-例题"><a href="#2-4-例题" class="headerlink" title="2.4 例题"></a>2.4 例题</h3><h4 id="2-4-1-判断凹凸性和拐点"><a href="#2-4-1-判断凹凸性和拐点" class="headerlink" title="2.4.1 判断凹凸性和拐点"></a>2.4.1 判断凹凸性和拐点</h4><p>例 5$f(x)&#x3D;3x^4-4x^3+1$，求曲线$y&#x3D;f(x)$的凹凸区间和拐点<br>$$<br>定义域(-\infty,+\infty),在定义域连续，具有一阶导数和二阶导数 \<br>f^{‘’}(x)&#x3D;(12x^3-12x^2)^{‘}&#x3D;36x^2-24x,令f^{‘’}(x)&#x3D;0，得 \<br>x&#x3D;0或\frac{2}{3} \<br>列表如下<br>$$</p>
-<table>
-<thead>
-<tr>
-<th>x</th>
-<th>$(-\infty,0)$</th>
-<th>0</th>
-<th>$(0,\frac{2}{3})$</th>
-<th>$\frac{2}{3}$</th>
-<th>$(\frac{2}{3},+\infty)$</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$f^{‘’}(x)$</td>
-<td>+</td>
-<td>0</td>
-<td>-</td>
-<td>0</td>
-<td>+</td>
-</tr>
-<tr>
-<td>$f(x)$</td>
-<td>凸的</td>
-<td>拐</td>
-<td>凹的</td>
-<td>拐</td>
-<td>凸的</td>
-</tr>
-</tbody></table>
-<p>所以函数$f(x)的凸区间为：(-\infty,0],[\frac{2}{3},+\infty)$；凹区间为：$[0,\frac{2}{3}]$</p>
-<p>拐点为:$(0,1),(\frac{2}{3},\frac{11}{27})$</p>
-<p>例 6<br>$$<br>设<br>\begin{cases}<br>x&#x3D;t^3+3t+1,\<br>y&#x3D;t^3-3t+1<br>\end{cases}<br>$$<br>则曲线$y&#x3D;y(x)$凸的t的取值范围是：<br>$$<br>解：求向上凸的取值范围即求\frac{d^2y}{dx^2}\gt0的t的范围 \<br>\frac{dy}{dx}&#x3D;\frac{y^{‘}(t)}{x^{‘}(t)}&#x3D;\frac{t^2-1}{t^2+1} \<br>\frac{d^2y}{dx^2}&#x3D;(\frac{dy}{dx})^{‘}\cdot\frac{1}{x^{‘}(t)}&#x3D;\<br>\frac{4t}{3(t^2+1)^3} \<br>所以曲线y(x)向上凸的t的取值范围为t\gt0<br>$$</p>
-<h4 id="2-4-2-证明不等式"><a href="#2-4-2-证明不等式" class="headerlink" title="2.4.2 证明不等式"></a>2.4.2 证明不等式</h4><p> 例 7 证明$\frac{1}{2}(x^n+y^n)\gt(\frac{x+y}{2})^n(x\gt0,y\gt0,x\not&#x3D;y,n\gt1)$<br>$$<br>证明:令f(x)&#x3D;x^n(x\gt0,n\gt1) \<br>f^{‘’}(x)&#x3D;n(n-1)x^{n-2}\gt0\<br>当x\gt0时，f(x)为凹的，则根据凹凸性定义有 \<br>\frac{1}{2}(x^n+y^n)\gt(\frac{x+y}{2})^n(x\gt0,y\gt0,x\not&#x3D;y,n\gt1)<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
-<p>:question:QQ:806797785</p>
-<p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
-</blockquote>
-<p>参考：</p>
-<p>[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P144~p150.</p>
-<p>[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP&#x2F;OL].2020-04-16.p22.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmdbvu6b0014uc1o4yo580h5" data-title="0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0uy000qu01o0srqbvj2" data-title="0301微分中值定理-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1373,7 +1361,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -1383,7 +1371,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
     </div>
   </div>
 
@@ -1393,7 +1381,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
     </div>
   </div>
 
@@ -1415,15 +1403,7 @@
       <ul>
         
           <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
-          </li>
-        
-          <li>
-            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
           </li>
         
           <li>
@@ -1432,6 +1412,14 @@
         
           <li>
             <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
           </li>
         
       </ul>
