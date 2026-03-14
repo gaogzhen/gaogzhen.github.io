@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 一、逆矩阵的定义、性质和求法 定义7	对于$n$阶矩阵A，如果有一个$n$阶矩阵B，使 $AB&#x3D;BA&#x3D;E$ 则说矩阵A是可逆的，并把矩阵B称为A的逆矩阵，简称逆阵。   定理1	若矩阵A可逆，则$\vert A\vert \not &#x3D; 0$  $$证明：\A可逆，即有A^{-1}，使得AA^{-1}&#x3D;E\|AA^{-1}|&#x3D;|A||A^">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-04T17:37:59.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.308Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.247Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一、逆矩阵的定义、性质和求法"><a href="#一、逆矩阵的定义、性质和求法" class="headerlink" title="一、逆矩阵的定义、性质和求法"></a>一、逆矩阵的定义、性质和求法</h2><blockquote>
+<h2><span id="一-逆矩阵的定义-性质和求法">一、逆矩阵的定义、性质和求法</span></h2><blockquote>
 <p>定义7	对于$n$阶矩阵A，如果有一个$n$阶矩阵B，使</p>
 <p>$AB&#x3D;BA&#x3D;E$</p>
 <p>则说矩阵A是可逆的，并把矩阵B称为A的逆矩阵，简称逆阵。</p>
@@ -127,7 +127,7 @@
 <p>其中k为正整数，这样当A可逆$\lambda,\mu$为整数时，有</p>
 <p>$A^{\lambda}A^{\mu}&#x3D;A^{\lambda+\mu},(A^{\lambda})^{\mu}&#x3D;A^{\lambda\mu}$</p>
 <p>例11 求二阶矩阵<br>$$<br>A&#x3D;\begin{pmatrix}<br>a&amp;b\<br>c&amp;d<br>\end{pmatrix}<br>$$<br>的逆矩阵。<br>$$<br>解：\<br>|A|&#x3D;ad-bc\<br>A*&#x3D;\begin{pmatrix}<br>d&amp;-b\<br>-c&amp;a<br>\end{pmatrix}\<br>当|A|\not&#x3D;0使,<br>A^{-1}&#x3D;\frac{1}{|A|}A^{*}\<br>&#x3D;\frac{1}{ad-bc}\begin{pmatrix}<br>d&amp;-b\<br>-c&amp;a<br>\end{pmatrix}<br>$$</p>
-<h2 id="二、逆矩阵的初步应用"><a href="#二、逆矩阵的初步应用" class="headerlink" title="二、逆矩阵的初步应用"></a>二、逆矩阵的初步应用</h2><p>可逆矩阵在线性代数中占有重要的地位，它的应用是多方面的，下面举几个例子。</p>
+<h2><span id="二-逆矩阵的初步应用">二、逆矩阵的初步应用</span></h2><p>可逆矩阵在线性代数中占有重要的地位，它的应用是多方面的，下面举几个例子。</p>
 <p>例13 设<br>$$<br>A&#x3D;\begin{pmatrix}<br>1&amp;2&amp;3\<br>2&amp;2&amp;1\<br>3&amp;4&amp;3\<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>2&amp;1\<br>5&amp;3\<br>\end{pmatrix}<br>,C&#x3D;\begin{pmatrix}<br>1&amp;3\<br>2&amp;0\<br>3&amp;1\<br>\end{pmatrix}\<br>$$<br>求矩阵X使其满足$AXB&#x3D;C$<br>$$<br>解：\<br>若A^{-1},B^{-1}存在，则\<br>C&#x3D;AA^{-1}CB^{-1}B\<br>有X&#x3D;A^{-1}CB^{-1}\<br>|A|&#x3D;2,|B|&#x3D;1,所以A^{-1},B^{-1}存在\<br>A^{-1}&#x3D;\begin{pmatrix}<br>1&amp;3&amp;-2\<br>-\frac{3}{2}&amp;-3&amp;\frac{5}{2}\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>,B^{-1}&#x3D;\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>X&#x3D;A^{-1}CB^{-1}&#x3D;<br>\begin{pmatrix}<br>1&amp;3&amp;-2\<br>-\frac{3}{2}&amp;-3&amp;\frac{5}{2}\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>\begin{pmatrix}<br>1&amp;3\<br>2&amp;0\<br>3&amp;1\<br>\end{pmatrix}<br>\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>1&amp;1\<br>0&amp;-2\<br>0&amp;2<br>\end{pmatrix}<br>\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>-2&amp;1\<br>10&amp;-4\<br>-10&amp;4\<br>\end{pmatrix}<br>$$</p>
 <p>例14 设<br>$$<br>P&#x3D;\begin{pmatrix}<br>1&amp;2\<br>1&amp;4<br>\end{pmatrix}<br>,\Lambda&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2<br>\end{pmatrix}<br>,AP&#x3D;P\Lambda,求A^n<br>$$</p>
 <p>$$<br>解:\<br>|P|&#x3D;2\<br>p^{-1}&#x3D;\frac{1}{2}\begin{pmatrix}<br>4&amp;-2\<br>-1&amp;1\<br>\end{pmatrix}\<br>A&#x3D;P\Lambda P^{-1},A^2&#x3D;P\Lambda P^{-1}P\Lambda P^{-1}&#x3D;P\Lambda^2 P^{-1},\cdots,A^{n}&#x3D;P\Lambda^{n} P^{-1}\<br>\Lambda&#x3D;&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2<br>\end{pmatrix}<br>,\Lambda^2&#x3D;&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^2<br>\end{pmatrix}<br>,\cdots,\Lambda^n&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^n\<br>\end{pmatrix}\<br>A^n&#x3D;P\Lambda^n P^{-1}&#x3D;\begin{pmatrix}<br>1&amp;2\<br>1&amp;4<br>\end{pmatrix}<br>\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^n\<br>\end{pmatrix}<br>\frac{1}{2}\begin{pmatrix}<br>4&amp;-2\<br>-1&amp;1\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>2-2^n&amp;2^n-1\<br>2-2^{n+1}&amp;2^{n+1}-1\<br>\end{pmatrix}\<br>$$</p>
@@ -144,7 +144,7 @@
 </li>
 </ol>
 <p>例15 设<br>$$<br>P&#x3D;\begin{pmatrix}<br>-1&amp;1&amp;1\<br>1&amp;0&amp;2\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>,\Lambda&#x3D;\begin{pmatrix}<br>1&amp;&amp;\<br>&amp;2&amp;\<br>&amp;&amp;-3<br>\end{pmatrix}<br>,AP&#x3D;P\Lambda\<br>$$<br>求$\phi(A)&#x3D;A^3+2A^2-3A$<br>$$<br>解：\<br>|P|&#x3D;6\<br>A&#x3D;P\Lambda P^{-1}\<br>\phi(A)&#x3D;P\phi(\Lambda) P^{-1},\phi(\Lambda)&#x3D;diag(\phi(\lambda_1^k),\phi(\lambda_2)^k,\cdots,\phi(\lambda_n^k))\<br>\phi(1)&#x3D;0，\phi(2)&#x3D;10,\phi(-3)&#x3D;0\<br>\phi(A)&#x3D;P\phi(\Lambda)P^{-1}&#x3D;\begin{pmatrix}<br>-1&amp;1&amp;1\<br>1&amp;0&amp;2\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>\begin{pmatrix}<br>0&amp;&amp;\<br>&amp;10&amp;\<br>&amp;&amp;0\<br>\end{pmatrix}<br>\frac{1}{|P|}P^*\<br>5\begin{pmatrix}<br>1&amp;0&amp;1\<br>0&amp;0&amp;0\<br>1&amp;0&amp;1\<br>\end{pmatrix}<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -155,7 +155,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vm002bu01oh9870qsb" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13m0008v71o7otb5x2w" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

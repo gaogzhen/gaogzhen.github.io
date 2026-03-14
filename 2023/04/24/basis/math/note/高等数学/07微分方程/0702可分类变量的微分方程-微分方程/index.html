@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1 一阶微分方程变形本节至第四节我们学习的都是一阶微分方程 ​	$y^{‘}&#x3D;f(x,y)$							（2-1）  一阶微分方程对称形式  $$  p(x,y)dx+Q(x,y)dy&#x3D;0\qquad (2-2)  $$  若以x为自变量，y为因变量，则$$\frac{dy}{dx}&#x3D;-\frac{P(x,y)}{Q(x,y)}$$若以y为自变量，x为因">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-04-24T16:36:06.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.335Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.281Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,17 +96,17 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-一阶微分方程变形"><a href="#1-一阶微分方程变形" class="headerlink" title="1 一阶微分方程变形"></a>1 一阶微分方程变形</h2><p>本节至第四节我们学习的都是一阶微分方程</p>
+<h2><span id="1-一阶微分方程变形">1 一阶微分方程变形</span></h2><p>本节至第四节我们学习的都是一阶微分方程</p>
 <p>​	$y^{‘}&#x3D;f(x,y)$							（2-1）</p>
 <ul>
 <li>一阶微分方程对称形式<br>  $$<br>  p(x,y)dx+Q(x,y)dy&#x3D;0\qquad (2-2)<br>  $$</li>
 </ul>
 <p>若以x为自变量，y为因变量，则<br>$$<br>\frac{dy}{dx}&#x3D;-\frac{P(x,y)}{Q(x,y)}<br>$$<br>若以y为自变量，x为因变量，则<br>$$<br>\frac{dx}{dy}&#x3D;-\frac{Q(x,y)}{P(x,y)}<br>$$<br>示例：$\frac{dy}{dx}&#x3D;2x\Rightarrow dy&#x3D;2xdx$,该形式容易求微分方程的解。</p>
 <p>例1 求$\frac{dy}{dx}&#x3D;2xy^2$的解<br>$$<br>解：\frac{dy}{y^2}&#x3D;2xdx\<br>等式两边积分，\int{\frac{dy}{y^2}}&#x3D;\int{2xdx}\<br>-\frac{1}{y}&#x3D;x^2+C\Rightarrow y&#x3D;-\frac{1}{x^2+C}<br>$$</p>
-<h2 id="2-可分离变量的微分方程"><a href="#2-可分离变量的微分方程" class="headerlink" title="2 可分离变量的微分方程"></a>2 可分离变量的微分方程</h2><h3 id="2-1-定义"><a href="#2-1-定义" class="headerlink" title="2.1 定义"></a>2.1 定义</h3><blockquote>
+<h2><span id="2-可分离变量的微分方程">2 可分离变量的微分方程</span></h2><h3><span id="21-定义">2.1 定义</span></h3><blockquote>
 <p>一般地，如果一个一阶微分方程能写成<br>$$<br>g(y)dy&#x3D;f(x)dx \qquad(2-5)<br>$$<br>的形式，也就是说能把微分方程写成一端只含有y的函数和dy，另一端只含有x的函数和dx，那么原方程称为可分离变量的微分方程。</p>
 </blockquote>
-<h3 id="2-2-解法"><a href="#2-2-解法" class="headerlink" title="2.2 解法"></a>2.2 解法</h3><ul>
+<h3><span id="22-解法">2.2 解法</span></h3><ul>
 <li><p>若函数$y&#x3D;\phi(x)$是方程(2-5)的解<br>  $$<br>  带入(2-5)式得,g(\phi(x))\phi^{‘}(x)dx&#x3D;f(x)dx\<br>  两端求积分,\int{g(y)dy}&#x3D;\int{f(x)dx}\<br>  设G(y)及F(x)分别为g(y),f(x)的原函数，则\<br>  G(y)&#x3D;F(x)+C \qquad(2-6)</p>
 <p>  $$</p>
 </li>
@@ -118,10 +118,10 @@
 <li>(2-6)叫做微分方程(2-5)的隐式通解;</li>
 <li>解法简单无须显化，简单形式可以显化。</li>
 </ul>
-<h2 id="3-例题"><a href="#3-例题" class="headerlink" title="3 例题"></a>3 例题</h2><p>例1 求微分方程$\frac{dy}{dx}&#x3D;2xy$的通解<br>$$<br>解：\frac{dy}{y}&#x3D;2xdx\<br>两边积分，\int{\frac{dy}{y}}&#x3D;\int{2xdx}\<br>\ln|y|&#x3D;x^2+C_1\<br>y&#x3D;\pm e^{x^2+C_1}\<br>令C&#x3D;\pm e^{C_1},则通解为y&#x3D;Ce^{x^2}\</p>
+<h2><span id="3-例题">3 例题</span></h2><p>例1 求微分方程$\frac{dy}{dx}&#x3D;2xy$的通解<br>$$<br>解：\frac{dy}{y}&#x3D;2xdx\<br>两边积分，\int{\frac{dy}{y}}&#x3D;\int{2xdx}\<br>\ln|y|&#x3D;x^2+C_1\<br>y&#x3D;\pm e^{x^2+C_1}\<br>令C&#x3D;\pm e^{C_1},则通解为y&#x3D;Ce^{x^2}\</p>
 <p>$$<br>例2 设降落伞从跳伞塔下落后，所受空气阻力与速度成正，并设降落伞离开跳伞塔时（t&#x3D;0）速度为零，求降落伞下落速度与时间的关系。<br>$$<br>解：设下落速度为v(t),重力P&#x3D;mg,方向与v一致\<br>阻力R&#x3D;kv,方向与v相反\<br>降落伞所受外力 F&#x3D;mg-kv，根据牛顿第二定律有\<br>F&#x3D;ma,即m\frac{dv}{dt}&#x3D;mg-kv\<br>初值条件v|<em>{t&#x3D;0}&#x3D;0\<br>方程分离变量：\frac{dv}{mg-kv}&#x3D;\frac{dt}{m}\<br>两边积分：\int{\frac{dv}{mg-kv}}&#x3D;\int{\frac{dt}{m}}\<br>v&#x3D;\frac{mg}{k}+Ce^{-\frac{k}{m}t},带入初值条件v|</em>{v&#x3D;0}&#x3D;0\<br>C&#x3D;-\frac{mg}{k},微分方程的特解\<br>v&#x3D;\frac{mg}{k}(1-e^{-\frac{k}{m}}t)<br>$$<br>例3 求初值问题<br>$$<br>\begin{cases}<br>\cos ydx+(1+e^{-x})\sin ydy&#x3D;0\<br>y|_{x&#x3D;0}&#x3D;\frac{\pi}{4}<br>\end{cases}<br>$$</p>
 <p>$$<br>解：方程分类变量\tan ydy&#x3D;-\frac{1}{1+e^{-x}}dx\<br>两边积分 \int{\tan ydy}&#x3D;-\int{\frac{1}{1+e^{-x}}dx}\<br>-\ln|\cos y|&#x3D;-\ln(1+e^x)+C_1\<br>\cos y &#x3D; C(1+e^x),带入初值条件\<br>C&#x3D;\frac{\sqrt{2}}{4},则微分方程的特解为\<br>\cos y&#x3D;\frac{\sqrt{2}}{4}(1+e^x)<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -132,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0702%E5%8F%AF%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq5p0v7001au01o15il7dy9" data-title="0702可分类变量的微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/04/24/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0702%E5%8F%AF%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq5v14c001lv71oezbx3cuu" data-title="0702可分类变量的微分方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

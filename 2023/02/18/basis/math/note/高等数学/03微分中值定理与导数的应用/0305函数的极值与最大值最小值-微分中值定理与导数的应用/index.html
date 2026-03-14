@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1 极值1.1 定义 设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有 $f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$, 那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）  注：  极值是局部的最值 最值不一定是极值，极值也不一定是最值  1">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-18T16:34:29.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.312Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.253Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-极值"><a href="#1-极值" class="headerlink" title="1 极值"></a>1 极值</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><blockquote>
+<h2><span id="1-极值">1 极值</span></h2><h3><span id="11-定义">1.1 定义</span></h3><blockquote>
 <p>设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有</p>
 <p>$f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$,</p>
 <p>那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）</p>
@@ -106,7 +106,7 @@
 <li>极值是局部的最值</li>
 <li>最值不一定是极值，极值也不一定是最值</li>
 </ol>
-<h3 id="1-2-求极值的一般方法"><a href="#1-2-求极值的一般方法" class="headerlink" title="1.2 求极值的一般方法"></a>1.2 求极值的一般方法</h3><blockquote>
+<h3><span id="12-求极值的一般方法">1.2 求极值的一般方法</span></h3><blockquote>
 <p>定理1（必要条件）设函数$f(x)在点x_0$处可导，且在$x_0$处取得极值，则$f^{‘}(x_0)&#x3D;0$</p>
 </blockquote>
 <p>注：</p>
@@ -141,7 +141,7 @@
 <p>$$<br>证明：\<br>f(x)在点x_0处具有n阶导,\forall x\in U(x_0），根据泰勒公式有\<br>f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>因为f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n)}(x_0)&#x3D;0\<br>f(x)&#x3D;f(x_0)+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)即 \<br>f(x)-f(x_0)&#x3D;\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>当x\in U(x_0,\delta)时，f(x)-f(x_0)的符号由f^{(n)}(x_0)(x-x_0)^n决定\<br>f^{(n)}\not&#x3D;0,假设f^{(n)}\gt0,n为奇数，\<br>则当x\in(x_0-\delta,x_0)时，f(x)\lt f(x_0);当x\in(x_0,x_0+\delta)时，f(x)\gt f(x_0)。\同理当f^{(n)}(x_0)\lt0时，f(x)-f(x_0)在x_0两侧符号不同。所以x&#x3D;x_0不是f(x)的极值点。 \<br>n为偶数，f(x)-f(x_0)符号由f^{(n)}决定。\<br>f^{(n)}(x_0)\gt0时，x&#x3D;x_0为极小值点；f^{(n)}(x_0)\lt0时，x&#x3D;x_0为极大值点。<br>$$</p>
 <p>注：若函数$f(x)在x_0$点处存在n阶导数，且$f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,f^{(n)}(x_0)\not&#x3D;0$,则$你为奇数是，(x_0,f(x_0))$是函数$f(x)$的拐点；$n为偶数时，(x_0,f(x_0))不是函数f(x)$的拐点。<br>$$<br>证明：\<br>把f^{‘’}(x)按泰勒公式展开，有\<br>f^{‘’}(x)&#x3D;f^{‘’}(x_0)+f^{‘’’}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2}) \<br>因为f^{‘’}(x_0)&#x3D;f^{‘’’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,所以\<br>f^{‘’}(x)&#x3D;\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2})\<br>n为奇数，n-2也为奇数,同上，f^{‘’}(x)在点x_0两侧符号相反，(x_0,f(x_0))是函数f(x)的拐点；\<br>n为偶数,n-2也是偶数,f^{‘’}(x)在点x_0两侧符号相同,(x_0,f(x_0))不是函数f(x)的拐点。<br>$$</p>
 <p>例1 设函数$f(x)对任意x\in R$,满足$(x-1)f^{‘’}(x)+2(x-1)f^{‘}(x)&#x3D;1-e^{1-x}$ 证明：$f(x)在x&#x3D;a(a\not&#x3D;1)$处取极值时，比为极小值。<br>$$<br>证明：有题知.f(x)在R上二阶可导，且x&#x3D;a处取得极值,则\<br>f^{‘}(a)&#x3D;0,x&#x3D;a带入可得\<br>(a-1)f^{‘’}(a)+2(a-1)f^{‘}(a)&#x3D;1-e^{1-a} \Rightarrow \<br>f^{‘’}(a)&#x3D;\frac{e^{a-1}-1}{(a-1)e^{a-1}} \<br>a-1\gt0时，f^{‘’}(a)\gt0;a-1\lt0时，f^{‘’}(a)\gt0 \<br>所以f(x)在x&#x3D;a(a\not&#x3D;1)处取极值时，一定是极小值。<br>$$</p>
-<h2 id="2-最大值最小值问题"><a href="#2-最大值最小值问题" class="headerlink" title="2 最大值最小值问题"></a>2 最大值最小值问题</h2><h3 id="2-1-求最值的一般步骤"><a href="#2-1-求最值的一般步骤" class="headerlink" title="2.1 求最值的一般步骤"></a>2.1 求最值的一般步骤</h3><p>闭区间上连续函数的最值</p>
+<h2><span id="2-最大值最小值问题">2 最大值最小值问题</span></h2><h3><span id="21-求最值的一般步骤">2.1 求最值的一般步骤</span></h3><p>闭区间上连续函数的最值</p>
 <p>设函数$f(x)$满足：</p>
 <p>(1)$f(x)在[a,b]$上连续</p>
 <p>(2)$(a,b)内$有限个驻点和不可导点</p>
@@ -150,18 +150,18 @@
 <p>(2)计算$f(x)$在上述驻点和不可导点处的函数值及$f(a),f(b)$</p>
 <p>(3)比较(2)中诸值的大小，其中最大的便是$f(x)在[a,b]$上的最大值，最小的便是$f(x)在[a,b]$上的最小值</p>
 <p>例1 求$f(x)&#x3D;|x^2-3x+2|在[-3,4]$上的最值<br>$$<br>解：\<br>f(x)&#x3D;<br>\begin{cases}<br>x^2-3x+2,\quad x\in[-3,1]\cup[2,4] \<br>-x^2+3x-2,\quad x\in(1,2) \<br>\end{cases} \<br>f^{‘}(x)&#x3D;<br>\begin{cases}<br>2x-3,\quad x\in[-3,1]\cup[2,4] \<br>-2x+3,\quad x\in(1,2) \<br>\end{cases} \<br>其中x&#x3D;1,x&#x3D;2是f(x)的不可导点，令f^{‘}(x)&#x3D;0，得x&#x3D;\frac{3}{2} \<br>f(1)&#x3D;f(2)&#x3D;0,f(-3)&#x3D;20,f(\frac{3}{2})&#x3D;\frac{1}{4},f(4)&#x3D;6 \<br>所以函数f(x)在[-3,4]区间上在x&#x3D;1和x&#x3D;2处取得最小值，最小值为0;在x&#x3D;-3处取得最大值，最大值为20<br>$$</p>
-<h3 id="2-2-某个区间有一个驻点且该处是函数的极值点"><a href="#2-2-某个区间有一个驻点且该处是函数的极值点" class="headerlink" title="2.2 某个区间有一个驻点且该处是函数的极值点"></a>2.2 某个区间有一个驻点且该处是函数的极值点</h3><blockquote>
+<h3><span id="22-某个区间有一个驻点且该处是函数的极值点">2.2 某个区间有一个驻点且该处是函数的极值点</span></h3><blockquote>
 <p>函数$f(x)$在一个区间（有限或无限，开或闭）内可导且只有一个驻点$x&#x3D;x_0，若x&#x3D;x_0$是函数的极值点</p>
 <p>(1)$f(x_0)$为极大值时，$f(x_0)$即为该区间上的最大值；</p>
 <p>(2)$f(x_0)$为极小值时，$f(x_0)$即为该区间上的最小值。</p>
 </blockquote>
 <p>例2 求函数$y&#x3D;x^2-\frac{54}{x}(x\lt0)$在何处取得最小值。<br>$$<br>解：\<br>f^{‘}(x)&#x3D;2x+\frac{54}{x^2},f^{‘’}(x)&#x3D;2-\frac{108}{x^3} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;-3,f^{‘’}(-3)\gt0 \<br>当x\lt0时，x&#x3D;-3为唯一驻点，且x&#x3D;-3为极小值点\<br>所以f(x)当x\lt0时，在x&#x3D;-3处取得最小值<br>$$</p>
-<h3 id="2-3-实际问题"><a href="#2-3-实际问题" class="headerlink" title="2.3 实际问题"></a>2.3 实际问题</h3><blockquote>
+<h3><span id="23-实际问题">2.3 实际问题</span></h3><blockquote>
 <p>对于实际问题，函数可导且有最值，且一定在内部取得。此时内部唯一驻点即为最值点。</p>
 </blockquote>
 <p>例3 将长度为a的铁丝分为两段，分别围成方形和圆形。如何分解，能使圆与正方形面积之和最小？<br>$$<br>解:设围成圆的长度为x,则围成正方形的长度为a-x,x\in[0,a] \<br>圆与正方形面积之和:s(x)&#x3D;\pi\cdot(\frac{x}{2\pi})^2+(\frac{a-x}{4})^2 \<br>s^{‘}(x)&#x3D;\frac{x}{2\pi}+\frac{x-a}{8}，s^{‘’}(x)&#x3D;\frac{\pi+4}{8\pi}\gt0\<br>令s^{‘}(x)&#x3D;0,得x&#x3D;\frac{a\pi}{\pi+4} \<br>x&#x3D;\frac{a\pi}{\pi+4}为s(x)在区间[0,a]内唯一驻点且为极小值点\<br>所以s(x)在x&#x3D;\frac{a\pi}{\pi+4}处取得最小值。<br>$$</p>
-<h3 id="2-4-证明不等式"><a href="#2-4-证明不等式" class="headerlink" title="2.4 证明不等式"></a>2.4 证明不等式</h3><p>例4 设$p,q\gt1,\frac{1}{p}+\frac{1}{q}&#x3D;1$，证明：$\forall x\gt0,\frac{1}{p}x^p+\frac{1}{q}\ge x$<br>$$<br>证明：\<br>令f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0) \<br>f^{‘}(x)&#x3D;x^{p-1}-1,f^{‘’}(x)&#x3D;(p-1)x^{p-2} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;1\<br>f^{‘’}(1)&#x3D;p-1\gt0,所以f(x)在x&#x3D;1处取得极小值\<br>因为x&#x3D;1是f(x)在(0,+\infty)内唯一驻点，所以f(x)在该点取得最小值\<br>所以f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0)\ge f(1)&#x3D;0,即 \<br>\frac{1}{p}x^p+\frac{1}{q}\ge x<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h3><span id="24-证明不等式">2.4 证明不等式</span></h3><p>例4 设$p,q\gt1,\frac{1}{p}+\frac{1}{q}&#x3D;1$，证明：$\forall x\gt0,\frac{1}{p}x^p+\frac{1}{q}\ge x$<br>$$<br>证明：\<br>令f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0) \<br>f^{‘}(x)&#x3D;x^{p-1}-1,f^{‘’}(x)&#x3D;(p-1)x^{p-2} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;1\<br>f^{‘’}(1)&#x3D;p-1\gt0,所以f(x)在x&#x3D;1处取得极小值\<br>因为x&#x3D;1是f(x)在(0,+\infty)内唯一驻点，所以f(x)在该点取得最小值\<br>所以f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0)\ge f(1)&#x3D;0,即 \<br>\frac{1}{p}x^p+\frac{1}{q}\ge x<br>$$</p>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -172,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0v0000uu01oboq4fs1u" data-title="0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5v1460015v71o2xwm6kmq" data-title="0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

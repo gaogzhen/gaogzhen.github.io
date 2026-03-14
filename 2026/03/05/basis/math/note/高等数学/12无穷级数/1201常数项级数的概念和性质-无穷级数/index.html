@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 一 常数项级数的概念  （常数项）无穷级数：形如 $u_1+u_2+\cdots+u_n+\cdots$,记作 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$，其中 $u_n$ 称为级数的一般项或通项。    有限项求和，无论是1w项，1亿项，其和是确定的，即常数 无线项求和结果不确定    部分和：$s_n&#x3D;u_1+u_2+\cdo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-03-05T15:31:08.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.344Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.292Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一-常数项级数的概念"><a href="#一-常数项级数的概念" class="headerlink" title="一 常数项级数的概念"></a>一 常数项级数的概念</h2><blockquote>
+<h2><span id="一-常数项级数的概念">一 常数项级数的概念</span></h2><blockquote>
 <ol>
 <li>（常数项）无穷级数：形如 $u_1+u_2+\cdots+u_n+\cdots$,记作 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$，其中 $u_n$ 称为级数的一般项或通项。</li>
 </ol>
@@ -133,7 +133,7 @@
 <p>的收敛性，其中 $a\not&#x3D;0$，$q$ 叫做级数的公比。<br>$$<br>解：\<br>设 \displaystyle\sum_{n&#x3D;1}^{\infty}{aq^{n-1}}的部分和数列为 {s_n}\<br>则 s_n&#x3D;a+aq+\cdot+aq^{n-1}\<br>（1）当|q|\not&#x3D;1时，s_n&#x3D;\frac{a-aq^{n}}{1-q}&#x3D;\frac{a}{1-q}-\frac{aq^n}{1-q}\<br>（11）当|q|\lt 1时，\lim\limits_{n\to\infty}s_n&#x3D;\frac{a}{1-q} \<br> (12) 当|q|\gt 1时,\lim\limits_{n\to\infty}s_n&#x3D;\infty \<br> (2) 当q&#x3D;1时，s_n&#x3D;na,\lim\limits_{n\to\infty}s_n&#x3D;\infty \<br> (3)当 q&#x3D;-1时，s_1&#x3D;a,s_2&#x3D;a-a&#x3D;0,s_3&#x3D;a,s_4&#x3D;0\cdots,\即<br> s_n&#x3D;<br> \begin{cases}<br> a,&amp;\text{if n &#x3D; 2<em>i -1}\<br> 0,&amp;\text{if n &#x3D; 2</em>i}<br> \end{cases}<br> i \in[1,\infty)\</p>
 <p>\therefore \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}<br>\begin{cases}<br>收敛，&amp;|q|\lt 1\<br>发散，&amp;|q|\ge1<br>\end{cases}<br>$$</p>
 <p>例3. 判定  $\frac{1}{1.2}+\frac{1}{2.3}+\cdots+\frac{1}{n(n+1)}$  的收敛性<br>$$<br>解：\<br>u_n&#x3D;\frac{1}{n(n+1)}&#x3D;\frac{1}{n}-\frac{1}{n+1}\<br>s_n&#x3D;1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{n}-\frac{1}{n+1}<br>&#x3D;1-\frac{1}{n+1}\<br>\lim\limits_{n\to\infty}s_n&#x3D;1\<br>即所给级数收敛且它的和为1<br>$$</p>
-<h2 id="二-常数项级数的性质"><a href="#二-常数项级数的性质" class="headerlink" title="二  常数项级数的性质"></a>二  常数项级数的性质</h2><blockquote>
+<h2><span id="二-常数项级数的性质">二  常数项级数的性质</span></h2><blockquote>
 <p>性质1. 若 $\displaystyle\sum_{n&#x3D;1}^{\infty}{u_n}$ 收敛于和 $s$，则 $\displaystyle\sum_{n&#x3D;1}^{\infty}{ku_n}$ 也收敛，且其和为 $ks$。</p>
 </blockquote>
 <p>$$<br>证明：\<br>设 \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 的部分和数列 {s_n}\<br>\because \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} 收敛于和s，即\lim\limits_{n\to\infty}s_n&#x3D;s\<br>设\displaystyle\sum_{n&#x3D;1}^{\infty}{ku_n} 的部分和数列为 {v_n} ,\<br>v_n&#x3D;ku_1+ku_2+\cdots+ku_n&#x3D;k(u_1+u_2+\cdots+u_n)&#x3D;ks_n\<br>\lim\limits_{n\to\infty}{v_n}&#x3D;\lim\limits_{n\to\infty}ks_n&#x3D;ks\<br>\therefore \displaystyle\sum_{n&#x3D;1}^{\infty}{ku_n} 收敛，且其和为ks<br>$$</p>
@@ -166,7 +166,7 @@
 <li>逆否命题：如果 $\lim\limits_{n\to\infty}{u_n}\not&#x3D;0$ $\not\Rightarrow$  级数$ \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} $ 发散</li>
 <li>如果 $\lim\limits_{n\to\infty}{u_n}&#x3D;0$ $\not\Rightarrow$  级数$ \displaystyle\sum_{n&#x3D;1}^{\infty}{u_n} $ 收敛</li>
 </ul>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -177,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1201%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" data-id="cmmq5p0vd001qu01ofg64bgwf" data-title="1201常数项级数的概念和性质-无穷级数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1201%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" data-id="cmmq5v14g001wv71obnxbe2q9" data-title="1201常数项级数的概念和性质-无穷级数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

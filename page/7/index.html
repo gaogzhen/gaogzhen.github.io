@@ -94,7 +94,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-积分上限函数及其导数"><a href="#1-积分上限函数及其导数" class="headerlink" title="1 积分上限函数及其导数"></a>1 积分上限函数及其导数</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><p>设函数$f(x)$在区间$[a,b]$上连续，并且设$x为[a,b]$上的一点，则$f(x)$在部分区间$[a,x]$上的定积分</p>
+<h2><span id="1-积分上限函数及其导数">1 积分上限函数及其导数</span></h2><h3><span id="11-定义">1.1 定义</span></h3><p>设函数$f(x)$在区间$[a,b]$上连续，并且设$x为[a,b]$上的一点，则$f(x)$在部分区间$[a,x]$上的定积分</p>
 <p>​	$\int_a^xf(x)dx$</p>
 <p>$f(x)在区间[a,x]$依然连续，所以该定积分存在。</p>
 <p>这里x即是积分上限，也是积分变量。因为定积分和积分变量的记法无关，为了明确期间，用积分变量t，则上述定积分为</p>
@@ -107,7 +107,7 @@
 <p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt$</p>
 <p>则函数$\Phi(x)$为$f(x)在区间[a,b]$上的积分上限函数。</p>
 </blockquote>
-<h3 id="1-2-定理"><a href="#1-2-定理" class="headerlink" title="1.2 定理"></a>1.2 定理</h3><blockquote>
+<h3><span id="12-定理">1.2 定理</span></h3><blockquote>
 <p>定理1 如果函数$f(x)在区间[a,b]$上连续，那么积分上限函数</p>
 <p>​	$\Phi(x)&#x3D;\int_a^xf(t)dt$</p>
 <p>在$[a,b]$上可导，并且它的导数</p>
@@ -128,7 +128,7 @@
 <p>例1 求$\frac{d}{dx}\int_0^xe^{t^2}dt$<br>$$<br>\frac{d}{dx}\int_0^xe^{t^2}dt&#x3D;e^{x^2}<br>$$<br>求$\frac{d}{dx}\int_0^{x^2}\sqrt{1+t^4}dt$<br>$$<br>\frac{d}{dx}\int_0^{x^2}\sqrt{1+t^4}dt&#x3D;\sqrt{1+(x^2)^4}(x^2)^{‘}\<br>&#x3D;2x\sqrt{1+t^8}<br>$$<br>求$\frac{d}{dx}\int_{x^2}^{x^3}\sqrt{1+t^4}dt$​<br>$$<br>\frac{d}{dx}\int_{x^2}^{x^3}\sqrt{1+t^4}dt&#x3D;3x^2\sqrt{1+x^{12}}-2x\sqrt{1+x^8}<br>$$<br>例2 求$\lim\limits_{x\to0}\frac{\int_{\cos x}^1e^{-t^2}dt}{x^2}$<br>$$<br>该极限为\frac{0}{0}型未定式，应用洛必达法则\<br>\lim\limits_{x\to0}\frac{\int_{\cos x}^1e^{-t^2}dt}{x^2}&#x3D;\lim\limits_{x\to0}\frac{e^{-\cos^2x}\sin x}{2x}\<br>&#x3D;\frac{1}{2e}<br>$$<br>例3 设$y&#x3D;y(x)$由参数方程<br>$$<br>\begin{cases}<br>x&#x3D;1+2t^2\<br>y&#x3D;\int_1^{1+2\ln t}\frac{e^u}{u}du\quad (t\gt0)<br>\end{cases}<br>$$<br>所确定，求$\frac{dy}{dx}$<br>$$<br>解：\frac{dy}{dx}&#x3D;\frac{dy}{dt}\cdot\frac{dt}{dx}\<br>&#x3D;(\int_1^{1+2\ln t}\frac{e^u}{u}du)^{‘}\cdot\frac{1}{4t}&#x3D;\frac{2et}{1+2\ln t}\cdot\frac{1}{4t}\<br>&#x3D;\frac{e}{2(1+2\ln t)}<br>$$</p>
 <p>例4 设$f(x)在[0,+\infty)$内连续，且$f(x)\gt0$,证明</p>
 <p>​	$F(x)&#x3D;\frac{\int_0^xtf(t)dt}{\int_0^xf(t)dt}$在$(0,\infty)$内单增。<br>$$<br>证明：F^{‘}(x)&#x3D;\frac{(\int_0^xtf(t)dt)^{‘}\cdot\int_0^xf(t)dt-\int_0^xtf(t)dt\cdot(\int_0^xf(t)dt)^{‘}}{(\int_0^xf(t)dt)^2}\<br>&#x3D;\frac{xf(x)\int_0^xf(t)dt-f(x)\int_0^xtf(t)dt}{(\int_0^xf(t)dt)^2}\<br>&#x3D;\frac{\int_0^xf(x)f(t)(x-t)dt}{(\int_0^xf(t)dt)^2}\<br>因为,x\in(0,\infty),0\le t\le x, f(x)\gt 0\<br>所以f(t)\gt0,(x-t)\ge0且x\not\equiv t\<br>从而f(x)f(t)(x-t)\ge0且不恒等于0，所以\int_0^xf(x)f(t)(x-t)dt\gt0\<br>所以当x\in(0,\infty)时，F^{‘}(x)\gt 0,即F(x)在(0,infty)内单增。<br>$$</p>
-<h2 id="2-微积分基本公式"><a href="#2-微积分基本公式" class="headerlink" title="2 微积分基本公式"></a>2 微积分基本公式</h2><blockquote>
+<h2><span id="2-微积分基本公式">2 微积分基本公式</span></h2><blockquote>
 <p>定理3（微积分基本定理）如果函数$F(x)$是连续函数$f(x)在区间[a,b]$上的一个原函数，那么</p>
 <p>​	$\int_a^bf(x)dx&#x3D;F(b)-F(a)\quad(2-4)$</p>
 </blockquote>
@@ -141,7 +141,7 @@
 <p>例1 求$\int_{-2}^{2\sqrt{3}}\frac{1}{4+x^2}dx$<br>$$<br>解：\int_{-2}^{2\sqrt{3}}\frac{1}{4+x^2}dx&#x3D;\frac{1}{2}\arctan\frac{x}{2}|_{-2}^{2\sqrt{3}}\<br>&#x3D;\frac{1}{2}(\arctan\sqrt{3}-\arctan(-1))&#x3D;\frac{7}{24}\pi<br>$$<br>求$\int_0^1\frac{x}{\sqrt{1+x^2}}dx$<br>$$<br>解：\int_0^1\frac{x}{\sqrt{1+x^2}}dx&#x3D;\sqrt{x^2+1}|<em>0^1&#x3D;\sqrt{2}-1<br>$$<br>例2 求$\int</em>{-1}^1f(x)dx$,其中<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>x^2+1,\quad(0\le x\le1)\<br>x+1,\quad(-1\le x\lt0)<br>\end{cases}<br>$$</p>
 <p>$$<br>解:\int_{-1}^1f(x)dx&#x3D;\int_{-1}^0f(x)dx+\int_0^1f(x)dx\<br>&#x3D;\int_{-1}^0(x+1)dx+\int_0^1(x^2+1)dx&#x3D;(\frac{1}{2}x^2+x)|_{-1}^0+(\frac{1}{3}x^3+x)|_0^1\<br>&#x3D;\frac{1}{2}-1+\frac{1}{3}+1&#x3D;\frac{5}{6}<br>$$</p>
 <p>例3 求$\int_0^3|2-x|dx$<br>$$<br>解：\int_0^3|2-x|dx&#x3D;\int_0^2|2-x|dx+\int_2^3|2-x|dx\<br>&#x3D;\int_0^2(2-x)dx+\int_2^3(x-2)dx&#x3D;(2x-\frac{1}{2}x^2)|_0^2+(\frac{1}{2}x^2-2x)|_2^3\<br>&#x3D;4-2+\frac{9}{2}-6-(2-4)&#x3D;\frac{5}{2}<br>$$<br>例4<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>x^2,\quad x\int[0,1),\<br>x,\quad x\int[1,2]<br>\end{cases}<br>$$<br>求$\Phi(x)&#x3D;\int_0^xf(t)dt在[0,2]$上的表达式<br>$$<br>解：当x\in[0,1)时，\Phi(x)&#x3D;\int_0^xf(t)dt&#x3D;\int_0^xt^2dt&#x3D;\frac{1}{3}x^3\<br>当x\in[1,2]时,\Phi(x)&#x3D;\int_0^xf(t)dt&#x3D;\int_0^1f(t)dt+\int_1^xf(t)dt\<br>&#x3D;\int_0^1x^2dx+\int_1^xtdt&#x3D;\frac{1}{3}+\frac{1}{2}x^2-\frac{1}{2}\<br>&#x3D;\frac{1}{2}x^2-\frac{1}{6}\<br>\Phi(x)&#x3D;<br>\begin{cases}<br>\frac{1}{3}x^3,\quad x\in[0,1)\<br>\frac{1}{2}x^2-\frac{1}{6},\quad x\in[1,2]\<br>\end{cases}<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -153,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v30011u01o5s57gsqx" data-title="0502微积分基本公式-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/03/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0502%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v148001cv71o8crr6lmi" data-title="0502微积分基本公式-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -188,7 +188,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-定积分的定义"><a href="#1-定积分的定义" class="headerlink" title="1 定积分的定义"></a>1 定积分的定义</h2><blockquote>
+<h2><span id="1-定积分的定义">1 定积分的定义</span></h2><blockquote>
 <p>设函数$f(x)在[a,b]$上有界，在$[a,b]$中任意插入若干个分点</p>
 <p>​	$a&#x3D;x_0\lt x_1\lt x_2\lt\cdots\lt x_{n&#x3D;1}\lt x_n&#x3D;b$</p>
 <p>把区间$[a,b]$分成$n$个小区间</p>
@@ -224,7 +224,7 @@
 <p>定理1 设$f(x)在区间[a,b]$上连续，则$f(x)在区间[a,b]$上可积</p>
 <p>定理2 设$f(x)在区间[a,b]$上有界，且只有有限个间断点，则$f(x)在区间[a,b]$上可积。</p>
 </blockquote>
-<h2 id="2-定积分的近似计算"><a href="#2-定积分的近似计算" class="headerlink" title="2 定积分的近似计算"></a>2 定积分的近似计算</h2><ul>
+<h2><span id="2-定积分的近似计算">2 定积分的近似计算</span></h2><ul>
 <li>矩形法</li>
 </ul>
 <p>设$f(x)在[a,b]$上连续，这是定积分$\int_a^bf(x)dx$存在。</p>
@@ -253,7 +253,7 @@
 <li>$\lim\limits_{n\to\infty}\displaystyle\sum_{i&#x3D;1}^n\sqrt{1-(\frac{i}{n})^2}\cdot\frac{1}{n}&#x3D;\int_0^1\sqrt{1-x^2}dx$</li>
 <li>$\lim\limits_{n\to\infty}\frac{1+2^2+3^3+\cdots+n^2}{n^3}&#x3D;\lim\limits_{n\to\infty}\displaystyle\sum_{i&#x3D;1}^n(\frac{i}{n})^2\cdot\frac{1}{n}&#x3D;\int_0^1x^2dx$</li>
 </ul>
-<h2 id="3-定积分的性质"><a href="#3-定积分的性质" class="headerlink" title="3 定积分的性质"></a>3 定积分的性质</h2><p>补充规定：</p>
+<h2><span id="3-定积分的性质">3 定积分的性质</span></h2><p>补充规定：</p>
 <p>（1）$\int_a^af(x)dx&#x3D;0$</p>
 <p>（2）$\int_a^bf(x)dx&#x3D;-\int_b^af(x)dx$</p>
 <p>性质1 设$\alpha与\beta$均为常数，则</p>
@@ -274,8 +274,8 @@
 <p>​	$m(b-a)\le\int_a^bf(x)dx\le M(b-a) \quad (a\lt b)$</p>
 <p>性质6 （定积分中值定理）如果函数$f(x)在积分区间[a,b]$上连续，那么在$[a,b]$上至少存在一个点$\xi$,使下式成立：</p>
 <p>​	$\int_a^bf(x)dx&#x3D;f(\xi)(b-a) \quad(a\le\xi\le b)$</p>
-<h2 id="4-例题"><a href="#4-例题" class="headerlink" title="4 例题"></a>4 例题</h2><p>例2 估计积分$\int_2^0e^{x^2-x}dx$的值<br>$$<br>解：\int_2^0e^{x^2-x}dx&#x3D;-\int_0^2e^{x^2-x}dx\<br>x^2-x&#x3D;(x-\frac{1}{2})^2-\frac{1}{4} \<br>当x&#x3D;\frac{1}{2}时，e^{x^2-x}取得最小值e^{-\frac{1}{4}};当x&#x3D;2时，e^{x^2-x}取得最大值e^{\frac{2}{3}}\<br>根据性质5有：2e^{-\frac{1}{4}}\le-\int_0^2f(x)dx\le2e^{\frac{2}{3}}即\<br>-2e^{\frac{2}{3}}\le\int_2^0e^{x^2-x}dx\le-2e^{-\frac{1}{4}}<br>$$<br>例3 设$I&#x3D;\int_0^\frac{\pi}{4}\ln(\sin x)dx,J&#x3D;\int_0^\frac{\pi}{4}\ln(\cot x)dx,K&#x3D;\int_0^\frac{\pi}{4}\ln(\cos x)dx$,比较$I,J,K$的大小<br>$$<br>解：当x\in[0,\frac{\pi}{4}]时，0\le\sin x\le\cos x\le1\le\cot x\<br>当x\le0时，\ln x单增，所以\ln(\sin x)\le\ln(\cos x)\le\ln(\cot x)\<br>根据推论1有I&#x3D;\int_0^\frac{\pi}{4}\ln(\sin x)dx\le J&#x3D;\int_0^\frac{\pi}{4}\ln(\cot x)dx\le K&#x3D;\int_0^\frac{\pi}{4}\ln(\cos x)dx<br>$$<br>例4 设$f(x)在[0,1]上连续，(0,1)内可导$，且$f(1)&#x3D;2\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx$,试证：至少存在一点$\xi\in(0,1)使f^{‘}(\xi)&#x3D;(2\xi-1)\cdot f(\xi)$<br>$$<br>证明：令F(x)&#x3D;e^{x-x^2}f(x),x\in[0,1]\<br>\exist\phi\in(0,\frac{1}{2}),使得\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx&#x3D;\frac{1}{2}e^{\phi-\phi^2}f(\phi) ,则\<br>F(1)&#x3D;2\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx&#x3D;e^{\phi-\phi^2}f(\phi)&#x3D;F(\phi)\<br>根据罗尔定理，有\<br>\exist\xi\in(\phi,1)\subset(0,1),使得F^{‘}(\xi)&#x3D;0\<br>F^{‘}(x)&#x3D;e^{x-x^2}[f^{‘}(x)-(2x-1)] ,则\<br>F^{‘}(\xi)&#x3D;e^{\xi-\xi^2}[f^{‘}(\xi)-(2\xi-1)]&#x3D;0<br>化简得f^{‘}(\xi)&#x3D;(2\xi-1)\cdot f(\xi)<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="4-例题">4 例题</span></h2><p>例2 估计积分$\int_2^0e^{x^2-x}dx$的值<br>$$<br>解：\int_2^0e^{x^2-x}dx&#x3D;-\int_0^2e^{x^2-x}dx\<br>x^2-x&#x3D;(x-\frac{1}{2})^2-\frac{1}{4} \<br>当x&#x3D;\frac{1}{2}时，e^{x^2-x}取得最小值e^{-\frac{1}{4}};当x&#x3D;2时，e^{x^2-x}取得最大值e^{\frac{2}{3}}\<br>根据性质5有：2e^{-\frac{1}{4}}\le-\int_0^2f(x)dx\le2e^{\frac{2}{3}}即\<br>-2e^{\frac{2}{3}}\le\int_2^0e^{x^2-x}dx\le-2e^{-\frac{1}{4}}<br>$$<br>例3 设$I&#x3D;\int_0^\frac{\pi}{4}\ln(\sin x)dx,J&#x3D;\int_0^\frac{\pi}{4}\ln(\cot x)dx,K&#x3D;\int_0^\frac{\pi}{4}\ln(\cos x)dx$,比较$I,J,K$的大小<br>$$<br>解：当x\in[0,\frac{\pi}{4}]时，0\le\sin x\le\cos x\le1\le\cot x\<br>当x\le0时，\ln x单增，所以\ln(\sin x)\le\ln(\cos x)\le\ln(\cot x)\<br>根据推论1有I&#x3D;\int_0^\frac{\pi}{4}\ln(\sin x)dx\le J&#x3D;\int_0^\frac{\pi}{4}\ln(\cot x)dx\le K&#x3D;\int_0^\frac{\pi}{4}\ln(\cos x)dx<br>$$<br>例4 设$f(x)在[0,1]上连续，(0,1)内可导$，且$f(1)&#x3D;2\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx$,试证：至少存在一点$\xi\in(0,1)使f^{‘}(\xi)&#x3D;(2\xi-1)\cdot f(\xi)$<br>$$<br>证明：令F(x)&#x3D;e^{x-x^2}f(x),x\in[0,1]\<br>\exist\phi\in(0,\frac{1}{2}),使得\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx&#x3D;\frac{1}{2}e^{\phi-\phi^2}f(\phi) ,则\<br>F(1)&#x3D;2\int_0^{\frac{1}{2}}e^{x-x^2}f(x)dx&#x3D;e^{\phi-\phi^2}f(\phi)&#x3D;F(\phi)\<br>根据罗尔定理，有\<br>\exist\xi\in(\phi,1)\subset(0,1),使得F^{‘}(\xi)&#x3D;0\<br>F^{‘}(x)&#x3D;e^{x-x^2}[f^{‘}(x)-(2x-1)] ,则\<br>F^{‘}(\xi)&#x3D;e^{\xi-\xi^2}[f^{‘}(\xi)-(2\xi-1)]&#x3D;0<br>化简得f^{‘}(\xi)&#x3D;(2\xi-1)\cdot f(\xi)<br>$$</p>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -286,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/14/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0501%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v30010u01obpc4hibu" data-title="0501定积分的概念与性质-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/03/14/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0501%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v148001bv71ohoje5940" data-title="0501定积分的概念与性质-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -321,13 +321,13 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-有理函数的积分"><a href="#1-有理函数的积分" class="headerlink" title="1 有理函数的积分"></a>1 有理函数的积分</h2><h3 id="1-1-有理函数"><a href="#1-1-有理函数" class="headerlink" title="1.1 有理函数"></a>1.1 有理函数</h3><blockquote>
+<h2><span id="1-有理函数的积分">1 有理函数的积分</span></h2><h3><span id="11-有理函数">1.1 有理函数</span></h3><blockquote>
 <p>两个多项式的商$\frac{P(x)}{Q(x)}$称为有理函数，又称有理分式。分子多项式和分母多项式之间没有公因式。</p>
 <p>真分式：分子多项式$P(x)$的次数小于分母多项式$Q(x)$的次数。</p>
 <p>假分式：分子多项式$P(x)$的次数大于等于分母多项式$Q(x)$的次数。</p>
 </blockquote>
 <p>下面主要讨论真分式积分，利用多项式的除法，可以将假分式-&gt;真分式。</p>
-<h3 id="1-2-有理真分式的积分"><a href="#1-2-有理真分式的积分" class="headerlink" title="1.2 有理真分式的积分"></a>1.2 有理真分式的积分</h3><h4 id="1-2-1-几种已知类型"><a href="#1-2-1-几种已知类型" class="headerlink" title="1.2.1 几种已知类型"></a>1.2.1 几种已知类型</h4><ol>
+<h3><span id="12-有理真分式的积分">1.2 有理真分式的积分</span></h3><h4><span id="121-几种已知类型">1.2.1 几种已知类型</span></h4><ol>
 <li><p>$\int{\frac{1}{ax+b}dx}&#x3D;\frac{1}{a}\ln|ax+b|+C$</p>
 </li>
 <li><p>$\int{\frac{1}{(ax+b)^n}dx}&#x3D;\frac{-1}{a(n-1)}(ax+b)^{-n+1}+C$</p>
@@ -343,7 +343,7 @@
 <li><p>$\int{\frac{x}{ax^2+bx+c}dx}&#x3D;\frac{1}{2a}\ln|ax^2+bx+c|-\frac{b}{2a}\int{\frac{1}{ax^2+bx+c}dx}$</p>
 </li>
 </ol>
-<h4 id="1-2-2-真分式的分解"><a href="#1-2-2-真分式的分解" class="headerlink" title="1.2.2 真分式的分解"></a>1.2.2 真分式的分解</h4><blockquote>
+<h4><span id="122-真分式的分解">1.2.2 真分式的分解</span></h4><blockquote>
 <p>对于真分式$\frac{P(x)}{Q(x)}$,如果分母可分解为连个多项式乘积</p>
 <p>$Q(x)&#x3D;Q_1(x)Q_2(x)$</p>
 <p>且$Q_1(x)与Q_2(x)$没有公因式，他们真分式可以拆分为两个真分式之和</p>
@@ -361,8 +361,8 @@
 <li>分母为一次多项式的幂，分子为常数；分母为二次多项式的幂，分子为一次多项式。</li>
 <li>右端通分后，分子与$P(x)$比较，可求出全部常数。</li>
 </ul>
-<h3 id="1-3-例题"><a href="#1-3-例题" class="headerlink" title="1.3 例题"></a>1.3 例题</h3><p>例1 求$\int{\frac{x+1}{x^2-5x+6}dx}$<br>$$<br>解：\int{\frac{x+1}{x^2-5x+6}dx}&#x3D;\int{(\frac{A}{x-2}+\frac{B}{x-3})}dx\<br>A+B&#x3D;1,-3A-2B&#x3D;1,则A&#x3D;-3，B&#x3D;4 \<br>\int{\frac{x+1}{x^2-5x+6}dx}&#x3D;\int{(\frac{-3}{x-2}+\frac{4}{x-3})dx}&#x3D;4\ln|x-3|-3\ln|x-2|+C<br>$$<br>例2 求$\int{\frac{1}{(2x+1)(x^2+1)}dx}$<br>$$<br>解：I&#x3D;\int{\frac{1}{(2x+1)(x^2+1)}dx}&#x3D;\int{(\frac{A}{2x+1}+\frac{Bx+c}{x^2+1})dx}<br>&#x3D;\int{\frac{(A+2B)x^2+(B+2C)x+A+C}{(2x+1)(x^2+1)}dx}\<br>所以A+2B&#x3D;0,B+2C&#x3D;0,A+C&#x3D;1,解得A&#x3D;\frac{4}{5},B&#x3D;-\frac{2}{5},C&#x3D;\frac{1}{5}\<br>I &#x3D; \int{(\frac{\frac{4}{5}}{2x+1}+\frac{-\frac{2}{5}x+\frac{1}{5}}{x^2+1})dx}\<br>&#x3D;\frac{2}{5}\ln|2x+1|-\frac{1}{5}\ln|x^2+1|+\frac{1}{5}\arctan x+C<br>$$<br>例3 求$\int{\frac{2x^2+7x-1}{x^3+x^2-x-1}dx}$<br>$$<br>解：I &#x3D; \int{\frac{2x^2+7x-1}{x^3+x^2-x-1}dx}&#x3D;\int{\frac{2x^2+7x-1}{(x+1)^2(x-1)}dx}\<br>&#x3D;\int{[\frac{A}{(x+1)^2}+\frac{B}{x+1}+\frac{C}{x-1}]dx}\<br>(B+C)x^2+(A+2C)x+(-A-B+C)&#x3D;2x^2+7x-1,A&#x3D;3,B&#x3D;0,C&#x3D;2\<br>I &#x3D;\int{[\frac{3}{(x+1)^2}+\frac{2}{x-1}]dx}&#x3D;-\frac{3}{x+1}+2\ln|x-1|+C<br>$$<br>例4 求$\int{\frac{1}{x^4(x^2+1)}dx}$<br>$$<br>解：\int{\frac{1}{x^4(x^2+1)}dx}&#x3D;\int{\frac{1-x^4+x^4}{x^4(x^2+1)}dx}\<br>&#x3D;\int{(\frac{1}{x^4}-\frac{1}{x^2}+\frac{1}{x^2+1})dx}&#x3D;-\frac{1}{3x^3}+\frac{1}{x}+\arctan x+C<br>$$</p>
-<h2 id="2-可华为有理函数的积分"><a href="#2-可华为有理函数的积分" class="headerlink" title="2 可华为有理函数的积分"></a>2 可华为有理函数的积分</h2><h3 id="2-1-三角函数有理式"><a href="#2-1-三角函数有理式" class="headerlink" title="2.1 三角函数有理式"></a>2.1 三角函数有理式</h3><p>万能公式：</p>
+<h3><span id="13-例题">1.3 例题</span></h3><p>例1 求$\int{\frac{x+1}{x^2-5x+6}dx}$<br>$$<br>解：\int{\frac{x+1}{x^2-5x+6}dx}&#x3D;\int{(\frac{A}{x-2}+\frac{B}{x-3})}dx\<br>A+B&#x3D;1,-3A-2B&#x3D;1,则A&#x3D;-3，B&#x3D;4 \<br>\int{\frac{x+1}{x^2-5x+6}dx}&#x3D;\int{(\frac{-3}{x-2}+\frac{4}{x-3})dx}&#x3D;4\ln|x-3|-3\ln|x-2|+C<br>$$<br>例2 求$\int{\frac{1}{(2x+1)(x^2+1)}dx}$<br>$$<br>解：I&#x3D;\int{\frac{1}{(2x+1)(x^2+1)}dx}&#x3D;\int{(\frac{A}{2x+1}+\frac{Bx+c}{x^2+1})dx}<br>&#x3D;\int{\frac{(A+2B)x^2+(B+2C)x+A+C}{(2x+1)(x^2+1)}dx}\<br>所以A+2B&#x3D;0,B+2C&#x3D;0,A+C&#x3D;1,解得A&#x3D;\frac{4}{5},B&#x3D;-\frac{2}{5},C&#x3D;\frac{1}{5}\<br>I &#x3D; \int{(\frac{\frac{4}{5}}{2x+1}+\frac{-\frac{2}{5}x+\frac{1}{5}}{x^2+1})dx}\<br>&#x3D;\frac{2}{5}\ln|2x+1|-\frac{1}{5}\ln|x^2+1|+\frac{1}{5}\arctan x+C<br>$$<br>例3 求$\int{\frac{2x^2+7x-1}{x^3+x^2-x-1}dx}$<br>$$<br>解：I &#x3D; \int{\frac{2x^2+7x-1}{x^3+x^2-x-1}dx}&#x3D;\int{\frac{2x^2+7x-1}{(x+1)^2(x-1)}dx}\<br>&#x3D;\int{[\frac{A}{(x+1)^2}+\frac{B}{x+1}+\frac{C}{x-1}]dx}\<br>(B+C)x^2+(A+2C)x+(-A-B+C)&#x3D;2x^2+7x-1,A&#x3D;3,B&#x3D;0,C&#x3D;2\<br>I &#x3D;\int{[\frac{3}{(x+1)^2}+\frac{2}{x-1}]dx}&#x3D;-\frac{3}{x+1}+2\ln|x-1|+C<br>$$<br>例4 求$\int{\frac{1}{x^4(x^2+1)}dx}$<br>$$<br>解：\int{\frac{1}{x^4(x^2+1)}dx}&#x3D;\int{\frac{1-x^4+x^4}{x^4(x^2+1)}dx}\<br>&#x3D;\int{(\frac{1}{x^4}-\frac{1}{x^2}+\frac{1}{x^2+1})dx}&#x3D;-\frac{1}{3x^3}+\frac{1}{x}+\arctan x+C<br>$$</p>
+<h2><span id="2-可华为有理函数的积分">2 可华为有理函数的积分</span></h2><h3><span id="21-三角函数有理式">2.1 三角函数有理式</span></h3><p>万能公式：</p>
 <ol>
 <li>$\sin x&#x3D;\frac{2\tan\frac{x}{2}}{1+\tan^2\frac{x}{2}}$</li>
 <li>$\cos x&#x3D;\frac{1-\tan^2\frac{x}{2}}{1+\tan^2\frac{x}{2}}$</li>
@@ -376,9 +376,9 @@
 <li>$dx&#x3D;\frac{2}{1+u^2}du$</li>
 </ol>
 <p>例5 求$\int{\frac{1+\sin x}{\sin x(1+\cos x)}dx}$<br>$$<br>解：令u&#x3D;\tan\frac{x}{2}(-\pi\lt x\lt \pi),dx&#x3D;\frac{2du}{1+u^2} \<br>I &#x3D;\int{\frac{1+\sin x}{\sin x(1+\cos x)}dx}&#x3D;\int{\frac{(1+\frac{2u}{1+u^2})\frac{2du}{1+u^2}}{(\frac{2u}{1+u^2})(1+\frac{1-u^2}{1+u^2})}}\<br>&#x3D;\int{(\frac{1}{2}u+1+\frac{1}{2u})du}&#x3D;\frac{1}{4}u^2+u+\frac{1}{2}\ln|u|+C\<br>I&#x3D;\frac{1}{4}\tan^2\frac{x}{2}+\tan\frac{x}{2}+\frac{1}{2}\ln|\tan\frac{x}{2}|+C	<br>$$</p>
-<h3 id="2-2-根式代换"><a href="#2-2-根式代换" class="headerlink" title="2.2 根式代换"></a>2.2 根式代换</h3><p>例6 求$\int{\frac{\sqrt{x-1}}{x}dx}$<br>$$<br>解：令\sqrt{x-1}&#x3D;t,x&#x3D;t^2+1,dx&#x3D;2tdt\<br>I&#x3D;\int{\frac{\sqrt{x-1}}{x}dx}&#x3D;\int{\frac{t}{t^2+1}2tdt}\<br>&#x3D;2t-2\arctan t+C&#x3D;2\sqrt{x-1}-2\arctan\sqrt{x-1}+C<br>$$<br>例7 求$\int{\frac{1}{1+\sqrt[3]{x+2}}dx}$<br>$$<br>解：令\sqrt[3]{x+2}&#x3D;t,x&#x3D;t^3-2,dx&#x3D;3t^2\<br>I&#x3D;\int{\frac{1}{1+\sqrt[3]{x+2}}dx}&#x3D;\int{\frac{3t^2}{1+t}dt}\<br>&#x3D;\frac{3}{2}t^2-3t+3\ln|t+1|+C&#x3D;\frac{3}{2}(x+2)^{\frac{2}{3}}-3\sqrt[3]{x+2}+3\ln|\sqrt[3]{x+2}|+C<br>$$<br>例8 求 $\int{\frac{dx}{\sqrt[3]{(x+1)^2(x-1)^4}}dx}$<br>$$<br>解：I &#x3D;\int{\frac{dx}{\sqrt[3]{(x+1)^2(x-1)^4}}dx}&#x3D;\int{\frac{dx}{(x^2-1)\sqrt[3]{\frac{x-1}{x+1}}}}\<br>令\sqrt[3]{\frac{x-1}{x+1}}&#x3D;t,x&#x3D;\frac{1+t^3}{1-t^3},dx&#x3D;\frac{6t^2}{(t^3-1)^2}dt\<br>I&#x3D;\int{\frac{6t^2dt}{(t^3-1)^2}\cdot\frac{1}{(\frac{1+t^3}{1-t^3})^2-1}\cdot\frac{1}{t}}\<br>&#x3D;-\frac{3}{2t}+C&#x3D;-\frac{3}{2}\sqrt[3]{\frac{x+1}{x-1}}+C<br>$$</p>
+<h3><span id="22-根式代换">2.2 根式代换</span></h3><p>例6 求$\int{\frac{\sqrt{x-1}}{x}dx}$<br>$$<br>解：令\sqrt{x-1}&#x3D;t,x&#x3D;t^2+1,dx&#x3D;2tdt\<br>I&#x3D;\int{\frac{\sqrt{x-1}}{x}dx}&#x3D;\int{\frac{t}{t^2+1}2tdt}\<br>&#x3D;2t-2\arctan t+C&#x3D;2\sqrt{x-1}-2\arctan\sqrt{x-1}+C<br>$$<br>例7 求$\int{\frac{1}{1+\sqrt[3]{x+2}}dx}$<br>$$<br>解：令\sqrt[3]{x+2}&#x3D;t,x&#x3D;t^3-2,dx&#x3D;3t^2\<br>I&#x3D;\int{\frac{1}{1+\sqrt[3]{x+2}}dx}&#x3D;\int{\frac{3t^2}{1+t}dt}\<br>&#x3D;\frac{3}{2}t^2-3t+3\ln|t+1|+C&#x3D;\frac{3}{2}(x+2)^{\frac{2}{3}}-3\sqrt[3]{x+2}+3\ln|\sqrt[3]{x+2}|+C<br>$$<br>例8 求 $\int{\frac{dx}{\sqrt[3]{(x+1)^2(x-1)^4}}dx}$<br>$$<br>解：I &#x3D;\int{\frac{dx}{\sqrt[3]{(x+1)^2(x-1)^4}}dx}&#x3D;\int{\frac{dx}{(x^2-1)\sqrt[3]{\frac{x-1}{x+1}}}}\<br>令\sqrt[3]{\frac{x-1}{x+1}}&#x3D;t,x&#x3D;\frac{1+t^3}{1-t^3},dx&#x3D;\frac{6t^2}{(t^3-1)^2}dt\<br>I&#x3D;\int{\frac{6t^2dt}{(t^3-1)^2}\cdot\frac{1}{(\frac{1+t^3}{1-t^3})^2-1}\cdot\frac{1}{t}}\<br>&#x3D;-\frac{3}{2t}+C&#x3D;-\frac{3}{2}\sqrt[3]{\frac{x+1}{x-1}}+C<br>$$</p>
 <p>$\sqrt[n]{\frac{ax+b}{cx+d}}$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -389,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/03/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0404%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E7%9A%84%E7%A7%AF%E5%88%86-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v1000yu01o64bb7ana" data-title="0404有理函数的积分-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/03/03/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0404%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E7%9A%84%E7%A7%AF%E5%88%86-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v1470018v71o1oxdhyax" data-title="0404有理函数的积分-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -423,7 +423,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-分部积分法原理"><a href="#1-分部积分法原理" class="headerlink" title="1 分部积分法原理"></a>1 分部积分法原理</h2><p>分部积分法由两个函数乘积推导得出。</p>
+        <h2><span id="1-分部积分法原理">1 分部积分法原理</span></h2><p>分部积分法由两个函数乘积推导得出。</p>
 <p>设函数$u&#x3D;u(x)及v&#x3D;v(x)$具有连续导数，则两个函数乘积的导数公式为</p>
 <p>$(uv)^{‘}&#x3D;u^{‘}v+uv^{‘}$,移项得 $u^{‘}v&#x3D;(uv)^{‘}-uv^{‘}$,不等式两边求积分得 </p>
 <p>$\int{uv^{‘}dx}&#x3D;uv-\int{u^{‘}vdx}$  (3-1)</p>
@@ -461,7 +461,7 @@
 <p>如果被积函数是幂函数和对数函数或者幂函数和反三角函数的乘积，考虑用分部积分法，并设幂函数为u。</p>
 </blockquote>
 <p>例6 求 $\int{e^x\sin xdx}$<br>$$<br>解：I&#x3D;\int{e^x\sin xdx}&#x3D;\int{\sin xde^x}&#x3D;e^x\sin x-\int{e^xd\sin x}\<br>&#x3D;e^x\sin x-\int{e^x\cos xdx}&#x3D;e^x\sin x-(e^x\cos x+\int{e^x\sin xdx})\<br>I&#x3D;\frac{1}{2}e^x(\sin x-\cos x)+C<br>$$</p>
-<h2 id="2-u的选取"><a href="#2-u的选取" class="headerlink" title="2 u的选取"></a>2 u的选取</h2><blockquote>
+<h2><span id="2-u的选取">2 u的选取</span></h2><blockquote>
 <p>$u$的选取顺序：反三角函数-&gt;对数函数-&gt;幂函数-&gt;指数函数-&gt;三角函数</p>
 <p>或者反三角函数-&gt;对数函数-&gt;幂函数-&gt;三角函数-&gt;指数函数</p>
 </blockquote>
@@ -469,8 +469,8 @@
 <blockquote>
 <p>$\int{\cos^nxdx}&#x3D;\frac{1}{n}\cos^{n-1}x\sin x+\frac{n-1}{n}\int{\cos^{n-2}xdx}$</p>
 </blockquote>
-<h2 id="3-综合换元积分法和分部积分法"><a href="#3-综合换元积分法和分部积分法" class="headerlink" title="3 综合换元积分法和分部积分法"></a>3 综合换元积分法和分部积分法</h2><p>例10 求$\int{e^{\sqrt{x}}dx}$<br>$$<br>解:令t&#x3D;\sqrt{x},x&#x3D;t^2,dx&#x3D;2tdt \<br>\int{e^{\sqrt{x}}dx}&#x3D;\int{e^t\cdot2tdt}&#x3D;2\int{tde^t}\<br>&#x3D;2te^t-2\int{e^tdt}&#x3D;2te^t-2e^t+C&#x3D;2e^{\sqrt{x}}(\sqrt{x}-1)+C<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="3-综合换元积分法和分部积分法">3 综合换元积分法和分部积分法</span></h2><p>例10 求$\int{e^{\sqrt{x}}dx}$<br>$$<br>解:令t&#x3D;\sqrt{x},x&#x3D;t^2,dx&#x3D;2tdt \<br>\int{e^{\sqrt{x}}dx}&#x3D;\int{e^t\cdot2tdt}&#x3D;2\int{tde^t}\<br>&#x3D;2te^t-2\int{e^tdt}&#x3D;2te^t-2e^t+C&#x3D;2e^{\sqrt{x}}(\sqrt{x}-1)+C<br>$$</p>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -481,7 +481,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0403%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v1000xu01oe6j68rcj" data-title="0403分部积分法-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/02/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0403%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v1470019v71o6e7o9wg7" data-title="0403分部积分法-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -516,7 +516,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-极值"><a href="#1-极值" class="headerlink" title="1 极值"></a>1 极值</h2><h3 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h3><blockquote>
+<h2><span id="1-极值">1 极值</span></h2><h3><span id="11-定义">1.1 定义</span></h3><blockquote>
 <p>设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，如果对于去心邻域$\overset{\circ}{U}(x_0,\delta)$内的任一$x$，有</p>
 <p>$f(x)\lt f(x_0)（或f(x)\gt f(x_0)）$,</p>
 <p>那么就称$f(x_0)为函数f(x)$的一个极大值（或极小值）</p>
@@ -526,7 +526,7 @@
 <li>极值是局部的最值</li>
 <li>最值不一定是极值，极值也不一定是最值</li>
 </ol>
-<h3 id="1-2-求极值的一般方法"><a href="#1-2-求极值的一般方法" class="headerlink" title="1.2 求极值的一般方法"></a>1.2 求极值的一般方法</h3><blockquote>
+<h3><span id="12-求极值的一般方法">1.2 求极值的一般方法</span></h3><blockquote>
 <p>定理1（必要条件）设函数$f(x)在点x_0$处可导，且在$x_0$处取得极值，则$f^{‘}(x_0)&#x3D;0$</p>
 </blockquote>
 <p>注：</p>
@@ -561,7 +561,7 @@
 <p>$$<br>证明：\<br>f(x)在点x_0处具有n阶导,\forall x\in U(x_0），根据泰勒公式有\<br>f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>因为f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n)}(x_0)&#x3D;0\<br>f(x)&#x3D;f(x_0)+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)即 \<br>f(x)-f(x_0)&#x3D;\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n) \<br>当x\in U(x_0,\delta)时，f(x)-f(x_0)的符号由f^{(n)}(x_0)(x-x_0)^n决定\<br>f^{(n)}\not&#x3D;0,假设f^{(n)}\gt0,n为奇数，\<br>则当x\in(x_0-\delta,x_0)时，f(x)\lt f(x_0);当x\in(x_0,x_0+\delta)时，f(x)\gt f(x_0)。\同理当f^{(n)}(x_0)\lt0时，f(x)-f(x_0)在x_0两侧符号不同。所以x&#x3D;x_0不是f(x)的极值点。 \<br>n为偶数，f(x)-f(x_0)符号由f^{(n)}决定。\<br>f^{(n)}(x_0)\gt0时，x&#x3D;x_0为极小值点；f^{(n)}(x_0)\lt0时，x&#x3D;x_0为极大值点。<br>$$</p>
 <p>注：若函数$f(x)在x_0$点处存在n阶导数，且$f^{‘}(x_0)&#x3D;f^{‘’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,f^{(n)}(x_0)\not&#x3D;0$,则$你为奇数是，(x_0,f(x_0))$是函数$f(x)$的拐点；$n为偶数时，(x_0,f(x_0))不是函数f(x)$的拐点。<br>$$<br>证明：\<br>把f^{‘’}(x)按泰勒公式展开，有\<br>f^{‘’}(x)&#x3D;f^{‘’}(x_0)+f^{‘’’}(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2}) \<br>因为f^{‘’}(x_0)&#x3D;f^{‘’’}(x_0)&#x3D;\cdots&#x3D;f^{(n-1)}(x_0)&#x3D;0,所以\<br>f^{‘’}(x)&#x3D;\frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}+o((x-x_0)^{n-2})\<br>n为奇数，n-2也为奇数,同上，f^{‘’}(x)在点x_0两侧符号相反，(x_0,f(x_0))是函数f(x)的拐点；\<br>n为偶数,n-2也是偶数,f^{‘’}(x)在点x_0两侧符号相同,(x_0,f(x_0))不是函数f(x)的拐点。<br>$$</p>
 <p>例1 设函数$f(x)对任意x\in R$,满足$(x-1)f^{‘’}(x)+2(x-1)f^{‘}(x)&#x3D;1-e^{1-x}$ 证明：$f(x)在x&#x3D;a(a\not&#x3D;1)$处取极值时，比为极小值。<br>$$<br>证明：有题知.f(x)在R上二阶可导，且x&#x3D;a处取得极值,则\<br>f^{‘}(a)&#x3D;0,x&#x3D;a带入可得\<br>(a-1)f^{‘’}(a)+2(a-1)f^{‘}(a)&#x3D;1-e^{1-a} \Rightarrow \<br>f^{‘’}(a)&#x3D;\frac{e^{a-1}-1}{(a-1)e^{a-1}} \<br>a-1\gt0时，f^{‘’}(a)\gt0;a-1\lt0时，f^{‘’}(a)\gt0 \<br>所以f(x)在x&#x3D;a(a\not&#x3D;1)处取极值时，一定是极小值。<br>$$</p>
-<h2 id="2-最大值最小值问题"><a href="#2-最大值最小值问题" class="headerlink" title="2 最大值最小值问题"></a>2 最大值最小值问题</h2><h3 id="2-1-求最值的一般步骤"><a href="#2-1-求最值的一般步骤" class="headerlink" title="2.1 求最值的一般步骤"></a>2.1 求最值的一般步骤</h3><p>闭区间上连续函数的最值</p>
+<h2><span id="2-最大值最小值问题">2 最大值最小值问题</span></h2><h3><span id="21-求最值的一般步骤">2.1 求最值的一般步骤</span></h3><p>闭区间上连续函数的最值</p>
 <p>设函数$f(x)$满足：</p>
 <p>(1)$f(x)在[a,b]$上连续</p>
 <p>(2)$(a,b)内$有限个驻点和不可导点</p>
@@ -570,18 +570,18 @@
 <p>(2)计算$f(x)$在上述驻点和不可导点处的函数值及$f(a),f(b)$</p>
 <p>(3)比较(2)中诸值的大小，其中最大的便是$f(x)在[a,b]$上的最大值，最小的便是$f(x)在[a,b]$上的最小值</p>
 <p>例1 求$f(x)&#x3D;|x^2-3x+2|在[-3,4]$上的最值<br>$$<br>解：\<br>f(x)&#x3D;<br>\begin{cases}<br>x^2-3x+2,\quad x\in[-3,1]\cup[2,4] \<br>-x^2+3x-2,\quad x\in(1,2) \<br>\end{cases} \<br>f^{‘}(x)&#x3D;<br>\begin{cases}<br>2x-3,\quad x\in[-3,1]\cup[2,4] \<br>-2x+3,\quad x\in(1,2) \<br>\end{cases} \<br>其中x&#x3D;1,x&#x3D;2是f(x)的不可导点，令f^{‘}(x)&#x3D;0，得x&#x3D;\frac{3}{2} \<br>f(1)&#x3D;f(2)&#x3D;0,f(-3)&#x3D;20,f(\frac{3}{2})&#x3D;\frac{1}{4},f(4)&#x3D;6 \<br>所以函数f(x)在[-3,4]区间上在x&#x3D;1和x&#x3D;2处取得最小值，最小值为0;在x&#x3D;-3处取得最大值，最大值为20<br>$$</p>
-<h3 id="2-2-某个区间有一个驻点且该处是函数的极值点"><a href="#2-2-某个区间有一个驻点且该处是函数的极值点" class="headerlink" title="2.2 某个区间有一个驻点且该处是函数的极值点"></a>2.2 某个区间有一个驻点且该处是函数的极值点</h3><blockquote>
+<h3><span id="22-某个区间有一个驻点且该处是函数的极值点">2.2 某个区间有一个驻点且该处是函数的极值点</span></h3><blockquote>
 <p>函数$f(x)$在一个区间（有限或无限，开或闭）内可导且只有一个驻点$x&#x3D;x_0，若x&#x3D;x_0$是函数的极值点</p>
 <p>(1)$f(x_0)$为极大值时，$f(x_0)$即为该区间上的最大值；</p>
 <p>(2)$f(x_0)$为极小值时，$f(x_0)$即为该区间上的最小值。</p>
 </blockquote>
 <p>例2 求函数$y&#x3D;x^2-\frac{54}{x}(x\lt0)$在何处取得最小值。<br>$$<br>解：\<br>f^{‘}(x)&#x3D;2x+\frac{54}{x^2},f^{‘’}(x)&#x3D;2-\frac{108}{x^3} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;-3,f^{‘’}(-3)\gt0 \<br>当x\lt0时，x&#x3D;-3为唯一驻点，且x&#x3D;-3为极小值点\<br>所以f(x)当x\lt0时，在x&#x3D;-3处取得最小值<br>$$</p>
-<h3 id="2-3-实际问题"><a href="#2-3-实际问题" class="headerlink" title="2.3 实际问题"></a>2.3 实际问题</h3><blockquote>
+<h3><span id="23-实际问题">2.3 实际问题</span></h3><blockquote>
 <p>对于实际问题，函数可导且有最值，且一定在内部取得。此时内部唯一驻点即为最值点。</p>
 </blockquote>
 <p>例3 将长度为a的铁丝分为两段，分别围成方形和圆形。如何分解，能使圆与正方形面积之和最小？<br>$$<br>解:设围成圆的长度为x,则围成正方形的长度为a-x,x\in[0,a] \<br>圆与正方形面积之和:s(x)&#x3D;\pi\cdot(\frac{x}{2\pi})^2+(\frac{a-x}{4})^2 \<br>s^{‘}(x)&#x3D;\frac{x}{2\pi}+\frac{x-a}{8}，s^{‘’}(x)&#x3D;\frac{\pi+4}{8\pi}\gt0\<br>令s^{‘}(x)&#x3D;0,得x&#x3D;\frac{a\pi}{\pi+4} \<br>x&#x3D;\frac{a\pi}{\pi+4}为s(x)在区间[0,a]内唯一驻点且为极小值点\<br>所以s(x)在x&#x3D;\frac{a\pi}{\pi+4}处取得最小值。<br>$$</p>
-<h3 id="2-4-证明不等式"><a href="#2-4-证明不等式" class="headerlink" title="2.4 证明不等式"></a>2.4 证明不等式</h3><p>例4 设$p,q\gt1,\frac{1}{p}+\frac{1}{q}&#x3D;1$，证明：$\forall x\gt0,\frac{1}{p}x^p+\frac{1}{q}\ge x$<br>$$<br>证明：\<br>令f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0) \<br>f^{‘}(x)&#x3D;x^{p-1}-1,f^{‘’}(x)&#x3D;(p-1)x^{p-2} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;1\<br>f^{‘’}(1)&#x3D;p-1\gt0,所以f(x)在x&#x3D;1处取得极小值\<br>因为x&#x3D;1是f(x)在(0,+\infty)内唯一驻点，所以f(x)在该点取得最小值\<br>所以f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0)\ge f(1)&#x3D;0,即 \<br>\frac{1}{p}x^p+\frac{1}{q}\ge x<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h3><span id="24-证明不等式">2.4 证明不等式</span></h3><p>例4 设$p,q\gt1,\frac{1}{p}+\frac{1}{q}&#x3D;1$，证明：$\forall x\gt0,\frac{1}{p}x^p+\frac{1}{q}\ge x$<br>$$<br>证明：\<br>令f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0) \<br>f^{‘}(x)&#x3D;x^{p-1}-1,f^{‘’}(x)&#x3D;(p-1)x^{p-2} \<br>令f^{‘}(x)&#x3D;0,得x&#x3D;1\<br>f^{‘’}(1)&#x3D;p-1\gt0,所以f(x)在x&#x3D;1处取得极小值\<br>因为x&#x3D;1是f(x)在(0,+\infty)内唯一驻点，所以f(x)在该点取得最小值\<br>所以f(x)&#x3D;\frac{1}{p}x^p+\frac{1}{q}-x(x\gt0)\ge f(1)&#x3D;0,即 \<br>\frac{1}{p}x^p+\frac{1}{q}\ge x<br>$$</p>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -592,7 +592,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0v0000uu01oboq4fs1u" data-title="0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0305%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5v1460015v71o2xwm6kmq" data-title="0305函数的极值与最大值最小值-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -627,7 +627,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-引入"><a href="#1-引入" class="headerlink" title="1 引入"></a>1 引入</h2><p>对于一些复杂函数，我们希望用一些简单的函数（幂函数-多项式函数）来近似表达。</p>
+<h2><span id="1-引入">1 引入</span></h2><p>对于一些复杂函数，我们希望用一些简单的函数（幂函数-多项式函数）来近似表达。</p>
 <p>前面我们在学习微分时，有$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+o(x-x_0)$（误差）</p>
 <p>$\Rightarrow f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
 <p>但是这种近似有缺点：</p>
@@ -635,7 +635,7 @@
 <li>近似精确度不高</li>
 <li>有误差，无法估计</li>
 </ol>
-<h2 id="2-泰勒中值定理"><a href="#2-泰勒中值定理" class="headerlink" title="2 泰勒中值定理"></a>2 泰勒中值定理</h2><h3 id="2-1-泰勒多项式"><a href="#2-1-泰勒多项式" class="headerlink" title="2.1 泰勒多项式"></a>2.1 泰勒多项式</h3><p>设函数$f(x)在x_0$处有n阶导数，试找出一个关于$(x-x_0)的n$次多项式</p>
+<h2><span id="2-泰勒中值定理">2 泰勒中值定理</span></h2><h3><span id="21-泰勒多项式">2.1 泰勒多项式</span></h3><p>设函数$f(x)在x_0$处有n阶导数，试找出一个关于$(x-x_0)的n$次多项式</p>
 <p>$p_n(x)&#x3D;a_0+a_1(x-x_0)+a_2(x-x_0)^2+\cdots+a_n(x-x_0)^n$    (3-1)</p>
 <p>来近似表达$f(x)$要求$P_n(x)与f(x)$之差是当$x\to x_0时比(x-x_0)^n$高阶的无穷小。</p>
 <p>要满足上述要求，我们假设$P_n(x)在x_0$处的函数值及它直到n阶导数在$x_0$处的值依次与$f(x_0),f^{‘}(x_0),\cdots,f^{(n)}(x_0)$相等，即</p>
@@ -644,7 +644,7 @@
 <p>$a_0&#x3D;f(x_0),a_1&#x3D;f^{‘}(x_0),a_2&#x3D;\frac{f^{‘}(x_0)}{2!},\cdots,a_n&#x3D;\frac{f^{(n)}(x_0)}{n!}$</p>
 <p>$p_n(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$   (3-2)</p>
 <p>下面的定理表明，多项式（3-2）的确是我们要找的n次多项式。</p>
-<h3 id="3-2-泰勒中值定理1"><a href="#3-2-泰勒中值定理1" class="headerlink" title="3.2 泰勒中值定理1"></a>3.2 泰勒中值定理1</h3><blockquote>
+<h3><span id="32-泰勒中值定理1">3.2 泰勒中值定理1</span></h3><blockquote>
 <p>如果函数$f(x)在x_0处具有n$阶导数，那么存在$x_0$的一个邻域，对于改邻域内的任一$x$,有</p>
 <p>$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)$   (3-3)</p>
 <p>其中$R_n(x)&#x3D;o((x-x_0)^n)$  (3-4)</p>
@@ -654,7 +654,7 @@
 <ol>
 <li>$R_n(x)&#x3D;o((x-x_0)^n)称为f(x)在x_0处$的佩亚诺余项</li>
 </ol>
-<h3 id="3-3-泰勒中值定理2"><a href="#3-3-泰勒中值定理2" class="headerlink" title="3.3 泰勒中值定理2"></a>3.3 泰勒中值定理2</h3><blockquote>
+<h3><span id="33-泰勒中值定理2">3.3 泰勒中值定理2</span></h3><blockquote>
 <p>如果函数$f(x)$在$x_0$的某个邻域$U(x_0)$内具有$(n+1)$阶导数，那么对于任一$x\in U(x_0)$，有</p>
 <p>$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)$   (3-5)</p>
 <p>其中$R_n(x)&#x3D;\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$  (3-6)</p>
@@ -667,18 +667,18 @@
 <li>也称为将$f(x)在x_0$处展成带有拉格朗日型余项的n阶泰勒公式或称为$f(x)按(x-x_0)$的幂展成带有拉格朗日型余项的n阶泰勒公式</li>
 <li>$n&#x3D;0时，f(x)&#x3D;f(x_0)+f^{‘}(\xi)(x-x_0)$,即为拉格朗日中值定理公式</li>
 </ol>
-<h3 id="2-4-误差估计"><a href="#2-4-误差估计" class="headerlink" title="2.4 误差估计"></a>2.4 误差估计</h3><p>由泰勒中值定理2知，我们用Pn(x)近似表达函数$f(x)$时，其误差为$|Rn(x)|$。如果对于某个固定的n，当$x\in U(x_0)时，|f^{(n+1)}(x)|\le M$,那么有估计式</p>
+<h3><span id="24-误差估计">2.4 误差估计</span></h3><p>由泰勒中值定理2知，我们用Pn(x)近似表达函数$f(x)$时，其误差为$|Rn(x)|$。如果对于某个固定的n，当$x\in U(x_0)时，|f^{(n+1)}(x)|\le M$,那么有估计式</p>
 <p>$|Rn(x)|&#x3D;|\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}|\le\frac{M}{(n+1)!}(|x-x_0|)^{n+1}$</p>
-<h2 id="4-麦克劳林公式"><a href="#4-麦克劳林公式" class="headerlink" title="4 麦克劳林公式"></a>4 麦克劳林公式</h2><p>如果取$x_0&#x3D;0$,那么泰勒公式变为：<br>$$<br>f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x) \<br>Rn(x)&#x3D;<br>\begin{cases}<br>o(x^n)\quad 佩亚诺型余项 \<br>\frac{f^{n+1}(\xi)}{(n+1)!}x^{n+1}(\xi在x_0与x之间)\quad 拉格朗日型余项 \<br>\end{cases}<br>$$<br>此公式称为$f(x)的n阶$麦克劳林公式。</p>
+<h2><span id="4-麦克劳林公式">4 麦克劳林公式</span></h2><p>如果取$x_0&#x3D;0$,那么泰勒公式变为：<br>$$<br>f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x) \<br>Rn(x)&#x3D;<br>\begin{cases}<br>o(x^n)\quad 佩亚诺型余项 \<br>\frac{f^{n+1}(\xi)}{(n+1)!}x^{n+1}(\xi在x_0与x之间)\quad 拉格朗日型余项 \<br>\end{cases}<br>$$<br>此公式称为$f(x)的n阶$麦克劳林公式。</p>
 <p>注：</p>
 <ol>
 <li>$\xi$可以写成$\theta x(0\lt\theta\lt1)$</li>
 <li>相应的误差估计：$|Rn(x)|\le\frac{M}{(n+1)!}|x|^{n+1}$</li>
 <li>麦克劳林公式函数$f(x)按x的幂$展开</li>
 </ol>
-<h2 id="5-常见麦克劳林公式"><a href="#5-常见麦克劳林公式" class="headerlink" title="5 常见麦克劳林公式"></a>5 常见麦克劳林公式</h2><p>$$<br>e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+\frac{e^{\theta x}}{(n+1)!}(o(x^n )) \<br>\sin x&#x3D;x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^{m-1}\frac{x^{2m-1}}{(2m-1)!}+(-1)^m\frac{\cos\theta x}{(2m+1)!}x^{2m+1} (o(x^{2m-1}))\<br>\cos x&#x3D;1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+(-1)^{m+1}\frac{\cos\theta x}{(2m+2)!}x^{2m+2}(o(x^{2m})) \<br>\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+\frac{(-1)^n}{(n+1)(1+\theta x)^{n+1}}(o(x^n)) \<br>(1+x)^{\alpha}&#x3D;1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+\frac{\alpha(\alpha-1)\cdots(\alpha-n)}{(n+1)!}(1+\theta x)^{\alpha-n-1}x^{n+1}(o(x^n)) \<br>$$</p>
-<h2 id="6-泰勒公式相关例题"><a href="#6-泰勒公式相关例题" class="headerlink" title="6 泰勒公式相关例题"></a>6 泰勒公式相关例题</h2><h3 id="6-1-将函数展成指定的泰勒公式"><a href="#6-1-将函数展成指定的泰勒公式" class="headerlink" title="6.1 将函数展成指定的泰勒公式"></a>6.1 将函数展成指定的泰勒公式</h3><h4 id="6-1-1-公式法"><a href="#6-1-1-公式法" class="headerlink" title="6.1.1 公式法"></a>6.1.1 公式法</h4><p>直接利用泰勒公式或者麦克劳林公式 </p>
-<h4 id="6-1-2-间接展法（变量替换）"><a href="#6-1-2-间接展法（变量替换）" class="headerlink" title="6.1.2 间接展法（变量替换）"></a>6.1.2 间接展法（变量替换）</h4><p>$f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x)$</p>
+<h2><span id="5-常见麦克劳林公式">5 常见麦克劳林公式</span></h2><p>$$<br>e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+\frac{e^{\theta x}}{(n+1)!}(o(x^n )) \<br>\sin x&#x3D;x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^{m-1}\frac{x^{2m-1}}{(2m-1)!}+(-1)^m\frac{\cos\theta x}{(2m+1)!}x^{2m+1} (o(x^{2m-1}))\<br>\cos x&#x3D;1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+(-1)^{m+1}\frac{\cos\theta x}{(2m+2)!}x^{2m+2}(o(x^{2m})) \<br>\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+\frac{(-1)^n}{(n+1)(1+\theta x)^{n+1}}(o(x^n)) \<br>(1+x)^{\alpha}&#x3D;1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+\frac{\alpha(\alpha-1)\cdots(\alpha-n)}{(n+1)!}(1+\theta x)^{\alpha-n-1}x^{n+1}(o(x^n)) \<br>$$</p>
+<h2><span id="6-泰勒公式相关例题">6 泰勒公式相关例题</span></h2><h3><span id="61-将函数展成指定的泰勒公式">6.1 将函数展成指定的泰勒公式</span></h3><h4><span id="611-公式法">6.1.1 公式法</span></h4><p>直接利用泰勒公式或者麦克劳林公式 </p>
+<h4><span id="612-间接展法变量替换">6.1.2 间接展法（变量替换）</span></h4><p>$f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x)$</p>
 <p>$f[g(x)]&#x3D;f(0)+f^{‘}(0)\cdot g(x)+\frac{f^{‘}(0)}{2!}g^2(x)+\cdots+\frac{f^{(n)}(0)}{n!}g^n(x)+R_n[g(x)]	$</p>
 <p>例2 </p>
 <p>1）将$f(x)&#x3D;e^{2x}$展成佩亚诺型余项的n阶麦克劳林公式<br>$$<br>解：e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n ) \<br>用2x替换x后仍然是关于x的幂的展开式即麦克劳林公式，所以直接替换，得 \<br>e^{2x}&#x3D;1+2x+\frac{(2x)^2}{2!}+\cdots+\frac{(2x)^n}{n!}+o(x^n )\<br>&#x3D;e^x&#x3D;1+2x+\frac{2^2}{2!}x^2+\cdots+\frac{2^n}{n!}x^n+o(x^n )<br>$$<br>2)把$f(x)&#x3D;e^x在x&#x3D;1$处展成佩亚诺型余项的n阶泰勒公式<br>$$<br>解：我们知道e^x的n阶麦克劳林公式，但是需要展成(x-1)的幂的多项式 \<br>e^x&#x3D;e^{1+(x-1)}&#x3D;e\cdot e^{x-1}&#x3D;e[1+(x-1)+\frac{(x-1)^2}{2!}+\cdots+\frac{(x-1)^n}{n!}+o((x-1)^n )] \<br>&#x3D;e+e(x-1)+\frac{e}{2!}(x-1)^2+\cdots+\frac{e}{n!}(x-1)^n+o((x-1)^n )<br>$$</p>
@@ -686,7 +686,7 @@
 <li>也可以直接利用公式带入</li>
 </ul>
 <p>3）把$f(x)&#x3D;x\cdot\ln(2+x)$展成n阶麦克劳林公式<br>$$<br>解：已知\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+o(x^n) \<br>如果\ln(2+x)&#x3D;\ln[1+(1+x)]带入展开是(1+x)的幂的多项式即f(x)在-1处的泰勒公式不是麦克劳林公式 \<br>此时\ln(2+x)&#x3D;\ln[2(1+\frac{1}{2}x)]&#x3D;\ln2+\ln(1+\frac{1}{2}x) \<br>因为f(x)&#x3D;x\cdot\ln(2+x)，所以\ln(1+\frac{1}{2}x)展成n-1阶即可,得 \<br>\ln(1+\frac{1}{2}x)&#x3D;\frac{1}{2}x-\frac{x^2}{2^2\cdot2!}+\frac{x^3}{2^3\cdot3!}-\cdots+(-1)^{n-2}\frac{x^{n-1}}{2^{n-1}(n-1)!}+o(x^{n-1}) \<br>f(x)&#x3D;x[\ln2+\ln(1+\frac{1}{2}x)]&#x3D;x\ln2+\frac{1}{2}x^2-\frac{x^3}{2^2\cdot2!}+\frac{x^4}{2^3\cdot3!}-\cdots+(-1)^{n-2}\frac{x^{n}}{2^{n-1}(n-1)!}+o(x^{n})<br>$$</p>
-<h3 id="6-2-利用泰勒公式求极限"><a href="#6-2-利用泰勒公式求极限" class="headerlink" title="6.2 利用泰勒公式求极限"></a>6.2 利用泰勒公式求极限</h3><ul>
+<h3><span id="62-利用泰勒公式求极限">6.2 利用泰勒公式求极限</span></h3><ul>
 <li>无穷小的运算</li>
 </ul>
 <p>$o(x^n)\pm o(x^n)&#x3D;o(x^n)\quad o(x^n)+o(x^k)&#x3D;o(x^n)(k\lt n)$</p>
@@ -702,14 +702,14 @@
 <li><p>要注意与等价无穷小代换，有理化等结合使用</p>
 </li>
 </ol>
-<h3 id="6-3-确定无穷小的阶数"><a href="#6-3-确定无穷小的阶数" class="headerlink" title="6.3 确定无穷小的阶数"></a>6.3 确定无穷小的阶数</h3><blockquote>
+<h3><span id="63-确定无穷小的阶数">6.3 确定无穷小的阶数</span></h3><blockquote>
 <p>若$f(x)&#x3D;a_jx^k+a_{j+1}x^{k+1}+\cdots+a_mx^n,(a_j\not&#x3D;0,k\lt n)$,</p>
 <p>则当$x\to0$时，有$f(x)\backsim a_{j}x^k$</p>
 <p>即$f(x)是x的k阶无穷小$</p>
 </blockquote>
 <p>$$<br>证明：<br>\lim\limits_{x\to0}{\frac{f(x)}{a_jx^k}}&#x3D;\lim\limits_{x\to0}{\frac{a_jx^k+a_{j+1}x^{k+1}+\cdots+a_mx^n}{a_jx^k}} \<br>&#x3D;\lim\limits_{x\to0}{(1+\frac{a_{j+1}}{a_j}x+\frac{a_{j+2}}{a_j}x^2+\cdots+\frac{a_m}{a_j}x^{n-k})}&#x3D;1 \<br>即f(x)\backsim a_jx^k或f(x)是x的k阶无穷小<br>$$</p>
 <p>例4 试确定$a,b,使f(x)&#x3D;x-(a+b\cos x)\sin x,当x\to0$时是关于$x的5$阶无穷小。<br>$$<br>解：化简f(x) \<br>f(x)&#x3D;x-(a+b\cos x)\sin x&#x3D;x-a\sin x-b\sin x\cos x&#x3D;x-a\sin x-\frac{b}{2}\sin 2x \<br>把f(x)展成5阶麦克劳林公式，得\<br>f(x)&#x3D;x-a(x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5))-\frac{b}{2}(2x-\frac{2^3x^3}{3!}+\frac{2^5x^5}{5!}+o(x^5)) \<br>&#x3D;(1-a-b)x+\frac{a+4b}{3!}x^3-\frac{a+16b}{5!}x^5+o(x^5) \<br>因为f(x)是关于x的5阶无穷小，则 \<br>\begin{cases}<br>1-a-b&#x3D;0 \<br>a+4b&#x3D;0 \<br>a+16b\not&#x3D;0<br>\end{cases} \<br>求解方程组得 a&#x3D;-\frac{1}{3} \quad b&#x3D;\frac{4}{3}<br>$$</p>
-<h3 id="6-4-求-f-n-x-0-即-f-x-的n阶导在某一点的值"><a href="#6-4-求-f-n-x-0-即-f-x-的n阶导在某一点的值" class="headerlink" title="6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值"></a>6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值</h3><blockquote>
+<h3><span id="64-求fnx_0即fx的n阶导在某一点的值">6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值</span></h3><blockquote>
 <p>原理 $f(x)的n阶泰勒公式为:f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)$</p>
 <p>若已知$f(x)$的展开式为：$f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)$</p>
 <p>则$\frac{f^{(n)}(x_0)}{n!}&#x3D;a_n,即f^{(n)}(x_0)&#x3D;n!a_n$</p>
@@ -717,7 +717,7 @@
 <p>例5 $f(x)&#x3D;(1+x^2)\cdot e^x$,求$f^{(100)}(0)$</p>
 <p>1）可以利用莱布尼茨公式求$f(x)的100阶导数$，在带入x&#x3D;0求值</p>
 <p>2）利用麦克劳林公式(x&#x3D;0)<br>$$<br>解：因为求f^{(100)}(0)，那么我们把f(x)展成100阶麦克劳林公式且只关心x^{100}项的系数 \<br>f(x)&#x3D;(1+x^2)(1+x+\cdots+\frac{1}{98!}x^{98}+\cdots+\frac{1}{100!}x^{100}+o(x^{100})) \<br>设x^{100}项的系数为a_{100},则 \<br>a_{100} &#x3D; \frac{1}{100!}+\frac{1}{98!} 则 \<br>f^{(100)}(0)&#x3D;a_{100}100!&#x3D;(\frac{1}{100!}+\frac{1}{98!})100!&#x3D;1+9900&#x3D;9901<br>$$</p>
-<h3 id="6-5-证明题"><a href="#6-5-证明题" class="headerlink" title="6.5 证明题"></a>6.5 证明题</h3><p>例6. 设函数$f(x)在闭区间[-1,1]$上是具有3阶连续导数，且$f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0$</p>
+<h3><span id="65-证明题">6.5 证明题</span></h3><p>例6. 设函数$f(x)在闭区间[-1,1]$上是具有3阶连续导数，且$f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0$</p>
 <p>证明：存在$\xi\in(-1,1),使f^{‘’’}(\xi)&#x3D;3$</p>
 <p>分析：</p>
 <ol>
@@ -732,7 +732,7 @@
 </li>
 </ol>
 <p>$$<br>证明：f(x)在x&#x3D;0处展开2阶泰勒公式 ，得\<br>f(x)&#x3D;f(0)+f^{‘}(0)x+\frac{f^{‘’}(0)}{2!}x^2+\frac{f^{‘’’}(\xi)}{3!}x^3(\xi在0及x之间) \<br>带入f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0 \quad得\<br>\begin{cases}<br>f(-1)&#x3D;0&#x3D;f(0)+\frac{f^{‘’}(0)}{2}-\frac{f^{‘’’}(\xi_1)}{6}(\xi_1\in(-1,0)) \quad (1) \<br>f(1)&#x3D;1&#x3D;f(0)+\frac{f^{‘’}(0)}{2}+\frac{f^{‘’’}(\xi_2)}{6}(\xi_2\in(0,1)) \quad(2)<br>\end{cases} \<br>(2)式-(1)式得 \<br>\frac{f^{‘’’}(\xi_1)+f^{‘’’}(\xi_2)}{6}&#x3D;1 即\frac{f^{‘’’}(\xi_1)+f^{‘’’}(\xi_2)}{2}&#x3D;3 \<br>令g(x)&#x3D;f^{‘’’}(x),x\in[-1,1],则g(x)在[-1,1]上连续 \<br>\xi_1\in(-1,0),\xi_2\in(0,1),则 \<br>\min{g(\xi_1),g(\xi_2)}\le\frac{g(\xi_1)+g(\xi_2)}{2}\le\max{g(\xi_1),g(\xi_2)} \<br>则由介值定理知 \exists\xi\in(\xi_1,\xi_2)\subset(-1,1),使g(\xi)&#x3D;3 即\<br>f^{‘’’}(\xi)&#x3D;3<br>$$</p>
-<h2 id="7-后记"><a href="#7-后记" class="headerlink" title="7 后记"></a>7 后记</h2><blockquote>
+<h2><span id="7-后记">7 后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -743,7 +743,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/13/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0303%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0uz000su01obevp31kc" data-title="0303泰勒公式-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/01/13/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0303%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5v1450013v71oea689ozh" data-title="0303泰勒公式-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -777,7 +777,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-与导数定义相关"><a href="#1-与导数定义相关" class="headerlink" title="1 与导数定义相关"></a>1 与导数定义相关</h2><p>例1：设$f^{‘}(x_0)$存在，求下列极限</p>
+        <h2><span id="1-与导数定义相关">1 与导数定义相关</span></h2><p>例1：设$f^{‘}(x_0)$存在，求下列极限</p>
 <p>(1)$\lim\limits_{h\to0}{\frac{f(x_0-2h)-f(x_0+h)}{h}}$<br>$$<br>解：按照导数定义基本公式 有 \<br>\lim\limits_{h\to0}{\frac{f(x_0-2h)-f(x_0+h)}{h}}&#x3D;\lim\limits_{h\to0}{\frac{f(x_0-2h)-f(x_0)-[f(x_0+h)-f(x_0)]}{h}} \<br>&#x3D;\lim\limits_{h\to0}{\frac{f(x_0-2h)-f(x_0)}{-2h}}\cdot(-2)-\lim\limits_{h\to0}{\frac{f(x_0+h)-f(x_0)}{h}} \<br>&#x3D;-2f^{‘}(x_0)-f^{‘}(x_0)&#x3D;-3f^{‘}(x_0)<br>$$</p>
 <blockquote>
 <p>一般地，若$f^{‘}(x_0),k,m,n为常数且n\not&#x3D;0$存在，则$\lim\limits_{\triangle x\to0}{\frac{f(x_0+k\triangle x)-f(x_0+m\triangle x)}{n\triangle x}}&#x3D;\frac{k-m}{n}f^{‘}(x_0)$</p>
@@ -787,7 +787,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0206%E4%B9%A0%E9%A2%98-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0uy000pu01ob2gsgln6" data-title="0206习题-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/12/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0206%E4%B9%A0%E9%A2%98-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5v1440010v71ofz4rcuw5" data-title="0206习题-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -822,7 +822,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-高阶导数的定义"><a href="#1-高阶导数的定义" class="headerlink" title="1 高阶导数的定义"></a>1 高阶导数的定义</h2><blockquote>
+<h2><span id="1-高阶导数的定义">1 高阶导数的定义</span></h2><blockquote>
 <p>一般地，函数$y&#x3D;f(x)$的导数$y^{‘}&#x3D;f^{‘}(x)$仍然是$x$的导数。我们把$y^{‘}&#x3D;f^{‘}(x)$的导数叫做函数$y&#x3D;f(x)$的二阶导数，记做$y^{‘’}或者\frac{dy^2}{dx^2}$;类似地，二级导数的导数，叫做三阶导数，三阶导数的导数叫做四阶导数…一般地，$(n-1)$阶导数的导数叫做n阶导数，分别记做</p>
 <p>$y^{‘’’},y^{(4)},\cdots,y^{(n)}$或者$\frac{dy^{3}}{dx^3},\frac{dy^4}{dx^4},\cdots,\frac{dy^{n}}{dx^n}$</p>
 <p>二阶即二阶以上的导数统称高阶导数。</p>
@@ -833,7 +833,7 @@
 <li>若$f(x)$在x处具有n阶导数，那么$f(x)$在点x的某一邻域内必定具有一切低于n阶的导数。</li>
 <li>C(a,b):在开区间$(a,b)$内连续的函数的集合,$D(a,b)$所有在开区间$(a,b)$内可导的函数的集合。</li>
 </ul>
-<h2 id="2-高阶导数的求导"><a href="#2-高阶导数的求导" class="headerlink" title="2 高阶导数的求导"></a>2 高阶导数的求导</h2><h3 id="2-1-直接法"><a href="#2-1-直接法" class="headerlink" title="2.1 直接法"></a>2.1 直接法</h3><p>例1：求$y&#x3D;e^{\lambda x}的n$阶导数($\lambda$为常数)<br>$$<br>y^{‘}&#x3D;\lambda e^{\lambda}x,y^{‘’}&#x3D;\lambda^2 e^{\lambda}x，\cdots,y^{(n)}&#x3D;\lambda^{n} e^{\lambda}x<br>$$</p>
+<h2><span id="2-高阶导数的求导">2 高阶导数的求导</span></h2><h3><span id="21-直接法">2.1 直接法</span></h3><p>例1：求$y&#x3D;e^{\lambda x}的n$阶导数($\lambda$为常数)<br>$$<br>y^{‘}&#x3D;\lambda e^{\lambda}x,y^{‘’}&#x3D;\lambda^2 e^{\lambda}x，\cdots,y^{(n)}&#x3D;\lambda^{n} e^{\lambda}x<br>$$</p>
 <blockquote>
 <p>$(e^{x})^{(n)&#x3D;e^{x}}$</p>
 <p>$(e^{\lambda x})^{(n)}&#x3D;\lambda^{n} e^{\lambda}x$ </p>
@@ -865,7 +865,7 @@
 <p>(5)$\quad(\frac{1}{x+1})^{(n)}&#x3D;\frac{(-1)^nn!}{(x+1)^{n+1}}$</p>
 <p>(6)$\quad(\frac{1}{ax+b})^{(n)}&#x3D;\frac{(-1)^nn!a^n}{(ax+b)^{n+1}}\quad a\not&#x3D;0$</p>
 </blockquote>
-<h3 id="2-2-间接法"><a href="#2-2-间接法" class="headerlink" title="2.2 间接法"></a>2.2 间接法</h3><p>高阶导数的运算法则：</p>
+<h3><span id="22-间接法">2.2 间接法</span></h3><p>高阶导数的运算法则：</p>
 <blockquote>
 <p>设$u&#x3D;u(x),v&#x3D;v(x)具有n阶导数，则$</p>
 <p>(1)$\quad(u\pm v)^{(n)}&#x3D;u^{(n)}\pm v^{(n)}$</p>
@@ -881,7 +881,7 @@
 </ul>
 <p>例9：设$y&#x3D;\arctan x,求y^{(n)}(0),(n\gt1)$<br>$$<br>直接求n阶导数很复杂，先求一阶导数 \<br>y^{‘}&#x3D;\frac{1}{x^2+1}\rightarrow  y^{‘}(x^2+1)&#x3D;1  \<br>等式左侧为2个关于x的函数乘积形式，其他一个为多项式。 \<br>[y^{‘}(x^2+1)]^{(n-1)}&#x3D;0  \<br>C_{n-1}^0(x^2+1)y^{(n)}+C_{n-1}^1(x^2+1)^{‘}y^{(n-1)}+C_{n-1}^2(x^2+1)^{‘’}y^{(n-2)} \<br>&#x3D;(x^2+1)y^{(n)}+(n-1)2xy^{(n-1)}+(n-1)(n-2)y^{(n-2)}&#x3D;0 \<br>把x&#x3D;0带入：<br>y^{(n)}(0)&#x3D;-(n-1)(n-2)y^{(n-2)}(0) \<br>y^{‘}(0)&#x3D;1,y^{‘’}(0)&#x3D;0 因此 \<br>y^{(n)}(0)&#x3D;<br>\begin{cases}<br>0,\quad n&#x3D;2k, \<br>(-1)^k(2k)!,n&#x3D;2k+1(k&#x3D;0,1,2,\cdots)<br>\end{cases}</p>
 <p>$$</p>
-<h2 id="3-后记"><a href="#3-后记" class="headerlink" title="3 后记"></a>3 后记</h2><blockquote>
+<h2><span id="3-后记">3 后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -892,7 +892,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0203%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0ux000mu01odi0q6o6b" data-title="0203高阶导数-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/12/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0203%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5v142000wv71o6qaa0kfu" data-title="0203高阶导数-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -927,7 +927,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-函数和、差、积、商的求导法则"><a href="#1-函数和、差、积、商的求导法则" class="headerlink" title="1 函数和、差、积、商的求导法则"></a>1 函数和、差、积、商的求导法则</h2><blockquote>
+<h2><span id="1-函数和-差-积-商的求导法则">1 函数和、差、积、商的求导法则</span></h2><blockquote>
 <p>定理1 如果函数$u&#x3D;u(x)及v&#x3D;v(x)$都在点$x$具有导数，那么它们的和、差、积、商(除分母为零的点外)都在点$x$具有导数，且</p>
 <p>(1) $[u(x)\pm v(x)]^{‘}&#x3D;u(x)^{‘}\pm v(x)^{‘}$</p>
 <p>(2) $[u(x)v(x)]^{‘}&#x3D;u(x)^{‘}v(x)+u(x)v(x)^{‘}$</p>
@@ -938,7 +938,7 @@
 <p>定理中的(1)(2)可推广到任意有限个可导函数的情形</p>
 <p>$(Cu)^{‘}&#x3D;Cu^{‘},C为常数$</p>
 </blockquote>
-<h2 id="2-反函数的求导法则"><a href="#2-反函数的求导法则" class="headerlink" title="2 反函数的求导法则"></a>2 反函数的求导法则</h2><blockquote>
+<h2><span id="2-反函数的求导法则">2 反函数的求导法则</span></h2><blockquote>
 <p>定理2 如果函数$x&#x3D;f(y)$在区间$I_y$内单调、可导且$f(y)\not&#x3D;0$，那么它的反函数$y&#x3D;f^{-1}(x)$在区间$I_x&#x3D;{x|x&#x3D;f(y),y\in I_y}$内也可导，且</p>
 <p>$[f^{-1}(x)]&#x3D;\frac{1}{f^{‘}(y)}或\frac{dy}{dx}&#x3D;\frac{1}{\frac{dx}{dy}}$</p>
 </blockquote>
@@ -949,15 +949,15 @@
 <p>$\arcsin x+\arccos x&#x3D;\frac{\pi}{2}$</p>
 <p>$\arctan x+arccot x&#x3D;\frac{\pi}{2}$</p>
 </blockquote>
-<h2 id="3-复合函数的求导法则"><a href="#3-复合函数的求导法则" class="headerlink" title="3 复合函数的求导法则"></a>3 复合函数的求导法则</h2><blockquote>
+<h2><span id="3-复合函数的求导法则">3 复合函数的求导法则</span></h2><blockquote>
 <p>如果$u&#x3D;g(x)在点x$可导，而$y&#x3D;f(u)$在点$u&#x3D;g(x)$可导，那么复合函数$y&#x3D;f[g(x)]$在点x可导，且其导数为：</p>
 <p>$\frac{dy}{dx}&#x3D;f^{‘}(u)g^{‘}(x)或 \frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}$</p>
 </blockquote>
 <p>$$<br>证明：因为y&#x3D;f(u)在点u出可导 \<br>\lim\limits_{\triangle u\to0}{\frac{\triangle y}{\triangle u}}&#x3D;f^{‘}(u)\<br>根据极限和无穷小的关系有\quad \frac{\triangle y}{\triangle u}&#x3D;f^{‘}(u)+\alpha(\triangle u),\lim\limits_{\triangle u\to0}{\frac{\alpha(\triangle u)}{\triangle u}}&#x3D;0 \<br>则\triangle y&#x3D;f^{‘}(u)\triangle u+\alpha(\triangle u)\triangle u \quad(2-7)\<br>当\triangle u&#x3D;0时，\triangle y &#x3D;f(u+\triangle u)-f(u)&#x3D;0,(2-7)式右侧也为0，等式也成立 \<br>\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}&#x3D;\lim\limits_{\triangle x\to0}{\frac{f^{‘}(u)\triangle u+\alpha(\triangle u)\triangle u}{\triangle x}} \<br>&#x3D;f^{‘}(u)\lim\limits_{\triangle x\to}{\frac{\triangle u}{\triangle x}}+\lim\limits_{\triangle x\to0}{\frac{\alpha(\triangle u)\triangle u}{\triangle x}}\<br>因为u&#x3D;g(x)在点x可导,\lim\limits_{\triangle x\to}{\frac{\triangle u}{\triangle x}}&#x3D;g^{‘}(x) \<br>因\triangle x\to0时，\triangle u\to0,所以\lim\limits_{\triangle x\to0}{\alpha(\triangle u)}&#x3D;0 \</p>
 <p>即\frac{dy}{dx}&#x3D;f^{‘}(u)g^{‘}(x)<br>$$</p>
 <p>例3：$y&#x3D;\ln[\cos(e^x)],求\frac{dy}{dx}$<br>$$<br>解：y^{‘}&#x3D;\frac{1}{\cos(e^x)}\cdot-\sin(e^x)\cdot e^x&#x3D;-e^x\cdot\tan(e^x)<br>$$</p>
-<h2 id="4-例题"><a href="#4-例题" class="headerlink" title="4 例题"></a>4 例题</h2><p>例4： $y&#x3D;\ln[\cos(e^x)],求y^{‘}$<br>$$<br>解：y^{‘}&#x3D;\frac{1}{\cos(e^x)}\cdot-\sin(e^x)\cdot e^x&#x3D;-e^x\tan(e^x)<br>$$<br>例5：$y&#x3D;x^{\frac{1}{x}},求y^{‘}$<br>$$<br>解：y&#x3D;x^{\frac{1}{x}}&#x3D;e^{\frac{1}{x}\ln x} \<br>y^{‘}&#x3D;e^{\frac{1}{x}\ln x}\cdot(\frac{\ln x}{x})^{‘}&#x3D;x^{\frac{1}{x}}\cdot\frac{1-\ln x}{x^2}<br>$$<br>例6：设$f(\frac{x}{2})&#x3D;\sin x,求f^{‘}[f(x)]，(f[f(x)])^{‘}$<br>$$<br>解:f(x)&#x3D;\sin 2x,f^{‘}(x)&#x3D;2\cos2x \<br>f^{‘}[f(x)]&#x3D;2\cos (2\sin 2x) \<br>(f[f(x)])^{‘}&#x3D;[\sin 2(\sin 2x)]^{‘}&#x3D;\cos 2(\sin 2x)\cdot2\cos 2x\cdot2&#x3D;4\cos 2x\cos2(\sin2x)<br>$$<br>例7：$y&#x3D;\sin nx\cdot\sin^{n}x，求y^{‘}$<br>$$<br>解：y^{‘}&#x3D;(\sin nx)^{‘}\sin^{n}x+\sin nx(\sin^{n}x)^{‘} \<br>&#x3D;n\cos nx\sin^{n}x+\sin nx\cdot n\sin^{n-1}x\cos x \<br>&#x3D;n\sin^{n-1}x(\sin x\cos nx+\cos x\sin nx)&#x3D;n\sin^{n-1}x\sin{(n+1)x}<br>$$</p>
-<h2 id="5-后记"><a href="#5-后记" class="headerlink" title="5 后记"></a>5 后记</h2><blockquote>
+<h2><span id="4-例题">4 例题</span></h2><p>例4： $y&#x3D;\ln[\cos(e^x)],求y^{‘}$<br>$$<br>解：y^{‘}&#x3D;\frac{1}{\cos(e^x)}\cdot-\sin(e^x)\cdot e^x&#x3D;-e^x\tan(e^x)<br>$$<br>例5：$y&#x3D;x^{\frac{1}{x}},求y^{‘}$<br>$$<br>解：y&#x3D;x^{\frac{1}{x}}&#x3D;e^{\frac{1}{x}\ln x} \<br>y^{‘}&#x3D;e^{\frac{1}{x}\ln x}\cdot(\frac{\ln x}{x})^{‘}&#x3D;x^{\frac{1}{x}}\cdot\frac{1-\ln x}{x^2}<br>$$<br>例6：设$f(\frac{x}{2})&#x3D;\sin x,求f^{‘}[f(x)]，(f[f(x)])^{‘}$<br>$$<br>解:f(x)&#x3D;\sin 2x,f^{‘}(x)&#x3D;2\cos2x \<br>f^{‘}[f(x)]&#x3D;2\cos (2\sin 2x) \<br>(f[f(x)])^{‘}&#x3D;[\sin 2(\sin 2x)]^{‘}&#x3D;\cos 2(\sin 2x)\cdot2\cos 2x\cdot2&#x3D;4\cos 2x\cos2(\sin2x)<br>$$<br>例7：$y&#x3D;\sin nx\cdot\sin^{n}x，求y^{‘}$<br>$$<br>解：y^{‘}&#x3D;(\sin nx)^{‘}\sin^{n}x+\sin nx(\sin^{n}x)^{‘} \<br>&#x3D;n\cos nx\sin^{n}x+\sin nx\cdot n\sin^{n-1}x\cos x \<br>&#x3D;n\sin^{n-1}x(\sin x\cos nx+\cos x\sin nx)&#x3D;n\sin^{n-1}x\sin{(n+1)x}<br>$$</p>
+<h2><span id="5-后记">5 后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -968,7 +968,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/02/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0202%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0ux000lu01oeae298eu" data-title="0202函数的求导法则-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/12/02/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0202%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5v143000xv71o7f7qhilp" data-title="0202函数的求导法则-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1002,7 +1002,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-有理函数"><a href="#1-有理函数" class="headerlink" title="1 有理函数"></a>1 有理函数</h2><p>例1 $\lim\limits_{x\to\infty}{\frac{(2x+1)^4\cdot(x-1)^6-5x(x+8)}{(x+2)^{10}}}$</p>
+        <h2><span id="1-有理函数">1 有理函数</span></h2><p>例1 $\lim\limits_{x\to\infty}{\frac{(2x+1)^4\cdot(x-1)^6-5x(x+8)}{(x+2)^{10}}}$</p>
 <p>求有理函数分式极限</p>
 <ol>
 <li>看分子分母最高次幂大小</li>
@@ -1012,7 +1012,7 @@
 <ul>
 <li>注意：不要直接用底数常数系数直接运算，记得不要漏掉指数部分</li>
 </ul>
-<h2 id="2-有界函数与无穷小的乘积是无穷小"><a href="#2-有界函数与无穷小的乘积是无穷小" class="headerlink" title="2 有界函数与无穷小的乘积是无穷小"></a>2 有界函数与无穷小的乘积是无穷小</h2><p>例2 $\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)\cdot(2+\cos x-\sin x)}{(3x^5+2x+3)}}$</p>
+<h2><span id="2-有界函数与无穷小的乘积是无穷小">2 有界函数与无穷小的乘积是无穷小</span></h2><p>例2 $\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)\cdot(2+\cos x-\sin x)}{(3x^5+2x+3)}}$</p>
 <ul>
 <li><p>分析</p>
 <ol>
@@ -1029,7 +1029,7 @@
 <li><p>解<br>$$<br>\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)\cdot(2+\cos x-\sin x)}{(3x^5+2x+3)}}&#x3D;\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)}{(3x^5+2x+3)}}\cdot(2+\cos x -\sin x) \<br>因为\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)}{(3x^5+2x+3)}}&#x3D;0，0\le2+\cos x-\sin x\le4 \<br>根据定理有界函数与无穷小的乘积是无穷小得,\lim\limits_{x\to\infty}{\frac{(x^3-2x+5)\cdot(2+\cos x-\sin x)}{(3x^5+2x+3)}}&#x3D;0<br>$$</p>
 </li>
 </ul>
-<h2 id="3-常见函数在特殊点-或趋于无穷-的变化趋势"><a href="#3-常见函数在特殊点-或趋于无穷-的变化趋势" class="headerlink" title="3 常见函数在特殊点(或趋于无穷)的变化趋势"></a>3 常见函数在特殊点(或趋于无穷)的变化趋势</h2><p>例3 $\lim\limits_{x\to0}{\frac{1-e^{\frac{1}{x}}}{1+e^{\frac{1}{x}}}\cdot\arctan \frac{1}{x}}$</p>
+<h2><span id="3-常见函数在特殊点或趋于无穷的变化趋势">3 常见函数在特殊点(或趋于无穷)的变化趋势</span></h2><p>例3 $\lim\limits_{x\to0}{\frac{1-e^{\frac{1}{x}}}{1+e^{\frac{1}{x}}}\cdot\arctan \frac{1}{x}}$</p>
 <ul>
 <li><p>分析</p>
 <ul>
@@ -1045,7 +1045,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-夹逼定理"><a href="#4-夹逼定理" class="headerlink" title="4 夹逼定理"></a>4 夹逼定理</h2><p>例4 $\lim\limits_{n\to\infty}{(\frac{1}{n^2+1}+\frac{2}{n^2+2}+\cdots+\frac{n}{n^2+n})}$</p>
+<h2><span id="4-夹逼定理">4 夹逼定理</span></h2><p>例4 $\lim\limits_{n\to\infty}{(\frac{1}{n^2+1}+\frac{2}{n^2+2}+\cdots+\frac{n}{n^2+n})}$</p>
 <ul>
 <li><p>分析</p>
 <ul>
@@ -1068,7 +1068,7 @@
 <li><p>推论:$\lim\limits_{n\to\infty}{(a_1^n+a_2^n+\cdots+a_m^n)^{\frac{1}{n}}}(0\le a_1\lt a_2\lt\cdots\lt a_m)&#x3D;\max{a_1,a_2,\cdots,a_m}$</p>
 </li>
 </ul>
-<h2 id="5-单调有界数列必有极限"><a href="#5-单调有界数列必有极限" class="headerlink" title="5 单调有界数列必有极限"></a>5 单调有界数列必有极限</h2><p>例6 设$x_{n+1}&#x3D;\frac{1}{2}(x_n+\frac{a}{x_n})(n&#x3D;0,1,2,…,n),其中a\gt0,x_0\gt0$;证明数列${x_n}$收敛并求极限。</p>
+<h2><span id="5-单调有界数列必有极限">5 单调有界数列必有极限</span></h2><p>例6 设$x_{n+1}&#x3D;\frac{1}{2}(x_n+\frac{a}{x_n})(n&#x3D;0,1,2,…,n),其中a\gt0,x_0\gt0$;证明数列${x_n}$收敛并求极限。</p>
 <ul>
 <li><p>分析</p>
 <ul>
@@ -1085,17 +1085,17 @@
 <li><p>解<br>$$<br>x_{n}&#x3D;\frac{1}{2}(x_{n-1}+\frac{1}{n-1})\ge\frac{1}{2}\cdot2\sqrt{x_{n-1}\cdot\frac{a}{x_{n-1}}}&#x3D;\sqrt{a} \quad 不等式1\<br>即数列x_n有下界 \<br>式子有分式，我们利用比值的形式\frac{x_{n+1}}{x_n}&#x3D;\frac{\frac{1}{2}(x_n+\frac{a}{x_n})}{x_n}&#x3D;\frac{1}{2}(1+\frac{a}{x_n^2})\<br>利用上述不等式1结论有\frac{x_{n+1}}{x_n}&#x3D;\frac{1}{2}(1+\frac{a}{x_n^2})\le 1，\、<br>即x_{n+1}\le x_n ,数列{x_n}为单调递减数列 \<br>综合以上知数列{x_n}为单调递减有下界数列，即数列{x_n}收敛 \<br>设数列极限为b 则\<br>\lim\limits_{n\to\infty}{x_{n+1}&#x3D;\lim\limits_{n\to\infty}{\frac{1}{2}(x_n+\frac{a}{x_n})}} 即\<br>b&#x3D;\frac{1}{2}(b+\frac{a}{b}) ，解等式得 \<br>b&#x3D;\sqrt{a} <br>即\lim\limits_{n\to\infty}{x_n}&#x3D;\sqrt{a}<br>$$</p>
 </li>
 </ul>
-<h2 id="6-等价无穷小替换和重要极限"><a href="#6-等价无穷小替换和重要极限" class="headerlink" title="6 等价无穷小替换和重要极限"></a>6 等价无穷小替换和重要极限</h2><p>例7</p>
+<h2><span id="6-等价无穷小替换和重要极限">6 等价无穷小替换和重要极限</span></h2><p>例7</p>
 <p>① $\lim\limits_{x\to\infty}{\frac{x^2+2}{3x-1}\cdot\sin\frac{1}{x}}$<br>$$<br>解：\infty\cdot0型，0利用等价无穷小代换\<br>\lim\limits_{x\to\infty}{\frac{x^2+2}{3x-1}\cdot\sin\frac{1}{x}}&#x3D;\lim\limits_{x\to\infty}{\frac{x^2+2}{3x-1}\cdot\frac{1}{x}}&#x3D;\frac{1}{3}<br>$$<br>② $\lim\limits_{x\to 0}{\frac{\ln{\cos x}}{x\cdot\sin(\sin x)}}$<br>$$<br>解：\frac{0}{0}型 等价无穷小代换 \<br>\lim\limits_{x\to 0}{\frac{\ln{\cos x}}{x\cdot\sin(\sin x)}}&#x3D;\lim\limits_{x\to 0}{\frac{\cos x-1}{x\cdot x}}&#x3D;\lim\limits_{x\to 0}{\frac{-\frac{1}{2}x^2}{x^2}}&#x3D;-\frac{1}{2}<br>$$<br>③$\lim\limits_{x\to\infty}{x^2\cdot(e^{-\cos\frac{1}{x}}-e^{-1})}$<br>$$<br>解：\infty\cdot0型，0等价无穷小代换 \<br>\lim\limits_{x\to\infty}{x^2\cdot(e^{-\cos\frac{1}{x}}-e^{-1})}&#x3D;e^{-1}\lim\limits_{x\to\infty}{x^2\cdot(e^{1-\cos\frac{1}{x}}-1)}&#x3D; \<br>e^{-1}\lim\limits_{x\to\infty}{x^2\cdot(1-\cos\frac{1}{x}})&#x3D;e^{-1}\lim\limits_{x\to\infty}{x^2\cdot(\frac{1}{2})(\frac{1}{x})^2}&#x3D;\frac{1}{2e}<br>$$<br>④$\lim\limits_{x\to\infty}{(\frac{2x+1}{2x-1})^{x+1}}$<br>$$<br>解：1^{\infty}型，利用重要极限\lim\limits_{x\to\infty}{(1+\frac{1}{x})^{x}}&#x3D;e \<br>\lim\limits_{x\to\infty}{(\frac{2x+1}{2x-1})^{x+1}}&#x3D;\lim\limits_{x\to\infty}{(1+\frac{2}{2x-1})^{\frac{2x-1}{2}+\frac{3}{2}}}&#x3D;\<br>e\lim\limits_{x\to\infty}{(1+\frac{2}{2x-1})^{\frac{3}{2}}}&#x3D;e<br>$$<br>⑤$\lim\limits_{x\to0}{(\frac{a^x+b^x+c^x}{3})^{\frac{1}{x}}}$<br>$$<br>解：1^\infty型 利用e^{\ln{1+f(x)}^{g(x)}}&#x3D;e^{f(x)\cdot g(x)} \<br>\lim\limits_{x\to0}{(\frac{a^x+b^x+c^x}{3})^{\frac{1}{x}}}&#x3D;e^{{\lim\limits_{x\to0}{\ln(1+\frac{a^x+b^x+c^x-3}{3})^{\frac{1}{x}}}}} &#x3D; \<br>e^{\lim\limits_{x\to0}{(\frac{a^x+b^x+c^x-3}{3}){\frac{1}{x}}}} \<br>\lim\limits_{x\to0}{(\frac{a^x+b^x+c^x-3}{3}){\frac{1}{x}}}&#x3D; \lim\limits_{x\to0}{(\frac{a^x-1}{3x})}+\lim\limits_{x\to0}{(\frac{b^x-1}{3x})}+\lim\limits_{x\to0}{(\frac{c^x-1}{3x})}&#x3D;\<br>\ln(abc)^{\frac{1}{3}}  \<br>即\lim\limits_{x\to0}{(\frac{a^x+b^x+c^x}{3})^{\frac{1}{x}}}&#x3D; (abc)^{\frac{1}{3}}<br>$$</p>
-<h2 id="7-无穷小比阶"><a href="#7-无穷小比阶" class="headerlink" title="7 无穷小比阶"></a>7 无穷小比阶</h2><p>例8 设当$x\to0$时，$(1-\cos x)\ln(1+x^2)$是比$x\cdot\sin x^n$高阶的无穷小，而$x\cdot\sin x^n$是比$e^{x^2}-1$高阶的无穷小，则n&#x3D;?(n为正整数)<br>$$<br>由题得:\<br>\lim\limits_{x\to0}{\frac{x\cdot\sin x^n}{(1-\cos x)\ln(1+x^2)}}&#x3D;0 \<br>\lim\limits_{x\to0}{\frac{e^{x^2}-1}{x\cdot\sin x^n}}&#x3D;0  \<br>\lim\limits_{x\to0}{\frac{x\cdot\sin x^n}{(1-\cos x)\ln(1+x^2)}}&#x3D;\lim\limits_{x\to0}{\frac{x^{n+1}}{\frac{1}{2}x^4}}&#x3D;0 即 n+1\lt 4\Rightarrow n\lt3 \<br>\lim\limits_{x\to0}{\frac{e^{x^2}-1}{x\cdot\sin x^n}}&#x3D;\lim\limits_{x\to0}{\frac{x^2}{x^{n+1}}}&#x3D;0\Rightarrow n+1&gt;2 \Rightarrow n\gt1\<br>中上得1\lt n\lt 3,n为正整数即 n &#x3D; 2<br>$$</p>
-<h2 id="8-加减-rightarrow-乘除"><a href="#8-加减-rightarrow-乘除" class="headerlink" title="8 加减$\rightarrow$乘除"></a>8 加减$\rightarrow$乘除</h2><p>$\frac{f(x)}{g(x)}&#x3D;c\not &#x3D;0$ , 若$f(x)\to 0,则g(x)\to0$</p>
+<h2><span id="7-无穷小比阶">7 无穷小比阶</span></h2><p>例8 设当$x\to0$时，$(1-\cos x)\ln(1+x^2)$是比$x\cdot\sin x^n$高阶的无穷小，而$x\cdot\sin x^n$是比$e^{x^2}-1$高阶的无穷小，则n&#x3D;?(n为正整数)<br>$$<br>由题得:\<br>\lim\limits_{x\to0}{\frac{x\cdot\sin x^n}{(1-\cos x)\ln(1+x^2)}}&#x3D;0 \<br>\lim\limits_{x\to0}{\frac{e^{x^2}-1}{x\cdot\sin x^n}}&#x3D;0  \<br>\lim\limits_{x\to0}{\frac{x\cdot\sin x^n}{(1-\cos x)\ln(1+x^2)}}&#x3D;\lim\limits_{x\to0}{\frac{x^{n+1}}{\frac{1}{2}x^4}}&#x3D;0 即 n+1\lt 4\Rightarrow n\lt3 \<br>\lim\limits_{x\to0}{\frac{e^{x^2}-1}{x\cdot\sin x^n}}&#x3D;\lim\limits_{x\to0}{\frac{x^2}{x^{n+1}}}&#x3D;0\Rightarrow n+1&gt;2 \Rightarrow n\gt1\<br>中上得1\lt n\lt 3,n为正整数即 n &#x3D; 2<br>$$</p>
+<h2><span id="8-加减rightarrow乘除">8 加减$\rightarrow$乘除</span></h2><p>$\frac{f(x)}{g(x)}&#x3D;c\not &#x3D;0$ , 若$f(x)\to 0,则g(x)\to0$</p>
 <p>例9 设$\lim\limits_{x\to+\infty}{(\sqrt{x^2+x+1}-ax-b)}&#x3D;0$，求常数$a,b$<br>$$<br>令x&#x3D;\frac{1}{t}，则当x\to+\infty时，t\to+0，此时可利用的方法很多\<br>\lim\limits_{x\to+\infty}{(\sqrt{x^2+x+1}-ax-b)}&#x3D;\lim\limits_{t\to+0}{\frac{(\sqrt{t^2+t+1}-a-bt)}{t}}&#x3D;0 \<br>因为分母t\to0,所以\lim\limits_{t\to+0}{(\sqrt{t^2+t+1}-a-bt)}&#x3D;1-a&#x3D;0,得 a &#x3D; 1 \<br>原式&#x3D;\lim\limits_{t\to+0}{\frac{(\sqrt{t^2+t+1}-1)}{t}-b}&#x3D;\lim\limits_{t\to+0}{\frac{\frac{1}{2}(t^2+t)}{t}-b}&#x3D;\frac{1}{2}-b&#x3D;0,得b&#x3D;\frac{1}{2}<br>$$</p>
-<h2 id="9-分段函数在某点连续"><a href="#9-分段函数在某点连续" class="headerlink" title="9 分段函数在某点连续"></a>9 分段函数在某点连续</h2><p>例10 求常数$a,b$,使<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>\frac{\ln(1+x)}{x},\quad x\gt 0 \<br>a,\qquad x&#x3D;0 \<br>\frac{\sqrt{1+x}-\sqrt{1-x}}{2bx},\quad -1\le x\lt0<br>\end{cases}<br>$$<br>在x&#x3D;0处连续。<br>$$<br>解，函数f(x)在x&#x3D;0处连续即\lim\limits_{x\to0^+}{f(x)}&#x3D;\lim\limits_{x\to0^-}{f(x)}&#x3D;f(0) \<br>\lim\limits_{x\to0^+}{f(x)}&#x3D;\lim\limits_{x\to0^+}{\frac{\ln(1+x)}{x}}&#x3D;1 \<br>f(0)&#x3D;a&#x3D;1, \<br>\lim\limits_{x\to0^-}{f(x)}&#x3D;\lim\limits_{x\to0^-}{\frac{\sqrt{1+x}-\sqrt{1-x}}{2bx}}&#x3D;\lim\limits_{x\to0^-}{\frac{(\sqrt{1+x}-\sqrt{1-x})(\sqrt{1+x}+\sqrt{1-x})}{2bx(\sqrt{1+x}+\sqrt{1-x})}}\<br>&#x3D;\frac{1}{2b}&#x3D;1，得b&#x3D;\frac{1}{2}<br>$$</p>
-<h2 id="10-间断点判别"><a href="#10-间断点判别" class="headerlink" title="10 间断点判别"></a>10 间断点判别</h2><p>例 11 设$f(x)&#x3D;\lim\limits_{n\to\infty}{\frac{1-x^{2n}}{1+x^{2n}}}\cdot x$,求$f(x)$的间断点并指明类型。<br>$$<br>解：f(x)是关于x的函数，但是表达式中处理了n\to\infty的极限，需要先处理极限;极限分析取决与x的取值范围； \<br>f(x)&#x3D;\lim\limits_{n\to\infty}{(\frac{2}{1+x^{2n}}-1)}\cdot x\<br>n\to\infty,当|x|&lt;1时，x^{2n}\to0,f(x)&#x3D;x；|x|&#x3D;1时,f(x)&#x3D;0；当|x|\gt1时，f(x)&#x3D;-x \<br>f(x)&#x3D;<br>\begin{cases}<br>-x,\quad x\lt-1 \<br>0,\quad  x&#x3D;-1 \<br>x,\quad -1\lt x\lt 1 \<br>0,\quad x&#x3D;1 \<br>-x,\quad x\gt0<br>\end{cases} \<br>\lim\limits_{x\to-1^-}{f(x)}&#x3D;\lim\limits_{x\to-1^-}{(-x)}&#x3D;1 \<br>\lim\limits_{x\to-1^+}{f(x)}&#x3D;\lim\limits_{x\to-1^+}{(x)}&#x3D;-1 \<br>f(-1)&#x3D;0 所有x&#x3D;-1为f(x)的第一类间断点中的跳跃间断点。 \<br>同理x&#x3D;1为f(x)的第一类间断点中的跳跃间断点。<br>$$</p>
-<h2 id="11-渐近线"><a href="#11-渐近线" class="headerlink" title="11 渐近线"></a>11 渐近线</h2><p>例如12 求曲线$f(x)&#x3D;\frac{2x^3}{x^2-3x+2}$的渐近线<br>$$<br>解：<br>渐近线有铅直、水平和斜渐近线 \<br>铅直找令\lim f(x)\to\infty的点 化简f(x)&#x3D;\frac{2x^3}{(x-1)(x-2)}  \<br>\lim\limits_{x\to1}{f(x)}&#x3D;\infty\quad \lim\limits_{x\to2}{f(x)}&#x3D;\infty \<br>所以x&#x3D;1和x&#x3D;2为f(x)的铅直渐近线 \<br>水平渐近线，看当x\to\infty的时候，f(x)的极限是否存在 \<br>\lim\limits_{x\to\infty}{f(x)}&#x3D;\lim\limits_{x\to\infty}{\frac{2x^3}{x^2-3x+2}}&#x3D;\infty不存在 \<br>所以f(x)没有水平渐近线 \<br>斜渐近线，看看\lim\limits_{x\to\infty}{\frac{f(x)}{x}}是否存在 \<br>\lim\limits_{x\to\infty}{\frac{f(x)}{x}}&#x3D;\lim\limits_{x\to\infty}{\frac{2x^3}{(x^2-3x+2)x}}&#x3D;2 ，即斜渐近线斜率为2\<br>求截距&#x3D;\lim\limits_{x\to \infty}{[f(x)-kx]}&#x3D;\lim\limits_{x\to\infty}{(\frac{2x^3}{x^2-3x+2}-2x)}&#x3D;6 \<br>所以斜渐近线为:y&#x3D;2x+6</p>
+<h2><span id="9-分段函数在某点连续">9 分段函数在某点连续</span></h2><p>例10 求常数$a,b$,使<br>$$<br>f(x)&#x3D;<br>\begin{cases}<br>\frac{\ln(1+x)}{x},\quad x\gt 0 \<br>a,\qquad x&#x3D;0 \<br>\frac{\sqrt{1+x}-\sqrt{1-x}}{2bx},\quad -1\le x\lt0<br>\end{cases}<br>$$<br>在x&#x3D;0处连续。<br>$$<br>解，函数f(x)在x&#x3D;0处连续即\lim\limits_{x\to0^+}{f(x)}&#x3D;\lim\limits_{x\to0^-}{f(x)}&#x3D;f(0) \<br>\lim\limits_{x\to0^+}{f(x)}&#x3D;\lim\limits_{x\to0^+}{\frac{\ln(1+x)}{x}}&#x3D;1 \<br>f(0)&#x3D;a&#x3D;1, \<br>\lim\limits_{x\to0^-}{f(x)}&#x3D;\lim\limits_{x\to0^-}{\frac{\sqrt{1+x}-\sqrt{1-x}}{2bx}}&#x3D;\lim\limits_{x\to0^-}{\frac{(\sqrt{1+x}-\sqrt{1-x})(\sqrt{1+x}+\sqrt{1-x})}{2bx(\sqrt{1+x}+\sqrt{1-x})}}\<br>&#x3D;\frac{1}{2b}&#x3D;1，得b&#x3D;\frac{1}{2}<br>$$</p>
+<h2><span id="10-间断点判别">10 间断点判别</span></h2><p>例 11 设$f(x)&#x3D;\lim\limits_{n\to\infty}{\frac{1-x^{2n}}{1+x^{2n}}}\cdot x$,求$f(x)$的间断点并指明类型。<br>$$<br>解：f(x)是关于x的函数，但是表达式中处理了n\to\infty的极限，需要先处理极限;极限分析取决与x的取值范围； \<br>f(x)&#x3D;\lim\limits_{n\to\infty}{(\frac{2}{1+x^{2n}}-1)}\cdot x\<br>n\to\infty,当|x|&lt;1时，x^{2n}\to0,f(x)&#x3D;x；|x|&#x3D;1时,f(x)&#x3D;0；当|x|\gt1时，f(x)&#x3D;-x \<br>f(x)&#x3D;<br>\begin{cases}<br>-x,\quad x\lt-1 \<br>0,\quad  x&#x3D;-1 \<br>x,\quad -1\lt x\lt 1 \<br>0,\quad x&#x3D;1 \<br>-x,\quad x\gt0<br>\end{cases} \<br>\lim\limits_{x\to-1^-}{f(x)}&#x3D;\lim\limits_{x\to-1^-}{(-x)}&#x3D;1 \<br>\lim\limits_{x\to-1^+}{f(x)}&#x3D;\lim\limits_{x\to-1^+}{(x)}&#x3D;-1 \<br>f(-1)&#x3D;0 所有x&#x3D;-1为f(x)的第一类间断点中的跳跃间断点。 \<br>同理x&#x3D;1为f(x)的第一类间断点中的跳跃间断点。<br>$$</p>
+<h2><span id="11-渐近线">11 渐近线</span></h2><p>例如12 求曲线$f(x)&#x3D;\frac{2x^3}{x^2-3x+2}$的渐近线<br>$$<br>解：<br>渐近线有铅直、水平和斜渐近线 \<br>铅直找令\lim f(x)\to\infty的点 化简f(x)&#x3D;\frac{2x^3}{(x-1)(x-2)}  \<br>\lim\limits_{x\to1}{f(x)}&#x3D;\infty\quad \lim\limits_{x\to2}{f(x)}&#x3D;\infty \<br>所以x&#x3D;1和x&#x3D;2为f(x)的铅直渐近线 \<br>水平渐近线，看当x\to\infty的时候，f(x)的极限是否存在 \<br>\lim\limits_{x\to\infty}{f(x)}&#x3D;\lim\limits_{x\to\infty}{\frac{2x^3}{x^2-3x+2}}&#x3D;\infty不存在 \<br>所以f(x)没有水平渐近线 \<br>斜渐近线，看看\lim\limits_{x\to\infty}{\frac{f(x)}{x}}是否存在 \<br>\lim\limits_{x\to\infty}{\frac{f(x)}{x}}&#x3D;\lim\limits_{x\to\infty}{\frac{2x^3}{(x^2-3x+2)x}}&#x3D;2 ，即斜渐近线斜率为2\<br>求截距&#x3D;\lim\limits_{x\to \infty}{[f(x)-kx]}&#x3D;\lim\limits_{x\to\infty}{(\frac{2x^3}{x^2-3x+2}-2x)}&#x3D;6 \<br>所以斜渐近线为:y&#x3D;2x+6</p>
 <p>$$</p>
-<h2 id="12-方程根的存在性-零点定理"><a href="#12-方程根的存在性-零点定理" class="headerlink" title="12 方程根的存在性(零点定理)"></a>12 方程根的存在性(零点定理)</h2><p>例13 设$f(x)在[a,b]$连续，$f(a)&#x3D;f(b)$。证明：存在$\xi\in[a,b]$使得$f(\xi)&#x3D;f(\xi+\frac{b-a}{2})$<br>$$<br>令g(x)&#x3D;f(x)-f(x+\frac{b-a}{2}),x\in[a,\frac{a+b}{2}] \<br>因为f(x)在[a,b]上连续，则g(x)在[a,\frac{a+b}{2}]上连续\<br>g(a)&#x3D;f(a)-f(a+\frac{b-a}{2})&#x3D;f(a)-f(\frac{a+b}{2}) \<br>g(\frac{a+b}{2})&#x3D;f(\frac{a+b}{2})-f(\frac{a+b}{2}+\frac{b-a}{2})&#x3D;f(\frac{a+b}{2})-f(b) \<br>因为f(a)&#x3D;f(b)<br>若f(a)&#x3D;f(\frac{a+b}{2}),则\xi取a满足条件\<br>若f(a)\not&#x3D;f(\frac{a+b}{2}) 则g(a)和g(\frac{a+b}{2})异号,根据零点定理有\<br>\exists\xi\in[a,\frac{a+b}{2}]\subseteq[a,b],使得g(\xi)&#x3D;f(\xi)-f(\xi+\frac{b-a}{2})&#x3D;0即 \<br>$f(\xi)&#x3D;f(\xi+\frac{b-a}{2})<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="12-方程根的存在性零点定理">12 方程根的存在性(零点定理)</span></h2><p>例13 设$f(x)在[a,b]$连续，$f(a)&#x3D;f(b)$。证明：存在$\xi\in[a,b]$使得$f(\xi)&#x3D;f(\xi+\frac{b-a}{2})$<br>$$<br>令g(x)&#x3D;f(x)-f(x+\frac{b-a}{2}),x\in[a,\frac{a+b}{2}] \<br>因为f(x)在[a,b]上连续，则g(x)在[a,\frac{a+b}{2}]上连续\<br>g(a)&#x3D;f(a)-f(a+\frac{b-a}{2})&#x3D;f(a)-f(\frac{a+b}{2}) \<br>g(\frac{a+b}{2})&#x3D;f(\frac{a+b}{2})-f(\frac{a+b}{2}+\frac{b-a}{2})&#x3D;f(\frac{a+b}{2})-f(b) \<br>因为f(a)&#x3D;f(b)<br>若f(a)&#x3D;f(\frac{a+b}{2}),则\xi取a满足条件\<br>若f(a)\not&#x3D;f(\frac{a+b}{2}) 则g(a)和g(\frac{a+b}{2})异号,根据零点定理有\<br>\exists\xi\in[a,\frac{a+b}{2}]\subseteq[a,b],使得g(\xi)&#x3D;f(\xi)-f(\xi+\frac{b-a}{2})&#x3D;0即 \<br>$f(\xi)&#x3D;f(\xi+\frac{b-a}{2})<br>$$</p>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -1106,7 +1106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0112%E4%B9%A0%E9%A2%98-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5p0uw000ju01o2ae1gznb" data-title="0112习题-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/11/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0112%E4%B9%A0%E9%A2%98-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq5v140000uv71o0zgbh5vj" data-title="0112习题-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

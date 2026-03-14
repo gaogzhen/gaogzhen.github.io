@@ -16,7 +16,7 @@
 <meta property="og:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/L:/BaiduSyncdisk/study/math/note/05%E5%AE%9A%E7%A7%AF%E5%88%86/images/%E5%AE%9A%E7%A7%AF%E5%88%86.png">
 <meta property="og:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/L:/BaiduSyncdisk/study/math/note/05%E5%AE%9A%E7%A7%AF%E5%88%86/images/%E4%BE%8B1.bmp">
 <meta property="article:published_time" content="2026-03-05T17:01:19.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.322Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.264Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/L:/BaiduSyncdisk/study/math/note/05%E5%AE%9A%E7%A7%AF%E5%88%86/images/%E5%AE%9A%E7%A7%AF%E5%88%86.png">
@@ -99,9 +99,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-定积分总结"><a href="#1-定积分总结" class="headerlink" title="1 定积分总结"></a>1 定积分总结</h2><p>定积分思维导图如下1-1所示，文件在末尾仓库中自取。</p>
+<h2><span id="1-定积分总结">1 定积分总结</span></h2><p>定积分思维导图如下1-1所示，文件在末尾仓库中自取。</p>
 <p><img src="/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/L:/BaiduSyncdisk/study/math/note/05%E5%AE%9A%E7%A7%AF%E5%88%86/images/%E5%AE%9A%E7%A7%AF%E5%88%86.png" alt="定积分"></p>
-<h2 id="2-练习"><a href="#2-练习" class="headerlink" title="2 练习"></a>2 练习</h2><p>例1 设在区间$[a,b]$上，$f(x)\gt0,f^{‘}(x)\lt0,f^{‘’}(x)\gt0，记S_1&#x3D;\int_a^bf(x)dx,S_2&#x3D;f(b)(b-a),S_3&#x3D;\frac{1}{2}<a href="b-a">f(b)+f(a)</a>$,则</p>
+<h2><span id="2-练习">2 练习</span></h2><p>例1 设在区间$[a,b]$上，$f(x)\gt0,f^{‘}(x)\lt0,f^{‘’}(x)\gt0，记S_1&#x3D;\int_a^bf(x)dx,S_2&#x3D;f(b)(b-a),S_3&#x3D;\frac{1}{2}<a href="b-a">f(b)+f(a)</a>$,则</p>
 <p>$（A) S_1\lt S_2\lt S_3\quad(B)S_2\lt S_1\lt S_3\quad(C)S_3\lt S_1\lt S_2\quad(D)S_2\lt S_3\lt S_1$</p>
 <p>分析含有定积分，区间断点比较大小，直观方式就是根据其几何意义来判断：</p>
 <ul>
@@ -122,7 +122,7 @@
 <p>$$<br>解：令x-1&#x3D;t,dx&#x3D;dt\<br>\int_0^2f(x-1)dx&#x3D;\int_{-1}^1f(t)dt\<br>定积分和积分变量无关,\<br>∴\int_{-1}^1f(x)dx&#x3D;\int_{-1}^0f(x)dx+\int_0^1f(x)dx\<br>&#x3D;\int_{-1}^0\frac{1}{1+e^x}dx+\int_0^1\frac{1}{1+x}dx\<br>&#x3D;1-\int_{-1}^0\frac{e^x}{1+e^x}dx+\ln(1+x)|<em>0^1\<br>&#x3D; 1-\ln(1+e^x)|</em>{-1}^0+\ln2&#x3D;\ln(e+1)<br>$$</p>
 <p>例11 已知$f(2)&#x3D;\frac{1}{2},f^{‘}(2)&#x3D;0,\int_0^2f(x)dx&#x3D;1,求\int_0^1x^2f^{‘’}(2x)dx$<br>$$<br>解：令2x&#x3D;t,dx&#x3D;\frac{1}{2}dt\<br>\int_0^1x^2f^{‘’}(2x)dx&#x3D;\frac{1}{2}\int_0^2(\frac{1}{2}t)^2f^{‘’}(t)dt&#x3D;\frac{1}{8}\int_0^2x^2df^{‘}(x)\<br>&#x3D;[\frac{1}{8}x^2f^{‘}(x)]|_0^2-\frac{1}{4}\int_0^2xdf(x)\<br>&#x3D;-\frac{1}{4}xf(x)|_0^2+\frac{1}{4}\int_0^2f(x)dx&#x3D;-\frac{1}{4}+\frac{1}{4}&#x3D;0<br>$$<br>例12 计算反常积分$I&#x3D;\int_1^{+\infty}\frac{dx}{x\sqrt{1+x^5+x^{10}}}dx$​<br>$$<br>解：令x&#x3D;\frac{1}{t},dt&#x3D;-\frac{1}{t^2}\<br>\int_1^{+\infty}\frac{dx}{x\sqrt{1+x^5+x^{10}}}&#x3D;-\int_1^0\frac{1}{t^2}\cdot\frac{1}{\frac{1}{t}\sqrt{1+(\frac{1}{t})^5+(\frac{1}{t})^{10}}}dt\<br>&#x3D;\frac{1}{5}\int_0^1\frac{1}{(t^5+\frac{1}{2})^2+\frac{3}{4}}d(t^5+\frac{1}{2})\<br>&#x3D;[\frac{1}{5}\ln(t^5+\frac{1}{2}+\sqrt{t^10+t^5+1})]|_0^1&#x3D;\frac{1}{5}\ln(3+2\sqrt3)<br>$$<br>例13 设f(x)在区间[0,1]上可微，且满足$f(1)&#x3D;2\int_0^\frac{1}{2}xf(x)dx$,试证明在$(0,1)$内至少存在一点$\xi,使f(\xi)+\xi f^{‘}(\xi)&#x3D;0$<br>$$<br>证明：令F(x)&#x3D;xf(x),f(x)在[0,1]上可微，则F(x)在[0,1]上连续，在(0,1)可导\<br>∵F(1)&#x3D;f(1)&#x3D;2\int_0^\frac{1}{2}xf(x)dx,根据定积分中值定理有\<br>\exist \xi\in[0,\frac{1}{2}],使得\<br>2\int_0^{\frac{1}{2}}xf(x)dx&#x3D;2\cdot\theta f(\theta)(\frac{1}{2}-0)&#x3D;\theta f(\theta)&#x3D;F(\theta)\<br>即\exist\theta\in[0,\frac{1}{2}]\subset(0,1),使得F(1)&#x3D;F(\theta),根据罗尔定理有\<br>\exist\xi\in(0,1)使得F^{‘}(\xi)&#x3D;0,即\<br>f(\xi)+\xi f^{‘}(\xi)&#x3D;0<br>$$</p>
 <p>例14 设$f^{‘}(x)在[0,a]$上连续，且$f(0)&#x3D;0$。证明：$|\int_0^af(x)dx|\le\frac{Ma^2}{2},其中M&#x3D;max|f^{‘}(x)|,0\le x\le a$<br>$$<br>证明：[0,a]上，根据拉格朗日中值定理有\<br>f(x)-f(0)&#x3D;f^{‘}(\xi)(x-0)(\xi\in(0,a)),即\<br>f(x)&#x3D;f^{‘}(\xi)x\<br>|\int_0^af(x)dx|\le\int_0^a|f(x)|dx\le\int_0^aMxdx\<br>&#x3D;\frac{1}{2}Mx^2|_0^a&#x3D;\frac{Ma^2}{2}\<br>∴|\int_0^af(x)dx|\le\frac{Ma^2}{2}<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -133,7 +133,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0505%E4%B9%A0%E9%A2%98-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v40014u01ofz9fghqu" data-title="0505习题-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0505%E4%B9%A0%E9%A2%98-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v149001fv71o2fdo8vrk" data-title="0505习题-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

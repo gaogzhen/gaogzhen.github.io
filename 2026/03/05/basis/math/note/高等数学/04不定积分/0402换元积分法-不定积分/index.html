@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/L:/study/math/note/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/images/20320223-%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF.svg">
 <meta property="og:image" content="http://example.com/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/L:/study/math/note/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/images/20230226-0402-x-1=tant.png">
 <meta property="article:published_time" content="2026-03-05T17:01:19.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.314Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.254Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://bkimg.cdn.bcebos.com/formula/07792690a852ebba3ef29681e3ffb867.svg">
@@ -104,7 +104,7 @@
       
         <p>[TOC]</p>
 <p>把复合函数的微分法反过来用于求不定积分，利用中间变量的代换，得到复合函数的积分法，称为换元积分法。换元法分为两类。</p>
-<h2 id="1-第一类换元法"><a href="#1-第一类换元法" class="headerlink" title="1 第一类换元法"></a>1 第一类换元法</h2><h3 id="1-1-定理1"><a href="#1-1-定理1" class="headerlink" title="1.1 定理1"></a>1.1 定理1</h3><p>设$f(u)$具有原函数$F(u)$,即</p>
+<h2><span id="1-第一类换元法">1 第一类换元法</span></h2><h3><span id="11-定理1">1.1 定理1</span></h3><p>设$f(u)$具有原函数$F(u)$,即</p>
 <p>$F^{‘}(u)&#x3D;f(u),\int{f(u)du}&#x3D;F(u)+C$</p>
 <p>如果u是中间变量:$u&#x3D;\phi(x)，且设\phi(x)$可微，那么根据复合函数微分法，有</p>
 <p>$dF[\phi(x)]&#x3D;f[\phi(x)]\phi^{‘}(x)dx$,</p>
@@ -114,7 +114,7 @@
 <p>定理1 设$f(u)$具有原函数，$u&#x3D;\phi(x)$可导，则有换元公式</p>
 <p>$\int{f[\phi(x)]\phi^{‘}(x)dx}&#x3D;[\int{f(u)du}]_{u&#x3D;\phi(x)}$</p>
 </blockquote>
-<h3 id="1-2-例题"><a href="#1-2-例题" class="headerlink" title="1.2 例题"></a>1.2 例题</h3><p>例1 求$\int{\frac{1}{3+2x}dx}$<br>$$<br>解：\<br>\int{\frac{1}{3+2x}dx}&#x3D;\frac{1}{2}\int{\frac{1}{3+2x}d(3+2x)}&#x3D;\frac{1}{2}\ln|3+2x|+C<br>$$<br>例2 求$\int{\frac{x^2}{(x+2)^3}dx}$</p>
+<h3><span id="12-例题">1.2 例题</span></h3><p>例1 求$\int{\frac{1}{3+2x}dx}$<br>$$<br>解：\<br>\int{\frac{1}{3+2x}dx}&#x3D;\frac{1}{2}\int{\frac{1}{3+2x}d(3+2x)}&#x3D;\frac{1}{2}\ln|3+2x|+C<br>$$<br>例2 求$\int{\frac{x^2}{(x+2)^3}dx}$</p>
 <p>注：分式积分，分母越简单越易积<br>$$<br>解：\<br>令u&#x3D;x+2,x&#x3D;u-2 \<br>\int{\frac{x^2}{(x+2)^3}dx}&#x3D;\int{\frac{(u-2)^2}{u^3}du}\<br>&#x3D;\int{\frac{1}{u}du}-\int{\frac{4}{u^2}du}+\int{\frac{4}{u^3}du}\<br>&#x3D;\ln|x+2|+\frac{4}{x+2}-\frac{1}{2(x+2)^2}+C<br>$$</p>
 <p>例3 求$\int{\frac{1}{a^2+x^2}dx}$</p>
 <p>解析：基本积分公式$\int{\frac{1}{1+x^2}dx}&#x3D;\arctan x+C$<br>$$<br>解:\<br>\int{\frac{1}{a^2+x^2}dx}&#x3D;\frac{1}{a^2}\int{\frac{1}{1+(\frac{x}{a})^2}dx}\<br>&#x3D;\frac{1}{a}\int{\frac{1}{1+(\frac{x}{a})^2}d(\frac{x}{a})}&#x3D;\frac{1}{a}\arctan\frac{x}{a}+C<br>$$</p>
@@ -134,7 +134,7 @@
 <p>类似可得$\int{\cot xdx}&#x3D;\ln|\sin x|+C$</p>
 </blockquote>
 <p>例9 求$\int{\frac{x^3}{(x^2-2x+2)}}$</p>
-<h3 id="1-2-常见凑微分形式"><a href="#1-2-常见凑微分形式" class="headerlink" title="1.2 常见凑微分形式"></a>1.2 常见凑微分形式</h3><h4 id="1-2-1常见基本的导数公式的逆运算"><a href="#1-2-1常见基本的导数公式的逆运算" class="headerlink" title="1.2.1常见基本的导数公式的逆运算"></a>1.2.1常见基本的导数公式的逆运算</h4><ol>
+<h3><span id="12-常见凑微分形式">1.2 常见凑微分形式</span></h3><h4><span id="121常见基本的导数公式的逆运算">1.2.1常见基本的导数公式的逆运算</span></h4><ol>
 <li>$\int{f(\frac{1}{x})\cdot\frac{1}{x^2}dx}&#x3D;-\int{f(\frac{1}{x})d\frac{1}{x}}$</li>
 <li>$\int{f(\sqrt{x})\frac{1}{\sqrt{x}}dx}&#x3D;2\int{f(\sqrt{x})d\sqrt{x}}$</li>
 <li>$\int{f(\sin x)\cos xdx}&#x3D;\int{f(\sin x)d\sin x}$</li>
@@ -149,7 +149,7 @@
 <li>$\int{f(\arctan x)\frac{1}{1+x^2}dx}&#x3D;\int{f(\arcsin x)d\arctan x}$</li>
 <li>$\int{f(e^x)e^xdx}&#x3D;\int{f(e^x)de^x}$</li>
 </ol>
-<h4 id="1-2-2被积函数含有三角函数"><a href="#1-2-2被积函数含有三角函数" class="headerlink" title="1.2.2被积函数含有三角函数"></a>1.2.2被积函数含有三角函数</h4><p>常用的三角恒等式：</p>
+<h4><span id="122被积函数含有三角函数">1.2.2被积函数含有三角函数</span></h4><p>常用的三角恒等式：</p>
 <ol>
 <li>$\sin^2x+\cos^2x &#x3D; 1$</li>
 <li>$1+\tan^2x&#x3D;\sec^2x$</li>
@@ -179,7 +179,7 @@
 <blockquote>
 <p> $\tan^nx\sec^{2k}x或者\tan^{2k-1}x\sec^nx(n,k\in N_+)$型积分，可依次做变换$u&#x3D;\tan x或u&#x3D;\sec x$</p>
 </blockquote>
-<h2 id="2-第二类换元法"><a href="#2-第二类换元法" class="headerlink" title="2 第二类换元法"></a>2 第二类换元法</h2><h3 id="2-1-定理2"><a href="#2-1-定理2" class="headerlink" title="2.1 定理2"></a>2.1 定理2</h3><blockquote>
+<h2><span id="2-第二类换元法">2 第二类换元法</span></h2><h3><span id="21-定理2">2.1 定理2</span></h3><blockquote>
 <p>设$x&#x3D;\phi(t)$是单调可导的函数，并且$\phi^{‘}(t)\not&#x3D;0.又设f[\phi(t)]\phi^{‘}(t)$具有原函数，则有换元公式</p>
 <p>$\int{f(x)dx}&#x3D;[\int{f[\phi(t)]\phi^{‘}(t)dt}]_{t&#x3D;\phi^{-1}(x)}$</p>
 <p>其中$\phi^{-1}(x)是x&#x3D;\phi(t)$的反函数。</p>
@@ -191,19 +191,19 @@
 <li>必须替换微分$dx&#x3D;\phi^{‘}(t)dt$</li>
 <li>最后结果必须还原成原来积分变量$t&#x3D;\phi^{-1}(x)$</li>
 </ol>
-<h3 id="2-2-常见第二换元代换方法"><a href="#2-2-常见第二换元代换方法" class="headerlink" title="2.2 常见第二换元代换方法"></a>2.2 常见第二换元代换方法</h3><ul>
+<h3><span id="22-常见第二换元代换方法">2.2 常见第二换元代换方法</span></h3><ul>
 <li>三角代换</li>
 <li>倒代换</li>
 <li>根式代换</li>
 </ul>
-<h4 id="2-2-1-三角代换-弦代换"><a href="#2-2-1-三角代换-弦代换" class="headerlink" title="2.2.1 三角代换-弦代换"></a>2.2.1 三角代换-弦代换</h4><p>正弦或者余弦代换</p>
+<h4><span id="221-三角代换-弦代换">2.2.1 三角代换-弦代换</span></h4><p>正弦或者余弦代换</p>
 <p>例1 求$\int{\sqrt{a^2-x^2}dx}(a\gt0)$<br>$$<br>解：令x&#x3D;a\sin t,-\frac{\pi}{2}\lt t\lt\frac{\pi}{2}\<br>\sqrt{a^2-x^2}&#x3D;a\cos t,dx&#x3D;a\cos tdt \<br>\int{\sqrt{a^2-x^2}dx}&#x3D;\int{a\cos t\cdot a\cos tdt}&#x3D;\frac{a^2}{2}t+\frac{a^2}{4}\sin2t+C\<br>&#x3D;\frac{a^2}{2}t+\frac{a^2}{2}\sin t\cos t+C\<br>其中t&#x3D;\arcsin\frac{x}{a},\sin t&#x3D;\frac{x}{a},\cos t&#x3D;\frac{\sqrt{a^2-x^2}}{a}\<br>\int{\sqrt{a^2-x^2}dx}&#x3D;\frac{a^2}{2}\arcsin\frac{x}{a}+\frac{x\sqrt{a^2-x^2}}{2}+C<br>$$</p>
-<h4 id="2-2-2-三角代换-切代换"><a href="#2-2-2-三角代换-切代换" class="headerlink" title="2.2.2 三角代换-切代换"></a>2.2.2 三角代换-切代换</h4><p>正切或者余切</p>
+<h4><span id="222-三角代换-切代换">2.2.2 三角代换-切代换</span></h4><p>正切或者余切</p>
 <p>例2 求$\int{\frac{1}{\sqrt{x^2+a^2}}dx}(a&gt;0)$<br>$$<br>解：令x&#x3D;a\tan t,-\frac{\pi}{2}\lt t\lt\frac{\pi}{2} \<br>\sqrt{x^2+a^2}&#x3D;a\sec t,dx&#x3D;asec^2t \<br>\int{\frac{1}{\sqrt{x^2+a^2}}dx}&#x3D;\int{\frac{1}{a\sec t}\cdot a\sec^2tdt}\<br>&#x3D;\int{\sec tdt}&#x3D;\ln|\sec t+\tan t|+C \<br>其中\tan t&#x3D;\frac{x}{a},\sec t&#x3D;\frac{\sqrt{x^2+a^2}}{a} \<br>\int{\frac{1}{\sqrt{x^2+a^2}}dx}&#x3D;\ln|\frac{\sqrt{x^2+a^2}}{a}+\frac{x}{a}|+C_1\<br>&#x3D;ln(\sqrt{x^2+a^2}+x)+C<br>$$</p>
-<h4 id="2-2-3-三角代换-割代换"><a href="#2-2-3-三角代换-割代换" class="headerlink" title="2.2.3 三角代换-割代换"></a>2.2.3 三角代换-割代换</h4><p>正割或者余割</p>
+<h4><span id="223-三角代换-割代换">2.2.3 三角代换-割代换</span></h4><p>正割或者余割</p>
 <p>例3 求$\int{\frac{1}{\sqrt{x^2-a^2}}dx}(a\gt0)$<br>$$<br>解：定义域x\gt a或者x\lt -a \<br>(1)当x\gt a时，令x&#x3D;a\sec t,0\lt t\lt\frac{\pi}{2} \<br>\sqrt{x^2-a^2}&#x3D;a\tan t,dx&#x3D;a\sec t\tan tdt \<br>\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;\int{\frac{1}{a\tan t}a\sec t\tan tdt}\<br>&#x3D;\int{\sec tdt}&#x3D;\ln|\sec t+\tan t|+C_1 \<br>其中\sec t&#x3D;\frac{x}{a},\tan t&#x3D;\frac{\sqrt{x^2-a^2}}{a} \<br>\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;\ln(x+\sqrt{x^2-a^2})+C \<br>(2)当x\lt -a时,令u&#x3D;-x,则u\gt a \<br>\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;-\int{\frac{1}{\sqrt{u^2-a^2}}du}\<br>&#x3D;-\ln(u+\sqrt{u^2-a^2})+C&#x3D;-\ln(-x+\sqrt{x^2-a^2})+C&#x3D;\ln(-x-\sqrt{x^2-a^2})+C_1\</p>
 <p>综上当x\gt a时，\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;\ln(x+\sqrt{x^-a^2})+C \<br>x\lt -a时，\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;\ln(-x-\sqrt{x^2-a^2})+C\<br>所以\int{\frac{1}{\sqrt{x^2-a^2}}dx}&#x3D;\ln|x+\sqrt{x^2-a^2}|+C<br>$$</p>
-<h4 id="2-2-4-三角代换汇总"><a href="#2-2-4-三角代换汇总" class="headerlink" title="2.2.4 三角代换汇总"></a>2.2.4 三角代换汇总</h4><table>
+<h4><span id="224-三角代换汇总">2.2.4 三角代换汇总</span></h4><table>
 <thead>
 <tr>
 <th>被积函数中函数含有</th>
@@ -223,12 +223,12 @@
 <td>$x\gt a,x&#x3D;a\sec t,0\lt t\lt \frac{\pi}{2}$</td>
 </tr>
 </tbody></table>
-<h4 id="2-2-5-倒代换"><a href="#2-2-5-倒代换" class="headerlink" title="2.2.5 倒代换"></a>2.2.5 倒代换</h4><blockquote>
+<h4><span id="225-倒代换">2.2.5 倒代换</span></h4><blockquote>
 <p>适用：分母次数&gt;分子次数</p>
 </blockquote>
 <p>例4 求$\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}(a\not&#x3D;0)$<br>$$<br>解：(1)利用上面的三角代换，自己做\<br>(1)倒代换,令x&#x3D;\frac{1}{t} \<br>dx&#x3D;-\frac{1}{t^2},\sqrt{a^2-x^2}&#x3D;\frac{\sqrt{a^2t^2-1}}{|t|} \<br>\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}&#x3D;\int{\frac{\sqrt{a^2t^2-1}}{|t|}\cdot t^4\cdot(-\frac{1}{t^2})dt} \<br>&#x3D;-\int{\sqrt{a^2t^2-1}\cdot|t|dt} \<br>当x\gt0时，t&#x3D;\frac{1}{x}\gt0\<br>\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}&#x3D;-\frac{1}{2a^2}\int{(a^2t^2-1)^{\frac{1}{2}}d(a^2t^2-1)dt}&#x3D;-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C\<br>当x\lt0时，t&#x3D;\frac{1}{x}\lt0\<br>\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}&#x3D;-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C \<br>综上 \int{\frac{\sqrt{a^2-x^2}}{x^4}dx}&#x3D;-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C<br>$$</p>
-<h4 id="2-2-6-根式代换"><a href="#2-2-6-根式代换" class="headerlink" title="2.2.6 根式代换"></a>2.2.6 根式代换</h4><p>例5 求$\int{\frac{1}{1+\sqrt{2x}}dx}$<br>$$<br>解：令\sqrt{2x}&#x3D;t,x&#x3D;\frac{t^2}{2},dx&#x3D;t \<br>\int{\frac{1}{1+\sqrt{2x}}dx}&#x3D;\int{\frac{t}{1+t}dt}&#x3D;t-\ln|t+1|+C\<br>&#x3D;\sqrt{2x}-\ln|sqrt{2x}+1|+C<br>$$</p>
-<h2 id="3-积分推导公式"><a href="#3-积分推导公式" class="headerlink" title="3 积分推导公式"></a>3 积分推导公式</h2><p>常用积分公式，除了基本积分表中，在添加下面几个前面推导的公式：</p>
+<h4><span id="226-根式代换">2.2.6 根式代换</span></h4><p>例5 求$\int{\frac{1}{1+\sqrt{2x}}dx}$<br>$$<br>解：令\sqrt{2x}&#x3D;t,x&#x3D;\frac{t^2}{2},dx&#x3D;t \<br>\int{\frac{1}{1+\sqrt{2x}}dx}&#x3D;\int{\frac{t}{1+t}dt}&#x3D;t-\ln|t+1|+C\<br>&#x3D;\sqrt{2x}-\ln|sqrt{2x}+1|+C<br>$$</p>
+<h2><span id="3-积分推导公式">3 积分推导公式</span></h2><p>常用积分公式，除了基本积分表中，在添加下面几个前面推导的公式：</p>
 <ol>
 <li>$\int{\tan xdx}&#x3D;-\ln|\cos x|+C$</li>
 <li>$\int{\cot xdx}&#x3D;\ln|\sin x|+C$</li>
@@ -241,7 +241,7 @@
 <li>$\int{\frac{dx}{\sqrt{x^2-a^2}}}&#x3D;\ln|x+\sqrt{x^2-a^2}|+C$</li>
 </ol>
 <p>例6 求 $\int{\frac{x^3}{(x^2-2x+2)^2}dx}$<br>$$<br>解：\<br>x^2-2x+2&#x3D;(x-1)^2+1 ,令x-1&#x3D;\tan t ,(-\frac{\pi}{2}\lt t\lt\frac{\pi}{2})\<br>\int{\frac{x^3}{(x^2-2x+2)^2}dx}&#x3D;\int{\frac{(\tan t+1)^3}{\sec^4t}\sec^2tdt}\<br>&#x3D;\int{(\sin^3t\cos^{-1}t+3\sin^2t+3\sin t\cos t+\cos^2t)dt}\<br>&#x3D;-\ln\cos t-\cos^2t+2t-\sin t\cos t+C\<br>按\tan t&#x3D;x-1做辅助三角形，\<br>\cos t&#x3D;\frac{1}{\sqrt{x^2-2x+2}},\sin t&#x3D;\frac{x-1}{\sqrt{x^2-2x+2}} \<br>\int{\frac{x^3}{(x^2-2x+2)^2}dx}&#x3D;\frac{1}{2}\ln(x^2-2x+2)+2\arctan(x-1)-\frac{x}{x^2-2x+2}+C<br>$$<br>辅助三角形图示：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/20230226-0402-x-1=tant-800w.webp 800w, opt-images/20230226-0402-x-1=tant-1280w.webp 1280w, opt-images/20230226-0402-x-1=tant-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/20230226-0402-x-1=tant-optimized.png" alt="20230226-0402-x-1&#x3D;tant" width="161" height="96" loading="lazy"></picture></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -255,7 +255,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0402%E6%8D%A2%E5%85%83%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5p0v0000wu01oaobrc06o" data-title="0402换元积分法-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0402%E6%8D%A2%E5%85%83%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq5v1470017v71o3go885s9" data-title="0402换元积分法-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

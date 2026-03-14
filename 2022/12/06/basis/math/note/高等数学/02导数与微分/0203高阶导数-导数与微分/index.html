@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1 高阶导数的定义 一般地，函数$y&#x3D;f(x)$的导数$y^{‘}&#x3D;f^{‘}(x)$仍然是$x$的导数。我们把$y^{‘}&#x3D;f^{‘}(x)$的导数叫做函数$y&#x3D;f(x)$的二阶导数，记做$y^{‘’}或者\frac{dy^2}{dx^2}$;类似地，二级导数的导数，叫做三阶导数，三阶导数的导数叫做四阶导数…一般地，$(n-1)$阶导数的导数叫">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-06T16:14:32.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.311Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.251Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-高阶导数的定义"><a href="#1-高阶导数的定义" class="headerlink" title="1 高阶导数的定义"></a>1 高阶导数的定义</h2><blockquote>
+<h2><span id="1-高阶导数的定义">1 高阶导数的定义</span></h2><blockquote>
 <p>一般地，函数$y&#x3D;f(x)$的导数$y^{‘}&#x3D;f^{‘}(x)$仍然是$x$的导数。我们把$y^{‘}&#x3D;f^{‘}(x)$的导数叫做函数$y&#x3D;f(x)$的二阶导数，记做$y^{‘’}或者\frac{dy^2}{dx^2}$;类似地，二级导数的导数，叫做三阶导数，三阶导数的导数叫做四阶导数…一般地，$(n-1)$阶导数的导数叫做n阶导数，分别记做</p>
 <p>$y^{‘’’},y^{(4)},\cdots,y^{(n)}$或者$\frac{dy^{3}}{dx^3},\frac{dy^4}{dx^4},\cdots,\frac{dy^{n}}{dx^n}$</p>
 <p>二阶即二阶以上的导数统称高阶导数。</p>
@@ -107,7 +107,7 @@
 <li>若$f(x)$在x处具有n阶导数，那么$f(x)$在点x的某一邻域内必定具有一切低于n阶的导数。</li>
 <li>C(a,b):在开区间$(a,b)$内连续的函数的集合,$D(a,b)$所有在开区间$(a,b)$内可导的函数的集合。</li>
 </ul>
-<h2 id="2-高阶导数的求导"><a href="#2-高阶导数的求导" class="headerlink" title="2 高阶导数的求导"></a>2 高阶导数的求导</h2><h3 id="2-1-直接法"><a href="#2-1-直接法" class="headerlink" title="2.1 直接法"></a>2.1 直接法</h3><p>例1：求$y&#x3D;e^{\lambda x}的n$阶导数($\lambda$为常数)<br>$$<br>y^{‘}&#x3D;\lambda e^{\lambda}x,y^{‘’}&#x3D;\lambda^2 e^{\lambda}x，\cdots,y^{(n)}&#x3D;\lambda^{n} e^{\lambda}x<br>$$</p>
+<h2><span id="2-高阶导数的求导">2 高阶导数的求导</span></h2><h3><span id="21-直接法">2.1 直接法</span></h3><p>例1：求$y&#x3D;e^{\lambda x}的n$阶导数($\lambda$为常数)<br>$$<br>y^{‘}&#x3D;\lambda e^{\lambda}x,y^{‘’}&#x3D;\lambda^2 e^{\lambda}x，\cdots,y^{(n)}&#x3D;\lambda^{n} e^{\lambda}x<br>$$</p>
 <blockquote>
 <p>$(e^{x})^{(n)&#x3D;e^{x}}$</p>
 <p>$(e^{\lambda x})^{(n)}&#x3D;\lambda^{n} e^{\lambda}x$ </p>
@@ -139,7 +139,7 @@
 <p>(5)$\quad(\frac{1}{x+1})^{(n)}&#x3D;\frac{(-1)^nn!}{(x+1)^{n+1}}$</p>
 <p>(6)$\quad(\frac{1}{ax+b})^{(n)}&#x3D;\frac{(-1)^nn!a^n}{(ax+b)^{n+1}}\quad a\not&#x3D;0$</p>
 </blockquote>
-<h3 id="2-2-间接法"><a href="#2-2-间接法" class="headerlink" title="2.2 间接法"></a>2.2 间接法</h3><p>高阶导数的运算法则：</p>
+<h3><span id="22-间接法">2.2 间接法</span></h3><p>高阶导数的运算法则：</p>
 <blockquote>
 <p>设$u&#x3D;u(x),v&#x3D;v(x)具有n阶导数，则$</p>
 <p>(1)$\quad(u\pm v)^{(n)}&#x3D;u^{(n)}\pm v^{(n)}$</p>
@@ -155,7 +155,7 @@
 </ul>
 <p>例9：设$y&#x3D;\arctan x,求y^{(n)}(0),(n\gt1)$<br>$$<br>直接求n阶导数很复杂，先求一阶导数 \<br>y^{‘}&#x3D;\frac{1}{x^2+1}\rightarrow  y^{‘}(x^2+1)&#x3D;1  \<br>等式左侧为2个关于x的函数乘积形式，其他一个为多项式。 \<br>[y^{‘}(x^2+1)]^{(n-1)}&#x3D;0  \<br>C_{n-1}^0(x^2+1)y^{(n)}+C_{n-1}^1(x^2+1)^{‘}y^{(n-1)}+C_{n-1}^2(x^2+1)^{‘’}y^{(n-2)} \<br>&#x3D;(x^2+1)y^{(n)}+(n-1)2xy^{(n-1)}+(n-1)(n-2)y^{(n-2)}&#x3D;0 \<br>把x&#x3D;0带入：<br>y^{(n)}(0)&#x3D;-(n-1)(n-2)y^{(n-2)}(0) \<br>y^{‘}(0)&#x3D;1,y^{‘’}(0)&#x3D;0 因此 \<br>y^{(n)}(0)&#x3D;<br>\begin{cases}<br>0,\quad n&#x3D;2k, \<br>(-1)^k(2k)!,n&#x3D;2k+1(k&#x3D;0,1,2,\cdots)<br>\end{cases}</p>
 <p>$$</p>
-<h2 id="3-后记"><a href="#3-后记" class="headerlink" title="3 后记"></a>3 后记</h2><blockquote>
+<h2><span id="3-后记">3 后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -166,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0203%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5p0ux000mu01odi0q6o6b" data-title="0203高阶导数-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/12/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0203%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq5v142000wv71o6qaa0kfu" data-title="0203高阶导数-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

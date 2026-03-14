@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1、映射的概念     设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。   记做$$f:X\rightarrow Y$$      元素x称为元素y（在映射f下）的一个原像,集合X称为映射f的定义域；X中所有元素的像所组成的集合称为映射f的值域。   定义域，记做$D_f$即$D_f$&amp;#x3D">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-07T10:08:34.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.308Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.247Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h1 id="1、映射的概念"><a href="#1、映射的概念" class="headerlink" title="1、映射的概念"></a>1、映射的概念</h1><blockquote>
+<h1><span id="1-映射的概念">1、映射的概念</span></h1><blockquote>
     设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。
 </blockquote>
 
@@ -117,12 +117,12 @@
 
 
 
-<h1 id="2、逆映射"><a href="#2、逆映射" class="headerlink" title="2、逆映射"></a>2、逆映射</h1><p>设f是X到Y的单射，有定义知，对每个$y\in R_f$,有唯一确定的$x\in X$，满足$f(x) &#x3D; y$。于是，我们可定义一个从$R_f$到X的新映射g，即<br>$$<br>g:R_f\rightarrow X<br>$$<br>对每个$y\in R_f$，规定$g(y)&#x3D;x$ ，其中x满足$f(x)&#x3D;y$ 。这个映射g称为f的逆映射，记作$f^{-1}$ ，其中定义域$D_{f^{-1}} &#x3D; R_f$，值域$R_{f^{-1}}&#x3D;X$</p>
+<h1><span id="2-逆映射">2、逆映射</span></h1><p>设f是X到Y的单射，有定义知，对每个$y\in R_f$,有唯一确定的$x\in X$，满足$f(x) &#x3D; y$。于是，我们可定义一个从$R_f$到X的新映射g，即<br>$$<br>g:R_f\rightarrow X<br>$$<br>对每个$y\in R_f$，规定$g(y)&#x3D;x$ ，其中x满足$f(x)&#x3D;y$ 。这个映射g称为f的逆映射，记作$f^{-1}$ ，其中定义域$D_{f^{-1}} &#x3D; R_f$，值域$R_{f^{-1}}&#x3D;X$</p>
 <p>注意事项：</p>
 <ol>
 <li>只有单射才有逆映射</li>
 </ol>
-<h1 id="3、复合映射"><a href="#3、复合映射" class="headerlink" title="3、复合映射"></a>3、复合映射</h1><p>设有两个映射<br>$$<br>g:X\rightarrow Y1 ， f:Y2\rightarrow Z<br>$$<br>其中$Y1\subset Y2$ ，则由映射g和f可以定义一个从X到Z的对应法则，它将每个$x\in X$，映射为$f[g(x)]\in Z$。这个对应法则，确定了一个从集合X到集合Z的映射，这个映射称为映射g和映射f的符合映射，记做$f\circ g$，即<br>$$<br>f\circ g:X\rightarrow Z ，(f\circ g)(x)&#x3D;f[g(x)],x\in X<br>$$<br>结论：</p>
+<h1><span id="3-复合映射">3、复合映射</span></h1><p>设有两个映射<br>$$<br>g:X\rightarrow Y1 ， f:Y2\rightarrow Z<br>$$<br>其中$Y1\subset Y2$ ，则由映射g和f可以定义一个从X到Z的对应法则，它将每个$x\in X$，映射为$f[g(x)]\in Z$。这个对应法则，确定了一个从集合X到集合Z的映射，这个映射称为映射g和映射f的符合映射，记做$f\circ g$，即<br>$$<br>f\circ g:X\rightarrow Z ，(f\circ g)(x)&#x3D;f[g(x)],x\in X<br>$$<br>结论：</p>
 <ol>
 <li>映射f和g构成复合映射的前提：映射g的值域$R_g$必须包含在映射f的定义域$D_f$之内，即$R_g\subset D_f$。</li>
 <li>映射g和f的复合是有顺序的，$f\circ g$有意义并不表示$g\circ f$也有意思。</li>
@@ -131,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0um0002u01o80cf2as8" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5v13p000dv71o4p7edrux" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

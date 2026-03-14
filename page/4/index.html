@@ -94,12 +94,12 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-复习一元函数复合函数求导"><a href="#1-复习一元函数复合函数求导" class="headerlink" title="1 复习一元函数复合函数求导"></a>1 复习一元函数复合函数求导</h2><p>$$<br>y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\<br>\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)<br>$$</p>
+<h2><span id="1-复习一元函数复合函数求导">1 复习一元函数复合函数求导</span></h2><p>$$<br>y&#x3D;f(u),u&#x3D;\phi(x) \Rightarrow f[\phi(x)]\<br>\frac{dy}{dx}&#x3D;\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;f{‘}(u)\cdot \phi{‘}(x)&#x3D;f{‘}[\phi(x)]\cdot\phi{‘}(x)<br>$$</p>
 <p><strong>注：</strong></p>
 <ol>
 <li>复合关系图：$\frac{dy}{du}\cdot\frac{du}{dx}&#x3D;\frac{dy}{dx}\hskip1em x\rightarrow u\rightarrow y$</li>
 </ol>
-<h2 id="2-一元函数与多元函数复合的情形"><a href="#2-一元函数与多元函数复合的情形" class="headerlink" title="2 一元函数与多元函数复合的情形"></a>2 一元函数与多元函数复合的情形</h2><blockquote>
+<h2><span id="2-一元函数与多元函数复合的情形">2 一元函数与多元函数复合的情形</span></h2><blockquote>
 <p>定理1 如果函数$u&#x3D;\phi(t)及v&#x3D;\psi(t)$都在点t处可导，函数$z&#x3D;f(u,v)$在对应点$(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(t),\psi(t)]在点t$可导，且有</p>
 <p>$\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}$</p>
 </blockquote>
@@ -110,7 +110,7 @@
 <li>复合关系图<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021539_unary-composite-func.drawio-800w.webp 800w, opt-images/202403021539_unary-composite-func.drawio-1280w.webp 1280w, opt-images/202403021539_unary-composite-func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021539_unary-composite-func.drawio-optimized.png" alt="202403021539_unary-composite-func.drawio" width="400" height="361" loading="lazy"></picture></li>
 </ol>
 <p>例1 $z&#x3D;u^2e^v,u&#x3D;\sin t,v&#x3D;e^t，求\frac{dz}{dt}$<br>$$<br>解：\<br>\frac{dz}{dt}&#x3D;\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}\<br>&#x3D;2\sin t\cdot e^{e^t}\cos t+(\sin t)^2\cdot e^{e^t}\cdot e^t\<br>&#x3D;\sin t e^{e^t}(2\cos t+\sin t e^{t})<br>$$</p>
-<h2 id="3-多元函数与多元函数复合的情形"><a href="#3-多元函数与多元函数复合的情形" class="headerlink" title="3 多元函数与多元函数复合的情形"></a>3 多元函数与多元函数复合的情形</h2><blockquote>
+<h2><span id="3-多元函数与多元函数复合的情形">3 多元函数与多元函数复合的情形</span></h2><blockquote>
 <p>定理2 如果函数$u&#x3D;\phi(x,y)及v&#x3D;\psi(x,y)都在点(x,y)$具有对x及对y的偏导数，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]在点(x,y)$的连个偏导数都存在，且有<br>$$<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y} \<br>$$</p>
 </blockquote>
 <p><strong>注：</strong></p>
@@ -118,7 +118,7 @@
 <li>复合关系图：<picture data-optimized="true"><source type="image/webp" srcset="opt-images/202403021607-binary_func.drawio-800w.webp 800w, opt-images/202403021607-binary_func.drawio-1280w.webp 1280w, opt-images/202403021607-binary_func.drawio-1920w.webp 1920w" sizes="(max-width: 1279px) 800px, (min-width: 1280px) and (max-width: 1919px) 1280px, (min-width: 1920px) 1920px, 1920px"><img src="opt-images/202403021607-binary_func.drawio-optimized.png" alt="202403021607-binary_func.drawio" width="480" height="421" loading="lazy"></picture></li>
 </ol>
 <p>例3  $z&#x3D;e^u\sin v,u&#x3D;xy,v&#x3D;x+y,求\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}$<br>$$<br>解：\<br>\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;e^{xy}\sin(x+y)y+e^{xy}\cos(x+y)(1+y)\<br>$$</p>
-<h2 id="4-其他情形"><a href="#4-其他情形" class="headerlink" title="4 其他情形"></a>4 其他情形</h2><blockquote>
+<h2><span id="4-其他情形">4 其他情形</span></h2><blockquote>
 <p>定理3 如果函数$u&#x3D;\phi(x,y)在点(x,y)$具有对x及对y的偏导数，函数$v&#x3D;\psi(y)在点y$具有对点y可导，函数$z&#x3D;f(u,v)在对应点(u,v)$具有连续偏导数，那么复合函数$z&#x3D;f[\phi(x,y),\psi(y)]在点(x,y)$的两个偏导数存在，且有</p>
 <p>$\frac{\partial z}{\partial x}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial x} \<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{d v}{d y} \$</p>
 </blockquote>
@@ -130,8 +130,8 @@
 </li>
 </ol>
 <p>例5 $u&#x3D;f(x,y,z)&#x3D;e^{x^2+y^2+z^2},z&#x3D;x^2\sin y$<br>$$<br>\frac{\partial u}{\partial x}&#x3D;\frac{\partial f}{\partial x}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial x}\<br>&#x3D;e^{x^2+y^2+(x^2\sin y)^2}2x+e^{x^2+y^2+(x^2\sin y)^2}2x^2\sin y2x\sin y\<br>&#x3D;2xe^{x^2+y^2+x^4\sin^2y}(1+2x^2\sin^2y)\<br>\frac{\partial z}{\partial y}&#x3D;\frac{\partial f}{\partial y}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial y}\<br>&#x3D;2(y+x^4\sin y\cos y)e^{x^2+y^2+x^4\sin^2 y}<br>$$</p>
-<h2 id="5-抽象复合函数求导"><a href="#5-抽象复合函数求导" class="headerlink" title="5 抽象复合函数求导"></a>5 抽象复合函数求导</h2><p>为了写法和计算的f方便，引入记号<br>$$<br>f(u,v):\<br>\begin{cases}<br>f{‘}_u\rightarrow f^{‘}_1,f^{‘}_v\rightarrow f^{‘}_2\<br>f{‘}_u{‘}_u\rightarrow f^{‘}<em>1{‘}<em>1,f^{‘}<em>u{‘}<em>v\rightarrow f^{‘}<em>1{‘}<em>2\<br>\end{cases}<br>$$<br>例7 $w&#x3D;f(x+y+z,xyz),f具有二阶连续偏导数，求\frac{\partial w}{\partial x},\frac{\partial^2 w}{\partial x\partial z}$<br>$$<br>解：\<br>令u&#x3D;x+y+z,v&#x3D;xyz\<br>\frac{\partial w}{\partial x}&#x3D;\frac{\partial w}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial w}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;f^{‘}<em>1+yzf{‘}<em>2\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;\frac{\partial f^{‘}<em>1}{\partial z}+yf^{‘}<em>2+yz\frac{\partial f^{‘}<em>2}{\partial z}\<br>\frac{\partial f_u}{\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}\<br>\frac{\partial f_v}{\partial z}&#x3D;f</em>{vu}+xyf</em>{vv}\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}+yf_v+yz(f</em>{vu}+xyf</em>{vv})\<br>&#x3D;f</em>{uu}+y(x+z)f</em>{uv}+xy^2zf</em>{vv}+yf_v<br>$$</p>
-<h2 id="6-全微分不变性"><a href="#6-全微分不变性" class="headerlink" title="6 全微分不变性"></a>6 全微分不变性</h2><blockquote>
+<h2><span id="5-抽象复合函数求导">5 抽象复合函数求导</span></h2><p>为了写法和计算的f方便，引入记号<br>$$<br>f(u,v):\<br>\begin{cases}<br>f{‘}_u\rightarrow f^{‘}_1,f^{‘}_v\rightarrow f^{‘}_2\<br>f{‘}_u{‘}_u\rightarrow f^{‘}<em>1{‘}<em>1,f^{‘}<em>u{‘}<em>v\rightarrow f^{‘}<em>1{‘}<em>2\<br>\end{cases}<br>$$<br>例7 $w&#x3D;f(x+y+z,xyz),f具有二阶连续偏导数，求\frac{\partial w}{\partial x},\frac{\partial^2 w}{\partial x\partial z}$<br>$$<br>解：\<br>令u&#x3D;x+y+z,v&#x3D;xyz\<br>\frac{\partial w}{\partial x}&#x3D;\frac{\partial w}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial w}{\partial v}\frac{\partial v}{\partial x}\<br>&#x3D;f^{‘}<em>1+yzf{‘}<em>2\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;\frac{\partial f^{‘}<em>1}{\partial z}+yf^{‘}<em>2+yz\frac{\partial f^{‘}<em>2}{\partial z}\<br>\frac{\partial f_u}{\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}\<br>\frac{\partial f_v}{\partial z}&#x3D;f</em>{vu}+xyf</em>{vv}\<br>\frac{\partial^2 w}{\partial x\partial z}&#x3D;f</em>{uu}+xyf</em>{uv}+yf_v+yz(f</em>{vu}+xyf</em>{vv})\<br>&#x3D;f</em>{uu}+y(x+z)f</em>{uv}+xy^2zf</em>{vv}+yf_v<br>$$</p>
+<h2><span id="6-全微分不变性">6 全微分不变性</span></h2><blockquote>
 <p>设函数$z&#x3D;f(u,v)具有连续偏导数$，则有全微分</p>
 <p>$dz&#x3D;\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv$</p>
 <p>如果$u&#x3D;\phi(x,y),v&#x3D;\psi(x,y)$,且两个函数具有连续偏导数 ，那么复合函数$z&#x3D;f[\phi(x,y),\psi(x,y)]$的全微分</p>
@@ -142,7 +142,7 @@
 <p>由此可见无论u和v是自变量还中间变量，函数$z&#x3D;f(u,v)$的全微分形式都是一样的。这个性质叫做全微分形式不变性。</p>
 </blockquote>
 <p>例8 $z&#x3D;f(x^2-y^2,e^{xy}),求dz$<br>$$<br>解：\<br>令u&#x3D;x^2-y^2,v&#x3D;e^{xy}<br>dz&#x3D;df(u,v)&#x3D;f_udu+f_vdv\<br>&#x3D;f_ud(x^2-y^2)+f_v(e^{xy})\<br>&#x3D;f_u(2xdx-2ydy)+f_v(ye^{xy}dx+xe^{xy}dy)\<br>&#x3D;(2xf_u+ye^{xy}f_v)dx+(xe^{xy}v_v-2yf_u)dy<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -153,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmq5p0vc001pu01o7y094mim" data-title="0904多元复合函数求导-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/05/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0904%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmq5v14k0025v71oe1p393mk" data-title="0904多元复合函数求导-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -188,7 +188,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h3 id="1、矩阵的初等行变换"><a href="#1、矩阵的初等行变换" class="headerlink" title="1、矩阵的初等行变换"></a>1、矩阵的初等行变换</h3><p>为引进矩阵的初等变换，先来分析用消元法解线性方程组的例子。</p>
+<h3><span id="1-矩阵的初等行变换">1、矩阵的初等行变换</span></h3><p>为引进矩阵的初等变换，先来分析用消元法解线性方程组的例子。</p>
 <p><strong>引例</strong> 求解线性方程组<br>$$<br>\begin{cases}<br>2x_1-x_2-x_2+2x_4&#x3D;2,①\<br>x_1+x_2-2x_3+x_4&#x3D;4,②\<br>4x_1-6x_2+2x_3-2x_4&#x3D;4,③\<br>3x_1+6x_2-9x_3+7x_4&#x3D;9.④\<br>\end{cases}<br>$$</p>
 <p>利用消元法，先消去②、③和④中的$x_1$，然后在消去③、④中的$x_2$，以此类推，不在详细列举每一步，最后结果如下：<br>$$<br>\begin{cases}<br>x_1+x_2-2x_3+x_4&#x3D;4,①\<br>\quad\quad\quad x_2-x_3+x_4&#x3D;0,②\<br>\qquad\qquad\qquad\quad x_4&#x3D;-3,③\<br>\qquad\qquad\qquad\qquad0&#x3D;0.④<br>\end{cases}<br>$$</p>
 <p>上述是4个未知数3个有效方程的方程组，有有一个自由未知数，选择$x_3$为自由未知数，解得<br>$$<br>\begin{cases}<br>x_1&#x3D;x_3+4,\<br>x_2&#x3D;x_3+3,\<br>x_4&#x3D;-3,<br>\end{cases}<br>$$<br>其中$x_3$为任意值，令$x_3&#x3D;c$，方程组的解记作<br>$$<br>x&#x3D;\begin{pmatrix}<br>x_1\<br>x_2\<br>x_3\<br>x_4<br>\end{pmatrix}<br>&#x3D;\begin{pmatrix}<br>c+4\<br>c+3\<br>c\<br>-3<br>\end{pmatrix}<br>&#x3D;c\begin{pmatrix}<br>1\<br>1\<br>1\<br>0<br>\end{pmatrix}<br>+\begin{pmatrix}<br>4\<br>3\<br>0\<br>-3<br>\end{pmatrix}<br>$$<br>在上述消元过程中，始终把方程组看做一个整体，即不是着眼于某一个方程的变形，而是着眼于整个方程组变成另一个方程组。其中用到三种变换：</p>
@@ -210,7 +210,7 @@
 <p>把定义中的行换成列，记得矩阵的初等列变换的定义（所以记号是把r换成c）。</p>
 <p>矩阵的初等行变换与初等列变换统称为初等变换。</p>
 <p>三种初等变换都是 <strong>可逆的</strong>,且其变换是同一类型的初等变换；变换$r_i\leftrightarrow r_j$的逆变换就是其本身；变换$r_i\times k$的逆变换为$r_i\times \frac{1}{k}$;变换$r_i+kr_j$的逆变换为$r_i+(-k)r_j$。</p>
-<h3 id="2-、矩阵等价"><a href="#2-、矩阵等价" class="headerlink" title="2 、矩阵等价"></a>2 、矩阵等价</h3><p>如果矩阵A经过有限次初等行变换变成矩阵B，就称矩阵A与B行等价，记作$A\overset{r}{\thicksim}B$;如果矩阵A经过有限次初等列变换变成矩阵B，就称矩阵A与B列等价，记作$A\overset{c}{\thicksim}B$;如果矩阵A经有限次初等变换变成矩阵B，就称矩阵A与B等价，记作$A\thicksim B$。</p>
+<h3><span id="2-矩阵等价">2 、矩阵等价</span></h3><p>如果矩阵A经过有限次初等行变换变成矩阵B，就称矩阵A与B行等价，记作$A\overset{r}{\thicksim}B$;如果矩阵A经过有限次初等列变换变成矩阵B，就称矩阵A与B列等价，记作$A\overset{c}{\thicksim}B$;如果矩阵A经有限次初等变换变成矩阵B，就称矩阵A与B等价，记作$A\thicksim B$。</p>
 <p>矩阵之间的等价关系具有下列性质：</p>
 <ol>
 <li><p>反身性：$A\thicksim A$</p>
@@ -220,7 +220,7 @@
 <li><p>传递性：若$A\thicksim B,B\thicksim C,则A\thicksim C$</p>
 </li>
 </ol>
-<h3 id="3、行阶梯形矩阵和行最简形矩阵"><a href="#3、行阶梯形矩阵和行最简形矩阵" class="headerlink" title="3、行阶梯形矩阵和行最简形矩阵"></a>3、行阶梯形矩阵和行最简形矩阵</h3><blockquote>
+<h3><span id="3-行阶梯形矩阵和行最简形矩阵">3、行阶梯形矩阵和行最简形矩阵</span></h3><blockquote>
 <p>定义2	(1)若非零矩阵若满足：(i)非零行在零行的上面；（ii) 非零行的首非零元所在列在上一行（如果存在的话）的首非零元所在列的右面，则称此矩阵为行阶梯型矩阵；</p>
 <p>（2）进一步，若A是行阶梯矩阵，并且满足：（i）非零行的首非零元为1；（ii）首非零元所在的列的其他元均为0，则称A为行最简形矩阵。</p>
 </blockquote>
@@ -228,7 +228,7 @@
 <p><strong>一个矩阵的行最简矩阵是唯一确定的（行阶梯矩阵中非零行的行数也是确定的）</strong>。</p>
 <p>对行最简矩阵再施以初等列变换，可变成一种形状更简单的矩阵，称为标准形，例如<br>$$<br>B_5&#x3D;\begin{pmatrix}<br>1&amp;0&amp;-1&amp;0&amp;4\<br>0&amp;1&amp;-1&amp;0&amp;3\<br>0&amp;0&amp;0&amp;1&amp;-3\<br>0&amp;0&amp;0&amp;0&amp;0\<br>\end{pmatrix}\<br>\overset{c_3\leftrightarrow c_4,c_4+c_1+c_2,c_5-4c_1-3c_2+3c_3}{\thicksim}\<br>&#x3D;\begin{pmatrix}<br>1&amp;0&amp;0&amp;0&amp;0\<br>0&amp;1&amp;0&amp;0&amp;0\<br>0&amp;0&amp;1&amp;0&amp;0\<br>0&amp;0&amp;0&amp;0&amp;0<br>\end{pmatrix}<br>&#x3D;F<br>$$<br>矩阵F成为矩阵的标准型，其特点是：F的左上角是一个单位矩阵，其余元素都为0.</p>
 <p>对于$m\times n$矩阵A，总可经过初等变换（行变换和列变换）把它化为标准形。<br>$$<br>F&#x3D;\begin{pmatrix}<br>E_r&amp;O\<br>O&amp;O\<br>\end{pmatrix}_{m\times n}<br>$$<br>此标准形由$m,n,r$三个数完全确定，其中r就是行阶梯型矩阵中非零行的行数。</p>
-<h3 id="4、初等矩阵性质"><a href="#4、初等矩阵性质" class="headerlink" title="4、初等矩阵性质"></a>4、初等矩阵性质</h3><p>矩阵的初等变换是矩阵的一种最基本的运算，最基本的性质如下：</p>
+<h3><span id="4-初等矩阵性质">4、初等矩阵性质</span></h3><p>矩阵的初等变换是矩阵的一种最基本的运算，最基本的性质如下：</p>
 <blockquote>
 <p>定理1	设A与B为$m\times n$阶矩阵，那么</p>
 <ol>
@@ -237,7 +237,7 @@
 <li>$A\overset{r}\thicksim B$的充分必要条件是存在m阶可逆矩阵P及n阶可逆矩阵Q，使$PAQ&#x3D;B$​；</li>
 </ol>
 </blockquote>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -248,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vo002fu01oh2ti7c2i" data-title="0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/28/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/03%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/0301%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2-%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E5%92%8C%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13o000bv71of0kz9l81" data-title="0301矩阵的初等变换-矩阵的初等变换和线性方程组-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -292,7 +292,7 @@
 <p>$$<br>证明：\<br>把方程组写成矩阵方程  Ax&#x3D;b\<br>A&#x3D;(a_{ij})<em>{n\times n}位n阶矩阵，因|A|\not&#x3D;0，故A^{-1}存在\<br>x&#x3D;A^{-1}b\<br>根据逆矩阵的唯一性，知x&#x3D;A^{-1}b是方程组的唯一解向量\<br>x&#x3D;\frac{A^*}{|A|}b&#x3D;\frac{1}{|A|}\begin{pmatrix}<br>A</em>{11}&amp;A_{21}&amp;\cdots&amp;A_{n1}\<br>A_{12}&amp;A_{22}&amp;\cdots&amp;A_{n2}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>A_{1n}&amp;A_{2n}&amp;\cdots&amp;A_{nn}\<br>\end{pmatrix}<br>\begin{pmatrix}<br>b_1\<br>b_2\<br>\vdots\<br>b_n\<br>\end{pmatrix}\<br>&#x3D;\frac{1}{|A|}\begin{pmatrix}<br>b_1A_{11}+b_2A_{21}+\cdots+b_nA_{n1}\<br>b_1A_{12}+b_2A_{22}+\cdots+b_nA_{n2}\<br>\vdots\<br>b_1A_{1n}+b_2A_{2n}+\cdots+b_nA_{nn}\<br>\end{pmatrix}\<br>即x_j&#x3D;\frac{1}{|A|}(b_1A_{1j}+b_2A_{2j}+\cdots+b_nA_{nj})&#x3D;\frac{1}{|A|}|A_j|(j&#x3D;1,2,\cdots,n)<br>$$</p>
 <p>例16 用克拉默法则求解线性方程组<br>$$<br>\begin{cases}<br>x_1-x_2-x_3&#x3D;2\<br>2x_1-x_2-3x_3&#x3D;1\<br>3x_1+2x_2-5x_3&#x3D;0\<br>\end{cases}<br>$$</p>
 <p>$$<br>解\<br>|A|&#x3D;\begin{vmatrix}<br>1&amp;-1&amp;-1\<br>2&amp;-1&amp;-3\<br>3&amp;2&amp;-5<br>\end{vmatrix}<br>&#x3D;5+9-4-(3+10-6)&#x3D;3\not&#x3D;0\<br>根据克拉默法则，有\<br>x_1&#x3D;\frac{A_1}{|A|}&#x3D;\frac{1}{3}\begin{vmatrix}<br>2&amp;-1&amp;-1\<br>1&amp;-1&amp;-3\<br>0&amp;2&amp;-5<br>\end{vmatrix}<br>&#x3D;\frac{1}{3}(10-2-5+12)&#x3D;5\<br>x_2&#x3D;\frac{A_1}{|A|}&#x3D;\frac{1}{3}\begin{vmatrix}<br>1&amp;2&amp;-1\<br>2&amp;1&amp;-3\<br>3&amp;0&amp;-5<br>\end{vmatrix}<br>&#x3D;\frac{1}{3}(-5-18+3+20)&#x3D;0\<br>x_3&#x3D;\frac{A_1}{|A|}&#x3D;\frac{1}{3}\begin{vmatrix}<br>1&amp;-1&amp;2\<br>2&amp;-1&amp;1\<br>3&amp;2&amp;0<br>\end{vmatrix}<br>&#x3D;\frac{1}{3}(-3+8+6-2)&#x3D;3\<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -303,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/06/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0204%E5%85%8B%E6%8B%89%E9%BB%98%E6%B3%95%E5%88%99-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vn002cu01o5dbs9dae" data-title="0204克拉默法则-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/06/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0204%E5%85%8B%E6%8B%89%E9%BB%98%E6%B3%95%E5%88%99-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13n0009v71o753n3fkt" data-title="0204克拉默法则-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -338,7 +338,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一、逆矩阵的定义、性质和求法"><a href="#一、逆矩阵的定义、性质和求法" class="headerlink" title="一、逆矩阵的定义、性质和求法"></a>一、逆矩阵的定义、性质和求法</h2><blockquote>
+<h2><span id="一-逆矩阵的定义-性质和求法">一、逆矩阵的定义、性质和求法</span></h2><blockquote>
 <p>定义7	对于$n$阶矩阵A，如果有一个$n$阶矩阵B，使</p>
 <p>$AB&#x3D;BA&#x3D;E$</p>
 <p>则说矩阵A是可逆的，并把矩阵B称为A的逆矩阵，简称逆阵。</p>
@@ -369,7 +369,7 @@
 <p>其中k为正整数，这样当A可逆$\lambda,\mu$为整数时，有</p>
 <p>$A^{\lambda}A^{\mu}&#x3D;A^{\lambda+\mu},(A^{\lambda})^{\mu}&#x3D;A^{\lambda\mu}$</p>
 <p>例11 求二阶矩阵<br>$$<br>A&#x3D;\begin{pmatrix}<br>a&amp;b\<br>c&amp;d<br>\end{pmatrix}<br>$$<br>的逆矩阵。<br>$$<br>解：\<br>|A|&#x3D;ad-bc\<br>A*&#x3D;\begin{pmatrix}<br>d&amp;-b\<br>-c&amp;a<br>\end{pmatrix}\<br>当|A|\not&#x3D;0使,<br>A^{-1}&#x3D;\frac{1}{|A|}A^{*}\<br>&#x3D;\frac{1}{ad-bc}\begin{pmatrix}<br>d&amp;-b\<br>-c&amp;a<br>\end{pmatrix}<br>$$</p>
-<h2 id="二、逆矩阵的初步应用"><a href="#二、逆矩阵的初步应用" class="headerlink" title="二、逆矩阵的初步应用"></a>二、逆矩阵的初步应用</h2><p>可逆矩阵在线性代数中占有重要的地位，它的应用是多方面的，下面举几个例子。</p>
+<h2><span id="二-逆矩阵的初步应用">二、逆矩阵的初步应用</span></h2><p>可逆矩阵在线性代数中占有重要的地位，它的应用是多方面的，下面举几个例子。</p>
 <p>例13 设<br>$$<br>A&#x3D;\begin{pmatrix}<br>1&amp;2&amp;3\<br>2&amp;2&amp;1\<br>3&amp;4&amp;3\<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>2&amp;1\<br>5&amp;3\<br>\end{pmatrix}<br>,C&#x3D;\begin{pmatrix}<br>1&amp;3\<br>2&amp;0\<br>3&amp;1\<br>\end{pmatrix}\<br>$$<br>求矩阵X使其满足$AXB&#x3D;C$<br>$$<br>解：\<br>若A^{-1},B^{-1}存在，则\<br>C&#x3D;AA^{-1}CB^{-1}B\<br>有X&#x3D;A^{-1}CB^{-1}\<br>|A|&#x3D;2,|B|&#x3D;1,所以A^{-1},B^{-1}存在\<br>A^{-1}&#x3D;\begin{pmatrix}<br>1&amp;3&amp;-2\<br>-\frac{3}{2}&amp;-3&amp;\frac{5}{2}\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>,B^{-1}&#x3D;\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>X&#x3D;A^{-1}CB^{-1}&#x3D;<br>\begin{pmatrix}<br>1&amp;3&amp;-2\<br>-\frac{3}{2}&amp;-3&amp;\frac{5}{2}\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>\begin{pmatrix}<br>1&amp;3\<br>2&amp;0\<br>3&amp;1\<br>\end{pmatrix}<br>\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>1&amp;1\<br>0&amp;-2\<br>0&amp;2<br>\end{pmatrix}<br>\begin{pmatrix}<br>3&amp;-1\<br>-5&amp;2\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>-2&amp;1\<br>10&amp;-4\<br>-10&amp;4\<br>\end{pmatrix}<br>$$</p>
 <p>例14 设<br>$$<br>P&#x3D;\begin{pmatrix}<br>1&amp;2\<br>1&amp;4<br>\end{pmatrix}<br>,\Lambda&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2<br>\end{pmatrix}<br>,AP&#x3D;P\Lambda,求A^n<br>$$</p>
 <p>$$<br>解:\<br>|P|&#x3D;2\<br>p^{-1}&#x3D;\frac{1}{2}\begin{pmatrix}<br>4&amp;-2\<br>-1&amp;1\<br>\end{pmatrix}\<br>A&#x3D;P\Lambda P^{-1},A^2&#x3D;P\Lambda P^{-1}P\Lambda P^{-1}&#x3D;P\Lambda^2 P^{-1},\cdots,A^{n}&#x3D;P\Lambda^{n} P^{-1}\<br>\Lambda&#x3D;&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2<br>\end{pmatrix}<br>,\Lambda^2&#x3D;&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^2<br>\end{pmatrix}<br>,\cdots,\Lambda^n&#x3D;\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^n\<br>\end{pmatrix}\<br>A^n&#x3D;P\Lambda^n P^{-1}&#x3D;\begin{pmatrix}<br>1&amp;2\<br>1&amp;4<br>\end{pmatrix}<br>\begin{pmatrix}<br>1&amp;0\<br>0&amp;2^n\<br>\end{pmatrix}<br>\frac{1}{2}\begin{pmatrix}<br>4&amp;-2\<br>-1&amp;1\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>2-2^n&amp;2^n-1\<br>2-2^{n+1}&amp;2^{n+1}-1\<br>\end{pmatrix}\<br>$$</p>
@@ -386,7 +386,7 @@
 </li>
 </ol>
 <p>例15 设<br>$$<br>P&#x3D;\begin{pmatrix}<br>-1&amp;1&amp;1\<br>1&amp;0&amp;2\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>,\Lambda&#x3D;\begin{pmatrix}<br>1&amp;&amp;\<br>&amp;2&amp;\<br>&amp;&amp;-3<br>\end{pmatrix}<br>,AP&#x3D;P\Lambda\<br>$$<br>求$\phi(A)&#x3D;A^3+2A^2-3A$<br>$$<br>解：\<br>|P|&#x3D;6\<br>A&#x3D;P\Lambda P^{-1}\<br>\phi(A)&#x3D;P\phi(\Lambda) P^{-1},\phi(\Lambda)&#x3D;diag(\phi(\lambda_1^k),\phi(\lambda_2)^k,\cdots,\phi(\lambda_n^k))\<br>\phi(1)&#x3D;0，\phi(2)&#x3D;10,\phi(-3)&#x3D;0\<br>\phi(A)&#x3D;P\phi(\Lambda)P^{-1}&#x3D;\begin{pmatrix}<br>-1&amp;1&amp;1\<br>1&amp;0&amp;2\<br>1&amp;1&amp;-1<br>\end{pmatrix}<br>\begin{pmatrix}<br>0&amp;&amp;\<br>&amp;10&amp;\<br>&amp;&amp;0\<br>\end{pmatrix}<br>\frac{1}{|P|}P^*\<br>5\begin{pmatrix}<br>1&amp;0&amp;1\<br>0&amp;0&amp;0\<br>1&amp;0&amp;1\<br>\end{pmatrix}<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -397,7 +397,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vm002bu01oh9870qsb" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/04/04/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0203%E9%80%86%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13m0008v71o7otb5x2w" data-title="0203逆矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -432,7 +432,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一、矩阵的加法"><a href="#一、矩阵的加法" class="headerlink" title="一、矩阵的加法"></a>一、矩阵的加法</h2><blockquote>
+<h2><span id="一-矩阵的加法">一、矩阵的加法</span></h2><blockquote>
 <p>定义2	设有两个$m\times n$橘子$A&#x3D;(a_{ij})和B&#x3D;(b_{ij})$,那么矩阵A与B的和记为A+B,规定为<br>$$<br>A+B&#x3D;\begin{pmatrix}<br>a_{11}+b_{11}&amp;a_{12}+b_{12}&amp;\cdots&amp;a_{1n}+b_{1n}\<br>a_{21}+b_{21}&amp;a_{22}+b_{22}&amp;\cdots&amp;a_{2n}+b_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_{m1}+b_{m1}&amp;a_{m2}+b_{m2}&amp;\cdots&amp;a_{mn}+b_{mn}\<br>\end{pmatrix}<br>$$</p>
 </blockquote>
 <p>**tips:**只有当两个矩阵是同型矩阵时，这两个矩阵才能进行加法运算。</p>
@@ -449,7 +449,7 @@
 <p>矩阵的减法为</p>
 <p>$A-B&#x3D;A+(-B)$</p>
 </blockquote>
-<h2 id="二、数与矩阵相乘"><a href="#二、数与矩阵相乘" class="headerlink" title="二、数与矩阵相乘"></a>二、数与矩阵相乘</h2><blockquote>
+<h2><span id="二-数与矩阵相乘">二、数与矩阵相乘</span></h2><blockquote>
 <p>定义3	数$\lambda$与矩阵A的乘积记作$\lambda A或A\lambda$,规定为<br>$$<br>\lambda A&#x3D;A\lambda&#x3D;\begin{pmatrix}<br>\lambda a_{11}&amp;\lambda a_{12}&amp;\cdots&amp;\lambda a_{1n}\<br>\lambda a_{21}&amp;\lambda a_{22}&amp;\cdots&amp;\lambda a_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>\lambda a_{m1}&amp;\lambda a_{m2}&amp;\cdots&amp;\lambda a_{mn}\<br>\end{pmatrix}<br>$$</p>
 </blockquote>
 <p>数乘矩阵满足下列运算规律（设A、B为$m\times n$矩阵，$\lambda、\mu$为数）：</p>
@@ -459,7 +459,7 @@
 <li>$\lambda(A+B)&#x3D;\lambda A+\lambda B$</li>
 </ul>
 <p>矩阵加法和数乘矩阵统称为矩阵的线性运算。</p>
-<h2 id="三、矩阵与矩阵相乘"><a href="#三、矩阵与矩阵相乘" class="headerlink" title="三、矩阵与矩阵相乘"></a>三、矩阵与矩阵相乘</h2><blockquote>
+<h2><span id="三-矩阵与矩阵相乘">三、矩阵与矩阵相乘</span></h2><blockquote>
 <p>定义4	设$A&#x3D;(a_{ij})是一个m\times s$的矩阵,$B&#x3D;(b_{ij})是一个s\times n$的矩阵，那么规定矩阵A与矩阵B的乘积是一个$m\times n$矩阵$C&#x3D;(c_{ij})$，其中</p>
 <p>$c_{ij}&#x3D;a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{is}b_{sj}&#x3D;\sum_{k&#x3D;1}^na_{ik}b_{jk},(i&#x3D;1,2,\cdots,m;j&#x3D;1,2,\cdots,n)$</p>
 <p>并把此乘积记作</p>
@@ -506,7 +506,7 @@
 <p>$A_{m\times n}x_{n\times 1}&#x3D;b_{m\times 1}$</p>
 <p>其中$A&#x3D;(a_{ij})$为系数矩阵，$x&#x3D;\begin{pmatrix}x_1\x_2\\vdots\x_n\end{pmatrix}$为未知数矩阵，$b&#x3D;\begin{pmatrix}b_1\b_2\\vdots\b_m\end{pmatrix}$为常数项矩阵。特别当b&#x3D;O时，得到吗哥方程的n元齐次线性方程组的矩阵形式</p>
 <p>$A_{m\times n}x_{n\times 1}&#x3D;0_{m\times 1}$</p>
-<h2 id="四、矩阵的转置"><a href="#四、矩阵的转置" class="headerlink" title="四、矩阵的转置"></a>四、矩阵的转置</h2><blockquote>
+<h2><span id="四-矩阵的转置">四、矩阵的转置</span></h2><blockquote>
 <p>定义5	把矩阵A的行换成同序列的列得到一个新的矩阵，叫做A的转置矩阵，记作$A^T$.</p>
 </blockquote>
 <p>矩阵的转置也是一种运算，满足下列运算过滤（假设运算都是可行的）：</p>
@@ -517,7 +517,7 @@
 <li>$(AB)^T&#x3D;B^TA^T$</li>
 </ul>
 <p>例8 已知<br>$$<br>A&#x3D;\begin{pmatrix}<br>2&amp;0&amp;-1\<br>1&amp;3&amp;2\<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>1&amp;7&amp;-1\<br>4&amp;2&amp;3\<br>2&amp;0&amp;1\<br>\end{pmatrix}\<br>$$<br>求$(AB)^T$<br>$$<br>AB&#x3D;A&#x3D;\begin{pmatrix}<br>0&amp;14&amp;-3\<br>17&amp;13&amp;10\<br>\end{pmatrix}\<br>(AB)^T&#x3D;\begin{pmatrix}<br>0&amp;17\<br>14&amp;13\<br>-3&amp;10\<br>\end{pmatrix}<br>$$</p>
-<h2 id="五、方阵的行列式"><a href="#五、方阵的行列式" class="headerlink" title="五、方阵的行列式"></a>五、方阵的行列式</h2><blockquote>
+<h2><span id="五-方阵的行列式">五、方阵的行列式</span></h2><blockquote>
 <p>定义6	有n阶方阵A的元素所构成的行列式（各元素的位置不变），称为方程A的行列式，记作$det A或者\vert A\vert$</p>
 </blockquote>
 <p>有A确定$\vert A\vert$的这个运算满足下述运算规律（设A、B位n阶方阵，$\lambda $为数:</p>
@@ -529,7 +529,7 @@
 <p><strong>伴随矩阵：</strong></p>
 <p>行列式$\vert A\vert$的各个元素的代数余子式$A_{ij}$所构成的如下的矩阵<br>$$<br>A^*&#x3D;\begin{pmatrix}<br>A_{11}&amp;A_{21}&amp;\cdots&amp;A_{n1}\<br>A_{12}&amp;A_{22}&amp;\cdots&amp;A_{n2}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>A_{1n}&amp;A_{2n}&amp;\cdots&amp;A_{nn}\<br>\end{pmatrix}<br>$$<br>称为矩阵A的伴随矩阵，简称伴随阵。</p>
 <p>$AA^*&#x3D;A^*A&#x3D;\vert A\vert E$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -540,7 +540,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vm002au01o9gsi441m" data-title="0202矩阵的运算-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/26/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0202%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13m0007v71o1wl624t2" data-title="0202矩阵的运算-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -575,7 +575,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一、线性方程组"><a href="#一、线性方程组" class="headerlink" title="一、线性方程组"></a>一、线性方程组</h2><p>设有$n个未知数m$个方程的线性方程组<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&#x3D;b_1,\<br>a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&#x3D;b_2,\<br>\cdots\<br>a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&#x3D;b_m,\<br>\end{cases}<br>$$<br>其中$a_{ij}是第i个方程的第j$个未知数的系数，$b_i是第i$个方程的常数项，$i&#x3D;1,2,\cdots,m;\quad j&#x3D;1,2,\cdots,n$。</p>
+<h2><span id="一-线性方程组">一、线性方程组</span></h2><p>设有$n个未知数m$个方程的线性方程组<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&#x3D;b_1,\<br>a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&#x3D;b_2,\<br>\cdots\<br>a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&#x3D;b_m,\<br>\end{cases}<br>$$<br>其中$a_{ij}是第i个方程的第j$个未知数的系数，$b_i是第i$个方程的常数项，$i&#x3D;1,2,\cdots,m;\quad j&#x3D;1,2,\cdots,n$。</p>
 <blockquote>
 <p>当常数项$b_1,b_2,\cdots,b_n$不全为零时，线性方程组（1）叫做$n$元非齐次线性方程组，当$b_1,b_2,\cdots,b_n$全为零时，（1）式称为$n$元其次线性方程组。</p>
 </blockquote>
@@ -586,7 +586,7 @@
 <li>如果有多个解，如何求出它的所有解？</li>
 </ol>
 <p>对于线性方程组（1）上述问题的答案取决于它的$m\times n个系数a_{ij}(i&#x3D;1,2,\cdots,m;j&#x3D;1,2,\cdots,n)$和右端的常数项$b_1,b_2,\cdots,b_n$所构成的$m行n+1$列矩形数表：<br>$$<br>\begin{matrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}&amp;b_1\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}&amp;b_2\<br>\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\<br>a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}&amp;b_m\<br>\end{matrix}<br>$$<br>这里横排称为行，竖排称为列；对于齐次线性方程相应问题的答案完全取决于他的$m\times n个系数a_{ij}(i&#x3D;1,2,\cdots,m;j&#x3D;1,2,\cdots,n)$所构成的$m行n列$矩形数表：<br>$$<br>\begin{matrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}\<br>\end{matrix}<br>$$</p>
-<h2 id="二、矩阵的定义"><a href="#二、矩阵的定义" class="headerlink" title="二、矩阵的定义"></a>二、矩阵的定义</h2><blockquote>
+<h2><span id="二-矩阵的定义">二、矩阵的定义</span></h2><blockquote>
 <p>定义1 由$m\times n$个数$a_{ij}(i&#x3D;1,2,\cdots,n;j&#x3D;1,2,\cdots,n)$排成的$m$行$n$列的数表<br>$$<br>\begin{matrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}\<br>\end{matrix}<br>$$<br>称为$m行n列$矩阵，简称$m\times n$矩阵，记作<br>$$<br>A&#x3D;\begin{pmatrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\cr<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\cr<br>\vdots&amp;\vdots&amp;&amp;\vdots\cr<br>a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}\cr<br>\end{pmatrix}<br>$$<br>这$m\times n$个数称为矩阵A的元素，简称为元，数$a_{ij}$位于矩阵A的第i行第j列，称为矩阵A的$(i,j)$元，以数$a_{ij}为(i,j)$元的矩阵简记作$a_{ij}或者(a_{ij})<em>{m\times n}$,$m\times n$阶矩阵也记作$A</em>{m\times n}$</p>
 </blockquote>
 <blockquote>
@@ -623,7 +623,7 @@
 <p>$A&#x3D;diag(\lambda_1,\lambda_2,\cdots,\lambda_n)$</p>
 <p>特别当$\lambda_1&#x3D;\lambda_2&#x3D;\cdots&#x3D;\lambda_n&#x3D;1$时的线性变换叫做恒等变换，它对应的n阶方阵<br>$$<br>A&#x3D;\begin{pmatrix}<br>1&amp;0&amp;\cdots&amp;0\<br>0&amp;1&amp;\cdots&amp;0\<br>\vdots&amp;\vdots&amp;\ddots&amp;0\<br>0&amp;0&amp;\cdots&amp;1\<br>\end{pmatrix}<br>$$<br>叫做n阶单位矩阵，简称单位阵。矩阵特点：对角线上的元素都是1，其他元素都是0，即单位阵$E的(i,j)元e_{ij}$为<br>$$<br>e_{ij}&#x3D;\begin{cases}<br>1,当i&#x3D;j,\<br>0,当i\not&#x3D;j<br>\end{cases}<br>(i,j&#x3D;1,2,\cdots,n)<br>$$</p>
 </blockquote>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -634,7 +634,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vl0029u01o6mcd0tur" data-title="0201线性方程组和矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/22/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0201%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13l0006v71ofi716r79" data-title="0201线性方程组和矩阵-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -720,7 +720,7 @@
 <p>$D_1&#x3D;\begin{vmatrix}a_{11}&amp;\cdots&amp;a_{1k}\\vdots&amp;&amp;\vdots\a_{k1}&amp;\cdots&amp;a_{kk}\end{vmatrix}\$</p>
 <p>$D_2&#x3D;\begin{vmatrix}b_{11}&amp;\cdots&amp;b_{1n}\\vdots&amp;&amp;\vdots\b_{n1}&amp;\cdots&amp;b_{nn}\end{vmatrix}\$</p>
 <p>证明：$D&#x3D;D_1D_2$<br>$$<br>证：\<br>对D_1做运算r_i+kr_j,把D_1化为下三角行列式，设为：\<br>D_1&#x3D;\begin{vmatrix}p_{11}&amp;&amp;0\\vdots&amp;\ddots&amp;\p_{k1}&amp;\cdots&amp;p_{kk}\end{vmatrix}&#x3D;p_{11}\cdots p_{kk}\<br>对D_2做运算c_i+kc_j,把D_2化为下三角行列式，设为：\<br>D_2&#x3D;\begin{vmatrix}q_{11}&amp;&amp;0\\vdots&amp;\ddots&amp;\q_{n1}&amp;\cdots&amp;q_{nn}\end{vmatrix}&#x3D;q_{11}\cdots q_{nn}\<br>于是对D的前k行做r_i+kr_j,在对后n列做运算c_i+kc_j,把D化为下三角行列式\<br>D&#x3D;\begin{vmatrix}p_{11}&amp;&amp;&amp;&amp;&amp;&amp;\\vdots&amp;\ddots&amp;&amp;&amp;0&amp;&amp;\p_{k1}&amp;\cdots&amp;p_{kk}&amp;&amp;&amp;&amp;\c_{11}&amp;\cdots&amp;c_{1k}&amp;q_{11}&amp;&amp;\\vdots&amp;&amp;\vdots&amp;\vdots&amp;\ddots&amp;\c_{n1}&amp;\cdots&amp;c_{nk}&amp;q_{n1}&amp;\cdots&amp;q_{nn}\end{vmatrix}\<br>\therefore D&#x3D;p_{11}\cdots p_{kk}q_{11}\cdots q_{nn}&#x3D;D_1D_2<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -731,7 +731,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vk0027u01o5fibhm60" data-title="0104行列式的性质-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/20/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0104%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13k0004v71ohgoi72no" data-title="0104行列式的性质-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -798,7 +798,7 @@
 <p>$D的元(i,j)$的余子式和代数余子式依次记作$M_{ij}和A_{ij}$求</p>
 <p>$A_{11}+A_{12}+A_{13}+A_{14}及M_{11}+M_{21}+M_{31}+M_{41}$<br>$$<br>解：\<br>A_{11}+A_{12}+A_{13}+A_{14}&#x3D;1\cdot A_{11}+1\cdot A_{12}+1\cdot A_{13}+1\cdot A_{14}\<br>&#x3D;\begin{vmatrix}1&amp;1&amp;1&amp;1\1&amp;1&amp;0&amp;-5\-1&amp;3&amp;1&amp;3\2&amp;-4&amp;-1&amp;-3\end{vmatrix}\<br>\overset{r3-r1,r_4+r1}{&#x3D;}\begin{vmatrix}1&amp;1&amp;1&amp;1\1&amp;1&amp;0&amp;-5\-2&amp;2&amp;0&amp;2\3&amp;-3&amp;0&amp;-2\end{vmatrix}\<br>&#x3D;\begin{vmatrix}1&amp;1&amp;-5\-2&amp;2&amp;2\3&amp;-3&amp;-2\end{vmatrix}\<br>\overset{c_1+c_2}{&#x3D;}\begin{vmatrix}2&amp;1&amp;-5\0&amp;2&amp;2\0&amp;-3&amp;-2\end{vmatrix}&#x3D;4\</p>
 <p>M_{11}+M_{21}+M_{31}+M_{41}&#x3D;A_{11}-A_{21}+A_{31}-A_{41}&#x3D;\<br>\begin{vmatrix}1&amp;-5&amp;2&amp;1\-1&amp;1&amp;0&amp;-5\1&amp;3&amp;1&amp;3\-1&amp;-4&amp;-1&amp;-3\end{vmatrix}\<br>\overset{r_4+r_3}{&#x3D;}\begin{vmatrix}1&amp;-5&amp;2&amp;1\-1&amp;1&amp;0&amp;-5\1&amp;3&amp;1&amp;3\0&amp;-1&amp;0&amp;0\end{vmatrix}\<br>&#x3D;-\begin{vmatrix}1&amp;2&amp;1\-1&amp;0&amp;-5\1&amp;1&amp;3\end{vmatrix}\<br>&#x3D;-\overset{r_1-2r_3}{&#x3D;}\begin{vmatrix}-1&amp;0&amp;-5\-1&amp;0&amp;-5\1&amp;1&amp;3\end{vmatrix}\<br>&#x3D;0<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -809,7 +809,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/18/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0105%E8%A1%8C%E5%88%97%E5%BC%8F%E6%8C%89%E8%A1%8C(%E5%88%97)%E5%B1%95%E5%BC%80-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vl0028u01ofjw9hgqx" data-title="0105行列式按行(列)展开-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/18/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0105%E8%A1%8C%E5%88%97%E5%BC%8F%E6%8C%89%E8%A1%8C(%E5%88%97)%E5%B1%95%E5%BC%80-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13l0005v71o2hdm9ct4" data-title="0105行列式按行(列)展开-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -844,14 +844,14 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一-n阶行列式"><a href="#一-n阶行列式" class="headerlink" title="一 n阶行列式"></a>一 n阶行列式</h2><blockquote>
+<h2><span id="一-n阶行列式">一 n阶行列式</span></h2><blockquote>
 <p>$\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\\end{vmatrix}$ $n^2$个数，取不同行不同列数乘积的和或差，成为n阶行列式，记作$D_n$</p>
 <p>$D_n&#x3D;\sum(-1)^{\tau(p_1p_2\cdots p_n)}a_{a_1p_1}a_{a_2p_3}\cdots a_{a_np_n}(n!项的和或差)$</p>
 <p>$p_1p_2\cdots p_n为1 2 \cdot n$的全排列</p>
 <p>$D_n&#x3D;\sum(-1)^{\tau(q_1q_2\cdots q_n)}a_{q_11}a_{q_22}\cdots a_{q_nn}(n!项的和或差)$</p>
 <p>$q_1q_2\cdots q_n为1 2 \cdot n$的全排列</p>
 </blockquote>
-<h2 id="二-三阶行列式"><a href="#二-三阶行列式" class="headerlink" title="二 三阶行列式"></a>二 三阶行列式</h2><p>三阶行列式$\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\a_{21}&amp;a_{22}&amp;a_{23}\a_{31}&amp;a_{32}&amp;a_{33}\\end{vmatrix}$<br>$$<br>\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\a_{21}&amp;a_{22}&amp;a_{23}\a_{31}&amp;a_{32}&amp;a_{33}\\end{vmatrix}&#x3D;\<br>a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}+a_{12}a_{23}a_{31}-a_{12}a_{21}a_{33}+a_{13}a_{21}a_{32}-a_{12}a_{22}a_{31}<br>$$</p>
+<h2><span id="二-三阶行列式">二 三阶行列式</span></h2><p>三阶行列式$\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\a_{21}&amp;a_{22}&amp;a_{23}\a_{31}&amp;a_{32}&amp;a_{33}\\end{vmatrix}$<br>$$<br>\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\a_{21}&amp;a_{22}&amp;a_{23}\a_{31}&amp;a_{32}&amp;a_{33}\\end{vmatrix}&#x3D;\<br>a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}+a_{12}a_{23}a_{31}-a_{12}a_{21}a_{33}+a_{13}a_{21}a_{32}-a_{12}a_{22}a_{31}<br>$$</p>
 <blockquote>
 <p>三阶行列式对角线法则：三条实线看做是平行于主对角线的连线，三条虚线看做是平行于副对角线的连线，实线上三元素的乘积为正好，虚线上三元素的乘积为负号。</p>
 </blockquote>
@@ -861,14 +861,14 @@
 <li>四阶行列式总共$4!&#x3D;24项$；五阶行列式总共120项……因此对角线法则只适用于二、三阶行列式的计算。</li>
 <li>一节行列式$\begin{vmatrix}-2\end{vmatrix}&#x3D;-2$</li>
 </ol>
-<h2 id="三-特殊行列式"><a href="#三-特殊行列式" class="headerlink" title="三 特殊行列式"></a>三 特殊行列式</h2><p>例 $\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}&amp;a_{14}\0&amp;a_{22}&amp;a_{23}&amp;a_{24}\0&amp;0&amp;a_{33}&amp;a_{34}\0&amp;0&amp;0&amp;a_{44}\end{vmatrix}$<br>$$<br>D&#x3D;a_{11}a_{22}a_{33}a_{44}<br>$$<br>推广：$\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\0&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\0&amp;0&amp;0&amp;a_{nn}\end{vmatrix}&#x3D;a_{11}a_{22}\cdots a_{nn}$,称为上山角行列式。</p>
+<h2><span id="三-特殊行列式">三 特殊行列式</span></h2><p>例 $\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}&amp;a_{14}\0&amp;a_{22}&amp;a_{23}&amp;a_{24}\0&amp;0&amp;a_{33}&amp;a_{34}\0&amp;0&amp;0&amp;a_{44}\end{vmatrix}$<br>$$<br>D&#x3D;a_{11}a_{22}a_{33}a_{44}<br>$$<br>推广：$\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\0&amp;a_{22}&amp;\cdots&amp;a_{2n}\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\0&amp;0&amp;0&amp;a_{nn}\end{vmatrix}&#x3D;a_{11}a_{22}\cdots a_{nn}$,称为上山角行列式。</p>
 <p>推广：$\begin{vmatrix}a_{11}&amp;0&amp;\cdots&amp;0\a_{21}&amp;a_{22}&amp;\cdots&amp;0\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}&#x3D;a_{11}a_{22}\cdots a_{nn}$,称为下山角行列式。</p>
 <p>特别地：$\begin{vmatrix}a_{11}\&amp;a_{22}\&amp;&amp;\cdots\&amp;&amp;&amp;a_{nn}\end{vmatrix}&#x3D;a_{11}a_{22}\cdots a_{nn}$称为对角行列式。</p>
 <p>例：$f(x)&#x3D;\begin{vmatrix}x&amp;1&amp;1&amp;2\1&amp;x&amp;1&amp;-1\3&amp;2&amp;x&amp;1\1&amp;1&amp;2x&amp;1\end{vmatrix}中x^3$的系数<br>$$<br>通过观察有x^3的项只有两项\<br>x\cdot x\cdot x\cdot1-x\cdot x\cdot1\cdot 2x&#x3D;-x^3\<br>所以x^3的系数为-1<br>$$</p>
 <p>推广：$\begin{vmatrix}0&amp;0&amp;\cdots&amp;a_{1n}\0&amp;\cdots&amp;a_{2n-1}&amp;a_{2n}\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\end{vmatrix}&#x3D;(-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2n-1}\cdots a_{n1}$称为反下山角行列式。</p>
 <p>推广：$\begin{vmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\a_{21}&amp;\cdots&amp;a_{2n-1}&amp;a_{0}\\cdots&amp;\cdots&amp;\cdots&amp;\cdots\a_{n1}&amp;0&amp;\cdots&amp;0\end{vmatrix}&#x3D;(-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2n-1}\cdots a_{n1}$称为反上三角行列式。</p>
 <p>推广：$\begin{vmatrix}&amp;&amp;&amp;a_{1n}\&amp;&amp;a_{2n-1}\&amp;&amp;\cdots\a_{n1}&amp;&amp;&amp;\end{vmatrix}&#x3D;(-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2n-1}\cdots a_{n1}$称为反对角行列式。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -879,7 +879,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/10/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0103n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vj0025u01oayln9lok" data-title="0103n阶行列式-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/10/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0103n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13j0003v71o2tkj48yg" data-title="0103n阶行列式-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -930,7 +930,7 @@
 <blockquote>
 <p>定理 一个排列中任意两个数对换，排列改变奇偶性。</p>
 </blockquote>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -940,7 +940,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0102%E5%85%A8%E6%8E%92%E5%88%97%E5%92%8C%E5%AF%B9%E6%8D%A2-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vj0022u01o68zz4pel" data-title="0102全排列和对换-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/01%E8%A1%8C%E5%88%97%E5%BC%8F/0102%E5%85%A8%E6%8E%92%E5%88%97%E5%92%8C%E5%AF%B9%E6%8D%A2-%E8%A1%8C%E5%88%97%E5%BC%8F-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13i0002v71o0cuz1lvq" data-title="0102全排列和对换-行列式-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

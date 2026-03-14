@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 前言​	记号$\lim$下面没有标明自变量的变化过程，表示下面定理对$x\to x_0$及$x\to\infty$都是成立的。证明时以$x\to x_0$为例，$x\to\infty$情况，自行证明。 定理1-无穷小的和 定理1：两个无穷小的和是无穷小。  证明：以$x\to x_0$为例$$设\alpha及\beta是当x\to x_0时的无穷小，而 \\gamma &#x3D; \">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-08T19:28:26.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.308Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.247Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,15 +96,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​	记号$\lim$下面没有标明自变量的变化过程，表示下面定理对$x\to x_0$及$x\to\infty$都是成立的。证明时以$x\to x_0$为例，$x\to\infty$情况，自行证明。</p>
-<h2 id="定理1-无穷小的和"><a href="#定理1-无穷小的和" class="headerlink" title="定理1-无穷小的和"></a>定理1-无穷小的和</h2><blockquote>
+<h2><span id="前言">前言</span></h2><p>​	记号$\lim$下面没有标明自变量的变化过程，表示下面定理对$x\to x_0$及$x\to\infty$都是成立的。证明时以$x\to x_0$为例，$x\to\infty$情况，自行证明。</p>
+<h2><span id="定理1-无穷小的和">定理1-无穷小的和</span></h2><blockquote>
 <p>定理1：两个无穷小的和是无穷小。</p>
 </blockquote>
 <p>证明：以$x\to x_0$为例<br>$$<br>设\alpha及\beta是当x\to x_0时的无穷小，而 \<br>\gamma &#x3D; \alpha + \beta  \<br>因为\alpha是当x\to x_0时的无穷小，所以\forall\epsilon\gt 0,\exists\delta_1\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta_1时，有 \<br>\lvert\alpha\rvert\lt \frac{\epsilon}{2} \<br>因为\beta是当x\to x_0时的无穷小，所以\forall\frac{\epsilon}{2}\gt 0,\exists\delta_2\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta_2时，有 \<br>\lvert\beta\rvert\lt \frac{\epsilon}{2} \<br>取\delta&#x3D;\min{\delta_1,\delta_2}，则当0\lt\lvert x-x_0\rvert\lt\delta时，有 \<br>\lvert\gamma\rvert&#x3D;\lvert\alpha+\beta\rvert\le\lvert\alpha\rvert+\lvert\beta\rvert\lt\frac{\epsilon}{2}+\frac{\epsilon}{2}&#x3D;\epsilon  \<br>所以\gamma也是当x\to x_0时的无穷小。<br>$$</p>
 <blockquote>
 <p>用数学归纳法可证：有限个无穷小之和也是无穷小。</p>
 </blockquote>
-<h2 id="定理2-无穷小的乘积"><a href="#定理2-无穷小的乘积" class="headerlink" title="定理2-无穷小的乘积"></a>定理2-无穷小的乘积</h2><blockquote>
+<h2><span id="定理2-无穷小的乘积">定理2-无穷小的乘积</span></h2><blockquote>
 <p>定理2：有界函数和无穷小的乘积是无穷小。</p>
 </blockquote>
 <p>证明：以$x\to x_0$为例<br>$$<br>设函数u在x_0的某一去心邻域\overset{\circ}{U}(x_0,\delta_1)内是有界的，即 \<br>\exists M\gt 0,当x\in \overset{\circ}{U}(x_0,\delta_1),有 \<br>|f(x)|\le M \<br>又设\alpha是当x\to x_0时的无穷小，即 \<br>\forall \epsilon\gt0,\exists\delta_2\gt0,当x\in \overset{\circ}{U}(x_0,\delta_2)时，有 \<br>|\alpha|\lt\frac{\epsilon}{M} \<br>取\delta&#x3D;\min{\delta_1,\delta_2}，则 \<br>|u\delta|&#x3D;|u|\cdot|\delta|\lt M\cdot \frac{\epsilon}{M}&#x3D;\epsilon， \<br>说以u\alpha也是当x\to x_0时的无穷小。<br>$$</p>
@@ -112,7 +112,7 @@
 <p>推论1：常数与无穷小的乘积是无穷小。</p>
 <p>推论2：有限个无穷小的乘积是无穷小。</p>
 </blockquote>
-<h2 id="定理3-函数极限四则运算"><a href="#定理3-函数极限四则运算" class="headerlink" title="定理3-函数极限四则运算"></a>定理3-函数极限四则运算</h2><blockquote>
+<h2><span id="定理3-函数极限四则运算">定理3-函数极限四则运算</span></h2><blockquote>
 <p>定理3：如果$\lim f(x)&#x3D;A,\lim g(x)&#x3D;B$,那么</p>
 <p>(1) $\lim[f(x)\pm g(x)]&#x3D;\lim f(x)\pm\lim g(x)&#x3D;A\pm B$</p>
 <p>(2) $lim[f(x)\cdot g(x)]&#x3D;\lim f(x)\cdot\lim g(x)&#x3D;A\cdot B$</p>
@@ -125,13 +125,13 @@
 <p>推论2：如果\lim f(x)存在，而$n$是正整数，那么</p>
 <p>$\lim[f(x)]^n&#x3D;[\lim f(x)]^n$</p>
 </blockquote>
-<h2 id="定理4-数列极限四则运算"><a href="#定理4-数列极限四则运算" class="headerlink" title="定理4-数列极限四则运算"></a>定理4-数列极限四则运算</h2><blockquote>
+<h2><span id="定理4-数列极限四则运算">定理4-数列极限四则运算</span></h2><blockquote>
 <p>设有数列${x_n}$和${y_n}$,如果$\lim\limits_{n\to\infty}x_n&#x3D;A,\lim\limits_{n\to\infty}y_n&#x3D;B$,那么 </p>
 <p>(1) $\lim\limits_{n\to\infty}(x_n\pm y_n)&#x3D;A\pm B$</p>
 <p>(2) $\lim\limits_{n\to\infty}(x_n\cdot y_n)&#x3D;A\cdot B$</p>
 <p>(3) 当$y_n\neq 0(n&#x3D;1,2,\ldots)$且$B\neq 0$时，$\lim\limits_{n\to\infty}\frac{x_n}{y_n}&#x3D;\frac AB$</p>
 </blockquote>
-<h2 id="定理5"><a href="#定理5" class="headerlink" title="定理5"></a>定理5</h2><blockquote>
+<h2><span id="定理5">定理5</span></h2><blockquote>
 <p>定理5：$如果，\phi(x)\ge\psi(x),而\lim\phi(x)&#x3D;A,\lim\psi(x)&#x3D;B,那么A\ge B$</p>
 </blockquote>
 <p>证明：<br>$$<br>设f(x)&#x3D;\phi(x)-\psi(x),则 f(x)\ge 0 \<br>由定理3得，\lim f(x)&#x3D;\lim[\phi(x)-\psi(x)]&#x3D;A-B \<br>f(x)\ge 0,由极限性质定理3推论得 \lim f(x)\ge0 即 \<br>A-B\ge 0,A\ge B<br>$$</p>
@@ -139,12 +139,12 @@
 <p>$总结，当a_0\neq 0,b_0\neq 0,m和n都为非负整数时，有$</p>
 <p>$\lim\limits_{x\to\infty}\frac{a_0x^m+a_1x^{m-1}+\cdots+a_m}{b_0x^n+b_1x^{n-1}+\cdots+b_n}&#x3D;\begin{cases} 0,当n\gt m \ \frac{a_0}{b_0}, 当n&#x3D;m \  \infty,当n\lt m\end{cases}$</p>
 </blockquote>
-<h2 id="定理6-复合函数的极限运算法则"><a href="#定理6-复合函数的极限运算法则" class="headerlink" title="定理6-复合函数的极限运算法则"></a>定理6-复合函数的极限运算法则</h2><blockquote>
+<h2><span id="定理6-复合函数的极限运算法则">定理6-复合函数的极限运算法则</span></h2><blockquote>
 <p>定理6（复合函数的极限运算法则）：设函数$y&#x3D;f[g(x)]$是有函数$u&#x3D;g(x)$与函数$y&#x3D;f(u)$复合而成， $f[g(x)]$在点$x_0$的某去心邻域内有定义，若$\lim\limits_{x\to x_0}g(x)&#x3D;u_0,\lim\limits_{u\to u_0}f(u)&#x3D;A$,存在$\delta_0\gt 0$，当$x\in \overset{\circ}{U}(x_0,\delta_1)$时，有$g(x)\neq u_0$，则</p>
 <p>$\lim\limits_{x\to x_0}f[g(x)]&#x3D;\lim\limits_{u\to u_0}f(u)&#x3D;A$</p>
 </blockquote>
 <p>证明：<br>$$<br>\lim\limits_{u\to u_0}f(u)&#x3D;A ，即 \<br>\forall\epsilon\gt 0,\exist\psi\gt 0,当0\lt|u-u_0|\lt\psi时，有 \<br>|f(u)-A|\lt \epsilon \<br>因为\lim\limits_{x\to x_0}g(x)&#x3D;u_0,对于上述\psi,\exist\delta_1&gt;0,当0\lt|x-x_0|\lt\delta_1时，有 \<br>|g(x)-u_0|\lt \psi \<br>由假设 当x\in \overset{\circ}{U}(x_0,\delta_0)时，g(x)\neq u_0 \<br>取\delta&#x3D;\min(\delta_0,\delta_1),则当0\lt|x-x_0|\lt\delta时， \<br>\begin{cases}<br>|g(x)-u_0|\neq 0 \<br>|g(x)-u_0|\lt \psi<br>\end{cases}<br>同时成立，即 0\lt|g(x)-u_0|\lt\psi, \<br>所以 |f[g(x)]-A|&#x3D;|f(u)-A|\lt \epsilon 即\<br>\lim\limits_{x\to x_0}f[g(x)]&#x3D;\lim\limits_{u\to u_0}f(u)&#x3D;A<br>$$</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<h2><span id="后记">后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a>:</p>
 </blockquote>
@@ -152,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5p0ur0009u01o2j7j9tg3" data-title="0105极限的运算法则-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq5v13w000kv71oejss0vzj" data-title="0105极限的运算法则-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1 引入对于一些复杂函数，我们希望用一些简单的函数（幂函数-多项式函数）来近似表达。 前面我们在学习微分时，有$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+o(x-x_0)$（误差） $\Rightarrow f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$ 但是这种近似有缺点：  近似精确度不高 有误差，无法估计  2 泰勒中值定理">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-13T17:23:47.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.312Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.253Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,7 +96,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="1-引入"><a href="#1-引入" class="headerlink" title="1 引入"></a>1 引入</h2><p>对于一些复杂函数，我们希望用一些简单的函数（幂函数-多项式函数）来近似表达。</p>
+<h2><span id="1-引入">1 引入</span></h2><p>对于一些复杂函数，我们希望用一些简单的函数（幂函数-多项式函数）来近似表达。</p>
 <p>前面我们在学习微分时，有$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+o(x-x_0)$（误差）</p>
 <p>$\Rightarrow f(x)\approx f(x_0)+f^{‘}(x_0)(x-x_0)$</p>
 <p>但是这种近似有缺点：</p>
@@ -104,7 +104,7 @@
 <li>近似精确度不高</li>
 <li>有误差，无法估计</li>
 </ol>
-<h2 id="2-泰勒中值定理"><a href="#2-泰勒中值定理" class="headerlink" title="2 泰勒中值定理"></a>2 泰勒中值定理</h2><h3 id="2-1-泰勒多项式"><a href="#2-1-泰勒多项式" class="headerlink" title="2.1 泰勒多项式"></a>2.1 泰勒多项式</h3><p>设函数$f(x)在x_0$处有n阶导数，试找出一个关于$(x-x_0)的n$次多项式</p>
+<h2><span id="2-泰勒中值定理">2 泰勒中值定理</span></h2><h3><span id="21-泰勒多项式">2.1 泰勒多项式</span></h3><p>设函数$f(x)在x_0$处有n阶导数，试找出一个关于$(x-x_0)的n$次多项式</p>
 <p>$p_n(x)&#x3D;a_0+a_1(x-x_0)+a_2(x-x_0)^2+\cdots+a_n(x-x_0)^n$    (3-1)</p>
 <p>来近似表达$f(x)$要求$P_n(x)与f(x)$之差是当$x\to x_0时比(x-x_0)^n$高阶的无穷小。</p>
 <p>要满足上述要求，我们假设$P_n(x)在x_0$处的函数值及它直到n阶导数在$x_0$处的值依次与$f(x_0),f^{‘}(x_0),\cdots,f^{(n)}(x_0)$相等，即</p>
@@ -113,7 +113,7 @@
 <p>$a_0&#x3D;f(x_0),a_1&#x3D;f^{‘}(x_0),a_2&#x3D;\frac{f^{‘}(x_0)}{2!},\cdots,a_n&#x3D;\frac{f^{(n)}(x_0)}{n!}$</p>
 <p>$p_n(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$   (3-2)</p>
 <p>下面的定理表明，多项式（3-2）的确是我们要找的n次多项式。</p>
-<h3 id="3-2-泰勒中值定理1"><a href="#3-2-泰勒中值定理1" class="headerlink" title="3.2 泰勒中值定理1"></a>3.2 泰勒中值定理1</h3><blockquote>
+<h3><span id="32-泰勒中值定理1">3.2 泰勒中值定理1</span></h3><blockquote>
 <p>如果函数$f(x)在x_0处具有n$阶导数，那么存在$x_0$的一个邻域，对于改邻域内的任一$x$,有</p>
 <p>$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)$   (3-3)</p>
 <p>其中$R_n(x)&#x3D;o((x-x_0)^n)$  (3-4)</p>
@@ -123,7 +123,7 @@
 <ol>
 <li>$R_n(x)&#x3D;o((x-x_0)^n)称为f(x)在x_0处$的佩亚诺余项</li>
 </ol>
-<h3 id="3-3-泰勒中值定理2"><a href="#3-3-泰勒中值定理2" class="headerlink" title="3.3 泰勒中值定理2"></a>3.3 泰勒中值定理2</h3><blockquote>
+<h3><span id="33-泰勒中值定理2">3.3 泰勒中值定理2</span></h3><blockquote>
 <p>如果函数$f(x)$在$x_0$的某个邻域$U(x_0)$内具有$(n+1)$阶导数，那么对于任一$x\in U(x_0)$，有</p>
 <p>$f(x)&#x3D;f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)$   (3-5)</p>
 <p>其中$R_n(x)&#x3D;\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$  (3-6)</p>
@@ -136,18 +136,18 @@
 <li>也称为将$f(x)在x_0$处展成带有拉格朗日型余项的n阶泰勒公式或称为$f(x)按(x-x_0)$的幂展成带有拉格朗日型余项的n阶泰勒公式</li>
 <li>$n&#x3D;0时，f(x)&#x3D;f(x_0)+f^{‘}(\xi)(x-x_0)$,即为拉格朗日中值定理公式</li>
 </ol>
-<h3 id="2-4-误差估计"><a href="#2-4-误差估计" class="headerlink" title="2.4 误差估计"></a>2.4 误差估计</h3><p>由泰勒中值定理2知，我们用Pn(x)近似表达函数$f(x)$时，其误差为$|Rn(x)|$。如果对于某个固定的n，当$x\in U(x_0)时，|f^{(n+1)}(x)|\le M$,那么有估计式</p>
+<h3><span id="24-误差估计">2.4 误差估计</span></h3><p>由泰勒中值定理2知，我们用Pn(x)近似表达函数$f(x)$时，其误差为$|Rn(x)|$。如果对于某个固定的n，当$x\in U(x_0)时，|f^{(n+1)}(x)|\le M$,那么有估计式</p>
 <p>$|Rn(x)|&#x3D;|\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}|\le\frac{M}{(n+1)!}(|x-x_0|)^{n+1}$</p>
-<h2 id="4-麦克劳林公式"><a href="#4-麦克劳林公式" class="headerlink" title="4 麦克劳林公式"></a>4 麦克劳林公式</h2><p>如果取$x_0&#x3D;0$,那么泰勒公式变为：<br>$$<br>f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x) \<br>Rn(x)&#x3D;<br>\begin{cases}<br>o(x^n)\quad 佩亚诺型余项 \<br>\frac{f^{n+1}(\xi)}{(n+1)!}x^{n+1}(\xi在x_0与x之间)\quad 拉格朗日型余项 \<br>\end{cases}<br>$$<br>此公式称为$f(x)的n阶$麦克劳林公式。</p>
+<h2><span id="4-麦克劳林公式">4 麦克劳林公式</span></h2><p>如果取$x_0&#x3D;0$,那么泰勒公式变为：<br>$$<br>f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x) \<br>Rn(x)&#x3D;<br>\begin{cases}<br>o(x^n)\quad 佩亚诺型余项 \<br>\frac{f^{n+1}(\xi)}{(n+1)!}x^{n+1}(\xi在x_0与x之间)\quad 拉格朗日型余项 \<br>\end{cases}<br>$$<br>此公式称为$f(x)的n阶$麦克劳林公式。</p>
 <p>注：</p>
 <ol>
 <li>$\xi$可以写成$\theta x(0\lt\theta\lt1)$</li>
 <li>相应的误差估计：$|Rn(x)|\le\frac{M}{(n+1)!}|x|^{n+1}$</li>
 <li>麦克劳林公式函数$f(x)按x的幂$展开</li>
 </ol>
-<h2 id="5-常见麦克劳林公式"><a href="#5-常见麦克劳林公式" class="headerlink" title="5 常见麦克劳林公式"></a>5 常见麦克劳林公式</h2><p>$$<br>e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+\frac{e^{\theta x}}{(n+1)!}(o(x^n )) \<br>\sin x&#x3D;x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^{m-1}\frac{x^{2m-1}}{(2m-1)!}+(-1)^m\frac{\cos\theta x}{(2m+1)!}x^{2m+1} (o(x^{2m-1}))\<br>\cos x&#x3D;1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+(-1)^{m+1}\frac{\cos\theta x}{(2m+2)!}x^{2m+2}(o(x^{2m})) \<br>\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+\frac{(-1)^n}{(n+1)(1+\theta x)^{n+1}}(o(x^n)) \<br>(1+x)^{\alpha}&#x3D;1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+\frac{\alpha(\alpha-1)\cdots(\alpha-n)}{(n+1)!}(1+\theta x)^{\alpha-n-1}x^{n+1}(o(x^n)) \<br>$$</p>
-<h2 id="6-泰勒公式相关例题"><a href="#6-泰勒公式相关例题" class="headerlink" title="6 泰勒公式相关例题"></a>6 泰勒公式相关例题</h2><h3 id="6-1-将函数展成指定的泰勒公式"><a href="#6-1-将函数展成指定的泰勒公式" class="headerlink" title="6.1 将函数展成指定的泰勒公式"></a>6.1 将函数展成指定的泰勒公式</h3><h4 id="6-1-1-公式法"><a href="#6-1-1-公式法" class="headerlink" title="6.1.1 公式法"></a>6.1.1 公式法</h4><p>直接利用泰勒公式或者麦克劳林公式 </p>
-<h4 id="6-1-2-间接展法（变量替换）"><a href="#6-1-2-间接展法（变量替换）" class="headerlink" title="6.1.2 间接展法（变量替换）"></a>6.1.2 间接展法（变量替换）</h4><p>$f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x)$</p>
+<h2><span id="5-常见麦克劳林公式">5 常见麦克劳林公式</span></h2><p>$$<br>e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+\frac{e^{\theta x}}{(n+1)!}(o(x^n )) \<br>\sin x&#x3D;x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^{m-1}\frac{x^{2m-1}}{(2m-1)!}+(-1)^m\frac{\cos\theta x}{(2m+1)!}x^{2m+1} (o(x^{2m-1}))\<br>\cos x&#x3D;1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+(-1)^{m+1}\frac{\cos\theta x}{(2m+2)!}x^{2m+2}(o(x^{2m})) \<br>\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+\frac{(-1)^n}{(n+1)(1+\theta x)^{n+1}}(o(x^n)) \<br>(1+x)^{\alpha}&#x3D;1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+\frac{\alpha(\alpha-1)\cdots(\alpha-n)}{(n+1)!}(1+\theta x)^{\alpha-n-1}x^{n+1}(o(x^n)) \<br>$$</p>
+<h2><span id="6-泰勒公式相关例题">6 泰勒公式相关例题</span></h2><h3><span id="61-将函数展成指定的泰勒公式">6.1 将函数展成指定的泰勒公式</span></h3><h4><span id="611-公式法">6.1.1 公式法</span></h4><p>直接利用泰勒公式或者麦克劳林公式 </p>
+<h4><span id="612-间接展法变量替换">6.1.2 间接展法（变量替换）</span></h4><p>$f(x)&#x3D;f(0)+f^{‘}(0)\cdot x+\frac{f^{‘}(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x)$</p>
 <p>$f[g(x)]&#x3D;f(0)+f^{‘}(0)\cdot g(x)+\frac{f^{‘}(0)}{2!}g^2(x)+\cdots+\frac{f^{(n)}(0)}{n!}g^n(x)+R_n[g(x)]	$</p>
 <p>例2 </p>
 <p>1）将$f(x)&#x3D;e^{2x}$展成佩亚诺型余项的n阶麦克劳林公式<br>$$<br>解：e^x&#x3D;1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n ) \<br>用2x替换x后仍然是关于x的幂的展开式即麦克劳林公式，所以直接替换，得 \<br>e^{2x}&#x3D;1+2x+\frac{(2x)^2}{2!}+\cdots+\frac{(2x)^n}{n!}+o(x^n )\<br>&#x3D;e^x&#x3D;1+2x+\frac{2^2}{2!}x^2+\cdots+\frac{2^n}{n!}x^n+o(x^n )<br>$$<br>2)把$f(x)&#x3D;e^x在x&#x3D;1$处展成佩亚诺型余项的n阶泰勒公式<br>$$<br>解：我们知道e^x的n阶麦克劳林公式，但是需要展成(x-1)的幂的多项式 \<br>e^x&#x3D;e^{1+(x-1)}&#x3D;e\cdot e^{x-1}&#x3D;e[1+(x-1)+\frac{(x-1)^2}{2!}+\cdots+\frac{(x-1)^n}{n!}+o((x-1)^n )] \<br>&#x3D;e+e(x-1)+\frac{e}{2!}(x-1)^2+\cdots+\frac{e}{n!}(x-1)^n+o((x-1)^n )<br>$$</p>
@@ -155,7 +155,7 @@
 <li>也可以直接利用公式带入</li>
 </ul>
 <p>3）把$f(x)&#x3D;x\cdot\ln(2+x)$展成n阶麦克劳林公式<br>$$<br>解：已知\ln(1+x)&#x3D;x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots+(-1)^{n-1}\frac{x^n}{n!}+o(x^n) \<br>如果\ln(2+x)&#x3D;\ln[1+(1+x)]带入展开是(1+x)的幂的多项式即f(x)在-1处的泰勒公式不是麦克劳林公式 \<br>此时\ln(2+x)&#x3D;\ln[2(1+\frac{1}{2}x)]&#x3D;\ln2+\ln(1+\frac{1}{2}x) \<br>因为f(x)&#x3D;x\cdot\ln(2+x)，所以\ln(1+\frac{1}{2}x)展成n-1阶即可,得 \<br>\ln(1+\frac{1}{2}x)&#x3D;\frac{1}{2}x-\frac{x^2}{2^2\cdot2!}+\frac{x^3}{2^3\cdot3!}-\cdots+(-1)^{n-2}\frac{x^{n-1}}{2^{n-1}(n-1)!}+o(x^{n-1}) \<br>f(x)&#x3D;x[\ln2+\ln(1+\frac{1}{2}x)]&#x3D;x\ln2+\frac{1}{2}x^2-\frac{x^3}{2^2\cdot2!}+\frac{x^4}{2^3\cdot3!}-\cdots+(-1)^{n-2}\frac{x^{n}}{2^{n-1}(n-1)!}+o(x^{n})<br>$$</p>
-<h3 id="6-2-利用泰勒公式求极限"><a href="#6-2-利用泰勒公式求极限" class="headerlink" title="6.2 利用泰勒公式求极限"></a>6.2 利用泰勒公式求极限</h3><ul>
+<h3><span id="62-利用泰勒公式求极限">6.2 利用泰勒公式求极限</span></h3><ul>
 <li>无穷小的运算</li>
 </ul>
 <p>$o(x^n)\pm o(x^n)&#x3D;o(x^n)\quad o(x^n)+o(x^k)&#x3D;o(x^n)(k\lt n)$</p>
@@ -171,14 +171,14 @@
 <li><p>要注意与等价无穷小代换，有理化等结合使用</p>
 </li>
 </ol>
-<h3 id="6-3-确定无穷小的阶数"><a href="#6-3-确定无穷小的阶数" class="headerlink" title="6.3 确定无穷小的阶数"></a>6.3 确定无穷小的阶数</h3><blockquote>
+<h3><span id="63-确定无穷小的阶数">6.3 确定无穷小的阶数</span></h3><blockquote>
 <p>若$f(x)&#x3D;a_jx^k+a_{j+1}x^{k+1}+\cdots+a_mx^n,(a_j\not&#x3D;0,k\lt n)$,</p>
 <p>则当$x\to0$时，有$f(x)\backsim a_{j}x^k$</p>
 <p>即$f(x)是x的k阶无穷小$</p>
 </blockquote>
 <p>$$<br>证明：<br>\lim\limits_{x\to0}{\frac{f(x)}{a_jx^k}}&#x3D;\lim\limits_{x\to0}{\frac{a_jx^k+a_{j+1}x^{k+1}+\cdots+a_mx^n}{a_jx^k}} \<br>&#x3D;\lim\limits_{x\to0}{(1+\frac{a_{j+1}}{a_j}x+\frac{a_{j+2}}{a_j}x^2+\cdots+\frac{a_m}{a_j}x^{n-k})}&#x3D;1 \<br>即f(x)\backsim a_jx^k或f(x)是x的k阶无穷小<br>$$</p>
 <p>例4 试确定$a,b,使f(x)&#x3D;x-(a+b\cos x)\sin x,当x\to0$时是关于$x的5$阶无穷小。<br>$$<br>解：化简f(x) \<br>f(x)&#x3D;x-(a+b\cos x)\sin x&#x3D;x-a\sin x-b\sin x\cos x&#x3D;x-a\sin x-\frac{b}{2}\sin 2x \<br>把f(x)展成5阶麦克劳林公式，得\<br>f(x)&#x3D;x-a(x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5))-\frac{b}{2}(2x-\frac{2^3x^3}{3!}+\frac{2^5x^5}{5!}+o(x^5)) \<br>&#x3D;(1-a-b)x+\frac{a+4b}{3!}x^3-\frac{a+16b}{5!}x^5+o(x^5) \<br>因为f(x)是关于x的5阶无穷小，则 \<br>\begin{cases}<br>1-a-b&#x3D;0 \<br>a+4b&#x3D;0 \<br>a+16b\not&#x3D;0<br>\end{cases} \<br>求解方程组得 a&#x3D;-\frac{1}{3} \quad b&#x3D;\frac{4}{3}<br>$$</p>
-<h3 id="6-4-求-f-n-x-0-即-f-x-的n阶导在某一点的值"><a href="#6-4-求-f-n-x-0-即-f-x-的n阶导在某一点的值" class="headerlink" title="6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值"></a>6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值</h3><blockquote>
+<h3><span id="64-求fnx_0即fx的n阶导在某一点的值">6.4 求$f^{(n)}(x_0)$即$f(x)$的n阶导在某一点的值</span></h3><blockquote>
 <p>原理 $f(x)的n阶泰勒公式为:f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)$</p>
 <p>若已知$f(x)$的展开式为：$f(x_0)+f^{‘}(x_0)(x-x_0)+\frac{f^{‘}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)$</p>
 <p>则$\frac{f^{(n)}(x_0)}{n!}&#x3D;a_n,即f^{(n)}(x_0)&#x3D;n!a_n$</p>
@@ -186,7 +186,7 @@
 <p>例5 $f(x)&#x3D;(1+x^2)\cdot e^x$,求$f^{(100)}(0)$</p>
 <p>1）可以利用莱布尼茨公式求$f(x)的100阶导数$，在带入x&#x3D;0求值</p>
 <p>2）利用麦克劳林公式(x&#x3D;0)<br>$$<br>解：因为求f^{(100)}(0)，那么我们把f(x)展成100阶麦克劳林公式且只关心x^{100}项的系数 \<br>f(x)&#x3D;(1+x^2)(1+x+\cdots+\frac{1}{98!}x^{98}+\cdots+\frac{1}{100!}x^{100}+o(x^{100})) \<br>设x^{100}项的系数为a_{100},则 \<br>a_{100} &#x3D; \frac{1}{100!}+\frac{1}{98!} 则 \<br>f^{(100)}(0)&#x3D;a_{100}100!&#x3D;(\frac{1}{100!}+\frac{1}{98!})100!&#x3D;1+9900&#x3D;9901<br>$$</p>
-<h3 id="6-5-证明题"><a href="#6-5-证明题" class="headerlink" title="6.5 证明题"></a>6.5 证明题</h3><p>例6. 设函数$f(x)在闭区间[-1,1]$上是具有3阶连续导数，且$f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0$</p>
+<h3><span id="65-证明题">6.5 证明题</span></h3><p>例6. 设函数$f(x)在闭区间[-1,1]$上是具有3阶连续导数，且$f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0$</p>
 <p>证明：存在$\xi\in(-1,1),使f^{‘’’}(\xi)&#x3D;3$</p>
 <p>分析：</p>
 <ol>
@@ -201,7 +201,7 @@
 </li>
 </ol>
 <p>$$<br>证明：f(x)在x&#x3D;0处展开2阶泰勒公式 ，得\<br>f(x)&#x3D;f(0)+f^{‘}(0)x+\frac{f^{‘’}(0)}{2!}x^2+\frac{f^{‘’’}(\xi)}{3!}x^3(\xi在0及x之间) \<br>带入f(-1)&#x3D;0,f(1)&#x3D;1,f^{‘}(0)&#x3D;0 \quad得\<br>\begin{cases}<br>f(-1)&#x3D;0&#x3D;f(0)+\frac{f^{‘’}(0)}{2}-\frac{f^{‘’’}(\xi_1)}{6}(\xi_1\in(-1,0)) \quad (1) \<br>f(1)&#x3D;1&#x3D;f(0)+\frac{f^{‘’}(0)}{2}+\frac{f^{‘’’}(\xi_2)}{6}(\xi_2\in(0,1)) \quad(2)<br>\end{cases} \<br>(2)式-(1)式得 \<br>\frac{f^{‘’’}(\xi_1)+f^{‘’’}(\xi_2)}{6}&#x3D;1 即\frac{f^{‘’’}(\xi_1)+f^{‘’’}(\xi_2)}{2}&#x3D;3 \<br>令g(x)&#x3D;f^{‘’’}(x),x\in[-1,1],则g(x)在[-1,1]上连续 \<br>\xi_1\in(-1,0),\xi_2\in(0,1),则 \<br>\min{g(\xi_1),g(\xi_2)}\le\frac{g(\xi_1)+g(\xi_2)}{2}\le\max{g(\xi_1),g(\xi_2)} \<br>则由介值定理知 \exists\xi\in(\xi_1,\xi_2)\subset(-1,1),使g(\xi)&#x3D;3 即\<br>f^{‘’’}(\xi)&#x3D;3<br>$$</p>
-<h2 id="7-后记"><a href="#7-后记" class="headerlink" title="7 后记"></a>7 后记</h2><blockquote>
+<h2><span id="7-后记">7 后记</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址：<a target="_blank" rel="noopener" href="https://gitee.com/gaogzhen/math">https://gitee.com/gaogzhen/math</a></p>
 </blockquote>
@@ -212,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/13/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0303%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5p0uz000su01obevp31kc" data-title="0303泰勒公式-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/01/13/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0303%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq5v1450013v71oea689ozh" data-title="0303泰勒公式-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

@@ -14,7 +14,7 @@
 <meta property="og:description" content="[TOC] 1 分块矩阵的定义 将矩阵A用若干条纵线和横线分成许多个小矩阵，每一个小矩阵称为A的子快，以子块为元素的形式上的矩阵称为分块矩阵。  2 分块矩阵的运算（性质） 设矩阵A与B的行数相同，列数相同，采用相同的分块法，有$$A&#x3D;\begin{pmatrix}A_{11}&amp;\cdots&amp;A_{1r}\\vdots&amp;&amp;\vdots\A_{s1}&amp;amp">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-04-07T17:42:35.000Z">
-<meta property="article:modified_time" content="2026-03-14T10:01:37.308Z">
+<meta property="article:modified_time" content="2026-03-14T10:06:14.247Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -96,10 +96,10 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h3 id="1-分块矩阵的定义"><a href="#1-分块矩阵的定义" class="headerlink" title="1 分块矩阵的定义"></a>1 分块矩阵的定义</h3><blockquote>
+<h3><span id="1-分块矩阵的定义">1 分块矩阵的定义</span></h3><blockquote>
 <p>将矩阵A用若干条纵线和横线分成许多个小矩阵，每一个小矩阵称为A的子快，以子块为元素的形式上的矩阵称为分块矩阵。</p>
 </blockquote>
-<h3 id="2-分块矩阵的运算（性质）"><a href="#2-分块矩阵的运算（性质）" class="headerlink" title="2 分块矩阵的运算（性质）"></a>2 分块矩阵的运算（性质）</h3><ol>
+<h3><span id="2-分块矩阵的运算性质">2 分块矩阵的运算（性质）</span></h3><ol>
 <li><p>设矩阵A与B的行数相同，列数相同，采用相同的分块法，有<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{sr}<br>\end{pmatrix}<br>,B&#x3D;\begin{pmatrix}<br>B_{11}&amp;\cdots&amp;B_{1r}\<br>\vdots&amp;&amp;\vdots\<br>B_{s1}&amp;\cdots&amp;B_{sr}<br>\end{pmatrix}\<br>$$<br>其中$A_{ij}与B_{ij}$行数相同，列数相同，那么<br>$$<br>A+B&#x3D;\begin{pmatrix}<br>A_{11}+B_{11}&amp;\cdots&amp;A_{1r}+B_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}+B_{s1}&amp;\cdots&amp;A_{sr}+B_{sr}<br>\end{pmatrix}<br>$$</p>
 </li>
 <li><p>设<br>$$<br>A&#x3D;\begin{pmatrix}<br>A_{11}&amp;\cdots&amp;A_{1r}\<br>\vdots&amp;&amp;\vdots\<br>A_{s1}&amp;\cdots&amp;A_{sr}<br>\end{pmatrix}<br>,\lambda为数，那么<br>$$</p>
@@ -114,9 +114,9 @@
 <p>$$<br>因 A&#x3D;\begin{pmatrix}<br>5&amp;\vline0&amp;0\<br>\hdashline<br>0&amp;\vline3&amp;1\<br>0&amp;\vline2&amp;1<br>\end{pmatrix}<br>&#x3D;\begin{pmatrix}<br>A_1&amp;O\<br>O&amp;A_2<br>\end{pmatrix}\<br>A_1&#x3D;(5),A_1^{-1}&#x3D;(\frac{1}{5})\<br>A_2&#x3D;\begin{pmatrix}<br>3&amp;1\<br>2&amp;1<br>\end{pmatrix}<br>,A_2^{-1}&#x3D;\begin{pmatrix}<br>1&amp;-2\<br>-1&amp;3\<br>\end{pmatrix}\<br>所以A^{-1}&#x3D;\begin{pmatrix}<br>\frac{1}{5}&amp;0&amp;0\<br>0&amp;1&amp;-2\<br>0&amp;-1&amp;3<br>\end{pmatrix}<br>$$</p>
 </li>
 </ol>
-<h3 id="3-按列分块与按行分块"><a href="#3-按列分块与按行分块" class="headerlink" title="3 按列分块与按行分块"></a>3 按列分块与按行分块</h3><p>$m\times n$矩阵A有n列，称为矩阵A的n个列向量，若第j列记作<br>$$<br>a_j&#x3D;\begin{pmatrix}<br>a_{1j}\<br>a_{2j}\<br>\vdots\<br>a_{mj}<br>\end{pmatrix}<br>$$<br>则A可按列分块位<br>$$<br>A&#x3D;(a_1,a_2,\cdots,a_n)<br>$$<br>$m\times n$矩阵A有m行，称为矩阵A的m个行向量，若第$i$行记作<br>$$<br>\alpha_i^T&#x3D;(a_{i1},a_{i2},\cdots,a_{in})<br>$$<br>则A可按行分开为<br>$$<br>A&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>$$<br>对于矩阵$A&#x3D;(a_{ij})<em>{m\times s}$与矩阵$B&#x3D;(b</em>{ij})<em>{s\times n}$的乘积矩阵$AB&#x3D;C&#x3D;(c</em>{ij})<em>{m\times n}$，若把A按行分成m快，把B案列分成n快，便有<br>$$<br>AB&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>\begin{pmatrix}<br>b_1,b_2,\cdots,b_n\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>\alpha_1^Tb_1&amp;\alpha_1^Tb_2&amp;\cdots&amp;\alpha_1^Tb_n\<br>\alpha_2^Tb_1&amp;\alpha_2^Tb_2&amp;\cdots&amp;\alpha_2^Tb_n\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>\alpha_m^Tb_1&amp;\alpha_m^Tb_2&amp;\cdots&amp;\alpha_m^Tb_n\<br>\end{pmatrix}<br>$$<br>其中<br>$$<br>c</em>{ij}&#x3D;\alpha_i^Tb_j&#x3D;(a_{i1},a_{i2},\cdots,a_{is})<br>\begin{pmatrix}<br>b_{1j}\<br>b_{2j}\<br>\vdots\<br>b_{sj}<br>\end{pmatrix}<br>&#x3D;\sum_{k&#x3D;1}^sa_{ik}b_{kj}<br>$$</p>
+<h3><span id="3-按列分块与按行分块">3 按列分块与按行分块</span></h3><p>$m\times n$矩阵A有n列，称为矩阵A的n个列向量，若第j列记作<br>$$<br>a_j&#x3D;\begin{pmatrix}<br>a_{1j}\<br>a_{2j}\<br>\vdots\<br>a_{mj}<br>\end{pmatrix}<br>$$<br>则A可按列分块位<br>$$<br>A&#x3D;(a_1,a_2,\cdots,a_n)<br>$$<br>$m\times n$矩阵A有m行，称为矩阵A的m个行向量，若第$i$行记作<br>$$<br>\alpha_i^T&#x3D;(a_{i1},a_{i2},\cdots,a_{in})<br>$$<br>则A可按行分开为<br>$$<br>A&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>$$<br>对于矩阵$A&#x3D;(a_{ij})<em>{m\times s}$与矩阵$B&#x3D;(b</em>{ij})<em>{s\times n}$的乘积矩阵$AB&#x3D;C&#x3D;(c</em>{ij})<em>{m\times n}$，若把A按行分成m快，把B案列分成n快，便有<br>$$<br>AB&#x3D;\begin{pmatrix}<br>\alpha_1^T\<br>\alpha_2^T\<br>\vdots\<br>\alpha_m^T<br>\end{pmatrix}<br>\begin{pmatrix}<br>b_1,b_2,\cdots,b_n\<br>\end{pmatrix}\<br>&#x3D;\begin{pmatrix}<br>\alpha_1^Tb_1&amp;\alpha_1^Tb_2&amp;\cdots&amp;\alpha_1^Tb_n\<br>\alpha_2^Tb_1&amp;\alpha_2^Tb_2&amp;\cdots&amp;\alpha_2^Tb_n\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>\alpha_m^Tb_1&amp;\alpha_m^Tb_2&amp;\cdots&amp;\alpha_m^Tb_n\<br>\end{pmatrix}<br>$$<br>其中<br>$$<br>c</em>{ij}&#x3D;\alpha_i^Tb_j&#x3D;(a_{i1},a_{i2},\cdots,a_{is})<br>\begin{pmatrix}<br>b_{1j}\<br>b_{2j}\<br>\vdots\<br>b_{sj}<br>\end{pmatrix}<br>&#x3D;\sum_{k&#x3D;1}^sa_{ik}b_{kj}<br>$$</p>
 <p>例19 证明矩阵$A&#x3D;O$的充分必要条件是方阵$A^TA&#x3D;O$<br>$$<br>证明：条件的必要性是显然的\<br>充分性\<br>设A&#x3D;(a_{ij})<em>{m\times n}，把A按列分块位A&#x3D;(a_1,a_2,\cdots,a_n)，则\<br>A^TA&#x3D;\begin{pmatrix}<br>a_1^T\<br>a_2^T\<br>\vdots\<br>a_n^T<br>\end{pmatrix}<br>(a_1,a_2,\cdots,a_n)\<br>&#x3D;\begin{pmatrix}<br>a_1^Ta_1&amp;a_1^Ta_2&amp;\cdots&amp;a_1^Ta_n\<br>a_2^Ta_1&amp;a_2^Ta_2&amp;\cdots&amp;a_2^Ta_n\<br>\vdots&amp;\vdots&amp;&amp;\vdots\<br>a_n^Ta_1&amp;a_n^Ta_2&amp;\cdots&amp;a_n^Ta_n\<br>\end{pmatrix}\<br>即A^TA的(i,j)元为a_i^Ta_j 因A^TA&#x3D;O，故\<br>a_i^Ta_j&#x3D;0(i,j&#x3D;1,2,\cdots,n)<br>特殊的，有\<br>a_j^Ta_j&#x3D;0(j&#x3D;1,2,\cdots,n)\<br>而<br>a_j^Ta_j&#x3D;(a</em>{1j},a_{2j},\cdots,a_{mj})<br>\begin{pmatrix}<br>a_{1j}\<br>a_{2j}\<br>\vdots\<br>a_{mj}<br>\end{pmatrix}<br>&#x3D;a_{1j}^2+a_{2j}^2+\cdots+a_{mj}^2&#x3D;0,得\<br>a_{1j}&#x3D;a_{2j}&#x3D;\cdots&#x3D;a_{mj}&#x3D;0\<br>即 A&#x3D;O<br>$$<br>线性方程组<br>$$<br>\begin{cases}<br>a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&#x3D;b_1,\<br>a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&#x3D;b_2,\<br>\cdots\cdots\cdots\cdots\<br>a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&#x3D;b_m,\<br>\end{cases}<br>$$<br>它的矩阵乘积形式为<br>$$<br>A_{m\times n}x_{n\times 1}&#x3D;b_{m\times 1}<br>$$<br>上式中，把A案列分块，把x按行分块，有分块矩阵的乘法有<br>$$<br>(a_1,a_2,\cdots,a_n)<br>\begin{pmatrix}<br>x_1,\<br>x_2,\<br>\vdots\<br>x_n<br>\end{pmatrix}<br>&#x3D;b,即\<br>x_1a_1+x_2a_2+\cdots+x_na_n&#x3D;b<br>$$<br>其实方程组表成<br>$$<br>\begin{pmatrix}<br>a_{11}\<br>a_{21}\<br>\vdots\<br>a_{m1}<br>\end{pmatrix}x_1<br>+\begin{pmatrix}<br>a_{12}\<br>a_{22}\<br>\vdots\<br>a_{m2}<br>\end{pmatrix}x_2<br>+\cdots<br>\begin{pmatrix}<br>a_{1n}\<br>a_{2n}\<br>\vdots\<br>a_{mn}<br>\end{pmatrix}x_n<br>&#x3D;\begin{pmatrix}<br>b_1\<br>b_2\<br>\vdots\<br>b_m<br>\end{pmatrix}<br>$$</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><blockquote>
+<h2><span id="结语">结语</span></h2><blockquote>
 <p>:question:QQ:806797785</p>
 <p>:star:文档笔记地址 <a target="_blank" rel="noopener" href="https://github.com/gaogzhen/math">https://github.com/gaogzhen/math</a></p>
 </blockquote>
@@ -127,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0205%E7%9F%A9%E9%98%B5%E5%88%86%E5%9D%97%E6%B3%95-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5p0vn002du01ogy6ad75d" data-title="0205矩阵分块法-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/07/basis/math/note/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/02%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97/0205%E7%9F%A9%E9%98%B5%E5%88%86%E5%9D%97%E6%B3%95-%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cmmq5v13o000av71oeqzlfs6s" data-title="0205矩阵分块法-矩阵及其运算-线性代数" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
