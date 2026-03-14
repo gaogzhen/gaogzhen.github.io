@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0302洛必达法则-微分中值定理与导数的应用 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="- [1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式](#1-frac00型与fracinftyinfty未定式) - [2 定理](#2-定理) - [3 其他类型未定式](#3-其他类型未定式) - [结语](#结语)    ## 1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式  + $\frac{0}{0}$型未">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0302洛必达法则-微分中值定理与导数的应用">
+<meta property="og:url" content="http://example.com/2025/04/27/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0302%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="- [1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式](#1-frac00型与fracinftyinfty未定式) - [2 定理](#2-定理) - [3 其他类型未定式](#3-其他类型未定式) - [结语](#结语)    ## 1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式  + $\frac{0}{0}$型未">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-04-27T18:49:15.000Z">
+<meta property="article:modified_time" content="2026-03-14T10:54:21.912Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/03微分中值定理与导数的应用/0302洛必达法则-微分中值定理与导数的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/04/27/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0302%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2025-04-27T18:49:15.000Z" itemprop="datePublished">2025-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0302洛必达法则-微分中值定理与导数的应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式](#1-frac00型与fracinftyinfty未定式)
+- [2 定理](#2-定理)
+- [3 其他类型未定式](#3-其他类型未定式)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 1 $\frac{0}{0}型与\frac{\infty}{\infty}$未定式
+
++ $\frac{0}{0}$型未定式：当$x \to a$或$x\to \infty$时,两个函数$f(x)和F(x)$都趋向于零，那么极限$\lim\limits_{x\to a|x\to\infty}{\frac{f(x)}{F(x)}}$可能存在、也可能不存在。
++ $\frac{\infty}{\infty}$型未定式：当$x \to a$或$x\to \infty$时,两个函数$f(x)和F(x)$都趋向无穷大，那么极限$\lim_{x\to a|x\to\infty}{\frac{f(x)}{F(x)}}$可能存在、也可能不存在。
+
+## 2 定理
+
+讨论$x\to a ,\frac{0}{0}未定式$
+
+**定理1** 设
+
+> 若$f(x)与F(x)$满足以下条件：
+>
+> (1)$\lim\limits_{x\to a}{f(x)}=0,\lim\limits_{x\to a}{F(x)}=0$
+>
+> (2)$\forall x\in\overset{\circ}{U}(a),f(x)与F(x)都可导，且F^{'}(x)\not=0$
+>
+> (3)$\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}存在（或为无穷大）$
+>
+> 则
+>
+> $\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}=\lim\limits_{x\to a}{\frac{f^{'}(x)}{F^{'}(x)}}$
+>
+> 这种在一定条件下通过分子分母分别求导再求极限来确定未定式的方法称为洛必达法则。
+
+$$
+证明:\\
+\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}与f(a)及F(a)无关\\
+\lim\limits_{x\to a}f(x)=0,\lim\limits_{x\to a}{F(x)}=0\\
+令f(a)=F(x)=0\\
+\forall x\in \overset{\circ}{U}(a),[x,a]区间上，满足柯西中值定理定理，有\\
+\frac{f(x)}{F(x)}=\frac{f(x)-f(a)}{F(x)-F(a)}=\frac{f^{'}(\xi)}{F^{'}(\xi)}(x\lt \xi\lt a)\\
+当x\to a时，对两边求极限有\\
+\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}=\lim\limits_{x\to a}{\frac{f^{'}(\xi)}{F^{'}(\xi)}}
+=\lim\limits_{\xi\to a}{\frac{f^{'}(\xi)}{F^{'}(\xi)}}=\lim\limits_{x\to a}{\frac{f^{'}(x)}{F^{'}(x)}}\\
+$$
+
+**注**：
+
+1. 当$\lim\limits_{x\to a}{\frac{f^{'}(x)}{F^{'}(x)}}为\infty时，\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}=\lim\limits_{x\to a}{\frac{f^{'}(x)}{F^{'}(x)}}也为\infty$
+2. $\lim\limits_{x\to a}{\frac{f(x)}{F(x)}}\overset{\frac{0}{0}/\frac{\infty}{\infty}}{=}\lim\limits_{x\to a}{\frac{f^{'}(x)}{F^{'}(x)}}\overset{\frac{0}{0}/\frac{\infty}{\infty}}{=}\lim\limits_{x\to a}{\frac{f^{''}(x)}{F^{''}(x)}}\cdots$
+3. $\lim\limits_{x\to \infty}{\frac{f(x)}{F(x)}}\overset{\frac{0}{0}/\frac{\infty}{\infty}}{=}\lim\limits_{x\to \infty}{\frac{f^{'}(x)}{F^{'}(x)}}\overset{\frac{0}{0}/\frac{\infty}{\infty}}{=}\lim\limits_{x\to \infty}{\frac{f^{''}(x)}{F^{''}(x)}}\cdots$
+
+
+
+**例1** $\lim\limits_{x\to 0}{\frac{\sin kx}{x}}(k\not=0)$
+$$
+解：\\
+\lim\limits_{x\to 0}{\frac{\sin kx}{x}}=\lim\limits_{x\to0}{k\cos kx}=k
+$$
+**例2** $\lim\limits_{x\to1}{\frac{x^3-3x+2}{x^3-x^2-x+1}}$
+$$
+解\\
+\lim\limits_{x\to1}{\frac{x^3-3x+2}{x^3-x^2-x+1}}=\lim\limits_{x\to1}{\frac{3x^2-3}{3x^2-2x-1}}=\lim\limits_{x\to1}{\frac{6x}{6x-2}}=\frac{3}{2}
+$$
+**例3**  $\lim\limits_{x\to0}{\frac{x-\sin x}{x^3}}$
+$$
+解:\\
+\lim\limits_{x\to0}{\frac{x-\sin x}{x^3}}=\lim\limits_{x\to0}{\frac{1-\cos x}{3x^2}}=\lim\limits_{x\to0}{\frac{\frac{1}{2}x^2}{3x^2}}=\frac{1}{6}
+$$
+**例4**  $\lim\limits_{x\to+\infty}{\frac{\frac{\pi}{2}-\arctan x}{\frac{1}{x}}}$
+$$
+解\\
+\lim\limits_{x\to+\infty}{\frac{\frac{\pi}{2}-\arctan x}{\frac{1}{x}}}=\lim\limits_{x\to+\infty}{\frac{x^2}{1+x^2}}\\
+=1
+$$
+**例5**  $\lim\limits_{x\to+\infty}{\frac{\ln x}{x^n}}(n\gt 0)$
+$$
+解:\\
+\lim\limits_{x\to+\infty}{\frac{\ln x}{x^n}}(n\gt 0)=\lim\limits_{x\to+\infty}{\frac{\frac{1}{x}}{nx^{n-1}}}=0
+$$
+**例6**  $\lim\limits_{x\to+\infty}{\frac{x^n}{e^{\lambda x}}}(n\gt 0,\lambda \gt 0)$
+$$
+解:\\
+\lim\limits_{x\to+\infty}{\frac{x^n}{e^{\lambda x}}}=\lim\limits_{x\to+\infty}{\frac{nx^{n-1}}{\lambda e^{\lambda x}}}=\cdots=\lim\limits_{x\to+\infty}{\frac{n!}{\lambda^ne^{\lambda x}}}=0
+$$
+
+
+**注**
+
+1. $x\to+\infty,e^{\lambda x}$趋向于无穷的速度快于$x^n(n\gt 0)$，快于$\ln x$
+
+
+
+**例9**  $\lim\limits_{x\to\infty}{\frac{x+\sin x}{x}}$
+$$
+解：\\
+\lim\limits_{x\to\infty}{\frac{x+\sin x}{x}}=\lim\limits_{x\to\infty}{\frac{1+\cos x}{1}}, 不存在,不能使用洛必达法则\\
+分子分母同除以x,有 \lim\limits_{x\to\infty}{\frac{x+\sin x}{x}}=\lim\limits_{x\to\infty}{\frac{1+\frac{\sin x}{x}}{1}}=2
+$$
+**注**
+
+1. $x\to\infty$有理分式求极限，可以使用同除最大项方法
+2. 求极限可以综合运用各种方法，比如无穷小替换、三角函数公式等
+
+
+
+## 3 其他类型未定式
+
+其他未定式类型：
+
++ $0\cdot\infty$
++ $\infty-\infty$
++ $0^0$
++ $\infty^0$
++ $1^\infty$
+
+**$0\cdot\infty$**
+$$
+0\cdot\infty\Rightarrow  \frac{0}{\frac{1}{\infty}}\Rightarrow \frac{0}{0}\\
+0\cdot\infty\Rightarrow  \frac{\infty}{\frac{1}{0}}\Rightarrow \frac{\infty}{\infty}\\
+\infty-\infty\Rightarrow \frac{1}{0}-\frac{1}{0} 通分\Rightarrow \frac{0}{0}\\
+0^0\Rightarrow e^{\ln 0^0}=e^{0\ln0}\Rightarrow e^{0\cdot \infty}\Rightarrow\cdots\\
+\infty^0\Rightarrow e^{\ln \infty^0}=e^{0\ln\infty}\Rightarrow e^{0\cdot \infty}\Rightarrow\cdots\\
+1^\infty\Rightarrow e^{\ln 1^\infty}=e^{\infty\ln1}\Rightarrow e^{\infty\cdot 0}\Rightarrow\cdots\\
+$$
+
+
+**例11** $\lim\limits_{x\to0^+}{x^2\cdot\ln x}$
+$$
+解：\\
+\lim\limits_{x\to0^+}{x^2\cdot\ln x}=\lim\limits_{x\to0^+}{\frac{\ln x}{\frac{1}{x^2}}}\\
+=\lim\limits_{x\to0^+}{\frac{\frac{1}{x}}{-2{x^{-3}}}}=0
+$$
+**例12**  $\lim\limits_{x\to\frac{\pi}{2}}{\sec x -\tan x}$
+$$
+解:\\
+\lim\limits_{x\to\frac{\pi}{2}}{(\sec x -\tan x)}=\lim\limits_{x\to\frac{\pi}{2}}{(\frac{1}{\cos x} -\frac{\sin x}{\cos x})}\\
+=\lim\limits_{x\to\frac{\pi}{2}}{\frac{-\cos x}{-\sin x}}=0
+$$
+**例14**  $\lim\limits_{x\to 0^+}{x^x}$
+$$
+解：\\
+\lim\limits_{x\to 0^+}{x^x}=\lim\limits_{x\to 0^+}{e^{\ln x^x}}\\
+=e^{\lim\limits_{x\to 0^+}{x\ln x}}\\
+\lim\limits_{x\to 0^+}{x\ln x}=\lim\limits_{x\to 0^+}{\frac{\ln x}{\frac{1}{x}}}=\lim\limits_{x\to 0^+}{\frac{\frac{1}{x}}{-1x^{-2}}}=\lim\limits_{x\to 0^+}{-x}=0\\
+\lim\limits_{x\to 0^+}{x^x}=e^0=1
+$$
+ 
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p132-136.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p20.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/04/27/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0302%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq7l12j0013wu212g5wgqoa" data-title="0302洛必达法则-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/06/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/03/130301-%E4%B9%A0%E9%A2%983_1_8-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          130301-习题3_1_8-课后习题-高等数学
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/04/25/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90--%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0103函数的极限--函数与极限</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

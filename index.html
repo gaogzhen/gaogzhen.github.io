@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-basis/math/note/高等数学/12无穷级数/1202常数项级数的审敛法-无穷级数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2026-03-06T15:25:00.000Z" itemprop="datePublished">2026-03-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a>►<a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [一. 正项级数及其审敛法](#一-正项级数及其审敛法)
+- [二、交错级数及其审敛法](#二-交错级数及其审敛法)
+- [三、绝对收敛与条件收敛](#三-绝对收敛与条件收敛)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 一. 正项级数及其审敛法
+
+> 正项级数：若 $u_n\ge 0$ ，则称 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 为正项级数。
+
+
+
+> 定理1. 正项级数 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛 $\Leftrightarrow$ 其部分和数列 $s_n$ 有界。
+
+$$
+证明：\\
+\Rightarrow\\
+设\displaystyle\sum_{n=1}^{\infty}{u_n} 的部分和数列 \{s_n\} \\
+\because \displaystyle\sum_{n=1}^{\infty}{u_n}收敛\\
+\therefore \lim\limits_{n\to\infty}s_n=s ,那么数列\{s_n\}有界\\
+\Leftarrow \\
+\displaystyle\sum_{n=1}^{\infty}{u_n} 为正项级数 ，则\{s_n\}为单调增加数列\\
+又\because 数列 \{s_n\}有界，即存在M\gt 0,使得 s_n\le M\\
+由单调有界数列必有极限得 \lim\limits_{n\to\infty}{s_n}=s\\
+\therefore 正项级数 \displaystyle\sum_{n=1}^{\infty}{u_n} 收敛
+$$
+
+
+
+> 定理2. （比较审敛法）
+>
+> 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 都是正项级数，且 $u_n\le v_n(n=1,2,\cdots)$. 若 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 收敛，则 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 也收敛；反之，若 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散，则 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 也发散。
+
+$$
+证明：\\
+(1) 设 \displaystyle\sum_{n=1}^{\infty}{v_n} 收敛于\sigma ,则 \displaystyle\sum_{n=1}^{\infty}{u_n} 的部分和\\
+s_n=u_1+u_1+\cdots+u_n \le v_1+v_2+\cdots+v_n\le \sigma\\
+\therefore \{s_n\} 有界，有定理1得 \displaystyle\sum_{n=1}^{\infty}{u_n} 收敛\\
+(2)利用反证法，假设\displaystyle\sum_{n=1}^{\infty}{v_n} 收敛\\
+\because u_n \le v_n \\
+则\displaystyle\sum_{n=1}^{\infty}{u_n} 收敛 与 \displaystyle\sum_{n=1}^{\infty}{u_n} 发散矛盾\\
+$$
+
+
+
+> 推论： 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 都是正项级数，若 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 收敛，且存在正整数 $N$ ,使当$n\ge N$ 时，有 $u_n\le kv_n(k\gt 0)$ 成立，则 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛；若 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 发散，且存在正整数 $N$ ，使得当 $n\ge N$ 时，有 $u_n\ge kv_n(k\gt 0)$ 成立，则 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散。
+
+
+
+例1. 讨论 $p$ 级数
+
+$\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n^p}}=1+\frac{1}{2^p}+\frac{1}{3^p}+\cdots+\frac{1}{n^p}+\cdots$
+
+的收敛性，其中常数 $p\gt 0$ .
+$$
+证明：\\
+设p技术部分和为s_n，则s_n\ge 0 \\
+(1) 当 p \le 1时， \frac{1}{n^p} \ge \frac{1}{n}\\
+\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n}} 是发散的 \\
+由定理2知 \displaystyle\sum_{n=1}^{\infty}{\frac{1}{n^p}} 发散\\
+(2) 当 p > 1时，令k-1\le x\le k 则\\
+\frac{1}{k^p} \le \frac{1}{x^p} ,两边对x做定积分有\\
+\int_{k-1}^{k}{\frac{1}{k^P}} \le \int_{k-1}^{k}{\frac{1}{x^p}},的\\
+\frac{1}{k^P} \le \int_{k-1}^{k}{\frac{1}{x^p}}\\
+取k=2,3,\cdots,n,不等式两边相加为\\
+s_n=1+\frac{1}{2}+\cdots+\frac{1}{n^p}\\
+\le \int_{1}^{2}{\frac{1}{x^p}}+\int_{2}^{3}{\frac{1}{x^p}}+\cdots+\int_{n-1}^{n}{\frac{1}{x^p}}\\
+=\int_{1}^{n}{\frac{1}{x^p}}=\frac{1}{p-1}(1-\frac{1}{n^{p-1}})\\
+当n\to\infty时 \frac{1}{p-1}(1-\frac{1}{n^{p-1}})=\frac{1}{p-1}\\
+\therefore {s_n}有界,\because s_n\ge 0 \\
+\therefore {s_n}收敛，即\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n^p}}收敛
+$$
+
+例2 证明 $\displaystyle\sum_{n=1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}}$ 是发散的
+$$
+证明：\\
+\displaystyle\sum_{n=1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}} \ge \displaystyle\sum_{n=1}^{\infty}{\frac{1}{\sqrt{(n+1)^2}}}=\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n+1}}\\
+=\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n}} -1\\
+
+有p级数知，p=1时,\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n}}发散\\
+因此，由比较审敛法知 \displaystyle\sum_{n=1}^{\infty}{\frac{1}{\sqrt{n(n+1)}}}也是发散的
+$$
+
+
+> 定理3. (比较审敛法的极限形式)
+>
+> 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 和 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 都是正项级数
+>
+> （1）如果 $\displaystyle\sum_{n=1}^{\infty}{\frac{u_n}{v_n}}=l(0\le l\lt +\infty)$  ,且 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 收敛 $\Rightarrow$ $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛；
+>
+> （2）如果 $\displaystyle\sum_{n=1}^{\infty}{\frac{u_n}{v_n}}=l\gt 0$ 或 $\displaystyle\sum_{n=1}^{\infty}{\frac{u_n}{v_n}}=+\infty$ ,且 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 发散。
+
+$$
+证明：\\
+(1)\because \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}=l,对\epsilon =1\\
+\exists 正常数N，当n\gt N时，有\\
+|\frac{u_n}{v_n}-l|\lt \epsilon=1,得\\
+\frac{u_n}{v_n}\lt l+1,u_n\lt (l+1)v_n\\
+根据比较审敛法推论，且\displaystyle\sum_{n=1}^{\infty}{v_n} 收敛\\
+\displaystyle\sum_{n=1}^{\infty}{u_n}也收敛\\
+(2) 若 \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}=l时，利用反证法\\
+假设\displaystyle\sum_{n=1}^{\infty}{u_n}收敛，而由\lim\limits_{n\to\infty}{\frac{v_n}{u_n}}=\frac{1}{l}\gt \\
+由（1）知\displaystyle\sum_{n=1}^{\infty}{v_n} 收敛，与已知\displaystyle\sum_{n=1}^{\infty}{v_n}发散矛盾\\
+\therefore \displaystyle\sum_{n=1}^{\infty}{u_n}是发散的\\
+同理可证 \lim\limits_{n\to\infty}{\frac{u_n}{v_n}}=+\infty时的情形。
+$$
+
+ 
+
+**利用定理3判定 $ \displaystyle\sum_{n=1}^{\infty}{u_n}$ 的收敛性的步骤 **
+
+1. $ \lim\limits_{n\to\infty}{u_n}是否等于0$
+   1. $\lim\limits_{n\to\infty}{u_n}\not=0, \displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散
+2. 由 $u_n$ 的同阶或者等价无穷小，找到较简单的 $v_n$ ,“基准级数” $\displaystyle\sum_{n=1}^{\infty}{v_n}$ ($p$ 级数或者等比级数)
+3. 由 $\displaystyle\sum_{n=1}^{\infty}{\frac{u_n}{v_n}}$ 及 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 的收敛性根据定理3进行判定
+
+ 例3. 判定$ \displaystyle\sum_{n=1}^{\infty}{\sin\frac{1}{n}}$  的收敛性
+$$
+解：\\
+\lim\limits_{n\to\infty}{\frac{\sin\frac{1}{n}}{\frac{1}{n}}} = 1\\
+\because \displaystyle\sum_{n=1}^{\infty}{\frac{1}{n}} 发散\\
+由定理3得 \displaystyle\sum_{n=1}^{\infty}{\sin\frac{1}{n}} 发散\\
+$$
+
+> 定理4. (比值审敛法，达朗贝尔判别法)
+>
+> 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 为正向级数，如果 $ \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}=\rho$,则
+>
+> 当 $\rho \lt 1$ 时，级数收敛；
+>
+> 当 $\rho \gt 1$ 时，级数发散；
+>
+> 当 $\rho = 1$ 时可能发散也可能收敛。
+
+$$
+证明：
+(1) \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}=\rho \lt 1\\
+有极限定义，取适当小的\epsilon \gt 0, \exists m\gt 0,当n\ge m时，有\\
+|\frac{u_{n_{n+1}}}{u_n} -\rho| \lt \epsilon \Rightarrow \frac{u_{n+1}}{u_n}\le \rho+\epsilon=r\lt 1\\
+\therefore u_{m+1}\lt  ru_m, u_{m+2}\lt u_{m+1}\lt r^2u_m,\cdots,u_{m+k}\lt r^ku_m\\
+\because u_m是常数，r\lt1,r^k是等比数列 \Rightarrow \displaystyle\sum_{k=1}^{\infty}{r^Ku_m} 收敛 \\
+\therefore \displaystyle\sum_{k=1}^{\infty}{u_{m+k}}收敛，
+加上前m项级数：u_1+u_2+\cdots+u_m+u_{m+1}+\cdots+u_{m+k}+\cdots\\
+即\displaystyle\sum_{n=1}^{\infty}{u_n}也收敛\\
+(2)\lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}}=\rho \gt  1\\
+根据极限定义，取 适当小的\epsilon \gt 0,\exists m\gt 0,当n\ge m时,有\\
+|\frac{u_{n+1}}{u_n}-\rho|\lt \epsilon \Rightarrow \frac{u_{n+1}}{u_n} \gt \rho -\epsilon = r\gt 1\\
+\therefore u_{n+1}\gt u_n \gt 0 \\
+\therefore 数量部分和 s_n 极限 \lim\limits_{n\to\infty}s_n = \infty\\
+因此 \displaystyle\sum_{n=1}^{\infty}{u_n} 发散 \\
+(3) 举例 \\
+\displaystyle\sum_{n=1}^{\infty}{\frac{1}{n^2}} \rho=1,\displaystyle\sum_{n=1}^{\infty}{u_n}收敛\\
+\displaystyle\sum_{n=1}^{\infty}{n} \rho=1,\displaystyle\sum_{n=1}^{\infty}{u_n}发散\\
+$$
+
+
+
+例4 证明 $1+\frac{1}{1}+\frac{1}{1.2}+\frac{1}{1.2.3}+\cdots+\frac{1}{(n-1)!}+\cdots$ 是收敛的，并估计以部分和 $s_n$ 近似代替和 $s$ 所产生的误差
+$$
+证明：\\
+令u_n=\frac{1}{(n-1)!},则\\
+\lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}} = \lim\limits_{n\to\infty}{\frac{1}{n}}=0\lt 1\\
+根据定理4 有 \displaystyle\sum_{n=1}^{\infty}{u_n} 收敛\\
+|s-s_n|=\frac{1}{n!}+\frac{1}{(n+1)!}+\cdots\\
+=\frac{1}{n!}(1+\frac{1}{n+1}+\frac{1}{(n+1)(n+2)}+\cdots)\\
+\lt \frac{1}{n!}(1+\frac{1}{n}+\frac{1}{n^2}+\cdots)=\frac{1}{(n-1)(n-1)!}
+$$
+
+
+
+例5. 判定级数
+
+$\frac{1}{10}+\frac{1.2}{10^2}+\frac{1.2.3}{10^3}+\cdots+\frac{n!}{10^n}+\cdots$
+
+的收敛性
+$$
+解：\\
+令u_n=\frac{n!}{10^n}\\
+\frac{u_{n+1}}{u_n} =\frac{(n+1)!}{10^{n+1}} .\frac{10^n}{n!}=\frac{n+1}{10}\\
+\therefore \lim\limits_{n\to\infty}{\frac{u_{n+1}}{u_n}} = \infty\\
+\therefore 级数发散
+$$
+
+
+**注：** 当一般项 $u_n$ 中出现 $n!$ 或者以 $n$ 为指数幂时，可以考虑此方法。
+
+
+
+> 定理5. （根值审敛法，柯西判别法）
+>
+> 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$  为正项级数，如果  $\lim\limits_{n\to\infty}{\sqrt[n]{u_n}}=\rho$ ，则
+>
+> （1）当 $\rho\lt 1$ 时，$\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛；、
+>
+> （2）当 $\rho \gt 1$ （或$ \lim\limits_{n\to\infty}{\sqrt[n]{u_n}}=\infty$) 时，$\displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散；
+>
+> （3）当 $\rho = 1$ 时，$\displaystyle\sum_{n=1}^{\infty}{u_n}$ 可能发散也可能收敛。
+
+
+
+例6. 判断级数  $\displaystyle\sum_{n=1}^{\infty}{\frac{2+(-1)^n}{2^n}}$ 的收敛性
+$$
+解：\\
+\lim\limits_{n\to\infty}{\sqrt[n]{\frac{2+(-1)^n}{2^n}}}=\frac{1}{2}\lim\limits_{n\to\infty}{[2+(-1)^n]^{\frac{1}{n}}}\\
+\frac{1}{2}e^{\lim\limits_{n\to\infty}{\frac{1}{n}\ln[2+(-1)^]}} =\frac{1}{2}\lt 1\\
+根据定理5 的 级数收敛
+$$
+
+
+**注：** 当一般项 $u_n$ 中出现以 $n$ 为指数幂（如 $n^n,a^n$）的形式时，可以考虑用此方法。
+
+
+
+> 定理6. （极限审敛法）
+>
+> 设 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 为正项级数
+>
+> （1）若 $\lim\limits_{n\to\infty}{nu_n} = l\gt 0$ （或 $ \lim\limits_{n\to\infty}{nu_n}=\infty$） $\Rightarrow $ $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散；
+>
+> （2）若 $p\gt 1$ ,且 $\lim\limits_{n\to\infty}{n^pu_n}=l (0\le l\lt +\infty) \Rightarrow$  $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛。
+
+
+
+例7. 判定 $\displaystyle\sum_{n=1}^{\infty}{\ln(1+\frac{1}{n^2})}$ 的收敛性 
+$$
+解：\\
+n\to\infty 时，\ln(1+\frac{1}{n^2})\sim \frac{1}{n^2} \\
+\lim\limits_{n\to\infty}{\frac{\ln(1+\frac{1}{n^2})}{\frac{1}{n^2}}} = 1\\
+\because \displaystyle\sum_{n=1}^{\infty}{\frac{1}{n^2}} 收敛 \\
+根据定理3 得\displaystyle\sum_{n=1}^{\infty}{\ln(1+\frac{1}{n^2})} 收敛
+$$
+
+$$
+
+$$
+
+例8. 判定 $\sum\limits_{n=1}^{\infty}{\sqrt{n+1}(1-\cos\frac{\pi}{n})}$ 的收敛性
+$$
+解：\\
+\lim\limits_{n\to\infty}{\frac{\sqrt{n+1}(1-\cos\frac{\pi}{n})}{\frac{1}{n^{\frac{3}{2}}}}}\\
+=\lim\limits_{n\to\infty}{\frac{\sqrt{n+1}}{\sqrt{n}}}\cdot \lim\limits_{n\to\infty}{\frac{1-\cos\frac{\pi}{n}}{\frac{1}{n^2}}} = \frac{(\pi)^2}{2}\\
+\because \sum\limits_{n=1}^{\infty}\frac{1}{n^{\frac{3}{2}}} 收敛\\
+\therefore 所给数列收敛
+$$
+
+
+## 二、交错级数及其审敛法
+
+> 交错级数：若 $u_1,u_2,\cdots$ 都是正数，形如 $u_1-u_2+u_3-u_4+\cdots$  ，或 $-u_1+u_2-u_2+u_4-\cdots$
+
+> 定理7. （莱布尼茨定理）
+>
+> 若交错级数 $\sum\limits_{n=1}^{\infty}{(-1)^{n-1}u_n}$ 满足条件：
+>
+> （1）$u_n\ge u_{n+1}$ ；
+>
+> （2）$\lim\limits_{n\to\infty}{u_n}=0$ 。
+>
+> 则级数收敛，且其和 $s\le u_1$,其余项 $r_n$ 的绝对值  $|r_n|\le u_{n+1}$
+
+
+
+## 三、绝对收敛与条件收敛
+
+> 对一般级数 $\sum\limits_{n=1}^{\infty}{u_n}$ ,其构成的正项级数为 $ \sum\limits_{n=1}^{\infty}{|u_n|}$
+>
+> （1） 若 $\sum\limits_{n=1}^{\infty}{|u_n|}$ 收敛，则称 $\sum\limits_{n=1}^{\infty}{u_n}$ 绝对收敛；
+>
+> （2）若 $\sum\limits_{n=1}^{\infty}{u_n}$ 收敛，而 $\sum\limits_{n=1}^{\infty}{|u_n|}$ 发散，则称 $\sum\limits_{n=1}^{\infty}{u_n}$ 条件收敛。
+
+
+
+> 定理8. 若 $\sum\limits_{n=1}^{\infty}{u_n}$ 绝对收敛，则 $\sum\limits_{n=1}^{\infty}{u_n}$ 必定收敛
+
+$$
+证明：\\
+令v_n=\frac{1}{2}(u_n+|u_n|),则\\
+0\le v_n\le |u_n|\\
+\because \sum\limits_{n=1}^{\infty}{u_n} 绝对收敛\\
+\therefore \sum\limits_{n=1}^{\infty}{v_n} 收敛\\
+\because u_n=2v_n-|u_n|\\
+\therefore \sum\limits_{n=1}^{\infty}{u_n} 也收敛
+$$
+
+ 
+
+**注：**
+
+1. 讨论一般级数 $\sum\limits_{n=1}^{\infty}{u_n}$ 的收敛性，可以先从 $\sum\limits_{n=1}^{\infty}{|u_n|}$ 开始
+2. 若 $\sum\limits_{n=1}^{\infty}{|u_n|}$ 发散 $\not\Rightarrow$  $\sum\limits_{n=1}^{\infty}{u_n}$ 发散。但若通过比值审敛法或根值审敛法判定 $\sum\limits_{n=1}^{\infty}{|u_n|}$ 发散 $\Rightarrow \sum\limits_{n=1}^{\infty}{u_n}$ 发散。
+
+例9. 判定 $\sum\limits_{n=1}^{\infty}{\frac{\sin na}{n^2}}$ 的收敛性
+$$
+解:\\
+|\frac{\sin na}{n^2}|\le \frac{1}{n^2}\\
+\because \sum\limits_{n=1}^{\infty}{\frac{1}{n^2}} 收敛\\
+\therefore \sum\limits_{n=1}^{\infty}{|\frac{\sin na}{n^2}|} 收敛 \\
+则 \sum\limits_{n=1}^{\infty}{\frac{\sin na}{n^2}} 也收敛
+$$
+
+
+##  结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p251-258.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p96. 
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" data-id="cmmq7l12x0022wu21gtlreihv" data-title="1202常数项级数的审敛法-无穷级数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0103函数-映射与函数-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1、函数的概念](#1-函数的概念)
+- [2、函数的特性](#2-函数的特性)
+  * [2.1、函数的有界性](#21-函数的有界性)
+  * [2.2、函数的单调性](#22-函数的单调性)
+  * [2.3、函数的奇偶性](#23-函数的奇偶性)
+  * [2.4、函数的周期性](#24-函数的周期性)
+- [3、反函数和复合函数](#3-反函数和复合函数)
+  * [3.1、反函数](#31-反函数)
+  * [3.2、复合函数](#32-复合函数)
+- [4、函数的运算](#4-函数的运算)
+- [5、初等函数](#5-初等函数)
+
+<!-- tocstop -->
+
+# 1、函数的概念
+
++ 定义：设数集$D\subset R$，则称映射$f:D\rightarrow R$ 为定义在D上的函数，通常记为
+
+$$
+y=f(x),x\in D
+$$
+
++ 名词解析：
+
+1. x称为自变量，y称为因变量，D为定义域。
+
+2. 函数值：y称为f在x处的函数值，记做$f(x)$，即$y=f(x)$
+
+3. 函数关系：因变量y与自变量x之间的依赖关系，称为函数关系
+
+4. 值域：函数值$f(x)$的全体构成的集合称为函数f的值域，记做$R_f$或$f(D)$，即
+   $$
+   R_f=f(D)=\{y|y=f(x),x\in D\}
+   $$
+
+5. 
+
++ 辨析-f和$f(x)$的区别:
+
+1. f表示自变量x与因变量y之间的对应法则
+2. $f(x)$表示与自变量x对应的函数值
+
++ 函数相等判定：
+
+  1. 定义域相同
+  2. 对应法则相同
+
++ 定义域确定：
+
+  1. 有实际背景的函数：根据实际背景中变量的实际意义确定
+  2. 抽象的用算式表达的函数：通常约定使算式有意义的一切实数的集合，这种定义域也称为自然定义域。
+
++ 函数的表示方法：
+
+  1. 表格法
+  2. 图形法
+  3. 解析法
+
++ 常见函数示例：
+
+  1. 绝对值函数
+     $$
+     y= \lvert x\rvert=
+         \begin{cases}
+             x, &\text{x >= 0,}\\[2ex]
+             -x,&\text{x < 0}
+         \end{cases}
+     $$
+     定义域$D=(-\infty,+\infty)$，值域$R_f=[0,+\infty)$，该函数称为绝对值函数，图示：![2021-08-11_abs](/math/note/高等数学/01函数与极限/I:/study/math/note/映射与函数/2021-08-11_abs.png)
+     
+  2. 取整函数
+     $$
+     y=[x]
+     $$
+     定义域$D=(-\infty,+\infty)$,值域$R_f=Z$，图示：![2021-08-13_floor](/math/note/高等数学/01函数与极限/I:/study/math/note/映射与函数/2021-08-13_floor.png)
+
+  3. 分段函数
+     $$
+     y = \begin{cases}
+     2\sqrt{x}, &0\le x\le 1,\\[2em]
+     1+x, &x\gt 1
+     \end{cases}
+     $$
+     定义域$D=[0,+\infty)$，图示：
+     
+     
+
+
+# 2、函数的特性
+
+## 2.1、函数的有界性
+
+设函数$f(x)$的定义域D，数集$X\sub D$。如果存在数$K_1$，使得
+$$
+f(x)\le K_1
+$$
+对任一$x\in X$都成立，则称函数$f(x)$在X上有上界，而$K_1$称为函数$f(x)$在X上的一个上界。如果存在数$K_2$，使得
+$$
+f(x)\ge K_2
+$$
+对任一$x\in X$都成立，则称函数$f(x)$在X上有下界，而$K_2$称为函数$f(x)$在X上的一个下界。如果存在正数M，使得
+$$
+\lvert f(x)\rvert\le M
+$$
+对任一$x\in X$都成立，则称函数$f(x)$在X上有界。如果这样的M不存在，就称函数$f(x)$在X上无界。即对应任何正数M，总存在$x_1\in X$，使得$\lvert f(x_1)\rvert\gt M$，那么函数$f(x)$在X上无界。
+
+函数$f(x)$在X上有界的充分必要条件是它在X上既有上界又有下界。
+
+## 2.2、函数的单调性
+
+设函数$f(x)$的定义域D，区间$I\sub D$。如果对于区间$I$上的任意两点$x_1,x_2$，当$x_1\lt x_2$时，恒有
+$$
+f(x_1)\lt f(x_2)
+$$
+则称函数$f(x)$在区间$I$上是单调递增（增加）的；如果对于区间$I$上的任意两点$x_1,x_2$，当$x_1
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l128000gwu215ksj0zor" data-title="0103函数-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0106极限存在准则两个重要的极限-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 夹逼准则](#1-夹逼准则)
+- [2 $\lim\limits_{x\to 0}\frac{\sin x}{x}$](#2-limlimits_xto-0fracsin-xx)
+- [3 准则二](#3-准则二)
+- [4 $\lim\limits_{x\to\infty}(1+\frac{1}{x})^x$](#4-limlimits_xtoinfty1frac1xx)
+- [5 柯西极限存在准则](#5-柯西极限存在准则)
+- [6 后记](#6-后记)
+
+<!-- tocstop -->
+
+## 1 夹逼准则
+
+> 准则1：如果数列$\{x_n\}$,$\{y_n\}$及$\{z_n\}$满足以下条件：
+>
+> （1）从某项起，即$\exist n_0\in N_+,当n\gt n_0时，有  y_n\le x_n\le z_n$
+>
+> （2）$\lim\limits_{n\to\infty}y_n=a,\lim\limits_{n\to\infty}z_n=a$
+>
+> 那么数列$\{x_n\}$的极限存在，且$\lim\limits_{n\to\infty}x_n=a$
+
+证明：
+$$
+因为\lim\limits_{n\to\infty}y_n=a ，所以 \forall\epsilon\gt 0,\exists N_1\in N_+,当n\gt N_1时，有|y_n-a|\lt\epsilon \\
+因为\lim\limits_{n\to\infty}z_n=a ，所以 对于上述\epsilon,\exists N_2\in N_+,当n\gt N_2时，有|z_n-a|\lt\epsilon \\
+又因为\exist n_0\in N_+,当n\gt n_0时，有  y_n\le x_n\le z_n \\
+取N=\max(n_0,N_1,N_2),则当n\gt N时，有 |y_n-a|\lt\epsilon&|z_n-a|\lt\epsilon&y_n\le x_n\le z_n \\
+即 a-\epsilon\lt y_n\lt a+\epsilon&a-\epsilon\lt z_n\lt a+\epsilon&y_n\le x_n\le z_n \\
+即a-\epsilon\lt y_n\le x_n\le z_n\lt a+\epsilon \\
+即|x_n-a|\lt\epsilon \\
+所以\lim\limits_{n\to\infty}x_n=a
+$$
+
+
+> 准则$1'$ ：如果
+>
+> （1）当$x\in\overset\circ U(x_0,r)(或|x|\gt M)$时，$g(x)\le f(x)\le h(x)$
+>
+> （2）$\lim\limits_{x\to x_0}g(x)=A,\lim\limits_{x\to x_0}h(x)=A或者\lim\limits_{x\to\infty}g(x)=A,\lim\limits_{x\to\infty}h(x)=A$
+>
+> 那么$\lim\limits_{x\to x_0}f(x)或者\lim\limits_{x\to\infty}f(x)存在，且等于A$
+
+准则1和准则$1'$ 称为夹逼准则。
+
++ 适用：n项和的数列求极限
+
+## 2 $\lim\limits_{x\to 0}\frac{\sin x}{x}$
+
+利用上面的夹逼准则，我们来证明$\lim\limits_{x\to 0}\frac{\sin x}{x}$极限存在并求出极限。
+
+证明，如图2-1所示单位圆：![2022-10-18_0106-unit-circle](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/2022-10-18_0106-unit-circle.png)
+$$
+设圆心角\angle AOB=x，0\lt x\lt \frac{\pi}{2} ,则 \\
+\sin x=\frac{AC}{OA}=AC,x=\overparen{AB},且S_{\triangle AOB}\lt S_{扇形OAB}\lt S_{\triangle ODB}\quad 即，\\
+\frac{\sin x}{2}\lt\frac{x}{2}\lt\frac{\tan x}{2} ,整理得 \\
+\cos x\lt\frac{\sin x}{x}\lt 1\quad (6-1) \\
+当-\frac{\pi}{2}\lt x\lt 0时，\cos x与\frac{\sin x}{x}都不变，所以当0\lt|x|\lt\frac{\pi}{2}时，不等式6-1都成立 \\
+当0\lt|x|\lt\frac{\pi}{2}时，有0\lt|1-\cos x|=1-\cos x=2\sin^2{\frac{x}{2}}\lt2(\frac{x}{2})^2=\frac{x^2}{2} 即\\
+0\lt1-\cos x\lt \frac{x^2}{2} \\
+当x\to 0时，\frac{x^2}{2}\to 0,由准则I'有\lim\limits_{x\to 0}\cos x = 1 \\
+所以有不等式6-1和准则I'有 \\
+\lim\limits_{x\to 0}\frac{\sin x}{x} = 1
+$$
+$\frac{\sin x}{x}$的图像2-2,：![0106sinx-div-x](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/0106sinx-div-x.png)
+
+> $\lim\limits_{x\to 0}\frac{\sin x}{x}=\lim\limits_{x\to 0}\frac{\tan x}{x}=\lim\limits_{x\to 0}\frac{\arcsin x}{x}=1$
+
+
+
+> 推广：若$\lim f(x)=0，则\lim \frac{\sin f(x)}{f(x)}=0$ 
+
+证明：以$x\to x_0为例$
+$$
+令t = f(x)，则当x\to x_0时，有t\to 0 则\\
+\lim\limits_{x\to x_0}\frac{\sin f(x)}{f(x)}=\lim\limits_{t\to 0}\frac{\sin t}{t}=1
+$$
+
+
+## 3 准则二
+
+> 准则II：单调有界数列必有极限。
+>
+>  如果数列$\{x_n\}$满足条件：$x_1\le x_2\le x_3\le\cdots\le x_n\le x_{n+1}\le\cdots$，
+>
+> 就称数列$\{x_n\}$是单调增加的；如果数列$\{x_n\}$满足条件
+>
+> $x_1\ge x_2\ge x_3\ge\cdots\ge x_n\ge x_{n+1}\ge\cdots$，
+>
+> 就称数列$\{x_n\}$是单调减少的。单调增加和单调减少的数列通常为单调数列。
+
+
+
+> 单调有界定理是数列收敛的充分条件。
+
+> 例1. 证明数列$\sqrt 2,\sqrt{2+\sqrt 2}, \sqrt{2+\sqrt {2+\sqrt 2}},\cdots$极限存在，并求出其极限。
+
+$$
+证明：数列通项 x_n=\sqrt {2+x_{n-1}} \\
+第一步先证明数列{x_n}有界 \\
+利用数学归纳法 x_1=\sqrt 2\lt 2 \\
+假设x_k\lt 2 ，则 \\
+x_{k+1}=\sqrt {2+x_k}\lt\sqrt {2+2}=2 所以数列x_n\lt 2 即数列{x_n}有界  \\
+第二步证明数列为单调增加的。
+x_{n+1}-x_n=\sqrt {2+x_n}-x_n=\frac{(\sqrt {2+x_n}-x_n)(\sqrt {2+x_n}+x_n)}{\sqrt {2+x_n}+x_n}\\ 
+= \frac{(1+x_n)(2-x_n)}{\sqrt {2+x_n}+x_n} ，由第一步知道 x_n\lt 2 ,所以 \\
+x_{n+1}\gt x_n ,即数列{x_n}为单调增加数列，则由准则II数列{x_n}极限存在。 \\
+假设数列{x_n}极限为a，则对等式x_{n+1}=\sqrt {2+x_n}求极限得 \\
+\lim\limits_{n\to\infty} x_{n+1}=\lim\limits_{n\to\infty}\sqrt {2+x_n} ，得 \\
+a = \sqrt {2+a},解方程式得a=2或者a=-1 因为x_1=\sqrt 2>0且数列为单调增加数列，所以 \\
+数列极限为2，即\lim\limits_{n\to\infty} x_n= 2
+$$
+
++ 适用：递推数列，$a_{n+1}=f(a_n)$
++ 准则II应用步骤：
+  + 有界
+  + 单调
+  + 如果需要求极限值：建立极限值代数方程，并求解。利用有界确定的范围，对极限取舍。
+  + 是先证明有界还是先证明单调根据数列或者函数特点确定，无固定顺序。
+
+> 准则$II^{'}$:设函数$f(x)$的某个左邻域内单调且有界，则$f(x)$在$x_0$的左极限$f(x_0^-)$必定存在。
+
+## 4 $\lim\limits_{x\to\infty}(1+\frac{1}{x})^x$
+
+下面考虑x取正整数n而趋于$+\infty$的情形。
+$$
+设x_n=(1+\frac{1}{n})^n,证明数列{x_n}单调增加并且有界。按二项展开式有， \\
+(1+\frac{1}{n})^n=\sum_{k=0}^nC_n^k1^{n-k}\frac{1}{n}^k,其中 \\
+C_n^k=\frac{n!}{k!(n-k)!} ,1^{n-k}=1 \\
+
+(1+\frac{1}{n})^n=1+\frac{n}{1!}\cdot \frac{1}{n}+\frac{n(n-1)}{2!}\cdot\frac{1}{n^2}+\cdots+\frac{n(n-1)(n-2)\cdots(n-n+1)}{n!}\cdot\frac{1}{n^n}=\\
+1+1+\frac{1}{2!}(1-\frac{1}{n})+\cdots+\frac{1}{n!}(1-\frac{1}{n})(1-\frac{2}{n})\cdots(1-\frac{n-1}{n}) \quad同理得 (1+\frac{1}{n})^{n+1}= \\
+1+1+\frac{1}{2!}(1-\frac{1}{n+1})+\cdots+\frac{1}{n!}(1-\frac{1}{n+1})(1-\frac{2}{n+1})\cdots(1-\frac{n-1}{n+1})+\frac{1}{(n+1)!}(1-\frac{1}{n+1})(1-\frac{2}{n+1})\cdots(1-\frac{n}{n+1}) \\
+比较x_n和x_{n+1}的展开式，可以看到除前2项之后，x_{n+1}的每一项都大于x_n的对应项，并且x_{n+1}还多了最后一项，其值大于0,因此 \\
+x_n\lt x_{n+1} \\ 
+这就说嘛数列{x_n}是单调增加的。把x_n的各项展开式括号中用较大的1代替得，\\
+x_n\le 1+(1+\frac{1}{2!}+\frac{1}{3!}+\cdots+\frac{1}{n!})\le 1+(1+\frac{1}{2}+\frac{1}{2^2}+\cdots+\frac{1}{2^n})\\
+=3-\frac{1}{2^{n-1}}\lt 3 \\
+这说明数列{x_n}是有界的。根据极限存在准则II，这个数列{x_n}的极限是存在的，通常用字母e表示。\\
+\lim\limits_{x\to\infty}(1+\frac{1}{x})^x=e
+$$
+
+注意：
+
+1. $(1+\frac{1}{x})^x$,其中$(1+\frac{1}{x})$为底，$x$为指数，称为幂指函数，一般式为$u(x)^{v(x)},u(x)\gt 0$
+2. $\lim\limits_{x\to\infty}(1+\frac{1}{x})=1,\lim\limits_{x\to\infty}x=\infty$，称为$1^\infty$型未定式。
+3. $\lim\limits_{x\to\infty}(1+\frac{1}{x})^x=e\Leftrightarrow\lim\limits_{x\to 0}(1+x)^{\frac{1}{x}}=e$
+
+> 推广：若$\lim f(x)=0$，则$\lim[1+f(x)]^{\frac{1}{f(x)}}=e$
+
+## 5 柯西极限存在准则
+
+> 柯西极限存在准则	数列${x_n}$收敛的充分必要条件是：对于任意给定的正数$\epsilon$，存在正整数$N$，使得当$m\gt N , n\gt N$时，有
+>
+> $|x_m-x_n|\lt\epsilon$
+
+## 6 后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.
+
+[1]黑马程序员.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p7.
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l12b000lwu21eslf1sdd" data-title="0106极限存在准则两个重要的极限-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0108函数的连续性与间断点-函数与极限-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 函数的连续性](#1-函数的连续性)
+  * [1.1 直观认知](#11-直观认知)
+  * [1.2 函数增量](#12-函数增量)
+  * [1.3 函数连续的定义](#13-函数连续的定义)
+  * [1.4 单侧连续](#14-单侧连续)
+  * [1.5 区间连续](#15-区间连续)
+  * [1.6 连续性例题](#16-连续性例题)
+- [2 函数的间断点](#2-函数的间断点)
+  * [2.1 函数间断点定义](#21-函数间断点定义)
+  * [2.2 函数间断点分类](#22-函数间断点分类)
+  * [2.3 函数间断点例题](#23-函数间断点例题)
+- [3 后记](#3-后记)
+
+<!-- tocstop -->
+
+## 1 函数的连续性
+
+### 1.1 直观认知
+
+自然界中的许多现象，如气温的变化、河水的流动、植物的生成等都是连续变化着的。这种现象在函数关系上的反应，就是函数的连续性。例如就气温变化来看，当时间的变动很微小时，气温的变化也很微小。
+
+### 1.2 函数增量
+
+> 设变量$u$从它的一个初始值$u_1$变道终值$u_2$，终值与初始值的差$u_2-u_1$就叫做变量$u$的增量，记做$\Delta u$，即$\Delta u=u_2-u_1$.
+
+现在假定函数$y=f(x)$在点$x_0$的某一个邻域内有定义。当自变量$x$在该邻域内从$x_0$变到$x_0+\Delta x$时，函数值$f(x)$相应的从$f(x_0)$变到$f(x_0+\Delta x)$ ,即：
+$$
+自变量增量x\to x_0, \Delta x = x - x_0 \\
+函数的增量f(x)\to f(x_0),\Delta y = f(x)-f(x_0)
+$$
+函数增量如下图1.2-1所示：![0108函数的连续性与间断点-continuty](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/0108函数的连续性与间断点-continuty.bmp)
+
+
+
+### 1.3 函数连续的定义
+
+> Def1：设函数$y=f(x)$在点$x_0$的某一邻域内有定义，如果
+>
+> $\lim\limits_{\Delta x\to 0}{\Delta y}=\lim\limits_{\Delta x\to 0}{[f(x_0+\Delta x)-f(x_0)]}=0$，
+>
+> 那么称函数$y=f(x)$在点$x_0$连续。
+>
+> 
+>
+> Def2：设函数$y=f(x)$在点$x_0$的某一邻域内有定义，如果
+>
+> $\lim\limits_{x\to x_0}{f(x)}=f(x_0)$，
+>
+> 那么称函数$y=f(x)$在点$x_0$连续。
+>
+> 
+>
+> Def3：($\epsilon-\delta$)$f(x)$在点$x_0$连续$\Leftrightarrow \forall\epsilon\gt 0,\exists\delta\gt 0,当|x-x_0|\lt\delta时，有|f(x)-f(x_0)|\lt \epsilon$
+
++ 注意事项：虽然三种定义形式不一样，但是本质是相同的
+
+  1. 三要素
+     1. $f(x)在x_0$的某一邻域内有定义
+     2. $\lim\limits_{x\to x_0}{f(x)}$存在
+     3. $\lim\limits_{x\to x_0}{f(x)}=f(x_0)$
+  2. $x_0$点连续描述的是函数$y=f(x)$在点$x_0$某一邻域的状态，即单独的孤立点说连续性无意义。
+  3. 定义2提供了求极限的方式。
+  4. 应用：一般情况下，证明连续性用定义1；判断分段函数在分界点连续性用定义2。
+
+  
+
+### 1.4 单侧连续
+
+如下图1.4-1所示:![0108函数的连续性与间断点-unilateral-continuty](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/0108函数的连续性与间断点-unilateral-continuty.bmp)
+
+> 函数$f=f(x)在点x_0$某一邻域内有定义
+>
+> 左连续：$\lim\limits_{x\to x_0^-}{f(x)}=f(x_0)$
+>
+> 右连续：$\lim\limits_{x\to x_0^+}{f(x)}=f(x_0)$
+
+
+
+> 定理：$f(x)$在$x_0$处连续$\Leftrightarrow f(x)$在$x_0$即左连续又右连续，即
+>
+> $\lim\limits_{x\to x_0}{f(x)}=f(x_0)\Leftrightarrow\lim\limits_{x\to x_0^-}{f(x)}=\lim\limits_{x\to x_0^+}{f(x)}=f(x_0)$
+
++ 说明：此定理常用于分段函数分界点出连续性判断
+
+
+
+### 1.5 区间连续
+
+上面探讨的是函数在某点的连续性，下面给出函数在某一区间连续性的说明。
+
+> 在区间上每一点都连续的函数，叫做在该区间上的连续函数，或者说函数在该区间上连续。如果区间包含端点，就是指函数在右端点左连续，在左端点右连续。
+
+示例：函数$y=f(x),在区间[a,b]有定义$，那么$f(x)$在[a,b]上连续满足下面3个条件：
+
++ $f(x)$在点a出左连续
+
++ $f(x)$在区间(a,b)上处处连续
+
++ 函数$f(x)$在点b右连续
+
+### 1.6 连续性例题
+
+例3：设函数
+$$
+f(x)=
+\begin{cases} 
+\frac{x^4+ax+b}{(x-1)(x+2)},x\not=1,x\not=-2 \\
+2,\qquad\qquad x=1 \\
+ \end{cases}
+$$
+在$x=1$处连续，则$a和b$取何值？
+$$
+因为函数f(x)在点x=1出连续，所以 \\
+\lim\limits_{x\to 1}{f(x)}=\lim\limits_{x\to 1}{\frac{x^4+ax+b}{(x-1)(x+2)}}=f(1)=2 \\
+因为\lim\limits_{x\to 1}{(x-1)(x+2)}=0所以 \lim\limits_{x\to 1}{x^4+ax+b} = 0 ,得 \\
+a=-(1+b),所以 \\ \lim\limits_{x\to 1}{\frac{x^4+ax+b}{(x-1)(x+2)}}= \lim\limits_{x\to 1}{\frac{x^4-(b+1)x+b}{(x-1)(x+2)}}=\lim\limits_{x\to 1}{\frac{(x-1)(x^3+x^2+x-b)}{(x-1)(x+2)}}=2,得b=-3,a=2
+$$
+
+
+## 2 函数的间断点
+
+### 2.1 函数间断点定义
+
+> 设函数$f(x)$在点$x_0$的某去心邻域内有定义。在此前提下，如果函数$f(x)$有下列3种情况之一：
+>
+> （1）$x=x_0$没有定义；
+>
+> （2）在$x=x_0$处有定义，但是$\lim\limits_{x\to x_0}f(x)$不存在；
+>
+> （3）在$x=x_0$处有定义，且$\lim\limits_{x\to x_0}f(x)$存在，但$\lim\limits_{x\to x_0}f(x)\not = f(x_0)$,
+>
+> 那么函数$f(x)$在点$x_0$处不连续，点$x_0$称为函数$f(x)$的不连续点或间断点。
+
+
+
+### 2.2 函数间断点分类
+
+> 如果$x_0$是函数$f(x)$的间断点，但左极限$f(x_0^-)$及右极限都存在，那么$x_0$称为函数$f(x)$的第一类间断点。
+>
+> 如果左极限和右极限相等称为可去间断点；不相等称为跳跃间断点。
+>
+> 
+>
+> 不是第一类间断点的任何间断点，都称为第二类间断点。无穷间断点和震荡间断点是第二类间断点。
+
+
+
+### 2.3 函数间断点例题
+
+例5：讨论函数
+$$
+f(x)=
+\begin{cases}
+-x,\quad x\le0 \\
+1+x,\quad x\gt 0
+\end{cases}
+$$
+在$x=0$处的连续性
+$$
+解：
+\lim\limits_{x\to0^-}{f(x)}=\lim\limits_{x\to0^-1}{(-x)}=0 \\
+\lim\limits_{x\to0^+}{f(x)}=\lim\limits_{x\to0^+}{(1+x)}=1 \\
+因为函数f(x)在点0处左右极限存在但是不相等，所以x=0为函数f(x)的第一类间断点中的跳跃间断点。
+$$
+
+
++ 跳跃间断点图示2.3-1：![20221103-breakpoint-1-jump](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/20221103-breakpoint-1-jump.png)
+
+例6：讨论函数
+$$
+f(x)=
+\begin{cases}
+2\sqrt x,\quad 0\le x\lt 1 \\
+1, \qquad x=1 \\
+x+1,\quad x\gt1
+\end{cases}
+$$
+在$x=1$处的连续性。
+$$
+解 \lim\limits_{x\to1^-}{f(x)}=\lim\limits_{x\to1^-}{2\sqrt x}=2 \\
+\lim\limits_{x\to1^+}{f(x)}=\lim\limits_{x\to1^-}{(x+1)} = 2 \\
+因为\lim\limits_{x\to1^-}{f(x)}=\lim\limits_{x\to1^+}{f(x)}\not = f(1)=1 \\
+所以x=1为函数f(x)的可去间断点
+$$
+
++ 可去间断点如下图2.3-2所示：![20221103-breakpoint-1-removable](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/20221103-breakpoint-1-removable.bmp)
+
+例7：函数$f(x)=\frac{1}{x}$在$x=0$处的连续性
+$$
+\lim\limits_{x\to 0^-}=-\infty\\
+\lim\limits_{x\to 0^-}=+\infty \\
+所以x=0为f(x)的第二类无穷间断点。
+$$
+如下图2.3-3所示：![20221103-breakpoint-1-infinite](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/20221103-breakpoint-1-infinite.png)
+
+例8：函数
+$$
+f(x)=
+\begin{cases}
+\sin\frac{1}{x},\quad x\not=0 \\
+0,\quad x=0
+\end{cases}
+$$
+在$x=0$处的连续性
+
+$x=0为函数f(x)$的第二类震荡间断点，如下图2.3-4所示：![20221103-breakpoint-1-Oscillatory ](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/20221103-breakpoint-1-Oscillatory .png)
+
++ 注意事项：函数的间断点可能有无穷多个
+
+  + 举例：处处不连续，在R内任意一点震荡间断点。
+    $$
+    狄利克雷函数D(x)=
+    \begin{cases}
+    1,x\in Q \\
+    0,x\in Q^c
+    \end{cases}
+    $$
+    
+
+例9：讨论函数$f(x)=\lim\limits_{n\to\infty}{\frac{1-x^{2n}}{1+x^{2n}}\cdot x}$的连续性，若有间断点，判断其类型。
+$$
+极限n是变量，x可以看做是常量，先根据x的取值，求极限的值 \\
+\lim\limits_{n\to\infty}{\frac{1-x^{2n}}{1+x^{2n}}}=
+\begin{cases}
+1,|x|\lt 1 \\
+0,|x|=1 \\
+-1,|x|\gt 1
+\end{cases} \\
+函数f(x)=
+\begin{cases}
+-x,x\lt -1 \\
+0,x=-1 \\
+x,-1\lt x\lt 1 \\
+0,x=1 \\
+-x,x\gt 1 
+\end{cases} \\
+
+x=-1处，\\
+\lim\limits_{x\to-1^-}{f(x)}=\lim\limits_{x\to-1^-}{(-x)}=1 \\
+\lim\limits_{x\to-1^+}{f(x)}=\lim\limits_{x\to-1^+}{(x)}=-1 \\
+所以x=-1是函数f(x)的第一类跳跃间断点的。
+x=1处，\\
+\lim\limits_{x\to1^-}{f(x)}=\lim\limits_{x\to1^-}{(x)}=1 \\
+\lim\limits_{x\to-1^+}{f(x)}=\lim\limits_{x\to-1^+}{(-x)}=-1 \\
+所以x=1是函数f(x)的第一类跳跃间断点的
+$$
+
+## 3 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P56~p60.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p9.
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq7l12c000pwu21abtb9h91" data-title="0108函数的连续性与间断点-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0110闭区间上连续函数的性质-函数与极限-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 有界性与最大值最小值定理](#1-有界性与最大值最小值定理)
+- [2 零点定理与介质定理](#2-零点定理与介质定理)
+- [3 后记](#3-后记)
+
+<!-- tocstop -->
+
+> 闭区间连续：如何函数$f(x)$在开区间$(a,b)$上连续，在点$a$右连续，在点$b$左连续，那么函数$f(x)$就是在闭区间$[a,b]$上连续的。
+
+## 1 有界性与最大值最小值定理
+
++ 最大值和最小值概念
+
+> 对于在区间$I$上有定义的函数$f(x)$，如果有$x_0\in I$,使得对于$\forall x\in I$都有
+>
+> $f(x)\le f(x_0)(f(x)\ge f(x_0))$, 
+>
+> 那么称$f(x_0)$是函数$f(x)$在区间$I$的最大值(最小值)。
+
++ 定理1：有界性与最大值最小值定理
+
+> 在闭区间上连续的函数在该区间上有界且一定能取到它的最大值和最小值。
+
++ 注
+  + 若函数$f(x)$在闭区间$[a,b]$上连续，则$\exists M\gt0$,使得$\forall x\in[a,b]$,有$|f(x)|\le M$;$\exists\xi_1\in[a,b]$,使得$f(\xi_1)$是函数$f(x)在[a,b]$的最大值；$\exists\xi_2\in[a,b]$,使得$f(\xi_2)$是函数$f(x)在[a,b]$的最小值；
+  + 上面提到的$M,\xi_1,\xi_2$是最少有1个，可能有多个。
+  + 连续和闭区间缺一不可。
+
+
+
+例1：函数$f(x)=x^2,x\in[0,1)$ 函数在区间$[0,1)$有界有最小值，但是没有最大值，如下图1-1所示
+
+![0110闭区间上连续函数的性质-函数与极限-高等数学-x2-0-1](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/0110闭区间上连续函数的性质-函数与极限-高等数学-x2-0-1.bmp)
+
+例2：函数
+$$
+f(x)=
+\begin{cases}
+-x+1,\quad 0\le x\le1, \\
+1,\qquad x=1,\\
+-x+3,\quad 1\lt x\le2
+\end{cases}
+$$
+函数f(x)在闭区间$[0,2]$上不连续，则函数f(x)在闭区间$[0,2]$上有界但是没有最大值和最小值，如下图1-2所示
+
+![0110闭区间上连续函数的性质-函数与极限-高等数学-fx-0-2](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/0110闭区间上连续函数的性质-函数与极限-高等数学-fx-0-2.bmp)
+
+## 2 零点定理与介质定理
+
++ 零点
+
+> 如果$x_0$使得$f(x_0)=0$那么$x_0$称为函数$f(x)$的零点。
+
++ 定理2：零点定理
+
+> 设函数$f(x)$在闭区间$[a,b]$上连续，且$f(a)与f(b)$异号（即$f(a)\cdot f(b)\lt0$），则在开区间$(a,b)$上至少有一点$\xi$使得
+>
+> $f(\xi)=0$
+
++ 定理3：介值定理
+
+> 设函数$f(x)$在闭区间$[a,b]$上连续,且在这区间的端点取不同的函数值
+>
+> $f(a)=A,f(b)=B$
+>
+> 则对于$A与B$之间的任意一个数$C$,在开区间$(a,b)$内至少有一点$\xi$,使得
+>
+> $f(\xi)=C(a\lt\xi\lt b)$ 
+
+证明：
+$$
+令\phi(x)=f(x)-C 那么\\
+\phi(a)=A-C,\phi(b)=B-C \\
+因为A\lt C\lt B 所以 \phi(a)与\phi(b)异号 ，\\
+根据零点定理有 \exists \xi\in(a,b)，使得\phi(\xi)=0 ，即\\
+f(\xi)=C
+$$
+
++ 推论
+
+> 在闭区间$[a,b]$上连续的函数$f(x)$的值域为闭区间$[m,M]$，其中$m与M$依次为$f(x)在[a,b]$上的最小值和最大值。
+
+
+
++ 注
+  + 关于本节连续性的定理应用，很多时候需要我们自己去构造函数，来满足定理所需的条件。
+
+## 3 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P66~p70.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p10.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq7l12c000swu2161227073" data-title="0110闭区间上连续函数的性质-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0111总结-函数与极限-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0111%E6%80%BB%E7%BB%93-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0111%E6%80%BB%E7%BB%93-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0111总结-函数与极限-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1.1 极限的定义](#11-极限的定义)
+  * [1.1.1 数列的极限$\epsilon-N$](#111-数列的极限epsilon-n)
+  * [1.1.2 函数的极限](#112-函数的极限)
+- [1.2 极限的性质](#12-极限的性质)
+- [1.3 无穷小和无穷大](#13-无穷小和无穷大)
+  * [1.3.1 定义和定理](#131-定义和定理)
+    + [1.3.1.1 无穷小](#1311-无穷小)
+    + [1.3.1.2 无穷大](#1312-无穷大)
+- [1.3 求极限](#13-求极限)
+  * [1.3.1 准备知识](#131-准备知识)
+    + [1.3.1.1 极限的运算](#1311-极限的运算)
+    + [1.3.1.2 复合函数的极限运算](#1312-复合函数的极限运算)
+    + [1.3.1.3 无穷小的比较](#1313-无穷小的比较)
+  * [1.3.2 有理函数](#132-有理函数)
+  * [1.3.3 有界函数和无穷小的乘积为无穷小](#133-有界函数和无穷小的乘积为无穷小)
+  * [1.3.4 利用左右极限相等](#134-利用左右极限相等)
+  * [1.3.3 两个极限存在准则和两个重要极限](#133-两个极限存在准则和两个重要极限)
+  * [1.3.4 无穷小的等价代换](#134-无穷小的等价代换)
+  * [1.3.5 初等变形和常用公式](#135-初等变形和常用公式)
+  * [1.3.6 数列极限和函数极限的关系](#136-数列极限和函数极限的关系)
+- [1.5 连续性和间断点](#15-连续性和间断点)
+  * [1.5.1 连续性](#151-连续性)
+  * [1.5.2 间断点](#152-间断点)
+  * [1.5.3 渐近线](#153-渐近线)
+- [1.6 闭区间上连续函数的性质](#16-闭区间上连续函数的性质)
+  * [1.6.1 最大值最小值定理](#161-最大值最小值定理)
+  * [1.6.2 零点定理](#162-零点定理)
+  * [1.6.3 介值定理](#163-介值定理)
+- [1.7 后记](#17-后记)
+
+<!-- tocstop -->
+
+## 1.1 极限的定义
+
+### 1.1.1 数列的极限$\epsilon-N$
+
+> 定义：设$\{x_n\}$为一数列，如果存在常数$a$，对于任意给定的$\epsilon$(不论它多么小），总存在正整数$N$，当$n\gt N$时，有$|x_n-a|\lt\epsilon$
+>
+> 那么就称常数$a$是数列$\{x_n\}$的极限，或者称数列$\{x_n\}$收敛于$a$,记做$\lim\limits_{n\to\infty}{x_n=a}$
+>
+> $\epsilon-N$语言描述：
+>
+> $\lim\limits_{n\to\infty}{x_n=a}\Leftrightarrow\forall\epsilon\gt0,\exists N\in N^+,当n\gt N时，有|x_n-a|\lt\epsilon$
+
+### 1.1.2 函数的极限
+
++ 当$x\to x_0$时
+
+> 自然语言定义：设函数$f(x)$的点$x_0$的某一去心邻域内有定义。如果存在常数$A$，对于任意给定的正数$\epsilon$（不论它多么小），总存在这正数$\delta$，当$x$满足不等式$0\lt|x-x_0|\lt\delta$时，对应的函数值$f(x)$都满足不等式$|f(x)-A|\lt\epsilon$，那么常数A就叫做函数$f(x)当x\to x_0$时的极限，记做$\lim\limits_{x\to x_0}{f(x)=A}$
+>
+> $\epsilon-\delta$语言定义：$\lim\limits_{x\to x_0}{f(x)=A}\Leftrightarrow\forall\epsilon\gt0,\exists\delta\gt0,当0\lt|x-x_0|\lt\delta时，有|f(x)-A|\lt\epsilon$
+
++ 当$x\to\infty$时
+
+> 自然语言定义：设函数$f(x)在|x|$大于某一正数时有定义。如果存在常数A，对于任意给定的正数$\epsilon$ (不论它多么小)，总存在着正数$X，$使得当$x$满足不等式$|x|\gt X$时，对应的函数值$f(x)$都满足不等式$|f(x)-A|\lt\epsilon$,那么常数$A$叫做函数$f(x)当x\to\infty$的极限，记做$\lim\limits_{x\to\infty}{f(x)=A}$
+>
+> $\epsilon-X$语言定义：$\lim\limits_{x\to\infty}{f(x)=A}\Leftrightarrow\forall\epsilon\gt0,\exists X\gt0,当|x|\gt X时，有|f(x)-A|\lt\epsilon$
+
+## 1.2 极限的性质
+
+数列极限的性质和函数极限性质比较，如下表1.2-1：
+
+| 极限性质     | 数列                                                         | 函数                                                         |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 唯一性       | $\lim\limits_{x\to\infty}{x_n=a } \Rightarrow a$唯一         | $\lim f(x)=a\Rightarrow a$唯一                               |
+| (局部)有界性 | $\lim\limits_{x\to\infty}{x_n=a}\Rightarrow \\\exists M > 0 \exists N\gt0,当n\gt N 时，有|f(x)|\le M$ | $\lim f(x)=a \Rightarrow \exists\delta\gt 0(或者X\gt0),\exists M > 0 ,使得当0\lt|x-x_0|\lt\delta(或者|x|\gt X)时，有|f(x)|\le M$ |
+| (局部)保号性 | $\lim\limits_{x\to\infty}{x_n=a},且a\gt 0(或a\lt0) \Rightarrow \\ \exists N\in N^+,当n\gt N时，\\有x_n\gt 0(或x_n\lt 0)$ | $\lim f(x)=a 且a\gt0(或a\lt0) \Rightarrow \\ \exists\delta\gt 0(或者X\gt0),使得当0\lt|x-x_0|\lt\delta(或者|x|\gt X)时，\\有f(x)\gt 0(或者f(x)\lt 0)$ |
+|              | 收敛数列和子数列关系：<br>$数列x_{n_k}是数列{x_n}的子数列\lim\limits_{x\to\infty}{x_n=a}\Rightarrow \\\lim\limits_{x\to\infty}{x_{n_k}=a}$ | 函数极限与数列极限的关系，见1.3.6                            |
+
++ 不指定自变量的变化趋势，就是同一变化趋势。
+
+## 1.3 无穷小和无穷大
+
+### 1.3.1 定义和定理
+
+#### 1.3.1.1 无穷小
+
+> 无穷小：如果函数$f(x)当x\to x_0(或x\to\infty)$时的极限为0，那么就称函数$f(x)为当x\to x_0（或x\to\infty）$时的无穷小。以0为极限的数列$\{x_n\}$称为当$n\to\infty$时的无穷小。
+
++ 无穷小就是极限为0的一种特殊极限，用相应的$\epsilon-\delta(或X)$语言描述，需要把有$|f(x)-A|\lt\epsilon中的A换为0，即|f(x)|\lt\epsilon即可$，数列同理。
++ 无穷小和很小的数不是一回事
+
+> 定理1：在自变量的同一变化过程中，函数$f(x)$具有极限A的充分必要条件是$f(x)=A+\alpha,其中\alpha是无穷小。
+>
+> 语言描述：$\lim f(x)=A\Leftrightarrow f(x)=A+\alpha,\lim\alpha=0$
+
+#### 1.3.1.2 无穷大
+
+> 定义：设函数$f(x)$在点$x_0$的某一去心邻域内有定义（或$|x|$大于某一正数时有定义）。如果对于任意给的正数M（不论它多么大），总存在正数$\delta$(或正数X)，当$x满足不等式0\lt|x-x_0|\lt\delta(或|x|\gt X)$时，对应的函数值$f(x)都满足不等式|f(x)|\gt M$，那么就称函数$f(x)为当x\to x_0(或x\to\infty)$时的无穷大，记做$\lim\limits_{x\to x_0}{f(x)=\infty}(或\lim\limits_{x\to\infty}{f(x)=\infty})$
+>
+> 符号语言：$\lim f(x)=\infty\Leftrightarrow \forall M\gt0,\exists\delta\gt0(或X\gt0),当0\lt|x-x_0|\lt\delta(或|x|\gt X时，有|f(x)|\gt M$
+
++ 无穷大不是说函数极限存在，只是方便描述这一状态；同样滴函数极限不存在也不一定就是说它的极限为无穷大，比如$\lim\limits_{x\to0}{\sin\frac{1}{x}}$
+
+> 定理2：自变量同一变化过程中，如果$f(x)$为无穷大，那么$\frac{1}{f(x)}$为无穷小；反正，如果$f(x)$为无穷小，那么$\frac{1}{f(x)}$为无穷大。
+>
+> 符号语言：$\lim f(x)=0\Leftrightarrow \lim\frac{1}{f(x)}=\infty,\lim f(x)=\infty\Leftrightarrow \lim\frac{1}{f(x)}=0$
+
+
+
+## 1.3 求极限
+
+### 1.3.1 准备知识
+
+#### 1.3.1.1 极限的运算
+
+> 若$\lim f(x)=A,\lim g(x)=B$,那么
+>
+> （1）$lim[f(x)\pm g(x)]=\lim f(x)\pm\lim g(x)$
+>
+> （2）$\lim[f(x)\cdot g(x)]=\lim f(x)\cdot\lim g(x)$
+>
+> （3）若$B\not = 0$,则$\lim{\frac{f(x)}{g(x)}}=\frac{\lim f(x)}{\lim g(x)}$
+
++ 注
+  + 运算的前提是函数极限存在
+
+#### 1.3.1.2 复合函数的极限运算
+
+> 设函数$y=f[g(x)]$是由函数$u=g(x)与y=f(u)$复合而成，$f[g(x)]在点x_0$的某一去心邻域内有定义且$g(x)\not = u_0$，若$\lim\limits_{x\to x_0}{f[g(x)]}=\lim\limits_{u\to u_0}{f(u)}=A$,则 $\lim\limits_{x\to x_0}{g(x)}=u_0,\lim\limits_{u\to u_0}{f(u)}=A$
+
+#### 1.3.1.3 无穷小的比较
+
+> 如果$\lim\frac{\beta}{\alpha}=0$，那么就说$\beta$是比$\alpha$高阶的无穷小，记做$\beta=o(\alpha)$;
+>
+> 如果$\lim\frac{\beta}{\alpha}=\infty$，那么就说$\beta$是比$\alpha$低阶的无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha}=c\not= 0$，那么就说$\beta$与$\alpha$是同阶无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha^k}=c\not= 0,k\gt 0$，那么就说$\beta$是关于$\alpha$的$k$阶的无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha}=1$，那么就说$\beta$与$\alpha$是等价无穷小，记做$\beta$~$\alpha$;
+
+
+
+### 1.3.2 有理函数
+
+
+$$
+\lim\limits_{x\to\infty}{\frac{P_n(x)}{Q_m(x)}}=\lim\limits_{x\to\infty}{\frac{a_0+a_1x+\cdots+a_nx^n}{b_0+b_1x+\cdots+b_mx^m}}=
+\begin{cases}
+\infty,\quad n\gt m \\
+\frac{a_n}{b_m},\quad n=m \\
+0,\qquad n\lt m
+\end{cases}
+$$
+
++ 注
+  + $\frac{\infty}{\infty}$型求极限方法之一：分子分母同除以趋于无穷大最快的量
+
+
+
+### 1.3.3 有界函数和无穷小的乘积为无穷小
+
+$f(x)$有界（局部有界），$\lim g(x)=0\Rightarrow \lim f(x)\cdot g(x)=0$
+
+### 1.3.4 利用左右极限相等
+
+> $\lim\limits_{x\to x_0}{f(x)}=A\Leftrightarrow \lim\limits_{x\to x_0^+}{f(x)}=\lim\limits_{x\to x_0^-}{f(x)}=A$
+
+应用场景：函数$f(x)$为分段函数，且$x_0$为分界点。
+
+### 1.3.3 两个极限存在准则和两个重要极限
+
++ 两个准则
+
+> 夹逼准则=$\begin{cases}数列：b_n\le a_n\le c_n;\lim b_n=\lim c_n=A\Rightarrow\lim a_n=A\\函数：g(x)\le f(x)\le h(x);\lim g(x)=\lim h(x)=A\Rightarrow\lim f(x)=A\end{cases}$
+>
+> 单调有界：$\begin{cases}单增+有上界\\单减+有下界\end{cases}$
+
++ 两个重要极限
+  + $\lim\limits_{u\to 0}{\frac{\sin u}{u}}=1$
+  + $\lim\limits_{u\to 0}{(1+u)^{\frac{1}{u}}}=e;\lim\limits_{n\to\infty}{(1+\frac{1}{n})^n}=e$
+  + $u$可以是自变量任意变化趋势下的无穷小
+
+### 1.3.4 无穷小的等价代换
+
+> 设$\alpha\sim\hat\alpha,\beta\sim\hat\beta$，且$\lim\frac{\hat\beta}{\hat\alpha}$存在，则$\lim\frac{\beta}{\alpha}=\lim\frac{\hat\beta}{\hat\alpha}$
+
+常用的等价无穷小
+$$
+当x\to 0时 \\
+\sin x\sim x \quad \tan x\sim x\quad \arcsin x\sim x\quad \arctan x\sim x \\
+1-\cos x\sim \frac{1}{2}x^2 \\
+e^x-1\sim x\quad a^x-1\sim x\ln a \\
+\ln(1+x)\sim x\quad (1+x)^\alpha-1\sim\alpha x(\alpha\in R)
+$$
+
++ 注
+  + 看情况替换，不一定需要全部替换，比如有一项乘积因子为$x$明显不用替换。
+  + $x$可以是自变量任意变化趋势下的无穷小
+
+### 1.3.5 初等变形和常用公式
+
++ 有理化
++ 约分、通分
++ $x=a^{\log_ax}；当a=e时，x=e^{\ln x}$
+
+### 1.3.6 数列极限和函数极限的关系
+
+应用场景
+
++ 求$\lim\limits_{n\to +\infty}{x_n}\leftrightarrow n用x替换\lim\limits_{x\to +\infty}{f(x)}$
++ 证明$\lim\limits_{x\to x_0}{f(x)}$不存在，只需 任取数列$\{x_n\} \lim\limits_{n\to +\infty}{x_n}=x_0 \quad证明\lim\limits_{n\to \infty}{f(x_n)}不存在即可$
+
+
+
+## 1.5 连续性和间断点
+
+### 1.5.1 连续性
+
+> $y=f(x)在点x_0$处连续$\Leftrightarrow \lim\limits_{x\to x_0}{f(x)}=f(x_0)\Leftrightarrow \lim\limits_{x\to x_0^+}{f(x)}=\Leftrightarrow \lim\limits_{x\to x_0^-}{f(x)}=f(x_0)$
+>
+> 初等函数在定义域区间内都是连续的。
+
+
+
+### 1.5.2 间断点
+
+如下图1.5.2所示:![函数的间断点](/math/note/高等数学/01函数与极限/L:/study/math/note/函数与极限/函数的间断点.png)
+
+### 1.5.3 渐近线
+
+> 铅直渐近线：$\lim\limits_{x\to x_0}{f(x)}=\infty\Rightarrow x=x_0$
+>
+> 水平渐近线：$\lim\limits_{x\to \infty}{f(x)}=C\Rightarrow y=C$
+>
+> 斜渐近线：
+>
+> $ \lim\limits_{x\to \infty}{\frac{f(x)}{x}=k,斜率 \\ \lim\limits_{x\to \infty}{[f(x)-kx]}}=b,截距 \Rightarrow y=kx+b$
+
+## 1.6 闭区间上连续函数的性质
+
+### 1.6.1 最大值最小值定理
+
+> 在闭区间上连续的函数在该区间上有界且一定能取到它的最大值和最小值。
+
+### 1.6.2 零点定理
+
+> 设函数$f(x)$在闭区间$[a,b]$上连续，且$f(a)与f(b)$异号（即$f(a)\cdot f(b)\lt0$），则在开区间$(a,b)$上至少有一点$\xi$使得 $f(\xi)=0$
+>
+
+### 1.6.3 介值定理
+
+> 设函数$f(x)$在闭区间$[a,b]$上连续,且在这区间的端点取不同的函数值
+>
+> $$
+> f(a)=A,f(b)=B
+> $$
+> 则对于$A与B$之间的任意一个数$C$,在开区间$(a,b)$内至少有一点$\xi$,使得
+>
+> $$
+> f(\xi)=C(a\lt\xi\lt b)
+> $$
+>  
+
+
+
+## 1.7 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P1~p72.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p12.
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0111%E6%80%BB%E7%BB%93-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq7l12d000uwu214ahvd5ea" data-title="0111总结-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0201导数的概念-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0201导数的概念-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 导数的定义](#1-导数的定义)
+- [2 常见函数的导数(导函数)](#2-常见函数的导数导函数)
+- [3 单侧导数](#3-单侧导数)
+- [4 导数的几何意义](#4-导数的几何意义)
+- [5 可导和连续的关系](#5-可导和连续的关系)
+- [6 后记](#6-后记)
+
+<!-- tocstop -->
+
+## 1 导数的定义
+
+> 设函数$y=f(x)$在点$x_0$的某个邻域内有定义，当自变量$x在x_0取得增量\triangle x$(点$x+\triangle x$扔在该邻域内)时，相应地，因变量$y取得增量\triangle y=f(x_0+\triangle x)-f(x_0)$;如果$\triangle y与\triangle x$之比当$\triangle x\to0$时的极限存在，那么称函数$y=f(x)在点x_0$处可导，并称这个极限为函数$y=f(x)在点x_0$处的导数，记做$f^{'}(x_0)$,即
+>
+> $f^{'}(x_0)=\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}=\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$
+>
+> 也可记做$y^{'}|_{x=x_0},\frac{dy}{dx}|_{x=x_0},\frac{df(x)}{dx}|_{x=x_0}$
+
++ 注
+  1. 导数定义是严格的形式：$f^{'}(x_0)=\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}},x_0一致，\triangle x一致$,
+     + 示例：$f^{'}(1)=\lim\limits_{\triangle x\to0}{\frac{f(1+\triangle x)-f(1)}{\triangle x}}$
+     + 示例：$f^{'}(x_0)=\lim\limits_{\triangle x\to0}{\frac{f(x_0+2\triangle x)-f(x_0)}{2\triangle x}},增量2\triangle$
+  2. 等价变形$f^{'}(x_0)=\lim\limits_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}}$
+  3. 实例：
+     1. 物体的位移函数$s=f(t)$在$t_0$时刻的瞬时速度：$v(t_0)=f^{'}(t_0)$
+     2. 曲线$y=f(x)在点(x_0,f(x_0))$处的切线斜率：$k=f^{'}(x_0)$
+  4. $\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}$极限不存在,函数在点$x_0$处不可导
+     1. 特殊$\lim\limits_{\triangle x\to0}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}=\infty$函数极限仍然是不存在的
+
+> 如果函数$f(x)在开区间I$内处处可导，那么称函数$y=f(x)在开区间I内$可导，对于$\forall\in I$,都对应这$f(x)$的一个确定的导数值，这样构成的函数叫做原函数$y=f(x)$的导函数,记做$y^{'},\frac{dy}{dx},\frac{df(x)}{dx}$
+
++ 注
+  + 求某一点的导数值可先求原函数的导函数，带入求某一点的导数值即函数在某点的导数值等于其导函数在该点的函数值。
+
+
+
+## 2 常见函数的导数(导函数)
+
+例1 求函数$f(x)=C(C为常数)$的导数
+$$
+解：f^{'}(x)=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}=\lim\limits_{h\to0}{\frac{(C-C)}{h}}=0
+$$
+
+> 常数的导数等于零。
+
+例2：求幂函数$f(x)=x^\mu(\mu\in R)$的导数
+$$
+解：f^{'}(x)=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}=f^{'}(x)=\lim\limits_{h\to0}{\frac{(x+h)^\mu-x^\mu}{h}}\\
+=x^{\mu-1}\lim\limits_{h\to0}{\frac{(1+\frac{h}{x})^\mu-1}{\frac{h}{x}}}=\mu x^{\mu-1}
+$$
+
+例3：求函数$f(x)=\sin x$的导数
+$$
+解：f^{'}(x)=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}=\lim\limits_{h\to0}{\frac{\sin(x+h)-sin(x)}{h}}= \\
+\lim\limits_{h\to0}{\frac{2\sin(\frac{h}{2})\cos(\frac{2x+h}{2})}{h}}=\cos x
+$$
+
+> $(\cos x)^{'}=-\sin x$
+
+例4：求函数$f(x)=a^x(a\gt0,a\not=1)$的导数
+$$
+解：f^{'}(x)=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}=\lim\limits_{h\to0}{\frac{a^{x+h}-a^x}{h}}= \\
+a^x\lim\limits_{h\to0}{\frac{a^h-1}{h}}=a^x\ln a
+$$
+例5：求函数$f(x)=\log_ax(a\gt0,a\not=1)$的导数
+$$
+解：f^{'}(x)=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}=\lim\limits_{h\to0}{\frac{\log_a(x+h)-\log_a(x)}{h}} \\
+=\frac{1}{x}\lim\limits_{h\to0}{\frac{\log_a(1+\frac{h}{x})}{\frac{h}{x}}}=\frac{1}{x\ln a}
+$$
+例6：已知$f^{'}(x_0)$存在，则$\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}}=？$
+$$
+解：\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0-\triangle x)}{\triangle x}} \\
+=3\lim\limits_{\triangle x\to0}{\frac{f(x_0+3\triangle x)-f(x_0)}{3\triangle x}} + \lim\limits_{\triangle x\to0}{\frac{f(x_0-\triangle x)-f(x_0)}{-\triangle x}}\\
+=3f^{'}(x_0)+f^{'}(x_0)=4f^{'}(x_0)
+$$
+
+## 3 单侧导数
+
+> 若$\lim\limits_{h\to0^-}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的左导数，记做$f_-^{'}(x_0)$；若$\lim\limits_{h\to0^+}{\frac{f(x_0+h)-f(x_0)}{h}}$存在，则称该极限为函数$f(x)在x_0$处的右导数导数,记做$f_+^{'}(x_0)$。
+>
+> 函数$f(x)在点x_0$可导的充分必要条件是左导数$f_-^{'}(x_0)$和右导数$f_+^{'}(x_0)$存在且相等。
+>
+> 左导数和右导数统称为单侧导数。
+>
+> 如果函数$(x)$在开区间$(a,b)$内可导，且$f_+^{'}(a)$及$f_-^{'}(b)$都存在，那么说函数$f(x)$在闭区间$[a,b]$内可导。
+
+
+
+例7: 
+$$
+f(x)=
+\begin{cases}
+\frac{2}{3}x^3,x\le1 \\
+x^2,\quad x\gt1
+\end{cases}
+，f(x)在x=1处是否可导？
+$$
+
+$$
+解：分段函数在某点是否可导，分别求左右导数。\\
+f_-^{'}(1)= 3x^2|_{x=1}=2,f_+^{'}(1)= 2x|_{x=1}=2 , \\
+f_-^{'}(1)=f_+^{'}(1) 所以f(x)在点x=1处可导？ \\
+那我们按左导数和右导数定义计算 \\
+f_-^{'}(1)=\lim\limits_{x\to1^-}{\frac{f(x)-f(1)}{x-1}}=\lim\limits_{x\to1^-}{\frac{\frac{2}{3}x^3-\frac{2}{3}}{x-1}}=2 \\
+f_+^{'}(1)=\lim\limits_{x\to1^+}{\frac{f(x)-f(1)}{x-1}}=\lim\limits_{x\to1^-}{\frac{x^2-\frac{2}{3}}{x-1}}=\infty \\
+所以f(x)在x=1处导数不存在。
+$$
+
++ 注：**判断分段函数在分界点出是否可导要根据定义分别计算左导数和右导数**
+
+## 4 导数的几何意义
+
+> 曲线$y=f(x)在(x_0,f(x_0))$处的切线斜率：$k=f^{'}(x_0)$
+>
+> 切线方程：$y-f(x_0)=f^{'}(x_0)(x-x_0)$
+>
+> 过切点M$(x_0,y_0)$且与切线垂直的直线叫做曲线$y=f(x)$在点M出的法线。
+>
+> 法线方程：$y-f(x_0)=\frac{1}{f^{'}(x_0)}(x-x_0)$
+
+切线和法线示意图如下4-1所示：![0201导数的概念-导数与微分-导数的几何意义](/math/note/高等数学/02导数与微分/L:/study/math/note/02导数与微分/images/0201导数的概念-导数与微分-导数的几何意义.bmp)
+
+## 5 可导和连续的关系
+
+> 可导必连续，但是连续不一定可导。
+
+$$
+证明：可导必连续 \\
+\lim\limits_{\triangle x\to 0}{\frac{\triangle y}{\triangle x}}=f^{'}(x_0) \\
+\frac{\triangle y}{\triangle x}=f^{'}(x_0)+\alpha ,其中\lim\limits_{\triangle x\to 0}{\alpha}=0 \\
+则\triangle y=f^{'}(x_0)\triangle x + \alpha\triangle x,那么当\triangle x\to时，\triangle y \to0 
+\\所以函数y=f(x)连续
+$$
+
+
+
+## 6 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P73~p82.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p13.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0201%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq7l12e000vwu21d4ptdm11" data-title="0201导数的概念-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+## 1 隐函数
+
+> 定义：设有两个非空数集$A,B$.对于$\forall x\in A$，由二元方程$F(x,y)=0$对应唯一的$y\in B$,称此对应关系是二元方程$F(X,y)=0$确定的隐函数。
+>
+> 相应的由$y=f(x)$确定的对应关系称为显函数。
+>
+> 把一个隐函数化成显函数，叫做隐函数的显化。
+
+例1 ：$x+y^3-1=0\quad隐函数的显化\rightarrow y=\sqrt[3]{1-x}$
+
+## 2 隐函数求导
+
+> 利用复合函数求导法则，对方程两边求导。
+
+例2：求$e^y+xy-e=0$所确定的隐函数的导数$\frac{dy}{dx}$
+$$
+解：等式两边求导,\\
+(e^y)^{'}+(xy)^{'}-(e)^{'}=0 \\
+e^yy^{'}+y+xy^{'}=0 \\
+y^{'}=-\frac{y}{e^y+x},\quad e^y+x\not=0
+$$
+例3：求由方程$y^5+2y-x-3x^7=0$所确定的隐函数在$x=0处的导数\frac{dy}{dx}|_{x=0}$
+$$
+解：等式两端对x求导\\
+5y^4y^{'}+2y^{'}-1-21x^6=0 \\
+y^{'}=\frac{1+21x^6}{2+5y^4} \\
+x=0时，y=0带入得\\
+\frac{dy}{dx}|_{x=0}=\frac{1}{2}
+$$
+注：求隐函数在某点的导数值时，如果没要求求$y^{'}$,则可以先带入该点在求导
+$$
+对于例3，5y^4y^{'}+2y^{'}-1-21x^6=0 ，带入x=0,y=0 得 \\
+y^{'}(0)=\frac{1}{2}
+$$
+例4：已知椭圆$\frac{x^2}{16}+\frac{y^2}{9}=1$.求该椭圆在点$(2,\frac{3}{2}\sqrt{3})$处的切线方程。
+$$
+解：切线斜率k=y^{'}(x) ,方程两边对x求导 \\
+\frac{x}{8}+\frac{2}{9}yy^{'}=0,y^{'}=-\frac{9x}{16y} \\
+k=y^{'}(2)=-\frac{\sqrt{3}}{4} \\
+切线方程为y-\frac{3}{2}\sqrt{3}=-\frac{\sqrt{3}}{4}(x-2) \\
+即\sqrt{3}x+4y-8\sqrt{3}=0
+$$
+
+例5：由方程$x-y+\frac{1}{2}\sin y =0$所确定的隐函数，求$\frac{dy^2}{dx^2}$
+$$
+解：方程两边对x求导 \\
+1-y^{'}+\frac{1}{2}\cos yy^{'}=0 ，y^{'}=\frac{2}{2-\cos y} \\
+y^{''}=\frac{0-2(\sin yy^{'})}{(2-\cos y)^2}=\frac{-4\sin y}{(2-\cos y)^3} \\  
+$$
+
+> 某些场合，利用对数求导法比通用的方法简便些。
+
+例6：求$y=x^{\sin x}(x\gt0)$的导数。
+$$
+两边取对数， 得 \\
+\ln y=\sin x \ln x, 两边对x求导 \\
+\frac{y^{'}}{y}=\cos x\ln x+\frac{\sin x}{x} \\
+y^{'}=x^{\sin x}(\cos x\ln x+\frac{\sin x}{x})
+$$
+例7：求$y=\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}$的导数。
+$$
+(\ln|x|)^{'}=\frac{1}{x} \\
+两边取对数,得 \\
+\ln|y|=\ln\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}=\frac{1}{2}(\ln(x-1)+\ln(x-2)-\ln(x-3)-\ln(x-4)) \\
+两边对x求导 \\
+\frac{y^{'}}{y}=\frac{1}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) \\
+y^{'}=\frac{1}{2}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)}}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4})
+$$
+
+> 当求$f(x)$为幂指函数或多项乘、除时，可以两边取对数转化为隐函数求导。
+
+## 3 由参数方程确定的函数
+
+> 一般地，若参数方程
+> $$
+> \begin{cases}
+> x=\phi(t) \\
+> y=\psi(t) \qquad(4-3)
+> \end{cases}
+> $$
+> 确定y与x直接的函数关系，则称此函数关系所表达的函数为由参数方程(4-3)所确定的函数。
+
+
+
+> 若$x=\phi(t),y=\psi(t)$都可导，且$\phi(t)^{'}\not=0$又$x=\phi(t)存在反函数t=\phi^{-1}(x)$，则
+>
+> $\frac{dy}{dx}=\frac{\psi^{'}(t)}{\phi^{'}(t)}或\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}$
+>
+> 如果此时$x=\phi(t),y=\psi(t)$二阶可导，那么由参数方程确定的函数的二阶导数为：
+>
+> $\frac{d^2y}{dx^2}=\frac{d}{dt}(\frac{dy}{dx})\cdot\frac{1}{\frac{dx}{dt}}$
+
+$$
+证明：t=\phi^{-1}(x),则y=\psi(t)=\psi[\phi^{-1}(x)] \\
+根据复合函数求导法则,有 \\
+\frac{dy}{dx}=\frac{dy}{dt}\cdot\frac{dt}{dx}=\frac{dy}{dt}\cdot\frac{1}{\frac{dx}{dt}}=\frac{\psi^{'}(t)}{\phi^{'}(t)}
+$$
+
+例8 已知椭圆的参数方程为
+$$
+\begin{cases}
+x=a\cos(t) \\
+y=b\sin(t) 
+\end{cases}
+$$
+求椭圆在$t=\frac{\pi}{4}$相应点处的切线方程。
+$$
+椭圆在t=\frac{\pi}{4}处坐标为(\frac{\sqrt{2}a}{2},\frac{\sqrt{2}b}{2}),切线斜率为\\
+\frac{dy}{dx}|_{\frac{\pi}{4}}=\frac{(b\sin t)^{'}}{(a\cos t)^{'}}=-\frac{b}{a}\\
+切线方程为y-\frac{\sqrt{2}b}{2}=-\frac{b}{a}(x-\frac{\sqrt{2}a}{2}) 化简得\\
+bx+ay-\sqrt{2}ab=0
+$$
+
+
+## 4 相关变化率
+
+> 设$x=x(t)及y=y(t)$都可导函数，而变量$x与y$间存在某种关系，从而变化率$\frac{dx}{dt}与\frac{dy}{dt}$间也存在一定的关系。这两个相互依赖的变化率称为相关变化率。
+
+例9 一气球从距离观察员500m处离地面铅直上升，当气球高度为500m时，其速率为140m/min.求此时观察员视线的仰角增加的速率是多少？
+
+如图所示：![0204-watch-ballon-rise](/math/note/高等数学/02导数与微分/L:/study/math/note/02导数与微分/images/0204-watch-ballon-rise.bmp)
+$$
+观察员仰角\alpha随时间t变化关系\alpha(t)，气球高度h随时间t变化关系h(t) 则\\
+\tan\alpha(t)=\frac{h(t)}{500} \\
+两边对t求导，得\\
+\sec^2\alpha(t)\frac{d\alpha(t)}{dt}=\frac{1}{500}\frac{dh(t)}{dt} \\
+\frac{d\alpha(t)}{dt}=\frac{1}{\sec^2\alpha(t)}\frac{1}{500}\frac{dh(t)}{dt} \\
+h(t)=500时，\sec^2\alpha=1+\tan^2\alpha=2,\frac{dh(t)}{dt}=140m/min 带入上述公式\\
+\frac{d\alpha(t)}{dt}=0.14rad/min
+$$
+例10: 落在平静的水面上石头产生同心波纹，若最外圈波纹半径的增大速率为6m/s,问在2s末扰动水面面积增大的速率为多少
+$$
+设t时刻最外圈波纹的半径为人，面积为A ，则\\
+\frac{dr}{dt}=6 ,A =\pi r^2 ,所以\\
+\frac{dA}{dt}=\frac{dA}{dr}\cdot\frac{dr}{dt}=2\pi r\cdot6=12\pi r \\
+t=2时，r=12m ,\frac{dA}{dt}=12\pi\cdot12=144\pi\quad m^2/s
+$$
+例11 已知一长方形的长l以2cm/s的速率增加，宽w以3cm/s的速率增加，则当t=12cm，w=5cm时，该长方形的对角线增加的速率是多少？
+$$
+设对角线y(t) \\
+则y^2(t)=l^2(t)+w^2(t) \\
+两边对t求导，得 \\
+2y(t)\frac{dy(t)}{dt}=2l(t)\frac{dl(t)}{dt}+2w(t)\frac{dw(t)}{dt}\\
+\frac{dy(t)}{dt}=\frac{1}{\sqrt{l^2+w^2}}(l\frac{dl}{dt}+w\frac{dw}{dt}) \\
+t=12,w=5带入得 \\
+\frac{dy(t)}{dt}=\frac{1}{13}(12\cdot2+5\cdot3)=3cm/s
+$$
+
+## 5 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P101~p108.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p16.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq7l12h000ywu21dydgfv3o" data-title="0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/02导数与微分/0205函数的微分-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">0205函数的微分-导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 微分的定义](#1-微分的定义)
+  * [1.1 定义](#11-定义)
+  * [1.2 函数可微的充要条件](#12-函数可微的充要条件)
+- [2 微分的几何意义](#2-微分的几何意义)
+- [3 基本初等函数的微分公式与微分运算法则](#3-基本初等函数的微分公式与微分运算法则)
+  * [3.1 基本初等函数的微分公式](#31-基本初等函数的微分公式)
+  * [3.2 函数和、差、积、商的微分法则](#32-函数和-差-积-商的微分法则)
+  * [3.3 复合函数的微分法则](#33-复合函数的微分法则)
+- [4 微分在近似计算中的应用](#4-微分在近似计算中的应用)
+  * [4.1 函数的近似计算](#41-函数的近似计算)
+    + [4.1.1 近似公式推导](#411-近似公式推导)
+    + [4.1.2 常用近似公式](#412-常用近似公式)
+  * [4.2 误差估计](#42-误差估计)
+- [5后记](#5后记)
+
+<!-- tocstop -->
+
+## 1 微分的定义
+
+### 1.1 定义
+
+> 定义 设函数$y=f(x)$的某区间内有定义，$x_0及x_0+\triangle x$在该区间内，如果函数的增量
+>
+> $\triangle y=f(x_0+\triangle x)-f(x_0)$
+>
+> 可表示为：
+>
+> $\triangle y=A\triangle x+o(\triangle x)$
+>
+> 其中A是不依赖于$\triangle x$的常数，那么称函数$y=f(x)在点x_0$处是可微的，而$A\triangle x$叫做$y=f(x)在点x_0$相应于自变量增量$\triangle x$的微分，记做dy,即
+>
+> $dy=A\triangle x$
+
+注：
+
+1. $|\triangle x|$很小时，$\triangle y\approx dy=A\triangle x,dy是\triangle y的线性主部$
+2. 只有当误差$\triangle y-dy=o(\triangle x)且A与\triangle x$无关时，称可微
+
+### 1.2 函数可微的充要条件
+
+> 定理： $f(x)的点x_0$可微$\Leftrightarrow$$f(x)在点x_0$可导，且$f(x)在点x_0$可微时，$dy=f^{'}(x_0)\triangle x$
+
+$$
+证明：\Rightarrow \\
+f(x)在点x_0可微，则\triangle y=A\triangle x+o(\triangle x) ，两边同除以\triangle x,得 \\
+\frac{\triangle y}{\triangle x}=A + \frac{o(\triangle x)}{\triangle x} \\
+当\triangle x\to0时，取极限 得 \\
+A = \lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}=f^{'}(x_0) \\
+充分性\Leftarrow \\
+f(x)在点x_0可导，则\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}=f^{'}(x_0) \\
+根据极限和无穷小的关系有，{\frac{\triangle y}{\triangle x}}=f^{'}(x_0)+\alpha(\triangle x),其中\alpha是关于\triangle x的高阶无穷小，即\\
+\lim\limits_{\triangle x\to0}{\alpha}=0 \\
+两边同乘以\triangle x,得 \triangle y=f^{'}(x_0)\triangle x+\alpha(\triangle x)\triangle x \\
+其中 \lim\limits_{\triangle x\to0}{\frac{\alpha(\triangle x)\triangle x}{\triangle x}}=0,即它是关于\triangle x的无穷小 \\
+所有f(x)在点x_0可微,且微分dy=f^{'}(x_0)与\triangle  x无关。
+$$
+
+注：
+
+1. 考虑$y=f(x)=x,则y^{'}=1,故dx=\triangle x$。我们通常自变量的增量$\triangle x$称为自变量的微分，记做dx，即$dx=\triangle x$,于是函数微分$dy=f^{'}(x_0)dx$
+
+例1 求函数$y=x^3当x_0=2,\triangle x=0.02$时的微分
+$$
+dy=(x^3)^{'}dx=3x^2dx,dy|_{x=2}=3\cdot2^2\cdot0.02=0.24
+$$
+
+## 2 微分的几何意义
+
+![0205-geometric-mean](/math/note/高等数学/02导数与微分/L:/study/math/note/02导数与微分/images/0205-geometric-mean.bmp)
+
+如上图所示，$\triangle y$是曲线函数$y=f(x)$上纵坐标的增量，dy就是曲线切线上点的纵坐标增量。当$\triangle x$很小时，$|\triangle y-dy|$比$\triangle x$小的多。因此在点M的邻近，我们可以切线段来近似代替曲线段。
+
+> 在局部范围内用线性函数近似代替非线性函数，在几何上就是用切线段近似代替曲线段，这在数学上称为非线性函数的局部线性化，这是微分学的基本思想方法之一。
+
++ 在$x_0$充分小的邻域内，可用$x_0$处切线段近似代替$x_0$处的曲线段。
+
+
+
+## 3 基本初等函数的微分公式与微分运算法则
+
+> 微分公式：$dy=f^{'}(x)dx$
+
+计算函数的微分，只要计算函数的导数，在乘以自变量的微分即可。
+
+### 3.1 基本初等函数的微分公式
+
+由基本初等函数的导数公式，可以直接写出基本初等函数的微分公式，可以复习下前面的导数公式。
+
+
+
+### 3.2 函数和、差、积、商的微分法则
+
+由函数和、差、积、商的求导法则，可推得相应的微分法则
+
+| 求导法则                                               | 微分法则                                      |
+| ------------------------------------------------------ | --------------------------------------------- |
+| $(u\pm v)^{'}=u^{'}\pm v^{'}$                          | $d(u\pm v)=du\pm dv$                          |
+| $(Cu)^{'}=Cu^{'}$                                      | $d(Cu)=Cdu$                                   |
+| $(uv)^{'}=u^{'}v+uv^{'}$                               | $d(uv)=vdu+udv$                               |
+| $(\frac{u}{v})^{'}=\frac{u^{'}v-uv^{'}}{v^2}(v\not=0)$ | $d(\frac{u}{v})=\frac{vdu-udv}{v^2}(v\not=0)$ |
+
+### 3.3 复合函数的微分法则
+
+与符合函数的求导法则相应的符合函数的微分法则可推导如下：
+
+$dy=y^{'}_xdx=f^{'}(u)g^{'}(x)dx或者dy=f^{'}(u)du$
+
+> 无论$u$是自变量还是中间变量，微分形式$dy=f^{'}(u)du$保持不变。这一性质称为微分形式不变性。
+
+例2 $y=\sin(2x+1),求dy$
+$$
+解：dy=2\cos(2x+1)dx
+$$
+例3 $y=\ln(1+e^{x^2}),求dy$
+$$
+解：dy=\frac{1}{1+e^{x^2}}\cdot e^{x^2}\cdot2xdx=\frac{2xe^{x^2}}{1+e^{x^2}}
+$$
+例4：$y=e^{1-3x}\cos x,求dy$
+$$
+解：dy=\cos xd(e^{1-3x})+e^{1-3x}d(\cos x)=\cos xe^{1-3x}\cdot(-3dx)-e^{1-3x}\sin x \\
+=-e^{1-3x}(3\cos x+\sin x)dx
+$$
+
+
+## 4 微分在近似计算中的应用
+
+### 4.1 函数的近似计算
+
+#### 4.1.1 近似公式推导
+
+若$f(x)在x_0$处可导（可微），且$f^{'}(x_0)\not=0$，则由微分定义
+
+$\triangle y=f^{'}(x_0)\triangle x+o(\triangle x)$
+
+当$|\triangle x|$很小时，$\triangle y\approx f^{'}(x_0)\triangle x$即
+
+$f(x_0+\triangle x)-f(x_0)\approx f^{'}(x_0)\triangle x或者f(x_0+\triangle x)\approx f(x_0)+f^{'}(x_0)\triangle x$
+
+令$x=x_0+\triangle x,带入上式，得$
+
+$f(x)\approx f(x_0)+f^{'}(x_0)(x-x_0)$
+
+
+
+例7. 有一批半径为1cm的球，为了提高球面的光洁度，要镀上一层铜，厚度定位0.01cm，估计每只球用铜多少克?(注：同的密度是$8.9g/cm^3$)
+$$
+解：先求镀层的体积，乘以密度得到用铜的质量。 \\
+镀层的体积为两个球体体积之差， \\
+它就是球体体积V=\frac{4}{3}\pi R^3当R有R_0取得增量\triangle R时的增量 \\
+\triangle V\approx f^{'}(R)\triangle R=4\pi R^2\triangle R \\
+R=1cm,\triangle R=0.01cm,则 \\
+\triangle V\approx 0.04\pi cm^3\approx0.13cm^3 \\
+用铜约为 0.13\times8.9\approx1.16(g)
+$$
+
+#### 4.1.2 常用近似公式
+
+$f(x)\approx f(x_0)+f^{'}(x_0)(x-x_0)$
+
+取$x_0=0$,得$f(x)\approx f(0)+f^{'}(0)x，|x|很小$
+
+(1)$(1+x)^\alpha\approx1+\alpha x$
+
+(2)$\sin x\approx x$
+
+(3)$\tan x\approx x$
+
+(4)$e^x\approx 1+x$
+
+(5)$\ln(1+x)\approx x$
+
+
+
+例8. 计算$\sqrt{1.05}$的近似值
+$$
+解：\sqrt{1.05}\approx 1+\frac{1}{2}\times0.05=1.025
+$$
+
+### 4.2 误差估计
+
+> (1)间接测试误差：根据有误差的测试数据带入公式计算而得误差
+>
+> (2)绝对误差：精确值为A，测试值为a,称|A-a|为绝对误差
+>
+> (3)相对误差：$\frac{|A-a|}{|a|}$
+>
+> (4)绝对误差限：若$|A-a|\le \delta_A$,称$\delta_A$为A的绝对误差限
+>
+> (5)相对误差限：$\frac{\delta_A}{|a|}$
+
+> 根据直接测量的x值，按公式$y=f(x)$计算y时，若已知测试x的绝对误差限$\delta_x$,即$|\triangle x|\le \delta_x$,
+>
+> 则y的绝对误差限$\delta_y=?$
+>
+> y的相对误差限$\frac{\delta_y}{|y|}=?$
+
+$$
+解：利用微分近似计算公式:\triangle y \approx dy=y^{'}\triangle x \\
+\delta_y=|\triangle y|\approx |y^{'}\triangle x|=|y^{'}|\delta_x \\
+\frac{\delta_y}{|y|}=|\frac{y^{'}}{y}|\delta_x
+$$
+
+例9 测得圆钢的直径D=60.03mm,测量D的绝对误差限$\delta_D=0.05mm$，利用公式$A=\frac{\pi}{4}D^2$计算圆钢的截面积时，试估计面积的误差。
+$$
+面积绝对误差限\delta_A=y^{'}\delta_D=\frac{\pi}{2}D\cdot\delta_D \\
+=\frac{\pi}{2}\times60.03\times0.05\approx4.712(mm^2) \\
+面积的相对误差限\frac{\delta_A}{|A|}=|\frac{y^{'}}{y}|\delta_D=2\frac{\delta_D}{D} \\
+=2\times\frac{0.05}{60.03}\approx0.17\%
+$$
+
+
+## 5后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P110~p120.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p17.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq7l12h000zwu219ied3rf9" data-title="0205函数的微分-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/03微分中值定理与导数的应用/0301微分中值定理-微分中值定理与导数的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/">0301微分中值定理-微分中值定理与导数的应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 罗尔定理](#1-罗尔定理)
+- [2 拉格朗日定理](#2-拉格朗日定理)
+- [3 柯西中值定理](#3-柯西中值定理)
+- [5后记](#5后记)
+
+<!-- tocstop -->
+
+## 1 罗尔定理
+
+![0301-费马引理](/math/note/高等数学/03微分中值定理与导数的应用/L:/study/math/note/03微分中值定理与导数的应用/images/0301-费马引理.bmp)
+
+> 费马引理 设函数$f(x)在点x_0$的某邻域$U(x_0)$内有定义，并且在点$x_0$处可导，如果对任意的$x\in U(x_0),$有
+>
+> $f(x)\le f(x_0)(或f(x)\ge f(x_0))$
+>
+> 那么$f^{'}(x_0)=0$
+
+$$
+以f(x)\le f(x_0)为例\\
+证明： 设x\in U(x_0),f(x)\le f(x_0) \\
+则x_0+\triangle x\in U(x_0),有 f(x_0+\triangle x)\le f(x_0) \\
+从而当\triangle x\gt 0时，\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}\le0 \\
+当\triangle x\lt 0时，\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}\ge0 \\
+又因为f(x)在点x_0处可导，即f^{'}(x_0)存在 \\
+f^{'}(x_0)=f^{'}_{+}(x_0)=\lim\limits_{\triangle x\to0^+}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}\le0 \\
+f^{'}(x_0)=f^{'}_{-}(x_0)=\lim\limits_{\triangle x\to0^-}{\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}}\ge0 \\
+所以f^{'}(x_0)=0
+$$
+
+通常称导数等于零的点为函数的驻点（或稳定点，临界点）
+
+> 罗尔定理 如果函数$f(x)$满足
+>
+> (1)在闭区间$[a,b]$上连续
+>
+> (2)在开区间$(a,b)$上可导
+>
+> (3)在区间端点处的函数值相等，即$f(a)=f(b)$,
+>
+> 那么在$(a,b)$内至少存在一点$\xi(a\lt\xi\lt b)$，使得$f^{'}(\xi)=0$
+
+$$
+证明：因为函数在[a,b]上连续，根据闭区间上连续函数的最大值最小值定理 \\
+f(x)在闭区间[a,b]上必取得最大值M和最小值m，有两种情况 \\
+(1)M=m，即f(x)在[a,b]为常数M，任取\xi\in[a,b],有f^{'}(\xi)=0 \\
+(2)M\gt m,因为f(a)=f(b),所以M和m这两个数中至少有一个不等于端点处的值，这里假设M\not=f(a) \\
+则必定在开区间(a,b)内存在一点\xi,使得f(\xi)=M \\
+任取x\in(a,b),则f(x)\le f(\xi),根据费马引理得f^{'}(\xi)=0
+$$
+
+
+
+例1 证明$4ax^3+3bx^2+2cx=a+b+c在(0,1)$内至少有一个根。
+$$
+解：等号右侧左移得到以函数式，则\\
+令f(x)=4ax^3+3bx^2+2cx-(a+b+c)要证明f(x)在(0,1)内至少有一个根 \\
+即证明f(x)=0,x\in(0,1) ,根据上面学习的罗尔定理，我们来构建导函数为f(x)的原函数 \\
+F(x)=ax^4+bx^3+cx^2-(a+b+c)x+C ,则 \\
+F(0)=C，F(1)=C,很明显F(x)在[0,1]上连续，在(0,1)上可导且F(0)=F(1) \\
+根据罗尔定理有\exists\xi\in(0,1)使得f^{'}(\xi)=0即 \\
+4ax^3+3bx^2+2cx-(a+b+c)=0即4ax^3+3bx^2+2cx=a+b+c
+$$
+例2 设$f(x)在[0,a]$上连续，在$(0,a)$内可导，且$f(a)=0$证明存在一点$\xi\in(0,a),使得f(\xi)=-\xi f^{'}(\xi)$
+$$
+证明：要证明\xi\in(0,a),使得f(\xi)=-\xi f^{'}(\xi)，即f(\xi)+\xi f^{'}(\xi)=0 \\
+令g(x)=f(x)+xf^{'}(x),x\in(0,a) ,\\
+构建g(x)的原函数G(x)=xf(x)+C,C为常数 \\
+则G(x)在[0,a]上连续，在(0,a)上可导且G(0)=C=G(a)=C,\\
+根据罗尔定理，有\exists\xi\in(0,a)使得G^{'}(\xi)=0 \\
+即f(\xi)+\xi f^{'}(\xi)=0 即f(\xi)=-\xi f^{'}(\xi)
+$$
+
+##  2 拉格朗日定理
+
+> 拉格朗日定理 如果函数$f(x)$满足
+>
+> (1)在闭区间$[a,b]$上连续
+>
+> (2)在开区间$(a,b)$上可导
+>
+> 那么在$(a,b)$内至少存在一点$\xi(a\lt\xi\lt b)$，使等式
+>
+> $f(b)-f(a)=f^{'}(\xi)(b-a)或者f^{'}(\xi)=\frac{f(b)-f(a)}{b-a}$
+>
+> 成立。
+
+注：
+
++ 另外一种形式：$f(b)-f(a)=f^{'}[a+\theta(b-a)](b-a)(0\lt\theta\lt1)$
++ 设$x,x+\triangle x\in(a,b)$,以$(x,x+\triangle x)$为端点区间$f(x)$显然也满足拉格朗日定理，导入公式得$f(x+\triangle x)-f(x)=f^{'}(x+\theta\triangle x)\triangle x(0\lt\theta\lt0 ) $ 等式左侧为函数的增量，替换为$\triangle y,即\triangle y = f^{'}(x+\theta\triangle x)\triangle x$。上式给出了自变量取得优先增量时，函数增量的准确表达式。
+
+
+
+> 定理 如果函数$f(x)$在区间$I$上连续，$I$内可导且导数恒为零，那么$f(x)$在区间$I$上是一个常数。
+
+例3 证明$\arcsin x+\arccos x=\frac{\pi}{2}(-1\le x\le1)$
+$$
+证明：(\arcsin x+\arccos x)^{'}=\frac{1}{\sqrt{1-x^2}}-\frac{1}{\sqrt{1-x^2}}=0 \\
+所以\arcsin x+\arccos x在[-1,1]为常数，令x=1，得\\
+\arcsin x+\arccos x=\frac{\pi}{2}
+$$
+例4 证明当$x\gt 0$时，$\frac{x}{1+x}\lt\ln(1+x)\lt x$
+$$
+证明：令f(x)=\ln(1+x),x\gt0 \\
+在区间(0,x)内，f(x)满足拉格朗日定理，所以 \\
+f(x)-f(0)=f^{'}(\xi)\cdot x,f^{'}(x)=\frac{1}{1+x}\\
+f(x)=\frac{x}{1+\xi}(0\lt\xi\lt x) \\
+因为0\lt\xi\lt x，所以\frac{x}{1+x}\lt\frac{x}{1+\xi}\lt x\\
+即\frac{x}{1+x}\lt\ln(1+x)\lt x
+$$
+
+
+## 3 柯西中值定理
+
+> 柯西中值定理 如果函数$f(x)及F(x)$满足
+>
+> (1)在闭区间$[a,b]$上连续
+>
+> (2)在开区间$(a,b)$上可导
+>
+> (3)对于任一$x\in(a,b),F^{'}(x)\not=0$
+>
+> 那么$(a,b)$内至少有一点$\xi$，使等式
+>
+> $\frac{f(b)-f(a)}{F(b)-F(a)}=\frac{f^{'}(\xi)}{F^{'}(\xi)}$
+>
+> 成立。
+
+例5 设$0\lt a\lt b,f(x)在[a,b]$上连续，在$(a,b)$内可导，证明$\exists\xi\in(a,b)$,使得$f(b)-f(a)=\xi f^{'}(\xi)\ln\frac{b}{a}$
+$$
+证明，令F(x)=\ln x,当x\in[a,b]时，f(x)及F(x)满足柯西中值定理条件，所以\\
+\exist\xi\in(a,b)使得\frac{f(b)-f(a)}{F(b)-F(a)}=\frac{f^{'}(\xi)}{F^{'}(\xi)} \\
+因为(\ln x)^{'}=\frac{1}{x} \\
+\frac{f(b)-f(a)}{\ln b-\ln a}=\frac{f^{'}(\xi)}{F^{'}(\xi)}=\xi f^{'}(\xi) \\
+化简得f(b)-f(a)=\xi f^{'}(\xi)\ln\frac{b}{a}
+$$
+
+
+## 5后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P110~p120.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p17.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq7l12i0011wu212idd33zy" data-title="0301微分中值定理-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

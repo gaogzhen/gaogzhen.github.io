@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0205函数的微分-导数与微分 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="- [1 微分的定义](#1-微分的定义)   * [1.1 定义](#11-定义)   * [1.2 函数可微的充要条件](#12-函数可微的充要条件) - [2 微分的几何意义](#2-微分的几何意义) - [3 基本初等函数的微分公式与微分运算法则](#3-基本初等函数的微分公式与微分运算法则)   * [3.1 基本初等函数的微分公式](#31-基本初等函数的微分公式)   * [">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0205函数的微分-导数与微分">
+<meta property="og:url" content="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="- [1 微分的定义](#1-微分的定义)   * [1.1 定义](#11-定义)   * [1.2 函数可微的充要条件](#12-函数可微的充要条件) - [2 微分的几何意义](#2-微分的几何意义) - [3 基本初等函数的微分公式与微分运算法则](#3-基本初等函数的微分公式与微分运算法则)   * [3.1 基本初等函数的微分公式](#31-基本初等函数的微分公式)   * [">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-03-05T17:01:19.000Z">
+<meta property="article:modified_time" content="2026-03-14T10:54:21.911Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/02导数与微分/0205函数的微分-导数与微分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0205函数的微分-导数与微分
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 微分的定义](#1-微分的定义)
+  * [1.1 定义](#11-定义)
+  * [1.2 函数可微的充要条件](#12-函数可微的充要条件)
+- [2 微分的几何意义](#2-微分的几何意义)
+- [3 基本初等函数的微分公式与微分运算法则](#3-基本初等函数的微分公式与微分运算法则)
+  * [3.1 基本初等函数的微分公式](#31-基本初等函数的微分公式)
+  * [3.2 函数和、差、积、商的微分法则](#32-函数和-差-积-商的微分法则)
+  * [3.3 复合函数的微分法则](#33-复合函数的微分法则)
+- [4 微分在近似计算中的应用](#4-微分在近似计算中的应用)
+  * [4.1 函数的近似计算](#41-函数的近似计算)
+    + [4.1.1 近似公式推导](#411-近似公式推导)
+    + [4.1.2 常用近似公式](#412-常用近似公式)
+  * [4.2 误差估计](#42-误差估计)
+- [5后记](#5后记)
+
+<!-- tocstop -->
+
+## 1 微分的定义
+
+### 1.1 定义
+
+> 定义 设函数$y=f(x)$的某区间内有定义，$x_0及x_0+\triangle x$在该区间内，如果函数的增量
+>
+> $\triangle y=f(x_0+\triangle x)-f(x_0)$
+>
+> 可表示为：
+>
+> $\triangle y=A\triangle x+o(\triangle x)$
+>
+> 其中A是不依赖于$\triangle x$的常数，那么称函数$y=f(x)在点x_0$处是可微的，而$A\triangle x$叫做$y=f(x)在点x_0$相应于自变量增量$\triangle x$的微分，记做dy,即
+>
+> $dy=A\triangle x$
+
+注：
+
+1. $|\triangle x|$很小时，$\triangle y\approx dy=A\triangle x,dy是\triangle y的线性主部$
+2. 只有当误差$\triangle y-dy=o(\triangle x)且A与\triangle x$无关时，称可微
+
+### 1.2 函数可微的充要条件
+
+> 定理： $f(x)的点x_0$可微$\Leftrightarrow$$f(x)在点x_0$可导，且$f(x)在点x_0$可微时，$dy=f^{'}(x_0)\triangle x$
+
+$$
+证明：\Rightarrow \\
+f(x)在点x_0可微，则\triangle y=A\triangle x+o(\triangle x) ，两边同除以\triangle x,得 \\
+\frac{\triangle y}{\triangle x}=A + \frac{o(\triangle x)}{\triangle x} \\
+当\triangle x\to0时，取极限 得 \\
+A = \lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}=f^{'}(x_0) \\
+充分性\Leftarrow \\
+f(x)在点x_0可导，则\lim\limits_{\triangle x\to0}{\frac{\triangle y}{\triangle x}}=f^{'}(x_0) \\
+根据极限和无穷小的关系有，{\frac{\triangle y}{\triangle x}}=f^{'}(x_0)+\alpha(\triangle x),其中\alpha是关于\triangle x的高阶无穷小，即\\
+\lim\limits_{\triangle x\to0}{\alpha}=0 \\
+两边同乘以\triangle x,得 \triangle y=f^{'}(x_0)\triangle x+\alpha(\triangle x)\triangle x \\
+其中 \lim\limits_{\triangle x\to0}{\frac{\alpha(\triangle x)\triangle x}{\triangle x}}=0,即它是关于\triangle x的无穷小 \\
+所有f(x)在点x_0可微,且微分dy=f^{'}(x_0)与\triangle  x无关。
+$$
+
+注：
+
+1. 考虑$y=f(x)=x,则y^{'}=1,故dx=\triangle x$。我们通常自变量的增量$\triangle x$称为自变量的微分，记做dx，即$dx=\triangle x$,于是函数微分$dy=f^{'}(x_0)dx$
+
+例1 求函数$y=x^3当x_0=2,\triangle x=0.02$时的微分
+$$
+dy=(x^3)^{'}dx=3x^2dx,dy|_{x=2}=3\cdot2^2\cdot0.02=0.24
+$$
+
+## 2 微分的几何意义
+
+![0205-geometric-mean](/math/note/高等数学/02导数与微分/L:/study/math/note/02导数与微分/images/0205-geometric-mean.bmp)
+
+如上图所示，$\triangle y$是曲线函数$y=f(x)$上纵坐标的增量，dy就是曲线切线上点的纵坐标增量。当$\triangle x$很小时，$|\triangle y-dy|$比$\triangle x$小的多。因此在点M的邻近，我们可以切线段来近似代替曲线段。
+
+> 在局部范围内用线性函数近似代替非线性函数，在几何上就是用切线段近似代替曲线段，这在数学上称为非线性函数的局部线性化，这是微分学的基本思想方法之一。
+
++ 在$x_0$充分小的邻域内，可用$x_0$处切线段近似代替$x_0$处的曲线段。
+
+
+
+## 3 基本初等函数的微分公式与微分运算法则
+
+> 微分公式：$dy=f^{'}(x)dx$
+
+计算函数的微分，只要计算函数的导数，在乘以自变量的微分即可。
+
+### 3.1 基本初等函数的微分公式
+
+由基本初等函数的导数公式，可以直接写出基本初等函数的微分公式，可以复习下前面的导数公式。
+
+
+
+### 3.2 函数和、差、积、商的微分法则
+
+由函数和、差、积、商的求导法则，可推得相应的微分法则
+
+| 求导法则                                               | 微分法则                                      |
+| ------------------------------------------------------ | --------------------------------------------- |
+| $(u\pm v)^{'}=u^{'}\pm v^{'}$                          | $d(u\pm v)=du\pm dv$                          |
+| $(Cu)^{'}=Cu^{'}$                                      | $d(Cu)=Cdu$                                   |
+| $(uv)^{'}=u^{'}v+uv^{'}$                               | $d(uv)=vdu+udv$                               |
+| $(\frac{u}{v})^{'}=\frac{u^{'}v-uv^{'}}{v^2}(v\not=0)$ | $d(\frac{u}{v})=\frac{vdu-udv}{v^2}(v\not=0)$ |
+
+### 3.3 复合函数的微分法则
+
+与符合函数的求导法则相应的符合函数的微分法则可推导如下：
+
+$dy=y^{'}_xdx=f^{'}(u)g^{'}(x)dx或者dy=f^{'}(u)du$
+
+> 无论$u$是自变量还是中间变量，微分形式$dy=f^{'}(u)du$保持不变。这一性质称为微分形式不变性。
+
+例2 $y=\sin(2x+1),求dy$
+$$
+解：dy=2\cos(2x+1)dx
+$$
+例3 $y=\ln(1+e^{x^2}),求dy$
+$$
+解：dy=\frac{1}{1+e^{x^2}}\cdot e^{x^2}\cdot2xdx=\frac{2xe^{x^2}}{1+e^{x^2}}
+$$
+例4：$y=e^{1-3x}\cos x,求dy$
+$$
+解：dy=\cos xd(e^{1-3x})+e^{1-3x}d(\cos x)=\cos xe^{1-3x}\cdot(-3dx)-e^{1-3x}\sin x \\
+=-e^{1-3x}(3\cos x+\sin x)dx
+$$
+
+
+## 4 微分在近似计算中的应用
+
+### 4.1 函数的近似计算
+
+#### 4.1.1 近似公式推导
+
+若$f(x)在x_0$处可导（可微），且$f^{'}(x_0)\not=0$，则由微分定义
+
+$\triangle y=f^{'}(x_0)\triangle x+o(\triangle x)$
+
+当$|\triangle x|$很小时，$\triangle y\approx f^{'}(x_0)\triangle x$即
+
+$f(x_0+\triangle x)-f(x_0)\approx f^{'}(x_0)\triangle x或者f(x_0+\triangle x)\approx f(x_0)+f^{'}(x_0)\triangle x$
+
+令$x=x_0+\triangle x,带入上式，得$
+
+$f(x)\approx f(x_0)+f^{'}(x_0)(x-x_0)$
+
+
+
+例7. 有一批半径为1cm的球，为了提高球面的光洁度，要镀上一层铜，厚度定位0.01cm，估计每只球用铜多少克?(注：同的密度是$8.9g/cm^3$)
+$$
+解：先求镀层的体积，乘以密度得到用铜的质量。 \\
+镀层的体积为两个球体体积之差， \\
+它就是球体体积V=\frac{4}{3}\pi R^3当R有R_0取得增量\triangle R时的增量 \\
+\triangle V\approx f^{'}(R)\triangle R=4\pi R^2\triangle R \\
+R=1cm,\triangle R=0.01cm,则 \\
+\triangle V\approx 0.04\pi cm^3\approx0.13cm^3 \\
+用铜约为 0.13\times8.9\approx1.16(g)
+$$
+
+#### 4.1.2 常用近似公式
+
+$f(x)\approx f(x_0)+f^{'}(x_0)(x-x_0)$
+
+取$x_0=0$,得$f(x)\approx f(0)+f^{'}(0)x，|x|很小$
+
+(1)$(1+x)^\alpha\approx1+\alpha x$
+
+(2)$\sin x\approx x$
+
+(3)$\tan x\approx x$
+
+(4)$e^x\approx 1+x$
+
+(5)$\ln(1+x)\approx x$
+
+
+
+例8. 计算$\sqrt{1.05}$的近似值
+$$
+解：\sqrt{1.05}\approx 1+\frac{1}{2}\times0.05=1.025
+$$
+
+### 4.2 误差估计
+
+> (1)间接测试误差：根据有误差的测试数据带入公式计算而得误差
+>
+> (2)绝对误差：精确值为A，测试值为a,称|A-a|为绝对误差
+>
+> (3)相对误差：$\frac{|A-a|}{|a|}$
+>
+> (4)绝对误差限：若$|A-a|\le \delta_A$,称$\delta_A$为A的绝对误差限
+>
+> (5)相对误差限：$\frac{\delta_A}{|a|}$
+
+> 根据直接测量的x值，按公式$y=f(x)$计算y时，若已知测试x的绝对误差限$\delta_x$,即$|\triangle x|\le \delta_x$,
+>
+> 则y的绝对误差限$\delta_y=?$
+>
+> y的相对误差限$\frac{\delta_y}{|y|}=?$
+
+$$
+解：利用微分近似计算公式:\triangle y \approx dy=y^{'}\triangle x \\
+\delta_y=|\triangle y|\approx |y^{'}\triangle x|=|y^{'}|\delta_x \\
+\frac{\delta_y}{|y|}=|\frac{y^{'}}{y}|\delta_x
+$$
+
+例9 测得圆钢的直径D=60.03mm,测量D的绝对误差限$\delta_D=0.05mm$，利用公式$A=\frac{\pi}{4}D^2$计算圆钢的截面积时，试估计面积的误差。
+$$
+面积绝对误差限\delta_A=y^{'}\delta_D=\frac{\pi}{2}D\cdot\delta_D \\
+=\frac{\pi}{2}\times60.03\times0.05\approx4.712(mm^2) \\
+面积的相对误差限\frac{\delta_A}{|A|}=|\frac{y^{'}}{y}|\delta_D=2\frac{\delta_D}{D} \\
+=2\times\frac{0.05}{60.03}\approx0.17\%
+$$
+
+
+## 5后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P110~p120.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p17.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0205%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" data-id="cmmq7l12h000zwu219ied3rf9" data-title="0205函数的微分-导数与微分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/02%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/0204%E9%9A%90%E5%87%BD%E6%95%B0%E5%8F%8A%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E7%9B%B8%E5%85%B3%E5%8F%98%E5%8C%96%E7%8E%87-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0204隐函数及由参数方程所确定的函数的导数相关变化率-导数与微分
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0301%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0301微分中值定理-微分中值定理与导数的应用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

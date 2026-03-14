@@ -1,0 +1,2930 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-basis/math/note/高等数学/03微分中值定理与导数的应用/0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/">0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 函数单调性的判定](#1-函数单调性的判定)
+  * [1.1 判定定理](#11-判定定理)
+  * [1.2 例题](#12-例题)
+    + [1.2.1 讨论单调性](#121-讨论单调性)
+    + [1.2.2 证明不等式](#122-证明不等式)
+  * [1.3 求单调区间的一般方法](#13-求单调区间的一般方法)
+- [2 函数的凹凸性与拐点](#2-函数的凹凸性与拐点)
+  * [2.1 凹凸性定义](#21-凹凸性定义)
+  * [2.2 凹凸性的判断定理](#22-凹凸性的判断定理)
+  * [2.3 拐点](#23-拐点)
+  * [2.3 求凹凸性区间及拐点的一般方法](#23-求凹凸性区间及拐点的一般方法)
+  * [2.4 例题](#24-例题)
+    + [2.4.1 判断凹凸性和拐点](#241-判断凹凸性和拐点)
+    + [2.4.2 证明不等式](#242-证明不等式)
+- [后记](#后记)
+
+<!-- tocstop -->
+
+## 1 函数单调性的判定
+
+### 1.1 判定定理
+
+> 定理1 设函数$f(x)在[a,b]上连续，在(a,b)内可导$
+>
+> （1）如果在$(a,b)内f^{'}(x)\ge0$,且等号仅在有限多个点成立，那么函数$f(x)在[a,b]上$单调增加；
+>
+> （2）如果在$(a,b)内f^{'}(x)\le0$,且等号仅在有限多个点成立，那么函数$f(x)在[a,b]上$单调减少；
+
+证明（1）：
+$$
+因为函数f(x)在[a,b]上连续，在(a,b)内可导 \\
+\forall x_1,x_2\in[a,b],且x_1\lt x_2 ，根据拉格朗日中值定理，有 \\
+f(x_2)-f(x_1)=f^{'}(\xi)(x_2-x_1)(x_1\lt\xi\lt x_2) \\
+当f^{'}(x)\ge0时，有 f(x_2)-f(x_1)=f^{'}(\xi)(x_2-x_1)\ge0, 即f(x_2)\ge f(x_1) \\
+因为等号仅在有限多个点成立，所示f(x)在[a,b]上单调递增 \\
+$$
+
+
+注
+
+1. 若函数$f(x)$在端点处不连续，则函数在[a,b]上不一定单调增加（ 减少）。
+2. 其他区间有类似结论，如$[a,b),(-\infty,\infty),[a,\infty)$等。
+
+### 1.2 例题
+
+#### 1.2.1 讨论单调性
+
+例1 讨论$f(x)=e^x-x-1$的单调性
+$$
+函数f(x)定义域为(-\infty,+\infty),在定义域上连续，可导 \\
+f^{'}(x)=e^x-1  \\
+令f^{'}(x)=0，得 x=0\\
+当x\in(-\infty,0)时，f^{'}(x)\lt0;当x\in(0,+\infty)时，f^{'}(x)\gt0;
+所以f(x)在(-\infty,0]上，f(x)单调递减；f(x)在[0,+\infty)上单调递增。
+$$
+**注意**：$f^{'}(x)=0的点$（驻点）,f(x)在驻点两侧单调性可能发生改变；也可能不改变，如$f(x)=x^3,在x=0处$
+
+例2 讨论$f(x)=\sqrt[3]{x^2}$的单调性
+$$
+f(x)的定义域(-\infty,+\infty)，在定义域上连续、可导 \\
+f^{'}(x)=\frac{2}{3\sqrt[3]{x}} ,f(x)在点x=0处不可导\\
+当x\in(-\infty,0)时，f^{'}(x)\lt0;当x\in(0,+\infty)时，f^{'}(x)\gt0 \\
+所以f(x)在区间(-\infty,0]上单调递减；在区间[0,+\infty)上单调递增 
+$$
+**注意**：函数f(x)在不可导点两侧单调性可能发生改变；也不可能不发生改变。
+
+例3 确定函数$f(x)=\frac{4x^{\frac{2}{3}}}{x-1}$的单调区间
+$$
+解：
+函数的定义域{x\in R且x\not=1}，在定义域区间上连续，可导 \\
+f^{'}(x)=(\frac{4x^{\frac{2}{3}}}{x-1})^{'}=-\frac{4}{3}\cdot\frac{(x+2)}{\sqrt[3]{x}(x-1)^2} \\
+x=-2为驻点，x=0和x=1为不可到点，一点点-2,0,1位分割点切分区间，如下表所示 \\
+$$
+
+| x          | $(-\infty,-2)$ |  -2  | (-2,0) |  0   | (0,1) | $(1,+\infty)$ |
+| ---------- | :------------: | :--: | :----: | :--: | :---: | :-----------: |
+| $f^{'}(x)$ |       -        |  0   |   +    |      |   -   |       -       |
+| f(x)       |      单减      |      |  单增  |      | 单减  |     单减      |
+
+所以函数$f(x)$的单调递增区间为:$[-2,0]$;单调递减区间为：$(-\infty,-2],[0,1),(1,+\infty)$
+
+#### 1.2.2 证明不等式
+
+例4 证明 $\sin x+\tan x\gt 2x,0\lt x\lt\frac{\pi}{2}$
+$$
+令f(x)=\sin x+\tan x-2x,0\lt x\lt\frac{\pi}{2} \\
+f^{'}(x)=\cos x+sec^2x-2 \\
+f^{''}(x)=-\sin x + 2sec\cdot\sec\cdot\tan x=\sin x\cdot(\frac{2}{\cos^3x}-1) \\
+当0\lt x\lt\frac{\pi}{2}时，f^{''}(x)\gt0,即f^{'}(x)在此区间上单增 \\
+f^{'}(x)\gt f^{'}(0)=0 \\
+所以f(x)在(0,\frac{\pi}{2})上单增,f(x)\gt f(0)=0 即 \\
+\sin x+\tan x-2x\gt0\Rightarrow\sin x+\tan x\gt 2x
+$$
+
+### 1.3 求单调区间的一般方法
+
+综上得出以下求函数单调区间的一般方法：
+
+
+
+> 函数f(x)在定义域上连续可导，且仅在有限个点函数导数等于0
+>
+> (1)若函数有间断的，则根据间断点划分区间
+>
+> (2)求$f^{'}(x)$
+>
+> (3)求驻点和不可导点，用这些点划分区间
+>
+> (4)在每个分区间，根据判定定理1判断函数的单调性
+
+
+
+## 2 函数的凹凸性与拐点
+
+### 2.1 凹凸性定义
+
+> 定义 设$f(x)$在区间I上连续，如果对I上任意两点$x_1,x_2$,恒有
+>
+> $f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}$
+>
+> 那么称$f(x)在I$上的图形是（向上）凹的（或凹弧）；如果恒有
+>
+> $f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}$
+>
+> 那么称$f(x)在I$上的图形是（向下）凸的（或凸弧）。
+
+### 2.2 凹凸性的判断定理
+
+> 定理 设$f(x)在[a,b]$上连续，在$(a,b)$内具有一阶导数和二阶导数，那么
+>
+> （1）若在$(a,b)内f^{''}(x)\gt0$,则$f(x)在[a,b]$上的图形是凹的；
+>
+> （2）若在$(a,b)内f^{''}(x)\lt0$,则$f(x)在[a,b]$上的图形是凸的；
+
+$$
+证明： \\
+如下图所示:任取x_1,x_2\in(a,b),且x_1\lt x_2,令x_0=\frac{x_1+x_2}{2} \\
+因为f(x)在[a,b]上连续，在(a,b)内具有一阶导数和二级导数, \\
+在区间(x1,x_0),(x_0,x_2),根据拉格朗日中值定理有\\
+f(x_0)-f(x_1)=f^{'}(\xi_1)(x_0-x_1)(x_1\lt\xi_1\lt x_0)\quad(1)式\\
+f(x_2)-f(x_0)=f^{'}(\xi_2)(x_2-x_0)(x_0\lt\xi_2\lt x_2)\quad(2)式\\
+(2)式-(1)式得  f(x_1)+f(x_2)-2f(x_0)=\frac{x_2-x_1}{2}[f^{'}(\xi_2)-f^{'}(\xi_1)] (3)式\\
+(3)式等会右侧再次应用拉格朗日中值定理得 \\
+(3)式=\frac{x_2-x_1}{2}(\xi_2-\xi_1)f^{''}(\xi)(\xi_1\lt\xi\lt\xi_2) \\
+x_2-x_1\gt0,\xi_2-\xi_1\gt0,因为f^{''}(x)\gt0，所以 \\
+f(x_1)+f(x_2)-2f(x_0)\gt0,即f(\frac{x_1+x_2}{2})\lt\frac{f(x_1)+f(x_2)}{2}\\
+所以f(x)在[a,b]上是凹的;同理可证(2)
+$$
+
+![20230210-001-0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用](/math/note/高等数学/03微分中值定理与导数的应用/L:/study/math/note/03微分中值定理与导数的应用/images/20230210-001-0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用.png)
+
+### 2.3 拐点
+
+> 一般地，设$f(x)在区间I$上连续，$x_0是I$内的点。如果曲线$f(x)在经过点(x_0,f(x_0))$时，曲线的凹凸性改变了，那么就称点$(x_0,f(x_0))$为这曲线的拐点。
+
+### 2.3 求凹凸性区间及拐点的一般方法
+
+> 设$f(x)$在其定义区间上连续，具有一阶导数和二阶导数，且仅有有限个$f^{''}(x)=0和f^{''}(x)$不存在点
+>
+> （1）求$f^{''}(x)$;
+>
+> （2）令$f^{''}(x)=0$,求其全部解并求$f^{''}(x)$不存在的点；用这些点切分定义区间为若干分区间；
+>
+> （3）拐点判断：对于（2）中求出的驻点或者二阶导不存在的点$x_0$，检查$f^{''}(x)在x_0$左右两侧临近的符号，当两侧符号不相同时，点$(x_0,f(x_0))$为拐点；相同时不是拐点。
+>
+> （4）凹凸区间判断：对于（2）中划分的分区间，根据判定定理判断凹凸性。
+
+### 2.4 例题
+
+#### 2.4.1 判断凹凸性和拐点
+
+例 5$f(x)=3x^4-4x^3+1$，求曲线$y=f(x)$的凹凸区间和拐点
+$$
+定义域(-\infty,+\infty),在定义域连续，具有一阶导数和二阶导数 \\
+f^{''}(x)=(12x^3-12x^2)^{'}=36x^2-24x,令f^{''}(x)=0，得 \\
+x=0或\frac{2}{3} \\
+列表如下
+$$
+
+| x           | $(-\infty,0)$ | 0    | $(0,\frac{2}{3})$ | $\frac{2}{3}$ | $(\frac{2}{3},+\infty)$ |
+| ----------- | ------------- | ---- | ----------------- | ------------- | ----------------------- |
+| $f^{''}(x)$ | +             | 0    | -                 | 0             | +                       |
+| $f(x)$      | 凸的          | 拐   | 凹的              | 拐            | 凸的                    |
+
+所以函数$f(x)的凸区间为：(-\infty,0],[\frac{2}{3},+\infty)$；凹区间为：$[0,\frac{2}{3}]$
+
+拐点为:$(0,1),(\frac{2}{3},\frac{11}{27})$
+
+例 6 
+$$
+设
+\begin{cases}
+x=t^3+3t+1,\\
+y=t^3-3t+1
+\end{cases}
+$$
+则曲线$y=y(x)$凸的t的取值范围是：
+$$
+解：求向上凸的取值范围即求\frac{d^2y}{dx^2}\gt0的t的范围 \\
+\frac{dy}{dx}=\frac{y^{'}(t)}{x^{'}(t)}=\frac{t^2-1}{t^2+1} \\
+\frac{d^2y}{dx^2}=(\frac{dy}{dx})^{'}\cdot\frac{1}{x^{'}(t)}=\\
+\frac{4t}{3(t^2+1)^3} \\
+所以曲线y(x)向上凸的t的取值范围为t\gt0
+$$
+
+#### 2.4.2 证明不等式
+
+ 例 7 证明$\frac{1}{2}(x^n+y^n)\gt(\frac{x+y}{2})^n(x\gt0,y\gt0,x\not=y,n\gt1)$
+$$
+证明:令f(x)=x^n(x\gt0,n\gt1) \\
+f^{''}(x)=n(n-1)x^{n-2}\gt0\\
+当x\gt0时，f(x)为凹的，则根据凹凸性定义有 \\
+\frac{1}{2}(x^n+y^n)\gt(\frac{x+y}{2})^n(x\gt0,y\gt0,x\not=y,n\gt1)
+$$
+
+
+## 后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P144~p150.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p22.
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/03%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/0304%E5%87%BD%E6%95%B0%E7%9A%84%E5%8D%95%E8%B0%83%E6%80%A7%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%B9%E5%87%B8%E6%80%A7-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq7l12j0014wu217ug14f3t" data-title="0304函数的单调性和曲线的凹凸性-微分中值定理与导数的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/04不定积分/0401不定积分的概念和性质-不定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0401%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0401%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">0401不定积分的概念和性质-不定积分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 原函数与不定积分的概念](#1-原函数与不定积分的概念)
+  * [1.1 原函数](#11-原函数)
+  * [1.2 原函数存在定理](#12-原函数存在定理)
+  * [1.3 不定积分](#13-不定积分)
+- [2 不定积分的性质](#2-不定积分的性质)
+- [3 基本积分表](#3-基本积分表)
+- [4 例题](#4-例题)
+- [后记](#后记)
+
+<!-- tocstop -->
+
+## 1 原函数与不定积分的概念
+
+### 1.1 原函数
+
+> 定义1 如果在区间I上，可导函数F(x)的导航为f(x)，即对任一$x\in I$，都有
+>
+> $F^{'}(x)=f(x)或者dF(x)=f(x)dx$,
+>
+> 那么函数F(x)就称为f(x)(或者$f(x)dx$)在区间I上的一个原函数。
+
+### 1.2 原函数存在定理
+
+> 原函数存在定理 如果函数f(x)在区间I上连续，那么在区间I存在可导函数F(x)，使得对于任一$x\in I$都有
+>
+> $F^{'}(x)=f(x)$
+>
+> 连续函数一定有原函数
+
++ 如果f(x)有一个原函数，那么f(x)就有无限多个原函数
++ $F(x)+C$可以表示$f(x)$的任意一个原函数，其中C为任意常数
+
+
+
+### 1.3 不定积分
+
+> 定义2 在区间I上，函数$f(x)$的带有任意常数项的原函数称为$f(x)（或f(x)dx）$在区间I上的不定积分，记做
+>
+> $\int{f(x)dx}$
+>
+> 其中$\int$称为积分号，$f(x)$称为被积函数，$f(x)dx$称为被积表达式，x称为积分变量。
+
+注：
+
+1. 若$F(x)为f(x)$的一个原函数，则$\int{f(x)dx}=F(x)+C$，其中C为任意常数。
+2. $\int{f(x)dx}$表示$f(x)$的任意一个原函数，是一种运算。
+
+
+
+例2 求$\int \frac{1}{x}dx$
+$$
+解：\\
+当x\gt0时，(\ln x)^{'}=\frac{1}{x},所以\int \frac{1}{x}dx=\ln x+C \\
+当x\lt0时，(\ln(-x))^{'}=\frac{1}{-x}\cdot-1=\frac{1}{x},\int \frac{1}{x}dx=\ln(-x)+C \\
+综上\int \frac{1}{x}dx=\ln|x|+C \\
+$$
+
+## 2 不定积分的性质
+
+
+
+> 设F(x)为f(x)在区间I上的一个原函数
+>
+> 性质1 $\frac{d[\int f(x)dx]}{dx}=f(x)或 d[\int f(x)dx]=f(x)dx$
+>
+> 性质2 $\int F^{'}(x)dx=F(x)+C或\int dF(x)=F(x)+C$
+
+> 性质3 设函数f(x)及g(x)的原函数存在，则
+>
+> $\int{[f(x)+g(x)]dx}=\int{f(x)dx}+\int{g(x)dx}$
+
+$$
+证明：\\
+上式右端求导,[\int{f(x)dx}+\int{g(x)dx}]^{'}=[\int{f(x)dx}]^{'}+[\int{g(x)dx}]^{'}\\
+=f(x)+g(x) \\
+所以右端也是f(x)+g(x)的不定积分
+$$
+
+注：性质3对于有限个函数都是成立的。
+
+> 性质4 设函数f(x)的原函数存在，$k$为非零常数，则
+>
+> $\int{kf(x)dx}=k\int{f(x)dx}$
+
+## 3 基本积分表
+
+①$\int{kdx}=kx+C $
+
+②$\int{x^udx}=\frac{x^{u+1}}{u+1}+C$        ③$\int{\frac{dx}{x}}=\ln|x|+C$
+
+④$\int{\frac{1}{1+x^2}dx}=\arctan x+C$ 	⑤$\int{\frac{1}{\sqrt{1-x^2}}dx}=\arcsin x+C$
+
+⑥$\int{\cos xdx}=\sin x+C$	⑦$\int{\sin xdx}=-\cos x+C$
+
+⑧$\int{\frac{1}{\sin^2x}dx}=\int{\sec^2xdx}=\tan x+C$	⑨$\int{\frac{1}{\cos^2x}dx}=\int{\csc^2xdx}=-\cot x+C$
+
+⑩$\int{\sec x\tan xdx}=\sec x+C$  	⑪$\int{\csc x\cot xdx}=-\csc x+C$
+
+⑫$\int{e^xdx}=e^x+C$	⑬$\int{a^xdx}=\frac{a^x}{\ln a}+C$
+
+
+
+## 4 例题
+
+例1 $\int{\frac{(x-1)^3}{x^2}dx}$
+$$
+解：\\
+\int{\frac{(x-1)^3}{x^2}dx}=\int{\frac{x^3-3x^2+3x-1}{x^2}}\\
+=\int{xdx}-\int{3dx}+\int{\frac{3}{x}}-\int{\frac{1}{x^2}}\\
+=\frac{1}{2}x^2-3x+3\ln|x|+\frac{1}{x}+C
+$$
+例2 $\int{\frac{2x^4+x^2+3}{x^2+1}dx}$
+$$
+解：\\
+利用多项式相除，得2x^2+1,余4,有\\
+\int{\frac{2x^4+x^2+3}{x^2+1}dx}=\int{(2x^2-1+\frac{4}{x^2+1})dx}\\
+=\int{2x^2dx}-\int{1dx}+\int{\frac{4}{x^2+1}dx}=\frac{2x^3}{3}-x+4\arctan x+C
+$$
+
+多项式相除，如下图4-1所示：![20230222-polynomial-division](/math/note/高等数学/04不定积分/L:/study/math/note/04不定积分/images/20230222-polynomial-division.jpg)
+
+
+
+##  后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P184~p193.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p27.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0401%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq7l12k0016wu21f0o1giac" data-title="0401不定积分的概念和性质-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/04不定积分/0402换元积分法-不定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0402%E6%8D%A2%E5%85%83%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0402%E6%8D%A2%E5%85%83%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">0402换元积分法-不定积分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 第一类换元法](#1-第一类换元法)
+  * [1.1 定理1](#11-定理1)
+  * [1.2 例题](#12-例题)
+  * [1.2 常见凑微分形式](#12-常见凑微分形式)
+    + [1.2.1常见基本的导数公式的逆运算](#121常见基本的导数公式的逆运算)
+    + [1.2.2被积函数含有三角函数](#122被积函数含有三角函数)
+- [2 第二类换元法](#2-第二类换元法)
+  * [2.1 定理2](#21-定理2)
+  * [2.2 常见第二换元代换方法](#22-常见第二换元代换方法)
+    + [2.2.1 三角代换-弦代换](#221-三角代换-弦代换)
+    + [2.2.2 三角代换-切代换](#222-三角代换-切代换)
+    + [2.2.3 三角代换-割代换](#223-三角代换-割代换)
+    + [2.2.4 三角代换汇总](#224-三角代换汇总)
+    + [2.2.5 倒代换](#225-倒代换)
+    + [2.2.6 根式代换](#226-根式代换)
+- [3 积分推导公式](#3-积分推导公式)
+- [后记](#后记)
+
+<!-- tocstop -->
+
+把复合函数的微分法反过来用于求不定积分，利用中间变量的代换，得到复合函数的积分法，称为换元积分法。换元法分为两类。
+
+## 1 第一类换元法
+
+### 1.1 定理1
+
+设$f(u)$具有原函数$F(u)$,即
+
+$F^{'}(u)=f(u),\int{f(u)du}=F(u)+C$
+
+如果u是中间变量:$u=\phi(x)，且设\phi(x)$可微，那么根据复合函数微分法，有
+
+$dF[\phi(x)]=f[\phi(x)]\phi^{'}(x)dx$,
+
+根据不定积分的定义就得
+
+$\int{f[\phi(x)]\phi^{'}(x)dx}=F[\phi(x)]+C=[\int{f(u)du}]_{u=\phi(x)}$
+
+> 定理1 设$f(u)$具有原函数，$u=\phi(x)$可导，则有换元公式
+>
+> $\int{f[\phi(x)]\phi^{'}(x)dx}=[\int{f(u)du}]_{u=\phi(x)}$
+
+### 1.2 例题
+
+例1 求$\int{\frac{1}{3+2x}dx}$
+$$
+解：\\
+\int{\frac{1}{3+2x}dx}=\frac{1}{2}\int{\frac{1}{3+2x}d(3+2x)}=\frac{1}{2}\ln|3+2x|+C
+$$
+例2 求$\int{\frac{x^2}{(x+2)^3}dx}$
+
+注：分式积分，分母越简单越易积
+$$
+解：\\
+令u=x+2,x=u-2 \\
+\int{\frac{x^2}{(x+2)^3}dx}=\int{\frac{(u-2)^2}{u^3}du}\\
+=\int{\frac{1}{u}du}-\int{\frac{4}{u^2}du}+\int{\frac{4}{u^3}du}\\
+=\ln|x+2|+\frac{4}{x+2}-\frac{1}{2(x+2)^2}+C
+$$
+
+
+例3 求$\int{\frac{1}{a^2+x^2}dx}$
+
+解析：基本积分公式$\int{\frac{1}{1+x^2}dx}=\arctan x+C$
+$$
+解:\\
+\int{\frac{1}{a^2+x^2}dx}=\frac{1}{a^2}\int{\frac{1}{1+(\frac{x}{a})^2}dx}\\
+=\frac{1}{a}\int{\frac{1}{1+(\frac{x}{a})^2}d(\frac{x}{a})}=\frac{1}{a}\arctan\frac{x}{a}+C
+$$
+
+
+例4 求$\int{\frac{1}{x^2-a^2}dx}$
+
+注：裂项公式，分母为两个一次项乘积形式$\frac{1}{(x+a)(x+b)}=\frac{1}{b-a}(\frac{1}{x+a}-\frac{1}{x+b})$
+$$
+解:\\
+\int{\frac{1}{x^2-a^2}dx}=\frac{1}{2a}[\int{\frac{1}{x-a}d(x-a)}-\int{\frac{1}{x+a}d(x+a)}]\\
+=\frac{1}{2a}(\ln|x-a|-\ln|x+a|)+C=\frac{1}{2a}\ln|\frac{x-a}{x+a}|+C
+$$
+
+
+例5 求$\int{\frac{dx}{x(1+2\ln x)}}$
+
+解析：$(\ln x)^{'}=\frac{1}{x}$
+$$
+解:\\
+\int{\frac{dx}{x(1+2\ln x)}}=\frac{1}{2}\int{\frac{d(1+2\ln x)}{1+2\ln x}}\\
+=\frac{1}{2}\ln|1+2\ln x|+C
+$$
+
+
+例6 求$\int{\frac{e^{3\sqrt{x}}}{\sqrt{x}}dx}$
+
+解析：$(\sqrt{x})^{'}=\frac{1}{2}\cdot\frac{1}{\sqrt{x}}$
+$$
+解:\\
+\int{\frac{e^{3\sqrt{x}}}{\sqrt{x}}dx}=\frac{2}{3}\int{e^{3\sqrt{x}}d(3\sqrt{x})}\\
+=\frac{2}{3}e^{3\sqrt{x}}+C
+$$
+
+
+例7 求$\int{sin^2x\cos^5xdx}$
+
+解析：$(\sin x)^{'}=\cos x\quad (\cos x)^{'}=-\sin x\quad \sin^2x+\cos^2x=1$
+$$
+解：\int{sin^2x\cos^5xdx}=\int{sin^2x\cos^4xd(\sin x)}\\
+=\int{sin^2x(1-\sin^2x)^2d(\sin x)}=\int{(\sin^6x-2\sin^4x+\sin^2x)d(\sin x)}\\
+=\frac{1}{7}\sin^7x-\frac{2}{5}\sin^5x+\frac{1}{3}\sin^3x+C
+$$
+
+> 一般地，对于$\sin^{2k+1}x\cos^nx或\sin^nx\cos^{2k+1}x(其中k\in N)$型函数的积分，总可依次做变换$u=\cos x或u=\sin x$,求得结果。
+
+例8 求$\int{\tan xdx}$
+$$
+解：\int{\tan xdx}=\int{\frac{\sin x}{\cos x}dx}=-\int{\frac{1}{\cos x}d(\cos x)}\\
+=-\ln|\cos x|+C
+$$
+
+> 类似可得$\int{\cot xdx}=\ln|\sin x|+C$
+
+例9 求$\int{\frac{x^3}{(x^2-2x+2)}}$
+
+
+
+### 1.2 常见凑微分形式
+
+#### 1.2.1常见基本的导数公式的逆运算
+
+1. $\int{f(\frac{1}{x})\cdot\frac{1}{x^2}dx}=-\int{f(\frac{1}{x})d\frac{1}{x}}$
+2. $\int{f(\sqrt{x})\frac{1}{\sqrt{x}}dx}=2\int{f(\sqrt{x})d\sqrt{x}}$
+3. $\int{f(\sin x)\cos xdx}=\int{f(\sin x)d\sin x}$
+4. $\int{f(\cos x)\sin xdx}=-\int{f(\cos x)d\cos x}$
+5. $\int{f(\ln x)\frac{1}{x}dx}=\int{f(\ln x)d\ln x}$
+6. $\int{f(x\ln x)(1+\ln x)dx}=\int{f(x\ln x)d(x\ln x)}$
+7. $\int{f(\sec x)\sec x\tan xdx}=\int{f(\sec x)d\sec x}$
+8. $\int{f(\csc x)\csc x\cot xdx}=-\int{f(\csc x)d\csc x}$
+9. $\int{f(\tan x)\sec^2xdx}=\int{f(\tan x)d\tan x}$
+10. $\int{f(\cot x)\csc^2xdx}=-\int{f(\cot x)d\cot x}$
+11. $\int{f(\arcsin x)\frac{1}{\sqrt{1-x^2}}dx}=\int{f(\arcsin x)d\arcsin x}$
+12. $\int{f(\arctan x)\frac{1}{1+x^2}dx}=\int{f(\arcsin x)d\arctan x}$
+13. $\int{f(e^x)e^xdx}=\int{f(e^x)de^x}$
+
+#### 1.2.2被积函数含有三角函数
+
+常用的三角恒等式：
+
+1. $\sin^2x+\cos^2x = 1$
+2. $1+\tan^2x=\sec^2x$
+3. $1+\cot^2x=\csc^2 x$
+4. 两角和差的三角公式
+    1. $\cos(\alpha\pm\beta)=\cos\alpha\cos\beta\pm\sin\alpha\sin\beta$
+    2. $\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta$
+5. 2倍角公式，降幂公式
+    1. $\cos2\alpha=\cos^2\alpha-\sin^2\alpha=2\cos^2\alpha-1=1-2\sin^2\alpha$
+    2. $\sin2\alpha=2\sin\alpha\cos\alpha$
+    3. $\cos^2\alpha=\frac{1}{2}(1+\cos2\alpha)$
+    4. $\sin^2\alpha=\frac{1}{2}(1-\cos2\alpha)$
+6. 积化和差，和差化积
+
+![img](https://bkimg.cdn.bcebos.com/formula/07792690a852ebba3ef29681e3ffb867.svg)
+
+![img](https://bkimg.cdn.bcebos.com/formula/f5356cb9abb471a3189311c7b42d24c3.svg)
+
+![img](https://bkimg.cdn.bcebos.com/formula/da9989aad879a3519722595ab6829cf1.svg)
+
+![img](https://bkimg.cdn.bcebos.com/formula/f9ef6539209b95c955a646ef096b6778.svg)
+
+
+
+![20320223-和差化积](/math/note/高等数学/04不定积分/L:/study/math/note/04不定积分/images/20320223-和差化积.svg)
+
+>  一般地，对于$\sin^{2k+1}x\cos^nx或\sin^nx\cos^{2k+1}x(其中k\in N)$型函数的积分，总可依次做变换$u=\cos x或u=\sin x$,求得结果。
+
+
+
+>  $\tan^nx\sec^{2k}x或者\tan^{2k-1}x\sec^nx(n,k\in N_+)$型积分，可依次做变换$u=\tan x或u=\sec x$
+
+
+
+## 2 第二类换元法
+
+### 2.1 定理2
+
+> 设$x=\phi(t)$是单调可导的函数，并且$\phi^{'}(t)\not=0.又设f[\phi(t)]\phi^{'}(t)$具有原函数，则有换元公式
+>
+> $\int{f(x)dx}=[\int{f[\phi(t)]\phi^{'}(t)dt}]_{t=\phi^{-1}(x)}$
+>
+> 其中$\phi^{-1}(x)是x=\phi(t)$的反函数。
+
+$$
+证明：\\
+设f[\phi(t)]\phi^{'}(t)的原函数为\Phi(t),记\Phi(t)=\Phi[\phi^{-1}(x)]=F(x)\\
+利用复合函数和反函数的求导法则，有\\
+F^{'}(x)=\frac{d\Phi}{dt}\cdot\frac{dt}{dx}=f[\phi(t)]\phi^{'}(t)\cdot\frac{1}{\phi^{'}(t)}=f(x) \\
+即F(x)是f(x)的原函数，所以有 \\
+\int{f(x)dx}=F(x)+c=\Phi[\phi^{-1}(x)]+C=[\int{f[\phi(t)]\phi^{'}(t)dt}]_{t=\phi^{-1}(x)}
+$$
+
+注：
+
+1. 必须写出变量代换$x=\phi(t)$
+2. 必须替换微分$dx=\phi^{'}(t)dt$
+3. 最后结果必须还原成原来积分变量$t=\phi^{-1}(x)$
+
+### 2.2 常见第二换元代换方法
+
++ 三角代换
++ 倒代换
++ 根式代换
+
+#### 2.2.1 三角代换-弦代换
+
+正弦或者余弦代换
+
+例1 求$\int{\sqrt{a^2-x^2}dx}(a\gt0)$
+$$
+解：令x=a\sin t,-\frac{\pi}{2}\lt t\lt\frac{\pi}{2}\\
+\sqrt{a^2-x^2}=a\cos t,dx=a\cos tdt \\
+\int{\sqrt{a^2-x^2}dx}=\int{a\cos t\cdot a\cos tdt}=\frac{a^2}{2}t+\frac{a^2}{4}\sin2t+C\\
+=\frac{a^2}{2}t+\frac{a^2}{2}\sin t\cos t+C\\
+其中t=\arcsin\frac{x}{a},\sin t=\frac{x}{a},\cos t=\frac{\sqrt{a^2-x^2}}{a}\\
+\int{\sqrt{a^2-x^2}dx}=\frac{a^2}{2}\arcsin\frac{x}{a}+\frac{x\sqrt{a^2-x^2}}{2}+C
+$$
+
+#### 2.2.2 三角代换-切代换
+
+正切或者余切
+
+例2 求$\int{\frac{1}{\sqrt{x^2+a^2}}dx}(a>0)$
+$$
+解：令x=a\tan t,-\frac{\pi}{2}\lt t\lt\frac{\pi}{2} \\
+\sqrt{x^2+a^2}=a\sec t,dx=asec^2t \\
+\int{\frac{1}{\sqrt{x^2+a^2}}dx}=\int{\frac{1}{a\sec t}\cdot a\sec^2tdt}\\
+=\int{\sec tdt}=\ln|\sec t+\tan t|+C \\
+其中\tan t=\frac{x}{a},\sec t=\frac{\sqrt{x^2+a^2}}{a} \\
+\int{\frac{1}{\sqrt{x^2+a^2}}dx}=\ln|\frac{\sqrt{x^2+a^2}}{a}+\frac{x}{a}|+C_1\\
+=ln(\sqrt{x^2+a^2}+x)+C
+$$
+
+#### 2.2.3 三角代换-割代换
+
+正割或者余割
+
+例3 求$\int{\frac{1}{\sqrt{x^2-a^2}}dx}(a\gt0)$
+$$
+解：定义域x\gt a或者x\lt -a \\
+(1)当x\gt a时，令x=a\sec t,0\lt t\lt\frac{\pi}{2} \\
+\sqrt{x^2-a^2}=a\tan t,dx=a\sec t\tan tdt \\
+\int{\frac{1}{\sqrt{x^2-a^2}}dx}=\int{\frac{1}{a\tan t}a\sec t\tan tdt}\\
+=\int{\sec tdt}=\ln|\sec t+\tan t|+C_1 \\
+其中\sec t=\frac{x}{a},\tan t=\frac{\sqrt{x^2-a^2}}{a} \\
+\int{\frac{1}{\sqrt{x^2-a^2}}dx}=\ln(x+\sqrt{x^2-a^2})+C \\
+(2)当x\lt -a时,令u=-x,则u\gt a \\
+\int{\frac{1}{\sqrt{x^2-a^2}}dx}=-\int{\frac{1}{\sqrt{u^2-a^2}}du}\\
+=-\ln(u+\sqrt{u^2-a^2})+C=-\ln(-x+\sqrt{x^2-a^2})+C=\ln(-x-\sqrt{x^2-a^2})+C_1\\
+
+综上当x\gt a时，\int{\frac{1}{\sqrt{x^2-a^2}}dx}=\ln(x+\sqrt{x^-a^2})+C \\
+x\lt -a时，\int{\frac{1}{\sqrt{x^2-a^2}}dx}=\ln(-x-\sqrt{x^2-a^2})+C\\
+所以\int{\frac{1}{\sqrt{x^2-a^2}}dx}=\ln|x+\sqrt{x^2-a^2}|+C
+$$
+
+#### 2.2.4 三角代换汇总
+
+| 被积函数中函数含有 | 三角代换                                         |
+| ------------------ | ------------------------------------------------ |
+| $\sqrt{a^2-x^2}$   | $x=a\sin t,-\frac{\pi}{2}\lt t\lt \frac{\pi}{2}$ |
+| $\sqrt{a^2+x^2}$   | $x=a\tan t,-\frac{\pi}{2}\lt t\lt \frac{\pi}{2}$ |
+| $\sqrt{x^2-a^2}$   | $x\gt a,x=a\sec t,0\lt t\lt \frac{\pi}{2}$       |
+
+#### 2.2.5 倒代换
+
+> 适用：分母次数>分子次数
+
+例4 求$\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}(a\not=0)$
+$$
+解：(1)利用上面的三角代换，自己做\\
+(1)倒代换,令x=\frac{1}{t} \\
+dx=-\frac{1}{t^2},\sqrt{a^2-x^2}=\frac{\sqrt{a^2t^2-1}}{|t|} \\
+\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}=\int{\frac{\sqrt{a^2t^2-1}}{|t|}\cdot t^4\cdot(-\frac{1}{t^2})dt} \\
+=-\int{\sqrt{a^2t^2-1}\cdot|t|dt} \\
+当x\gt0时，t=\frac{1}{x}\gt0\\
+\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}=-\frac{1}{2a^2}\int{(a^2t^2-1)^{\frac{1}{2}}d(a^2t^2-1)dt}=-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C\\
+当x\lt0时，t=\frac{1}{x}\lt0\\
+\int{\frac{\sqrt{a^2-x^2}}{x^4}dx}=-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C \\
+综上 \int{\frac{\sqrt{a^2-x^2}}{x^4}dx}=-\frac{(a^2-x^2)^{\frac{3}{2}}}{3a^2x^3}+C
+$$
+
+#### 2.2.6 根式代换
+
+例5 求$\int{\frac{1}{1+\sqrt{2x}}dx}$
+$$
+解：令\sqrt{2x}=t,x=\frac{t^2}{2},dx=t \\
+\int{\frac{1}{1+\sqrt{2x}}dx}=\int{\frac{t}{1+t}dt}=t-\ln|t+1|+C\\
+=\sqrt{2x}-\ln|sqrt{2x}+1|+C
+$$
+
+## 3 积分推导公式
+
+常用积分公式，除了基本积分表中，在添加下面几个前面推导的公式：
+
+1. $\int{\tan xdx}=-\ln|\cos x|+C$
+2. $\int{\cot xdx}=\ln|\sin x|+C$
+3. $\int{\sec xdx}=\ln|\sec x+\tan x|+C$
+4. $\int{\csc xdx}=\ln|\csc x-\cot x|+C$
+5. $\int{\frac{1}{a^2+x^2}dx}=\frac{1}{a}\arctan\frac{x}{a}+C$
+6. $\int{\frac{dx}{x^2-a^2}}=\frac{1}{2a}\ln|\frac{x-a}{x+a}|+C$
+7. $\int{\frac{dx}{\sqrt{a^2-x^2}}}=\arcsin\frac{x}{a}+C$
+8. $\int{\frac{dx}{\sqrt{x^2+a^2}}}=\ln(x+\sqrt{x^2+a^2})+C$
+9. $\int{\frac{dx}{\sqrt{x^2-a^2}}}=\ln|x+\sqrt{x^2-a^2}|+C$
+
+例6 求 $\int{\frac{x^3}{(x^2-2x+2)^2}dx}$
+$$
+解：\\
+x^2-2x+2=(x-1)^2+1 ,令x-1=\tan t ,(-\frac{\pi}{2}\lt t\lt\frac{\pi}{2})\\
+\int{\frac{x^3}{(x^2-2x+2)^2}dx}=\int{\frac{(\tan t+1)^3}{\sec^4t}\sec^2tdt}\\
+=\int{(\sin^3t\cos^{-1}t+3\sin^2t+3\sin t\cos t+\cos^2t)dt}\\
+=-\ln\cos t-\cos^2t+2t-\sin t\cos t+C\\
+按\tan t=x-1做辅助三角形，\\
+\cos t=\frac{1}{\sqrt{x^2-2x+2}},\sin t=\frac{x-1}{\sqrt{x^2-2x+2}} \\
+\int{\frac{x^3}{(x^2-2x+2)^2}dx}=\frac{1}{2}\ln(x^2-2x+2)+2\arctan(x-1)-\frac{x}{x^2-2x+2}+C
+$$
+辅助三角形图示：![20230226-0402-x-1=tant](/math/note/高等数学/04不定积分/L:/study/math/note/03微分中值定理与导数的应用/images/20230226-0402-x-1=tant.png)
+
+##  后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P193~p207.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p28.
+
+3. <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F/4374733">三角函数公式</a>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0402%E6%8D%A2%E5%85%83%E7%A7%AF%E5%88%86%E6%B3%95-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq7l12k0017wu210b0pd0h4" data-title="0402换元积分法-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/04不定积分/0405习题总结-不定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0405%E4%B9%A0%E9%A2%98%E6%80%BB%E7%BB%93-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0405%E4%B9%A0%E9%A2%98%E6%80%BB%E7%BB%93-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">0405习题总结-不定积分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 不定积分的基本概念](#1-不定积分的基本概念)
+- [2 直接积分法-基本积分公式](#2-直接积分法-基本积分公式)
+- [3 第一换元法-凑微分形式法](#3-第一换元法-凑微分形式法)
+- [4 第二类换元法](#4-第二类换元法)
+- [5 分部积分求不定积分](#5-分部积分求不定积分)
+- [6 表格法积分](#6-表格法积分)
+- [7 有理函数求积分](#7-有理函数求积分)
+- [后记](#后记)
+
+<!-- tocstop -->
+
+## 1 不定积分的基本概念
+
+例1 
+$$
+f(x)=
+\begin{cases}
+x+1,\quad x\ge0\\
+\frac{1}{2}e^{-x}+\frac{1}{2},\quad x\lt0\\
+\end{cases}\\
+求\int{f(x)dx}
+$$
+
+$$
+解：f(x)在(-\infty,+\infty)上连续\\
+\int{f(x)dx}=
+\begin{cases}
+\frac{1}{2}x^2+x+C_1,\quad x\ge0，C_1为任意常数\\
+-\frac{1}{2}e^{-x}+\frac{1}{2}x+C_2,\quad x\lt0,C_2为任意常数\\
+\end{cases}\\
+F(x)作为f(x)的一个原函数，在x=0处连续\\
+那么C_1=-\frac{1}{2}+C_2,令C_2=C(任意常数),则C_1=-\frac{1}{2}+C\\
+\int{f(x)dx}=
+\begin{cases}
+\frac{1}{2}x^2+x-\frac{1}{2}+C,\quad x\ge0，C为任意常数\\
+-\frac{1}{2}e^{-x}+\frac{1}{2}x+C,\quad x\lt0\\
+\end{cases}\\
+$$
+
+注意：
+
+1. $f(x)$连续，F(x)可导。
+2. $f(x)$有第一类，第二类无穷间断点，则不存在原函数。
+3. $f(x)$有第二类震荡间断点时，可能存在原函数。
+
+例2 $\int{max\{x^3,x^2,1\}dx}$
+$$
+解：令f(x)=max\{x^3,x^2,1\},则\\
+f(x)=
+\begin{cases}
+x^2,\quad x\le -1\\
+1,\quad -1\lt x\lt1\\
+x^3,\quad x\ge1
+\end{cases}\\
+f(x)在(-\infty,+\infty)上连续\\
+\int{f(x)}=
+\begin{cases}
+\frac{1}{3}x^3+C_1,\quad x\le -1\\
+x+C,\quad -1\lt x\lt1\\
+\frac{1}{4}x^4+C_2,\quad x\ge1
+\end{cases}\\
+F(x)在点x=-1出连续，所以-\frac{1}{3}+C_1=-1+C,则C_1=-\frac{2}{3}+C\\
+F(x)在点x=1出连续，所以\frac{1}{4}+C_2=1+C,则C_2=\frac{3}{4}+C\\
+\int{f(x)}=
+\begin{cases}
+\frac{1}{3}x^3-\frac{2}{3}+C,\quad x\le -1\\
+x+C,\quad -1\lt x\lt1\\
+\frac{1}{4}x^4+\frac{3}{4}+C,\quad x\ge1
+\end{cases}\\
+$$
+总结：分段函数求积分
+
+1. 确定在分段点连续
+2. 求分段积分
+3. 统一常数
+
+例3 证明：函数$\arcsin(2x-1),\arccos(1-2x),\arctan\sqrt{\frac{x}{1-x}}都是\frac{1}{\sqrt{x-x^2}}$的原函数
+$$
+证明：通过原函数求导函数即可\\
+[\arcsin(2x-1)]^{'}=\frac{1}{\sqrt{1-(2x-1)^2}}\cdot2=\frac{1}{\sqrt{x-x^2}}\\
+[\arccos(1-2x)]^{'}=-\frac{1}{\sqrt{1-(1-2x)^2}}\cdot-2=\frac{1}{\sqrt{x-x^2}}\\
+[\arctan\sqrt{\frac{x}{1-x}}]^{'}=\frac{1}{1+\frac{x}{1-x}}\cdot(\sqrt{\frac{x}{1-x}})^{'}=\frac{1}{\sqrt{x-x^2}}
+$$
+
+## 2 直接积分法-基本积分公式
+
+
+
+例1 $\int{\frac{x^4}{1+x^2}dx}$
+
+多项式除法
+$$
+解：\int{\frac{x^4}{1+x^2}dx}=\int{(x^2-1+\frac{1}{1+x^2})dx}\\
+=\frac{1}{3}x^3-x+\arctan x+C
+$$
+例2 求$\int{\frac{1}{x^8(1+x^2)}dx}$
+
+高次多项式与低次多项式+常数乘积
+$$
+解：\int{\frac{1}{x^8(1+x^2)}dx}=\int{\frac{1-x^8+x^8}{x^8(1+x^2)}dx}\\
+=\int{\frac{(1+x^4)(1-x^2)}{x^8}dx}+\int{\frac{1}{1+x^2}dx}\\
+=\frac{1}{x}-\frac{1}{3x^3}+\frac{1}{5x^5}-\frac{1}{7x^7}+\arctan x+C
+$$
+例3 求$\int{\tan^2xdx}$
+$$
+解：\int{\tan^2xdx}=\int{(\sec^2x-1)dx}=\tan x-x+C
+$$
+例4 求$\int{\frac{1}{1+\cos2x}dx}$
+$$
+解：\int{\frac{1}{1+\cos2x}dx}=\int{\frac{1}{2\cos^2x}dx}\\
+=\frac{1}{2}\tan x+C
+$$
+例5 求$\int{\frac{1}{\sin^2x\cos^2x}dx}$
+$$
+解:\int{\frac{1}{\sin^2x\cos^2x}dx}=\int{\frac{\sin^2x+\cos^2x}{\sin^2x\cos^2x}dx}\\
+=\int{\sec^2xdx}+\int{\csc^2xdx}=\tan x-\cot x+C
+$$
+
+## 3 第一换元法-凑微分形式法
+
+> $\int{\{f[g(x)]g^{'}(x)dx\}}=[\int{f(t)dt}]_{t=g(x)}$
+
+常见凑微分公式：
+
++ $\int{f(ax+b)dx}=\frac{1}{a}\int{f(ax+b)d(ax+b)}$
+
++ $\int{f(e^x)e^xdx}=\int{f(e^x)de^x}$ $\quad \int{f(a^x)a^xdx}=\frac{1}{\ln a}\int{f(a^x)da^x}$
+
++ $\int{f(x^\mu)x^{\mu-1}dx}=\frac{1}{\mu}\int{f(x^\mu)d(x^\mu)}$
+
++ $\int{f(\frac{1}{x})\frac{1}{x^2}dx}=-\int{f(\frac{1}{x})d(\frac{1}{x}})$
+
++ $\int{f(\sqrt{x})\frac{1}{\sqrt{x}}dx}=2\int{f(\sqrt{x})d(\sqrt{x})}$
+
++ $\int{f(\ln x)\frac{1}{x}dx}=\int{f(\ln x)d(\ln x)}\quad \int{f(x\ln x)(1+\ln x)dx}=\int{f(x\ln x)d(x\ln x)}$
+
++ 三角函数凑微分
+    + $\int{f(\sin x)\cos xdx}=\int{f(\sin x)d(\sin x)}$
+    + $\int{f(\cos x)\sin xdx}=-\int{f(\cos x)d(\cos x)}$
+    + $\int{f(\tan x)\sec^2xdx}=\int{f(\tan x)d(\tan x)}$
+    + $\int{f(\cot x)\csc^2xdx}=-\int{f(\cot x)d(\cot x)}$
+    + $\int{f(\sec x)\sec x\tan xdx}=\int{f(\sec x)d(\sec x)}$
+    + $\int{f(\csc x)\csc x\cot xdx}=-\int{f(\csc x)d(\csc x)}$
++ 反三角函数
+    + $\int{f(\arctan x)\frac{1}{1+x^2}dx}=\int{f(\arctan x)d(\arctan x)}$
+    + $\int{f(arccot x)\frac{1}{1+x^2}dx}=-\int{f(arccot x)d(arccot x)}$
+    + $\int{f(\arcsin x)\frac{1}{\sqrt{1-x^2}}dx}=\int{f(\arcsin x)d(\arcsin x)}$
+    + $\int{f(\arccos x)\frac{1}{\sqrt{1-x^2}}dx}=-\int{f(\arccos x)d(\arccos x)}$
+
++ $\int{f(x+\frac{1}{x})(1-\frac{1}{x^2})dx}=\int{f(x+\frac{1}{x})d(x+\frac{1}{x})}\quad \int{f(x-\frac{1}{x})(1+\frac{1}{x^2})dx}=\int{f(x-\frac{1}{x})d(x-\frac{1}{x})}$
+
+
+
+例1 $\int{\tan^5xsec^3xdx}$
+$$
+解：\int{\tan^5xsec^3xdx}=\int{(sec^2x-1)^2sec^2xd(secx)}\\
+=\int{(sec^6x-2sec^4x+sec^2x)d(secx)}=\frac{1}{7}sec^7x-\frac{2}{5}sec^5x+\frac{1}{3}sec^3x+C
+$$
+例2 $\int{\frac{\ln(1+x)-\ln x}{x(1+x)}dx}$
+$$
+解：\int{\frac{\ln(1+x)-\ln x}{x(1+x)}dx}=-\int{[\ln(1+x)-\ln x]d[\ln(1+x)-\ln x]}\\
+=-\frac{1}{2}[\ln(1+x)-\ln x]^2+C
+$$
+例3 $\int{\frac{(1+2x^2)e^{x^2}}{2-3xe^{x^2}}dx}$
+$$
+解：\int{\frac{(1+2x^2)e^{x^2}}{2-3xe^{x^2}}dx}=-\frac{1}{3}\int{\frac{1}{2-3xe^{x^2}}d(2-3xe^{x^2})}=-\frac{1}{3}\ln|2-3xe^{x^2}|+C
+$$
+例4 $\int{\frac{e^{\arctan\sqrt{1+x}}}{(2+x)\sqrt{1+x}}dx}$
+$$
+解：\int{\frac{e^{\arctan\sqrt{1+x}}}{(2+x)\sqrt{1+x}}dx}=2\int{e^{\arctan\sqrt{1+x}}d(\arctan\sqrt{1+x})}\\
+=2e^{\arctan\sqrt{1+x}}+C
+$$
+例5 $\int{\frac{\ln\tan\frac{x}{2}}{\sin x}dx}$
+$$
+解：\int{\frac{\ln\tan\frac{x}{2}}{\sin x}dx}=\int{\ln\tan\frac{x}{2}d(\ln\tan\frac{x}{2})}\\
+=\frac{1}{2}\ln^2\tan\frac{x}{2}+C
+$$
+
+## 4 第二类换元法
+
+> $\int{f(x)dx}=[\int{[f(\phi(t))]\phi^{'}(t)dt}]_{t=\phi^{-1}(x)}$
+
++ 三大换元
+    1. 三角换元
+        + 被积函数含有$\sqrt{a^2-x^2}$：令$x=a\sin t$
+        + 被积函数含有$\sqrt{x^2+a^2}$：令$x=a\tan t$
+        + 被积函数含有$\sqrt{x^2-a^2}$：令$x=a\sec t$
+        + 当被积函数含有$(x^2+a^2)^n$也考虑$x=a\tan t$
+        + 当被积函数含有$(x^2-a^2)^n$也考虑$x=a\sec t$
+    2. 根式代换
+        + 被积函数含有$\sqrt[n]{\frac{ax+b}{cx+d}}:令\sqrt[n]{\frac{ax+b}{cx+d}}=t$
+        + 被积函数含有$\sqrt[n]{ax+b}:令\sqrt[n]{ax+b}=t$
+        + 被积函数含有$\sqrt[n]{ax+b}，\sqrt[m]{ax+b}:令\sqrt[k]{ax+b}=t,k为m，n的最小公倍数$
+    3. 倒代换
+        1. 当分母方次高于分子方次，可以考虑倒代换。
+
+例1 求$\int{\frac{1}{(1+x^2)^2}dx}$
+$$
+解：解法一.\int{\frac{1}{(1+x^2)^2}dx}=\int{\frac{1+x^2-x^2}{(1+x^2)^2}dx}\\
+=\arctan x+\frac{1}{2}\int{xd(\frac{1}{1+x^2})}=\\
+=\arctan x+\frac{1}{2}\frac{x}{1+x^2}-\frac{1}{2}\int{(\frac{1}{1+x^2})dx}\\
+=\frac{1}{2}\arctan x+\frac{x}{2(1+x^2)}+C\\
+解法二.令x=\tan x\\
+\int{\frac{1}{(1+x^2)^2}dx}=\int{\frac{1}{(1+\tan^2x)^2}d\tan x}\\
+=\int{\cos^2tdt}=\frac{1}{4}\sin t\cos t-\frac{1}{2}t+C
+=\frac{1}{2}\arctan x+\frac{x}{2(1+x^2)}+C
+$$
+例2 求$\int{\frac{1}{(ax^2+b)^n}dx},n>1,a>0$
+$$
+解：\int{\frac{1}{(ax^2+b)^n}dx}=\frac{1}{b}\int{\frac{1}{(ax^2+b)^{n-1}}dx}+\frac{1}{2b(n-1)}\int{xd{\frac{1}{(ax^2+b)^{n-1}}}}\\
+=\frac{2bn-2b-2}{2b(n-1)}\int{\frac{1}{(ax^2+b)^{n-1}}dx}+\frac{x}{2b(n-1)(x^2+1)^{n-1}}
+$$
+
+例3 求$\int{\frac{1}{\sqrt{x}+\sqrt[3]{x}}dx}$​
+$$
+解：令\sqrt[6]{x}=t,则x=t^6,dx=6t^5\\
+\int{\frac{1}{\sqrt{x}+\sqrt[3]{x}}dx}=\int{\frac{6t^5}{t^3+t^2}dt}\\
+=\int{6(t^2-t+1-\frac{1}{t+1})dt}=2t^3-3t^2+6t-6\ln|t+1|+C\\
+=2x^{\frac{1}{2}}-3x^{\frac{1}{3}}+6x^{\frac{1}{6}}-6\ln|x^{\frac{1}{6}}+1|+C
+$$
+例4 求$\int{\frac{1}{1+\sqrt{x}+\sqrt{x+1}}dx}$
+$$
+解：令t=\sqrt{x}+\sqrt{x+1},x=\frac{1}{4}(t-\frac{1}{t})^2\\
+dt=\frac{1}{2}(t-\frac{1}{t})(1+\frac{1}{t^2})dt\\
+\int{\frac{1}{1+\sqrt{x}+\sqrt{x+1}}dx}=\frac{1}{2}\int{\frac{t-1}{t^3}dt}\\
+=-\frac{1}{2t}+\frac{1}{4t^2}+C=\frac{1}{4}(\sqrt{x+1}-\sqrt{x})(\sqrt{x+1}-\sqrt{x}-2)+C
+$$
+例5求$\int{\frac{1}{(1+x)\sqrt{1-x^2}}dx}$
+$$
+解：令x=\sin t,dx=\cos t\\
+\int{\frac{1}{(1+x)\sqrt{1-x^2}}dx}=\int{\frac{1}{1+\sin t}dt}\\
+=\int{(\sec^2t-\tan t\sec t)dt}=\tan t-\sec t+C\\
+=\frac{x-1}{\sqrt{1-x^2}}+C
+$$
+例6 $\int{\frac{1}{x(x^6+4)}dx}$
+$$
+解：\int{\frac{1}{x(x^6+4)}dx}=\frac{1}{4}\int{\frac{4+x^6-x^6}{x(x^6+4)}dx}\\
+=\frac{1}{24}\ln\frac{x^6}{x^6+4}+C
+$$
+
+> $\int{\frac{1}{x(ax^n+b)}dx}=\frac{1}{bn}\ln|\frac{x^n}{ax^n+b}|,bn\not=0$
+
+例7 求$\int{\frac{1}{1+e^{\frac{x}{2}}+e^{\frac{x}{3}}+e^{\frac{x}{6}}}dx}$
+$$
+解：令e^{\frac{x}{6}}=t,x=6\ln t,dx=\frac{6}{t}dt\\
+原式=\int{\frac{1}{1+t^3+t^2+t}\cdot\frac{6}{t}dt}\\
+=\int{\frac{6}{(t^2+1)(t+1)t}dt}\\
+\frac{6}{(t^2+1)(t+1)t}=\frac{a}{t}+\frac{b}{t+1}+\frac{cx+d}{t^2+1}\\
+计算的a=6,b=-3,c=-3,d=-3\\
+上式=\int{(\frac{6}{t}-\frac{3}{t+1}-3\frac{t+1}{t^2+1})dt}\\
+=6\ln|t|-3\ln|t+1|-\frac{3}{2}\ln|t^2+1|-3\arctan t+C\\
+=x-3\ln|e^{\frac{x}{6}}+1|-\frac{3}{2}\ln|e^{\frac{x}{3}}+1|-3\arctan e^{\frac{x}{6}}+C
+$$
+
+## 5 分部积分求不定积分
+
+>  $\int{udv}=vu-\int{vdu}$
+
+分部积分原则：
+
++ $\int{vdu}比\int{udv}$好求
++ 分部积分选u的优先级别：反，对，幂，指，三
++ 循环积分：关于于不定积分的方程
+
+例1 求$\int{x\sin^2xdx}$
+
+分析：$\sin^2x$优先降幂
+$$
+解：\int{x\sin^2xdx}=\int{x\cdot\frac{1-\cos2x}{2}dx}\\
+=\frac{1}{4}x^2-\int{\frac{1}{2}x\cos2xdx}=\frac{1}{4}x^2-\frac{1}{4}\int{xd\sin2x}\\
+=\frac{1}{4}x^2-\frac{1}{4}x\sin2x-\frac{1}{8}\cos2x+C
+$$
+例2 求$\int{x^2e^{2x}}ex$
+$$
+解：\int{x^2e^{2x}}dx=\frac{1}{2}\int{x^2de^{2x}}\\
+=\frac{1}{2}x^2e^{2x}-\frac{1}{2}\int{e^{2x}dx^2}=\frac{1}{2}x^2e^{2x}-\frac{1}{2}\int{xde^{2x}}\\
+=\frac{1}{2}x^2e^{2x}-\frac{1}{2}xe^{2x}+\frac{1}{4}e^{2x}+C
+$$
+
+> $\int{x^me^{nx}dx}=\frac{1}{n}x^me^{nx}-\frac{m}{n}\int{x^{m-1}e^{nx}dx}$
+
+例3 求${\int\frac{\arctan e^x}{e^{2x}}dx}$
+$$
+解：\int{\frac{\arctan e^x}{e^{2x}}dx}=-\frac{1}{2}\int{\arctan e^xde^{-2x}}\\
+=-\frac{1}{2}e^{-2x}\arctan e^x+\frac{1}{2}\int{e^x(\frac{1}{e^{2x}}-\frac{1}{1+e^{2x}})dx}\\
+=-\frac{\arctan e^x}{2e^{2x}}-\frac{1}{2e^x}-\frac{1}{2}\arctan e^x+C
+$$
+例4 求$\int{sec^3xdx}$
+$$
+解：\int{sec^3xdx=\int{secxd\tan x}}=\sec x\tan x-\int{\tan xd\sec x}\\
+=\sec x\tan x-\int{(\sec^3x-\sec x)dx}\\
+\int{sec^3x}=\frac{1}{2}\sec x\tan x+\frac{1}{2}\ln|\sec x+\tan x|+C
+$$
+例5 $f(x)$的一个原函数为$x\cos x$,求$\int{x\cdot f^{'}(x)dx}$
+$$
+解：由已知得，\int{f(x)dx}=x\cos x+C\\
+f(x)=(x\cos x)^{'}=\cos x-x\sin x\\
+\int{x\cdot f^{'}(x)dx}=\int{xdf(x)}=xf(x)-\int{f(x)dx}\\
+=x(\cos x-x\sin x)-x\cos x+C=-x^2\sin x+C
+$$
+例6 设$F(x)是f(x)$ 的原函数，	且当$x\ge0时$，$f(x)\cdot F(x)=\frac{xe^x}{2(1+x)^2}$,已知$F(0)=1,F(x)\gt0$.求$f(x)$
+$$
+解：有已知得 F^{'}(x)=f(x)\\
+f(x)\cdot F(x)=\frac{xe^x}{2(1+x)^2}两边求积分\\
+\int{f(x)\cdot F(x)dx}=\int{\frac{xe^x}{2(1+x)^2}}dx\\
+F^2(x)=-\int{xe^xd(\frac{1}{1+x})}=\frac{e^x}{1+x}+C\\
+因为F(0)=1,所以C=0\\
+因为x\ge0时，F(x)\gt0,所以F(x)=\sqrt{\frac{e^x}{1+x}}\\
+f(x)=F^{'}(x)=(\sqrt{\frac{e^x}{1+x}})^{'}=\frac{1}{2}\frac{1}{\sqrt{\frac{e^x}{1+x}}}\cdot\frac{xe^x}{(1+x^2)}\\
+=\frac{xe^{\frac{1}{2}}}{2(1+x)^{\frac{3}{2}}}
+$$
+
+## 6 表格法积分
+
+函数$u(x),v(x), n+1阶可导$
+$$
+\int{uv^{(n+1)}dx}反复使用分部积分可得\\
+\int{uv^{(n+1)}dx}=\int{udv^{(n)}}=uv^{(n)}-\int{u^{'}v^{(n)}dx}\\
+=uv^{(n)}-u^{'}v^{(n-1)}+\int{u^{''}v^{(n-1)}dx}\\
+=uv^{(n)}-u^{'}v^{(n-1)}+u^{''}v^{(n-2)}-\int{u^{'''}v^{(n-2)}dx}\\
+=uv^{(n)}-u^{'}v^{(n-1)}+u^{''}v^{(n-2)}+\cdots+(-1)^nu^{(n)}v+(-1)^{n+1}\int{u^{(n+1)}vdx}
+$$
+表格如下：
+
+![20230310-表格法分部积分.drawio](/math/note/高等数学/04不定积分/L:/BaiduSyncdisk/study/math/note/04不定积分/images/20230310-表格法分部积分.drawio.png)
+
+例1 求$\int{(x^3+2x)\sin xdx}$
+$$
+解：\int{(x^3+2x)\sin xdx}=-(x^3+2x)\cos x+(3x^2+2)\sin x+6x\cos x-6\sin x+C\\
+=(3x^2-4)\sin x-(x^3-4x)\cos x+C
+$$
+例2 $\int{e^{3x}\sin2xdx}$
+$$
+解：\int{e^{3x}\sin2xdx}=-\frac{1}{2}e^{3x}\cos2x+\frac{3}{4}e^{3x}\sin2x-\int{\frac{9}{4}e^{3x}\sin2xdx}\\
+\int{e^{3x}\sin2xdx}=-\frac{2}{13}e^{3x}\cos2x+\frac{3}{13}e^{3x}\sin2x+C
+$$
+
+## 7 有理函数求积分
+
+例1 求$\int{\frac{x^3+1}{x(x-1)^3}dx}$
+$$
+解：{\frac{x^3+1}{x(x-1)^3}}=\frac{a}{x}+\frac{b}{(x-1)^3}+\frac{c}{(x-1)^2}+\frac{d}{x-1}\\
+通分得，a(x-1)^3+bx+cx(x-1)+dx(x-1)^2=x^3+1\\
+计算得a=-1,b=2,c=1,d=2,所以\\
+\int{\frac{x^3+1}{x(x-1)^3}}=\int{(\frac{-1}{x}+\frac{2}{x-1}+\frac{1}{(x-1)^2}+\frac{2}{(x-1)^3})dx}=-\ln|x|+2\ln|x-1|-\frac{1}{x-1}-\frac{1}{(x-1)^2}+C
+$$
+例2 求$\int{\frac{2x+2}{(x-1)(x^2+1)^2}dx}$
+$$
+解：\frac{2x+2}{(x-1)(x^2+1)^2}=\frac{a}{x-1}+\frac{b_1x+c_1}{x^2+1}+\frac{b_2x+c_2}{(x^2+1)^2}\\
+通分得，a(x^2+1)^2+(b_1x+c_1)(x-1)(x^2+1)+(b_2x+c_2)(x-1)=2x+2\\
+计算得，a=1,b_1=-1,c_1=-1,b_2=-2,c_2=0\\
+\int{\frac{2x+2}{(x-1)(x^2+1)^2}}=\int{(\frac{1}{x-1}-\frac{x+1}{x^2+1}-\frac{2x}{(x^2+1)^2})dx}\\
+=\ln|x-1|-\frac{1}{2}\ln|x^2+1|-\arctan x+\frac{1}{x^2+1}+C
+$$
+例3 求$\int{\frac{1}{8-4\sin x+7\cos x}dx}$
+$$
+令\tan\frac{x}{2}=t,x=2\arctan t,dx=\frac{2}{1+t^2}\\
+\int{\frac{1}{8-4\sin x+7\cos x}dx}=\int{\frac{1}{8-4\frac{2t}{1+t^2}+7\frac{1-t^2}{1+t^2}}\cdot\frac{2}{1+t^2}dt}\\
+=\int{(\frac{1}{t-5}-\frac{1}{t-3})dt}=\ln|\frac{t-5}{t-3}|+C
+=\ln|\frac{\tan\frac{x}{2}-5}{\tan\frac{x}{2}-3}|+C
+$$
+
+> $\int{\frac{a\sin x+b\cos x}{c\sin x+d\cos x}dx}=\int{\frac{A(c\sin x+d\cos x)+B(c\sin x+d\cos x)^{'}}{c\sin x +d\cos x}dx}$
+
+例4 求$\int{\frac{4\sin x+3\cos x}{2\sin x-\cos x}dx}$
+$$
+解:原式=\int{\frac{a(2\sin x-\cos x)+b(2\sin x-\cos x)^{'}}{2\sin x-\cos x}dx}\\
+a =1,b=2\\
+原式=x+\frac{2}{2\sin x-\cos x}d(2\sin x-\cos x)=x+2\ln|2\sin x-\cos x|+C
+$$
+
+
+##  后记
+
+
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p31.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/04%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/0405%E4%B9%A0%E9%A2%98%E6%80%BB%E7%BB%93-%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq7l12l0019wu211wwb2r5x" data-title="0405习题总结-不定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/05定积分/0505习题-定积分" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0505%E4%B9%A0%E9%A2%98-%E5%AE%9A%E7%A7%AF%E5%88%86/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0505%E4%B9%A0%E9%A2%98-%E5%AE%9A%E7%A7%AF%E5%88%86/">0505习题-定积分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 定积分总结](#1-定积分总结)
+- [2 练习](#2-练习)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 1 定积分总结
+
+定积分思维导图如下1-1所示，文件在末尾仓库中自取。
+
+![定积分](/math/note/高等数学/05定积分/L:/BaiduSyncdisk/study/math/note/05定积分/images/定积分.png)
+
+## 2 练习
+
+例1 设在区间$[a,b]$上，$f(x)\gt0,f^{'}(x)\lt0,f^{''}(x)\gt0，记S_1=\int_a^bf(x)dx,S_2=f(b)(b-a),S_3=\frac{1}{2}[f(b)+f(a)](b-a)$,则
+
+$（A) S_1\lt S_2\lt S_3\quad(B)S_2\lt S_1\lt S_3\quad(C)S_3\lt S_1\lt S_2\quad(D)S_2\lt S_3\lt S_1$
+
+分析含有定积分，区间断点比较大小，直观方式就是根据其几何意义来判断：
+
++ $f(x)\gt0$图像在x轴上方；$f^{'}(x)\lt0$,函数单减；$f^{''}(x)\gt0$,函数凹函数；
+
+图像如下2-1所示：
+
+![例1](/math/note/高等数学/05定积分/L:/BaiduSyncdisk/study/math/note/05定积分/images/例1.bmp)
+
+$S_2为红线与x=a,x=b,x轴围成的面积，S_1为绿线与其他三边围成的面积，S_3为蓝线与其他三边围成的面积，∴S_2\lt S_1\lt S_3$
+
+
+
+例2 求$\lim\limits_{x\to\infty}(\frac{1}{\sqrt{n^2+1}}+\frac{1}{\sqrt{n^2+2}}+\cdots+\frac{1}{\sqrt{n^2+n}})$
+
+分析：形式数列求和的极限；区间$[0,1]的定积分\int_0^1f(x)dx=\lim\limits_{n\to\infty}\displaystyle\sum_{k=1}^nf(\frac{i}{n})\frac{1}{n}$
+$$
+解：\lim\limits_{x\to\infty}(\frac{1}{\sqrt{n^2+1}}+\frac{1}{\sqrt{n^2+2}}+\cdots+\frac{1}{\sqrt{n^2+n}})=\lim\limits_{n\to\infty}\displaystyle\sum_{k=1}^n\frac{1}{\sqrt{1+(\frac{i}{n})^2}}\frac{1}{n}=\int_0^1\frac{dx}{\sqrt{1+x^2}}\\
+=\ln(x+\sqrt{1+x^2})|_0^1=\ln(1+\sqrt2)
+$$
+例3 已知$f(x)=x-2\int_0^1f(x)dx,求\int_0^1f(x)dx及f(x)$
+$$
+解：设\int_0^1f(x)dx=A,则\\
+f(x)=x-2A,\int_0^1f(x)dx=(\frac{1}{2}x^2-2Ax)|_0^1=\frac{1}{2}-2A=A\\
+A=\frac{1}{6},f(x)=x+\frac{1}{6}
+$$
+
+
+例4 设$I=\int_0^\frac{\pi}{4}\ln\sin xdx,J=\int_0^\frac{\pi}{4}\ln\cot xdx,K=\int_0^\frac{\pi}{4}\ln\cos xdx,则I，J，K的大小关系是（）$
+$$
+解：当x\in[0,\frac{\pi}{4}]时，\sin x\le\cos x\le\cot x\\
+∵\ln x为单增函数 所以\ln\sin x\le\ln\cos x\le\ln\cot x\\
+根据性质4推论1有 \quad I\lt K\lt J
+$$
+例5 求由方程$x+y^2+\int_0^1\arctan xdx=\int_0^{y-x}\sin^2tdt$​ 所确定的导数$\frac{dy}{dx}$
+$$
+解：隐函数求导，上式两边对x求导\\
+1+2yy^{'}+0=\sin^2(y-x)(y^{'}-1)\\
+\frac{dy}{dx}=y^{'}=\frac{\sin^2(y-x)+1}{\sin^2(y-x)-2y}
+$$
+例6 求$\lim\limits_{x\to0}\frac{\int_0^{\sin^2x}\ln(1+t)dt}{\sqrt{1+x^4}-1}$​
+$$
+解：上式为带积分上限函数的\frac{0}{0}型未定式，考虑使用洛必达法则\\
+x\to0时，(1+x)^\alpha-1\backsim \alpha x,\ln(1+x)\backsim x\\
+\lim\limits_{x\to0}\frac{\int_0^{\sin^2x}\ln(1+t)dt}{\sqrt{1+x^4}-1}=\lim\limits_{x\to0}\frac{\frac{d}{dx}\int_0^{\sin^2x}\ln(1+t)dt}{(\frac{1}{2}x^4)^{'}}=\lim\limits_{x\to0}\frac{\ln(1+\sin^2x)2\sin x\cos x}{2x^3}\\
+=\lim\limits_{x\to0}\frac{2\sin^3x\cos x}{2x^3}=1
+$$
+例7 求$\int_{-2}^2\frac{x+|x|}{2+x^2}dx$
+
+分析：对称区间，考虑奇偶性
+$$
+解：\int_{-2}^2\frac{x+|x|}{2+x^2}dx=\int_{-2}^2\frac{x}{2+x^2}dx+\int_{-2}^2\frac{|x|}{2+x^2}dx=0+2\int_0^2\frac{x}{2+x^2}dx\\
+=\ln(2+x^2)|_0^2=\ln3
+$$
+例8  设函数$f(x),g(x)在区间[-a,a]上连续，g(x)为偶函数，f(x)满足f(x)+f(-x)=C,C为常数$
+
+（1）证明$\int_{-a}^af(x)g(x)dx=C\int_0^ag(x)dx$
+
+（2）利用上述结果，求$I=\int_{-\frac{\pi}{2}}^\frac{\pi}{2}\cos^4x\cdot\ln(x+\sqrt{4+x^2})dx$
+$$
+（1）证明：已知\int_{-a}^af(x)dx=\int_0^a[f(x)+f(-x)]dx,g(x)=g(-x)则\\
+\int_{-a}^af(x)g(x)dx=\int_0^a[f(x)g(x)+f(-x)g(-x)]dx=\int_0^a[f(x)+f(-x)]g(x)dx\\
+=C\int_0^ag(x)dx
+（2）解：令g(x)=\ln(x+\sqrt{4+x^2}),f(x)=\cos^4x,则\\
+f(x)+f(-x)=\ln(x+\sqrt{4+x^2)})+\ln(-x+\sqrt{4+x^2})=ln4\\
+I=\ln4\int_0^\frac{\pi}{2}\cos^4xdx=\ln4\cdot\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}=\frac{3\pi}{8}\ln2
+$$
+例9 求$I=\int_0^{98\pi}\sqrt{1-\cos2x}dx$​
+$$
+解：I=\int_0^{98\pi}\sqrt{1-\cos2x}dx=\int_0^{98\pi}\sqrt2|\sin x|dx\\
+|\sin x|周期为\pi\\
+∴I=98\sqrt2\int_0^\pi\sin xdx=-98\sqrt2\cos x|_0^\pi=196\sqrt2
+$$
+例10 求设
+$$
+f(x)=
+\begin{cases}
+\frac{1}{1+x},\quad x\ge0\\
+\frac{1}{1+e^x},\quad x\lt0\\
+\end{cases}
+$$
+求$\int_0^2f(x-1)dx$ 
+
++ 分析定积分积分变量为x-1而给定的是关于x的表达式，所以需要进行变量替换
+
+$$
+解：令x-1=t,dx=dt\\
+\int_0^2f(x-1)dx=\int_{-1}^1f(t)dt\\
+定积分和积分变量无关,\\
+∴\int_{-1}^1f(x)dx=\int_{-1}^0f(x)dx+\int_0^1f(x)dx\\
+=\int_{-1}^0\frac{1}{1+e^x}dx+\int_0^1\frac{1}{1+x}dx\\
+=1-\int_{-1}^0\frac{e^x}{1+e^x}dx+\ln(1+x)|_0^1\\
+= 1-\ln(1+e^x)|_{-1}^0+\ln2=\ln(e+1)
+$$
+
+例11 已知$f(2)=\frac{1}{2},f^{'}(2)=0,\int_0^2f(x)dx=1,求\int_0^1x^2f^{''}(2x)dx$
+$$
+解：令2x=t,dx=\frac{1}{2}dt\\
+\int_0^1x^2f^{''}(2x)dx=\frac{1}{2}\int_0^2(\frac{1}{2}t)^2f^{''}(t)dt=\frac{1}{8}\int_0^2x^2df^{'}(x)\\
+=[\frac{1}{8}x^2f^{'}(x)]|_0^2-\frac{1}{4}\int_0^2xdf(x)\\
+=-\frac{1}{4}xf(x)|_0^2+\frac{1}{4}\int_0^2f(x)dx=-\frac{1}{4}+\frac{1}{4}=0
+$$
+例12 计算反常积分$I=\int_1^{+\infty}\frac{dx}{x\sqrt{1+x^5+x^{10}}}dx$​
+$$
+解：令x=\frac{1}{t},dt=-\frac{1}{t^2}\\
+\int_1^{+\infty}\frac{dx}{x\sqrt{1+x^5+x^{10}}}=-\int_1^0\frac{1}{t^2}\cdot\frac{1}{\frac{1}{t}\sqrt{1+(\frac{1}{t})^5+(\frac{1}{t})^{10}}}dt\\
+=\frac{1}{5}\int_0^1\frac{1}{(t^5+\frac{1}{2})^2+\frac{3}{4}}d(t^5+\frac{1}{2})\\
+=[\frac{1}{5}\ln(t^5+\frac{1}{2}+\sqrt{t^10+t^5+1})]|_0^1=\frac{1}{5}\ln(3+2\sqrt3)
+$$
+例13 设f(x)在区间[0,1]上可微，且满足$f(1)=2\int_0^\frac{1}{2}xf(x)dx$,试证明在$(0,1)$内至少存在一点$\xi,使f(\xi)+\xi f^{'}(\xi)=0$
+$$
+证明：令F(x)=xf(x),f(x)在[0,1]上可微，则F(x)在[0,1]上连续，在(0,1)可导\\
+∵F(1)=f(1)=2\int_0^\frac{1}{2}xf(x)dx,根据定积分中值定理有\\
+\exist \xi\in[0,\frac{1}{2}],使得\\
+2\int_0^{\frac{1}{2}}xf(x)dx=2\cdot\theta f(\theta)(\frac{1}{2}-0)=\theta f(\theta)=F(\theta)\\
+即\exist\theta\in[0,\frac{1}{2}]\subset(0,1),使得F(1)=F(\theta),根据罗尔定理有\\
+\exist\xi\in(0,1)使得F^{'}(\xi)=0,即\\
+f(\xi)+\xi f^{'}(\xi)=0
+$$
+
+例14 设$f^{'}(x)在[0,a]$上连续，且$f(0)=0$。证明：$|\int_0^af(x)dx|\le\frac{Ma^2}{2},其中M=max|f^{'}(x)|,0\le x\le a$
+$$
+证明：[0,a]上，根据拉格朗日中值定理有\\
+f(x)-f(0)=f^{'}(\xi)(x-0)(\xi\in(0,a)),即\\
+f(x)=f^{'}(\xi)x\\
+|\int_0^af(x)dx|\le\int_0^a|f(x)|dx\le\int_0^aMxdx\\
+=\frac{1}{2}Mx^2|_0^a=\frac{Ma^2}{2}\\
+∴|\int_0^af(x)dx|\le\frac{Ma^2}{2}
+$$
+
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p224-269.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p37.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/05%E5%AE%9A%E7%A7%AF%E5%88%86/0505%E4%B9%A0%E9%A2%98-%E5%AE%9A%E7%A7%AF%E5%88%86/" data-id="cmmq7l12n001fwu2151isgmlr" data-title="0505习题-定积分" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/06定积分的应用/060202体积弧长-定积分在几何学上的应用-定积分的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060202%E4%BD%93%E7%A7%AF%E5%BC%A7%E9%95%BF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060202%E4%BD%93%E7%A7%AF%E5%BC%A7%E9%95%BF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/">060202体积弧长-定积分在几何学上的应用-定积分的应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [2 体积](#2-体积)
+  * [2.1 旋转体的体积](#21-旋转体的体积)
+  * [2.2 平行截截面面积已知的立体的体积](#22-平行截截面面积已知的立体的体积)
+  * [2.3 例题](#23-例题)
+- [3 平面曲线的弧长](#3-平面曲线的弧长)
+  * [2.1 直接坐标系](#21-直接坐标系)
+  * [2.2 参数方程](#22-参数方程)
+  * [2.3 极坐标系](#23-极坐标系)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 2 体积
+
+### 2.1 旋转体的体积
+
+情形①平面图形由$y=f(x),y=0,x=a,x=b$所围成，其绕x轴一周所得旋转体的体积，如下图2.1-1所示：
+
+![20230414-axis-x-rotating-body](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230414-axis-x-rotating-body.jpg)
+$$
+解：积分变量x，积分区间[a,b]\\
+\begin{aligned}
+&dv=\pi f^2(x)\mathrm{d}x\\
+&v=\pi\int_a^bf^2(x)\mathrm{d}x
+\end{aligned}
+$$
+②平面图形由$x=g(y),x=0,y=c,y=d$所围成，其绕y轴选择一周所得旋转体体积，如下图2.1-2所示：
+
+![2023-04-14_axis-y-rotating](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-14_axis-y-rotating.png)
+$$
+解：积分变量y，积分区间[d,c]\\
+\begin{aligned}
+&dv=\pi g^2(y)dy\\
+&v=\pi\int_d^c g^2(y)dy
+\end{aligned}
+$$
+③平面图形由$y=f(x),y=0,x=a,x=b$所围成，其绕y轴旋转一周所得的体积，如下图2.1-3所示：
+
+![2023-04-14_axis-y-rotating-xa-xb-y0-fx](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-14_axis-y-rotating-xa-xb-y0-fx.png)
+
++ 计算方式
+
+    + 方式一：紫色体积=大圆柱体积-绿色体积，很麻烦
+
+    $$
+    解：V=\pi b^2f(b)-\pi a^2f(a)-\int_a^b f^{-1}(y)dy
+    $$
+
+    + 方式二（推荐）：**柱壳法**，如下图2.1-4所示：![2023-04-14_cylindrical-shell](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-14_cylindrical-shell.png)
+
+        + 分析：$[a,b]任取一小段x到x+dx$，其绕y轴旋转一周，任意位置将其沿y轴剪开，即为下面图行所示的长方体$f(x),2\pi x,dx$
+            $$
+            解：积分变量x，积分区间[a,b]，柱壳法计算\\
+            \begin{aligned}
+            &dv=2\pi xf(x)dx\\
+            &v=2\pi\int_a^bxf(x)dx
+            \end{aligned}
+            $$
+            
+
+④平面图像由$x=f(x),x=g(x),x=a,x=b$所围成，其绕x轴旋转一周的旋转体体积，如下2.1-5所示：
+
+![2023-04-14_double-curve-axis-rotate](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-14_double-curve-axis-x-rotate.png)
+$$
+解：绕x轴旋转\\
+v=\pi\int_a^b|f^2(x)-g^2(x)|dx\\
+$$
+⑤平面图像由$x=f(y),x=g(y),y=a,y=b$所围成，其绕y轴旋转一周的旋转体体积，如下2.1-6所示：
+
+![2023-04-14_double-curve-axis-y-rotate](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-14_double-curve-axis-y-rotate.png)
+$$
+绕y轴旋转\\
+v=\pi\int_a^b|f^2(y)-g^2(y)|dy\\
+$$
+⑥ $1^\degree\quad 由y=f(x),y=0,x=a,x=b$所围图形绕$x=c,y=d$旋转一周所得旋转体的体积，如下图2.1-7所示：
+
+![2023-04-16_fxy_xab](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_fxy_xab.png)
+$$
+解：柱壳法，当c\lt a时，dv=2\pi(x-c)f(x)dx,v=2\pi\int_a^b(x-c)f(x)dx\\
+当c\gt a时，v=2\pi\int_a^b(c-x)dx\\
+∴v=2\pi\int_a^b|x-c|f(x)dx
+
+图形绕y=d旋转时，
+ v=\pi|\int_a^b[f(x)-d]^2-d^2|dx
+$$
+$2^\degree\quad由y=f(x),y=g(x),x=a,x=b$所围成图形绕$x=c,y=d$旋转一周所得旋转体的体积，如下图2.1-8所示：
+
+![2023-04-16_fx_gx_y_xab](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_fx_gx_y_xab.png)
+$$
+解：绕x=c所得旋转体体积：\\
+v=2\pi\int_a^b|(x-c)[f(x)-g(x)]|dx\\
+绕y=d所得旋转体体积：\\
+v=\pi\int_a^b|[f(x)-d]^2-[g(x)-d]^2|dx
+$$
+$3^\degree\quad由x=g(y),x=0,y=c,y=d$所围图形绕$x=a,y=b$旋转一周所得旋转体的体积，如下图2.1-9所示：
+
+![2023-04-16_gy_x0_yc_yd](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_gy_x0_yc_yd.png)
+$$
+解：绕x=a体积v=\pi\int_c^d|[g(y)-a]^2-a^2|dy\\
+绕y=b体积v=2\pi\int_c^d|y-b|g(y)dy
+$$
+$4\degree\quad由x=\xi(y),y=\phi(y),y=c,y=d$所围图形绕$x=a,x=b$旋转一周所得旋转体的体积，如下图2.1-10所示：
+
+![2023-04-16_φy_ξy_yc_yd](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_φy_ξy_yc_yd.png)
+$$
+解：绕x=a体积v= \pi\int_c^d|[\xi(y)-a]^2-[\phi(y)-a]^2|dx\\
+绕y=b体积v=2\pi\int_c^d|y-b|[\xi(y)-\phi(y)]dy
+$$
+
+
+### 2.2 平行截截面面积已知的立体的体积
+
+一般，设有立体位于x轴上$a,b点之间，\forall x\in[a,b]$过x点的立体截面面积已知为A(x),求物体体积，如下图2.2-1所示：
+
+![2023-04-16_截面积](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_截面积.png)
+$$
+解：v=\int_a^bA(x)dx
+$$
+
+### 2.3 例题
+
+例1 连接坐标原点0及点p(h,r)的直线直线x=h及x轴围成的直角三角形绕x轴一周所得圆锥体的体积，如下图2.3-1所示：
+
+![2023-04-16_0_hr_x](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_0_hr_x.png)
+$$
+解：去x为积分变量，积分区间[0,h],则\\
+v=\int_0^h\pi(x\frac{r}{h})^2dx=\frac{r^2}{h^2}\pi\int_0^hx^2dx\\
+=\frac{\pi r^2h}{3}
+$$
+例2 计算椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$所围图形绕$x$轴一周所围成旋转体的体积，如下图2.3-2所示：
+
+![ellipsoid](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/ellipsoid.png)
+$$
+解：由图纸椭球体左右对称，我们计算x\gt0的部分\\
+y=b\sqrt{1-\frac{x^2}{a^2}},去x为积分变量，变化区间为[0,a]\\
+v=2\int_0^a\pi y^2dx=2\pi\int_0^a(b\sqrt{1-\frac{x^2}{a^2}})^2dx\\
+=2b^2\pi\int_0^a(1-\frac{x^2}{a^2})dx=\frac{4}{3}ab^2\pi
+$$
+注：
+
++ 如果绕y轴旋转所得旋转体体积为：$\frac{4}{3}\pi a^2b$
+
+例3 有摆线
+$$
+\begin{cases}
+x=a(t-\sin t)\\
+y=a(1-\cos t)
+\end{cases}
+的一拱与y=0所围成图形
+$$
+分别绕x,y轴旋转所得旋转体的体积,如下图2.3-3所示：
+
+![2023-04-16_cycloid](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-16_cycloid.png)
+$$
+解：绕x轴旋转，取积分变量x，变化区间为[0,2\pi a]\\
+v=\int_0^{2\pi a}\pi y^2dx=\pi\int_0^{2\pi}a^2(1-\cos t)^2d[a(t-\sin t)]\\
+=\pi a^3\int_0^{2\pi}(1-\cos t)^3dt=\pi a^3\int_0^{2\pi}(1-3\cos t+3\cos^2t-\cos^3t)dt\\
+=\pi a^3(2\pi-0+12\cdot\frac{1}{2}\cdot\frac{\pi}{2}-0)=5\pi^2a^3\\
+绕y轴旋转体，柱壳法，取积分变量x，变化区间[0,2\pi a]\\
+v=\int_0^{2\pi a}2\pi xf(x)dx=2\pi\int_0^{2\pi}a(t-\sin t)\cdot a(1-\cos t)d[a(t-\sin t)]\\
+=2\pi a^3\int_0^{2\pi}(t-\sin t	-2t\cos t+2\sin t\cos t-\sin t\cos^2t+t\cos^2t)dt\\
+=6\pi^3a^3
+$$
+
+ 例4 求由圆$(x-2)^2+y^2=1绕x=-1$旋转而成旋转体的体积，如下图2.3-4所示：
+
+![2023-04-17_donut](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-17_donut.png)
+$$
+解：方法一，积分变量取y，积分区间[-1,1]\\
+v=\int_{-1}^1[\pi(2+\sqrt{1-y^2}+1)^2-\pi(2-\sqrt{1-y^2}+1)^2]dx\\
+=2\pi\int_0^16\cdot2\sqrt{1-y^2}dy=24\pi(\frac{y}{2}\sqrt{1-y^2}+\frac{1}{2}\arcsin x)|_0^1=6\pi^2\\
+方法二,积分变量取x，积分区间[1,3]\\
+v=\int_1^3 2\pi(x+1)\cdot2\sqrt{1-(x-2)^2}dx=4\pi\int_1^3(x+1)\sqrt{1-(x-2)^2})dx\\
+令x-2=sin t,t\in[-\frac{\pi}{2},\frac{\pi}{2}]\\
+v=4\pi\int_{-\frac{\pi}{2}}^\frac{\pi}{2}(\sin t+3)\cos^2tdt=0+24\pi\int_0^\frac{\pi}{2}\cos^2tdt=6\pi^2
+$$
+
+例5 一平面经过半径为R的圆柱体底圆中心且与底面之角为$\alpha$，计算平面截圆柱体所得立体的体积，如下图2.3-5所示：
+
+![20230414-cylinder_cut](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230414-cylinder_cut.png)
+$$
+解：取平面与圆柱体地面交线为x轴，地面上过圆心且垂直于x轴的直线为y轴，那么底原方程x^2+y^2=R^2\\
+A(x)=\frac{1}{2}\sqrt{R^2-x^2}\cdot\sqrt{R^2-x^2}\cdot\tan\alpha\\
+v=\frac{1}{2}\tan\alpha\int_{-R}^R(R^2-x^2) dx=\tan\alpha\int_0^R(R^2-x^2)dx\\
+=\frac{2}{3}R^3\tan\alpha
+$$
+例6 求以半径为R的圆为底、平行且等于底圆直径的线段为顶、高为h的正劈锥体的体积，如下图所示：
+
+![2023-04-18_regular-cone](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-18_regular-cone.png)
+$$
+解：取底圆所在平面为xoy平面，圆心o为原点，并使x轴与正劈锥的顶平行。底圆方程x^2+y^2=R^2\\
+A(x)=\sqrt{R^2-x^2}h\\
+v=\int_{-R}^RA(x)dx=2h\int_0^R\sqrt{R^2-x^2}dx=\frac{\pi R^2h}{2}
+$$
+
+
+## 3 平面曲线的弧长
+
+已知一平面曲线$y=f(x),x\in[a,b],f(x)$具有一阶连续导，求该曲线弧$\overparen{AB}$的长度，如下图3-1所示：
+
+![20230414-arc_len](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230414-arc_len.png)
+
+复习：弧微分$ds=\sqrt{(dx)^2+(dy)^2}$
+
+以下我们省略求定积分的过程分隔、取近似值、求和、求极限
+
+### 2.1 直接坐标系
+
+弧长$s=\int_a^b\sqrt{1+(y^{'})^2}dx$
+
+例1 求$y=\frac{2}{3}x^\frac{3}{2}$上相应于从$a到b$的一段弧的长度，如下图2.1-1所示：
+
+![20230414-arc_prob1](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230414-arc_prob1.png)
+$$
+解：弧长s=\int_a^b\sqrt{1+(y^{'})^2}dx=\int_a^b\sqrt{1+x}dx=\frac{2}{3}(1+x)^\frac{3}{2}|_a^b=\frac{2}{3}[(1+b)^\frac{3}{2}-(1+a)^\frac{3}{2}]
+$$
+例2 计算半立方抛物线$y^2=\frac{2}{3}(x-1)^3$被抛物线$y^2=\frac{x}{3}$截得的一段弧的长度，如下图2.1-2所示：
+
+![2023-04-18_semi-cubical-parabola](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-18_semi-cubical-parabola.png)
+$$
+解：方程组
+\begin{cases}
+&y^2=\frac{2}{3}(x-1)^3,\\
+&y^2=\frac{x}{3}
+\end{cases}
+的x=2,y=\pm\frac{\sqrt{6}}{3}\\
+s=\int_1^2\sqrt{1+(y^{'})^2}dx=\int_1^2\sqrt{1+\frac{3}{2}(x-1)}dx\\
+=\frac{8}{9}[\frac{5}{2}^\frac{3}{2}-1]
+$$
+
+
+### 2.2 参数方程
+
+设曲线$y=f(x)的参数方程为$
+$$
+\begin{cases}
+x=\phi(t)\\
+y=\xi(t)
+\end{cases}
+,(\alpha\lt t\lt\beta)\\
+$$
+在$[\alpha,\beta]$上具有连续导数。
+
+则$ds=\sqrt{(dx)^2+(dy)^2}=\sqrt{[\phi^{'}(t)]^2+[\xi^{'}(t)]^2}$
+
+​	$s=\int_\alpha^\beta\sqrt{[\phi^{'}(t)]^2+[\xi^{'}(t)]^2}dt$
+
+例题 计算摆线
+$$
+\begin{cases}
+x=a(\theta-\sin \theta)\\
+y=a(1-\cos\theta)
+\end{cases}
+
+$$
+的一拱$(0\le\theta\le2\pi)$的长度,如下图2.2-1所示：
+
+![2023-04-18_cycloid-arc-length](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-18_cycloid-arc-length.png)
+$$
+解：s=\int_0^{2\pi}\sqrt{(x^{'})^2+(y^{'})^2}d\theta=\int_0^{2\pi}\sqrt{a^2(1-\cos\theta)^2+a^2\sin^2\theta}d\theta\\
+=\sqrt{2}a\int_0^{2\pi}\sqrt{1-\cos\theta}d\theta=8a
+$$
+
+
+### 2.3 极坐标系
+
+设曲线极坐标方程为$\rho=\rho(\theta),(\alpha\lt\theta\lt\beta)$。其中$\rho=\rho(\theta)在[\alpha,\beta]$上具有连续导数。
+
+则直接坐标系参数方程是
+$$
+\begin{cases}
+x=\rho(\theta)\cdot\cos\theta\\
+y=\rho(\theta)\cdot\sin\theta
+\end{cases}
+,(\alpha\lt \theta\lt\beta)
+$$
+弧长元素：$ds=\sqrt{(dx)^2+(dy)^2}d\theta=\sqrt{\rho^2(\theta)+(\rho^{'}(\theta))^2}d\theta$
+
+弧长：$s=\int_\alpha^\beta\sqrt{\rho^2(\theta)+(\rho^{'}(\theta))^2}d\theta$
+
+例题：求阿基米德螺线$\rho=a\theta(a\gt0)$相应于$\theta从0到2\pi$的弧长，如下图2.3-1所示：
+
+![2023-04-12_Archimedes spiral](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-12_Archimedes spiral.png)
+$$
+解：s=\int_0^{2\pi}\sqrt{\rho^2(\theta)+(\rho^{'}(\theta))^2}d\theta\\
+=\int_0^{2\pi}\sqrt{a^2\theta^2+a^2}d\theta=\frac{a}{2}[2\pi\sqrt{1+4\pi^2}+\ln(2\pi+\sqrt{1+4\pi^2})]
+$$
+
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p276-286.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p39.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060202%E4%BD%93%E7%A7%AF%E5%BC%A7%E9%95%BF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq7l12o001hwu21eyxib8qg" data-title="060202体积弧长-定积分在几何学上的应用-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/06定积分的应用/060201面积-定积分在几何学上的应用-定积分的应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060201%E9%9D%A2%E7%A7%AF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060201%E9%9D%A2%E7%A7%AF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/">060201面积-定积分在几何学上的应用-定积分的应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 平面图形的面积](#1-平面图形的面积)
+  * [1.1 直角坐标情形](#11-直角坐标情形)
+  * [1.2 极坐标情形](#12-极坐标情形)
+    + [1.2.1 极坐标的定义](#121-极坐标的定义)
+    + [1.1.2 曲边扇形的面积](#112-曲边扇形的面积)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 1 平面图形的面积
+
+### 1.1 直角坐标情形
+
+①平面图形由$y=f(x),y=0,x=a,y=b$围成图像的面积，如下图1.1-1所示：
+
+![20230405-直角坐标1](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230405-直角坐标1.bmp)
+
+   $s=\int_a^bf(x)dx$                                              $s=\int_a^b|f(x)|dx$                               $s=\int_a^b|f(x)|dx$
+
+综上面积$s=\int_a^b|f(x)|dx$
+
+②平面图形由$y=f(x),y=g(x),x=a,x=b$所围成图像的面积，如下图1.1-2所示：
+
+![20230405-直角坐标2](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230405-直角坐标2.bmp)
+
+​        $s=\int_a^b[f(x)-g(x)]dx$                          $s=\int_a^b|f(x)-g(x)|dx$            $s=\int_a^b|f(x)-g(x)|dx$
+
+综上面积$s=\int_a^b|f(x)-g(x)|dx$
+
+③平面图形由$x=f(y),x=0,y=a,y=b$围成图形面积，如下图1.1-3所示：
+
+![20230405-直角坐标3](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230405-直角坐标3.bmp)
+
+面积$s=\int_a^b|f(y)|dy$
+
+④平面图形由$x=f(y),x=g(y),y=a,y=b$所围成图像面积，如下图1.1-4所示：
+
+![20230405-直角坐标4](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230405-直角坐标4.bmp)
+
+面积$s=\int_a^b|f(y)-g(y)|dy$
+
+
+
+例1 求区间$[\frac{1}{2},2]$上连续曲线$y=\ln x,x轴及直线x=\frac{1}{2},x=2$所围图像的面积，如下图1-1所示：
+
+![20230407-ln-1_2-2](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230407-ln-1_2-2.png)
+$$
+解：dS=\ln xdx,x\in[\frac{1}{2},2]\\
+S=\int_\frac{1}{2}^2dS=\int_\frac{1}{2}^2\ln xdx=-\int_\frac{1}{2}^1ln xdx+\int_1^2\ln xdx\\
+=-(x\ln x-x)|_\frac{1}{2}^1+(x\ln x-x)_1^2=\frac{3}{2}\ln2-\frac{1}{2}
+$$
+例2 求$y^2=x,y=x^2$所围图像的面积，如下图2-1所示：
+
+![20230410-x2-y2-fill](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230410-x2-y2-fill.png)
+$$
+解：解方程组
+\begin{cases}
+y^2=x\\
+y=x^2\\
+\end{cases}，交点为(0,0),(1,1)\\
+取x为积分变量，积分区间[0,1]\\
+S=\int_0^1(\sqrt{x}-x^2)dx=\frac{2}{3}x^\frac{3}{2}|_0^1-\frac{1}{3}x^3|_0^1=\frac{1}{3}
+$$
+例3 求$y^2-2x,y=x0-4$围成图像的面积，如下图3-1所示：
+
+![20230410-x_4-y2_2x-fill](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230410-x_4-y2_2x-fill.png)
+$$
+解：方程组
+\begin{cases}
+y=x-4,\\
+y^2=2x
+\end{cases} 交点为(2,-2),(8,4)\\
+取y为积分变量，则\\
+S=\int_{-2}^4(y+4-\frac{y^2}{2})dy=(\frac{1}{2}y^2+4y-\frac{1}{6}y^3)|_{-2}^4\\
+=18
+$$
+
+例4 求由曲线$y=x^2,y=\frac{x^2}{4}及y=1$所围成图像的面积，如下图4-1所示：
+
+![2023-04-11_x2-x2_4-1](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-11_x2-x2_4-1.png)
+$$
+解：由上图知，所围图像左右对称\\
+取y为积分变量，则\\
+S=2\int_0^1(2\sqrt{y}-\sqrt{y})=\frac{4}{3}y^\frac{3}{2}|_0^1=\frac{4}{3}
+$$
+
+
+例5 求椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$的面积，如下图5-1所示：
+
+![2023-04-11_x2-a2_y2-b2_1](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-11_x2-a2_y2-b2_1.png)
+$$
+解：\begin{cases}
+x=a\cos t,\\
+y=b\sin t
+\end{cases}\\
+S=4\int_0^aydx=4\int_\frac{\pi}{2}^0\sin td(a\cos t)=4ab\int_0^\frac{\pi}{2}\sin^2tdt\\
+=4ab\cdot\frac{1}{2}\cdot\frac{\pi}{2}=\pi ab
+$$
+
+
+### 1.2 极坐标情形
+
+#### 1.2.1 极坐标的定义
+
+为了表示平面上的点，在平面上取定一点$o$,称为极点。取定一条轴$ox$，称为极轴。这样在平面上建了一个坐标系，称为极坐标系。
+
+![20230412-polar](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/20230412-polar.bmp)
+
+如上图1.2.1-1所示，平面上任意一点p，设$|op|=\rho,\ang xop=\theta$,则数对$(\rho,\theta)$为点p的极坐标。
+
+极坐标与平面坐标变换公式：（原点重合）
+$$
+\begin{cases}
+x=\rho \cos\theta,\\
+y=\rho\sin\theta
+\end{cases}\\
+\qquad
+\begin{cases}
+\rho=\sqrt{x^2+y^2},\\
+\theta=\arctan\frac{y}{x}
+\end{cases}\\
+$$
+注：规定$(-\rho,\theta)=(\rho,\theta+\pi)$
+
+#### 1.1.2 曲边扇形的面积
+
+![2023-04-12_curve-sector](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-12_curve-sector.png)
+
+①曲边扇形：由$\rho=\rho(\theta),\theta=\alpha,\theta=\beta$围成的面积
+$$
+ds=\pi\rho^2(\theta)\cdot\frac{d\theta}{2\pi}=\frac{1}{2}\rho^2(\theta)d\theta\\
+S=\int_\alpha^\beta ds=\frac{1}{2}\int_\alpha^\beta\rho^2(\theta)d\theta
+$$
+②极点在曲线$\rho=\rho(\theta)内部$，所围成图像米面积
+
+​		$S=\frac{1}{2}\int_0^{2\pi}\rho^2(\theta)d\theta$
+
+③曲边扇形由$\rho=rho_1(\theta),\rho=\rho_2(\theta),\theta=\alpha,\theta=\beta$所围图形，如下图1.1.2-1所示：
+
+![2023-04-13_ρ1-ρ2-θ](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-13_ρ1-ρ2-θ.png)
+$$
+S=\frac{1}{2}\int_\alpha^\beta|\rho_1^2(\theta)-\rho_2^2(\theta)|d\theta
+$$
+例1 计算阿基米德螺线$\rho=a\theta(a\gt0)相应于\theta从0到2\pi$的弧段与极轴围成图像的面积，如下图1-1所示：
+
+![2023-04-12_Archimedes spiral](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-12_Archimedes spiral.png)
+$$
+解：S=\frac{1}{2}\int_0^{2\pi}\rho^2(\theta)d\theta=\frac{a^2}{2}\int_0^{2\pi}\theta^2d\theta\\
+=\frac{4a^2}{3}\pi^3
+$$
+例2 计算心形线$\rho=a(1+\cos\theta)(a\gt0)$所围成的图像的面积，如下图2-1所示：
+
+![2023-04-13_cardioid-line](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-13_cardioid-line.png)
+$$
+解：图形关于极轴对称,积分变量\theta,区间[0,2\pi],则\\
+S=\frac{1}{2}\int_0^{2\pi}\rho^2(\theta)d\theta=\frac{a^2}{2}\int_0^{2\pi}(1+\cos\theta)^2d\theta\\
+=\frac{a^2}{2}\int_0^{2\pi}(1+2\cos\theta+\cos^2\theta)d\theta\\
+=\pi a^2+0+2a^2\int_0^\frac{\pi}{2}\cos^2\theta d\theta=\frac{3a^2}{2}\pi
+$$
+例3 求$\rho=2a\cos\theta(a\gt0)$围成图形的面积，如下图3-1所示：
+
+![2023-04-13_acosθ](/math/note/高等数学/06定积分的应用/L:/BaiduSyncdisk/study/math/note/06定积分的应用/images/2023-04-13_acosθ.png)
+$$
+解:积分变量\theta,区间[0,2\pi],则\\
+S=\frac{1}{2}\int_{-\frac{\pi}{2}}^\frac{\pi}{2}\rho^2(\theta)d\theta=4a^2\int_0^\frac{\pi}{2}\cos^2\theta d\theta\\
+=\pi a^2
+$$
+
+
+
+注意：
+
++ 给出曲线，但不知道夹角范围，需要自己去化简。
++ 熟悉数中附录三种常见曲线。
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p276-286.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p39.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/06%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/060201%E9%9D%A2%E7%A7%AF-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%9C%A8%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/" data-id="cmmq7l12o001jwu21a0qr4hl3" data-title="060201面积-定积分在几何学上的应用-定积分的应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/07微分方程/0703齐次方程-微分方程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0703%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T17:01:19.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0703%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">0703齐次方程-微分方程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 定义和解法](#1-定义和解法)
+  * [1.1 定义](#11-定义)
+  * [1.2 微分方程中的变量替换](#12-微分方程中的变量替换)
+  * [1.3 齐次方程的解法](#13-齐次方程的解法)
+- [2 例题](#2-例题)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 1 定义和解法
+
+### 1.1 定义
+
+> 形式上可化为$\frac{dy}{dx}=g(\frac{y}{x})$的方程，称为齐次方程。
+
+例如$\frac{dy}{dx}=\frac{y}{x}+\tan\frac{y}{x},\frac{dy}{dx}=e^\frac{y}{x}$
+
+### 1.2 微分方程中的变量替换
+
+![variable-substitution.drawio](/math/note/高等数学/07微分方程/L:/BaiduSyncdisk/study/math/note/07微分方程/images/variable-substitution.drawio.png)
+
+### 1.3 齐次方程的解法
+
+$$
+解：齐次方程一般式,\frac{dy}{dx}=g(\frac{y}{x})\\
+1）做变换\\
+令u=\frac{y}{x},y=ux,u是关于x的函数，则\\
+\frac{dy}{dx}=u+x\frac{du}{dx},带入一般式，得\\
+u+x\frac{du}{dx}=g(u),分类变量\\
+\frac{du}{g(u)-u}=\frac{dx}{x}\\
+2)求解方程的通解\\
+两端积分,\int\frac{du}{g(u)-u}=\int\frac{dx}{x}\\
+得通解\phi(x,u,c)=0\\
+3)会带\\
+把u=\frac{y}{x}带回通解，得原方程的通解\\
+\phi(x,u(x,y),c)=0
+
+$$
+
+注：
+
++ 提现两个变换
+    + 换元式：$u=\frac{y}{x}$
+    + 微分式：$\frac{dy}{dx}=u+x\frac{du}{dx}$
++ 其他情况：$\frac{dx}{dy}=g(\frac{x}{y}),令u=u=\frac{x}{y},y$看做自变量
+
+
+
+
+
+## 2 例题
+
+例1 求解$\frac{dy}{dx}=\frac{y}{x}+1$
+$$
+解：齐次方程，令u=u=\frac{y}{x},则\\
+\frac{dy}{dx}=u+x\frac{du}{dx}=u+1,即\\
+du=\frac{dx}{x},两端积分\\
+\int du=\int\frac{dx}{x}，得u=\ln|x|+C\\
+u=\frac{y}{x},带回得原方程通解为：y=x\ln|x|+Cx,C\in R
+$$
+例2 求解$\frac{dy}{dx}=\frac{x+y}{x-y}$
+$$
+解：变形得,\frac{dy}{dx}=\frac{1+\frac{y}{x}}{1-\frac{y}{x}},齐次方程\\
+令u=\frac{y}{x},得\frac{dy}{dx}=\frac{1+u}{1-u}=u+x\frac{du}{dx}\\
+化简，\frac{1-u}{1+u^2}du=\frac{1}{x}dx\\
+两端积分,\int\frac{1-u}{1+u^2}du=\int\frac{1}{x}dx\\
+求解得，\arctan u+\frac{1}{2}\ln(1+u^2)=\ln|x|+C\\
+u=\frac{y}{x}带回得原方程的通解,\arctan\frac{y}{x}=\frac{1}{2}\ln(x^2+y^2)+C,C\in R
+$$
+例3 求$xydx-(x^2+y^2)dy=0$满足条件$y(1)=1$特解。
+$$
+解：原式变形，\frac{dy}{dx}=\frac{\frac{y}{x}}{1+(\frac{y}{x})^2},齐次方程\\
+令u=\frac{y}{x},\frac{dy}{dx}=u+x\frac{du}{dx}=\frac{u}{1+u^2}\\
+化简，(-\frac{1}{u^3}-\ln|u|)du=\frac{1}{x}dx\\
+两端积分,\int(-\frac{1}{u^3}-\frac{1}{u})du=\frac{1}{x}dx\\
+求解，\frac{1}{2u^2}-\ln|u|=\ln|x|+C_1,C_1\in R\\
+u=\frac{y}{x}带回得原方程的通解，x^2=2y^2\ln|y|+Cy^2,C\in R\\
+带入初始条件y|_{x=1}=1,得C=1\\
+即原方程的特解为，x^2=2y^2\ln|y|+y^2
+$$
+
++ 上式第二种解法以y为自变量，有兴趣自己试一下，更简单写。
+
+例4  探照灯聚光镜的镜面是一张旋转曲面，它的形状又xoy坐标面上的一条曲线L绕x轴旋转而成。按聚光镜性能的要求，在其旋转轴（x轴）上一点O处发出的一切光线，经它反射后都与旋转轴平行。求曲线L的方程，如下图2.4-1所示：![2023-04-25_spotlight-mirror-curve](/math/note/高等数学/07微分方程/L:/BaiduSyncdisk/study/math/note/07微分方程/images/2023-04-25_spotlight-mirror-curve.png)
+$$
+解：以光源为O点，旋转轴为x轴建立坐标系。
+设曲线y=f(x),M(x,y)为曲线上任意一点,y\ge0\\
+因为MS//x轴，\angle AMO为入射角，\angle SMT为反射角，根据光学反射定律有\\
+\angle\alpha=\angle AMO=\angle SMT,即OA=OM\\
+OM=\sqrt{x^2+y^2}=OA=AP-OP=y\cot\alpha-x=\frac{y}{y^{'}}=x\\
+化简,\frac{dx}{dy}=\sqrt{(\frac{x}{y})^2+1}+\frac{x}{y},齐次方程\\
+令u=\frac{x}{y},\frac{dx}{dy}=u+y\frac{du}{dy}=\sqrt{u^2+1}+u\\
+化简\frac{du}{\sqrt{u^2+1}}=\frac{1}{y}dy\\
+积分得,\ln(u+\sqrt{u^2+1})=\ln\frac{y}{C}\\
+化简，\frac{y^2}{C^2}-\frac{2yu}{C}=1\\
+u=\frac{x}{y}带回，得y^2=2C(x+\frac{C}{2}),C\in R
+$$
+
+$$
+
+$$
+
+
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p308-314.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p44.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/07%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/0703%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="cmmq7l12p001mwu21fztyadl4" data-title="0703齐次方程-微分方程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/12无穷级数/1201常数项级数的概念和性质-无穷级数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1201%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2026-03-05T15:31:08.000Z" itemprop="datePublished">2026-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1201%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1201常数项级数的概念和性质-无穷级数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [一 常数项级数的概念](#一-常数项级数的概念)
+- [二 常数项级数的性质](#二-常数项级数的性质)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 一 常数项级数的概念
+
+> 1. （常数项）无穷级数：形如 $u_1+u_2+\cdots+u_n+\cdots$,记作 $\displaystyle\sum_{n=1}^{\infty}{u_n}$，其中 $u_n$ 称为级数的一般项或通项。
+
++ 有限项求和，无论是1w项，1亿项，其和是确定的，即常数
++ 无线项求和结果不确定
+
+> 2. 部分和：$s_n=u_1+u_2+\cdots+u_n$,
+>
+>    $s_1=u_1,s_2=u_1+u_2,\cdots,s_n=u_1+u_2+\cdots+u_n$
+>
+>    {s_n}称为级数的部分和数列
+
+> 3. 若 $\displaystyle\sum_{n=1}^{\infty}{u_n} $ 部分和数列 ${\{s_n\}}$ 有极限 $s$ ，即 $\lim\limits_{n\to\infty}{s_n}=s$ ，则称 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛。极限 $s$ 叫做该级数的和，并写成：
+>
+>    $s=u_1+u_2+\cdots+u_n+\cdots$
+>
+>    若 $\{s_n\}$ 没有极限，则称 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 发散。
+>
+>    余项：$r_n=s-s_n=\displaystyle\sum_{n=1}^{\infty}{u_n}-s_n=u_{n+1}+u_{n+2}+\cdots$
+>
+>    误差：$|r_n|=|s-s_n|$
+
+4.$\displaystyle\sum_{n=1}^{\infty}{u_n}与\{s_n\}$的关系
+
+若给定$\displaystyle\sum_{n=1}^{\infty}{u_n}$ ，则部分和数列为 $\{s_n=\displaystyle\sum_{i=1}^{n}{u_i}\}$; 若给定 数列$\{s_n\}$, 则级数为$ s_1+(s_2-s_1)+\cdots+(s_n-s_{n-1})+\cdots$。故$\displaystyle\sum_{n=1}^{\infty}{u_n}$ 与 $\{s_n\}$同时收敛或同时发散。
+
++ 通过部分和数列 $\{s_n\}$ 的收敛性，来研究级数的收敛性。
+
+例1. 讨论等比级数（几何级数）
+
+$\displaystyle\sum_{n=1}^{\infty}{aq^{n-1}}=a+aq+\cdots+aq^{n-1}+\cdots$
+
+的收敛性，其中 $a\not=0$，$q$ 叫做级数的公比。
+$$
+解：\\
+设 \displaystyle\sum_{n=1}^{\infty}{aq^{n-1}}的部分和数列为 {s_n}\\
+则 s_n=a+aq+\cdot+aq^{n-1}\\
+（1）当|q|\not=1时，s_n=\frac{a-aq^{n}}{1-q}=\frac{a}{1-q}-\frac{aq^n}{1-q}\\
+（11）当|q|\lt 1时，\lim\limits_{n\to\infty}s_n=\frac{a}{1-q} \\
+ (12) 当|q|\gt 1时,\lim\limits_{n\to\infty}s_n=\infty \\
+ (2) 当q=1时，s_n=na,\lim\limits_{n\to\infty}s_n=\infty \\
+ (3)当 q=-1时，s_1=a,s_2=a-a=0,s_3=a,s_4=0\cdots,\\即
+ s_n=
+ \begin{cases}
+ a,&\text{if n = 2*i -1}\\
+ 0,&\text{if n = 2*i}
+ \end{cases}
+ i \in[1,\infty)\\
+ 
+\therefore \displaystyle\sum_{n=1}^{\infty}{u_n} 
+\begin{cases}
+收敛，&|q|\lt 1\\
+发散，&|q|\ge1
+\end{cases}
+$$
+
+
+例3. 判定  $\frac{1}{1.2}+\frac{1}{2.3}+\cdots+\frac{1}{n(n+1)}$  的收敛性
+$$
+解：\\
+u_n=\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}\\
+s_n=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{n}-\frac{1}{n+1}
+=1-\frac{1}{n+1}\\
+\lim\limits_{n\to\infty}s_n=1\\
+即所给级数收敛且它的和为1
+$$
+
+## 二  常数项级数的性质
+
+> 性质1. 若 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛于和 $s$，则 $\displaystyle\sum_{n=1}^{\infty}{ku_n}$ 也收敛，且其和为 $ks$。
+
+$$
+证明：\\
+设 \displaystyle\sum_{n=1}^{\infty}{u_n} 的部分和数列 \{s_n\}\\
+\because \displaystyle\sum_{n=1}^{\infty}{u_n} 收敛于和s，即\lim\limits_{n\to\infty}s_n=s\\
+设\displaystyle\sum_{n=1}^{\infty}{ku_n} 的部分和数列为 {v_n} ,\\
+v_n=ku_1+ku_2+\cdots+ku_n=k(u_1+u_2+\cdots+u_n)=ks_n\\
+\lim\limits_{n\to\infty}{v_n}=\lim\limits_{n\to\infty}ks_n=ks\\
+\therefore \displaystyle\sum_{n=1}^{\infty}{ku_n} 收敛，且其和为ks
+$$
+
+> 性质2. 若 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 与 $\displaystyle\sum_{n=1}^{\infty}{v_n}$ 分别收敛于 $s和\sigma$ ，则 $\displaystyle\sum_{n=1}^{\infty}{u_n\pm v_n}$ 也收敛，其和为 $s\pm \sigma$
+
+> 性质3. 在级数中去掉、加上或者改变有限项，不会改变级数的收敛性。
+
+$$
+证明：\\
+级数 u_1+u_2+\cdots+u_k+u_{k+1}+\cdots+u_{k+n}+\cdots   \\
+其部分和：s_{k+n}=u_1+u_2+\cdots+ u_{k+1}+u+{k+2}+\cdots+u_{k+n}+\cdots \\
+s_k=u_1+u_2+\cdots+u_k\\
+前k项去掉,得到的新级数为：u_{k+1}+u_{k+2}+\cdots+u_{k+n}+\cdots\\
+新级数的部分和为\sigma_{n}=u{k+1}+u_{k+2}+\cdots+u_{k+n}=s_{k+n}-s_k \\
+\because s_k为有限项的和，其值为常数\\
+即\{\sigma_n\}的收敛性和\{s_{k+n}\}的收敛性一致\\
+即在级数去掉有限项，不会改变级数的收敛性，同理，在加上和改变有限项之后也不改变级数的收敛性。
+$$
+
+
+
+> 性质4. 如果级数 $\displaystyle\sum_{n=1}^{\infty}{u_n}$ 收敛，那么该级数的任意项加括号后所形成的级数
+>
+> $ (u_1+\cdots+u_{n_1}) + (u_{n_1+1}+\cdots+u_{n_2})+\cdots+(u_{n_{k-1}}+\cdots+u_{n_k})+\cdots$
+>
+> 扔收敛，且和不变。
+
+$$
+证明：\\
+设 \displaystyle\sum_{n=1}^{\infty}{u_n} 部分和数列 \{s_n\},加括号形成的级数的部分和数列\{a_k\}\\
+\because \displaystyle\sum_{n=1}^{\infty}{u_n} 收敛  设\lim\limits_{n\to\infty}=s \\
+则 a_1=(u_1+\cdots+u_{n_1}) = s_{n_1}\\
+a_2=(u_1+\cdots+u_{n_1}) + (u_{n_1+1} + \cdots+u_{n_2})=s_{n_2} \\
+\cdots \\
+a_n=s_{n_k}\\
+即{a_k}为{s_n}的子数列，那么\lim\limits_{k\to\infty}a_k=s\\
+
+\therefore 加括号形成的级数也收敛，且和不变
+$$
+
+**注意：**
+
++ 若加括号后的级数收敛 $\not\Rightarrow $ 去括号后的原级数收敛
+
+$$
+示例：\\
+(1-1)+(1-1)+\cdots  收敛于0 \\
+1-1+1-1+\cdots  发散
+$$
+
+> 性质5. (级数收敛的必要条件)
+>
+> 如果级数$ \displaystyle\sum_{n=1}^{\infty}{u_n} $ 收敛  $\Rightarrow$ $\lim\limits_{n\to\infty}{u_n}=0$
+
+$$
+证明：\\
+设\displaystyle\sum_{n=1}^{\infty}{u_n} 的部分和为s_n\\
+\lim\limits_{n\to\infty}{u_n}=\lim\limits_{n\to\infty}{(s_n-s_{n-1})}= s-s=0\\
+$$
+
+**注**
+
++ 逆否命题：如果 $\lim\limits_{n\to\infty}{u_n}\not=0$ $\not\Rightarrow$  级数$ \displaystyle\sum_{n=1}^{\infty}{u_n} $ 发散
++ 如果 $\lim\limits_{n\to\infty}{u_n}=0$ $\not\Rightarrow$  级数$ \displaystyle\sum_{n=1}^{\infty}{u_n} $ 收敛  
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p251-258.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p94.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1201%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" data-id="cmmq7l12w0021wu216cdga5ea" data-title="1201常数项级数的概念和性质-无穷级数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/13课后习题/07/130701-习题7_1-课后习题-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/11/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/07/130701-%E4%B9%A0%E9%A2%987_1-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2025-11-29T17:41:32.000Z" itemprop="datePublished">2025-11-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/11/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/07/130701-%E4%B9%A0%E9%A2%987_1-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">130701-习题7_1-课后习题-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+  * [6](#6)
+- [习题7-2](#习题7-2)
+  * [1 求下列微分方程的通解](#1-求下列微分方程的通解)
+  * [3 圆锥形漏水](#3-圆锥形漏水)
+  * [7 船对岸航行轨迹](#7-船对岸航行轨迹)
+- [习题 7-3](#习题-7-3)
+  * [1. 求下列齐次方程的通解：](#1-求下列齐次方程的通解)
+- [习题7-4](#习题7-4)
+  * [1 求下列微分方程的通解](#1-求下列微分方程的通解-1)
+  * [5 电阻电感电源串联](#5-电阻电感电源串联)
+  * [7 用适当的变量代换将下列方程化化为可分离变量的方程，然后求通解](#7-用适当的变量代换将下列方程化化为可分离变量的方程然后求通解)
+  * [8 求下列伯努利方程的通解](#8-求下列伯努利方程的通解)
+- [习题7-5](#习题7-5)
+  * [1.求下列各微分方程的通解](#1求下列各微分方程的通解)
+- [关于](#关于)
+
+<!-- tocstop -->
+
+### 6 
+
+用微积分方程表示一物理命题：某种气体的压强$p$ 对于温度$T$ 的变化率与压强成正比，与温度的平方成反比。
+$$
+解：\\
+\frac{dp}{dT}=k\frac{p}{T^2},k是常数
+$$
+
+## 习题7-2
+
+### 1 求下列微分方程的通解
+
+（3）$\sqrt{1-x^2}y^{'}=\sqrt{1-y^2}$
+$$
+解：\\
+\sqrt{1-x^2}y^{'}=\sqrt{1-y^2}\\
+\frac{1}{\sqrt{1-y^2}}dy=\frac{1}{\sqrt{1-x^2}}dx,两边同时积分\\
+\int{\frac{1}{\sqrt{1-y^2}}dy}=\int{\frac{1}{\sqrt{1-x^2}}dx}\\
+原方程的通解为：\arcsin y=\arcsin x +C,C为常数
+$$
+
+
+
+### 3 圆锥形漏水
+
+**问题：** 有一盛满了水的圆锥形漏斗，高为$10cm$，顶角为$60^{\degree}$，漏斗下面有面积为$0.5cm^2$的孔，求水面高度变化的规律及水流完所需的时间？
+
+![截屏2025-11-18 15.07.58-inverted-cone-leakage](/Users/gaogzhen/baiduSyncdisk/study/basis/math/note/高等数学/13课后习题/07/images/截屏2025-11-18 15.07.58-inverted-cone-leakage.png)
+$$
+ 	
+$$
+
+$$
+解：\\
+由流体力学知，孔处的流量Q=0.62S\sqrt{2gh}\\
+假设在t时刻，水的体积为V(t),水面高度为h(t)，则经过dt(dt->0)时间段后\\
+水的体积为V+dV,水面高度为h+dh\\
+则单位时间内水体积变化\frac{dV}{dt}=-Q=-0.62S\sqrt{2gh}\\
+dt->0时，水体减少体积可看做是圆柱体\\
+dV=\pi x^2dh=\frac{1}{3}\pi h^2dh=-0.62S\sqrt{2gh} dt
+上式为可分离变量的微分方程，整理得\\
+dt=-\frac{\pi h^{\frac{3}{2}}}{3\times0.62S\sqrt{2g}} dh\\
+g=980 cm/s^2,S=0.5cm^2
+两端积分，得\\
+h|_{t=0}=10\\
+t=-0.0305h^{\frac{5}{2}}+9.64\\
+当水流完时，h=0，得t=9.64s
+$$
+
+
+
+
+
+### 7 船对岸航行轨迹
+
+小船从河边点O处出发驶向对岸（两岸为平行直线）。设船速为$a$，小船船头航行的方向始终与河岸垂直，又设河宽为$h$ ,河中任一一处水流的速度与该点到两岸的距离的乘积成正比（比例系数为$k$）。求小船的航行路线。
+
+![截屏2025-11-18 15.45.40-ship-sailing-track](/Users/gaogzhen/baiduSyncdisk/study/basis/math/note/高等数学/13课后习题/07/images/截屏2025-11-18 15.45.40-ship-sailing-track.png)
+$$
+解：\\
+如上图所示,以O为原点，平行与河岸方向位x轴，垂直于河岸方向为Y轴建立直角坐标系，x与y都是关于时间t的函数\\
+\begin{cases}
+x=x(t)\\
+y=y(t)\\
+\end{cases}
+水流速度：\frac{dx}{dt}=ky(h-y)\\
+船速：\frac{dy}{dt}=a\\
+则\frac{dy}{dx}=\frac{dy}{dt}\cdot \frac{dt}{dx}\\
+=\frac{a}{ky(h-y)}\\
+整理上式为可分离变量的微分方程：dx=\frac{k}{a}(hy-y^2)dy\\
+两端积分的\\
+x=\frac{k}{a}(\frac{1}{2}hy^2-\frac{1}{3}y^3)+C\\
+其中y|_{x=0}=0,得C=0\\
+船的航行路线为：x=\frac{k}{2a}hy^2-\frac{k}{3a}y^3\\
+$$
+
+## 习题 7-3
+
+### 1. 求下列齐次方程的通解：
+
+（1）$xy^{'}-y-\sqrt{y^2-x^2}=0$
+$$
+解：\\
+xy^{'}-y-\sqrt{y^2-x^2}=0,方程化简得\\
+
+\frac{dy}{dx}=\frac{y+\sqrt{y^2-x^2}}{x}\\
+(1)当x\gt 0时\\
+=\frac{y}{x}+\sqrt{(\frac{y}{x})^2-1}\\
+令\frac{y}{x}=u,y=ux,\frac{dy}{dx}=u+x\frac{du}{dx}\\
+原方程变为：\\
+u+x\frac{du}{dx}=u+\sqrt{u^2-1}\\
+分离变量得\\
+\frac{du}{\sqrt{u^2-1}}=\frac{dx}{x}\\
+两端积分得\\
+\ln |u+\sqrt{u^2-1}|=\ln |x| + \ln C_1,\\
+u+\sqrt{u^2-1}=Cx,(C\in R)\\
+u=\frac{y}{x}带入上述方程，得\\
+\frac{y}{x}+\sqrt{(\frac{y}{x})^2-1}=Cx\\
+y+\sqrt{y^2-x^2}=Cx^2, x\in(0,+\infty)\\
+
+(2)当x\lt 0时\\
+\frac{dy}{dx}=\frac{y+\sqrt{y^2-x^2}}{x}\\
+=\frac{y}{x}-\sqrt{(\frac{y}{x})^2-1}\\
+令\frac{y}{x}=u,y=ux,\frac{dy}{dx}=u+x\frac{du}{dx}\\
+u+x\frac{du}{dx}=u-\sqrt{u^2-1}\\
+分离变量得\\
+\frac{du}{\sqrt{u^2-1}}=-\frac{1}{x}dx\\
+两端积分得\\
+\ln|u+\sqrt{u^2-1}|=\ln C_1 -\ln|x|\\
+u+\sqrt{u^2-1}=\frac{C}{x}\\
+把u=\frac{y}{x}带入上式\\
+\frac{y}{x}+\sqrt{(\frac{y}{x})^2-1}=\frac{C}{x}\\
+y-\sqrt{y^2-x^2}=C
+$$
+
+（3）$(x^2+y^2)dx-xydy=0$
+$$
+解:\\
+化简得\\
+\frac{dy}{dx}=\frac{x^2+y^2}{xy}=\frac{x}{y}+\frac{y}{x}\\
+令u=\frac{y}{x},y=ux,\frac{dy}{dx}=u+x\frac{du}{dx}\\
+u+x\frac{du}{dx}=u+\frac{1}{u}\\
+分离变量得\\
+udu=\frac{1}{x}dx\\
+两端积分得\\
+\frac{1}{2}u^2=\ln|x|+ C\\
+u=\frac{y}{x}带入上式，得\\
+\frac{y^2}{x^2}=2\ln|x|+2C\\
+y^2=2\ln|x|x^2+2Cx^2
+$$
+
+## 习题7-4
+
+### 1 求下列微分方程的通解
+
+（1）$\frac{dy}{dx}+ y = e^{-x}$
+$$
+解：\\
+该式为一阶齐次线性微分方程，其中P(x)=1,Q(x)=e^{-x}\\
+微分方程的通解为:\\
+y=e^{-\int{1dx}}(\int{e^{\int{1dx}}e^{-x}dx}+C)\\
+=e^{-x}(x+C)\\
+$$
+（2）$xy^{'}+y=x^2+3x+2$
+$$
+解：\\
+两边同除以x，得\\
+\frac{dy}{dx}+\frac{1}{x}y=x+3+\frac{2}{x}\\
+则一阶齐次线性微分方程的通解为：\\
+y=e^{-\int{\frac{1}{x}dx}}(\int{e^{\int{\frac{1}{x}dx}}(x+3+\frac{2}{x})dx}+C)\\
+=\frac{1}{x}(\frac{1}{3}x^3+\frac{3}{2}x^2+2x+C)\\
+=\frac{1}{3}x^2+\frac{3}{2}x+2+\frac{C}{x}
+$$
+（10）$(y^2-6x)\frac{dy}{dx}+2y=0$
+$$
+解：\\
+\frac{dx}{dy}=-\frac{y^2-6x}{2y}\\
+\frac{dx}{dy}-\frac{3}{y}x=-\frac{1}{2}y\\
+该一阶线性微分方程的通解为\\
+x=e^{-\int{-\frac{3}{y}dy}}(\int{e^{\int{-\frac{3}{y}dy}}(-\frac{1}{2}y)dy}+C)\\
+=y^3(\frac{1}{2y}+C)\\
+=\frac{1}{2}y^2+Cy^3
+$$
+
+### 5 电阻电感电源串联
+
+设有一个由电阻$R=10Ω$ 、电感$L=2H$和电源电压$E=20\sin 5t V$串联组成的电路。开关S合上后，电路中有电流通过。求电流$i$与时间$t$的函数关系。
+$$
+解：\\
+串联电路电源电压=电阻电压+电感电压\\
+20\sin 5t = 10i + 2\frac{di}{dt}\\
+\frac{di}{dt}+5i=10\sin 5t\\
+上述一阶齐次方程组通解为\\
+i=e^{-\int{5dt}}(\int{e^{\int{5dt}}(10\sin 5t)dt}+C)\\
+=e^{-5t}[e^{5t}(\sin 5t-\cos 5t)+C]\\
+=\sin 5t-\cos 5t+Ce^{-5t}\\
+i|_{t=0}=0,C=1\\
+i=\sin 5t-\cos 5t+e^{-5t}
+$$
+
+### 7 用适当的变量代换将下列方程化化为可分离变量的方程，然后求通解                                                                                                                                                                                                                                                                                                             
+
+（3）$xy^{'}+y=y(\ln x +\ln y)$
+$$
+解：\\
+(xy)^{’} = y\ln (x\cdot y) \\
+令u = xy,有\\
+\frac{du}{dx}=\frac{u}{x}\ln u \\
+分离变量得\\
+\frac{1}{u\ln u }du=\frac{1}{x}dx\\
+两边积分得\\
+u=Ce^x\\
+把u=xy带回，得\\
+y=\frac{Ce^x}{x}
+$$
+
+### 8 求下列伯努利方程的通解
+
+（2）$\frac{dy}{dx}-3xy=xy^2$
+$$
+解:\\
+方程两边同除以y^2,有\\
+\frac{dy}{dx}y^{-2}-3xy^{-1}=x\\
+令u=y^{-1},\frac{du}{dx}=-\frac{dy}{dx}y^{-2}\\
+\frac{du}{dx}+3xu=-x\\
+上述方程的通解为\\
+u=e^{\int{-3x}dx}(\int{e^{\int{3xdx}}(-x)dx}+C)\\
+=e^{-\frac{3}{2}x^2}(-\frac{1}{3}e^{\frac{2}{3}x^2}+C)\\
+=-\frac{1}{3}+Ce^{-\frac{3}{2}x^2}\\
+把u=y^{-1}带回上式，得\\
+y=\frac{1}{Ce^{-\frac{3}{2}x^2}-\frac{1}{3}}
+$$
+
+## 习题7-5
+
+### 1.求下列各微分方程的通解
+
+（2）$y^{'''}=xe^x$
+$$
+解:\\
+两端积分，有\\
+y^{''}=xe^x-e^x+C_1\\
+两端继续积分,有\\
+y^{'}=xe^x-2e^x+C_1x+C_2\\
+两端继续积分，得原微分方程的通解\\
+y=xe^x-3e^x+\frac{1}{2}C_1x^2+C_2x+C_3,(C_1,C_2,C_3\in R)
+$$
+（4）$y^{''}=1+(y^{'})^2$
+$$
+解：\\
+令y^{'}=p,y^{''}=\frac{dp}{dx}\\
+带入原方程，有:\frac{dp}{dx}=1+p^2\\
+分离变量有\\
+\frac{1}{1+p^2}dp=dx\\
+两端积分，有\\
+\arctan p =x+C_1,C_1\in R\\
+p=\tan(x+C_1)\\
+y^{'}=p带入上式，有\\
+y^{'}=\tan(x+C_1),两端积分得原方程的通解\\
+y=-\ln|\cos(x+C_1)|+C_2,（C_1,C_2\in R)
+$$
+（7）$yy^{''}+2(y^{'})^2=0$
+$$
+解：\\
+令y^{'}=p,y^{''}=p\frac{dp}{dy},\\
+带入原方程有:yp\frac{dp}{dy}+2p^2=0\\
+p=0时，y=C,C\in R\\
+p\not=0时，y\frac{dp}{dy}+2p=0\\
+分离变量有,\frac{1}{p}dp=-2\frac{1}{y}dy\\
+两端积分，有:p=\frac{C_1}{y^2}\\
+y^{'}=p,带入上式有:\frac{dy}{dx}=\frac{C_1}{y^2}\\
+分离变量有，y^2dy=\frac{1}{3}C_1dx,\\
+两端积分得原方程的通解：y^3=C_1x+C_2
+$$
+（4）设有一质量为m的物体在空中由静止开始下落，如果空气阻力$R=cv$（其他$c$为常数，$v$为物体运动的速度）,试求物体下落的距离$s$与时间$t$的函数关系。
+$$
+解:\\
+由条件知：v|_{t=0}=0,s|_{t=0}=0\\
+牛顿第二定律有: mg-R=ma\\
+mg-c\frac{ds}{dt}=m\frac{d^2s}{dt^2}\\
+\frac{ds}{dt}=v,g-\frac{c}{m}v=\frac{dv}{dt}\\
+分离变量有:\frac{dv}{g-\frac{c}{m}v}dv=dt\\
+两端积分有：-\frac{m}{c}\ln(g-\frac{c}{m}v)=t-\frac{m}{c}C_1\\
+v|_{t=0}=0,C_1=\ln g,v=\frac{ds}{dt}带入上式\\
+ds=\frac{mg}{c}(1-e^{-\frac{c}{m}t})dt\\
+两端积分有\\
+s=\frac{mg}{c}(t+\frac{m}{c}e^{-\frac{c}{m}t})+C_2\\
+s|_{t=0}=0,得,C_2=-\frac{m^2g}{c^2}\\
+s=\frac{mg}{c}(t+\frac{m}{c}e^{-\frac{c}{m}t}-\frac{m}{c})
+$$
+
+
+## 关于
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.p297-302.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wH4y1F7R6">《高等数学》课后习题，兼容同济七版和八版</a>[CP/OL].2024-09-01.p105.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/11/29/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/13%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/07/130701-%E4%B9%A0%E9%A2%987_1-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq7l134002hwu216b5157lx" data-title="130701-习题7_1-课后习题-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

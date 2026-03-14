@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0109连续函数的运算和初等函数的连续性-函数与极限-高等数学" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="article-date">
+  <time class="dt-published" datetime="2022-11-07T17:48:18.000Z" itemprop="datePublished">2022-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0109连续函数的运算和初等函数的连续性-函数与极限-高等数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 连续函数的和、差、积、商的连续性](#1-连续函数的和-差-积-商的连续性)
+- [2 反函数和复合函数的连续性](#2-反函数和复合函数的连续性)
+- [3 初等函数的连续性](#3-初等函数的连续性)
+- [4 练习](#4-练习)
+- [4 后记](#4-后记)
+
+<!-- tocstop -->
+
+## 1 连续函数的和、差、积、商的连续性
+
+由函数在某点连续的定义和极限的四则运算法则，立即可得出一下定理：
+
+> 定理1：函数$f(x)$和函数$g(x)$在点$x_0$处连续，则它们的和(差)$f\pm g$、积$f\cdot g$及商$\frac{f}{g}(当g(x_0)\not =0时)$都在点$x_0$处连续。
+
+## 2 反函数和复合函数的连续性
+
+> 定理2：如果函数$f(x)$在区间$I_x$上单调增加（或单调减少）且连续，那么它的反函数$x=f^{-1}(y)$也在对应的区间$I_y=\{y|y=f(x),x\in I_x\}$上单调增加（或单调减少）且连续。
+>
+> 
+>
+> 定理3：设函数$y=f[g(x)]$由函数$u=g(x)$与函数$y=f(u)$复合而成，$\overset{\circ}{U}(x_0)\subset D_{f\circ g}$.若$\lim\limits_{x\to x_0}{g(x)=u_0}$,而函数$y=f(u)$在$u=u_0$连续，则
+>
+> $\lim\limits_{x\to x_0}{f[g(x)]}=\lim\limits_{u\to u_0}{f(u)}=f(u_0)$
+
+定理3证明：
+$$
+
+$$
+
+$$
+因为y=f(u)在u=u_0处连续，即\lim\limits_{u\to u_0}{f(u)}=f(u_0) ，即 \\
+\forall\epsilon\gt 0,\exists\eta\gt0,当0\lt|u-u_0|\lt\eta时，有|f(u)-u_0|\lt\epsilon \\
+又因为\lim\limits_{x\to x_0}{g(x)=u_0},\\
+对于上述\epsilon,\eta，\exists\delta\gt0,当0<|x-x_0|\lt\delta时，有|g(x)-u_0|\lt\eta, 即\\ 当0<|x-x_0|\lt\delta时，有|u-u_0|\lt\eta ，|f[g(x)]-u_0|\lt\epsilon \lim\limits_{x\to x_0}{f[g(x)]}="\lim\limits_{u\to" u_0}{f(u)}="f(u_0)\qquad" (9-1) $$ + 注 9-1式可以写成:$\lim\limits_{x\to x_0}{g(x)}]$。表示求复合函数极限时，函数符号$f$与极限符号$\lim\limits_{x\to x_0}$可以交换次序> 定理4：设函数$y=f[g(x)]$由函数$u=g(x)$与函数$y=f(u)$复合而成，$\overset{\circ}{U}(x_0)\subset D_{f\circ g}$.若函数$u=g(x)$在$x=x_0$处连续且$g(x_0)=u_0$，而函数$y=f(u)$在$u=u_0$连续，则复合函数$y=f[g(x)]$在$x=x_0$连续
+>
+> 证明：由定理3得 $\lim\limits_{x\to x_0}{f[g(x)]}=f(u_0)=f[g(x_0)]$ 证毕。
+
+例4：讨论$y=\cos\frac{1}{x}$的连续性
+
+$$
+函数y=\cos\frac{1}{x}可以看成由函数y=\cos u,u=\frac{1}{x}复合而成。 \\
+因为函数\cos u在R上是连续的，函数\frac{1}{x}在区间(-\infty,0),(0,+\infty)上是连续的。 \\
+所以函数y=\cos\frac{1}{x}在区间(-\infty,0),(0,+\infty)是连续的，在x=0不连续
+$$
+
+
+## 3 初等函数的连续性
+
++ 基本初等函数：幂函数、指数函数、对数函数、三角函数和反三角函数。
+
+复习下初等函数定义：
+
+> 由常数和基本初等函数经过有限次的四则运算和有限次的函数复合步骤所构成并可用一个式子表示的函数，称为初等函数。
+
++ 注
+  1. 基本初等函数在其定义域内都是连续的。
+  2. 一切初等函数在其定义区间(定义域内的空间)都是连续的。
+
+例5：求$\lim\limits_{x\to 0}{\frac{\log_a(1+x)}{x}}$
+$$
+当x\to 0时，分子分母都趋向于0，属于\frac{0}{0}型未定式 \\
+\lim\limits_{x\to 0}{\frac{\log_a(1+x)}{x}}=\lim\limits_{x\to 0}{\log_a(1+x)^{\frac{1}{x}}}=\log_ae=\frac{1}{\ln a}
+$$
+例6：求$\lim\limits_{x\to 0}{\frac{a^x-1}{x}}$
+$$
+\lim\limits_{x\to 0}{\frac{a^x-1}{x}}也属于\frac{0}{0}未定式 \\
+令t=a^x-1,当x\to 0时，t\to 0 ,\quad x=\log_a(t+1) ,则 \\
+\lim\limits_{x\to 0}{\frac{a^x-1}{x}}=\lim\limits_{t\to 0}{\frac{t}{\log_a(t+1)}}=\ln a
+$$
+例7：求$\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}(\alpha\in R)$
+$$
+\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}也属于\frac{0}{0}未定式 \\
+令t=(1+x)^\alpha-1，当x\to 0时，t\to 0 ,于是\\
+\lim\limits_{x\to 0}{\frac{(1+x)^\alpha-1}{x}}=\lim\limits_{x\to 0}{[\frac{(1+x)^\alpha-1}{ln(1+x)^\alpha}\cdot\frac{\alpha\ln(1+x)}{x}]}= \\
+=\lim\limits_{t\to 0}{\frac{t}{\ln(1+t)}}\cdot\lim\limits_{x\to 0}{\frac{\alpha\ln(1+x)}{x}}=\alpha
+$$
+有例5、例6、例7可得以下三个常用的等价无穷小
+
+> 当x\to 0时 ,$\ln(1+x)\sim x\qquad e^x-1\sim x\qquad (1+x)^\alpha\sim\alpha x$
+>
+> 其中x可以是自变量任意同等变化下的无穷小，比如$\lim f(x)=0$,上述等价无穷小可以变化为
+>
+> $ln[1+f(x)]\sim f(x)\qquad e^{f(x)-1}\sim f(x)\qquad [1+f(x)]^\alpha\sim\alpha f(x)$
+
+
+
+> 一般地，对于形如$u(x)^{v(x)}(u(x)\gt 0,u(x)\not=1)$的函数通常称为幂指函数，如果
+>
+> $\lim u(x)=a\gt 0,\lim v(x)=b$,
+>
+> 那么$\lim u(x)^{v(x)}=a^b$
+
+
+
+## 4 练习
+
+例8：$\lim\limits_{x\to 4}{\frac{\sqrt{1+2x}-3}{x-4}}$
+$$
+\frac{0}{0}型未定式 \\
+根号后-3不能直接利用等价无穷小，这里我们进行分子有理化 于是\\
+\lim\limits_{x\to 4}{\frac{\sqrt{1+2x}-3}{x-4}}=\lim\limits_{x\to 4}{\frac{(\sqrt{1+2x}-3)(\sqrt{1+2x}+3)}{(x-4)(\sqrt{1+2x}+3)}} \\=\lim\limits_{x\to 4}{\frac{2(x-4)}{(x-4)(\sqrt{1+2x}+3)}}=\frac{1}{3}
+$$
+例9：$\lim\limits_{x\to0}{(1+2x)^{\frac{3}{\sin x}}}$
+$$
+x\to 0时，(1+2x)\to 1那极限不就是1吗？ × 要明白底数在变，指数也在变,就是典型的幂指函数 \\
+可以给幂指函数底数和指数部分分别凑重要极限或者利用公式 a = e^{lna} 这里用前面的方法 \\
+\lim\limits_{x\to0}{(1+2x)^{\frac{3}{\sin x}}}=\lim\limits_{x\to0}{(1+2x)^{\frac{1}{2x}\frac{6x}{\sin x}}}=e^6
+$$
+例10：$\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}$
+$$
+解：\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}=e^{\lim\limits_{x\to0}{\ln(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}}  于是 \\
+\lim\limits_{x\to0}{\ln(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}=\lim\limits_{x\to0}{\frac{x^2+1}{x}\ln(2e^{\frac{x}{1+x}}-1)} \\
+=\lim\limits_{x\to0}{\frac{x^2+1}{x}\ln(2e^{\frac{x}{1+x}}-2+1)}=\lim\limits_{x\to0}{\frac{x^2+1}{x}2(e^{\frac{x}{1+x}}-1)}\\
+=\lim\limits_{x\to0}{\frac{x^2+1}{x}2(\frac{x}{1+x})}=2,所以 \\
+\lim\limits_{x\to0}{(2e^{\frac{x}{1+x}}-1)^{\frac{x^2+1}{x}}}=e^2
+$$
+
+
+## 4 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P62~p65.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p11.
+
+</|x-x_0|\lt\delta时，有|g(x)-u_0|\lt\eta,>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0109%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97%E5%92%8C%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cmmq7l12c000rwu210pduecrh" data-title="0109连续函数的运算和初等函数的连续性-函数与极限-高等数学" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0107无穷小的比较-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2022-10-28T16:33:30.000Z" itemprop="datePublished">2022-10-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0107无穷小的比较-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 定义](#1-定义)
+- [2 性质](#2-性质)
+- [3 定理1](#3-定理1)
+- [4 定理2](#4-定理2)
+- [5 常用等价无穷小](#5-常用等价无穷小)
+- [6 例题](#6-例题)
+- [6 后记](#6-后记)
+
+<!-- tocstop -->
+
+## 1 定义
+
+无穷小之比的比较，反应了不同无穷小趋于零的“快慢”程度。
+
+
+
+> 如果$\lim\frac{\beta}{\alpha}=0$，那么就说$\beta$是比$\alpha$高阶的无穷小，记做$\beta=o(\alpha)$;
+>
+> 如果$\lim\frac{\beta}{\alpha}=\infty$，那么就说$\beta$是比$\alpha$低阶的无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha}=c\not= 0$，那么就说$\beta$与$\alpha$是同阶无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha^k}=c\not= 0,k\gt 0$，那么就说$\beta$是关于$\alpha$的$k$阶的无穷小;
+>
+> 如果$\lim\frac{\beta}{\alpha}=1$，那么就说$\beta$与$\alpha$是等价无穷小，记做$\beta$~$\alpha$;
+
+
+
+## 2 性质
+
+无穷小的等价关系。
+
+> 1. 自反性，$\alpha\sim\alpha$。
+> 2. 对称性，$\alpha\sim\beta\Rightarrow\beta\sim\alpha$。
+> 3. 传递性，$\alpha\sim\beta,\beta\sim\gamma\Rightarrow\alpha\sim\gamma$
+
+证明：
+$$
+对称性 \\
+已知\lim\frac{\beta}{\alpha}=1 \\
+\lim\frac{\alpha}{\beta}=\lim\frac{1}{\frac{\beta}{\alpha}}=1,所以 \beta\sim\alpha \\
+传递性 \\
+已知\alpha\sim\beta,\beta\sim\gamma，即 \\
+\lim\frac{\beta}{\alpha}=1,\lim\frac{\gamma}{\beta}=1 \\
+\lim\frac{\gamma}{\alpha}=\lim\frac{\gamma}{\beta}\cdot\frac{\beta}{\alpha}=1 \\
+所以\alpha\sim\gamma
+$$
+
+
+## 3 定理1
+
+> $\beta与\alpha$是等价无穷小的充分必要条件为$\beta=\alpha+o(\alpha)$
+
+证明：
+$$
+\Rightarrow 必要性\\
+设\alpha\sim\beta,则 \\
+\lim\frac{\beta-\alpha}{\alpha}=\lim(\frac{\beta}{\alpha}-1)=0, \\
+因此\beta-\alpha=o(\alpha)即\beta=\alpha+o(\alpha) \\
+\Leftarrow 充分性 \\
+设\beta=\alpha+o(\alpha)，则 \\
+\lim\frac{\beta}{\alpha}=\lim\frac{\alpha+o(\alpha)}{\alpha}=\lim[1+\frac{o(\alpha)}{\alpha}]=1 \\
+因此\alpha\sim\beta
+$$
+
+
++ 注：用等价无穷小可以给出函数的近似表达式，即$\beta\approx\alpha$,误差为$o(\alpha)$。
+
+## 4 定理2
+
+定理2也称等价无穷小的替换定理。
+
+> 设$\alpha\sim\hat\alpha,\beta\sim\hat\beta$，且$\lim\frac{\hat\beta}{\hat\alpha}$存在，则$\lim\frac{\beta}{\alpha}=\lim\frac{\hat\beta}{\hat\alpha}$
+
+证明：
+$$
+\lim\frac{\beta}{\alpha}=\lim(\frac{\hat\beta}{\beta}\cdot\frac{\beta}{\alpha}\cdot\frac{\alpha}{\hat\alpha})=\lim\frac{\hat\beta}{\hat\alpha}
+$$
+
++ 注意
+  + 前提：$\lim\frac{\hat\beta}{\hat\alpha}$存在，如果不存在，则不成立。
+  + 求两个无穷小之比的极限时，分子和分母都可以用等价无穷小来替换。
+
+## 5 常用等价无穷小
+
+$$
+当x\to 0时 \\
+\sin x\sim x \quad \tan x\sim x\quad \arcsin x\sim x\quad \arctan x\sim x \\
+1-\cos x\sim \frac{1}{2}x^2 \\
+e^x-1\sim x\quad a^x-1\sim x\ln a \\
+\ln(1+x)\sim x\quad (1+x)^\alpha-1\sim\alpha x(\alpha\in R)
+$$
+
++ 注意：x可替换为f(x),f(x)为无穷小。示例$\sin 2x\sim 2x$。
++ 有些等价无穷小前面已经证明，未证明的在学习初等函数连续性之后给与证明。
+
+## 6 例题
+
+例1&emsp;<font size="5"> $\lim\limits_{x\to 0}\frac{\sin 3x}{\tan 4x}=\lim\limits_{x\to 0}\frac{3x}{4x}=\frac{3}{4}$</font>
+
+例2 &emsp;<font size="5"> $\lim\limits_{x\to 0}\frac{e^{2x}-1}{\sin 3x}=\lim\limits_{x\to 0}\frac{2x}{3x}=\frac{2}{3}$ </font>
+
+
+
+例3  $ 当x\to 0时，$ <font size="5">   $ (1+x)^\frac{1}{n}-1\sim\frac{1}{n}x$ </font>
+
+证明：
+$$
+分子有理化相关公式：\\
+a^n-1=(a-1)(a^{n-1}+a^{n-2}+\cdots+1) \\
+a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+ab^{n-2}+b^{n-1}),所以 \\
+ (1+x)^\frac{1}{n}-1 =  \frac{(1+x)^\frac{n}{n}-1}{ (1+x)^\frac{n-1}{n}+(1+x)^\frac{n-2}{n}+\cdots+1}= \frac{x}{ (1+x)^\frac{n-1}{n}+(1+x)^\frac{n-2}{n}+\cdots+1}\\
+ \lim\limits_{x\to 0}\frac{(1+x)^\frac{1}{n}-1}{\frac{1}{n}x} =  \lim\limits_{x\to 0}\frac{n}{ (1+x)^\frac{n-1}{n}+(1+x)^\frac{n-2}{n}+\cdots+1} = 1, \\
+ 因此当x\to 0时，有 (1+x)^\frac{1}{n}-1\sim\frac{1}{n}x
+$$
+例4：&emsp;<font size="5"> $\lim\limits_{x\to 0}\frac{(1+x^2)^\frac{1}{3}-1}{1-\cos x}=\lim\limits_{x\to 0}\frac{\frac{1}{3}x^2}{\frac{1}{2}x^2}=\frac{2}{3}$ </font>
+
+例5： <font size="5"> $\lim\limits_{x\to 0}\frac{x-1}{x\ln x}=\lim\limits_{x\to 0}\frac{x-1}{x(x-1)}=1$ </font>
+
+例6： <font size="5"> $\lim\limits_{x\to 0}\frac{\tan x\sin x}{e^{x^3}-1}=\lim\limits_{x\to 0}\frac{\tan x(1-\cos x)}{x^3}=\lim\limits_{x\to 0}\frac{x\cdot(\frac{1}{2}x^2)}{x^3}=\frac{1}{2}$ </font>
+
+
+
++ 注意事项：
+
+  + 等价无穷小求极限时，对相乘或者相除的因子可替换，而对于相加减的部分不能随意替换。
+
+  + 相加减替换条件
+    $$
+    若 \lim\frac{\beta_1}{\alpha}存在，\lim\frac{\beta_2}{\alpha}存在，且\beta_1\sim\beta_1^‘,\beta_2\sim\beta_2^‘ ，则 \\
+    \lim\frac{\beta_1+\beta_2}{\alpha}=\lim\frac{\beta_1}{\alpha}+\lim\frac{\beta_2}{\alpha}=\lim\frac{\beta_1^‘+\beta_2^‘}{\alpha}
+    $$
+
+例7：<font size="5"> $\lim\limits_{x\to 0}(\cot x-\frac{e^{2x}}{\sin x})=\lim\limits_{x\to 0}(\frac{\cos x}{\sin x}-\frac{e^{2x}-1}{\sin x}-\frac{1}{\sin x})=\lim\limits_{x\to 0}(\frac{\cos x-1}{\sin x}-\frac{e^{2x}-1}{\sin x})=-2$ </font>
+
++ 注意事项2：
+  + 不是所有的无穷小都可以比较
+
+示例： $\lim\limits_{x\to+\infty}f(x)=\lim\limits_{x\to+\infty}\frac{1}{x}=0,\lim\limits_{x\to+\infty}g(x)=\lim\limits_{x\to+\infty}\frac{\sin x}{x}=0,则\lim\limits_{x\to+\infty}\frac{g(x)}{f(x)}=\lim\limits_{x\to+\infty}\sin x 不存在$
+
+
+
+## 6 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 上册[M].北京:高等教育出版社,2014.7.P52~p56.
+
+[1]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">【梨米特】同济七版《高等数学》全程教学视频｜纯干货知识点解析，应该是全网最细｜微积分 | 高数</a>[CP/OL].2020-04-16.p8.
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/28/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0107%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l12b000nwu216a898ph0" data-title="0107无穷小的比较-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0105极限的运算法则-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2022-10-08T19:28:26.000Z" itemprop="datePublished">2022-10-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0105极限的运算法则-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [前言](#前言)
+- [定理1-无穷小的和](#定理1-无穷小的和)
+- [定理2-无穷小的乘积](#定理2-无穷小的乘积)
+- [定理3-函数极限四则运算](#定理3-函数极限四则运算)
+- [定理4-数列极限四则运算](#定理4-数列极限四则运算)
+- [定理5](#定理5)
+- [定理6-复合函数的极限运算法则](#定理6-复合函数的极限运算法则)
+- [后记](#后记)
+
+<!-- tocstop -->
+
+## 前言
+
+​	记号$\lim$下面没有标明自变量的变化过程，表示下面定理对$x\to x_0$及$x\to\infty$都是成立的。证明时以$x\to x_0$为例，$x\to\infty$情况，自行证明。
+
+## 定理1-无穷小的和
+
+> 定理1：两个无穷小的和是无穷小。
+
+证明：以$x\to x_0$为例
+$$
+设\alpha及\beta是当x\to x_0时的无穷小，而 \\
+\gamma = \alpha + \beta  \\
+因为\alpha是当x\to x_0时的无穷小，所以\forall\epsilon\gt 0,\exists\delta_1\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta_1时，有 \\
+\lvert\alpha\rvert\lt \frac{\epsilon}{2} \\
+因为\beta是当x\to x_0时的无穷小，所以\forall\frac{\epsilon}{2}\gt 0,\exists\delta_2\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta_2时，有 \\
+\lvert\beta\rvert\lt \frac{\epsilon}{2} \\
+取\delta=\min\{\delta_1,\delta_2\}，则当0\lt\lvert x-x_0\rvert\lt\delta时，有 \\
+\lvert\gamma\rvert=\lvert\alpha+\beta\rvert\le\lvert\alpha\rvert+\lvert\beta\rvert\lt\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon  \\
+所以\gamma也是当x\to x_0时的无穷小。
+$$
+
+> 用数学归纳法可证：有限个无穷小之和也是无穷小。
+
+## 定理2-无穷小的乘积
+
+> 定理2：有界函数和无穷小的乘积是无穷小。
+
+证明：以$x\to x_0$为例
+$$
+设函数u在x_0的某一去心邻域\overset{\circ}{U}(x_0,\delta_1)内是有界的，即 \\
+\exists M\gt 0,当x\in \overset{\circ}{U}(x_0,\delta_1),有 \\
+|f(x)|\le M \\
+又设\alpha是当x\to x_0时的无穷小，即 \\
+\forall \epsilon\gt0,\exists\delta_2\gt0,当x\in \overset{\circ}{U}(x_0,\delta_2)时，有 \\
+|\alpha|\lt\frac{\epsilon}{M} \\
+取\delta=\min\{\delta_1,\delta_2\}，则 \\
+|u\delta|=|u|\cdot|\delta|\lt M\cdot \frac{\epsilon}{M}=\epsilon， \\
+说以u\alpha也是当x\to x_0时的无穷小。
+$$
+
+>推论1：常数与无穷小的乘积是无穷小。
+>
+>推论2：有限个无穷小的乘积是无穷小。
+
+## 定理3-函数极限四则运算
+
+> 定理3：如果$\lim f(x)=A,\lim g(x)=B$,那么
+>
+> (1) $\lim[f(x)\pm g(x)]=\lim f(x)\pm\lim g(x)=A\pm B$
+>
+> (2) $lim[f(x)\cdot g(x)]=\lim f(x)\cdot\lim g(x)=A\cdot B$
+>
+> (3) 若又有$B\neq 0$,则 $\lim\frac{f(x)}{g(x)}=\frac{\lim f(x)}{\lim g(x)}=\frac{A}{B}$
+
+证明，这里只给出(3)的证明
+$$
+因为 \lim f(x)=A,\lim g(x)=B, \\
+所以 f(x)=A+\alpha，g(x)=B+\beta， \\
+其中\alpha,\beta是无穷小 \\
+设 \gamma = \frac{f(x)}{g(x)} - \frac AB ，则 \\
+\gamma = \frac{A+\alpha}{B+\beta} - \frac AB = \frac{1}{B(B+\beta)}\cdot(B\alpha-A\beta) \\
+由定理1,2可得B\alpha-A\beta是无穷小 \\
+根据函数极限性质定理3^{'}，由于\lim g(x)=B\neq 0,存在x_0某一去心邻域\overset{\circ}{U}(x_0),当x\in \overset{\circ}{U}(x_0)时，有 \\
+|g(x)|\gt\frac{|B|}{2} ,即 \frac{1}{g(x)}=\frac{1}{(B+\beta)}\lt\frac{2}{|B|}， 则 \\
+|\frac{1}{B(B+\beta)}|\lt\frac{1}{|B|}\cdot\frac{2}{|B|}=\frac{2}{B^2} ，则 \\
+\gamma为有界函数和无穷小的乘积，也无无穷小，则 \\
+\frac{f(x)}{g(x)} = \frac AB + \gamma  ,则 \\
+\lim\frac{f(x)}{g(x)}=\frac{A}{B}=\frac{\lim f(x)}{\lim g(x)}
+$$
+
+> 推论1：如果$lim f(x)$存在，而$c$为常数，那么 
+>
+> $\lim[cf(x)]=c\lim f(x)$
+>
+> 推论2：如果\lim f(x)存在，而$n$是正整数，那么
+>
+> $\lim[f(x)]^n=[\lim f(x)]^n$
+
+## 定理4-数列极限四则运算
+
+> 设有数列$\{x_n\}$和$\{y_n\}$,如果$\lim\limits_{n\to\infty}x_n=A,\lim\limits_{n\to\infty}y_n=B$,那么 
+>
+> (1) $\lim\limits_{n\to\infty}(x_n\pm y_n)=A\pm B$
+>
+> (2) $\lim\limits_{n\to\infty}(x_n\cdot y_n)=A\cdot B$
+>
+> (3) 当$y_n\neq 0(n=1,2,\ldots)$且$B\neq 0$时，$\lim\limits_{n\to\infty}\frac{x_n}{y_n}=\frac AB$
+
+## 定理5
+
+> 定理5：$如果，\phi(x)\ge\psi(x),而\lim\phi(x)=A,\lim\psi(x)=B,那么A\ge B$
+
+证明：
+$$
+设f(x)=\phi(x)-\psi(x),则 f(x)\ge 0 \\
+由定理3得，\lim f(x)=\lim[\phi(x)-\psi(x)]=A-B \\
+f(x)\ge 0,由极限性质定理3推论得 \lim f(x)\ge0 即 \\
+A-B\ge 0,A\ge B
+$$
+
+
+>$总结，当a_0\neq 0,b_0\neq 0,m和n都为非负整数时，有$
+>
+>$\lim\limits_{x\to\infty}\frac{a_0x^m+a_1x^{m-1}+\cdots+a_m}{b_0x^n+b_1x^{n-1}+\cdots+b_n}=\begin{cases} 0,当n\gt m \\ \frac{a_0}{b_0}, 当n=m \\  \infty,当n\lt m\end{cases}$
+
+
+
+## 定理6-复合函数的极限运算法则
+
+> 定理6（复合函数的极限运算法则）：设函数$y=f[g(x)]$是有函数$u=g(x)$与函数$y=f(u)$复合而成， $f[g(x)]$在点$x_0$的某去心邻域内有定义，若$\lim\limits_{x\to x_0}g(x)=u_0,\lim\limits_{u\to u_0}f(u)=A$,存在$\delta_0\gt 0$，当$x\in \overset{\circ}{U}(x_0,\delta_1)$时，有$g(x)\neq u_0$，则
+>
+> $\lim\limits_{x\to x_0}f[g(x)]=\lim\limits_{u\to u_0}f(u)=A$
+
+证明：
+$$
+\lim\limits_{u\to u_0}f(u)=A ，即 \\
+\forall\epsilon\gt 0,\exist\psi\gt 0,当0\lt|u-u_0|\lt\psi时，有 \\
+|f(u)-A|\lt \epsilon \\
+因为\lim\limits_{x\to x_0}g(x)=u_0,对于上述\psi,\exist\delta_1>0,当0\lt|x-x_0|\lt\delta_1时，有 \\
+|g(x)-u_0|\lt \psi \\
+由假设 当x\in \overset{\circ}{U}(x_0,\delta_0)时，g(x)\neq u_0 \\
+取\delta=\min(\delta_0,\delta_1),则当0\lt|x-x_0|\lt\delta时， \\
+\begin{cases} 
+|g(x)-u_0|\neq 0 \\
+|g(x)-u_0|\lt \psi 
+\end{cases}
+同时成立，即 0\lt|g(x)-u_0|\lt\psi, \\ 
+所以 |f[g(x)]-A|=|f(u)-A|\lt \epsilon 即\\
+\lim\limits_{x\to x_0}f[g(x)]=\lim\limits_{u\to u_0}f(u)=A
+$$
+
+
+## 后记
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：https://gitee.com/gaogzhen/math:
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/08/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0105%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l12a000kwu21a3d13q5g" data-title="0105极限的运算法则-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0104无穷小和无穷大-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2022-10-06T15:04:30.000Z" itemprop="datePublished">2022-10-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0104无穷小和无穷大-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 无穷小](#1-无穷小)
+  * [1.1 定义](#11-定义)
+  * [1.2 定理1](#12-定理1)
+- [2 无穷大](#2-无穷大)
+  * [2.1 定义](#21-定义)
+  * [2.2 无界与无穷大](#22-无界与无穷大)
+  * [2.2 定理2](#22-定理2)
+  * [3 后记](#3-后记)
+
+<!-- tocstop -->
+
+## 1 无穷小
+
+### 1.1 定义
+
+> 如果函数$f(x)$当$x\to x_0(或x\rightarrow \infty)$时的极限为零，那么称函数$f(x)$为当$x\to x_0(或x\rightarrow \infty)$时的无穷小。
+
+注意：
+
+1. 无穷小不是很小的数
+2. 说某个函数无穷小，是在某个极限过程下；直接是函数$f(x)$为无穷小是不对的。
+   1. $x\to x_0$
+   2. $x\to x_0^+$
+   3. $x\to x_0^-$
+   4. $x\to \infty$
+   5. $x\to +\infty$
+   6. $x\to -\infty$
+   7. $n\to \infty$(数列)
+3. 零是无穷小，但不是所有的无穷小都是零。
+
+
+
+### 1.2 定理1
+
+>在自变量的同一变化过程$x\to x_0(或x\rightarrow \infty)$中，函数$f(x)$具有极限$A$的充分必要条件是$f(x)=A+\alpha$,其中$\alpha$是无穷小。
+
+证明：以$x\to x_0$为例
+$$
+必要性 \\
+设\lim\limits_{x\to x_0}f(x)=A,则 \\
+\forall\epsilon\gt 0,\exists\delta\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta时有，\\
+\lvert f(x)-A\rvert\lt\epsilon \\
+令\alpha=f(x)-A,则\alpha是当x\to x_0时的无穷小，且 \\
+f(x)=A+\alpha \\
+
+充分性 \\
+设f(x)=A+\alpha,其中A是常数，\alpha是x\to x_0时的无穷小，则 \\
+\forall\epsilon\gt 0,\exists\delta\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta时有，
+\lvert\alpha-0\rvert=\lvert f(x)-A\rvert\lt\epsilon \\
+所以 \lim\limits_{x\to x_0}f(x)=A
+$$
+说明：
+
++ 定理1把函数和极限通过无穷小联系在一起。
+
+
+
+## 2 无穷大
+
+### 2.1 定义
+
+> 设函数f(x)在x_0的某一去心邻域内有定义（或$\lvert x\rvert$大于某一正数时有定义）。如果对于任意给定的正数M（不论它多大），总存在正数$\delta$(或正数$X$)，当$0\lt\lvert x-x_0\rvert\lt\delta$（或$\lvert x\rvert\gt X$）时，$f(x)\gt M$，那么称函数$f(x)$是当$x\to x_0$（或$x\to \infty$ )时的无穷大，记做 
+>
+> $\lim\limits_{x\to x_0}f(x)=\infty$
+
+说明：
+
++ 说一个函数极限是无穷大，也是在极限的某一过程中
++ 函数的极限是无穷大，那么函数极限依然是不存在的，只是为了表述这一状态方便
++ 无穷大不是一个很大的数
+
+### 2.2 无界与无穷大
+
+> 无穷大的无界的，但无界不是无穷大。
+
+$$
+示例：f(x)=\frac{1}{x}\sin{\frac{1}{x}} \\
+当x\to 0时，无界，但不是无穷大 \\
+证明： 利用函数的性质定理4（函数极限与数列极限的关系）\\
+设数列x_n = \frac{1}{2n\pi+\frac{\pi}{2}} ,则 \\
+\lim\limits_{n\to \infty}x_n=0 \\
+\lim\limits_{x\to 0}f(x)=\lim\limits_{n\to\infty}f(x_n)=(2n\pi+\frac{\pi}{2})\sin({2n\pi+\frac{\pi}{2}})=\infty \\
+\\
+设数列y_n = \frac{1}{2n\pi} ,则 \\
+\lim\limits_{n\to \infty}y_n=0 \\
+\lim\limits_{x\to 0}f(x)=\lim\limits_{n\to\infty}f(y_n)=(2n\pi)\sin({2n\pi})=0 \\
+所以当x\to 0时，f(x)无界，但不是无穷大
+$$
+
+
+
+### 2.2 定理2
+
+> 在自变量的同一变化过程中，如果$f(x)$为无穷大，那么$\frac{1}{f(x)}$为无穷小；反正，如果$f(x)$为无穷小，那么$\frac{1}{f(x)}$为无穷大。
+
+证明：以$x\to x_0 为例$
+$$
+设\lim\limits_{x\to x_0}f(x)=\infty,则 \\
+\forall\epsilon\gt 0,根据无穷大定义，对于M=\frac{1}{\epsilon},\exist\delta\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta时，有 \\
+\lvert f(x)\rvert\gt M=\frac{1}{\epsilon},即 \\
+\frac{1}{f(x)}\lt\epsilon \\
+所以\frac{1}{f(x)}为当x\to x_0的无穷小。 \\
+=============分割线============\\
+设\lim\limits_{x\to x_0}f(x)=0,则 \\
+\forall M\gt 0,根据无穷小定义，对于\epsilon=\frac{1}{M},\exist\delta\gt 0,当0\lt\lvert x-x_0\rvert\lt\delta时，有 \\
+\lvert f(x)\rvert\lt\epsilon=\frac{1}{M},即 \\
+\frac{1}{f(x)}\gt M \\
+所以\frac{1}{f(x)}为当x\to x_0的无穷大。
+$$
+
+
+### 3 后记
+
+> 文档笔记地址：https://gitee.com/gaogzhen/math
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0104%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l129000iwu21fld59f9u" data-title="0104无穷小和无穷大-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0102映射-映射与函数-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2021-08-07T10:08:34.000Z" itemprop="datePublished">2021-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0102映射-映射与函数-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1、映射的概念](#1-映射的概念)
+- [2、逆映射](#2-逆映射)
+- [3、复合映射](#3-复合映射)
+
+<!-- tocstop -->
+
+# 1、映射的概念
+
+<blockquote>
+    设X、Y是两个非空集合，如果存在一个法则f，使得对X中的每个元素x，按法则f，在Y中都有唯一确定的元素y与之对应，则称f为从X到Y的映射。
+</blockquote>
+
+记做
+$$
+f:X\rightarrow Y
+$$
+
+<blockquote>
+    元素x称为元素y（在映射f下）的一个原像,集合X称为映射f的定义域；X中所有元素的像所组成的集合称为映射f的值域。
+</blockquote>
+
+定义域，记做$D_f$即$D_f$=X;值域，记做$R_f$或者$f(x)$,即
+$$
+R_f=f(x)=\{f(x)|x\in X\}
+$$
+
+
+注意事项：
+
+1. 构成映射的三要素：集合X，即定义域$D_f$=X;集合Y，即值域的范围，$R_f\subset Y$;对应法则f,使得每个$x\in X$，有唯一确定的$y=f(x)$与之对应；
+2. 对每个$x\in X$，元素x的像y的唯一的；而对于每个$y\in R_f$，元素y的原像不一定是唯一的；映射f的值域$R_f$是集合Y的一个子集，即$R_f\subset Y$,$R_f$与Y不一定相等。
+
+<blockquote>
+    设f是从集合X到集合Y的映射，若值域R = Y，即Y中任意一元素y都是X中某个元素的像，则称f为X到Y上的满射;若对X中任意两个不同的元素x1不等于x2,他们的像f(x1)也不等于f(x2),则称映射f为从X到Y的单射；若映射f既是单射又是满射，则称映射f为一一映射。
+</blockquote>
+
+
+
+# 2、逆映射
+
+设f是X到Y的单射，有定义知，对每个$y\in R_f$,有唯一确定的$x\in X$，满足$f(x) = y$。于是，我们可定义一个从$R_f$到X的新映射g，即
+$$
+g:R_f\rightarrow X
+$$
+对每个$y\in R_f$，规定$g(y)=x$ ，其中x满足$f(x)=y$ 。这个映射g称为f的逆映射，记作$f^{-1}$ ，其中定义域$D_{f^{-1}} = R_f$，值域$R_{f^{-1}}=X$
+
+注意事项：
+
+1. 只有单射才有逆映射
+
+
+
+# 3、复合映射
+
+设有两个映射
+$$
+g:X\rightarrow Y1 ， f:Y2\rightarrow Z
+$$
+其中$Y1\subset Y2$ ，则由映射g和f可以定义一个从X到Z的对应法则，它将每个$x\in X$，映射为$f[g(x)]\in Z$。这个对应法则，确定了一个从集合X到集合Z的映射，这个映射称为映射g和映射f的符合映射，记做$f\circ g$，即
+$$
+f\circ g:X\rightarrow Z ，(f\circ g)(x)=f[g(x)],x\in X
+$$
+结论：
+
+1. 映射f和g构成复合映射的前提：映射g的值域$R_g$必须包含在映射f的定义域$D_f$之内，即$R_g\subset D_f$。
+2. 映射g和f的复合是有顺序的，$f\circ g$有意义并不表示$g\circ f$也有意思。
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/08/07/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0102%E6%98%A0%E5%B0%84-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l124000dwu212e83f2oh" data-title="0102映射-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-basis/math/note/高等数学/01函数与极限/0101集合-映射与函数-函数与极限" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+  <time class="dt-published" datetime="2021-07-15T22:39:20.000Z" itemprop="datePublished">2021-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0101集合-映射与函数-函数与极限</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<center><h4><span id="0101集合-映射与函数-函数与极限">0101集合-映射与函数-函数与极限</span></h4></center>
+
+----------
+
+
+<center><h5><span id="目录">目录</span></h5></center>
+
+----------
+
+<!-- toc -->
+
+- [一、集合](#一-集合)
+  * [1、集合的概念](#1-集合的概念)
+  * [2、集合的运算](#2-集合的运算)
+    + [2.1、基本运算](#21-基本运算)
+    + [2.2、运算法则](#22-运算法则)
+    + [2.3、直积或笛卡尔乘积](#23-直积或笛卡尔乘积)
+  * [3、区间和邻域](#3-区间和邻域)
+    + [3.1、区间](#31-区间)
+    + [3.2、邻域](#32-邻域)
+  * [***后记*** ：](#后记)
+
+<!-- tocstop -->
+
+<br>
+
+---------
+
+<center><h5><span id="内容">内容</span></h5></center>
+
+----------
+
+# 一、集合
+
+## 1、集合的概念
+
++ 定义
+ <blockquote>
+  集合值具有特定性质的事物的总体，组成这个集合的事物称为改集合的元素。   
+ </blockquote>
+
++ 集合的表示
+	+ 列举法: 把集合的元素一一列举出来
+		+ 例如，由$a_1,a_2$组成的集合A,可表示为
+		  $$
+		  A=\{a_1,a_2,a_3,...,a_n\}
+		  $$
+		
+	+ 描述法：若集合M是由具有某种性质P的元素x组成的集合，可表示为，
+	  $$
+	  M=\{x|x具有性质P\}
+	  $$
+	
++ 常用集合（数集）：*号表示排除0的数；+号表示非负数。
+  + 自然数N
+    $$
+    N=\{0, 1, 2, ..., n\}
+    $$
+    
+  + 正整数$N^+$
+    $$
+    N^+=\{1, 2, 3, ..., n\}
+    $$
+    
+  + 整数Z
+    $$
+    Z=\{-n,..., -2,-1,0,1,2,...,n\}
+    $$
+    
+  + 有理数Q
+    $$
+    Q=\{\frac{p}{q}|p\in Z,q\in N^+,且p与q互质\}
+    $$
+  
+  + 实数集合R
+
++ 元素与集合，集合与集合关系
+
+  <blockquote>
+      设A、B是2个集合，如果集合A中的元素都是集合B的元素，则称集合A为结合B的子集。
+      如果集合A与集合B互为子集，则称集合A与集合B相等。
+      若
+  </blockquote>
+
+  $$
+  A\subset B 且 A\neq B
+  $$
+
+  <blockquote>
+      则称集合A为集合B的真子集。
+      不含任何元素的集合为空集，记做
+
+  </blockquote>
+  $$
+  \varnothing,\varnothing\subset 任意集合
+  $$
+  
+
+  
+
+  
+
+
+  + 元素a属于集合A:  $a\in A$
+    
+  + 元素a不属于集合A:  $a\notin A$
+    
+  + 集合A是集合B的子集: $A\subset B$
+    
+  + 集合A是集合B的真子集: $A \subseteq B$
+
+## 2、集合的运算
+
+### 2.1、基本运算
+
+
+
+集合的基本运算：并、交、差。
+
+<blockquote>
+设A、B是两个集合，由所有属于A或者属于B的元素组成的集合，称为A与B的并集
+</blockquote>
+
+记做$A\cup B$,即 
+$$
+A\cup B = \{x|x\in A 或 x\in B\}
+$$
+
+<blockquote>
+由所有既属于A又属于B的元素组成的集合，称为A与B的交集
+</blockquote>
+
+记做$A\cap B$,即
+$$
+A\cap B = \{x|x\in A 且 x\in B\}
+$$
+
+<blockquote>
+    有所有属于A而不属于B的元素组成的集合，称为A与B的差集
+</blockquote>
+
+记做$A\setminus B$,即
+$$
+A\setminus  B=\{x|x\in A 且x\notin B\}
+$$
+
+<blockquote>
+    有时，我们研究问题会限定在一个大的集合I中进行，所研究的其他集合A都是I的子集。此时，我们称集合I为全集或者基本集，称I\A为A的余集或者补集
+</blockquote>
+
+记做$A^C$。
+
+### 2.2、运算法则
+
+集合的并、交、余运算满足一下法则。
+
+设置A、B、C为任意3个集合，则有以下法则成立：
+
+1. 交换律 $A\cup B=B\cup A\, $ ,$A\cap B = B\cap A $
+2. 结合律 $(A\cup B)\cup C=A\cup(B\cup C)$, $(A\cap B)\cap C=A\cap(B\cap C)$
+3. 分配律 $(A\cup B)\cap C=（A\cap C)\cup(B\cap C)$，$(A\cap B)\cup C=（A\cup C)\cap(B\cup C)$
+4. 对偶律 $(A\cup B)^C=A^C\cap B^C$, $(A\cap B)^C=A^C\cup B^C$
+
+对偶律等式1证明：
+$$
+x\in(A\cup B)^C\Rightarrow x\notin(A\cup B)\Rightarrow x\notin A且x\notin B\Rightarrow x\in A^C且x\in B^C\Rightarrow x\in A^C\cap B^C
+$$
+
+
+### 2.3、直积或笛卡尔乘积
+
+<blockquote>
+    设A、B是任意的两个集合，在集合A中任取一元素x，在集合B中任取一元素y，组成一有序对(x,y),把这样的有序对作为新的元素，它们全体构成的集合称为集合A与集合B的直积或称笛卡尔积
+</blockquote>
+
+记为$A\times B$,即
+$$
+A\times B=\{(x,y)|x\in A 且 y\in B\}
+$$
+
+## 3、区间和邻域
+
+### 3.1、区间
+
+
+
++ 有限区间： 设a和b都是实数，且$a\lt b$
+
+  + 开区间$(a,b)$，即
+    $$
+    (a,b)=\{x|a\lt x\lt b\}
+    $$
+    
+  + 闭区间$[a,b]$
+    $$
+    [a,b]=\{x|a\le x\le b\}
+    $$
+    
+  + 半开区间$(a,b],[a,b)$
+
+$$
+(a,b]=\{x|a\lt x\le b\},[a,b)=\{x|a\le x\lt b\}
+$$
+
++ 无限区间：引入符号$+\infty$(正无穷),$-\infty$(负无穷)
+  + $(a,+\infty)$
+  + $(-\infty,a)$
+  + 实数集R，$(-\infty,+\infty)$
+
+### 3.2、邻域
+
+以点a为中心的任何开区间称为点a的邻域，记做U(a)。
+
+设$\delta$是任意正数，则开区间$(a-\delta,a+\delta)$就是点a的一个邻域，这个邻域称为点a的邻域，记做$U(a,\delta)$,即
+$$
+U(a,\delta)=\{x|a-\delta\lt x\lt a+\delta\}
+$$
+点a称为邻域的中心，$\delta$称为邻域的半径。由于$a-\delta\lt x\lt a+\delta$相当于$|x-a|\lt\delta$,因此
+$$
+U(a,\delta)=\{x|\vert{x-a}\vert\lt\delta\}
+$$
+因为$|x-a|$表示点x与点a间的距离，所有$U(a,\delta)$表示：与点a的距离小于$\delta$的一切点x的全体。
+
+点a的去心邻域，记做$U(a,\delta)$,即
+$$
+U(a,\delta)=\{x|0\lt \vert x-a\vert\lt\delta\}
+$$
+开区间$(a-\delta,a)$称为a的左$\delta$邻域；开区间$(a,a+\delta)$称为a的右$\delta$邻域。
+
+
+## ***后记*** ：
+
+&emsp;&emsp;欢迎交流，本人QQ:806797785
+
+	项目源代码地址：https://gitee.com/gaogzhen/math
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0101%E9%9B%86%E5%90%88-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" data-id="cmmq7l123000cwu211d9v3ele" data-title="0101集合-映射与函数-函数与极限" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>0901多元函数的基本概念-多元函数微分法及其应用 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="- [1 平面点集](#1-平面点集)   * [1.1 坐标平面](#11-坐标平面)   * [1.2 平面点集](#12-平面点集)   * [1.3 邻域](#13-邻域)   * [1.4 电与点集的关系](#14-电与点集的关系)   * [1.5 聚点](#15-聚点)   * [1.6 点集所属点的特征定义的平面点集](#16-点集所属点的特征定义的平面点集) - [2 多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0901多元函数的基本概念-多元函数微分法及其应用">
+<meta property="og:url" content="http://example.com/2024/01/20/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0901%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="- [1 平面点集](#1-平面点集)   * [1.1 坐标平面](#11-坐标平面)   * [1.2 平面点集](#12-平面点集)   * [1.3 邻域](#13-邻域)   * [1.4 电与点集的关系](#14-电与点集的关系)   * [1.5 聚点](#15-聚点)   * [1.6 点集所属点的特征定义的平面点集](#16-点集所属点的特征定义的平面点集) - [2 多">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-20T04:43:48.000Z">
+<meta property="article:modified_time" content="2026-03-14T10:54:21.945Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basis/math/note/高等数学/09多元函数微分法及其应用/0901多元函数的基本概念-多元函数微分法及其应用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/20/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0901%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2024-01-20T04:43:48.000Z" itemprop="datePublished">2024-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      0901多元函数的基本概念-多元函数微分法及其应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+
+<!-- toc -->
+
+- [1 平面点集](#1-平面点集)
+  * [1.1 坐标平面](#11-坐标平面)
+  * [1.2 平面点集](#12-平面点集)
+  * [1.3 邻域](#13-邻域)
+  * [1.4 电与点集的关系](#14-电与点集的关系)
+  * [1.5 聚点](#15-聚点)
+  * [1.6 点集所属点的特征定义的平面点集](#16-点集所属点的特征定义的平面点集)
+- [2 多元函数的概念](#2-多元函数的概念)
+  * [2.1 定义](#21-定义)
+  * [2.2 值域](#22-值域)
+  * [2.3推广](#23推广)
+  * [2.4 自然定义域](#24-自然定义域)
+- [结语](#结语)
+
+<!-- tocstop -->
+
+## 1 平面点集
+
+### 1.1 坐标平面
+
+> 坐标平面就是建立了坐标系的平面。符号表示：$R^2=R\times R=\{(x,y)|x,y\in R\}$
+
+### 1.2 平面点集
+
+> 平面点集就是坐标平面上，具有某种性质P的集合。记作，$E=\{(x,y)|(x,y)具有某种性质P\}$
+
+示例：$c=\{(x,y)|x^2+y^2\lt r^2\}$或者$c=\{P||OP|\lt r\}$
+
+
+
+### 1.3 邻域
+
+> 设$P_0$为xoy面上的一点，$\delta\gt0 $,与$P_0(x_0,y_0)$距离小于$\delta$的点$P(x,y)$的全体，称为点$P_0(x_0,y_0)$的$\delta$的邻域。
+>
+> 记作，$U(P_0,\delta)=\{P| |PP_0|\lt\delta\}$或者$U(P_0,\delta)=\{(x,y)|\sqrt{(x-x_0)^2+(y-y_0)^2}\lt\delta\}$
+
+**注：**
+
+1. 去心邻域：$U(P_0,\delta)=\{P| 0\lt PP_0\lt\delta\}$
+2. 做不强调$\delta$,可写为$U(P_0),U(P_0)$
+
+### 1.4 电与点集的关系
+
+任意一点$P\in R^2$，任意点集$E\in R^2$
+
++ 内点
+
+> $\exist U(P),使U(P)\subset E$，则$P为E$的内点。
+
++ 外点
+
+> $\exist U(P),使U(P)\cap E=\emptyset$，则$P为E$的外点点。
+
++ 边界点
+
+> $\forall U(P)，若U(P)$既有属于E的点，又有不属于E的点，则P为E的边界点。
+
++ 边界
+
+> E 的边界点的全体，称为E的边界，记作$E$
+
+### 1.5 聚点
+
+> 对于$\forall\delta\gt0,U(P,\delta)\cap E\not=\empty,则P为E$的聚点。
+
+**注：**聚点可能属于E，也可能不属于E。
+
+示例：平面点集$E=\{(x,y)|1\lt x^2+y^2\le2\}$
+$$
+x^2+y^2=1是E的边界点，不属于E，也是E的聚点 \
+x^2+y^2=2是E的边界点，属于E，也是E的聚点 \
+$$
+
+
+### 1.6 点集所属点的特征定义的平面点集
+
++ 开集：如果点集E的点都是E的内点，那么称E为开集。
++ 闭集：如果点集E的边界$\subset E$,那么称E为闭集。
++ 连通集：如果点集E内的任何两点，都可以用折线联结起来，且该折线上的点都属于E,那么称E为连通集。
++ 区域（开区域）：连通的开集称为区域或者开区域。
++ 闭区域：开区域连同它的边界一起构成的点集称为闭区域。
++ 有界集：对于平面点集E ,如果存在某一正数r,使得$E\subset U(O,r)$，其中O为坐标原点，那么称E为有界集。
++ 无界集：一个集合如果不是有界集，就称这个集合为无界集。
+
+
+
+## 2 多元函数的概念
+
+### 2.1 定义
+
+> 设$D\subset R^2且D\not=\empty$，则称映射$f:D\rightarrow R$为定义在D上的 二元函数。通常记为
+>
+> $z=f(x,y),(x,y)\in D$ 或者 $z=f(P),P\in D$
+>
+> 其中点集D为该函数的定义域，x和y称为自变量，z称为因变量。
+
+### 2.2 值域
+
+$f(D)=\{z|z=f(x,y),(x,y)\in D\}$
+
+### 2.3推广
+
+> 把平面点集D换成n维空间$R^n$内的点集D，映射$f:D\rightarrow R$,称为定义在D上的n元函数。记为
+>
+> $u=f(x_1,x_2,\cdots,x_n),(x_1,x_2,\cdots,x_n)\in D$ 或者
+>
+> $u=f(x),x=(x_1,x_2,\cdots,x_n)\in D$ 或者
+>
+> $f=f(P),P(x_1,x_2,\cdots,x_n)\in D$
+
+示例：
+
++ 三元函数：$u=f(x,y,z)$
+
+### 2.4 自然定义域
+
+使算式有意义的点的集合称为自然定义域。
+
+示例1：$z=ln(x+y),D=\{(x,y)|x+y\gt0\}$
+
+
+
+## 结语
+
+> :question:QQ:806797785
+>
+> :star:文档笔记地址：<https: gitee.com gaogzhen math>
+
+参考：
+
+[1]同济大学数学系.高等数学 第七版 下册[M].北京:高等教育出版社,2014.7.p54-64.
+
+[2]<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1864y1T7Ks">同济七版《高等数学》全程教学视频</a>[CP/OL].2020-04-16.p64.
+</https:>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/01/20/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0901%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" data-id="cmmq7l12u001wwu215i7lh9b7" data-title="0901多元函数的基本概念-多元函数微分法及其应用" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/02/18/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/09%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/0902%E5%81%8F%E5%AF%BC%E6%95%B0-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          0902偏导数-多元函数微分法及其应用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/01/15/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/08%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/0806%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF%E5%8F%8A%E5%85%B6%E6%96%B9%E7%A8%8B-%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">0806空间曲线及其方程-向量代数与空间解析几何</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/">基础</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" rel="tag">函数与极限</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" rel="tag">审敛法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" rel="tag">无穷级数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/" style="font-size: 10px;">函数与极限</a> <a href="/tags/%E5%AE%A1%E6%95%9B%E6%B3%95/" style="font-size: 10px;">审敛法</a> <a href="/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" style="font-size: 10px;">无穷级数</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">高等数学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/03/">March 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/03/06/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/12%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/1202%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">1202常数项级数的审敛法-无穷级数</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0103%E5%87%BD%E6%95%B0-%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0103函数-映射与函数-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0106%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E5%87%86%E5%88%99%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E6%9E%81%E9%99%90-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/">0106极限存在准则两个重要的极限-函数与极限</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0108%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0108函数的连续性与间断点-函数与极限-高等数学</a>
+          </li>
+        
+          <li>
+            <a href="/2026/03/05/basis/math/note/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/01%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/0110%E9%97%AD%E5%8C%BA%E9%97%B4%E4%B8%8A%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">0110闭区间上连续函数的性质-函数与极限-高等数学</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
